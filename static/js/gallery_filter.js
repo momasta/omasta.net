@@ -23,7 +23,7 @@ function hide(element) {
 function resetGallery() {
     images.forEach(function (image) {
         show(image);
-        image.removeAttribute('tabindex');
+//        image.removeAttribute('tabindex');
     });
 }
 
@@ -36,7 +36,7 @@ function filterGallery(query) {
 
             queryFormatted = query.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             images.forEach(function (image) {
-                image.removeAttribute('tabindex');
+//                image.removeAttribute('tabindex');
 
                 let imageTitleRaw = image.getAttribute('data-title');
 
@@ -77,7 +77,7 @@ function filterGallery(query) {
             });
 
             if (firstImageFound) {
-                firstImageFound.setAttribute('tabindex', 2);
+//                firstImageFound.setAttribute('tabindex', 2);
             }
         }
     } else {

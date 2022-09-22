@@ -11,7 +11,7 @@
 	<div id="gallery-filter">
 		<form action="#" id="gallery-filter-form">
 			<input type="search" placeholder="Filter…" id="gallery-filter-input"
-				   autocomplete="off" autofocus>
+				   autocomplete="off" autocapitalize="off" autofocus>
 			<input type="submit" value="Filter" tabindex="-1" id="gallery-filter-submit">
 		</form>
 	</div>
@@ -35,6 +35,6 @@
 </div>
 
 <link rel="stylesheet" href="/css/lightbox.min.css">
-<script src="/js/gallery_filter.js"></script>
 <script src="/js/lightbox-plus-jquery.min.js"></script>
-<script src="/js/lightbox-options.js"></script>
+<script src="{{ print "/js/lightbox-options.js?" now.Unix }}"></script>
+<script src="{{ print "/js/gallery_filter.js?" now.Unix }}"></script>
