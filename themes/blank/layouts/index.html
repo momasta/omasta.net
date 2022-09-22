@@ -1,0 +1,59 @@
+{{ define "main" }}
+
+{{ partial "header" . }}
+
+<div id="middle">
+	<main>
+		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+
+		<div class="card">
+			<h2>{{ i18n "posts" }}</h2>
+
+			<ul class="links">
+				{{ range $paginator.Pages }}
+				{{ .Render "summary" }}
+				{{ end }}
+			</ul>
+
+			{{ partial "pagination.html" . }}
+		</div>
+	</main>
+
+	{{/* todo Move to a partial */}}
+	<aside class="">
+		<div class="card">
+			<h2>{{ i18n "contact-me" }}</h2>
+
+			<ul class="links">
+				<li>
+					<a href="https://m.me/omastik" target="_blank" ><span title="Facebook Messenger">Messenger:&nbsp;</span>omastik</a>
+				</li>
+				<li>
+					<a href="mailto:marek@omasta.net"><span>Email:&nbsp;</span>marek@omasta.net</a>
+				</li>
+				<li>
+					<a href="https://instagram.com/m.omasta" target="_blank" rel="noreferrer"><span>Instagram:&nbsp;</span>@m.omasta</a>
+				</li>
+				<li>
+					<a href="https://www.last.fm/user/m_omasta" target="_blank" rel="noreferrer"><span>Last.fm:&nbsp;</span>m_omasta</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="card">
+			<h2>{{ i18n "my-content" }}</h2>
+
+			<ul class="links">
+				<li>
+					<a href="/copypasta">Copypasta</a>
+				</li>
+				<li>
+					<a href="https://unsplash.com/@m_omasta" target="_blank" >Unsplash</a>
+				</li>
+				
+			</ul>
+		</div>
+	</aside>
+</div>
+
+{{ end }}

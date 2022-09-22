@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+{{ partial "header" . }}
+
+	<main>
+		<div class="card">
+			<article>
+				<h1>{{ .Title }}</h1>
+				
+				<ul class="links direction-row size-small">
+					<li><a href="..">{{ i18n "back" }}</a></li>
+				</ul>
+				
+				<div class="article-content">
+					{{ .Content }}
+				</div>
+			</article>
+		</div>
+	</main>
+{{ end }}

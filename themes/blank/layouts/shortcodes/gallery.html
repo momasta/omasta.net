@@ -1,0 +1,40 @@
+{{/* https://www.codeproject.com/Articles/5276331/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2 */}}
+
+{{/* Optional parameter to specify an asset subdirectory */}}
+{{- $param0 := default "" (.Get 0) -}}
+{{- $directory := cond (ne "" $param0) (print "/" $param0) "" -}}
+{{- $path := (print "img" $directory "/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF}") -}}
+
+<div class="gallery">
+	{{- $image := (resources.Match $path) -}}
+
+	<div id="gallery-filter">
+		<form action="#" id="gallery-filter-form">
+			<input type="search" placeholder="Filter…" id="gallery-filter-input"
+				   autocomplete="off" autofocus>
+			<input type="submit" value="Filter" tabindex="-1" id="gallery-filter-submit">
+		</form>
+	</div>
+	
+	{{ with $image }}
+	    {{ range . }} 
+	    	{{ $imageName := (.Name | replaceRE "^.*/(.*)\\..*" "$1") }} 
+	    	
+	    	<a href="{{ .Permalink }}" class="gallery-image state-visible" data-lightbox="x"
+	    	   data-title="{{ $imageName }}">
+	 
+				{{ if (eq .MediaType.SubType "gif") }}
+			    	<img src="{{ .Permalink }}" class="gallery-image-thumb" loading="lazy" />
+		    	{{ else }}
+		    		{{ $thumb := .Fill "150x150 q80" }}
+			    	<img src="{{ $thumb.Permalink }}" class="gallery-image-thumb" loading="lazy" />
+		    	{{ end }}
+      		</a>
+	    {{ end }}
+	{{ end }}
+</div>
+
+<link rel="stylesheet" href="/css/lightbox.min.css">
+<script src="/js/gallery_filter.js"></script>
+<script src="/js/lightbox-plus-jquery.min.js"></script>
+<script src="/js/lightbox-options.js"></script>

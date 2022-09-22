@@ -1,0 +1,31 @@
+# {{ i18n "" }}
+
+[meme-repository]
+other = 'Memes'
+
+[stolen-memes]
+other = 'My collection of stolen memes'
+
+[contact-me]
+other = 'Contact Me'
+
+[my-content]
+other = 'My Content'
+
+[posts]
+other = 'Posts'
+
+[latest-posts]
+other = 'Latest Posts'
+
+[posts-of]
+other = 'of'
+
+[no-posts-yet]
+other = "I haven't published any posts yet."
+
+[back]
+other = 'Back'
+
+# []
+# other = ''

@@ -1,0 +1,14 @@
+<div class="card">
+	<div>
+		<div>
+			<h2>{{ i18n "latest-posts" }}</h2>
+		</div>
+		<div>
+			<ul  class="links">
+				{{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+				<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+				{{ end }}
+			</ul>
+		</div>
+	</div>
+</div>

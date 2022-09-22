@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{{/* todo Use Hugo-native properties */}}
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta property="og:title" content="Marek Omasta">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="My personal website">
+	<meta property="og:image" content="https://marek.omasta.net/images/profile-picture-og-2.jpg">
+	<meta property="og:url" content="https://marek.omasta.net/">
+
+	{{/* todo Use Hugo-native properties */}}
+	<link rel="icon" href="/images/favicon.jpg" sizes="32x32">
+	<link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+	<link rel="icon" href="/images/favicon-192.jpg">
+	<link rel="apple-touch-icon-precomposed" href="/images/favicon-180.jpg">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<title>{{ if .IsHome }}{{ else }}{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}{{ end }}{{ .Site.Title }}</title>
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	{{ with .OutputFormats.Get "RSS" -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{- end }}
+
+	{{ $main_options := (dict "targetPath" "css/site.css" "outputStyle" "compressed") }}
+	{{ $main_template := resources.Get "sass/main.scss" }}
+	{{ $main_style := $main_template | resources.ExecuteAsTemplate "main_parsed.scss" . | toCSS $main_options | resources.Minify }}
+	<link rel="stylesheet" href="{{ print $main_style.RelPermalink "?" now.Unix }}">
+</head>
+
+<body{{ with .Type }} class="{{ . }}" {{ end }} ondragstart="return false;" ondrop="return false;" draggable="false">
+	<div id="content">
+		{{ if .Site.IsMultiLingual }}
+			<div id="language-switcher">
+				<ul>
+					{{ range .Site.Languages }}
+					{{ if eq . $.Site.Language }}
+					{{/* <li>{{ .LanguageName }}</li> */}}
+						{{ end }}
+						{{ end }}
+						{{ range $.Translations }}
+						<li>
+							<a title="{{ .Language.LanguageName }}" href="{{ .Permalink }}">
+								{{ .Language.LanguageName }}
+							</a>
+						</li>
+						{{ end }}
+					</li>
+				</ul>
+			</div>
+		{{ end }}
+
+		{{ block "main" . }}{{ end }}
+		{{ partial "footer" . }}
+	</div>
+
+</body>
+</html>

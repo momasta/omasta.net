@@ -1,0 +1,14 @@
+<div class="pagination">
+
+{{ if gt .Paginator.TotalPages 0 }}
+	{{ if .Paginator.HasPrev }}
+		<a href="{{ .Paginator.Prev.URL }}">Previous Page</a>
+	{{ end }}
+	{{ .Paginator.PageNumber }} {{ i18n "posts-of" }} {{ .Paginator.TotalPages }}
+	{{ if .Paginator.HasNext }}
+		<a href="{{ .Paginator.Next.URL }}">Next Page</a>
+	{{ end }}
+{{ else }}
+	{{ i18n "no-posts-yet" }}
+{{ end }}
+</div>

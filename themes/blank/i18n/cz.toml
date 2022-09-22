@@ -1,0 +1,31 @@
+# {{ i18n "" }}
+
+[meme-repository]
+other = 'Memes'
+
+[stolen-memes]
+  other = 'Moje sbírka kradených memes'
+
+[contact-me]
+other = 'Kontakt'
+
+[my-content]
+other = 'Můj obsah'
+
+[posts]
+other = 'Články'
+
+[latest-posts]
+other = 'Poslední články'
+
+[posts-of]
+other = 'z'
+
+[no-posts-yet]
+other = 'Zatím jsem nezveřejnil žádné články.'
+
+[back]
+other = 'Zpět'
+
+# []
+# other = ''

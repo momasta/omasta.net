@@ -1,0 +1,22 @@
+<header>		
+		<div class="card">
+			<div class="logo">
+				<a href="/">
+					<img src="/images/profile-picture.png" alt="Profile picture">
+					<h1>Marek Omasta</h1>
+				</a>
+			</div>
+						
+			{{- $currentPage := . -}}
+			{{ with .Site.Menus.main }}
+			 <nav>
+				 <ul>
+					 {{ range . }}
+					 <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+						 <a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+					 {{ end }}
+				 </ul>
+			 </nav>
+			 {{ end }} 
+		</div>
+</header>
