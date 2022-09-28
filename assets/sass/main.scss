@@ -1,45 +1,46 @@
 @charset "UTF-8";
 
-//// 1. Configuration and helpers
-////@import
-////  'abstracts/variables',
-////  'abstracts/functions',
-////  'abstracts/mixins';
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
 
-//// 3. Base
-//@import
-//  'base/base',
-//  'base/fonts',
-//  'base/typography',
-//  'base/helpers';
+// 2. Vendors
+@import
+  'vendors/normalize';
 
-//// 4. Layout-related sections
-//@import
-//  'layout/header',
-//  'layout/footer';
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
 
-//// 5. Components
-//@import
-//  'components/gallery';
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
 
-//// 6. Page-specific styles
-//@import
-//  'pages/home';
+// 5. Components
+@import
+  'components/button';
 
-//// 7. Themes
-//@import
-//  'themes/default';
+// 6. Page-specific styles
+@import
+  'pages/home';
 
+// 7. Themes
+@import
+  'themes/default';
+  
+// todo Move everything below into appropriate stylesheets
 
 // todo Move to fonts
 // @font-face {
 // 	font-family: 'Marek Omasta Ball Pen';
 // 	src: url('/fonts/MarekOmastaBallPen-Regular.ttf') format('truetype');
 // }
-
-* {
-	box-sizing: border-box;
-}
 
 html {
 	overflow-y: scroll;
