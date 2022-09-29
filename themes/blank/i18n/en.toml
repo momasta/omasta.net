@@ -3,9 +3,6 @@
 [meme-repository]
 other = 'Memes'
 
-[stolen-memes]
-other = 'My collection of stolen memes'
-
 [contact-me]
 other = 'Get in Touch'
 
@@ -29,6 +26,9 @@ other = 'Read more…'
 
 [back]
 other = 'Back'
+
+[switch-language]
+other = 'Switch language to '
 
 # []
 # other = ''

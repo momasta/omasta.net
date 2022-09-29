@@ -3,9 +3,6 @@
 [meme-repository]
 other = 'Memes'
 
-[stolen-memes]
-  other = 'Moje sbírka kradených memes'
-
 [contact-me]
 other = 'Kontakt'
 
@@ -22,13 +19,16 @@ other = 'Poslední články'
 other = 'z'
 
 [no-posts-yet]
-other = 'Zatím jsem nezveřejnil žádné články.'
+other = 'Zatím jsem žádné nezveřejnil.'
 
 [read-more]
 other = 'Číst dále…'
 
 [back]
 other = 'Zpět'
+
+[switch-language]
+other = 'Přepnout jazyk na: '
 
 # []
 # other = ''
