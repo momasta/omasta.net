@@ -2,7 +2,10 @@
 	{{ if .Site.IsMultiLingual }}
 		<div id="language-switcher">
 			{{ range $.Translations }}
-				<a title="{{ i18n "switch-language" }}{{ .Language.LanguageName }}" href="{{ .Permalink }}">
+				<a title="{{ i18n "switch-language" }}{{ .Language.LanguageName }}"
+				   href="{{ .Permalink }}"
+				   lang="{{ .Language }}"
+				   hreflang="{{ .Language }}">
 					{{ .Language.LanguageName }}
 				</a>
 			{{ end }}
