@@ -1,22 +1,31 @@
-<header>		
-		<div class="card">
-			<div class="logo">
-				<a href="/">
-					<img src="/images/profile-picture.png" alt="Profile picture">
-					<h1>Marek Omasta</h1>
+<header>
+	{{ if .Site.IsMultiLingual }}
+		<div id="language-switcher">
+			{{ range $.Translations }}
+				<a title="Switch language to {{ .Language.LanguageName }}" href="{{ .Permalink }}">
+					{{ .Language.LanguageName }}
 				</a>
-			</div>
-						
-			{{- $currentPage := . -}}
-			{{ with .Site.Menus.main }}
-			 <nav>
-				 <ul>
-					 {{ range . }}
-					 <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-						 <a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-					 {{ end }}
-				 </ul>
-			 </nav>
-			 {{ end }} 
+			{{ end }}
 		</div>
+	{{ end }}		
+	<div class="card">
+		<div class="logo">
+			<a href="/">
+				<img src="/images/profile-picture.png" alt="Profile picture">
+				<h1>Marek Omasta</h1>
+			</a>
+		</div>
+					
+		{{- $currentPage := . -}}
+		{{ with .Site.Menus.main }}
+		 <nav>
+			 <ul>
+				 {{ range . }}
+				 <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+					 <a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+				 {{ end }}
+			 </ul>
+		 </nav>
+		 {{ end }} 
+	</div>
 </header>

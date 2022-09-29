@@ -1,0 +1,43 @@
+#gallery-filter {
+	padding: 0 5px 20px; // 5px to counter gallery's negative margin
+	display: flex;
+	margin: 0;
+	flex-basis: 100%;
+}
+
+#gallery-filter-form {
+	position: relative;
+}
+
+#gallery-filter-input {
+	box-sizing: border-box;
+	padding: 3px 0;
+	border: solid #d7d7d7;
+	border-width: 0 0 1px 0;
+}
+
+/* Input resets */
+#gallery-filter input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-size: 16px;
+	background: transparent;
+	outline: none;
+	transition: border-color 200ms $timing-apple;
+}
+
+#gallery-filter input:focus {
+	outline: none;
+    border-color: #ffffff;
+}
+
+#gallery-filter input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+#gallery-filter-submit {
+	font-size: 16px;
+	display: none;
+}

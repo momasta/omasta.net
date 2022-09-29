@@ -5,6 +5,7 @@ theme = ["blank"]
 enableRobotsTXT = true
 loadJQuery = false
 timeout = "180s"
+summaryLength = 18
 
 defaultContentLang = 'en'
 [languages]

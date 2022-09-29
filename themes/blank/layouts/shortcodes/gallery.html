@@ -26,7 +26,7 @@
 				{{ if (eq .MediaType.SubType "gif") }}
 			    	<img src="{{ .Permalink }}" class="gallery-image-thumb" loading="lazy" />
 		    	{{ else }}
-		    		{{ $thumb := .Fill "150x150 q80" }}
+		    		{{ $thumb := .Fill "160x160 q80" }}
 			    	<img src="{{ $thumb.Permalink }}" class="gallery-image-thumb" loading="lazy" />
 		    	{{ end }}
       		</a>

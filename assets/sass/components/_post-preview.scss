@@ -1,0 +1,18 @@
+li.post-preview {
+	.post-summary,
+	.post-sumamry a,
+	time {
+		font-size: 14px;
+	}
+	
+	time {
+		display: block;
+	}
+	
+	.post-summary {
+		overflow: hidden;
+		max-width: 100%;
+		text-overflow: clip;
+		word-break: break-word;
+	}
+}

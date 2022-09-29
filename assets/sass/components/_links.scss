@@ -1,0 +1,39 @@
+// todo Wrap with nav maybe?
+ul.links {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+
+	li {
+		margin: 12px 0;
+
+		&:first-of-type {
+			margin-top: 0;
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	
+	// Directions
+	&.direction-row {
+		li {
+			display: inline-block;
+		}
+	}
+	
+	// Sizes
+	&.size-small {
+		li {
+			margin: 5px 0;
+		}
+		
+		&.direction-row {
+			li {
+				margin-right: 10px;
+			}
+		}
+	}
+}

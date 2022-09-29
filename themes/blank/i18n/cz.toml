@@ -24,6 +24,9 @@ other = 'z'
 [no-posts-yet]
 other = 'Zatím jsem nezveřejnil žádné články.'
 
+[read-more]
+other = 'Číst dále…'
+
 [back]
 other = 'Zpět'
 

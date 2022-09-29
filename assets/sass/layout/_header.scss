@@ -1,3 +1,42 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+header {
+	div.logo {
+		transition: opacity 200ms $timing-apple;
+		
+		&:hover {
+			opacity: 0.8;
+		}
+	
+		a,
+		a:visited {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			flex-wrap: nowrap;
+			padding: 10px;
+			margin: -10px;
+		}
+
+		h1 {
+			margin: 0;
+			max-width: 100%;
+		}
+
+		img {
+			width: 45px;
+			height: 64px;
+			margin-right: 20px;
+		}
+	}
+	
+	#language-switcher {
+		text-align: right;
+	}
+}

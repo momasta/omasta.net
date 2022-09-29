@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	{{/* todo Use Hugo-native properties */}}
+	{{/* todo Use Hugo-native properties for OG tags */}}
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta property="og:title" content="Marek Omasta">
 	<meta property="og:type" content="website">
@@ -13,7 +13,7 @@
 	<meta property="og:image" content="https://marek.omasta.net/images/profile-picture-og-2.jpg">
 	<meta property="og:url" content="https://marek.omasta.net/">
 
-	{{/* todo Use Hugo-native properties */}}
+	{{/* todo Use Hugo-native properties for icons */}}
 	<link rel="icon" href="/images/favicon.jpg" sizes="32x32">
 	<link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
 	<link rel="icon" href="/images/favicon-192.jpg">
@@ -36,26 +36,6 @@
 
 <body{{ with .Type }} class="{{ . }}" {{ end }} ondragstart="return false;" ondrop="return false;" draggable="false">
 	<div id="content">
-		{{ if .Site.IsMultiLingual }}
-			<div id="language-switcher">
-				<ul>
-					{{ range .Site.Languages }}
-					{{ if eq . $.Site.Language }}
-					{{/* <li>{{ .LanguageName }}</li> */}}
-						{{ end }}
-						{{ end }}
-						{{ range $.Translations }}
-						<li>
-							<a title="{{ .Language.LanguageName }}" href="{{ .Permalink }}">
-								{{ .Language.LanguageName }}
-							</a>
-						</li>
-						{{ end }}
-					</li>
-				</ul>
-			</div>
-		{{ end }}
-
 		{{ block "main" . }}{{ end }}
 		{{ partial "footer" . }}
 	</div>

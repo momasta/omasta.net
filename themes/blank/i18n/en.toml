@@ -7,7 +7,7 @@ other = 'Memes'
 other = 'My collection of stolen memes'
 
 [contact-me]
-other = 'Contact Me'
+other = 'Get in Touch'
 
 [my-content]
 other = 'My Content'
@@ -23,6 +23,9 @@ other = 'of'
 
 [no-posts-yet]
 other = "I haven't published any posts yet."
+
+[read-more]
+other = 'Read more…'
 
 [back]
 other = 'Back'

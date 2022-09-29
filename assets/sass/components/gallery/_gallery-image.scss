@@ -1,0 +1,61 @@
+.gallery-image {
+	display: block;
+	width: 50%;
+	max-width: 50%;
+	aspect-ratio: 1 / 1;
+	text-align: center;
+	transition: transform $gallery-transition-delay $timing-apple, opacity $gallery-transition-delay $timing-apple;
+	font-size: 0;
+	will-change: opacity, transform, display;
+	overflow: hidden;
+	position: relative;
+	
+	&::after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		border: 5px solid #c4ceff;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity $gallery-transition-delay $timing-apple;
+	}
+		
+	&:focus {
+		&::after {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+		
+	&:hover,
+	&:focus {
+		.gallery-image-thumb {
+			transform: scale(1.03);
+		}
+	}
+	
+	&.state-visible {
+		animation: fade-in-scale $gallery-transition-delay;
+		display: block;
+	}
+	
+	&.state-hidden {
+		animation: fade-out-scale $gallery-transition-delay;
+		animation-fill-mode: forwards;
+		display: block;
+	}
+
+	// .gallery-image-thumb
+	&-thumb {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		aspect-ratio: 1 / 1;
+		box-sizing: border-box;
+		transition: transform $gallery-transition-delay $timing-apple 0ms, opacity 0s $timing-apple;
+	}
+}

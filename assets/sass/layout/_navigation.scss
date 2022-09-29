@@ -1,0 +1,26 @@
+nav {
+	display: flex;
+	align-items: center;
+	margin: 16px 0 0 0;
+
+	ul {
+		display: flex;
+		list-style: none;
+		padding: 0;
+		margin: 0 -8px;
+		font-size: 18px;
+
+		li {
+			margin: 0 8px;
+		}
+	}
+	
+	a {
+		transition: color 200ms $timing-apple;
+		
+		&:hover {
+			color: #c4ceff;
+			text-decoration: none;
+		}
+	}
+}

@@ -2,11 +2,10 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
-/**
- * Set up a decent box model on the root element
- */
+
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; // Set up a decent box model on the root element
+  overflow-y: scroll;
 }
 
 /**
@@ -21,15 +20,44 @@ html {
   box-sizing: inherit;
 }
 
+// Custom Resets
+:focus {
+	outline: none;
+}
+
 /**
  * Basic styles for links
  */
 a {
-  color: $brand-color;
-  text-decoration: none;
+	color: $color-text;
+	text-decoration: none;
 
-  @include on-event {
-    color: $text-color;
-    text-decoration: underline;
-  }
+	&:hover {
+		color: $color-text;
+		text-decoration: underline;
+	}
+  
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+	transition: background-color 200ms $timing-apple, transform 200ms $timing-apple;
+
+	&:focus {
+		background-color: #c4ceff;
+		
+		&:active {
+			background-color: transparent;
+		}
+	}
+
+	&:active {
+		background-color: transparent;
+
+		&:focus {
+			background-color: transparent;
+		}
+	}
+	
+	&:visited {
+	  color: $color-text;
+	}
 }
