@@ -13,6 +13,7 @@ defaultContentLanguage = 'en'
     contentDir = 'content/cz'
     languageName = 'Čeština'
     languageCode = "cs"
+    description = "Moje osobní stránka, archiv memes, odkazy na moje profily a obsah online"
     weight = 2
     [languages.cs.menu]
     [[languages.cs.menu.main]]
@@ -27,6 +28,7 @@ defaultContentLanguage = 'en'
     contentDir = 'content/en'
     languageName = 'English'
     languageCode = "en-gb"
+	description = "My personal website, meme archive, links to my profiles and my online content"
     weight = 1
     [languages.en.menu]
     [[languages.en.menu.main]]

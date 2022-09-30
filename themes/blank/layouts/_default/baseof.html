@@ -27,6 +27,11 @@
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
+	{{ if .Keywords }}
+  		{{ with .Keywords }}
+  			<meta name="keywords" content="{{ range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">
+  		{{ end }}
+    {{ end }}
 
 	{{ $main_options := (dict "targetPath" "css/site.css" "outputStyle" "compressed") }}
 	{{ $main_template := resources.Get "sass/main.scss" }}

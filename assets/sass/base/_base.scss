@@ -29,31 +29,18 @@ html {
  * Basic styles for links
  */
 a {
+	-webkit-tap-highlight-color: transparent;
 	color: $color-text;
 	text-decoration: none;
+	transition: background-color 200ms $timing-apple, transform 200ms $timing-apple;
 
 	&:hover {
 		color: $color-text;
 		text-decoration: underline;
-	}
-  
-	-webkit-tap-highlight-color: transparent;
-	transition: background-color 200ms $timing-apple, transform 200ms $timing-apple;
+	}  
 
 	&:focus {
 		background-color: $color-focus;
-		
-		&:active {
-			background-color: transparent;
-		}
-	}
-
-	&:active {
-		background-color: transparent;
-
-		&:focus {
-			background-color: transparent;
-		}
 	}
 	
 	&:visited {
