@@ -47,15 +47,11 @@
   'themes/default';
   
 // todo Move everything below into appropriate stylesheets
-time {
-	color: #454545;
-}
-
 table {
 	border-collapse: collapse;
 
 	td {
-		border: 1px solid #ccc;
+		border: 1px solid $color-grey-light;
 		padding: 5px;
 	}
 }
@@ -74,7 +70,7 @@ h3 {
 
 body {
 	margin: 24px 16px;
-	background-color: #eee;
+	background-color: $color-grey-light;
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -105,7 +101,7 @@ main {
 	height: 1.4em; // Fixed height to prevent jumping (if empty)
 
 	a {
-		color: #454545;
+		color: $color-grey-dark;
 	}
 }
 

@@ -4,12 +4,10 @@
 
 
 
-
-
 /// Regular font family
 /// @type List
 $text-font-stack: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif !default;
-//$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+// $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -17,32 +15,39 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 
 
-
-
-/// Copy text color
+/// White colour
 /// @type Color
-$color-text: rgb(34, 34, 34) !default;
+$color-white: #fff;
 
-/// Main brand color
+/// White colour - background variant
 /// @type Color
-$color-brand: rgb(229, 0, 80) !default;
+$color-white-bg: #fdfdfd;
 
-/// Main brand color - light variant
+/// Copy text colour
 /// @type Color
-// $color-brand-light: rgb(229, 0, 80) !default;
+$color-text: #222 !default;
+
+/// Main brand colour
+/// @type Color
+$color-brand: #306e95 !default;
+
+/// Main brand colour - background variant
+/// @type Color
+ $color-brand-bg: lighten($color-brand, 44%) !default;
 
 /// Dark grey
 /// @type Color
-$color-grey-dark: rgb(68, 68, 68) !default;
+$color-grey-dark: #454545 !default;
 
 /// Light grey
 /// @type Color
-$color-grey-light: rgb(237, 237, 237) !default;
+$color-grey-light: #eee !default;
 
-/// Light grey for backgrounds
+
+/// Colour aliases for specific uses
+
 /// @type Color
-$color-grey-bg: rgb(68, 68, 68) !default;
-
+$color-focus: $color-brand-bg;
 
 
 
@@ -53,20 +58,13 @@ $max-width: 670px !default;
 
 
 
-
-
 /// Media Query Breakpoints 
 $bp-small: 320px;
 $bp-medium: 670px;
 $bp-large: 1024px;
 
-
-
-
 /// transition-timing-function
 $timing-apple: cubic-bezier(0.4, 0, 0.25, 1);
-
-
 
 
 

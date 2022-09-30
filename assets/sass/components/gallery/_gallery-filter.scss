@@ -12,7 +12,7 @@
 #gallery-filter-input {
 	box-sizing: border-box;
 	padding: 3px 0;
-	border: solid #d7d7d7;
+	border: solid $color-grey-dark;
 	border-width: 0 0 1px 0;
 }
 
@@ -29,7 +29,7 @@
 
 #gallery-filter input:focus {
 	outline: none;
-    border-color: #ffffff;
+    border-color: transparent;
 }
 
 #gallery-filter input::-moz-focus-inner {

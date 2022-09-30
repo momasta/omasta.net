@@ -37,12 +37,11 @@ a {
 		text-decoration: underline;
 	}
   
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent;
 	transition: background-color 200ms $timing-apple, transform 200ms $timing-apple;
 
 	&:focus {
-		background-color: #c4ceff;
+		background-color: $color-focus;
 		
 		&:active {
 			background-color: transparent;

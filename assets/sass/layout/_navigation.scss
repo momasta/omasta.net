@@ -19,7 +19,7 @@ nav {
 		transition: color 200ms $timing-apple;
 		
 		&:hover {
-			color: #4759b3;
+			color: $color-brand;
 			text-decoration: none;
 		}
 	}

@@ -1,6 +1,6 @@
 div.card {
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: $color-white-bg;
 	padding: 24px 20px;
 	margin: 8px 0;
 	overflow: hidden;
@@ -18,7 +18,7 @@ div.card {
 	span {
 		display: inline-block;
 		text-decoration: none;
-		color: #454545;
+		color: $color-grey-dark;
 
 		& ~ a {
 			padding: 10px 0;
@@ -39,7 +39,7 @@ div.card {
 			& ~ span {
 				font-size: 14px;
 				margin: 0;
-				color: #454545;
+				color: $color-grey-dark;
 			}
 		}
 	}

@@ -18,7 +18,7 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-		border: 5px solid #c4ceff;
+		border: 5px solid $color-focus;
 		opacity: 0;
 		visibility: hidden;
 		transition: opacity $gallery-transition-delay $timing-apple;
