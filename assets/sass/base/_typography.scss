@@ -12,8 +12,8 @@ h3 {
 	font-weight: 500;
 }
 
-h1 {
-	article & {
+h2 {
+	div.card article & {
 		font-size: 1.5em;
 	}
 }

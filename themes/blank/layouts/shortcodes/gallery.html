@@ -3,7 +3,7 @@
 {{/* Optional parameter to specify an asset subdirectory */}}
 {{- $param0 := default "" (.Get 0) -}}
 {{- $directory := cond (ne "" $param0) (print "/" $param0) "" -}}
-{{- $path := (print "img" $directory "/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF}") -}}
+{{- $path := (print "images" $directory "/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF}") -}}
 
 <div class="gallery">
 	{{- $image := (resources.Match $path) -}}
@@ -18,16 +18,19 @@
 	
 	{{ with $image }}
 	    {{ range . }} 
-	    	{{ $imageName := (.Name | replaceRE "^.*/(.*)\\..*" "$1") }} 
+	    	{{ $imageName := (.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr }} 
 	    	
 	    	<a href="{{ .Permalink }}" class="gallery-image state-visible" data-lightbox="x"
-	    	   data-title="{{ $imageName }}">
+	    	   data-title="{{ $imageName }}" data-alt="{{ $imageName }}">
 	 
+	 			{{/* todo Make this condition inline if possible */}}
 				{{ if (eq .MediaType.SubType "gif") }}
-			    	<img src="{{ .Permalink }}" class="gallery-image-thumb" loading="lazy" />
+			    	<img src="{{ .Permalink }}" class="gallery-image-thumb" loading="lazy"
+			    		alt="{{ $imageName }}" />
 		    	{{ else }}
-		    		{{ $thumb := .Fill "160x160 q80" }}
-			    	<img src="{{ $thumb.Permalink }}" class="gallery-image-thumb" loading="lazy" />
+		    		{{ $thumb := .Fill "288x288 q75" }}
+			    	<img src="{{ $thumb.Permalink }}" class="gallery-image-thumb" loading="lazy"
+		    			 alt="{{ $imageName }}" />
 		    	{{ end }}
       		</a>
 	    {{ end }}
@@ -35,6 +38,7 @@
 </div>
 
 <link rel="stylesheet" href="/css/lightbox.min.css">
-<script src="/js/lightbox-plus-jquery.min.js"></script>
+<script src="/js/jquery-3.6.1.min.js"></script>
+<script src="/js/lightbox.min.js"></script>
 <script src="{{ print "/js/lightbox-options.js?" now.Unix }}"></script>
 <script src="{{ print "/js/gallery_filter.js?" now.Unix }}"></script>

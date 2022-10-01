@@ -16,6 +16,12 @@ ul.links {
 		}
 	}
 	
+	a {
+		// Increase size of active element
+		padding: 14px 12px;
+		margin: -14px -12px;
+	}
+	
 	// Directions
 	&.direction-row {
 		li {
