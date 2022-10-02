@@ -2,10 +2,30 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
-
 html {
-  box-sizing: border-box; // Set up a decent box model on the root element
-  overflow-y: scroll;
+	&,
+	&.theme-light {
+		@include includeLight;
+	}
+
+	&,
+	&.theme-dark {
+		@include includeDark;
+	}
+	
+	box-sizing: border-box; // Set up a decent box model on the root element
+	overflow-y: scroll;
+	background-color: var(--color-site-bg);
+}
+
+body {
+	margin: 24px 16px;
+	background-color: var(--color-site-bg);
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin: 16px;
 }
 
 /**
@@ -30,20 +50,41 @@ html {
  */
 a {
 	-webkit-tap-highlight-color: transparent;
-	color: $color-text;
+	color: var(--color-text);
 	text-decoration: none;
 	transition: background-color 200ms $timing-apple, transform 200ms $timing-apple;
 
 	&:hover {
-		color: $color-text;
+		color: var(--color-text);
 		text-decoration: underline;
 	}  
 
 	&:focus {
-		background-color: $color-focus;
+		background-color: var(--color-focus);
 	}
 	
 	&:visited {
-	  color: $color-text;
+	  color: var(--color-text);
+	}
+}
+
+@media (prefers-color-scheme: light),
+(prefers-color-scheme: no-preference) {
+	html {
+		@include includeLight;
+	}
+	
+	html.theme-dark {
+		@include includeDark;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		@include includeDark;
+	}
+	
+	html.theme-light {
+		@include includeLight;
 	}
 }

@@ -17,13 +17,14 @@ nav {
 	
 	a {
 		transition: color 200ms $timing-apple;
+	    white-space: nowrap;
 		
 		// Increase size of active element
 	    padding: 16px 8px;
 	    margin: -16px -8px;
 		
 		&:hover {
-			color: $color-brand;
+			color: var(--color-brand);
 			text-decoration: none;
 		}
 	}

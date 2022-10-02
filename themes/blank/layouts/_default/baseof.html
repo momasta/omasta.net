@@ -3,6 +3,32 @@
 
 <head>
 	<meta charset="UTF-8">
+	
+	<!-- Perform this before rendering page to prevent white flashes -->
+	<script>
+		const html = document.documentElement;
+		const hasLocalStorage = localStorage.getItem('theme');
+		
+		if (hasLocalStorage === 'theme-dark') {
+			html.classList.add('theme-dark');
+		}
+	</script>
+	
+	<!-- Basic styling for dark theme, will be overridden by CSS -->
+	<style>
+		html.theme-dark {
+			background-color: #000;
+		}
+		
+		html.theme-dark .card {
+			background-color: #222;
+		}
+		
+		a:visited {
+			color: inherit;
+		}
+	</style>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	{{/* todo Use Hugo-native properties for OG tags */}}
@@ -42,6 +68,74 @@
 		{{ block "main" . }}{{ end }}
 		{{ partial "footer" . }}
 	</div>
+	
+	{{/* Dark mode handling, integral part, don't move to a file */}}
+	<script>
+		// From https://codepen.io/MrGrigri/details/XQmWBv, modified
+		
+		const themePreference = () => {
+			let supports = false;
+			let theme = undefined;
+			
+			if (hasLocalStorage === 'theme-light') {
+				theme = 'theme-light';
+			} else if (hasLocalStorage === 'theme-dark') {
+				theme = 'theme-dark';
+			}
 
+			if (window.matchMedia(`(prefers-color-scheme: dark)`).matches) {
+				theme = hasLocalStorage ? hasLocalStorage : 'theme-dark';
+				supports = true;
+			};
+			
+			if (window.matchMedia(`(prefers-color-scheme: light)`).matches) {
+				theme = hasLocalStorage ? hasLocalStorage : 'theme-light';
+				supports = true;
+			};
+			
+			if (window.matchMedia(`(prefers-color-scheme: no-preference)`).matches) {
+				theme = hasLocalStorage ? hasLocalStorage : 'none';
+				supports = true;
+			};
+			
+			return {supports, theme};
+		}
+
+
+		document.addEventListener('DOMContentLoaded', e => {			
+			const userThemePreference = themePreference();
+			const toggleThemeLight = document.querySelector('.toggle-theme-light');
+			const toggleThemeDark = document.querySelector('.toggle-theme-dark');
+				
+			const setTheme = () => {
+				switch(userThemePreference.theme) {
+				case 'theme-dark':
+					html.classList.add('theme-dark');
+					html.classList.remove('theme-light');
+					break;
+				case 'theme-light':
+					html.classList.remove('theme-dark');
+					html.classList.add('theme-light');
+					break;
+				}
+			}
+			
+			setTheme();
+			
+			toggleThemeDark.addEventListener('click', e => {
+		        e.preventDefault();
+				html.classList.add('theme-dark');
+				html.classList.remove('theme-light');
+				localStorage.setItem('theme', 'theme-dark');
+			}, false);
+				
+			toggleThemeLight.addEventListener('click', e => {
+				e.preventDefault();
+				html.classList.remove('theme-dark');
+				html.classList.add('theme-light');
+				localStorage.setItem('theme', 'theme-light');
+			}, false);
+		}, false);
+	</script>
 </body>
 </html>

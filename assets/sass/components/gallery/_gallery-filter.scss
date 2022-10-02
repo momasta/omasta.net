@@ -10,9 +10,9 @@
 }
 
 #gallery-filter-input {
-	box-sizing: border-box;
+	color: var(--color--text);
 	padding: 3px 0;
-	border: solid $color-grey-dark;
+	border: solid var(--color-grey-dark);
 	border-width: 0 0 1px 0;
 }
 

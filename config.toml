@@ -18,7 +18,7 @@ defaultContentLanguage = 'en'
     [languages.cs.menu]
     [[languages.cs.menu.main]]
       name = 'Domů'
-      url = '/cz/'
+      url = '/cs/'
       weight = 0
     [[languages.cs.menu.main]]
       name = 'Memes'

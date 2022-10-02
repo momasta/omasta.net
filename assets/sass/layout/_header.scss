@@ -36,7 +36,29 @@ header {
 		}
 	}
 	
-	#language-switcher {
-		text-align: right;
+	.top-bar {
+		justify-content: flex-end;
+	}
+	
+	
+	// Default state
+	a.icon.toggle-theme-light {
+		display: none;
+	}
+	
+	html.theme-light & {
+		a.icon.toggle-theme-light {
+			display: none;
+		}
+	}
+	
+	html.theme-dark & {
+		a.icon.toggle-theme-dark {
+			display: none;
+		}
+		
+		a.icon.toggle-theme-light {
+			display: flex;
+		}
 	}
 }

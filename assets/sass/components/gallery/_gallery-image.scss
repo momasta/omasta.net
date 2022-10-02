@@ -18,7 +18,7 @@
 		height: 100%;
 		top: 0;
 		left: 0;
-		border: 5px solid $color-focus;
+		border: 5px solid var(--color-focus);
 		opacity: 0;
 		visibility: hidden;
 		transition: opacity $gallery-transition-delay $timing-apple;
@@ -55,7 +55,6 @@
 		overflow: hidden;
 		width: 100%;
 		aspect-ratio: 1 / 1;
-		box-sizing: border-box;
 		transition: transform $gallery-transition-delay $timing-apple 0ms, opacity 0s $timing-apple;
 	}
 }

@@ -34,6 +34,7 @@
   'components/gallery/gallery-image',
   'components/gallery/gallery-filter',
   
+  'components/icon',
   'components/links',
   'components/pagination',
   'components/post-preview';
@@ -51,7 +52,7 @@ table {
 	border-collapse: collapse;
 
 	td {
-		border: 1px solid $color-grey-light;
+		border: 1px solid var(--color-grey-light);
 		padding: 5px;
 	}
 }
@@ -66,16 +67,6 @@ h1,
 h2,
 h3 {
 	@include no-interaction;
-}
-
-body {
-	margin: 24px 16px;
-	background-color: $color-grey-light;
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	margin: 16px;
 }
 
 #middle {
@@ -95,13 +86,20 @@ main {
 	margin-top: 20px;
 }
 
+// todo Use a placeholder with extend or something
 #content > footer,
-#language-switcher {
-	padding: 0 20px;
+.top-bar {
+	display: flex;
+	padding: 0 8px;
+	align-items: center;
 	height: 1.4em; // Fixed height to prevent jumping (if empty)
 
 	a {
-		color: $color-grey-dark;
+		color: var(--color-text-light);
+		
+		// Increase size of active element
+		padding: 13px 12px;
+		margin: -13px 0;
 	}
 }
 

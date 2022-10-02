@@ -1,16 +1,25 @@
 <header>
-	{{ if .Site.IsMultiLingual }}
-		<div id="language-switcher">
+	<div class="top-bar">
+		<a class="icon toggle-theme-dark" href="#" title="{{ i18n "switch-theme-dark" }}">
+			{{ readFile "themes/blank/static/images/icons/moon.svg" | safeHTML }}
+		</a>
+		
+		<a class="icon toggle-theme-light" href="#" title="{{ i18n "switch-theme-light" }}">
+			{{ readFile "themes/blank/static/images/icons/sun.svg" | safeHTML }}
+		</a>
+	
+		{{ if .Site.IsMultiLingual }}
 			{{ range $.Translations }}
-				<a title="{{ i18n "switch-language" }}{{ .Language.LanguageName }}"
+				<a title="{{ i18n "switch-language" }}"
 				   href="{{ .Permalink }}"
 				   lang="{{ .Language }}"
 				   hreflang="{{ .Language }}">
 					{{ .Language.LanguageName }}
 				</a>
 			{{ end }}
-		</div>
-	{{ end }}		
+		{{ end }}		
+	</div>
+	
 	<div class="card">
 		<div class="logo">
 			<a href="/">

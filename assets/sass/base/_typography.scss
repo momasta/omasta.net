@@ -2,7 +2,7 @@
  * Basic typography style for copy text
  */
 body {
-  color: $color-text;
+  color: var(--color-text);
   font: normal 100% / 1.4 $text-font-stack;
 }
 

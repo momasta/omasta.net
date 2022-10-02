@@ -12,41 +12,39 @@ $text-font-stack: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif !de
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
+:root {
+	--color-white: #fff;
+	--color-white-bg: #fdfdfd;
 
-/// White colour
-/// @type Color
-$color-white: #fff;
+	--color-black: #000;
+	--color-black-bg: #222;
 
-/// White colour - background variant
-/// @type Color
-$color-white-bg: #fdfdfd;
+	--color-grey-dark: #454545;
+	--color-grey-light: #eee;
 
-/// Copy text colour
-/// @type Color
-$color-text: #222 !default;
+	--color-brand: #306e95;
+	--color-focus: var(--color-brand-bg);
+}
 
-/// Main brand colour
-/// @type Color
-$color-brand: #306e95 !default;
+@mixin includeLight {
+	--color-text: #222;
+	--color-text-light: var(--color-grey-dark);
+	
+	--color-brand-bg: #bcd8e9; // lighten color-brand, 44%
+	
+	--color-site-bg: var(--color-grey-light);
+	--color-content-bg: var(--color-white-bg);
+}
 
-/// Main brand colour - background variant
-/// @type Color
-$color-brand-bg: lighten($color-brand, 44%) !default;
-
-/// Dark grey
-/// @type Color
-$color-grey-dark: #454545 !default;
-
-/// Light grey
-/// @type Color
-$color-grey-light: #eee !default;
-
-
-/// Colour aliases for specific uses
-
-/// @type Color
-$color-focus: $color-brand-bg;
-
+@mixin includeDark {
+	--color-text: var(--color-white-bg);
+	--color-text-light: var(--color-grey-light);
+	
+	--color-brand-bg: #204a64; // darken color-brand
+		
+	--color-site-bg: var(--color-black);
+	--color-content-bg: var(--color-black-bg);
+}
 
 /// Container's maximum width
 /// @type Length

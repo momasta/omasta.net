@@ -1,4 +1,4 @@
-# {{ i18n "" }}
+#{{ i18n "" }}
 
 [meme-repository]
 other = 'Memes'
@@ -28,7 +28,13 @@ other = 'Read more…'
 other = 'Back'
 
 [switch-language]
-other = 'Switch language to '
+other = 'Přepnout jazyk do češtiny'
 
-# []
-# other = ''
+[switch-theme-dark]
+other = 'Switch to dark theme'
+
+[switch-theme-light]
+other = 'Switch to light theme'
+
+#[]
+#other = ''
