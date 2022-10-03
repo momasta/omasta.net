@@ -51,6 +51,7 @@
 
 	// .gallery-image-thumb
 	&-thumb {
+		object-fit: cover;
 		position: relative;
 		overflow: hidden;
 		width: 100%;
