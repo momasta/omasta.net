@@ -5,8 +5,9 @@
 {{- $directory := cond (ne "" $param0) (print "/" $param0) "" -}}
 {{- $path := (print "images" $directory "/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF}") -}}
 
+<!--Use eager loading for the first 20 images-->
 <div class="gallery">
-	{{- $image := (resources.Match $path) -}}
+	{{- $images := (resources.Match $path) -}}
 
 	<div id="gallery-filter">
 		<form action="#" id="gallery-filter-form">
@@ -24,26 +25,29 @@
 		</form>
 	</div>
 	
-	{{ with $image }}
-	    {{ range . }} 
-	    	{{ $imageName := (.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr }} 
+	{{ with $images }}
+	    {{ range $image_index, $image := . }} 
+	    	{{ $imageName := ($image.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr }} 
 	    	
-	    	<a href="{{ .Permalink }}"
+	    	<a href="{{ $image.Permalink }}"
 	    	   class="gallery-image state-visible"
 	    	   data-lightbox="x"
 	    	   data-title="{{ $imageName }}"
 	    	   data-alt="{{ $imageName }}">
 		    	
 		    	<img class="gallery-image-thumb"
-		    		 loading="lazy"
 			    	 alt="{{ $imageName }}"
 		    	
-		    		 {{ if (eq .MediaType.SubType "gif") }}
-			    		src="{{ .Permalink }}"
-		    		 {{ else }}
-		    			{{ $thumb := .Fill "288x288 q75" }}
+					 {{/* Load first 20 images eagerly (above fold on FullHD) */}}
+		    		 loading="{{ cond (gt $image_index 20) "lazy" "eager" }}"
+		    		 
+		    		 {{/* .Fill not supported for GIFs, use the image itself */}}
+		    		 {{- if (eq $image.MediaType.SubType "gif") -}}
+			    		src="{{ $image.Permalink }}"
+		    		 {{- else -}}
+		    			{{- $thumb := $image.Fill "288x288 q75" -}}
 			    		src="{{ $thumb.Permalink }}"
-		    		 {{ end }}/>
+		    		 {{- end -}}/>
       		</a>
 	    {{ end }}
 	{{ end }}

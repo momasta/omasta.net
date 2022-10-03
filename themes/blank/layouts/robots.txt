@@ -1,0 +1,6 @@
+User-agent: *
+
+{{ range $.Site.Home.AllTranslations }}
+Sitemap: {{ .Permalink }}
+{{ end }}
+

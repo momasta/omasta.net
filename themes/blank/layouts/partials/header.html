@@ -38,7 +38,7 @@
 					
 		{{- $currentPage := . -}}
 		{{ with .Site.Menus.main }}
-		 <nav>
+		 <nav aria-label="Main">
 			 <ul>
 				 {{ range . }}
 				 <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
