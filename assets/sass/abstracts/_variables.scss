@@ -32,7 +32,7 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 	
 	--color-brand-bg: #bcd8e9; // lighten color-brand, 44%
 	
-	--color-site-bg: var(--color-grey-light);
+	--color-site-bg: var(--color-grey-light); // Update manually in baseof.html (script)
 	--color-content-bg: var(--color-white-bg);
 }
 
@@ -42,7 +42,7 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 	
 	--color-brand-bg: #204a64; // darken color-brand
 		
-	--color-site-bg: var(--color-black);
+	--color-site-bg: var(--color-black); // Update manually in baseof.html (script)
 	--color-content-bg: var(--color-black-bg);
 }
 

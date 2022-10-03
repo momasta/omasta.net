@@ -34,7 +34,7 @@
 		}
 	</style>
 	
-	<!-- Site Info -->
+	<!-- Site Information -->
 	
 	<title>
 		{{ if not .IsHome }}
@@ -94,6 +94,9 @@
 	<script>
 		// From https://codepen.io/MrGrigri/details/XQmWBv, modified
 		
+		const themeColorLight = '#eeeeee';
+		const themeColorDark = '#000000';
+		
 		const themePreference = () => {
 			let supports = false;
 			let theme = undefined;
@@ -127,33 +130,46 @@
 			const userThemePreference = themePreference();
 			const toggleThemeLight = document.querySelector('.toggle-theme-light');
 			const toggleThemeDark = document.querySelector('.toggle-theme-dark');
+			const metaThemeColor = document.querySelectorAll('meta[name="theme-color"]');
+				
+			const setThemeDark = () => {
+				html.classList.add('theme-dark');
+				html.classList.remove('theme-light');
+				
+				metaThemeColor.forEach(function (tag) {
+					tag.setAttribute('content', themeColorDark);
+				});
+			}
+			
+			const setThemeLight = () => {
+				html.classList.remove('theme-dark');
+				html.classList.add('theme-light');
+				
+				metaThemeColor.forEach(function (tag) {
+					tag.setAttribute('content', themeColorLight);
+				});
+			}
 				
 			const setTheme = () => {
 				switch(userThemePreference.theme) {
-				case 'theme-dark':
-					html.classList.add('theme-dark');
-					html.classList.remove('theme-light');
-					break;
-				case 'theme-light':
-					html.classList.remove('theme-dark');
-					html.classList.add('theme-light');
-					break;
+					case 'theme-dark':
+						setThemeDark();
+						break;
+					case 'theme-light':
+						setThemeLight();
+						break;
 				}
 			}
 			
 			setTheme();
 			
 			toggleThemeDark.addEventListener('click', e => {
-		        e.preventDefault();
-				html.classList.add('theme-dark');
-				html.classList.remove('theme-light');
+				setThemeDark();
 				localStorage.setItem('theme', 'theme-dark');
 			}, false);
 				
 			toggleThemeLight.addEventListener('click', e => {
-				e.preventDefault();
-				html.classList.remove('theme-dark');
-				html.classList.add('theme-light');
+				setThemeLight();
 				localStorage.setItem('theme', 'theme-light');
 			}, false);
 		}, false);
