@@ -1,0 +1,12 @@
+#middle {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+@mixin middle-medium {
+	#middle {
+		flex-direction: row;
+	}
+}
+

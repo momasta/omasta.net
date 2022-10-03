@@ -10,9 +10,17 @@
 
 	<div id="gallery-filter">
 		<form action="#" id="gallery-filter-form">
-			<input type="search" placeholder="Filter…" id="gallery-filter-input"
-				   autocomplete="off" autocapitalize="off" autofocus>
-			<input type="submit" value="Filter" tabindex="-1" id="gallery-filter-submit">
+			<input type="search"
+				   placeholder="Filter…"
+				   id="gallery-filter-input"
+				   autocomplete="off"
+				   autocapitalize="off"
+				   autofocus>
+				   
+			<input type="submit"
+				   value="Filter"
+				   tabindex="-1"
+				   id="gallery-filter-submit">
 		</form>
 	</div>
 	
@@ -20,24 +28,29 @@
 	    {{ range . }} 
 	    	{{ $imageName := (.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr }} 
 	    	
-	    	<a href="{{ .Permalink }}" class="gallery-image state-visible" data-lightbox="x"
-	    	   data-title="{{ $imageName }}" data-alt="{{ $imageName }}">
-	 
-	 			{{/* todo Make this condition inline if possible */}}
-				{{ if (eq .MediaType.SubType "gif") }}
-			    	<img src="{{ .Permalink }}" class="gallery-image-thumb" loading="lazy"
-			    		alt="{{ $imageName }}" />
-		    	{{ else }}
-		    		{{ $thumb := .Fill "288x288 q75" }}
-			    	<img src="{{ $thumb.Permalink }}" class="gallery-image-thumb" loading="lazy"
-		    			 alt="{{ $imageName }}" />
-		    	{{ end }}
+	    	<a href="{{ .Permalink }}"
+	    	   class="gallery-image state-visible"
+	    	   data-lightbox="x"
+	    	   data-title="{{ $imageName }}"
+	    	   data-alt="{{ $imageName }}">
+		    	
+		    	<img class="gallery-image-thumb"
+		    		 loading="lazy"
+			    	 alt="{{ $imageName }}"
+		    	
+		    		 {{ if (eq .MediaType.SubType "gif") }}
+			    		src="{{ .Permalink }}"
+		    		 {{ else }}
+		    			{{ $thumb := .Fill "288x288 q75" }}
+			    		src="{{ $thumb.Permalink }}"
+		    		 {{ end }}/>
       		</a>
 	    {{ end }}
 	{{ end }}
 </div>
 
 <link rel="stylesheet" href="/css/lightbox.min.css">
+
 <script src="/js/jquery-3.6.1.min.js"></script>
 <script src="/js/lightbox.min.js"></script>
 <script src="{{ print "/js/lightbox-options.js?" now.Unix }}"></script>

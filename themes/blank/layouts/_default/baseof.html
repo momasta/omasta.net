@@ -3,8 +3,9 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<!-- Perform this before rendering page to prevent white flashes -->
+	<!-- Perform before rendering page -->
 	<script>
 		const html = document.documentElement;
 		const hasLocalStorage = localStorage.getItem('theme');
@@ -14,10 +15,14 @@
 		}
 	</script>
 	
-	<!-- Basic styling for dark theme, will be overridden by CSS -->
+	<!-- Critical CSS -->
 	<style>
 		html.theme-dark {
 			background-color: #000;
+		}
+		
+		.toggle-theme-light {
+			display: none;
 		}
 		
 		html.theme-dark .card {
@@ -29,38 +34,54 @@
 		}
 	</style>
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Site Info -->
+	
+	<title>
+		{{ if not .IsHome }}
+			{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}
+		{{ end }}
+		{{ .Site.Title }}
+	</title>
+	
+	{{ with .Site.Params.description }}
+		<meta name="description" content="{{ . }}">
+	{{ end }}
+	
+	{{ with .Site.Params.author }}
+		<meta name="author" content="{{ . }}">
+	{{ end }}
+	
+	{{ if .Keywords }}
+  		{{ with .Keywords }}
+  			<meta name="keywords"
+  				  content="{{ range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">
+  		{{ end }}
+    {{ end }}
 
-	{{/* todo Use Hugo-native properties for OG tags */}}
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta property="og:title" content="Marek Omasta">
-	<meta property="og:type" content="website">
-	<meta property="og:description" content="My personal website">
-	<meta property="og:image" content="https://marek.omasta.net/images/profile-picture-og-2.jpg">
-	<meta property="og:url" content="https://marek.omasta.net/">
-
-	{{/* todo Use Hugo-native properties for icons */}}
+	<!-- Shortcut Icons -->
 	<link rel="icon" href="/images/favicon.jpg" sizes="32x32">
 	<link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
 	<link rel="icon" href="/images/favicon-192.jpg">
 	<link rel="apple-touch-icon-precomposed" href="/images/favicon-180.jpg">
 
-	<title>{{ if .IsHome }}{{ else }}{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}{{ end }}{{ .Site.Title }}</title>
-	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-	{{ with .OutputFormats.Get "RSS" -}}
-		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
-	{{- end }}
-	{{ if .Keywords }}
-  		{{ with .Keywords }}
-  			<meta name="keywords" content="{{ range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">
-  		{{ end }}
-    {{ end }}
-
+	<!-- Stylesheet -->
 	{{ $main_options := (dict "targetPath" "css/site.css" "outputStyle" "compressed") }}
 	{{ $main_template := resources.Get "sass/main.scss" }}
 	{{ $main_style := $main_template | resources.ExecuteAsTemplate "main_parsed.scss" . | toCSS $main_options | resources.Minify }}
 	<link rel="stylesheet" href="{{ print $main_style.RelPermalink "?" now.Unix }}">
+		
+	<!-- Apple-Specific Meta Tags -->
+	<meta name="theme-color" content="#eeeeee" media="(prefers-color-scheme: light)">
+  	<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- OG Tags -->
+	{{ template "_internal/opengraph.html" . }}
+	
+	<!-- RSS -->
+	{{ with .OutputFormats.Get "RSS" -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{- end }}
 </head>
 
 <body{{ with .Type }} class="{{ . }}" {{ end }} ondragstart="return false;" ondrop="return false;" draggable="false">
@@ -69,7 +90,7 @@
 		{{ partial "footer" . }}
 	</div>
 	
-	{{/* Dark mode handling, integral part, don't move to a file */}}
+	<!-- Dark mode handling, integral part -->
 	<script>
 		// From https://codepen.io/MrGrigri/details/XQmWBv, modified
 		

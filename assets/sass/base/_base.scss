@@ -28,6 +28,12 @@ body {
 	margin: 16px;
 }
 
+@mixin body-medium {
+	body {
+		margin: 32px auto;
+	}
+}
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -43,6 +49,18 @@ body {
 // Custom Resets
 :focus {
 	outline: none;
+}
+
+// Don't let the user select text in these
+header,
+footer,
+nav,
+ul.links,
+.gallery,
+h1,
+h2,
+h3 {
+	@include no-interaction;
 }
 
 /**

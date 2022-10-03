@@ -52,3 +52,9 @@ div.card {
 		justify-content: space-between;
 	}
 }
+
+@mixin card-medium {
+	header div.card {
+		flex-wrap: nowrap;
+	}
+}

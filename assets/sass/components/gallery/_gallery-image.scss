@@ -58,3 +58,10 @@
 		transition: transform $gallery-transition-delay $timing-apple 0ms, opacity 0s $timing-apple;
 	}
 }
+
+@mixin gallery-image-middle {
+	.gallery-image {
+		width: 25%;
+		max-width: 25%;
+	}
+}

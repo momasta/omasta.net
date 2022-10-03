@@ -1,4 +1,4 @@
-a.icon {
+.icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -22,7 +22,9 @@ a.icon {
 	}
 	
 	.top-bar & {
-		position: relative;
-		top: -1px; // Visual centering
+		svg {
+			position: relative;
+			top: -1px; // Visual centering
+		}
 	}
 }

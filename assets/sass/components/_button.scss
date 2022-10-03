@@ -1,3 +1,27 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
+button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	padding: 0;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 48px;
+	min-height: 48px;
+	transition: background-color 200ms $timing-apple;
+
+	&.style-plain {
+		border: none;
+		background-color: transparent;
+		
+		&:focus {
+			background-color: var(--color-focus);
+		}
+	}
+	
+	&.size-small {
+		.icon {
+			height: 25px;
+		}
+	}
+}

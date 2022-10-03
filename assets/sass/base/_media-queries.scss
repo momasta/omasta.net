@@ -1,0 +1,9 @@
+@media screen and (min-width: $bp-medium) {
+	@include card-medium;
+	@include body-medium;
+	@include nav-medium;
+	@include middle-medium;
+	@include aside-medium;
+	@include content-medium;
+	@include gallery-image-middle;
+}

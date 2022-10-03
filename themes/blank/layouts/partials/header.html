@@ -1,12 +1,20 @@
 <header>
 	<div class="top-bar">
-		<a class="icon toggle-theme-dark" href="#" title="{{ i18n "switch-theme-dark" }}">
-			{{ readFile "themes/blank/static/images/icons/moon.svg" | safeHTML }}
-		</a>
+		<button class="style-plain size-small toggle-theme-dark"
+				title="{{ i18n "switch-theme-dark" }}"
+				type="button">
+			<span class="icon">
+				{{ readFile "themes/blank/static/images/icons/moon.svg" | safeHTML }}
+			</span>
+		</button>
 		
-		<a class="icon toggle-theme-light" href="#" title="{{ i18n "switch-theme-light" }}">
-			{{ readFile "themes/blank/static/images/icons/sun.svg" | safeHTML }}
-		</a>
+		<button class="style-plain size-small toggle-theme-light"
+				title="{{ i18n "switch-theme-light" }}"
+				type="button">
+			<span class="icon">
+				{{ readFile "themes/blank/static/images/icons/sun.svg" | safeHTML }}
+			</span>
+		</button>
 	
 		{{ if .Site.IsMultiLingual }}
 			{{ range $.Translations }}

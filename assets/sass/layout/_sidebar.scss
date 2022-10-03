@@ -4,3 +4,9 @@ aside {
 	min-width: 212px;
 }
 
+@mixin aside-medium {
+	main + aside {
+		margin-left: 16px;
+	}
+}
+
