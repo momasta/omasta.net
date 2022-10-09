@@ -24,6 +24,9 @@ other = 'Zatím jsem žádné nezveřejnil.'
 [read-more]
 other = 'Číst dále…'
 
+[filter]
+other = 'Filtr…'
+
 [back]
 other = 'Zpět'
 
@@ -35,6 +38,21 @@ other = 'Přepnout na tmavý motiv'
 
 [switch-theme-light]
 other = 'Přepnout na světlý motiv'
+
+[close]
+other = 'Zavřít'
+
+[zoom]
+other = 'Přiblížit/Oddálit'
+
+[previous]
+other = 'Předchozí'
+
+[next]
+other = 'Další'
+
+[psw-error]
+other = 'Obrázek se nepodařilo načíst'
 
 #[]
 #other = ''

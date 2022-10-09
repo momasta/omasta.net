@@ -19,7 +19,7 @@ defaultContentLanguage = 'en'
 
 [languages]
   [languages.cs]
-    contentDir = 'content/cz'
+    contentDir = 'content/cs'
     languageName = 'Čeština'
     languageCode = "cs"
     images = ['images/profile-picture-og-2.jpg']

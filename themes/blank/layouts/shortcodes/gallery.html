@@ -1,4 +1,4 @@
-{{/* https://www.codeproject.com/Articles/5276331/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2 */}}
+{{/* Based on https://www.codeproject.com/Articles/5276331/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2 */}}
 
 {{/* Optional parameter to specify an asset subdirectory */}}
 {{- $param0 := default "" (.Get 0) -}}
@@ -12,7 +12,7 @@
 	<div class="gallery-filter">
 		<form action="#" class="gallery-filter-form">
 			<input type="search"
-				   placeholder="Filter…"
+				   placeholder="{{ i18n "filter" }}"
 				   class="gallery-filter-input"
 				   autocomplete="off"
 				   autocapitalize="off"
@@ -64,7 +64,12 @@
 	  children: 'a',
 	  showHideAnimationType: 'zoom',
 	  pswpModule: () => import('/js/photoswipe.esm.min.js'),
-	  preload: [1, 4]
+	  preload: [1, 4],
+	  closeTitle: {{ i18n "close" }},
+	  zoomTitle: {{ i18n "zoom" }},
+	  arrowPrevTitle: {{ i18n "previous" }},
+	  arrowNextTitle: {{ i18n "next" }},
+	  errorMsg: {{ i18n "psw-error" }}
 	});
 	lightbox.init();
 </script>
