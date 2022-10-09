@@ -6,6 +6,7 @@ loadJQuery = false
 timeout = "180s"
 summaryLength = 18
 enableEmoji=true
+disableKinds = ['taxonomy', 'term']
 
 [minify]
   minifyOutput = true
@@ -32,7 +33,7 @@ defaultContentLanguage = 'en'
       weight = 0
     [[languages.cs.menu.main]]
       name = 'Memes'
-      url = '/memes'
+      url = '/cs/memes'
       weight = 0
   [languages.en]
     contentDir = 'content/en'
