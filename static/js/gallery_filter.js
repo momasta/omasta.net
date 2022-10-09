@@ -1,8 +1,8 @@
 const hideTimeout = 200; // Animation delay to hide gallery images (keep in sync with $gallery-transition-delay)
 
 let lastFilterQuery = '';
-let galleryFilterForm = document.getElementById('gallery-filter-form');
-let galleryFilterInput = document.getElementById('gallery-filter-input');
+let galleryFilterForm = document.querySelector('.gallery form');
+let galleryFilterInput = document.querySelector('.gallery-filter-input');
 let images = document.querySelectorAll('.gallery-image');
 
 function show(element) {

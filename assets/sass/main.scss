@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+// Based on Sass Boilerplate https://github.com/KittyGiraudel/sass-boilerplate
+
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
@@ -10,10 +12,10 @@
 @import
   'vendors/normalize';
 
-// 3. Base stuff
+// 3. Base
 @import
-  'base/animations',
   'base/base',
+  'base/animations',
   'base/fonts',
   'base/helpers',
   'base/typography';
@@ -33,10 +35,9 @@
 // 5. Components
 @import
   'components/button',
-  'components/gallery/gallery',
-  'components/gallery/gallery-image',
-  'components/gallery/gallery-filter',
+  'components/gallery',
   'components/icon',
+  'components/input',
   'components/links',
   'components/pagination',
   'components/post-preview',
@@ -49,7 +50,8 @@
 // 7. Themes
 @import
   'themes/default';
-  
+
+// 3. Base again (place at the end)
 @import
   'base/media-queries';
 

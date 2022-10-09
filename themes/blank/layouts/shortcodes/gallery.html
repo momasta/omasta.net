@@ -9,11 +9,11 @@
 <div class="gallery">
 	{{- $images := (resources.Match $path) -}}
 
-	<div id="gallery-filter">
-		<form action="#" id="gallery-filter-form">
+	<div class="gallery-filter">
+		<form action="#" class="gallery-filter-form">
 			<input type="search"
 				   placeholder="Filter…"
-				   id="gallery-filter-input"
+				   class="gallery-filter-input"
 				   autocomplete="off"
 				   autocapitalize="off"
 				   autofocus>
@@ -21,7 +21,7 @@
 			<input type="submit"
 				   value="Filter"
 				   tabindex="-1"
-				   id="gallery-filter-submit">
+				   class="gallery-filter-submit">
 		</form>
 	</div>
 	

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-gb" }}">
+<html lang="{{ .Site.LanguageCode | default "en-gb" }}" class="theme-light">
 
 <head>
 	<meta charset="UTF-8">
@@ -21,7 +21,11 @@
 			background-color: #000;
 		}
 		
-		.toggle-theme-light {
+		html.theme-light .toggle-theme-light {
+			display: none;
+		}
+		
+		html.theme-dark .toggle-theme-dark {
 			display: none;
 		}
 		

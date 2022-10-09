@@ -1,0 +1,29 @@
+input[type=text],
+input[type=search] {
+	outline: none;
+	font-size: 16px;
+	background: transparent;
+	transition: border-color 200ms $timing-apple;
+	color: var(--color--text);
+	padding: 3px 0;
+	border: solid var(--color-grey-dark);
+	border-width: 0 0 1px 0;
+	width: 100%;
+	
+	&:focus {
+		outline: none;
+		border-color: transparent;
+	}
+}
+
+input[type=submit] {
+	display: none;
+	font-size: 16px;
+}
+
+@mixin input-medium {
+	input[type=text],
+	input[type=search] {
+		width: 210px;
+	}
+}
