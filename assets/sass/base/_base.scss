@@ -19,18 +19,20 @@ html {
 }
 
 body {
-	margin: 24px 16px;
 	background-color: var(--color-site-bg);
-	background-attachment: fixed;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
 	margin: 16px;
+	min-height: 100vh;
+	//background-image: url('');
+	//background-attachment: fixed;
+	//background-position: center center;
+	//background-repeat: no-repeat;
+	//background-size: 100% auto;
 }
 
 @mixin body-medium {
 	body {
-		margin: 32px auto;
+		margin: 32px auto 8px;
+		min-height: auto;
 	}
 }
 
