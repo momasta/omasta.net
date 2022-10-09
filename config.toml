@@ -5,7 +5,8 @@ enableRobotsTXT = true
 loadJQuery = false
 timeout = "180s"
 summaryLength = 18
-enableEmoji=true
+
+# Disable Categories and Tags pages
 disableKinds = ['taxonomy', 'term']
 
 [minify]
