@@ -16,6 +16,11 @@ disableKinds = ['taxonomy', 'term']
 	  	keepWhitespace = false
     [minify.tdewolff.xml]
       keepWhitespace = false
+      
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 defaultContentLanguage = 'en'
 

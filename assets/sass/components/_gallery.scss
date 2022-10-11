@@ -43,7 +43,7 @@ $gallery-transition-delay: 200ms;
 		transition: opacity $gallery-transition-delay $timing-apple;
 	}
 		
-	&:focus {
+	&:focus-visible {
 		&::after {
 			opacity: 1;
 			visibility: visible;
@@ -51,7 +51,7 @@ $gallery-transition-delay: 200ms;
 	}
 		
 	&:hover,
-	&:focus {
+	&:focus-visible {
 		.gallery-image-thumb {
 			transform: scale(1.03);
 		}

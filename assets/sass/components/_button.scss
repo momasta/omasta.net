@@ -14,7 +14,7 @@ button {
 		border: none;
 		background-color: transparent;
 		
-		&:focus {
+		&:focus-visible {
 			background-color: var(--color-focus);
 		}
 	}

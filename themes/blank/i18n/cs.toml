@@ -6,6 +6,15 @@ other = 'Memes'
 [contact-me]
 other = 'Kontakt'
 
+[more-profiles]
+other = 'Další profily'
+
+[email]
+other = 'E-mail'
+
+[more-content]
+other = 'Další obsah'
+
 [my-content]
 other = 'Můj obsah'
 

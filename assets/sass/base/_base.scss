@@ -79,7 +79,7 @@ a {
 		text-decoration: underline;
 	}  
 
-	&:focus {
+	&:focus-visible {
 		background-color: var(--color-focus);
 	}
 	
