@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - uses: actions/checkout@main
+    - uses: actions/checkout@v1
       with:
         submodules: true
 
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@main
+      uses: peaceiris/actions-hugo@2.5.0
       with:
         hugo-version: '0.104.3'
 
@@ -25,7 +25,7 @@ jobs:
       run: hugo --minify
 
     - name: Deploy
-      uses: SamKirkland/FTP-Deploy-Action@master
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
         ftp-server:  omasta.net
         ftp-username: w300076
