@@ -28,8 +28,8 @@ jobs:
     - name: Deploy
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        ftp-server: omasta.net
-        ftp-username: w300076
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        server: omasta.net
+        username: w300076
+        password: ${{ secrets.FTP_PASSWORD }}
         local-dir: public/
         server-dir: www/subdom/test/
