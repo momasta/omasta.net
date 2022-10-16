@@ -17,7 +17,7 @@ jobs:
         submodules: true
 
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@2.5.0
+      uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: '0.104.3'
 
@@ -25,9 +25,9 @@ jobs:
       run: hugo --minify
 
     - name: Deploy
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
-        ftp-server:  omasta.net
+        ftp-server: omasta.net
         ftp-username: w300076
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         local-dir: public/
