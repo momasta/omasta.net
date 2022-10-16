@@ -41,6 +41,11 @@ layout: simple
 			Unsplash Photo Community | Marek Omasta (@m_omasta)
 		</a>
 	</li>
+	<li>
+		<a href="https://youtube.com/user/marekomasta/" target="_blank">
+			YouTube - Marek Omasta
+		</a>
+	</li>
 </ul>
   
 ### Shared Albums on iCloud
