@@ -25,6 +25,9 @@ jobs:
     - name: Build
       run: hugo --minify --baseURL "https://test.omasta.net/"
 
+    - name: Set file permissions
+      run: chmod -R +rx .
+
     - name: Deploy
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
