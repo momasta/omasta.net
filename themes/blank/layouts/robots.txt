@@ -4,3 +4,5 @@ User-agent: *
 Sitemap: {{ .Permalink }}
 {{ end }}
 
+Disallow: /404
+Disallow: /cs/404

@@ -19,6 +19,11 @@ layout: simple
 		</a>
 	</li> 
 	<li>
+		<a href="https://bandzone.cz/fan/momasta" target="_blank">
+			Bandzone.cz | Marek Omasta
+		</a>
+	</li> 
+	<li>
 		<a href="https://csfd.cz/uzivatel/827068-m-omasta/" target="_blank">
 			ČSFD.cz | m.omasta
 		</a>
