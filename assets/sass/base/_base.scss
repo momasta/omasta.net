@@ -88,8 +88,7 @@ a {
 	}
 }
 
-@media (prefers-color-scheme: light),
-(prefers-color-scheme: no-preference) {
+@media (prefers-color-scheme: light) {
 	html {
 		@include includeLight;
 	}
