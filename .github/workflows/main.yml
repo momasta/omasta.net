@@ -23,7 +23,7 @@ jobs:
         extended: true
 
     - name: Build
-      run: hugo --minify --baseURL "https://test.omasta.net/"
+      run: hugo --minify
 
     - name: Set file permissions
       run: chmod -R 755 .
@@ -35,4 +35,4 @@ jobs:
         username: w300076
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: public/
-        server-dir: www/subdom/test/
+        server-dir: www/subdom/marek/
