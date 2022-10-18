@@ -46,7 +46,7 @@
 		    		 {{- if (eq $image.MediaType.SubType "gif") -}}
 			    		src="{{ $image.Permalink }}"
 		    		 {{- else -}}
-		    			{{- $thumb := $image.Resize "288x q75" -}}
+		    			{{- $thumb := $image.Resize "288x webp q70" -}}
 			    		src="{{ $thumb.Permalink }}"
 		    		 {{- end -}}/>
       		</a>
