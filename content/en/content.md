@@ -72,9 +72,14 @@ layout: simple
 	</li> 
 	<li>
 		<a href="https://www.icloud.com/sharedalbum/#B0tGRMtznv6Ui6" target="_blank">
-			Pasivně agresivní cedule
+			Passive aggressive signs (in Czech)
 		</a>
 	</li>
+	<li>
+		<a href="https://www.icloud.com/sharedalbum/#B0t52plgjJR3F6w" target="_blank">
+			Ugly Places in Prague
+		</a>
+	</li> 
 </ul>
   
 ### Quizlet

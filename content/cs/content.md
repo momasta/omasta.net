@@ -62,14 +62,19 @@ layout: simple
 	</li> 
 	<li>
 		<a href="https://www.icloud.com/sharedalbum/#B0t5aVbMKG88kr6" target="_blank">
-			Bizarre Things
+			Bizárky
 		</a>
 	</li> 
 	<li>
 		<a href="https://www.icloud.com/sharedalbum/#B0t5M7GFPGR8wDe" target="_blank">
-			macOS Evolution
+			Historie macOS
 		</a>
 	</li> 
+	<li>
+		<a href="https://www.icloud.com/sharedalbum/#B0t52plgjJR3F6w" target="_blank">
+			Hnusná místa v Praze
+		</a>
+	</li>
 	<li>
 		<a href="https://www.icloud.com/sharedalbum/#B0tGRMtznv6Ui6" target="_blank">
 			Pasivně agresivní cedule
