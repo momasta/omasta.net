@@ -55,8 +55,8 @@
 </div>
 
 {{ $photoswipeCSS := resources.Get "css/photoswipe.css" | resources.Minify }}
-{{ $photoswipeJS := resources.Get "js/photoswipe.esm.min.js" }}
-{{ $photoswipeLightboxJS := resources.Get "js/photoswipe-lightbox.esm.min.js" }}
+{{ $photoswipeJS := resources.Get "js/photoswipe.esm.min.js" | resources.Minify }}
+{{ $photoswipeLightboxJS := resources.Get "js/photoswipe-lightbox.esm.min.js" | resources.Minify }}
 {{ $galleryFilterJS := resources.Get "js/gallery_filter.js" | resources.Minify }}
 
 <!-- Gallery Filter -->
