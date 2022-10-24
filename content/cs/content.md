@@ -148,11 +148,13 @@ My sets of flashcards collected from dictionaries, the Web and other people's Qu
 </ul>
 
 #### German
-<li>
-	<a href="https://quizlet.com/594705397/german-czechenglish-flash-cards/" target="_blank">
-		German → Czech/English 
-	</a>
-</li>
+<ul>
+	<li>
+		<a href="https://quizlet.com/594705397/german-czechenglish-flash-cards/" target="_blank">
+			German → Czech/English 
+		</a>
+	</li>
+</ul>
 
 #### Russian
 <ul>

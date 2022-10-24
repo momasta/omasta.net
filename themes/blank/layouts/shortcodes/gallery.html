@@ -54,16 +54,23 @@
 	{{ end }}
 </div>
 
-<link rel="stylesheet" href="/css/photoswipe.css">
+{{ $photoswipeCSS := resources.Get "css/photoswipe.css" | resources.Minify }}
+{{ $photoswipeJS := resources.Get "js/photoswipe.esm.min.js" }}
+{{ $photoswipeLightboxJS := resources.Get "js/photoswipe-lightbox.esm.min.js" }}
+{{ $galleryFilterJS := resources.Get "js/gallery_filter.js" | resources.Minify }}
 
-<script src="{{ print "/js/gallery_filter.js?" now.Unix }}"></script>
+<!-- Gallery Filter -->
+<script src="{{ print $galleryFilterJS.RelPermalink "?" now.Unix }}"></script>
+
+<!-- Photoswipe -->
+<link rel="stylesheet" href="{{ $photoswipeCSS.RelPermalink }}">
 <script type="module">
-	import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.min.js';
+	import PhotoSwipeLightbox from '{{ $photoswipeLightboxJS.RelPermalink }}';
 	const lightbox = new PhotoSwipeLightbox({
 	  gallery: '.gallery',
 	  children: 'a',
 	  showHideAnimationType: 'zoom',
-	  pswpModule: () => import('/js/photoswipe.esm.min.js'),
+	  pswpModule: () => import('{{ $photoswipeJS.RelPermalink }}'),
 	  preload: [1, 4],
 	  closeTitle: {{ i18n "close" }},
 	  zoomTitle: {{ i18n "zoom" }},
