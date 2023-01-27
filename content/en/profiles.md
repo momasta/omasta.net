@@ -59,11 +59,6 @@ layout: simple
 		</a>
 	</li> 
 	<li>
-		<a href="https://instagram.com/m.omasta/" target="_blank">
-			Instagram • Marek Omasta (@m.omasta)
-		</a>
-	</li> 
-	<li>
 		<a href="https://last.fm/user/m_omasta" target="_blank">
 			Last.fm | m_omasta’s Music Profile
 		</a>
@@ -119,7 +114,7 @@ layout: simple
 		</a>
 	</li>
 	<li>
-		<a href="https://youtube.com/user/marekomasta/" target="_blank">
+		<a href="https://youtube.com/@m.omasta" target="_blank">
 			YouTube - Marek Omasta
 		</a>
 	</li>
