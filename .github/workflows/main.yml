@@ -31,7 +31,7 @@ jobs:
         extended: true
 
     - name: Build
-      run: hugo --minify
+      run: hugo --minify --cleanDestinationDir --gc --ignoreCache
 
     - name: Set file permissions
       run: chmod -R 755 .
