@@ -77,12 +77,7 @@ layout: simple
 		<a href="https://m.me/omastik" target="_blank">
 			Messenger: Marek Omasta
 		</a>
-	</li> 
-	<li>
-		<a href="https://omasta.mojeid.cz/" target="_blank">
-			mojeID | Marek Omasta
-		</a>
-	</li> 
+	</li>
 	<li>
 		<a href="https://www.myheritage.com/site-21258912/omasta" target="_blank">
 			MyHeritage - Omasta Web Site
