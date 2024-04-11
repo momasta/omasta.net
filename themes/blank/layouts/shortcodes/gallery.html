@@ -28,8 +28,9 @@
 	{{ with $images }}
 	    {{ range $image_index, $image := . }} 
 	    	{{ $imageName := ($image.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr }} 
+		{{ $imageURL := $image.Permalink | safeURL }}
 	    	
-	    	<a href="{{ $image.Permalink }}"
+	    	<a href="{{ $imageURL }}"
 	    	   class="gallery-image state-visible"
 	    	   data-pswp-width="{{ .Width }}"
 	    	   data-pswp-height="{{ .Height }}"
@@ -44,10 +45,10 @@
 		    		 
 		    		 {{/* .Resize not supported for GIFs, use the image itself */}}
 		    		 {{- if (eq $image.MediaType.SubType "gif") -}}
-			    		src="{{ $image.Permalink }}"
+			    		src="{{ $imageURL }}"
 		    		 {{- else -}}
 		    			{{- $thumb := $image.Resize "288x webp q70" -}}
-			    		src="{{ $thumb.Permalink }}"
+			    		src="{{ $imageURL }}"
 		    		 {{- end -}}/>
       		</a>
 	    {{ end }}

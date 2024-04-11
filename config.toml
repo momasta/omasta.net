@@ -12,8 +12,8 @@ disableKinds = ['taxonomy', 'term']
 [minify]
   minifyOutput = true
   [minify.tdewolff]
-  	[minify.tdewolff.html]
-	  	keepWhitespace = false
+    [minify.tdewolff.html]
+      keepWhitespace = false
     [minify.tdewolff.xml]
       keepWhitespace = false
       
@@ -29,9 +29,10 @@ defaultContentLanguage = 'en'
     contentDir = 'content/cs'
     languageName = 'Čeština'
     languageCode = "cs"
-    images = ['images/profile-picture-og-2.jpg']
-    description = "Moje osobní stránka, archiv memes, odkazy na moje profily a obsah online"
     weight = 2
+      [languages.cs.params]
+          images = ['images/profile-picture-og-2.jpg']
+          description = "Moje osobní stránka, archiv memes, odkazy na moje profily a obsah online"
     [languages.cs.menu]
     [[languages.cs.menu.main]]
       name = 'Domů'
@@ -45,9 +46,10 @@ defaultContentLanguage = 'en'
     contentDir = 'content/en'
     languageName = 'English'
     languageCode = "en-gb"
-    images = ['images/profile-picture-og-2.jpg']
-	description = "My personal website, meme archive, links to my profiles and my online content"
     weight = 1
+    [languages.en.params]
+      images = ['images/profile-picture-og-2.jpg']
+      description = "My personal website, meme archive, links to my profiles and my online content"
     [languages.en.menu]
     [[languages.en.menu.main]]
       name = 'Home'
