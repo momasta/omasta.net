@@ -4,8 +4,6 @@ on:
   push:
     branches:
     - '**'
-  #schedule:
-    #- cron:  '0 8 * * *'
   workflow_dispatch:
     inputs:
       logLevel:
@@ -20,14 +18,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v4
       with:
         submodules: true
 
+    - name: Install convmv
+      run: sudo apt-get install -y convmv
+    
+    - name: Normalise filenames
+      run: convmv -r -f utf8 -t utf8 --nfc --notest .
+
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
+      uses: peaceiris/actions-hugo@v3
       with:
-        hugo-version: '0.104.3'
+        hugo-version: 'latest'
         extended: true
 
     - name: Build
@@ -37,7 +41,7 @@ jobs:
       run: chmod -R 755 .
 
     - name: Deploy
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: omasta.net
         username: w300076
