@@ -6,11 +6,7 @@
 		<main>
 			<div class="card">
 				<article>
-					<h2>{{ .Title }}</h2>
-					
-					<ul class="links direction-row size-small">
-						<li><a href="..">{{ i18n "back" }}</a></li>
-					</ul>
+                    {{ partial "breadcrumb.html" . }}
 					
 					<div class="article-content">
 						{{ .Content }}

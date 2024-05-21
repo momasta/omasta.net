@@ -1,3 +1,4 @@
+ol.links,
 ul.links {
 	list-style: none;
 	padding: 0;
@@ -25,7 +26,8 @@ ul.links {
 	
 	// Directions
 	&.direction-row {
-		li {
+		li,
+        h2 {
 			display: inline-block;
 		}
 	}

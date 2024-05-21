@@ -89,12 +89,8 @@
 </head>
 
 <body{{ with .Type }} class="{{ . }}" {{ end }} ondragstart="return false;" ondrop="return false;" draggable="false">
-	<div id="content">
-		{{ block "main" . }}{{ end }}
-		{{ partial "footer" . }}
-	</div>
-	
-	<!-- Dark mode handling, integral part -->
+
+<!-- Dark mode handling, integral part -->
 	<script>
 		// From https://codepen.io/MrGrigri/details/XQmWBv, modified
 		
@@ -178,5 +174,10 @@
 			}, false);
 		}, false);
 	</script>
+
+	<div id="content">
+		{{ block "main" . }}{{ end }}
+		{{ partial "footer" . }}
+	</div>
 </body>
 </html>

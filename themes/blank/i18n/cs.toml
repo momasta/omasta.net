@@ -39,6 +39,9 @@ other = 'Filtr…'
 [back]
 other = 'Zpět'
 
+[go-back-to]
+other = 'Jít zpět na'
+
 [switch-language]
 other = 'Switch language to English'
 

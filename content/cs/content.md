@@ -151,25 +151,11 @@ My sets of flashcards collected from dictionaries, the Web and other people's Qu
 	</li>
 </ul>
 
-#### Russian
-<ul>
-	<li>
-		<a href="https://quizlet.com/426500375/azbuka-flash-cards/" target="_blank">
-			Azbuka 
-		</a>
-	</li> 
-	<li>
-		<a href="https://quizlet.com/594732292/russian-czech-flash-cards/" target="_blank">
-			Russian → Czech 
-		</a>
-	</li>
-</ul>
-
 #### Writing Systems
 <ul>
 	<li>
 		<a href="https://quizlet.com/426500375/azbuka-flash-cards/" target="_blank">
-			Azbuka 
+			Cyrillic 
 		</a>
 	</li> 
 	<li>
