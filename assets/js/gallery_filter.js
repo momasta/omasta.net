@@ -89,6 +89,7 @@ function keyEventHandler(event) {
     switch (event.key) {
         case "Escape":
             galleryFilterForm.reset();
+            resetGallery();
             break;
         default:
             return;
