@@ -15,12 +15,7 @@ layout: simple
 	</li> 
 	<li>
 		<a href="https://bandcamp.com/m_omasta" target="_blank">
-			Bandcamp | m_omasta's collection
-		</a>
-	</li> 
-	<li>
-		<a href="https://bandzone.cz/fan/momasta" target="_blank">
-			Bandzone.cz | Marek Omasta
+			Bandcamp | m_omasta
 		</a>
 	</li> 
 	<li>
@@ -29,8 +24,8 @@ layout: simple
 		</a>
 	</li> 
 	<li>
-		<a href="https://discordapp.com/users/m.omasta#9371" target="_blank">
-			Discord | m.omasta#9371
+		<a href="https://discordapp.com/users/m.omasta" target="_blank">
+			Discord | m.omasta
 		</a>
 	</li> 
 	<li>
@@ -75,7 +70,7 @@ layout: simple
 	</li> 
 	<li>
 		<a href="https://m.me/omastik" target="_blank">
-			Messenger: Marek Omasta
+			Messenger: omastik
 		</a>
 	</li>
 	<li>

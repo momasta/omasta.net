@@ -20,9 +20,10 @@
 			{{ range $.Translations }}
 				<a title="{{ i18n "switch-language" }}"
 				   href="{{ .Permalink }}"
-				   lang="{{ .Language }}"
 				   hreflang="{{ .Language }}">
-					{{ .Language.LanguageName }}
+					<span lang="{{ .Language }}">
+                        {{ .Language.LanguageName }}
+                    </span>
 				</a>
 			{{ end }}
 		{{ end }}		
