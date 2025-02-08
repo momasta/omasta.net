@@ -16,57 +16,31 @@
 	</script>
 	
 	<!-- Critical CSS -->
-    <style>
+	<style>
         :root {
             color-scheme: light dark;
         }
-
-        html.theme-dark {
-            background-color: #000;
-        }
-
-        html.theme-light .toggle-theme-light {
-            display: none;
-        }
-
-        html.theme-dark .toggle-theme-dark {
-            display: none;
-        }
-
-        html.theme-dark .card {
-            background-color: #222;
-        }
-
-        html.theme-dark .icon svg path {
-            fill: #fdfdfd;
-        }
-
-        html.theme-light .icon svg path {
-            fill: #222;
-        }
-
-        body {
-            font: normal 100% / 1.4 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
-        }
-
-        h2 {
-            margin: 0;
-        }
-
-        a:visited {
-            color: inherit;
-        }
-
-        header div.logo img {
-            width: 45px;
-            height: 64px;
-        }
-
-        div.card {
-            padding: 24px 20px;
-            margin: 8px 0;
-        }
-    </style>
+        
+		html.theme-dark {
+			background-color: #000;
+		}
+		
+		html.theme-light .toggle-theme-light {
+			display: none;
+		}
+		
+		html.theme-dark .toggle-theme-dark {
+			display: none;
+		}
+		
+		html.theme-dark .card {
+			background-color: #222;
+		}
+		
+		a:visited {
+			color: inherit;
+		}
+	</style>
 	
 	<!-- Site Information -->
 	
@@ -140,17 +114,17 @@
 			if (window.matchMedia(`(prefers-color-scheme: dark)`).matches) {
 				theme = hasLocalStorage ? hasLocalStorage : 'theme-dark';
 				supports = true;
-			}
+			};
 			
 			if (window.matchMedia(`(prefers-color-scheme: light)`).matches) {
 				theme = hasLocalStorage ? hasLocalStorage : 'theme-light';
 				supports = true;
-			}
+			};
 			
 			if (window.matchMedia(`(prefers-color-scheme: no-preference)`).matches) {
 				theme = hasLocalStorage ? hasLocalStorage : 'none';
 				supports = true;
-			}
+			};
 			
 			return {supports, theme};
 		}
