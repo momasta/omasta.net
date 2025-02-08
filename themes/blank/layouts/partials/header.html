@@ -16,7 +16,7 @@
 			</span>
 		</button>
 	
-		{{ if .Site.IsMultiLingual }}
+		{{ if hugo.IsMultilingual }}
 			{{ range $.Translations }}
 				<a title="{{ i18n "switch-language" }}"
 				   href="{{ .Permalink }}"

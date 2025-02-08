@@ -1,30 +1,32 @@
 .icon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	transition: opacity 200ms $timing-apple;
-	height: 100%;
-	width: auto;
-	box-sizing: content-box;
-	
-	&:hover {
-		opacity: 0.7;
-	}
-	
-	svg {
-	    width: auto;
-    	height: 100%;
-	
-		path {
-			fill: var(--color-text);
-		}
-	}
-	
-	.top-bar & {
-		svg {
-			position: relative;
-			top: -1px; // Visual centering
-		}
-	}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 200ms $timing-apple;
+  will-change: opacity;
+  transform: translateZ(0);
+  height: 100%;
+  width: auto;
+  box-sizing: content-box;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  svg {
+    width: auto;
+    height: 100%;
+
+    path {
+      fill: var(--color-text);
+    }
+  }
+
+  .top-bar & {
+    svg {
+      position: relative;
+      top: -1px; // Visual centering
+    }
+  }
 }
