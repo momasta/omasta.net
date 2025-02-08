@@ -18,7 +18,7 @@
 	<!-- Critical CSS -->
 	<style>
         :root {
-            color-scheme: light dark;
+            color-scheme: dark light;
         }
         
 		html.theme-dark {
@@ -37,9 +37,35 @@
 			background-color: #222;
 		}
 		
+        html.theme-dark .icon svg path {
+            fill: #fdfdfd;
+        }
+
+        html.theme-light .icon svg path {
+            fill: #222;
+        }
+
+        body {
+            font: normal 100% / 1.4 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
 		a:visited {
 			color: inherit;
 		}
+
+        header div.logo img {
+            width: 45px;
+            height: 64px;
+        }
+
+        div.card {
+            padding: 24px 20px;
+            margin: 8px 0;
+        }
 	</style>
 	
 	<!-- Site Information -->
