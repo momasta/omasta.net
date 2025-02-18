@@ -6,3 +6,5 @@ Sitemap: {{ .Permalink }}
 
 Disallow: /404
 Disallow: /cs/404
+
+Disallow: /images/*_hu_*.*$

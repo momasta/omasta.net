@@ -16,12 +16,14 @@ html {
 	box-sizing: border-box; // Set up a decent box model on the root element
 	overflow-y: scroll;
 	background-color: var(--color-site-bg);
+  transition: background-color 200ms $timing-apple;
 }
 
 body {
 	background-color: var(--color-site-bg);
 	margin: 16px;
 	min-height: 100vh;
+  transition: background-color 200ms $timing-apple;
 	//background-image: url('');
 	//background-attachment: fixed;
 	//background-position: center center;

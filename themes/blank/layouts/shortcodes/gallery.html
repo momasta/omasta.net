@@ -27,7 +27,7 @@
 	
 	{{ with $images }}
 	    {{ range $image_index, $image := . }} 
-	    	{{ $imageName := ($image.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr }} 
+        {{ $imageName := ($image.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr }} 
 		{{ $imageURL := $image.Permalink | safeURL }}
 	    	
 	    	<a href="{{ $imageURL }}"
@@ -48,30 +48,30 @@
 			    		src="{{ $imageURL }}"
 		    		 {{- else -}}
 		    			{{- $thumb := $image.Resize "288x webp q70" -}}
-			    		src="{{ $imageURL }}"
+			    		src="{{ $thumb.Permalink | safeURL }}"
 		    		 {{- end -}}/>
-      		</a>
+            </a>
 	    {{ end }}
 	{{ end }}
 </div>
 
 {{ $photoswipeCSS := resources.Get "css/photoswipe.css" | resources.Minify }}
-{{ $photoswipeJS := resources.Get "js/photoswipe.esm.min.js" | resources.Minify }}
-{{ $photoswipeLightboxJS := resources.Get "js/photoswipe-lightbox.esm.min.js" | resources.Minify }}
+{{ $photoswipeJS := resources.Get "js/photoswipe.esm.min.js" }}
+{{ $photoswipeLightboxJS := resources.Get "js/photoswipe-lightbox.esm.min.js" }}
 {{ $galleryFilterJS := resources.Get "js/gallery_filter.js" | resources.Minify }}
 
 <!-- Gallery Filter -->
 <script src="{{ print $galleryFilterJS.RelPermalink "?" now.Unix }}"></script>
 
 <!-- Photoswipe -->
-<link rel="stylesheet" href="{{ $photoswipeCSS.RelPermalink }}">
+<link rel="stylesheet" href="{{ print $photoswipeCSS.RelPermalink "?" now.Unix }}">
 <script type="module">
-	import PhotoSwipeLightbox from '{{ $photoswipeLightboxJS.RelPermalink }}';
+	import PhotoSwipeLightbox from '{{ print $photoswipeLightboxJS.RelPermalink "?" now.Unix | safe.JSStr }}';
 	const lightbox = new PhotoSwipeLightbox({
 	  gallery: '.gallery',
 	  children: 'a',
 	  showHideAnimationType: 'zoom',
-	  pswpModule: () => import('{{ $photoswipeJS.RelPermalink }}'),
+	  pswpModule: () => import('{{ print $photoswipeJS.RelPermalink "?" now.Unix | safe.JSStr }}'),
 	  preload: [1, 4],
 	  closeTitle: {{ i18n "close" }},
 	  zoomTitle: {{ i18n "zoom" }},
