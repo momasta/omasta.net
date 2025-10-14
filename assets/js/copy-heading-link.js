@@ -7,7 +7,6 @@
 
     for (const anchor of anchors) {
         anchor.addEventListener('click', async (event) => {
-            event.preventDefault();
             const href = anchor.getAttribute('href');
             const id = href && href.startsWith('#') ? href.slice(1) : anchor.closest('h1,h2,h3')?.id;
             if (!id) return;
