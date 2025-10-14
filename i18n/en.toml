@@ -21,6 +21,15 @@ other = 'My Content'
 [posts]
 other = 'Posts'
 
+[tag]
+other = 'Posts tagged #'
+
+[tags]
+other = 'Tags'
+
+[tags-show-all]
+other = 'Show posts tagged'
+
 [latest-posts]
 other = 'Latest Posts'
 
@@ -65,6 +74,21 @@ other = 'Next'
 
 [psw-error]
 other = 'The image cannot be loaded'
+
+[press-esc]
+other = 'Press Esc to clear'
+
+[copy-link-heading]
+other = 'Copy link to this heading'
+
+[published]
+other = 'Published:'
+
+[last-mod]
+other = 'Last updated:'
+
+[last-mod-short]
+other = 'Updated:'
 
 #[]
 #other = ''

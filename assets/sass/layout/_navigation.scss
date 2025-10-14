@@ -1,37 +1,42 @@
 nav {
-	display: flex;
-	align-items: center;
-	margin: 16px 0 0 0;
+  display: flex;
+  align-items: center;
+  margin: 16px 0 0 0;
 
-	ul {
-		display: flex;
-		list-style: none;
-		padding: 0;
-		margin: 0 -8px;
-		font-size: 18px;
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: rem(18px);
 
-		li {
-			margin: 0 8px;
-		}
-	}
-	
-	a {
-		transition: color 200ms $timing-apple;
-	    white-space: nowrap;
-		
-		// Increase size of active element
-	    padding: 16px 8px;
-	    margin: -16px -8px;
-		
-		&:hover {
-			color: var(--color-brand);
-			text-decoration: none;
-		}
-	}
+    li + li {
+      margin: 0 0 0 20px;
+    }
+  }
+
+  a,
+  a:visited {
+    color: var(--color-text);
+  }
+  
+  a:hover {
+    color: var(--color-hover);
+  }
+
+  a {
+    display: inline-block;
+    white-space: nowrap;
+    @extend %click-area-medium;
+
+    header &,
+    header &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 @mixin nav-medium {
-	header nav {
-		margin: 16px 0;
-	}
+  header nav {
+    margin: 16px 0;
+  }
 }

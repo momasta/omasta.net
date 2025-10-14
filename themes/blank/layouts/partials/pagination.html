@@ -1,14 +1,14 @@
 {{ if gt .Paginator.TotalPages 0 }}
-	<div class="pagination">
-		{{ if .Paginator.HasPrev }}
-			<a href="{{ .Paginator.Prev.URL }}">Previous Page</a>
-		{{ end }}
-		{{ .Paginator.PageNumber }} {{ i18n "posts-of" }} {{ .Paginator.TotalPages }}
-		{{ if .Paginator.HasNext }}
-			<a href="{{ .Paginator.Next.URL }}">Next Page</a>
-		{{ end }}
-	</div>
+    <div class="pagination">
+        {{ if .Paginator.HasPrev }}
+            <a href="{{ .Paginator.Prev.URL }}">Previous Page</a>
+        {{ end }}
+        {{ .Paginator.PageNumber }} {{ i18n "posts-of" }} {{ .Paginator.TotalPages }}
+        {{ if .Paginator.HasNext }}
+            <a href="{{ .Paginator.Next.URL }}">Next Page</a>
+        {{ end }}
+    </div>
 {{ else }}
-	{{ i18n "no-posts-yet" }}
+    {{ i18n "no-posts-yet" }}
 {{ end }}
 

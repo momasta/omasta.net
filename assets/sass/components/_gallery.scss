@@ -1,87 +1,66 @@
-$gallery-transition-delay: 200ms;
+$gallery-transition-delay: 200ms; // Keep in sync with hideTimeout in gallery_filter.js
 
 .gallery {
-	display: flex;
-	flex-wrap: wrap;
-	
-	form {
-		width: 100%;
-		position: relative;
-	}
+  display: flex;
+  flex-wrap: wrap;
+  @extend %no-interaction;
+  margin: -5px;
+
+  form {
+    width: 100%;
+    position: relative;
+  }
 }
 
 .gallery-filter {
-	padding: 0 0 20px;
-	display: flex;
-	margin: 0;
-	flex-basis: 100%;
+  padding: 0 0 20px;
+  display: flex;
+  margin: 0 5px;
+  flex-basis: 100%;
 }
 
+// <a class="gallery-image>
 .gallery-image {
-	display: block;
-	width: 50%;
-	max-width: 50%;
-	aspect-ratio: 1 / 1;
-	text-align: center;
-	transition: transform $gallery-transition-delay $timing-apple, opacity $gallery-transition-delay $timing-apple;
-	font-size: 0;
-	will-change: opacity, transform, display;
-	overflow: hidden;
-	position: relative;
-	
-	&::after {
-		content: '';
-		display: inline-block;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		border: 5px solid var(--color-focus);
-		opacity: 0;
-		visibility: hidden;
-		transition: opacity $gallery-transition-delay $timing-apple;
-	}
-		
-	&:focus-visible {
-		&::after {
-			opacity: 1;
-			visibility: visible;
-		}
-	}
-		
-	&:hover,
-	&:focus-visible {
-		.gallery-image-thumb {
-			transform: scale(1.03);
-		}
-	}
-	
-	&.state-visible {
-		animation: fade-in-scale $gallery-transition-delay;
-		display: block;
-	}
-	
-	&.state-hidden {
-		animation: fade-out-scale $gallery-transition-delay;
-		animation-fill-mode: forwards;
-		display: block;
-	}
+  display: block;
+  width: 50%;
+  max-width: 50%;
+  padding: 5px;
+  aspect-ratio: 1 / 1;
+  text-align: center;
+  font-size: 0;
+  overflow: hidden;
+  will-change: opacity, transform, display;
+  transition: transform $gallery-transition-delay $timing-apple, opacity $gallery-transition-delay $timing-apple;
+  @extend %click-area-small;
 
-	// .gallery-image-thumb
-	&-thumb {
-		object-fit: cover;
-		position: relative;
-		overflow: hidden;
-		width: 100%;
-		aspect-ratio: 1 / 1;
-		transition: transform $gallery-transition-delay $timing-apple 0ms, opacity 0s $timing-apple;
-	}
+  &:hover,
+  &:focus-visible {
+    .gallery-image-thumb {
+      transform: scale(1.03);
+    }
+  }
+
+  &.state-visible {
+    opacity: 1;
+  }
+
+  &.state-hidden {
+    opacity: 0;
+  }
+
+  // <img class="gallery-image-thumb">
+  &-thumb {
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
 }
 
 @mixin gallery-image-medium {
-	.gallery-image {
-		width: 25%;
-		max-width: 25%;
-	}
+  .gallery-image {
+    width: 25%;
+    max-width: 25%;
+  }
 }

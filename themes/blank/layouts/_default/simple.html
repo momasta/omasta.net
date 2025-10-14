@@ -1,17 +1,17 @@
 {{ define "main" }}
 
-{{ partial "header" . }}
-	<div id="middle">
-		<main>
-			<div class="card">
-				<article>
-					<h2>{{ .Title }}</h2>
-					
-					<div class="article-content">
-						{{ .Content }}
-					</div>
-				</article>
-			</div>
-		</main>
-	</div>
+    {{ partial "header" . }}
+    <div id="middle">
+        <main>
+            <div class="card">
+                <article>
+                    <h1>{{ .Title }}</h1>
+
+                    <div class="article-content">
+                        {{ .Content }}
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
 {{ end }}

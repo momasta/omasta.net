@@ -1,11 +1,21 @@
+article {
+  time {
+    color: var(--color-text-light);
+  }
+}
+
 .article-content {
-	.links + & {
-		margin-top: 20px;
-	}
-	
-	ul {
-		margin: 0;
-		padding: 0;
-    	list-style-position: inside;
-	}
+  margin-top: 20px;
+  
+  time {
+    color: inherit;
+  }
+
+  h1 + a.tag {
+    margin-top: 0.5rem;
+  }
+
+  h2 + p {
+    margin-top: 0;
+  }
 }

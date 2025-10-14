@@ -1,16 +1,22 @@
+{{ $datePublished := .PublishDate | time.Format .Site.Params.DateFormat }}
+
 <li class="post-preview">
-	<a href="{{ .Permalink }}">{{ .Title }}</a>
-	<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
-	{{ range .Params.tags }}
-	<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-	{{ end }}
-	
-	{{/* Post summary left out
-		<div class="post-summary">
-			{{ .Summary }}
-			{{ if .Truncated }}
-				<a href="{{ .Permalink }}">{{ i18n "read-more" }}</a>
-			{{ end }}
-		</div>
-	*/}}
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+
+    <div class="post-summary">
+        {{ .Summary | plainify }}
+    </div>
+
+    {{- range .Params.tags -}}
+        {{ $name := . }}
+        {{- with index site.Taxonomies.tags $name -}}
+            {{ $title := .Page.Title }}
+            <a href="{{ .Page.RelPermalink }}"
+               class="tag"
+               title="{{ i18n "tags-show-all" }} #{{ $title }}">#{{- $title -}}</a>
+        {{- end -}}
+    {{- end -}}<!--
+    --><time datetime="{{ $datePublished }}">
+        {{- $datePublished -}}
+    </time>
 </li>

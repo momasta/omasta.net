@@ -1,12 +1,13 @@
 aside {
-	display: flex;
-	flex-direction: column;
-	min-width: 212px;
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  min-width: 255px;
 }
 
 @mixin aside-medium {
-	main + aside {
-		margin-left: 16px;
-	}
+  main + aside {
+    margin-left: 16px;
+  }
 }
 

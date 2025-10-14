@@ -1,5 +1,6 @@
 ---
-title: "Vlastní obsah"
+title: "Vlastní memes"
+linkTitle: "Vlastní"
 date: 2022-09-29T11:09:46+02:00
 layout: gallery
 ---

@@ -1,57 +1,81 @@
 {{ define "main" }}
 
-{{ partial "header" . }}
+    {{ partial "header" . }}
 
-<div id="middle">
-	<main>
-		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+    <div id="middle">
+        <main>
+            {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
 
-		<div class="card">
-			<h2>{{ i18n "posts" }}</h2>
+            <div class="card">
+                <h1>{{ i18n "posts" }}</h1>
 
-			<ul class="links">
-				{{ range $paginator.Pages }}
-					{{ .Render "summary" }}
-				{{ end }}
-			</ul>
+                <ul class="links">
+                    {{ range $paginator.Pages }}
+                        {{ .Render "summary" }}
+                    {{ end }}
+                </ul>
 
-			{{ partial "pagination.html" . }}
-		</div>
-	</main>
+                {{ partial "pagination.html" . }}
+            </div>
+        </main>
 
-	<aside class="">
-		<div class="card">
-			<h2>{{ i18n "contact-me" }}</h2>
+        <aside class="">
+            <div class="card">
+                <h2>{{ i18n "contact-me" }}</h2>
 
-			<ul class="links">
-				<li>
-					<a href="https://m.me/omastik" target="_blank" ><span title="Facebook Messenger">Messenger:&nbsp;</span>omastik</a>
-				</li>
-				<li>
-					<a href="mailto:marek@omasta.net"><span>{{ i18n "email" }}:&nbsp;</span>marek@omasta.net</a>
-				</li>
-				<li>
-					<a href="{{ "profiles/" }}">{{ i18n "more-profiles" }}</a>
-				</li>
-			</ul>
-		</div>
-		
-		<div class="card">
-			<h2>{{ i18n "my-content" }}</h2>
+                <ul class="links">
+                    <li>
+                        <a href="https://m.me/omastik" target="_blank"><span
+                            title="Facebook Messenger">Messenger:&nbsp;</span>omastik</a>
+                    </li>
+                    <li>
+                        <a href="mailto:marek@omasta.net"><span>{{ i18n "email" }}:&nbsp;</span>marek@omasta.net</a>
+                    </li>
+                    <li>
+                        <a href="{{ "profiles/" }}">{{ i18n "more-profiles" }}…</a>
+                    </li>
+                </ul>
+            </div>
 
-			<ul class="links">
-				<li>
-					<a href="/copypasta">Copypasta</a>
-				</li>
-				<li>
-					<a href="https://unsplash.com/@m_omasta" target="_blank" >Unsplash</a>
-				</li>
-				<li>
-					<a href="{{ "content/" }}">{{ i18n "more-content" }}</a>
-				</li>
-			</ul>
-		</div>
-	</aside>
-</div>
+            <div class="card">
+                <h2>{{ i18n "my-content" }}</h2>
+
+                <ul class="links">
+                    <li>
+                        <a href="/copypasta">Copypasta</a>
+                    </li>
+                    <li>
+                        <a href="https://unsplash.com/@m_omasta" target="_blank">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="{{ "content/" }}">{{ i18n "more-content" }}…</a>
+                    </li>
+                </ul>
+            </div>
+
+            {{- $tags := .Site.Taxonomies.tags }}
+            {{- if gt (len $tags) 0 }}
+                <div class="card">
+                    <div>
+                        <h2>{{ i18n "tags" }}</h2>
+                    </div>
+                    <div>
+                        <ul class="links">
+                            {{ range $name, $taxonomy := $tags }} {{ $count := .Count }}
+                                {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                                    <li>
+                                        <a href="{{ .RelPermalink }}"
+                                           title="{{ i18n "tags-show-all" }} #{{ .LinkTitle }}"
+                                           class="tag">
+                                            #{{ .LinkTitle }}</a>&nbsp;<span>({{ $count }})</span>
+                                    </li>
+                                {{ end }}
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            {{- end }}
+        </aside>
+    </div>
 
 {{ end }}

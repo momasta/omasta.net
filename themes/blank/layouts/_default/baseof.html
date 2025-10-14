@@ -2,60 +2,86 @@
 <html lang="{{ .Site.LanguageCode | default "en-gb" }}" class="theme-light">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<!-- Perform before rendering page -->
-	<script>
-		const html = document.documentElement;
-		const hasLocalStorage = localStorage.getItem('theme');
-		
-		if (hasLocalStorage === 'theme-dark') {
-			html.classList.add('theme-dark');
-		}
-	</script>
-	
-	<!-- Critical CSS -->
-	<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
+
+    <!-- Site Information -->
+
+    <title>
+        {{ if hugo.IsServer }}(Local) {{ end }}
+        {{- if not .IsHome -}}
+            {{ if .Page.Title }}{{ .Page.Title }} - {{ end }}
+        {{- end -}}
+        {{ .Site.Title }}
+    </title>
+
+    {{ with .Site.Params.description }}
+        <meta name="description" content="{{ . }}">
+    {{ end }}
+
+    {{ with .Site.Params.author }}
+        <meta name="author" content="{{ . }}">
+    {{ end }}
+
+    {{ if .Keywords }}
+        {{ with .Keywords }}
+            <meta name="keywords"
+                  content="{{ range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">
+        {{ end }}
+    {{ end }}
+
+    <!-- Shortcut Icons -->
+    <link rel="icon" href="/images/favicon.jpg" sizes="32x32">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+    <link rel="icon" href="/images/favicon-192.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/images/favicon-180.jpg">
+
+    <!-- Perform before rendering page -->
+    <script>
+        const html = document.documentElement;
+        const hasLocalStorage = localStorage.getItem('theme');
+
+        if (hasLocalStorage === 'theme-dark') {
+            html.classList.add('theme-dark');
+        }
+    </script>
+
+    <!-- Critical CSS -->
+    <style>
+        body:not(.loaded) * {
+            transition: none !important;
+            animation: none !important;
+        }
+
         :root {
             color-scheme: dark light;
         }
-        
-		html.theme-dark {
-			background-color: #000;
-		}
-		
-		html.theme-light .toggle-theme-light {
-			display: none;
-		}
-		
-		html.theme-dark .toggle-theme-dark {
-			display: none;
-		}
-		
-		html.theme-dark .card {
-			background-color: #222;
-		}
-		
-        html.theme-dark .icon svg path {
-            fill: #fdfdfd;
+
+        .theme-dark,
+        .theme-dark body {
+            background-color: #000;
+            color: #fdfdfd;
         }
 
-        html.theme-light .icon svg path {
-            fill: #222;
+        .theme-light .toggle-theme-light {
+            display: none;
+        }
+
+        .theme-dark .toggle-theme-dark {
+            display: none;
+        }
+
+        .theme-dark .card {
+            background-color: #222;
         }
 
         body {
             font: normal 100% / 1.4 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
         }
 
-        h2 {
+        h1 {
             margin: 0;
         }
-
-		a:visited {
-			color: inherit;
-		}
 
         header div.logo img {
             width: 45px;
@@ -66,148 +92,121 @@
             padding: 24px 20px;
             margin: 8px 0;
         }
-	</style>
-	
-	<!-- Site Information -->
-	
-	<title>
-		{{ if not .IsHome }}
-			{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}
-		{{ end }}
-		{{ .Site.Title }}
-	</title>
-	
-	{{ with .Site.Params.description }}
-		<meta name="description" content="{{ . }}">
-	{{ end }}
-	
-	{{ with .Site.Params.author }}
-		<meta name="author" content="{{ . }}">
-	{{ end }}
-	
-	{{ if .Keywords }}
-  		{{ with .Keywords }}
-  			<meta name="keywords"
-  				  content="{{ range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">
-  		{{ end }}
-    {{ end }}
+    </style>
 
-	<!-- Shortcut Icons -->
-	<link rel="icon" href="/images/favicon.jpg" sizes="32x32">
-	<link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
-	<link rel="icon" href="/images/favicon-192.jpg">
-	<link rel="apple-touch-icon-precomposed" href="/images/favicon-180.jpg">
+    <!-- Stylesheet -->
+    {{ $main_options := (dict "targetPath" "css/site.css" "outputStyle" "compressed") }}
+    {{ $main_template := resources.Get "sass/main.scss" }}
+    {{ $main_style := $main_template | resources.ExecuteAsTemplate "main_parsed.scss" . | toCSS $main_options | resources.Minify }}
+    <link rel="stylesheet" href="{{ print $main_style.RelPermalink "?" now.Unix }}">
 
-	<!-- Stylesheet -->
-	{{ $main_options := (dict "targetPath" "css/site.css" "outputStyle" "compressed") }}
-	{{ $main_template := resources.Get "sass/main.scss" }}
-	{{ $main_style := $main_template | resources.ExecuteAsTemplate "main_parsed.scss" . | toCSS $main_options | resources.Minify }}
-	<link rel="stylesheet" href="{{ print $main_style.RelPermalink "?" now.Unix }}">
-		
-	<!-- Apple-Specific Meta Tags -->
-	<meta name="theme-color" content="#eeeeee" media="(prefers-color-scheme: light)">
-  	<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-	<meta name="format-detection" content="telephone=no">
-	
-	<!-- OG Tags -->
-	{{ template "_internal/opengraph.html" . }}
-	
-	<!-- RSS -->
-	{{ with .OutputFormats.Get "RSS" -}}
-		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
-	{{- end }}
+    <!-- Apple-Specific Meta Tags -->
+    <meta name="theme-color" content="#b8b8b8" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- OG Tags -->
+    {{ template "_internal/opengraph.html" . }}
+
+    {{/* RSS */}}
+    <link rel="alternate" type="application/rss+xml" href="{{ .Site.Home.Permalink }}posts/index.xml" title="{{ .Site.Title }} - {{ i18n "posts" }}" hreflang="{{ .Lang }}">
 </head>
 
 <body{{ with .Type }} class="{{ . }}" {{ end }} ondragstart="return false;" ondrop="return false;" draggable="false">
 
-<!-- Dark mode handling, integral part -->
-	<script>
-		// From https://codepen.io/MrGrigri/details/XQmWBv, modified
-		
-		const themeColorLight = '#eeeeee';
-		const themeColorDark = '#000000';
-		
-		const themePreference = () => {
-			let supports = false;
-			let theme = undefined;
-			
-			if (hasLocalStorage === 'theme-light') {
-				theme = 'theme-light';
-			} else if (hasLocalStorage === 'theme-dark') {
-				theme = 'theme-dark';
-			}
+<!-- Critical JS, dark mode handling, integral part -->
+<script>
+    window.addEventListener('load', () => document.body.classList.add('loaded'));
 
-			if (window.matchMedia(`(prefers-color-scheme: dark)`).matches) {
-				theme = hasLocalStorage ? hasLocalStorage : 'theme-dark';
-				supports = true;
-			};
-			
-			if (window.matchMedia(`(prefers-color-scheme: light)`).matches) {
-				theme = hasLocalStorage ? hasLocalStorage : 'theme-light';
-				supports = true;
-			};
-			
-			if (window.matchMedia(`(prefers-color-scheme: no-preference)`).matches) {
-				theme = hasLocalStorage ? hasLocalStorage : 'none';
-				supports = true;
-			};
-			
-			return {supports, theme};
-		}
+    // From https://codepen.io/MrGrigri/details/XQmWBv, modified
+
+    const themeColorLight = '#b8b8b8';
+    const themeColorDark = '#000000';
+
+    const themePreference = () => {
+        let supports = false;
+        let theme = undefined;
+
+        if (hasLocalStorage === 'theme-light') {
+            theme = 'theme-light';
+        } else if (hasLocalStorage === 'theme-dark') {
+            theme = 'theme-dark';
+        }
+
+        if (window.matchMedia(`(prefers-color-scheme: dark)`).matches) {
+            theme = hasLocalStorage ? hasLocalStorage : 'theme-dark';
+            supports = true;
+        }
+
+        if (window.matchMedia(`(prefers-color-scheme: light)`).matches) {
+            theme = hasLocalStorage ? hasLocalStorage : 'theme-light';
+            supports = true;
+        }
+
+        if (window.matchMedia(`(prefers-color-scheme: no-preference)`).matches) {
+            theme = hasLocalStorage ? hasLocalStorage : 'none';
+            supports = true;
+        }
+
+        return {supports, theme};
+    }
 
 
-		document.addEventListener('DOMContentLoaded', e => {			
-			const userThemePreference = themePreference();
-			const toggleThemeLight = document.querySelector('.toggle-theme-light');
-			const toggleThemeDark = document.querySelector('.toggle-theme-dark');
-			const metaThemeColor = document.querySelectorAll('meta[name="theme-color"]');
-				
-			const setThemeDark = () => {
-				html.classList.add('theme-dark');
-				html.classList.remove('theme-light');
-				
-				metaThemeColor.forEach(function (tag) {
-					tag.setAttribute('content', themeColorDark);
-				});
-			}
-			
-			const setThemeLight = () => {
-				html.classList.remove('theme-dark');
-				html.classList.add('theme-light');
-				
-				metaThemeColor.forEach(function (tag) {
-					tag.setAttribute('content', themeColorLight);
-				});
-			}
-				
-			const setTheme = () => {
-				switch(userThemePreference.theme) {
-					case 'theme-dark':
-						setThemeDark();
-						break;
-					case 'theme-light':
-						setThemeLight();
-						break;
-				}
-			}
-			
-			setTheme();
-			
-			toggleThemeDark.addEventListener('click', e => {
-				setThemeDark();
-				localStorage.setItem('theme', 'theme-dark');
-			}, false);
-				
-			toggleThemeLight.addEventListener('click', e => {
-				setThemeLight();
-				localStorage.setItem('theme', 'theme-light');
-			}, false);
-		}, false);
-	</script>
+    document.addEventListener('DOMContentLoaded', e => {
+        const userThemePreference = themePreference();
+        const toggleThemeLight = document.querySelector('.toggle-theme-light');
+        const toggleThemeDark = document.querySelector('.toggle-theme-dark');
+        const metaThemeColor = document.querySelectorAll('meta[name="theme-color"]');
 
-	<div id="content">
-		{{ block "main" . }}{{ end }}
-		{{ partial "footer" . }}
-	</div>
+        const setThemeDark = () => {
+            html.classList.add('theme-dark');
+            html.classList.remove('theme-light');
+
+            metaThemeColor.forEach(function (tag) {
+                tag.setAttribute('content', themeColorDark);
+            });
+        }
+
+        const setThemeLight = () => {
+            html.classList.remove('theme-dark');
+            html.classList.add('theme-light');
+
+            metaThemeColor.forEach(function (tag) {
+                tag.setAttribute('content', themeColorLight);
+            });
+        }
+
+        const setTheme = () => {
+            switch (userThemePreference.theme) {
+                case 'theme-dark':
+                    setThemeDark();
+                    break;
+                case 'theme-light':
+                    setThemeLight();
+                    break;
+            }
+        }
+
+        setTheme();
+
+        toggleThemeDark.addEventListener('click', e => {
+            setThemeDark();
+            localStorage.setItem('theme', 'theme-dark');
+        }, false);
+
+        toggleThemeLight.addEventListener('click', e => {
+            setThemeLight();
+            localStorage.setItem('theme', 'theme-light');
+        }, false);
+    }, false);
+</script>
+
+<div id="content">
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer" . }}
+</div>
+
+{{ $copyHeadingLinkJS := resources.Get "js/copy-heading-link.js" | resources.Minify }}
+<script src="{{ print $copyHeadingLinkJS.RelPermalink "?" now.Unix }}"></script>
 </body>
 </html>

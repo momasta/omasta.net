@@ -1,0 +1,20 @@
+{{/*
+    assets/sass/components/_breadcrumbs.scss
+*/}}
+
+<nav class="breadcrumbs">
+    <ol class="links direction-row">
+        {{ range .Ancestors.Reverse }}
+            {{ if not .IsHome }}
+                <li>
+                    <a href="{{ .RelPermalink }}" title="{{ i18n "go-back-to" }} {{ .LinkTitle }}">{{ .LinkTitle }}</a>
+                </li><li role="separator" aria-hidden="true">&nbsp;/&nbsp;</li>
+            {{ end }}
+        {{ end }}
+        <li aria-current="page">
+            <h1>
+                {{ .LinkTitle }}
+            </h1>
+        </li>
+    </ol>
+</nav>

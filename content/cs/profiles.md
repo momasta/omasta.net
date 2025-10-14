@@ -5,107 +5,23 @@ draft: false
 layout: simple
 ---
 
-[Stáhněte si mou vizitku \(vCard\)](/files/Marek%20Omasta.vcf)
+[Moje vizitka ke stažení \(vCard\)](/files/Marek%20Omasta.vcf)
 
-<ul>
-	<li>
-		<a href="https://music.apple.com/profile/m_omasta" target="_blank">
-			Apple Music - ‎Marek Omasta
-		</a>
-	</li> 
-	<li>
-		<a href="https://bandcamp.com/m_omasta" target="_blank">
-			Bandcamp | m_omasta
-		</a>
-	</li> 
-	<li>
-		<a href="https://csfd.cz/uzivatel/827068-m-omasta/" target="_blank">
-			ČSFD.cz | m.omasta
-		</a>
-	</li> 
-	<li>
-		<a href="https://discordapp.com/users/m.omasta" target="_blank">
-			Discord | m.omasta
-		</a>
-	</li> 
-	<li>
-		<a href="https://facebook.com/omastik" target="_blank">
-			Facebook | Marek Omasta
-		</a>
-	</li> 
-	<li>
-		<a href="https://www.geocaching.com/p/?id=8404971" target="_blank">
-			Geocaching - Omastík
-		</a>
-	</li> 
-	<li>
-		<a href="https://github.com/momasta?tab=stars" target="_blank">
-			GitHub · momasta (Marek Omasta) / Starred
-		</a>
-	</li> 
-	<li>
-		<a href="https://goo.gl/maps/7YcUYzzchnnWJmL6A" target="_blank">
-			Mapy Google - Místní průvodce: Marek Omasta
-		</a>
-	</li> 
-	<li>
-		<a href="https://en.gravatar.com/omastik" target="_blank">
-			Gravatar - Marek Omasta
-		</a>
-	</li> 
-	<li>
-		<a href="https://last.fm/user/m_omasta" target="_blank">
-			Last.fm | m_omasta’s Music Profile
-		</a>
-	</li> 
-	<li>
-		<a href="https://linkedin.com/in/m-omasta/" target="_blank">
-			LinkedIn | Marek Omasta
-		</a>
-	</li> 
-	<li>
-		<a href="https://mapy.cz/s/nefavonavo" target="_blank">
-			Mapy.cz • Fotogalerie autora • Marek Omasta
-		</a>
-	</li> 
-	<li>
-		<a href="https://m.me/omastik" target="_blank">
-			Messenger: omastik
-		</a>
-	</li>
-	<li>
-		<a href="https://www.myheritage.com/site-21258912/omasta" target="_blank">
-			MyHeritage - Omasta Web Site
-		</a>
-	</li> 
-	<li>
-		<a href="https://paypal.me/MarekOmasta" target="_blank">
-			PayPal.Me: MarekOmasta
-		</a>
-	</li> 
-	<li>
-		<a href="https://pinterest.com/m_omasta/_saved/" target="_blank">
-			Pinterest: Marek Omasta
-		</a>
-	</li> 
-	<li>
-		<a href="https://reddit.com/user/m_omasta" target="_blank">
-			Reddit - Marek Omasta (u/m_omasta)
-		</a>
-	</li> 
-	<li>
-		<a href="https://www.sporcle.com/user/momasta/" target="_blank">
-			Sporcle - momasta's Profile
-		</a>
-	</li> 
-	<li>
-		<a href="https://unsplash.com/@m_omasta" target="_blank">
-			Unsplash | Marek Omasta (@m_omasta)
-		</a>
-	</li>
-	<li>
-		<a href="https://youtube.com/@m.omasta" target="_blank">
-			YouTube - Marek Omasta
-		</a>
-	</li>
-</ul>
+* [Apple Music](https://music.apple.com/profile/m_omasta)
+* [Bandcamp](https://bandcamp.com/m_omasta)
+* [ČSFD.cz](https://csfd.cz/uzivatel/827068-m-omasta/)
+* [Discord](https://discordapp.com/users/m.omasta)
+* [Geocaching](https://www.geocaching.com/p/?id=8404971)
+* [GitHub · Starred](https://github.com/momasta?tab=stars)
+* [Google Maps Local Guide: Marek Omasta](https://goo.gl/maps/7YcUYzzchnnWJmL6A)
+* [Gravatar](https://en.gravatar.com/omastik)
+* [Last.fm](https://last.fm/user/m_omasta)
+* [Messenger](https://m.me/omastik)
+* [Monkeytype](https://monkeytype.com/profile/m.omasta)
+* [MyHeritage - Omasta Web Site](https://www.myheritage.com/site-21258912/omasta)
+* [PayPal.Me: MarekOmasta](https://paypal.me/MarekOmasta)
+* [Pinterest](https://cz.pinterest.com/m_omasta/_saved/)
+* [Reddit - u/m_omasta](https://reddit.com/user/m_omasta)
+* [Sporcle](https://www.sporcle.com/user/momasta/)
+* [Unsplash](https://unsplash.com/@m_omasta)
+* [YouTube](https://youtube.com/@m.omasta)  

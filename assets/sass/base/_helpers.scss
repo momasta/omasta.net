@@ -3,3 +3,52 @@
 // -----------------------------------------------------------------------------
 
 // Get more helpers: https://github.com/KittyGiraudel/sass-boilerplate/blob/master/stylesheets/base/_helpers.scss
+
+// === Placeholders ===
+
+%no-interaction {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+}
+
+
+%click-area {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -0.5rem -1rem;
+    z-index: 1;
+    border-radius: 0.5em;
+    transition: background-color 200ms $timing-apple;
+  }
+
+  &:focus-visible::before {
+    background-color: var(--color-focus);
+  }
+}
+
+// Sizes
+%click-area-small {
+  @extend %click-area;
+}
+
+%click-area-medium {
+  @extend %click-area;
+
+  &::before {
+    inset: -1rem -1.5rem;
+  }
+}
+
+%click-area-large {
+  @extend %click-area;
+
+  &::before {
+    inset: -1.5rem -2rem;
+  }
+}

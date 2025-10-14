@@ -12,43 +12,42 @@ $text-font-stack: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif !de
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
 :root {
-	--color-white: #fff;
-	--color-white-bg: #fdfdfd;
+  --color-white: #fff;
+  --color-white-bg: #fdfdfd;
 
-	--color-black: #000;
-	--color-black-bg: #222;
+  --color-black: #000;
+  --color-black-bg: #222;
 
-	--color-grey-dark: #454545;
-	--color-grey-light: #eee;
+  --color-grey-dark: #454545;
+  --color-grey-light: #b8b8b8;
 
-	--color-brand: #306e95;
-	--color-focus: var(--color-brand-bg);
+  --color-brand: #306e95;
+  --color-brand-text: #73add2; // Lightened by 25%
+  --color-brand-light: #3c8abc; // Lightened by 10%
+
+  --color-focus: #306e958f;
+  --color-hover: var(--color-brand-light);
 }
 
 @mixin includeLight {
-	--color-text: #222;
-	--color-text-light: var(--color-grey-dark);
+  --color-text: #222;
+  --color-text-light: var(--color-grey-dark);
 	
-	--color-brand-bg: #bcd8e9; // lighten color-brand, 44%
-	
-	--color-site-bg: var(--color-grey-light); // Update manually in baseof.html (script)
-	--color-content-bg: var(--color-white-bg);
+  --color-site-bg: var(--color-grey-light); // Update manually in baseof.html (script)
+  --color-content-bg: var(--color-white-bg);
 }
 
 @mixin includeDark {
-	--color-text: var(--color-white-bg);
-	--color-text-light: var(--color-grey-light);
-	
-	--color-brand-bg: #204a64; // darken color-brand
-		
-	--color-site-bg: var(--color-black); // Update manually in baseof.html (script)
-	--color-content-bg: var(--color-black-bg);
+  --color-text: var(--color-white-bg);
+  --color-text-light: var(--color-grey-light);
+
+  --color-site-bg: var(--color-black); // Update manually in baseof.html (script)
+  --color-content-bg: var(--color-black-bg);
 }
 
 /// Container's maximum width
 /// @type Length
 $max-width: 670px !default;
-
 
 /// Media Query Breakpoints 
 $bp-small: 320px;
@@ -57,7 +56,6 @@ $bp-large: 1024px;
 
 /// transition-timing-function
 $timing-apple: cubic-bezier(0.4, 0, 0.25, 1);
-
 
 /// Relative or absolute URL where all assets are served from
 /// @type String

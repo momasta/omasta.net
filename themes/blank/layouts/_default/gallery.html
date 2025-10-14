@@ -1,18 +1,18 @@
 {{ define "main" }}
 
-{{ partial "header" . }}
+    {{ partial "header" . }}
 
-	<div id="middle">
-		<main>
-			<div class="card">
-				<article>
-                    {{ partial "breadcrumb.html" . }}
-					
-					<div class="article-content">
-						{{ .Content }}
-					</div>
-				</article>
-			</div>
-		</main>
-	</div>
+    <div id="middle">
+        <main>
+            <div class="card">
+                <article>
+                    {{ partial "breadcrumbs.html" . }}
+
+                    <div class="article-content">
+                        {{ .Content }}
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
 {{ end }}

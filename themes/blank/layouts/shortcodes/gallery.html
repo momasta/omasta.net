@@ -7,52 +7,55 @@
 
 <!--Use eager loading for the first 20 images-->
 <div class="gallery">
-	{{- $images := (resources.Match $path) -}}
+    {{- $images := (resources.Match $path) -}}
 
-	<div class="gallery-filter">
-		<form action="#" class="gallery-filter-form">
-			<input type="search"
-				   placeholder="{{ i18n "filter" }}"
-				   class="gallery-filter-input"
-				   autocomplete="off"
-				   autocapitalize="off"
-				   autofocus>
-				   
-			<input type="submit"
-				   value="Filter"
-				   tabindex="-1"
-				   class="gallery-filter-submit">
-		</form>
-	</div>
-	
-	{{ with $images }}
-	    {{ range $image_index, $image := . }} 
-        {{ $imageName := ($image.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr }} 
-		{{ $imageURL := $image.Permalink | safeURL }}
-	    	
-	    	<a href="{{ $imageURL }}"
-	    	   class="gallery-image state-visible"
-	    	   data-pswp-width="{{ .Width }}"
-	    	   data-pswp-height="{{ .Height }}"
-	    	   data-cropped="true"
-	    	   target="_blank">
-		    	
-		    	<img class="gallery-image-thumb"
-			    	 alt="{{ $imageName }}"
-		    	
-					 {{/* Load first 20 images eagerly (above fold on FullHD) */}}
-		    		 loading="{{ cond (gt $image_index 20) "lazy" "eager" }}"
-		    		 
-		    		 {{/* .Resize not supported for GIFs, use the image itself */}}
-		    		 {{- if (eq $image.MediaType.SubType "gif") -}}
-			    		src="{{ $imageURL }}"
-		    		 {{- else -}}
-		    			{{- $thumb := $image.Resize "288x webp q70" -}}
-			    		src="{{ $thumb.Permalink | safeURL }}"
-		    		 {{- end -}}/>
+    <div class="gallery-filter">
+        <form action="#" class="gallery-filter-form">
+            <input type="search"
+                   placeholder="{{ i18n "filter" }}"
+                   class="gallery-filter-input"
+                   autocomplete="off"
+                   autocapitalize="off"
+                   autofocus
+                   title="{{ i18n "press-esc" }}">
+
+            <input type="submit"
+                   value="Filter"
+                   tabindex="-1"
+                   class="gallery-filter-submit">
+        </form>
+    </div>
+
+    {{ with $images }}
+        {{ range $image_index, $image := . }}
+            {{ $imageName := ($image.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr }}
+            {{ $imageURL := $image.Permalink | safeURL }}
+
+            <a href="{{ $imageURL }}"
+               class="gallery-image state-visible"
+               data-pswp-width="{{ .Width }}"
+               data-pswp-height="{{ .Height }}"
+               data-cropped="true"
+               id="{{ $imageName | humanize | urlize }}"
+               title="{{ $imageName }}"
+               target="_blank">
+
+                <img class="gallery-image-thumb"
+                     alt="{{ $imageName }}"
+
+                     {{/* Load first 20 images eagerly (above fold on FullHD) */}}
+                     loading="{{ cond (gt $image_index 20) "lazy" "eager" }}"
+
+                     {{/* .Resize not supported for GIFs, use the image itself */}}
+                     {{- if (eq $image.MediaType.SubType "gif") -}}
+                     src="{{ $imageURL }}"
+                     {{- else -}}
+                     {{- $thumb := $image.Resize "288x webp q70" -}}
+                         src="{{ $thumb.Permalink | safeURL }}"
+                     {{- end -}}/>
             </a>
-	    {{ end }}
-	{{ end }}
+        {{ end }}
+    {{ end }}
 </div>
 
 {{ $photoswipeCSS := resources.Get "css/photoswipe.css" | resources.Minify }}
@@ -66,18 +69,19 @@
 <!-- Photoswipe -->
 <link rel="stylesheet" href="{{ print $photoswipeCSS.RelPermalink "?" now.Unix }}">
 <script type="module">
-	import PhotoSwipeLightbox from '{{ print $photoswipeLightboxJS.RelPermalink "?" now.Unix | safe.JSStr }}';
-	const lightbox = new PhotoSwipeLightbox({
-	  gallery: '.gallery',
-	  children: 'a',
-	  showHideAnimationType: 'zoom',
-	  pswpModule: () => import('{{ print $photoswipeJS.RelPermalink "?" now.Unix | safe.JSStr }}'),
-	  preload: [1, 4],
-	  closeTitle: {{ i18n "close" }},
-	  zoomTitle: {{ i18n "zoom" }},
-	  arrowPrevTitle: {{ i18n "previous" }},
-	  arrowNextTitle: {{ i18n "next" }},
-	  errorMsg: {{ i18n "psw-error" }}
-	});
-	lightbox.init();
+    import PhotoSwipeLightbox from '{{ print $photoswipeLightboxJS.RelPermalink "?" now.Unix | safe.JSStr }}';
+
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: '.gallery',
+        children: 'a',
+        showHideAnimationType: 'zoom',
+        pswpModule: () => import('{{ print $photoswipeJS.RelPermalink "?" now.Unix | safe.JSStr }}'),
+        preload: [1, 4],
+        closeTitle: '{{ i18n "close" }}',
+        zoomTitle: '{{ i18n "zoom" }}',
+        arrowPrevTitle: '{{ i18n "previous" }}',
+        arrowNextTitle: '{{ i18n "next" }}',
+        errorMsg: '{{ i18n "psw-error" }}'
+    });
+    lightbox.init();
 </script>

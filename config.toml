@@ -5,15 +5,17 @@ enableRobotsTXT = true
 loadJQuery = false
 timeout = "180s"
 summaryLength = 18
-
-# Disable Categories and Tags pages
-disableKinds = ['taxonomy', 'term']
+removePathAccents = true
+defaultContentLanguage = 'en'
+titleCaseStyle = 'none'
 
 [minify]
   minifyOutput = true
   [minify.tdewolff]
     [minify.tdewolff.html]
-      keepWhitespace = false
+      keepComments = false
+    KeepSpecialComments = true
+    keepWhitespace = false
     [minify.tdewolff.xml]
       keepWhitespace = false
       
@@ -22,40 +24,50 @@ disableKinds = ['taxonomy', 'term']
     [markup.goldmark.renderer]
       unsafe = true
 
-defaultContentLanguage = 'en'
+[taxonomies]
+  tag = "tags"
 
+[outputs]
+  home = ['html']
+  section = ['html']
+  taxonomy = ['html']
+  term = ['html']
+    
 [languages]
-  [languages.cs]
-    contentDir = 'content/cs'
-    languageName = 'Čeština'
-    languageCode = "cs"
-    weight = 2
-      [languages.cs.params]
-          images = ['images/profile-picture-og-2.jpg']
-          description = "Moje osobní stránka, archiv memes, odkazy na moje profily a obsah online"
-    [languages.cs.menu]
-    [[languages.cs.menu.main]]
-      name = 'Domů'
-      url = '/cs/'
-      weight = 0
-    [[languages.cs.menu.main]]
-      name = 'Memes'
-      url = '/cs/memes'
-      weight = 0
   [languages.en]
     contentDir = 'content/en'
     languageName = 'English'
-    languageCode = "en-gb"
+    languageCode = "en-GB"
     weight = 1
     [languages.en.params]
+      dateFormat = "2 Jan 2006"
       images = ['images/profile-picture-og-2.jpg']
-      description = "My personal website, meme archive, links to my profiles and my online content"
+      description = "Personal website of Marek Omasta, meme archive, links to my profiles and my content online"
     [languages.en.menu]
     [[languages.en.menu.main]]
       name = 'Home'
-      url = '/'
+      pageref = '/'
       weight = 0
     [[languages.en.menu.main]]
       name = 'Memes'
-      url = '/memes'
+      pageref = '/memes'
+      weight = 0
+
+  [languages.cs]
+    contentDir = 'content/cs'
+    languageName = 'Čeština'
+    languageCode = "cs-CZ"
+    weight = 2
+      [languages.cs.params]
+          dateFormat = "2. 1. 2006"
+          images = ['images/profile-picture-og-2.jpg']
+          description = "Osobní stránka Marka Omasty, archiv memes, odkazy na moje profily a obsah online"
+    [languages.cs.menu]
+    [[languages.cs.menu.main]]
+      name = 'Domů'
+      pageref = '/'
+      weight = 0
+    [[languages.cs.menu.main]]
+      name = 'Memes'
+      pageref = '/memes'
       weight = 0

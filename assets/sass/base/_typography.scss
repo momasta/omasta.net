@@ -6,19 +6,54 @@ body {
   font: normal 100% / 1.4 $text-font-stack;
 }
 
+header {
+  .logo a {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
 h1,
 h2,
 h3 {
-	font-weight: 500;
+  font-weight: 500;
+}
+
+h1,
+.breadcrumbs .links a {
+  font-size: rem(26px);
+}
+
+h1 {
+  margin: 0;
+
+  div.card article .breadcrumbs & {
+    display: inline-block;
+    margin: 0;
+  }
 }
 
 h2 {
-	div.card article & {
-		font-size: 1.5rem;
-	}
+  div.card & {
+    font-size: rem(20px);
+    margin: 0 0 16px;
+  }
+
+  div.card article & {
+    margin: 1em 0 0.25em;
+  }
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 8px 0 3px;
+
+  ul + & {
+    margin-top: 20px;
+  }
 }
 
 h4 {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 

@@ -1,28 +1,38 @@
 const hideTimeout = 200; // Animation delay to hide gallery images (keep in sync with $gallery-transition-delay)
 
-let lastFilterQuery = '';
-let galleryFilterForm = document.querySelector('.gallery form');
-let galleryFilterInput = document.querySelector('.gallery-filter-input');
-let images = document.querySelectorAll('.gallery-image');
+const galleryFilterForm = document.querySelector('.gallery form');
+const galleryFilterInput = document.querySelector('.gallery-filter-input');
+const images = document.querySelectorAll('.gallery-image');
 
-function show(element) {
-	element.style.display = 'block';
-	element.classList.remove('state-hidden');
-	element.classList.add('state-visible');
+let lastFilterQuery = '';
+
+function debounce(fn, delay) {
+    let timeoutId;
+    return function (...args) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => fn.apply(this, args), delay);
+    };
 }
 
-function hide(element) {
-	element.classList.remove('state-visible');
-	element.classList.add('state-hidden');
+function showResult(element) {
+    element.style.display = 'block';
+    element.offsetHeight;
+    element.classList.remove('state-hidden');
+    element.classList.add('state-visible');
+}
 
-    setTimeout(function() {
-		element.style.display = 'none';
-	}, hideTimeout);
+function hideResult(element) {
+    element.classList.remove('state-visible');
+    element.classList.add('state-hidden');
+
+    setTimeout(function () {
+        element.style.display = 'none';
+    }, hideTimeout);
 }
 
 function resetGallery() {
     images.forEach(function (image) {
-        show(image);
+        showResult(image);
     });
 }
 
@@ -33,14 +43,22 @@ function filterGallery(query) {
         if (lastFilterQuery !== query) {
             let firstImageFound = null;
 
-            queryFormatted = query.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            queryFormatted = query
+                .trim()
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "");
             images.forEach(function (image) {
                 let imageTitleRaw = image.querySelector('img').getAttribute('alt');
 
                 // If we still have a filter query after formatting it
                 if (queryFormatted && queryFormatted !== '') {
                     if (imageTitleRaw) {
-                        let imageTitle = imageTitleRaw.trim().toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                        let imageTitle = imageTitleRaw
+                            .trim()
+                            .toLowerCase()
+                            .normalize("NFD")
+                            .replace(/[\u0300-\u036f]/g, "");
 
                         // If it contains a space, look for individual words
                         if (queryFormatted.indexOf(' ') !== -1) {
@@ -54,19 +72,19 @@ function filterGallery(query) {
                             });
 
                             if (notFound) {
-                                hide(image);
+                                hideResult(image);
                             } else {
-                            	show(image);
+                                showResult(image);
                             }
 
-                        // If the query contains a single word
+                            // If the query contains a single word
                         } else if (imageTitle.indexOf(queryFormatted) === -1) {
-                            hide(image);
+                            hideResult(image);
                         } else {
                             if (image && !firstImageFound) {
                                 firstImageFound = image;
                             }
-                            show(image);
+                            showResult(image);
                         }
                     }
 
@@ -81,9 +99,11 @@ function filterGallery(query) {
     lastFilterQuery = query;
 }
 
-function stupidCallback() {
+function applyFilter() {
     filterGallery(galleryFilterInput.value);
 }
+
+const debouncedApplyFilter = debounce(applyFilter, 200);
 
 function keyEventHandler(event) {
     switch (event.key) {
@@ -98,26 +118,29 @@ function keyEventHandler(event) {
     event.preventDefault();
 }
 
-// Filter images on load if a query remained in place
-stupidCallback();
-
 // When DOM is ready
 document.addEventListener('DOMContentLoaded', function () {
-    stupidCallback();
+    applyFilter();
 
     galleryFilterForm.addEventListener('submit', function (event) {
         event.preventDefault();
         event.stopImmediatePropagation();
 
-        stupidCallback();
+        applyFilter();
     }, false);
-    galleryFilterInput.addEventListener('keyup', stupidCallback, false);
-    galleryFilterInput.addEventListener('paste', stupidCallback, false);
-    galleryFilterInput.addEventListener('propertychange', stupidCallback, false);
-    galleryFilterInput.addEventListener('change', stupidCallback, false);
-    galleryFilterInput.addEventListener('search', stupidCallback, false);
-    galleryFilterInput.addEventListener('input', stupidCallback, false);
-    galleryFilterInput.addEventListener('autocompleteSelect', stupidCallback, false);
+
+    [
+        'keyup',
+        'paste',
+        'input',
+        'change',
+        'search',
+        'propertychange',
+        'autocompleteSelect'
+    ].forEach(eventName => {
+        galleryFilterInput.addEventListener(eventName, debouncedApplyFilter, false);
+    });
+
     document.addEventListener('keydown', keyEventHandler, false);
     document.addEventListener('backbutton', resetGallery, false);
 });

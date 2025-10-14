@@ -3,39 +3,39 @@
 // -----------------------------------------------------------------------------
 
 html {
-	&,
-	&.theme-light {
-		@include includeLight;
-	}
+  &.theme-light {
+    @include includeLight;
+  }
 
-	&,
-	&.theme-dark {
-		@include includeDark;
-	}
-	
-	box-sizing: border-box; // Set up a decent box model on the root element
-	overflow-y: scroll;
-	background-color: var(--color-site-bg);
+  &,
+  &.theme-dark {
+    @include includeDark;
+  }
+
+  box-sizing: border-box; // Set up a decent box model on the root element
+  overflow-y: scroll;
+  background-color: var(--color-site-bg);
   transition: background-color 200ms $timing-apple;
 }
 
 body {
-	background-color: var(--color-site-bg);
-	margin: 16px;
-	min-height: 100vh;
+  background-color: var(--color-site-bg);
+  margin: 16px;
+  min-height: 100vh;
   transition: background-color 200ms $timing-apple;
-	//background-image: url('');
-	//background-attachment: fixed;
-	//background-position: center center;
-	//background-repeat: no-repeat;
-	//background-size: 100% auto;
+  touch-action: manipulation;
+  //background-image: url('');
+  //background-attachment: fixed;
+  //background-position: center center;
+  //background-repeat: no-repeat;
+  //background-size: 100% auto;
 }
 
 @mixin body-medium {
-	body {
-		margin: 32px auto 8px;
-		min-height: auto;
-	}
+  body {
+    margin: 32px auto;
+    min-height: auto;
+  }
 }
 
 /**
@@ -52,60 +52,90 @@ body {
 
 // Custom Resets
 :focus {
-	outline: none;
-}
-
-// Don't let the user select text in these
-header,
-footer,
-nav,
-ul.links,
-.gallery,
-h1,
-h2,
-h3 {
-	@include no-interaction;
+  outline: none;
 }
 
 /**
  * Basic styles for links
  */
 a {
-	-webkit-tap-highlight-color: transparent;
-	color: var(--color-text);
-	text-decoration: none;
-	transition: background-color 200ms $timing-apple, transform 200ms $timing-apple;
+  text-decoration: underline;
+  transition: color 200ms $timing-apple;
+  -webkit-tap-highlight-color: transparent;
+  @extend %click-area-small;
 
-	&:hover {
-		color: var(--color-text);
-		text-decoration: underline;
-	}  
+  &,
+  &:visited {
+    color: var(--color-brand-text);
+  }
 
-	&:focus-visible {
-		background-color: var(--color-focus);
-	}
-	
-	&:visited {
-	  color: var(--color-text);
-	}
+  &:hover {
+    color: var(--color-hover);
+  }
+}
+
+ul {
+  margin: 0 0 0 20px;
+  padding: 0;
+  list-style-position: outside;
+}
+
+@mixin ul-medium {
+  ul {
+    margin: 0 0 0 2em;
+  }
+}
+
+time {
+  color: var(--color-text-light);
+
+  a.tag + & {
+    margin-left: 0.5em;
+  }
+}
+
+a.heading-link {
+  opacity: 0;
+  margin-left: 5px;
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: opacity 200ms $timing-apple;
+  @extend %no-interaction;
+  @extend %click-area-small;
+
+  &::after {
+    content: "#";
+  }
+
+  &:hover {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  h1:hover &,
+  h2:hover &,
+  h3:hover &,
+  &:focus-visible {
+    opacity: 1;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-	html {
-		@include includeLight;
-	}
-	
-	html.theme-dark {
-		@include includeDark;
-	}
+  html {
+    @include includeLight;
+  }
+
+  .theme-dark {
+    @include includeDark;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-	html {
-		@include includeDark;
-	}
-	
-	html.theme-light {
-		@include includeLight;
-	}
+  html {
+    @include includeDark;
+  }
+
+  .theme-light {
+    @include includeLight;
+  }
 }

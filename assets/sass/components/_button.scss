@@ -1,27 +1,26 @@
 button {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	padding: 0;
-	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-width: 48px;
-	min-height: 48px;
-	transition: background-color 200ms $timing-apple;
+  -webkit-appearance: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend %click-area-small;
 
-	&.style-plain {
-		border: none;
-		background-color: transparent;
-		
-		&:focus-visible {
-			background-color: var(--color-focus);
-		}
-	}
-	
-	&.size-small {
-		.icon {
-			height: 25px;
-		}
-	}
+  &.style-plain {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      svg path {
+        fill: var(--color-hover);
+      }
+    }
+  }
+
+  &.size-small {
+    .icon {
+      height: 25px;
+    }
+  }
 }

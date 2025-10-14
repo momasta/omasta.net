@@ -1,52 +1,65 @@
 <header>
-	<div class="top-bar">
-		<button class="style-plain size-small toggle-theme-dark"
-				title="{{ i18n "switch-theme-dark" }}"
-				type="button">
+    <div class="top-bar">
+        <button class="style-plain size-small toggle-theme-dark"
+                title="{{ i18n "switch-theme-dark" }}"
+                type="button">
 			<span class="icon">
 				{{ readFile "themes/blank/static/images/icons/moon.svg" | safeHTML }}
 			</span>
-		</button>
-		
-		<button class="style-plain size-small toggle-theme-light"
-				title="{{ i18n "switch-theme-light" }}"
-				type="button">
+        </button>
+
+        <button class="style-plain size-small toggle-theme-light"
+                title="{{ i18n "switch-theme-light" }}"
+                type="button">
 			<span class="icon">
 				{{ readFile "themes/blank/static/images/icons/sun.svg" | safeHTML }}
 			</span>
-		</button>
-	
-		{{ if hugo.IsMultilingual }}
-			{{ range $.Translations }}
-				<a title="{{ i18n "switch-language" }}"
-				   href="{{ .Permalink }}"
-				   hreflang="{{ .Language }}">
-					<span lang="{{ .Language }}">
-                        {{ .Language.LanguageName }}
-                    </span>
-				</a>
-			{{ end }}
-		{{ end }}		
-	</div>
-	
-	<div class="card">
-		<div class="logo">
-			<a href="{{ .Site.Home.Permalink }}">
-				<img src="/images/profile-picture.png" alt="Profile picture">
-				<h1>{{ .Site.Title }}</h1>
-			</a>
-		</div>
-					
-		{{- $currentPage := . -}}
-		{{ with .Site.Menus.main }}
-		 <nav aria-label="Main">
-			 <ul>
-				 {{ range . }}
-				 <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-					 <a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-				 {{ end }}
-			 </ul>
-		 </nav>
-		 {{ end }} 
-	</div>
+        </button>
+
+        {{/* Language Switcher */}}
+        {{ if hugo.IsMultilingual }}
+            {{ $currentLang := .Lang }}
+            {{ if gt (len .Translations) 0 }}
+                {{ range .Translations }}
+                    <a title="{{ i18n "switch-language" }}"
+                       href="{{ .Permalink }}"
+                       hreflang="{{ .Lang }}">
+                        <span lang="{{ .Lang }}">{{ .Language.LanguageName }}</span>
+                    </a>
+                {{ end }}
+            {{ else }}
+                {{ range $.Site.Languages }}
+                    {{ if ne .Lang $currentLang }}
+                        <a title="{{ i18n "switch-language" }}"
+                           href="{{ printf "/%s/" .Lang | absURL }}"
+                           hreflang="{{ .Lang }}">
+                            <span lang="{{ .Lang }}">{{ .LanguageName }}</span>
+                        </a>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </div>
+    
+    <div class="card">
+        <div class="logo">
+            <a href="{{ .Site.Home.Permalink }}">
+                <img src="/images/profile-picture.png" alt="Profile picture">
+                {{ .Site.Title }}
+            </a>
+        </div>
+
+        {{- $currentPage := . -}}
+        {{ with .Site.Menus.main }}
+            <nav aria-label="Main">
+                <ul>
+                    {{- range . -}}
+                        <li{{ if $currentPage.IsMenuCurrent .Menu . }} class="active" aria-current="page"{{ end }}>
+                            <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+                        </li>
+                    {{- end -}}
+                </ul>
+            </nav>
+        {{ end }}
+    </div>
 </header>

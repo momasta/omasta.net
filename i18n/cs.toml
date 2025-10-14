@@ -21,6 +21,15 @@ other = 'Můj obsah'
 [posts]
 other = 'Články'
 
+[tag]
+other = 'Články se štítkem #'
+
+[tags]
+other = 'Štítky'
+
+[tags-show-all]
+other = 'Zobrazit články se štítkem'
+
 [latest-posts]
 other = 'Poslední články'
 
@@ -65,6 +74,21 @@ other = 'Další'
 
 [psw-error]
 other = 'Obrázek se nepodařilo načíst'
+
+[press-esc]
+other = 'Stiskněte Esc pro smazání filtru'
+
+[copy-link-heading]
+other = 'Zkopírovat odkaz na tento nadpis'
+
+[published]
+other = 'Zveřejněno:'
+
+[last-mod]
+other = 'Datum poslední úpravy:'
+
+[last-mod-short]
+other = 'Upraveno:'
 
 #[]
 #other = ''

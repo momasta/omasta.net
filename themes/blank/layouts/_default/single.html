@@ -1,32 +1,48 @@
 {{ define "main" }}
-	{{ partial "header" . }}
+    {{ partial "header" . }}
 
-		<div id="middle">
-			<main>
-				<div class="card">
-					<article>
-						<h2>{{ .Title }}</h2>
-						<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
-						<div>
-							{{ .Content }}
-						</div>
-						{{ with .Params.tags }}
-						<div>
-							<ul id="tags">
-								{{ range . }}
-								<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-								{{ end }}
-							</ul>
-						</div>
-						{{ end }}
-						{{ with .Site.DisqusShortname }}
-						<div>
-							{{ template "_internal/disqus.html" . }}
-						</div>
-						{{ end }}
-					</article>
-				</div>
-			</main>
-		</div>
-{{ partial "sidebar.html" . }}
+    {{ $datePublished := .PublishDate | time.Format .Site.Params.DateFormat }}
+    {{ $dateModified := .Lastmod | time.Format .Site.Params.DateFormat }}
+
+    {{ $dateModifiedText := "" }}
+    {{ if .Lastmod }}
+        {{ if ne $dateModified $datePublished }}
+            {{- $dateModifiedText = printf "\n%s %s" (i18n "last-mod-short") $dateModified -}}
+        {{ end }}
+    {{ end }}
+
+    <div id="middle">
+        <main>
+            <div class="card">
+                <article>
+                    <h1>{{ .Title }}</h1>
+
+                    {{- range .Params.tags -}}
+                        {{ $name := . }}
+
+                        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"
+                           title="{{ i18n "tags-show-all" }} #{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}"
+                           class="tag">#{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}</a>
+                    {{- end -}}
+
+                    <time datetime="{{ $datePublished }}"
+                          title="{{ i18n "published" }} {{ $datePublished }}{{ $dateModifiedText }}">{{- $datePublished -}}</time>
+
+                    <div class="article-content">
+                        {{ .Content }}
+                        {{- if .Lastmod -}}
+                            {{- if ne $dateModified $datePublished -}}
+                                <p>{{ i18n "last-mod" }}
+                                    <time datetime="{{ $dateModified }}">
+                                        {{- $dateModified -}}
+                                    </time>
+                                </p>
+                            {{- end -}}
+                        {{- end -}}
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
+    {{ partial "sidebar.html" . }}
 {{ end }}

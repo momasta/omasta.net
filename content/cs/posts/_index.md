@@ -1,0 +1,5 @@
+---
+title: "Články"
+outputs:
+    - RSS
+---

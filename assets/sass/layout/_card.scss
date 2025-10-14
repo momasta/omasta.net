@@ -1,62 +1,35 @@
 div.card {
-	width: 100%;
-	background-color: var(--color-content-bg);
-	padding: 24px 20px;
-	margin: 8px 0;
-	overflow: hidden;
-	word-break: normal;
-	overflow-wrap: anywhere;
-	border-radius: 16px;
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
+  width: 100%;
+  background-color: var(--color-content-bg);
+  padding: 24px 20px;
+  margin: 8px 0;
+  overflow: hidden;
+  word-break: normal;
+  overflow-wrap: anywhere;
+  border-radius: 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   transition: background-color 200ms $timing-apple;
 
-	h2 {
-		margin: 0 0 16px;
-		font-size: 20px;
-	}
+  a {
+    span {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--color-text-light);
+    }
+  }
 
-	span {
-		display: inline-block;
-		text-decoration: none;
-		color: var(--color-text-light);
-
-		& ~ a {
-			padding: 10px 0;
-			margin: 5px 0;
-		}
-
-		&.text-value {
-			color: inherit;
-			cursor: text;
-			-webkit-user-select: all;
-			-moz-user-select: all;
-			user-select: all;
-		}
-	}
-
-	a {
-		br {
-			& ~ span {
-				font-size: 14px;
-				margin: 0;
-				color: var(--color-text-light);
-			}
-		}
-	}
-	
-	
-	// Interaction
-	header & {
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
+  // Interaction
+  header & {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 @mixin card-medium {
-	header div.card {
-		flex-wrap: nowrap;
-	}
+  header div.card {
+    flex-wrap: nowrap;
+  }
 }

@@ -5,167 +5,31 @@ draft: false
 layout: simple
 ---
 
-<ul>
-	<li>
-		<a href="https://www.google.com/maps/contrib/104542687859367793440/photos" target="_blank">
-			Mapy Google - Místní průvodce: Marek Omasta
-		</a>
-	</li> 
-	<li>
-		<a href="https://www.google.com/maps/d/edit?mid=1IRwXIgjGDbiI2sAH4DTdhaPBMHY5c7yg&usp=sharing" target="_blank">
-			Moje mapy Google: Vnitroněmecká státní hranice (Innerdeutsche Grenze)
-		</a>
-	</li> 
-	<li>
-		<a href="https://mapy.cz/s/nefavonavo" target="_blank">
-			Mapy.cz • Fotogalerie autora • Marek Omasta
-		</a>
-	</li> 
-	<li>
-		<a href="https://cz.pinterest.com/m_omasta/_saved/" target="_blank">
-			Pinterest - Marek Omasta - Uloženo (Nástěnky)
-		</a>
-	</li> 
-	<li>
-		<a href="https://reddit.com/user/m_omasta" target="_blank">
-			Reddit - Marek Omasta (u/m_omasta)
-		</a>
-	</li> 
-	<li>
-		<a href="https://unsplash.com/@m_omasta" target="_blank">
-			Unsplash Photo Community | Marek Omasta (@m_omasta)
-		</a>
-	</li>
-	<li>
-		<a href="https://youtube.com/@m.omasta" target="_blank">
-			YouTube - Marek Omasta
-		</a>
-	</li>
-</ul>
-  
-### Shared Albums on iCloud
-<ul>
-	<li>
-		<a href="https://www.icloud.com/sharedalbum/#B0tGI9HKKCYRde" target="_blank">
-			69
-		</a>
-	</li> 
-	<li>
-		<a href="https://www.icloud.com/sharedalbum/#B0tGdIshaWJQQx" target="_blank">
-			Bepis
-		</a>
-	</li> 
-	<li>
-		<a href="https://www.icloud.com/sharedalbum/#B0t5aVbMKG88kr6" target="_blank">
-			Bizárky
-		</a>
-	</li> 
-	<li>
-		<a href="https://www.icloud.com/sharedalbum/#B0t5M7GFPGR8wDe" target="_blank">
-			Historie macOS
-		</a>
-	</li> 
-	<li>
-		<a href="https://www.icloud.com/sharedalbum/#B0t52plgjJR3F6w" target="_blank">
-			Hnusná místa v Praze
-		</a>
-	</li>
-	<li>
-		<a href="https://www.icloud.com/sharedalbum/#B0tGRMtznv6Ui6" target="_blank">
-			Pasivně agresivní cedule
-		</a>
-	</li>
-</ul>
-  
-### Quizlet
-My sets of flashcards collected from dictionaries, the Web and other people's Quizlet sets.
+## Sdílená alba v iCloudu
+* [Bepis](https://www.icloud.com/sharedalbum/#B0tGdIshaWJQQx)
+* [Bizárky](https://www.icloud.com/sharedalbum/#B0t5aVbMKG88kr6)
+* [Historie macOS](https://www.icloud.com/sharedalbum/#B0t5M7GFPGR8wDe)
+* [Hnusná místa v Praze](https://www.icloud.com/sharedalbum/#B0t52plgjJR3F6w)
+* [Pasivně agresivní cedule](https://www.icloud.com/sharedalbum/#B0tGRMtznv6Ui6)
 
-<a href="https://quizlet.com/m_omasta/folders" target="_blank">
-	Quizlet | m_omasta | Study Sets (Folders)
-</a>
+## Quizlet
+Moje sady kartiček na učení jazyků.  
+Termíny jsem sesbíral ze slovníků, z Internetu a od jiných uživatelů Quizletu.
+* [Quizlet | m_omasta | Study Sets](https://quizlet.com/m_omasta/folders)
 
-#### Czech
-<ul>
-	<li>
-		<a href="https://quizlet.com/594733412/czech-flash-cards/" target="_blank">
-			Czech 
-		</a>
-	</li> 
-	<li>
-		<a href="https://quizlet.com/594731596/hantec-czech-flash-cards/" target="_blank">
-			Hantec → Czech 
-		</a>
-	</li> 
-	<li>
-		<a href="https://quizlet.com/703476569/slangove-nazvy-drog-flash-cards/" target="_blank">
-			Slangové názvy drog 
-		</a>
-	</li>
-</ul>
+### Čeština
+* [Čeština](https://quizlet.com/594733412/czech-flash-cards/)
+* [Hantec](https://quizlet.com/594731596/hantec-czech-flash-cards/)
 
-#### English
-<ul>
-	<li>
-		<a href="https://quizlet.com/597004079/americanisms-english-flash-cards/" target="_blank">
-			Americanisms → English 
-		</a>
-	</li> 
-	<li>
-		<a href="https://quizlet.com/597949940/britishisms-flash-cards/" target="_blank">
-			Britishisms 
-		</a>
-	</li> 
-	<li>
-		<a href="https://quizlet.com/591946560/czech-english-flash-cards/" target="_blank">
-			Czech → English 
-		</a>
-	</li> 
-	<li>
-		<a href="https://quizlet.com/591946884/english-czech-flash-cards/" target="_blank">
-			English → Czech 
-		</a>
-	</li> 
-	<li>
-		<a href="https://quizlet.com/595041974/english-phrases-flash-cards/" target="_blank">
-			English Phrases 
-		</a>
-	</li> 
-	<li>
-		<a href="https://quizlet.com/594973719/foreign-plurals-flash-cards/" target="_blank">
-			Foreign Plurals 
-		</a>
-	</li> 
-	<li>
-		<a href="https://quizlet.com/701761957/similes-flash-cards/" target="_blank">
-			Similes 
-		</a>
-	</li>
-</ul>
+### Angličtina
+* [Amerikanismy → angličtina](https://quizlet.com/597004079/americanisms-english-flash-cards/)
+* [Čeština → angličtina](https://quizlet.com/591946560/czech-english-flash-cards/)
+* [Množná čísla cizích slov](https://quizlet.com/594973719/foreign-plurals-flash-cards/)
+* [Přirovnání](https://quizlet.com/701761957/similes-flash-cards/)
 
-#### German
-<ul>
-	<li>
-		<a href="https://quizlet.com/594705397/german-czechenglish-flash-cards/" target="_blank">
-			German → Czech/English 
-		</a>
-	</li>
-</ul>
+### Němčina
+* [Němčina → čeština/angličtina](https://quizlet.com/594705397/german-czechenglish-flash-cards/)
 
-#### Writing Systems
-<ul>
-	<li>
-		<a href="https://quizlet.com/426500375/azbuka-flash-cards/" target="_blank">
-			Cyrillic 
-		</a>
-	</li> 
-	<li>
-		<a href="https://quizlet.com/483773767/greek-english-letter-equivalents-flash-cards/" target="_blank">
-			Greek-English letter equivalents 
-		</a>
-	</li> 
-	<li>
-		<a href="https://quizlet.com/462684256/vietnamese-alphabet-flash-cards/" target="_blank">
-			Vietnamese alphabet 
-		</a>
-	</li> 
-</ul>
+### Písma
+* [Anglické ekvivalenty řeckých písmen](https://quizlet.com/483773767/greek-english-letter-equivalents-flash-cards/)
+* [Vietnamská abeceda](https://quizlet.com/462684256/vietnamese-alphabet-flash-cards/)  
