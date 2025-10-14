@@ -44,7 +44,8 @@
         if (hasLocalStorage === 'theme-light') {
             html.classList.add('theme-light');
         } else {
-            html.classList.add('theme-dark');  
+            html.classList.add('theme-dark');
+            localStorage.setItem('theme', 'theme-dark');
         }
     </script>
 
