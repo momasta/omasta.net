@@ -41,8 +41,10 @@
         const html = document.documentElement;
         const hasLocalStorage = localStorage.getItem('theme');
 
-        if (hasLocalStorage === 'theme-dark') {
-            html.classList.add('theme-dark');
+        if (hasLocalStorage === 'theme-light') {
+            html.classList.add('theme-light');
+        } else {
+            html.classList.add('theme-dark');  
         }
     </script>
 
@@ -50,7 +52,6 @@
     <style>
         body:not(.loaded) * {
             transition: none !important;
-            animation: none !important;
         }
 
         :root {
@@ -142,11 +143,6 @@
             supports = true;
         }
 
-        if (window.matchMedia(`(prefers-color-scheme: no-preference)`).matches) {
-            theme = hasLocalStorage ? hasLocalStorage : 'none';
-            supports = true;
-        }
-
         return {supports, theme};
     }
 
@@ -176,13 +172,10 @@
         }
 
         const setTheme = () => {
-            switch (userThemePreference.theme) {
-                case 'theme-dark':
-                    setThemeDark();
-                    break;
-                case 'theme-light':
-                    setThemeLight();
-                    break;
+            if (userThemePreference.theme === 'theme-light') {
+                setThemeLight();
+            } else {
+                setThemeDark();
             }
         }
 

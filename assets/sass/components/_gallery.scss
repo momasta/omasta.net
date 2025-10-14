@@ -37,14 +37,6 @@
     }
   }
 
-  &.state-visible {
-    opacity: 1;
-  }
-
-  &.state-hidden {
-    opacity: 0;
-  }
-
   // <img class="gallery-image-thumb">
   &-thumb {
     object-fit: cover;

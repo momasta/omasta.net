@@ -3,11 +3,8 @@
 // -----------------------------------------------------------------------------
 
 html {
-  box-sizing: border-box; // Set up a decent box model on the root element
-  overflow-y: scroll;
-  background-color: var(--color-site-bg);
-  transition: background-color var(--ease);
-  
+  @include includeDark;
+
   &.theme-light {
     @include includeLight;
   }
@@ -36,6 +33,14 @@ html {
     }
   }
 }
+
+html {
+  box-sizing: border-box; // Set up a decent box model on the root element
+  overflow-y: scroll;
+  background-color: var(--color-site-bg);
+  transition: background-color var(--ease);
+}
+
 
 body {
   margin: 16px;
@@ -130,4 +135,12 @@ a.heading-link {
   &:focus-visible {
     opacity: 1;
   }
+}
+
+.state-visible {
+  opacity: 1;
+}
+
+.state-hidden {
+  opacity: 0;
 }
