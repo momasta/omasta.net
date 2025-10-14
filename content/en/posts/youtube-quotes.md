@@ -3,6 +3,9 @@ date: 2025-10-14T14:18:50+02:00
 description:  
 draft: false
 keywords:
+    - timestamps
+    - video transcripts
+    - captions
 lastmod: 
 slug: 
 tags:

@@ -13,7 +13,6 @@
   -webkit-user-drag: none;
 }
 
-
 %click-area {
   position: relative;
 
@@ -23,7 +22,7 @@
     inset: -0.5rem -1rem;
     z-index: 1;
     border-radius: 0.5em;
-    transition: background-color 200ms $timing-apple;
+    transition: background-color var(--ease);
   }
 
   &:focus-visible::before {

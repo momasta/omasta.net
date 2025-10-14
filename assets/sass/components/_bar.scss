@@ -1,0 +1,26 @@
+.bar {
+  display: flex;
+  padding: 0 8px;
+  align-items: center;
+  height: 1.4em; // Fixed height to prevent jumping (if empty)
+  @extend %no-interaction;
+
+  header & {
+    justify-content: flex-end;
+  }
+
+  a,
+  a:visited {
+    padding: 0 12px;
+    color: var(--color-text-light);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-hover);
+  }
+
+  button + a {
+    margin-left: 1em;
+  }
+}

@@ -5,7 +5,7 @@ a.tag {
   margin: 3px 0;
   border-radius: 3px;
   text-decoration: none;
-  transition: background-color 200ms $timing-apple;
+  transition: background-color var(--ease);
   @extend %no-interaction;
   @extend %click-area-medium;
 
@@ -15,7 +15,7 @@ a.tag {
   }
   
   &,
-  ul.links & {
+  .links & {
     color: var(--color-content-bg);
   }
 

@@ -3,8 +3,8 @@ input[type=search] {
   outline: none;
   font-size: rem(16px);
   background: transparent;
-  transition: border-color 200ms $timing-apple;
-  color: var(--color--text);
+  transition: border-color var(--ease);
+  color: var(--color-text);
   padding: 3px 0;
   border: solid var(--color-text-light);
   border-width: 0 0 1px 0;

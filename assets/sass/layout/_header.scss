@@ -2,62 +2,34 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-.top-bar,
-footer {
-  display: flex;
-  padding: 0 8px;
-  align-items: center;
-  height: 1.4em; // Fixed height to prevent jumping (if empty)
+header {
   @extend %no-interaction;
+}
+
+.logo {
+  transition: opacity var(--ease);
 
   a,
   a:visited {
-    padding: 0 12px;
-    color: var(--color-text-light);
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: var(--color-text);
     text-decoration: none;
   }
 
   a:hover {
     color: var(--color-hover);
-  }
-
-  button + a {
-    margin-left: 1em;
-  }
-}
-
-header {
-  @extend %no-interaction;
-  
-  .top-bar {
-    justify-content: flex-end;
-  }
-
-  div.logo {
-    transition: opacity 200ms $timing-apple;
-
-    a,
-    a:visited {
-      display: flex;
-      align-items: center;
-      flex-wrap: nowrap;
-      color: var(--color-text);
-      text-decoration: none;
-    }
-    
-    a:hover {
-      color: var(--color-hover);
-      
-      img {
-        opacity: 0.6;
-      }
-    }
 
     img {
-      width: 45px;
-      height: 64px;
-      margin-right: 20px;
-      transition: opacity 200ms $timing-apple;
+      opacity: 0.6;
     }
+  }
+
+  img {
+    width: 45px;
+    height: 64px;
+    margin-right: 20px;
+    transition: opacity var(--ease);
   }
 }

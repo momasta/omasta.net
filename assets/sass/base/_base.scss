@@ -3,32 +3,44 @@
 // -----------------------------------------------------------------------------
 
 html {
+  box-sizing: border-box; // Set up a decent box model on the root element
+  overflow-y: scroll;
+  background-color: var(--color-site-bg);
+  transition: background-color var(--ease);
+  
   &.theme-light {
     @include includeLight;
   }
 
-  &,
   &.theme-dark {
     @include includeDark;
   }
+}
 
-  box-sizing: border-box; // Set up a decent box model on the root element
-  overflow-y: scroll;
-  background-color: var(--color-site-bg);
-  transition: background-color 200ms $timing-apple;
+@media (prefers-color-scheme: light) {
+  html {
+    @include includeLight;
+
+    &.theme-dark {
+      @include includeDark;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    @include includeDark;
+
+    &.theme-light {
+      @include includeLight;
+    }
+  }
 }
 
 body {
-  background-color: var(--color-site-bg);
   margin: 16px;
   min-height: 100vh;
-  transition: background-color 200ms $timing-apple;
   touch-action: manipulation;
-  //background-image: url('');
-  //background-attachment: fixed;
-  //background-position: center center;
-  //background-repeat: no-repeat;
-  //background-size: 100% auto;
 }
 
 @mixin body-medium {
@@ -60,7 +72,7 @@ body {
  */
 a {
   text-decoration: underline;
-  transition: color 200ms $timing-apple;
+  transition: color var(--ease);
   -webkit-tap-highlight-color: transparent;
   @extend %click-area-small;
 
@@ -99,7 +111,7 @@ a.heading-link {
   margin-left: 5px;
   color: var(--color-text-light);
   text-decoration: none;
-  transition: opacity 200ms $timing-apple;
+  transition: opacity var(--ease);
   @extend %no-interaction;
   @extend %click-area-small;
 
@@ -117,25 +129,5 @@ a.heading-link {
   h3:hover &,
   &:focus-visible {
     opacity: 1;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  html {
-    @include includeLight;
-  }
-
-  .theme-dark {
-    @include includeDark;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    @include includeDark;
-  }
-
-  .theme-light {
-    @include includeLight;
   }
 }

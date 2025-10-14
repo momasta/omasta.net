@@ -1,5 +1,3 @@
-$gallery-transition-delay: 200ms; // Keep in sync with hideTimeout in gallery_filter.js
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -29,8 +27,7 @@ $gallery-transition-delay: 200ms; // Keep in sync with hideTimeout in gallery_fi
   text-align: center;
   font-size: 0;
   overflow: hidden;
-  will-change: opacity, transform, display;
-  transition: transform $gallery-transition-delay $timing-apple, opacity $gallery-transition-delay $timing-apple;
+  transition: transform var(--ease), opacity var(--ease);
   @extend %click-area-small;
 
   &:hover,

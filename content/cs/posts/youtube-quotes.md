@@ -7,6 +7,9 @@ keywords:
     - SK
     - hlášky
     - citace
+    - timestamps
+    - přepisy videí
+    - titulky
 lastmod: 
 slug: hlasky-z-youtube
 tags:

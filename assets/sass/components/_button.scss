@@ -12,7 +12,7 @@ button {
     cursor: pointer;
 
     &:hover {
-      svg path {
+      svg {
         fill: var(--color-hover);
       }
     }

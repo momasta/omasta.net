@@ -2,9 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 200ms $timing-apple;
-  will-change: opacity;
-  transform: translateZ(0);
+  transition: opacity var(--ease);
   height: 100%;
   width: auto;
   box-sizing: content-box;
@@ -12,16 +10,6 @@
   svg {
     width: auto;
     height: 100%;
-
-    path {
-      fill: var(--color-text-light); // Update manually in baseof.html (critical CSS)
-    }
-  }
-
-  .top-bar & {
-    svg {
-      position: relative;
-      top: -1px; // Visual centering
-    }
+    fill: var(--color-text-light);
   }
 }

@@ -41,7 +41,7 @@
                target="_blank">
 
                 <img class="gallery-image-thumb"
-                     alt="{{ $imageName }}"
+                     alt="{{ $imageName }}."
 
                      {{/* Load first 20 images eagerly (above fold on FullHD) */}}
                      loading="{{ cond (gt $image_index 20) "lazy" "eager" }}"
