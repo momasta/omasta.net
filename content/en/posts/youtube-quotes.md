@@ -28,7 +28,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version{{< /i18n-link >}} o
 [https://youtube.com/clip/Ugkx6pyIygDHvZszqjOC4mPbkoLYsCDXmCFP](https://youtube.com/clip/Ugkx6pyIygDHvZszqjOC4mPbkoLYsCDXmCFP)
 
 ## Bald and Bankrupt
-* I like China. It's frustrating but I like it because you can still watch a dwarf show and you can have a fag with a cabbie.  
+* I like China. It's frustrating, but I like it because you can still watch a dwarf show, and you can have a fag with a cabbie.  
 [https://youtu.be/kGc3DM1qAf8?t=1850](https://youtu.be/kGc3DM1qAf8?t=1850)
 
 ## Cold Ones
@@ -164,7 +164,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version{{< /i18n-link >}} o
 [https://youtube.com/clip/UgkxMdiXCOyeWssTPAFBCWRzEO1DRXWz1Sth](https://youtube.com/clip/UgkxMdiXCOyeWssTPAFBCWRzEO1DRXWz1Sth)
 * John Coogan: Windows for Warships  
 [https://youtube.com/clip/UgkxKjcKyVh2Ac6C9aOlpddndL1ZAXLrSmvO](https://youtube.com/clip/UgkxKjcKyVh2Ac6C9aOlpddndL1ZAXLrSmvO)
-* You are now now rocking with mega faggot, robo bitch  
+* You are now, now rocking with mega faggot, robo bitch  
 [https://youtube.com/clip/Ugkx2r_vazwpNVuqBi8axAgkOyJg_y7W8HD9](https://youtube.com/clip/Ugkx2r_vazwpNVuqBi8axAgkOyJg_y7W8HD9)
 * Gordon Ramsay: You can see the hippo over there, slightly agitated this morning  
 [https://youtube.com/clip/UgkxPDHZPTTGrqBkUcRNJslLuDzhFFtRKJYi](https://youtube.com/clip/UgkxPDHZPTTGrqBkUcRNJslLuDzhFFtRKJYi)
