@@ -2,14 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity var(--ease);
-  height: 100%;
   width: auto;
   box-sizing: content-box;
 
   svg {
     width: auto;
-    height: 100%;
     fill: var(--color-text-light);
   }
 }

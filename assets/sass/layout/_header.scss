@@ -1,5 +1,8 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
+// This file contains all styles related to the header of the site.
+//
+// themes/blank/layouts/partials/header.html
+//
 // -----------------------------------------------------------------------------
 
 header {
@@ -7,8 +10,6 @@ header {
 }
 
 .logo {
-  transition: opacity var(--ease);
-
   a,
   a:visited {
     display: flex;
@@ -16,6 +17,8 @@ header {
     flex-wrap: nowrap;
     color: var(--color-text);
     text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
   }
 
   a:hover {
@@ -27,8 +30,8 @@ header {
   }
 
   img {
-    width: 45px;
-    height: 64px;
+    width: 45px; // Update in baseof.html
+    height: 64px;  // Update in baseof.html
     margin-right: 20px;
     transition: opacity var(--ease);
   }

@@ -1,0 +1,81 @@
+baseURL: https://marek.omasta.net
+title: Marek Omasta
+theme:
+  - blank
+defaultContentLanguage: en
+enableRobotsTXT: true
+loadJQuery: false
+removePathAccents: true
+summaryLength: 18
+timeout: 180s
+titleCaseStyle: none
+
+minify:
+  minifyOutput: true
+  tdewolff:
+    html:
+      KeepSpecialComments: true
+      keepComments: false
+      keepWhitespace: false
+    xml:
+      keepWhitespace: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  images:
+    - images/profile-picture-og-2.jpg
+
+taxonomies:
+  tag: tags
+
+outputs:
+  home:
+    - html
+  section:
+    - html
+  taxonomy:
+    - html
+  term:
+    - html
+
+languages:
+  en:
+    contentDir: content/en
+    languageName: English
+    languageCode: en-GB
+    weight: 1
+    params:
+      dateFormat: 2 Jan 2006
+      description: Personal website of Marek Omasta, meme archive, links to my
+        profiles and my content online
+    menu:
+      main:
+        - name: Home
+          pageref: /
+          weight: 1
+        - name: Memes
+          pageref: /memes
+          weight: 2
+  
+  cs:
+    contentDir: content/cs
+    languageName: Čeština
+    languageCode: cs-CZ
+    weight: 2
+    params:
+      dateFormat: 2. 1. 2006
+      description:
+        Osobní stránka Marka Omasty, archiv memes, odkazy na moje profily a
+        obsah online
+    menu:
+      main:
+        - name: Domů
+          pageref: /
+          weight: 1
+        - name: Memes
+          pageref: /memes
+          weight: 2

@@ -1,8 +1,8 @@
 .card {
   width: 100%;
-  background-color: var(--color-content-bg);
-  padding: 24px 20px;
-  margin: 8px 0;
+  background-color: var(--color-content-bg); // Update in baseof.html (background-color)
+  padding: 24px 20px;  // Update in baseof.html
+  margin: 8px 0;  // Update in baseof.html
   overflow: hidden;
   word-break: normal;
   overflow-wrap: anywhere;
@@ -28,7 +28,7 @@
   }
 }
 
-@mixin card-medium {
+@mixin mq-min-medium-card {
   header .card {
     flex-wrap: nowrap;
   }

@@ -21,19 +21,19 @@
                         {{ $name := . }}
 
                         <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"
-                           title="{{ i18n "tags-show-all" }} #{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}"
+                           title="{{ T "tags-show-all" }} #{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}"
                            class="tag">#{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}</a>
                     {{- end -}}
 
-                    <time datetime="{{ $datePublished }}"
-                          title="{{ i18n "published" }} {{ $datePublished }}{{ $dateModifiedText }}">{{- $datePublished -}}</time>
+                    <time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05" }}"
+                          title="{{ T "published" }} {{ $datePublished }}{{ $dateModifiedText }}">{{- $datePublished -}}</time>
 
                     <div class="article-content">
                         {{ .Content }}
                         {{- if .Lastmod -}}
                             {{- if ne $dateModified $datePublished -}}
-                                <p>{{ i18n "last-mod" }}
-                                    <time datetime="{{ $dateModified }}">
+                                <p>{{ T "last-mod" }}
+                                    <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">
                                         {{- $dateModified -}}
                                     </time>
                                 </p>

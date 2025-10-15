@@ -10,9 +10,13 @@ input[type=search] {
   border-width: 0 0 1px 0;
   border-radius: 0;
   width: 100%;
- 
+
   &::placeholder {
     color: var(--color-text-light);
+  }
+
+  &:hover {
+    border-color: var(--color-hover);
   }
 
   &:focus-visible {
@@ -26,7 +30,7 @@ input[type=submit] {
   font-size: rem(16px);
 }
 
-@mixin input-medium {
+@mixin mq-min-medium-input {
   input[type=text],
   input[type=search] {
     width: 210px;

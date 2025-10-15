@@ -12,24 +12,12 @@ html {
   &.theme-dark {
     @include includeDark;
   }
-}
 
-@media (prefers-color-scheme: light) {
-  html {
+  @media (prefers-color-scheme: light) {
     @include includeLight;
 
     &.theme-dark {
       @include includeDark;
-    }
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    @include includeDark;
-
-    &.theme-light {
-      @include includeLight;
     }
   }
 }
@@ -39,8 +27,8 @@ html {
   overflow-y: scroll;
   background-color: var(--color-site-bg);
   transition: background-color var(--ease);
+  -webkit-text-size-adjust: 100%;
 }
-
 
 body {
   margin: 16px;
@@ -48,7 +36,7 @@ body {
   touch-action: manipulation;
 }
 
-@mixin body-medium {
+@mixin mq-min-medium-body {
   body {
     margin: 32px auto;
     min-height: auto;
@@ -97,7 +85,7 @@ ul {
   list-style-position: outside;
 }
 
-@mixin ul-medium {
+@mixin mq-min-medium-ul {
   ul {
     margin: 0 0 0 2em;
   }
@@ -109,38 +97,4 @@ time {
   a.tag + & {
     margin-left: 0.5em;
   }
-}
-
-a.heading-link {
-  opacity: 0;
-  margin-left: 5px;
-  color: var(--color-text-light);
-  text-decoration: none;
-  transition: opacity var(--ease);
-  @extend %no-interaction;
-  @extend %click-area-small;
-
-  &::after {
-    content: "#";
-  }
-
-  &:hover {
-    color: var(--color-text);
-    text-decoration: none;
-  }
-
-  h1:hover &,
-  h2:hover &,
-  h3:hover &,
-  &:focus-visible {
-    opacity: 1;
-  }
-}
-
-.state-visible {
-  opacity: 1;
-}
-
-.state-hidden {
-  opacity: 0;
 }

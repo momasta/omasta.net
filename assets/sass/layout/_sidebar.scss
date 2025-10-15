@@ -1,3 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the sidebar of the site.
+//
+// themes/blank/layouts/partials/sidebar.html
+//
+// -----------------------------------------------------------------------------
+
 aside {
   display: flex;
   flex: 1 0 auto;
@@ -5,7 +12,7 @@ aside {
   min-width: 255px;
 }
 
-@mixin aside-medium {
+@mixin mq-min-medium-aside {
   main + aside {
     margin-left: 16px;
   }

@@ -7,7 +7,7 @@
             {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
 
             <div class="card">
-                <h1>{{ i18n "posts" }}</h1>
+                <h1>{{ T "posts" }}</h1>
 
                 <ul class="links">
                     {{ range $paginator.Pages }}
@@ -21,7 +21,7 @@
 
         <aside class="">
             <div class="card">
-                <h2>{{ i18n "contact-me" }}</h2>
+                <h2>{{ T "contact-me" }}</h2>
 
                 <ul class="links">
                     <li>
@@ -29,16 +29,16 @@
                             title="Facebook Messenger">Messenger:&nbsp;</span>omastik</a>
                     </li>
                     <li>
-                        <a href="mailto:marek@omasta.net"><span>{{ i18n "email" }}:&nbsp;</span>marek@omasta.net</a>
+                        <a href="mailto:marek@omasta.net"><span>{{ T "email" }}:&nbsp;</span>marek@omasta.net</a>
                     </li>
                     <li>
-                        <a href="{{ "profiles/" }}">{{ i18n "more-profiles" }}…</a>
+                        <a href="{{ "profiles/" }}">{{ T "more-profiles" }}…</a>
                     </li>
                 </ul>
             </div>
 
             <div class="card">
-                <h2>{{ i18n "my-content" }}</h2>
+                <h2>{{ T "my-content" }}</h2>
 
                 <ul class="links">
                     <li>
@@ -48,7 +48,7 @@
                         <a href="https://unsplash.com/@m_omasta" target="_blank">Unsplash</a>
                     </li>
                     <li>
-                        <a href="{{ "content/" }}">{{ i18n "more-content" }}…</a>
+                        <a href="{{ "content/" }}">{{ T "more-content" }}…</a>
                     </li>
                 </ul>
             </div>
@@ -57,7 +57,7 @@
             {{- if gt (len $tags) 0 }}
                 <div class="card">
                     <div>
-                        <h2>{{ i18n "tags" }}</h2>
+                        <h2>{{ T "tags" }}</h2>
                     </div>
                     <div>
                         <ul class="links">
@@ -65,7 +65,7 @@
                                 {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
                                     <li>
                                         <a href="{{ .RelPermalink }}"
-                                           title="{{ i18n "tags-show-all" }} #{{ .LinkTitle }}"
+                                           title="{{ T "tags-show-all" }} #{{ .LinkTitle }}"
                                            class="tag">
                                             #{{ .LinkTitle }}</a>&nbsp;<span>({{ $count }})</span>
                                     </li>

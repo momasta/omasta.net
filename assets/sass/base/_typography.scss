@@ -5,38 +5,26 @@ html {
   color: var(--color-text);
 }
 
-.logo a {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
 h1,
 h2,
 h3 {
   font-weight: 500;
 }
 
+h1 {
+  margin: 0; // Update in baseof.html
+}
+
 h1,
-.breadcrumbs .links a {
+.breadcrumbs .links {
   font-size: rem(26px);
 }
 
-h1 {
-  margin: 0;
-
-  .card article .breadcrumbs & {
-    display: inline-block;
-    margin: 0;
-  }
-}
-
 h2 {
-  .card & {
-    font-size: rem(20px);
-    margin: 0 0 16px;
-  }
+  font-size: rem(20px);
+  margin: 0 0 16px;
 
-  .card article & {
+  article & {
     margin: 1em 0 0.25em;
   }
 }

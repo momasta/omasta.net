@@ -4,12 +4,38 @@
   time {
     color: inherit;
   }
+}
 
-  h1 + a.tag {
-    margin-top: 0.5rem;
+a.heading-link {
+  opacity: 0;
+  margin-left: 5px;
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: opacity var(--ease);
+  @extend %no-interaction;
+  @extend %click-area-small;
+
+  &::after {
+    content: "#";
   }
 
-  h2 + p {
-    margin-top: 0;
+  &:hover {
+    color: var(--color-text);
+    text-decoration: none;
   }
+
+  h1:hover &,
+  h2:hover &,
+  h3:hover &,
+  &:focus-visible {
+    opacity: 1;
+  }
+}
+
+h1 + a.tag {
+  margin-top: 0.5rem;
+}
+
+h2 + p {
+  margin-top: 0;
 }

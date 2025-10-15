@@ -13,8 +13,11 @@
 .gallery-filter {
   padding: 0 0 20px;
   display: flex;
-  margin: 0 5px;
   flex-basis: 100%;
+}
+
+#gallery-no-results.state-hidden {
+  display: none;
 }
 
 // <a class="gallery-image>
@@ -27,7 +30,7 @@
   text-align: center;
   font-size: 0;
   overflow: hidden;
-  transition: transform var(--ease), opacity var(--ease);
+  transition: transform var(--ease);
   @extend %click-area-small;
 
   &:hover,
@@ -35,6 +38,10 @@
     .gallery-image-thumb {
       transform: scale(1.03);
     }
+  }
+
+  &.state-hidden {
+    display: none;
   }
 
   // <img class="gallery-image-thumb">
@@ -47,7 +54,7 @@
   }
 }
 
-@mixin gallery-image-medium {
+@mixin mq-min-medium-gallery-image {
   .gallery-image {
     width: 25%;
     max-width: 25%;

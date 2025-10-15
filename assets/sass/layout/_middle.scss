@@ -5,7 +5,7 @@
   margin-bottom: 3px;
 }
 
-@mixin middle-medium {
+@mixin mq-min-medium-middle {
   #middle {
     flex-direction: row;
   }

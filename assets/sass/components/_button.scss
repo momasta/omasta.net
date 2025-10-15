@@ -1,5 +1,6 @@
 button {
   -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -19,8 +20,8 @@ button {
   }
 
   &.size-small {
-    .icon {
-      height: 25px;
+    svg {
+      height: 26px;
     }
   }
 }

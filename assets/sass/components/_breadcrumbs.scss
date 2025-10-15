@@ -1,15 +1,19 @@
-/*
-  themes/blank/layouts/partials/breadcrumbs.html
-*/
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the breadcrumbs.
+//
+// themes/blank/layouts/partials/breadcrumbs.html
+//
+// -----------------------------------------------------------------------------
 
 .breadcrumbs {
   margin: 0;
-  
-  .links {
-    font-size: 1.5rem;
-    
-    li {
-      margin-top: 0;
-    }
+
+  h1 {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .links li {
+    margin-top: 0;
   }
 }

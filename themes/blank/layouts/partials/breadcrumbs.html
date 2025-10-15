@@ -7,7 +7,7 @@
         {{ range .Ancestors.Reverse }}
             {{ if not .IsHome }}
                 <li>
-                    <a href="{{ .RelPermalink }}" title="{{ i18n "go-back-to" }} {{ .LinkTitle }}">{{ .LinkTitle }}</a>
+                    <a href="{{ .RelPermalink }}" title="{{ T "go-back-to" }} {{ .LinkTitle }}">{{ .LinkTitle }}</a>
                 </li><li role="separator" aria-hidden="true">&nbsp;/&nbsp;</li>
             {{ end }}
         {{ end }}

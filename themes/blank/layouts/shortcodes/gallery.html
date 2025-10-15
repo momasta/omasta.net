@@ -1,3 +1,7 @@
+{{/*
+    assets/sass/components/_gallery.scss
+*/}}
+
 {{/* Based on https://www.codeproject.com/Articles/5276331/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2 */}}
 
 {{/* Optional parameter to specify an asset subdirectory */}}
@@ -5,58 +9,75 @@
 {{- $directory := cond (ne "" $param0) (print "/" $param0) "" -}}
 {{- $path := (print "images" $directory "/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF}") -}}
 
+<div class="gallery-filter">
+    <form action="#" class="gallery-filter-form">
+        <input type="search"
+               placeholder="{{ T "filter" }}"
+               class="gallery-filter-input"
+               autocomplete="on"
+               autocapitalize="off"
+               autofocus
+               title="{{ T "press-esc" }}">
+
+        <input type="submit"
+               value="Filter"
+               class="gallery-filter-submit">
+    </form>
+</div>
+
+<p id="gallery-no-results" aria-hidden="true" class="state-hidden">
+    {{ T "no-images-found" }}
+</p>
+
 <!--Use eager loading for the first 20 images-->
 <div class="gallery">
-    {{- $images := (resources.Match $path) -}}
+    {{- $images := resources.Match $path }}
 
-    <div class="gallery-filter">
-        <form action="#" class="gallery-filter-form">
-            <input type="search"
-                   placeholder="{{ i18n "filter" }}"
-                   class="gallery-filter-input"
-                   autocomplete="off"
-                   autocapitalize="off"
-                   autofocus
-                   title="{{ i18n "press-esc" }}">
+    {{- if $images }}
+        {{- $imgs := slice }}
 
-            <input type="submit"
-                   value="Filter"
-                   tabindex="-1"
-                   class="gallery-filter-submit">
-        </form>
-    </div>
+        {{- range $idx, $image := $images }}
+            {{- $filePath := printf "assets/%s" $image.Name }}
+            {{- $fileInfo := os.Stat $filePath }}
+            {{- $imgs = $imgs | append (dict "modTime" $fileInfo.ModTime "image" $image) }}
+        {{- end }}
 
-    {{ with $images }}
-        {{ range $image_index, $image := . }}
+        {{- $sorted := sort $imgs "modTime" "desc" }}
+
+        {{- range $index, $item := $sorted }}
+            {{- $image := $item.image }}
             {{ $imageName := ($image.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr }}
             {{ $imageURL := $image.Permalink | safeURL }}
 
             <a href="{{ $imageURL }}"
                class="gallery-image state-visible"
-               data-pswp-width="{{ .Width }}"
-               data-pswp-height="{{ .Height }}"
+               data-pswp-width="{{ $image.Width }}"
+               data-pswp-height="{{ $image.Height }}"
                data-cropped="true"
                id="{{ $imageName | humanize | urlize }}"
                title="{{ $imageName }}"
                target="_blank">
 
-                <img class="gallery-image-thumb"
-                     alt="{{ $imageName }}."
-
-                     {{/* Load first 20 images eagerly (above fold on FullHD) */}}
-                     loading="{{ cond (gt $image_index 20) "lazy" "eager" }}"
-
-                     {{/* .Resize not supported for GIFs, use the image itself */}}
-                     {{- if (eq $image.MediaType.SubType "gif") -}}
-                     src="{{ $imageURL }}"
-                     {{- else -}}
-                     {{- $thumb := $image.Resize "288x webp q70" -}}
-                         src="{{ $thumb.Permalink | safeURL }}"
-                     {{- end -}}/>
+                {{ if eq $image.MediaType.SubType "gif" }}
+                    <img class="gallery-image-thumb"
+                         alt="{{ $imageName }}."
+                         loading="{{ cond (gt $index 20) "lazy" "eager" }}"
+                         src="{{ $imageURL }}">
+                {{ else }}
+                    {{- $thumb1 := $image.Resize "150x webp q80" -}}
+                    {{- $thumb2 := $image.Resize "300x webp q70" -}}
+                    <img class="gallery-image-thumb"
+                         alt="{{ $imageName }}."
+                         loading="{{ cond (gt $index 20) "lazy" "eager" }}"
+                         src="{{ $thumb1.Permalink | safeURL }}"
+                         srcset="{{ $thumb1.Permalink | safeURL }} 1x, {{ $thumb2.Permalink | safeURL }} 2x"
+                         sizes="150px">
+                {{ end }}
             </a>
-        {{ end }}
-    {{ end }}
+        {{- end }}
+    {{- end }}
 </div>
+
 
 {{ $photoswipeCSS := resources.Get "css/photoswipe.css" | resources.Minify }}
 {{ $photoswipeJS := resources.Get "js/photoswipe.esm.min.js" }}
@@ -77,11 +98,11 @@
         showHideAnimationType: 'zoom',
         pswpModule: () => import('{{ print $photoswipeJS.RelPermalink "?" now.Unix | safe.JSStr }}'),
         preload: [1, 4],
-        closeTitle: '{{ i18n "close" }}',
-        zoomTitle: '{{ i18n "zoom" }}',
-        arrowPrevTitle: '{{ i18n "previous" }}',
-        arrowNextTitle: '{{ i18n "next" }}',
-        errorMsg: '{{ i18n "psw-error" }}'
+        closeTitle: '{{ T "close" }}',
+        zoomTitle: '{{ T "zoom" }}',
+        arrowPrevTitle: '{{ T "previous" }}',
+        arrowNextTitle: '{{ T "next" }}',
+        errorMsg: '{{ T "psw-error" }}'
     });
     lightbox.init();
 </script>

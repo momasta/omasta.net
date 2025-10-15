@@ -1,7 +1,11 @@
+{{/*
+    assets/sass/layout/_header.scss
+*/}}
+
 <header>
     <div class="bar">
         <button class="style-plain size-small toggle-theme-dark"
-                title="{{ i18n "switch-theme-dark" }}"
+                title="{{ T "switch-theme-dark" }}"
                 type="button">
 			<span class="icon">
 				{{ readFile "themes/blank/static/images/icons/moon.svg" | safeHTML }}
@@ -9,7 +13,7 @@
         </button>
 
         <button class="style-plain size-small toggle-theme-light"
-                title="{{ i18n "switch-theme-light" }}"
+                title="{{ T "switch-theme-light" }}"
                 type="button">
 			<span class="icon">
 				{{ readFile "themes/blank/static/images/icons/sun.svg" | safeHTML }}
@@ -21,7 +25,7 @@
             {{ $currentLang := .Lang }}
             {{ if gt (len .Translations) 0 }}
                 {{ range .Translations }}
-                    <a title="{{ i18n "switch-language" }}"
+                    <a title="{{ T "switch-language" }}"
                        href="{{ .Permalink }}"
                        hreflang="{{ .Lang }}">
                         <span lang="{{ .Lang }}">{{ .Language.LanguageName }}</span>
@@ -30,7 +34,7 @@
             {{ else }}
                 {{ range $.Site.Languages }}
                     {{ if ne .Lang $currentLang }}
-                        <a title="{{ i18n "switch-language" }}"
+                        <a title="{{ T "switch-language" }}"
                            href="{{ printf "/%s/" .Lang | absURL }}"
                            hreflang="{{ .Lang }}">
                             <span lang="{{ .Lang }}">{{ .LanguageName }}</span>

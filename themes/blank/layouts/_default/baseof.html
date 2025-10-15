@@ -6,35 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Site Information -->
-
     <title>
-        {{ if hugo.IsServer }}(Local) {{ end }}
-        {{- if not .IsHome -}}
-            {{ if .Page.Title }}{{ .Page.Title }} - {{ end }}
-        {{- end -}}
-        {{ .Site.Title }}
+        {{- if not .IsHome -}} {{ if .Page.Title }}{{ .Page.Title }} - {{ end }} {{- end -}}
+        {{- if hugo.IsServer -}} Hugo {{- else -}} {{- .Site.Title -}} {{- end -}}
     </title>
 
     {{ with .Site.Params.description }}
-        <meta name="description" content="{{ . }}">
-    {{ end }}
-
+        <meta name="description" content="{{ . }}"> {{ end }}
     {{ with .Site.Params.author }}
-        <meta name="author" content="{{ . }}">
-    {{ end }}
-
+        <meta name="author" content="{{ . }}"> {{ end }}
     {{ if .Keywords }}
         {{ with .Keywords }}
             <meta name="keywords"
                   content="{{ range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">
         {{ end }}
     {{ end }}
-
-    <!-- Shortcut Icons -->
-    <link rel="icon" href="/images/favicon.jpg" sizes="32x32">
-    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
-    <link rel="icon" href="/images/favicon-192.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/images/favicon-180.jpg">
 
     <!-- Perform before rendering page -->
     <script>
@@ -51,12 +37,12 @@
 
     <!-- Critical CSS -->
     <style>
-        body:not(.loaded) * {
-            transition: none !important;
-        }
-
         :root {
             color-scheme: dark light;
+        }
+
+        body:not(.loaded) * {
+            transition: none !important;
         }
 
         html.theme-dark {
@@ -64,16 +50,13 @@
             color: #fdfdfd;
         }
 
-        html.theme-light .toggle-theme-light {
-            display: none;
-        }
-
-        html.theme-dark .toggle-theme-dark {
-            display: none;
-        }
-
         html.theme-dark .card {
             background-color: #222;
+        }
+
+        html.theme-light .toggle-theme-light,
+        html.theme-dark .toggle-theme-dark {
+            display: none;
         }
 
         html {
@@ -101,6 +84,16 @@
     {{ $main_style := $main_template | resources.ExecuteAsTemplate "main_parsed.scss" . | toCSS $main_options | resources.Minify }}
     <link rel="stylesheet" href="{{ print $main_style.RelPermalink "?" now.Unix }}">
 
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" href="{{ .Site.Home.Permalink }}posts/index.xml"
+          title="{{ .Site.Title }} - {{ T "posts" }}" hreflang="{{ .Lang }}">
+
+    <!-- Shortcut Icons -->
+    <link rel="icon" href="/images/favicon.jpg" sizes="32x32">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+    <link rel="icon" href="/images/favicon-192.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/images/favicon-180.jpg">
+
     <!-- Apple-Specific Meta Tags -->
     <meta name="theme-color" content="#b8b8b8" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
@@ -108,9 +101,6 @@
 
     <!-- OG Tags -->
     {{ template "_internal/opengraph.html" . }}
-
-    {{/* RSS */}}
-    <link rel="alternate" type="application/rss+xml" href="{{ .Site.Home.Permalink }}posts/index.xml" title="{{ .Site.Title }} - {{ i18n "posts" }}" hreflang="{{ .Lang }}">
 </head>
 
 <body{{ with .Type }} class="{{ . }}" {{ end }} ondragstart="return false;" ondrop="return false;" draggable="false">
