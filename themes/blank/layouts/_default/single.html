@@ -21,8 +21,8 @@
                         {{ $name := . }}
 
                         <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"
-                           title="{{ T "tags-show-all" }} #{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}"
-                           class="tag">#{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}</a>
+                           title="{{ T "tags-show-all" }} &#35;{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}"
+                           class="tag">&#35;{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}</a>
                     {{- end -}}
 
                     <time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05" }}"

@@ -1,4 +1,3 @@
-baseURL: https://marek.omasta.net
 title: Marek Omasta
 theme:
   - blank
@@ -16,6 +15,7 @@ minify:
     html:
       KeepSpecialComments: true
       keepComments: false
+      keepQuotes: true
       keepWhitespace: false
     xml:
       keepWhitespace: false

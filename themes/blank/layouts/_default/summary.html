@@ -13,7 +13,7 @@
             {{ $title := .Page.Title }}
             <a href="{{ .Page.RelPermalink }}"
                class="tag"
-               title="{{ T "tags-show-all" }} #{{ $title }}">#{{- $title -}}</a>
+               title="{{ T "tags-show-all" }} &#35;{{ $title }}">&#35;{{- $title -}}</a>
         {{- end -}}
     {{- end -}}<!--
     --><time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05" }}">

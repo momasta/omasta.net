@@ -24,4 +24,4 @@ hugo.linux
 /.hugo_build.lock
 
 # Custom paths
-#/assets/images/memes/
+/assets/images/memes/*

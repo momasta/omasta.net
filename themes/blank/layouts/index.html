@@ -65,9 +65,9 @@
                                 {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
                                     <li>
                                         <a href="{{ .RelPermalink }}"
-                                           title="{{ T "tags-show-all" }} #{{ .LinkTitle }}"
+                                           title="{{ T "tags-show-all" }} &#35;{{ .LinkTitle }}"
                                            class="tag">
-                                            #{{ .LinkTitle }}</a>&nbsp;<span>({{ $count }})</span>
+                                            &#35;{{ .LinkTitle }}</a>&nbsp;<span>({{ $count }})</span>
                                     </li>
                                 {{ end }}
                             {{ end }}

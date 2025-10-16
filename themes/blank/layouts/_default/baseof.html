@@ -125,12 +125,12 @@
         }
 
         if (window.matchMedia(`(prefers-color-scheme: dark)`).matches) {
-            theme = hasLocalStorage ? hasLocalStorage : 'theme-dark';
+            theme = hasLocalStorage || 'theme-dark';
             supports = true;
         }
 
         if (window.matchMedia(`(prefers-color-scheme: light)`).matches) {
-            theme = hasLocalStorage ? hasLocalStorage : 'theme-light';
+            theme = hasLocalStorage || 'theme-light';
             supports = true;
         }
 
