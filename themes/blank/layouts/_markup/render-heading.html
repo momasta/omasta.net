@@ -1,5 +1,6 @@
 {{- $linkTitle := .Anchor | humanize | urlize -}}
 <h{{ .Level }} id="{{- $linkTitle -}}" {{- with .Attributes.class }} class="{{ . }}" {{- end }}>
     {{ .Text }}
-    <a href="&#35;{{- $linkTitle -}}" class="heading-link" title="{{ T "copy-link-heading" }}"></a>
+    <a href="&#35;{{- $linkTitle -}}" class="heading-link" title="{{ T "copy-link-heading" }}"
+       aria-label="{{ T "copy-link-heading" }}"></a>
 </h{{ .Level }}>

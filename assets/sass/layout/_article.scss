@@ -1,6 +1,14 @@
+article {
+  a.tag,
+  time {
+    font-size: 1rem;
+  }
+}
+
 .article-content {
   margin-top: 20px;
   
+  // "Last updated" at the end of the article (if any)
   time {
     color: inherit;
   }
@@ -23,10 +31,11 @@ a.heading-link {
     color: var(--color-text);
     text-decoration: none;
   }
-
-  h1:hover &,
+  
   h2:hover &,
   h3:hover &,
+  h2:focus-within &,
+  h3:focus-within &,
   &:focus-visible {
     opacity: 1;
   }
