@@ -64,13 +64,18 @@
                          loading="{{ cond (gt $index 20) "lazy" "eager" }}"
                          src="{{ $imageURL }}">
                 {{ else }}
-                    {{- $thumb1 := $image.Resize "150x webp q80" -}}
-                    {{- $thumb2 := $image.Resize "300x webp q70" -}}
+                    {{- $hash := substr (md5 $image.RelPermalink) 0 8 -}}
+                    {{- $dir := path.Dir $image.RelPermalink -}}
+
+                    {{- /* Create resized thumbs and copy them into a "t/" subfolder */ -}}
+                    {{- $thumb1 := $image.Resize "150x webp q80" | resources.Copy (printf "%s/t/%s.webp" $dir $hash) -}}
+                    {{- $thumb2 := $image.Resize "300x webp q70" | resources.Copy (printf "%s/t/%s@2x.webp" $dir $hash) -}}
+
                     <img class="gallery-image-thumb"
                          alt="{{ $imageName }}."
                          loading="{{ cond (gt $index 20) "lazy" "eager" }}"
-                         src="{{ $thumb1.Permalink | safeURL }}"
-                         srcset="{{ $thumb1.Permalink | safeURL }} 1x, {{ $thumb2.Permalink | safeURL }} 2x"
+                         src="{{ $thumb1.RelPermalink | safeURL }}"
+                         srcset="{{ $thumb1.RelPermalink | safeURL }} 1x, {{ $thumb2.RelPermalink | safeURL }} 2x"
                          sizes="150px">
                 {{ end }}
             </a>
@@ -105,4 +110,6 @@
         errorMsg: '{{ T "psw-error" }}'
     });
     lightbox.init();
+
+    window.pswpLightbox = lightbox;
 </script>

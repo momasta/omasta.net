@@ -50,6 +50,10 @@
             color: #fdfdfd;
         }
 
+        html.theme-dark svg {
+            fill: #b8b8b8;
+        }
+
         html.theme-dark .card {
             background-color: #222;
         }
@@ -85,8 +89,15 @@
     <link rel="stylesheet" href="{{ print $main_style.RelPermalink "?" now.Unix }}">
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" href="{{ .Site.Home.Permalink }}posts/index.xml"
-          title="{{ .Site.Title }} - {{ T "posts" }}" hreflang="{{ .Lang }}">
+    {{ with .Site.GetPage "section" "posts" }}
+        {{ with .OutputFormats.Get "RSS" }}
+            <link rel="alternate"
+                  type="application/rss+xml"
+                  title="{{ $.Site.Title }} - {{ T "posts" }}"
+                  hreflang="{{ $.Lang }}"
+                  href="{{ .RelPermalink | safeURL }}">
+        {{ end }}
+    {{ end }}
 
     <!-- Shortcut Icons -->
     <link rel="icon" href="/images/favicon.jpg" sizes="32x32">

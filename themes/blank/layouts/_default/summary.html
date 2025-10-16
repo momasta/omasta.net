@@ -4,7 +4,7 @@
     <a href="{{ .Permalink }}">{{ .Title }}</a>
 
     <div class="post-summary">
-        {{ .Summary | plainify }}
+        {{ .Summary | plainify | truncate 160 "…" }}
     </div>
 
     {{- range .Params.tags -}}

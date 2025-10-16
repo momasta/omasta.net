@@ -243,6 +243,10 @@
         // ===== Keyboard shortcuts =====
         document.addEventListener("keydown", (e) => {
             if (e.key === "Escape") {
+                if (window.pswpLightbox && window.pswpLightbox.pswp && window.pswpLightbox.pswp.isOpen) {
+                    // If PhotoSwipe is open, let it close first
+                    return;
+                }
                 input.value = "";
                 applyFilter("");
                 setQueryParamInURL(""); // clear q param on Escape reset

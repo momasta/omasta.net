@@ -3,5 +3,13 @@
 */}}
 
 <footer class="bar">
-    <a href="{{ .Site.Home.Permalink }}posts/index.xml" target="_blank" hreflang="{{ .Lang }}">RSS</a>
+    {{ with .Site.GetPage "section" "posts" }}
+        {{ with .OutputFormats.Get "RSS" }}
+            <a href="{{ .RelPermalink | safeURL }}"
+               type="application/rss+xml"
+               rel="alternate"
+               hreflang="{{ $.Lang }}">RSS</a>
+        {{ end }}
+    {{ end }}
 </footer>
+

@@ -25,3 +25,4 @@ hugo.linux
 
 # Custom paths
 /assets/images/memes/*
+!/assets/images/memes/.gitkeep
