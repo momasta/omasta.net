@@ -26,9 +26,9 @@
             {{ if gt (len .Translations) 0 }}
                 {{ range .Translations }}
                     <a title="{{ T "switch-language" }}"
-                       href="{{ .Permalink }}"
-                       hreflang="{{ .Lang }}">
-                        <span lang="{{ .Lang }}">{{ .Language.LanguageName }}</span>
+                       href="{{ .RelPermalink }}"
+                       hreflang="{{ .Language.LanguageCode }}">
+                        <span lang="{{ .Language.LanguageCode }}">{{ .Language.LanguageName }}</span>
                     </a>
                 {{ end }}
             {{ else }}
@@ -36,8 +36,8 @@
                     {{ if ne .Lang $currentLang }}
                         <a title="{{ T "switch-language" }}"
                            href="{{ printf "/%s/" .Lang | absURL }}"
-                           hreflang="{{ .Lang }}">
-                            <span lang="{{ .Lang }}">{{ .LanguageName }}</span>
+                           hreflang="{{ .Language.LanguageCode }}">
+                            <span lang="{{ .Language.LanguageCode }}">{{ .LanguageName }}</span>
                         </a>
                     {{ end }}
                 {{ end }}
@@ -47,7 +47,7 @@
     
     <div class="card">
         <div class="logo">
-            <a href="{{ .Site.Home.Permalink }}">
+            <a href="{{ .Site.Home.RelPermalink }}">
                 <img src="/images/profile-picture.png" alt="Profile picture">
                 {{ .Site.Title }}
             </a>

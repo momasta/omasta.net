@@ -6,7 +6,7 @@
     );
 
     for (const anchor of anchors) {
-        anchor.addEventListener('click', async (event) => {
+        anchor.addEventListener('click', async () => {
             const href = anchor.getAttribute('href');
             const id = href && href.startsWith('#') ? href.slice(1) : anchor.closest('h1,h2,h3')?.id;
             if (!id) return;
@@ -15,9 +15,8 @@
 
             try {
                 await navigator.clipboard.writeText(url);
-                const oldTitle = anchor.getAttribute('title') || '';
-                anchor.setAttribute('title', '✓');
-                setTimeout(() => anchor.setAttribute('title', oldTitle), 1200);
+                anchor.classList.add('state-success');
+                setTimeout(() => anchor.classList.remove('state-success'), 1200);
             } catch (error) {
                 console.error('Copying to clipboard failed', error);
             }

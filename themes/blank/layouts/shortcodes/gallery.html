@@ -47,10 +47,10 @@
         {{- range $index, $item := $sorted }}
             {{- $image := $item.image }}
             {{ $imageName := ($image.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr }}
-            {{ $imageURL := $image.Permalink | safeURL }}
+            {{ $imageURL := $image.RelPermalink | safeURL }}
 
             <a href="{{ $imageURL }}"
-               class="gallery-image state-visible"
+               class="gallery-image"
                data-pswp-width="{{ $image.Width }}"
                data-pswp-height="{{ $image.Height }}"
                data-cropped="true"

@@ -8,7 +8,7 @@
             <a href="{{ .RelPermalink | safeURL }}"
                type="application/rss+xml"
                rel="alternate"
-               hreflang="{{ $.Lang }}">RSS</a>
+               hreflang="{{ $.Language.LanguageCode }}">RSS</a>
         {{ end }}
     {{ end }}
 </footer>

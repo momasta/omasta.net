@@ -2,5 +2,5 @@
 {{ $targetSlice := first 1 (where .Page.Translations "Lang" $lang) }}
 {{- if gt (len $targetSlice) 0 -}}
     {{ $target := index $targetSlice 0 }}
-    <a href="{{ $target.Permalink }}">{{ .Inner }}</a>
+    <a href="{{ $target.RelPermalink }}">{{ .Inner }}</a>
 {{- end -}}

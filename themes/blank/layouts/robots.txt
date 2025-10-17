@@ -1,10 +1,8 @@
 User-agent: *
-
 {{ range $.Site.Home.AllTranslations }}
-Sitemap: {{ .Permalink }}
-{{ end }}
+Sitemap: {{ .Permalink }}sitemap.xml
+{{- end }}
 
 Disallow: /404
 Disallow: /cs/404
-
-Disallow: /images/*_hu_*.*$
+Disallow: /images/*/t/

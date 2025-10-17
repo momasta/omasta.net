@@ -27,7 +27,10 @@ html {
   overflow-y: scroll;
   background-color: var(--color-site-bg);
   transition: background-color var(--ease);
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {

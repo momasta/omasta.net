@@ -1,5 +1,4 @@
 article {
-  a.tag,
   time {
     font-size: 1rem;
   }
@@ -7,7 +6,7 @@ article {
 
 .article-content {
   margin-top: 20px;
-  
+
   // "Last updated" at the end of the article (if any)
   time {
     color: inherit;
@@ -25,18 +24,24 @@ a.heading-link {
 
   &::after {
     content: "#";
+    font-family: sans-serif; // Prevents emoji fallback
+  }
+
+  &.state-success::after {
+    content: "✓";
   }
 
   &:hover {
     color: var(--color-text);
     text-decoration: none;
   }
-  
+
   h2:hover &,
   h3:hover &,
   h2:focus-within &,
   h3:focus-within &,
-  &:focus-visible {
+  &:focus-visible,
+  &.state-success {
     opacity: 1;
   }
 }
@@ -47,4 +52,9 @@ h1 + a.tag {
 
 h2 + p {
   margin-top: 0;
+}
+
+p + h2,
+h2:first-child {
+  padding-top: 0;
 }

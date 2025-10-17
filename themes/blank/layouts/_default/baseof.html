@@ -64,7 +64,7 @@
         }
 
         html {
-            font: normal 100% / 1.4 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, sans-serif;
+            font: normal 100% / 1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
         }
 
         h1 {
@@ -88,15 +88,53 @@
     {{ $main_style := $main_template | resources.ExecuteAsTemplate "main_parsed.scss" . | toCSS $main_options | resources.Minify }}
     <link rel="stylesheet" href="{{ print $main_style.RelPermalink "?" now.Unix }}">
 
-    <!-- RSS -->
-    {{ with .Site.GetPage "section" "posts" }}
-        {{ with .OutputFormats.Get "RSS" }}
-            <link rel="alternate"
-                  type="application/rss+xml"
-                  title="{{ $.Site.Title }} - {{ T "posts" }}"
-                  hreflang="{{ $.Lang }}"
-                  href="{{ .RelPermalink | safeURL }}">
+    {{ if hugo.IsMultilingual }}
+
+        <!-- RSS alternates -->
+        {{ with .Site.GetPage "section" "posts" }}
+            {{ range .AllTranslations }}
+                {{ $lang := .Language.LanguageCode }}
+                {{ with .OutputFormats.Get "RSS" }}
+                    <link rel="alternate"
+                          type="application/rss+xml"
+                          hreflang="{{ $lang }}"
+                          href="{{ .Permalink | safeURL }}"/>
+                {{ end }}
+            {{ end }}
+            <!-- x-default -->
+            {{ with .OutputFormats.Get "RSS" }}
+                <link rel="alternate"
+                      type="application/rss+xml"
+                      hreflang="x-default"
+                      href="{{ .Permalink | safeURL }}"/>
+            {{ end }}
         {{ end }}
+
+        <!-- HTML alternates -->
+        {{ $current := . }}
+        <link rel="alternate"
+              hreflang="{{ .Language.LanguageCode }}"
+              href="{{ .Permalink | safeURL }}"/>
+        {{ range .Translations }}
+            <link rel="alternate"
+                  hreflang="{{ .Language.LanguageCode }}"
+                  href="{{ .Permalink | safeURL }}"/>
+        {{ end }}
+        <link rel="alternate"
+              hreflang="x-default"
+              href="{{ $current.Permalink | safeURL }}"/>
+
+    {{ else }}
+
+        <!-- Single-language site: just the plain RSS feed, no hreflang -->
+        {{ with .Site.GetPage "section" "posts" }}
+            {{ with .OutputFormats.Get "RSS" }}
+                <link rel="alternate"
+                      type="application/rss+xml"
+                      href="{{ .Permalink | safeURL }}"/>
+            {{ end }}
+        {{ end }}
+
     {{ end }}
 
     <!-- Shortcut Icons -->
@@ -149,7 +187,7 @@
     }
 
 
-    document.addEventListener('DOMContentLoaded', e => {
+    document.addEventListener('DOMContentLoaded', () => {
         const userThemePreference = themePreference();
         const toggleThemeLight = document.querySelector('.toggle-theme-light');
         const toggleThemeDark = document.querySelector('.toggle-theme-dark');
@@ -183,12 +221,12 @@
 
         setTheme();
 
-        toggleThemeDark.addEventListener('click', e => {
+        toggleThemeDark.addEventListener('click', () => {
             setThemeDark();
             localStorage.setItem('theme', 'theme-dark');
         }, false);
 
-        toggleThemeLight.addEventListener('click', e => {
+        toggleThemeLight.addEventListener('click', () => {
             setThemeLight();
             localStorage.setItem('theme', 'theme-light');
         }, false);

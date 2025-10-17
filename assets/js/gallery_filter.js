@@ -71,15 +71,13 @@
 
     // ===== Visibility management =====
     function showImage(el) {
-        el.classList.add("state-visible");
         el.classList.remove("state-hidden");
-        el.setAttribute("aria-hidden", "false");
+        el.removeAttribute("aria-hidden");
         restoreFocusability(el);
     }
 
     function hideImage(el) {
         el.classList.add("state-hidden");
-        el.classList.remove("state-visible");
         el.setAttribute("aria-hidden", "true");
         makeUnfocusable(el);
     }
@@ -142,7 +140,7 @@
             noResultsEl.setAttribute("aria-hidden", "true");
             noResultsEl.classList.add("state-hidden");
         } else {
-            noResultsEl.setAttribute("aria-hidden", "false");
+            noResultsEl.removeAttribute("aria-hidden");
             noResultsEl.classList.remove("state-hidden");
         }
     }
@@ -164,12 +162,10 @@
         if (!galleryParent) throw new Error("Gallery parent element could not be determined.");
 
         const originalOrder = images.slice();
-
         images.forEach((imgWrap) => {
-            if (!imgWrap.hasAttribute("role")) imgWrap.setAttribute("role", "group");
-            if (!imgWrap.hasAttribute("aria-hidden")) imgWrap.setAttribute("aria-hidden", "false");
-            if (!imgWrap.classList.contains("state-visible") && !imgWrap.classList.contains("state-hidden")) {
-                imgWrap.classList.add("state-visible");
+            if (!imgWrap.classList.contains("state-hidden")) {
+                imgWrap.classList.remove("state-hidden");
+                imgWrap.removeAttribute("aria-hidden");
             }
         });
 

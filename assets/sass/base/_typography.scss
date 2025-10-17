@@ -9,10 +9,7 @@ h1,
 h2,
 h3 {
   font-weight: 500;
-}
-
-h1 {
-  margin: 0; // Update in baseof.html
+  margin: 0; // Update for H1 in baseof.html
 }
 
 h1,
@@ -22,19 +19,17 @@ h1,
 
 h2 {
   font-size: rem(20px);
-  margin: 0 0 16px;
+  padding: 0 0 16px;
 
   article & {
-    margin: 1em 0 0.25em;
+    padding: 1em 0 0;
   }
 }
 
 h3 {
   font-size: 1rem;
-  margin: 8px 0 3px;
-
+  
   ul + & {
-    margin-top: 20px;
+    padding-top: 20px;
   }
 }
-

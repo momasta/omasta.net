@@ -1,7 +1,7 @@
 {{ $datePublished := .PublishDate | time.Format .Site.Params.DateFormat }}
 
 <li class="post-preview">
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
 
     <div class="post-summary">
         {{ .Summary | plainify | truncate 160 "…" }}
