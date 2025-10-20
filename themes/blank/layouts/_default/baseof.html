@@ -25,23 +25,21 @@
     <!-- Perform before rendering page -->
     <script>
         const html = document.documentElement;
-        const hasLocalStorage = localStorage.getItem('theme');
+        const storedTheme = localStorage.getItem('theme');
 
-        if (hasLocalStorage === 'theme-light') {
-            html.classList.add('theme-light');
-        } else if (hasLocalStorage === 'theme-dark') {
-            html.classList.add('theme-dark');
+        if (storedTheme) {
+            html.classList.add(storedTheme);
         } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
             html.classList.add('theme-light');
         } else {
-            html.classList.add('theme-dark');
+            html.classList.add('theme-dark'); // Default theme
         }
     </script>
 
     <!-- Critical CSS -->
     <style>
         :root {
-            color-scheme: dark light;
+            color-scheme: dark light; /* Default theme: dark */
         }
 
         body:not(.loaded) * {
@@ -92,7 +90,6 @@
     <link rel="stylesheet" href="{{ print $main_style.RelPermalink "?" now.Unix }}">
 
     {{ if hugo.IsMultilingual }}
-
         <!-- RSS alternates -->
         {{ with .Site.GetPage "section" "posts" }}
             {{ range .AllTranslations }}
@@ -126,9 +123,7 @@
         <link rel="alternate"
               hreflang="x-default"
               href="{{ $current.Permalink | safeURL }}"/>
-
     {{ else }}
-
         <!-- Single-language site: just the plain RSS feed, no hreflang -->
         {{ with .Site.GetPage "section" "posts" }}
             {{ with .OutputFormats.Get "RSS" }}
@@ -137,7 +132,6 @@
                       href="{{ .Permalink | safeURL }}"/>
             {{ end }}
         {{ end }}
-
     {{ end }}
 
     <!-- Shortcut Icons -->
@@ -155,89 +149,21 @@
     {{ template "_internal/opengraph.html" . }}
 </head>
 
-<body{{ with .Type }} class="{{ . }}" {{ end }} ondragstart="return false;" ondrop="return false;" draggable="false">
-
-<!-- Critical JS, dark mode handling, integral part -->
-<script>
-    window.addEventListener('load', () => document.body.classList.add('loaded'));
-
-    const themeColorLight = '#b8b8b8';
-    const themeColorDark = '#000000';
-
-    const themePreference = () => {
-        const stored = localStorage.getItem('theme');
-        if (stored) return stored;
-        if (window.matchMedia('(prefers-color-scheme: light)').matches) return 'theme-light';
-        return 'theme-dark';
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        const toggleThemeLight = document.querySelector('.toggle-theme-light');
-        const toggleThemeDark = document.querySelector('.toggle-theme-dark');
-        const metaThemeColor = document.querySelectorAll('meta[name="theme-color"]');
-        const html = document.documentElement;
-
-        const setThemeDark = () => {
-            html.classList.add('theme-dark');
-            html.classList.remove('theme-light');
-            metaThemeColor.forEach(tag => tag.setAttribute('content', themeColorDark));
-        }
-
-        const setThemeLight = () => {
-            html.classList.remove('theme-dark');
-            html.classList.add('theme-light');
-            metaThemeColor.forEach(tag => tag.setAttribute('content', themeColorLight));
-        }
-
-        const applyTheme = () => {
-            const pref = themePreference();
-            if (pref === 'theme-light') setThemeLight();
-            else setThemeDark();
-        }
-
-        // Initial theme
-        applyTheme();
-
-        // Listen for system preference changes, but only if no override is set
-        const mediaDark = window.matchMedia('(prefers-color-scheme: dark)');
-        const mediaLight = window.matchMedia('(prefers-color-scheme: light)');
-
-        const systemChangeHandler = () => {
-            if (!localStorage.getItem('theme')) {
-                applyTheme();
-            }
-        };
-
-        mediaDark.addEventListener('change', systemChangeHandler);
-        mediaLight.addEventListener('change', systemChangeHandler);
-
-        // Manual toggles
-        toggleThemeDark.addEventListener('click', () => {
-            setThemeDark();
-            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                localStorage.removeItem('theme'); // Back to auto
-            } else {
-                localStorage.setItem('theme', 'theme-dark');
-            }
-        }, false);
-
-        toggleThemeLight.addEventListener('click', () => {
-            setThemeLight();
-            if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-                localStorage.removeItem('theme'); // Back to auto
-            } else {
-                localStorage.setItem('theme', 'theme-light');
-            }
-        }, false);
-    }, false);
-</script>
+<body class="{{ .Type }}"
+      ondragstart="return false;"
+      ondrop="return false;"
+      draggable="false">
 
 <div id="content">
     {{ block "main" . }}{{ end }}
     {{ partial "footer" . }}
 </div>
 
+{{ $applyThemeJS := resources.Get "js/apply-theme.js" | resources.Minify }}
+<script src="{{ print $applyThemeJS.RelPermalink "?" now.Unix }}"></script>
+
 {{ $copyHeadingLinkJS := resources.Get "js/copy-heading-link.js" | resources.Minify }}
 <script src="{{ print $copyHeadingLinkJS.RelPermalink "?" now.Unix }}"></script>
+
 </body>
 </html>
