@@ -139,8 +139,7 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
   [https://youtu.be/GSaCAP2GgDs](https://youtu.be/GSaCAP2GgDs "Práce tě musí bavit! Cožeeee? Největší mýtus současnosti... - YouTube")
 * Já jsem nepil (Notor z Brna)  
   [https://youtu.be/TCgx9Spef-Q?t=2m22s](https://youtu.be/TCgx9Spef-Q?t=2m22s "- YouTube")
-* To je prostě festival hnusu. (Michael Rostock-Poplar, Den D, Shark Tank)[  
-  https://youtu.be/UVBckwj27uU?t=127](https://youtu.be/UVBckwj27uU?t=127)
+* To je prostě festival hnusu. (Michael Rostock-Poplar, Den D, Shark Tank)[https://youtu.be/UVBckwj27uU?t=127](https://youtu.be/UVBckwj27uU?t=127)
 * Jo, jsem Aneta zkurvená, já vim. (Lukáš Kril)  
   [https://youtu.be/T149Q3IoTeY?t=42](https://youtu.be/T149Q3IoTeY?t=42 "- YouTube")  
   [https://youtube.com/clip/Ugkx4peIZV46YEHAhb77YlAV5iBHgnlcEluZ](https://youtube.com/clip/Ugkx4peIZV46YEHAhb77YlAV5iBHgnlcEluZ "✂️ Jo, jsem Aneta zkurvená, já vim - YouTube")

@@ -29,9 +29,12 @@
 
         if (hasLocalStorage === 'theme-light') {
             html.classList.add('theme-light');
+        } else if (hasLocalStorage === 'theme-dark') {
+            html.classList.add('theme-dark');
+        } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+            html.classList.add('theme-light');
         } else {
             html.classList.add('theme-dark');
-            localStorage.setItem('theme', 'theme-dark');
         }
     </script>
 
@@ -158,77 +161,73 @@
 <script>
     window.addEventListener('load', () => document.body.classList.add('loaded'));
 
-    // From https://codepen.io/MrGrigri/details/XQmWBv, modified
-
     const themeColorLight = '#b8b8b8';
     const themeColorDark = '#000000';
 
     const themePreference = () => {
-        let supports = false;
-        let theme = undefined;
-
-        if (hasLocalStorage === 'theme-light') {
-            theme = 'theme-light';
-        } else if (hasLocalStorage === 'theme-dark') {
-            theme = 'theme-dark';
-        }
-
-        if (window.matchMedia(`(prefers-color-scheme: dark)`).matches) {
-            theme = hasLocalStorage || 'theme-dark';
-            supports = true;
-        }
-
-        if (window.matchMedia(`(prefers-color-scheme: light)`).matches) {
-            theme = hasLocalStorage || 'theme-light';
-            supports = true;
-        }
-
-        return {supports, theme};
+        const stored = localStorage.getItem('theme');
+        if (stored) return stored;
+        if (window.matchMedia('(prefers-color-scheme: light)').matches) return 'theme-light';
+        return 'theme-dark';
     }
 
-
     document.addEventListener('DOMContentLoaded', () => {
-        const userThemePreference = themePreference();
         const toggleThemeLight = document.querySelector('.toggle-theme-light');
         const toggleThemeDark = document.querySelector('.toggle-theme-dark');
         const metaThemeColor = document.querySelectorAll('meta[name="theme-color"]');
+        const html = document.documentElement;
 
         const setThemeDark = () => {
             html.classList.add('theme-dark');
             html.classList.remove('theme-light');
-
-            metaThemeColor.forEach(function (tag) {
-                tag.setAttribute('content', themeColorDark);
-            });
+            metaThemeColor.forEach(tag => tag.setAttribute('content', themeColorDark));
         }
 
         const setThemeLight = () => {
             html.classList.remove('theme-dark');
             html.classList.add('theme-light');
-
-            metaThemeColor.forEach(function (tag) {
-                tag.setAttribute('content', themeColorLight);
-            });
+            metaThemeColor.forEach(tag => tag.setAttribute('content', themeColorLight));
         }
 
-        const setTheme = () => {
-            if (userThemePreference.theme === 'theme-light') {
-                setThemeLight();
-            } else {
-                setThemeDark();
+        const applyTheme = () => {
+            const pref = themePreference();
+            if (pref === 'theme-light') setThemeLight();
+            else setThemeDark();
+        }
+
+        // Initial theme
+        applyTheme();
+
+        // Listen for system preference changes, but only if no override is set
+        const mediaDark = window.matchMedia('(prefers-color-scheme: dark)');
+        const mediaLight = window.matchMedia('(prefers-color-scheme: light)');
+
+        const systemChangeHandler = () => {
+            if (!localStorage.getItem('theme')) {
+                applyTheme();
             }
-        }
+        };
 
-        setTheme();
+        mediaDark.addEventListener('change', systemChangeHandler);
+        mediaLight.addEventListener('change', systemChangeHandler);
 
+        // Manual toggles
         toggleThemeDark.addEventListener('click', () => {
             setThemeDark();
-            localStorage.setItem('theme', 'theme-dark');
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                localStorage.removeItem('theme'); // Back to auto
+            } else {
+                localStorage.setItem('theme', 'theme-dark');
+            }
         }, false);
 
         toggleThemeLight.addEventListener('click', () => {
             setThemeLight();
-            localStorage.setItem('theme', 'theme-light');
+            if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+                localStorage.removeItem('theme'); // Back to auto
+            } else {
+                localStorage.setItem('theme', 'theme-light');
+            }
         }, false);
     }, false);
 </script>

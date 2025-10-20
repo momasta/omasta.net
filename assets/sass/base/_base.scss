@@ -9,15 +9,9 @@ html {
     @include includeLight;
   }
 
-  &.theme-dark {
-    @include includeDark;
-  }
-
   @media (prefers-color-scheme: light) {
-    @include includeLight;
-
-    &.theme-dark {
-      @include includeDark;
+    &:not(.theme-dark):not(.theme-light) {
+      @include includeLight;
     }
   }
 }
