@@ -44,11 +44,14 @@
             {{ end }}
         {{ end }}
     </div>
-    
+
     <div class="card">
         <div class="logo">
             <a href="{{ .Site.Home.RelPermalink }}">
-                <img src="/images/profile-picture.png" alt="Profile picture">
+                <img
+                    src="/images/profile-picture.webp"
+                    srcset="/images/profile-picture.webp 1x, /images/profile-picture@2x.webp 2x"
+                    alt="Profile picture">
                 {{ .Site.Title }}
             </a>
         </div>

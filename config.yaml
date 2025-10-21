@@ -27,7 +27,7 @@ markup:
 
 params:
   images:
-    - images/profile-picture-og-2.jpg
+    - images/profile-picture-og.jpg
 
 taxonomies:
   tag: tags
