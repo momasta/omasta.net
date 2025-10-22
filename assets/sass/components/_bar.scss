@@ -2,7 +2,7 @@
   display: flex;
   padding: 0 8px;
   align-items: center;
-  height: 1.4em; // Fixed height to prevent jumping (if empty)
+  height: 1.4em; // Fixed height to prevent jumping if empty
   @extend %no-interaction;
 
   header & {
@@ -13,10 +13,10 @@
   a:visited {
     padding: 0 12px;
     color: var(--color-text-light);
-    text-decoration: none;
   }
 
-  a:hover {
+  a:hover,
+  a:focus-visible {
     color: var(--color-hover);
   }
 

@@ -1,4 +1,5 @@
 {{ define "main" }}
+    
     {{ partial "header" . }}
 
     {{ $datePublished := .PublishDate | time.Format .Site.Params.DateFormat }}
@@ -44,5 +45,6 @@
             </div>
         </main>
     </div>
+    
     {{ partial "sidebar.html" . }}
 {{ end }}

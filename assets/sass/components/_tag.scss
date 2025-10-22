@@ -5,15 +5,14 @@ a.tag {
   margin: 3px 0;
   border-radius: 3px;
   text-decoration: none;
-  transition: background-color var(--ease);
+  transition: background-color var(--ease), var(--transitions-a);
   @extend %no-interaction;
-  @extend %click-area-medium;
 
   &,
   & + span {
     font-size: rem(14px);
   }
-  
+
   &,
   .links & {
     color: var(--color-content-bg);
@@ -22,11 +21,6 @@ a.tag {
   &:hover,
   &:focus-visible {
     background-color: var(--color-hover);
-    text-decoration: none;
-    
-    &::before {
-      background-color: transparent;
-    }
   }
 
   + a.tag {

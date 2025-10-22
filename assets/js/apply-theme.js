@@ -34,9 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', systemChangeHandler);
     window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', systemChangeHandler);
 
-    // Manual toggles
+    // Manual toggle - dark theme (override)
     toggleThemeDark.addEventListener('click', () => {
         setTheme('theme-dark');
+        
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             localStorage.removeItem('theme'); // Back to auto
         } else {
@@ -44,8 +45,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, false);
 
+    // Manual toggle - light theme (override)
     toggleThemeLight.addEventListener('click', () => {
         setTheme('theme-light');
+        
         if (window.matchMedia('(prefers-color-scheme: light)').matches) {
             localStorage.removeItem('theme'); // Back to auto
         } else {

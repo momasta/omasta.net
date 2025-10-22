@@ -23,25 +23,41 @@
 // <a class="gallery-image>
 .gallery-image {
   display: block;
-  width: 50%;
-  max-width: 50%;
-  padding: 5px;
-  aspect-ratio: 1 / 1;
-  text-align: center;
+  width: calc(50% - 10px);
+  margin: 5px;
+  text-align: left;
   font-size: 0;
   overflow: hidden;
-  transition: transform var(--ease);
-  @extend %click-area-small;
+  border-radius: 8px;
+  outline-offset: 3px;
+  transition: var(--transitions-a);
 
   &:hover,
   &:focus-visible {
+    outline-offset: 0;
+
     .gallery-image-thumb {
-      transform: scale(1.03);
+      opacity: 0.75;
+    }
+
+    span {
+      color: var(--color-text);
     }
   }
 
   &.state-hidden {
     display: none;
+  }
+
+  span {
+    display: inline-block;
+    font-size: rem(12px);
+    color: var(--color-text-light);
+    text-align: left;
+    padding: 5px 0 10px 0;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    text-wrap: auto;
   }
 
   // <img class="gallery-image-thumb">
@@ -51,12 +67,14 @@
     overflow: hidden;
     width: 100%;
     aspect-ratio: 1 / 1;
+    border: 1px solid var(--color-text-light);
+    border-radius: 8px;
+    transition: opacity var(--ease);
   }
 }
 
 @mixin mq-min-medium-gallery-image {
   .gallery-image {
-    width: 25%;
-    max-width: 25%;
+    width: calc(25% - 10px);
   }
 }

@@ -14,14 +14,6 @@
 
   transition: background-color var(--ease);
 
-  a {
-    span {
-      display: inline-block;
-      text-decoration: none;
-      color: var(--color-text-light);
-    }
-  }
-
   // Interaction
   header & {
     flex-direction: row;

@@ -50,8 +50,8 @@ languages:
     weight: 1
     params:
       dateFormat: 2 Jan 2006
-      description: Personal website of Marek Omasta, meme archive, links to my
-        profiles and my content online
+      description: Personal website of Marek Omasta – blog posts, meme collection, links to my
+        profiles and my content online.
     menu:
       main:
         - name: Home
@@ -69,8 +69,8 @@ languages:
     params:
       dateFormat: 2. 1. 2006
       description:
-        Osobní stránka Marka Omasty, archiv memes, odkazy na moje profily a
-        obsah online
+        Osobní web Marka Omasty – články, sbírka memes, odkazy na moje profily a
+        obsah na internetu.
     menu:
       main:
         - name: Domů

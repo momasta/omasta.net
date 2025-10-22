@@ -1,13 +1,11 @@
 /**
  * Basic typography style for copy text
  */
-html {
-  color: var(--color-text);
-}
 
 h1,
 h2,
-h3 {
+h3,
+.logo a {
   font-weight: 500;
   margin: 0; // Update for H1 in baseof.html
 }
@@ -19,7 +17,7 @@ h1,
 
 h2 {
   font-size: rem(20px);
-  padding: 0 0 16px;
+  padding: 0 0 1rem;
 
   article & {
     padding: 1em 0 0;

@@ -14,11 +14,10 @@ html {
       @include includeLight;
     }
   }
-}
 
-html {
   box-sizing: border-box; // Set up a decent box model on the root element
   overflow-y: scroll;
+  color: var(--color-text);
   background-color: var(--color-site-bg);
   transition: background-color var(--ease);
   text-rendering: optimizeLegibility;
@@ -28,7 +27,7 @@ html {
 }
 
 body {
-  margin: 16px;
+  margin: 1rem;
   min-height: 100vh;
   touch-action: manipulation;
 }
@@ -52,28 +51,39 @@ body {
   box-sizing: inherit;
 }
 
-// Custom Resets
-:focus {
+// Styles for focusable elements
+a,
+button {
+  border-radius: 0.5em;
+  outline: 4px solid transparent;
+  outline-offset: 8px;
+  transition: var(--transitions-a);
+  @extend %click-area-small;
+}
+
+:focus:not(input) {
+  outline-color: var(--color-focus);
+  outline-offset: 5px;
+}
+
+// Keyboard focus only - hide outline invoked by mouse
+:focus:not(:focus-visible) {
   outline: none;
 }
 
 /**
  * Basic styles for links
  */
-a {
+a,
+a:visited {
+  color: var(--color-brand-text);
   text-decoration: underline;
-  transition: color var(--ease);
   -webkit-tap-highlight-color: transparent;
-  @extend %click-area-small;
+}
 
-  &,
-  &:visited {
-    color: var(--color-brand-text);
-  }
-
-  &:hover {
-    color: var(--color-hover);
-  }
+a:hover,
+a:focus-visible {
+  color: var(--color-hover);
 }
 
 ul {

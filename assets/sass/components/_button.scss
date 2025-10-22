@@ -5,23 +5,17 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  @extend %click-area-small;
 
   &.style-plain {
     border: none;
     background-color: transparent;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       svg {
         fill: var(--color-hover);
       }
-    }
-  }
-
-  &.size-small {
-    svg {
-      height: 26px;
     }
   }
 }

@@ -9,6 +9,11 @@ header {
   @extend %no-interaction;
 }
 
+header a,
+footer a {
+  text-decoration: none;
+}
+
 .logo {
   a,
   a:visited {
@@ -16,12 +21,11 @@ header {
     align-items: center;
     flex-wrap: nowrap;
     color: var(--color-text);
-    text-decoration: none;
     font-size: 2rem;
-    font-weight: 500;
   }
 
-  a:hover {
+  a:hover,
+  a:focus-visible {
     color: var(--color-hover);
 
     img {
@@ -31,7 +35,7 @@ header {
 
   img {
     width: 45px; // Update in baseof.html
-    height: 64px;  // Update in baseof.html
+    height: 64px; // Update in baseof.html
     margin-right: 20px;
     transition: opacity var(--ease);
   }

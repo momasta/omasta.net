@@ -5,53 +5,62 @@
   font-size: rem(18px);
   @extend %no-interaction;
 
+  li {
+    margin: 0.5em 0;
+  }
+
+  li:first-of-type {
+    margin-top: 0;
+  }
+
+  li:last-of-type {
+    margin-bottom: 0;
+  }
+
+  a,
+  a:visited {
+    display: inline-block;
+    color: var(--color-text);
+    white-space: nowrap;
+  }
+
+  a:hover,
+  a:focus-visible {
+    color: var(--color-hover);
+  }
+  
+  a span {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-text-light);
+
+    &.post-summary {
+      color: var(--color-text); // Specific to prevent different colour on hover
+    }
+  }
+
+  h1 + & {
+    margin-top: 1rem;
+  }
+
   // Directions
   &.direction-row {
     li {
       display: inline-block;
+      margin: 0 20px 0 0;
+    }
+
+    li:last-of-type {
+      margin-right: 0;
     }
   }
 
   // Sizes
   &.size-small {
-    li {
-      margin: 5px 0;
-    }
-
     &.direction-row {
       li {
-        margin-right: 16px;
+        margin-right: 1rem;
       }
     }
-  }
-  
-  li {
-    margin: 0.5em 0;
-
-    &:first-of-type {
-      margin-top: 0;
-    }
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-
-  a {
-    display: inline-block;
-    white-space: nowrap;
-
-    &,
-    &:visited {
-      color: var(--color-text);
-    }
-  }
-
-  a:hover {
-    color: var(--color-hover);
-  }
-
-  h1 + & {
-    margin-top: 1rem;
   }
 }

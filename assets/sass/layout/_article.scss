@@ -18,9 +18,8 @@ a.heading-link {
   margin-left: 5px;
   color: var(--color-text-light);
   text-decoration: none;
-  transition: opacity var(--ease);
+  transition: opacity var(--ease), var(--transitions-a);
   @extend %no-interaction;
-  @extend %click-area-small;
 
   &::after {
     content: "#";
@@ -31,9 +30,9 @@ a.heading-link {
     content: "✓";
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     color: var(--color-text);
-    text-decoration: none;
   }
 
   h2:hover &,

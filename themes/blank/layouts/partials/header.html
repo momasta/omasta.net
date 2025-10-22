@@ -52,14 +52,14 @@
                     src="/images/profile-picture.webp"
                     srcset="/images/profile-picture.webp 1x, /images/profile-picture@2x.webp 2x"
                     alt="Profile picture">
-                {{ .Site.Title }}
+                {{- .Site.Title }}
             </a>
         </div>
 
         {{- $currentPage := . -}}
         {{ with .Site.Menus.main }}
             <nav aria-label="Main">
-                <ul>
+                <ul class="links direction-row">
                     {{- range . -}}
                         <li{{ if $currentPage.IsMenuCurrent .Menu . }} class="active" aria-current="page"{{ end }}>
                             <a href="{{ .URL | relURL }}">{{ .Name }}</a>

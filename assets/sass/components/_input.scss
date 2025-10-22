@@ -1,38 +1,14 @@
-input[type=text],
-input[type=search] {
-  outline: none;
+input {
   font-size: rem(16px);
-  background: transparent;
-  transition: border-color var(--ease);
-  color: var(--color-text);
-  padding: 3px 0;
-  border: solid var(--color-text-light);
-  border-width: 0 0 1px 0;
-  border-radius: 0;
-  width: 100%;
-
-  &::placeholder {
-    color: var(--color-text-light);
-  }
-
-  &:hover {
-    border-color: var(--color-hover);
-  }
-
-  &:focus-visible {
-    outline: none;
-    border-color: var(--color-text);
-  }
+  vertical-align: middle;
 }
 
-input[type=submit] {
-  display: none;
-  font-size: rem(16px);
+input + input {
+  margin-left: 5px;
 }
 
 @mixin mq-min-medium-input {
-  input[type=text],
-  input[type=search] {
-    width: 210px;
+  input {
+    font-size: rem(14px);
   }
 }

@@ -5,44 +5,53 @@
 
 /// Regular font family
 /// @type List
-///  See in baseof.html
+/// See Critical CSS in baseof.html
 
 /// Code (monospace) font family
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
 :root {
-  --color-white-bg: #fdfdfd; // Update in baseof.html (color)
+  --color-white-bg: #fff; // Update in baseof.html (color)
 
   --color-black-bg: #222;
 
   --color-grey-dark: #454545;
-  --color-grey-light: #b8b8b8; // Update in baseof.html
+  --color-grey-light: #b8b8b8; // Update in baseof.html and apply-theme.js
 
   //--color-brand: #306e95; Unused, uncomment if needed
-  --color-brand-text: #73add2; // Lightened by 25%
-  --color-brand-light: #3c8abc; // Lightened by 10%
 
-  --color-focus: #306e958f;
+  --color-focus: #306e95bf;
   --color-hover: var(--color-brand-light);
 
-  --ease: 200ms cubic-bezier(0.4, 0, 0.25, 1);
-}
-
-@mixin includeLight {
-  --color-text: var(--color-black-bg);
-  --color-text-light: var(--color-grey-dark);
-
-  --color-site-bg: var(--color-grey-light); // Update in baseof.html (themeColorLight)
-  --color-content-bg: var(--color-white-bg);
+  --ease: 260ms cubic-bezier(0.4, 0, 0.25, 1);
+  --transitions-a: outline-color var(--ease), outline-offset var(--ease), color var(--ease);
 }
 
 @mixin includeDark {
+  color-scheme: dark;
+
   --color-text: var(--color-white-bg); // Update in baseof.html (color)
   --color-text-light: var(--color-grey-light);
 
+  --color-brand-text: #8fd2ff;
+  --color-brand-light: #47B6FF;
+
   --color-site-bg: #000; // Update in baseof.html (themeColorDark, background-color)
   --color-content-bg: var(--color-black-bg); // Update in baseof.html (background-color)
+}
+
+@mixin includeLight {
+  color-scheme: light;
+
+  --color-text: var(--color-black-bg);
+  --color-text-light: var(--color-grey-dark);
+
+  --color-brand-text: #004370;
+  --color-brand-light: #007acc;
+
+  --color-site-bg: var(--color-grey-light); // Update in baseof.html (themeColorLight)
+  --color-content-bg: var(--color-white-bg);
 }
 
 /// Container's maximum width

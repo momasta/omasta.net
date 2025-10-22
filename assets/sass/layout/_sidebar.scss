@@ -14,7 +14,7 @@ aside {
 
 @mixin mq-min-medium-aside {
   main + aside {
-    margin-left: 16px;
+    margin-left: 1rem;
   }
 }
 

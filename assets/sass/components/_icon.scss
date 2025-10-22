@@ -2,11 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
   box-sizing: content-box;
 
   svg {
-    width: auto;
     fill: var(--color-text-light); // Update in baseof.html
   }
 }

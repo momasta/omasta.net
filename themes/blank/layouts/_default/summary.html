@@ -1,22 +1,22 @@
 {{ $datePublished := .PublishDate | time.Format .Site.Params.DateFormat }}
 
 <li class="post-preview">
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-
-    <div class="post-summary">
-        {{ .Summary | plainify | truncate 160 "…" }}
-    </div>
+    <a href="{{ .RelPermalink }}">{{ .Title }}<br>
+        <span class="post-summary">
+            {{- .Summary | plainify | truncate 160 "…" -}}
+        </span>
+    </a>
 
     {{- range .Params.tags -}}
-        {{ $name := . }}
-        {{- with index site.Taxonomies.tags $name -}}
-            {{ $title := .Page.Title }}
-            <a href="{{ .Page.RelPermalink }}"
-               class="tag"
-               title="{{ T "tags-show-all" }} &#35;{{ $title }}">&#35;{{- $title -}}</a>
-        {{- end -}}
-    {{- end -}}<!--
-    --><time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05" }}">
+    {{ $name := . }}
+    {{- with index site.Taxonomies.tags $name -}}
+        {{ $title := .Page.Title }}
+        <a href="{{ .Page.RelPermalink }}"
+           class="tag"
+           title="{{ T "tags-show-all" }} &#35;{{ $title }}">&#35;{{- $title -}}</a>
+    {{- end -}}
+    {{- end -}}
+    <time datetime="{{- .PublishDate.Format "2006-01-02T15:04:05" }}">
         {{- $datePublished -}}
     </time>
 </li>
