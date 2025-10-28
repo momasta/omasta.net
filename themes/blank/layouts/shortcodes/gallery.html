@@ -8,6 +8,7 @@
 {{- $param0 := default "" (.Get 0) -}}
 {{- $directory := cond (ne "" $param0) (print "/" $param0) "" -}}
 {{- $path := (print "images" $directory "/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF}") -}}
+{{- $dateFormat := .Site.Params.dateFormat -}}
 
 <div class="gallery-filter">
     <form action="#" class="gallery-filter-form">
@@ -22,8 +23,8 @@
                autocomplete="on"
                autocapitalize="off"
                autofocus
-               title="{{ T "press-esc" }}
-{{ T "press-stroke" }}"
+               title="- {{ T "press-esc" }}
+- {{ T "press-stroke" }}"
                aria-label="{{ T "search-memes" }}">
 
         <input type="submit"
@@ -37,7 +38,6 @@
     {{ T "no-images-found" }}
 </p>
 
-<!--Use eager loading for the first 20 images-->
 <div class="gallery">
     {{- $images := resources.Match $path }}
 
@@ -63,54 +63,61 @@
                data-pswp-height="{{ $image.Height }}"
                data-cropped="true"
                id="{{ $imageName | humanize | urlize }}"
-               title="{{ $imageName }}"
+               title="{{ $imageName }}
+
+{{ T "last-mod-short" }} {{ $item.modTime.Format $dateFormat | safeHTML }}"
                target="_blank">
 
-                {{ if eq $image.MediaType.SubType "gif" }}
-                    <img class="gallery-image-thumb"
-                         alt="{{ $imageName }}."
-                         loading="{{ cond (gt $index 20) "lazy" "eager" }}"
-                         src="{{ $imageURL }}">
-                {{ else }}
-                    {{- $hash := substr (md5 $image.RelPermalink) 0 8 -}}
-                    {{- $dir := path.Dir $image.RelPermalink -}}
+                <img class="gallery-image-thumb"
+                     alt="{{ $imageName }}."
+                     loading="{{ cond (gt $index 12) "lazy" "eager" -}}"
 
-                    {{- /* Create resized thumbs and copy them into a "t/" subfolder */ -}}
-                    {{- $thumb1 := $image.Resize "150x webp q80" | resources.Copy (printf "%s/t/%s.webp" $dir $hash) -}}
-                    {{- $thumb2 := $image.Resize "300x webp q70" | resources.Copy (printf "%s/t/%s@2x.webp" $dir $hash) -}}
+                     {{- if eq $index 0 -}}
+                         fetchpriority="high"
+                     {{- end -}}
 
-                    <img class="gallery-image-thumb"
-                         alt="{{ $imageName }}."
-                         loading="{{ cond (gt $index 20) "lazy" "eager" }}"
+                     {{- if eq $image.MediaType.SubType "gif" -}}
+                     src="{{ $imageURL }}"
+                     {{- else -}}
+
+                     {{- $hash := substr (md5 $image.RelPermalink) 0 8 -}}
+                         {{- $dir := path.Dir $image.RelPermalink -}}
+
+                         {{- /* Create resized thumbs and copy them into a "t/" subfolder */ -}}
+                         {{- $thumb1 := $image.Resize "150x webp q80" |
+                             resources.Copy (printf "%s/t/%s.webp" $dir $hash) -}}
+                         {{- $thumb2 := $image.Resize "300x webp q70" |
+                             resources.Copy (printf "%s/t/%s@2x.webp" $dir $hash) -}}
+
                          src="{{ $thumb1.RelPermalink | safeURL }}"
-                         srcset="{{ $thumb1.RelPermalink | safeURL }} 1x, {{ $thumb2.RelPermalink | safeURL }} 2x">
-                {{ end }}
-
-                <br><span>{{ $imageName }}</span>
+                         srcset="{{ $thumb1.RelPermalink | safeURL }} 1x, {{ $thumb2.RelPermalink | safeURL }} 2x"
+                     {{- end -}}><br>
+                <span>{{- $imageName -}}</span>
             </a>
         {{- end }}
     {{- end }}
 </div>
 
 
+{{ $galleryFilterJS := resources.Get "js/gallery-filter.js" | resources.Minify }}
+
 {{ $photoswipeCSS := resources.Get "css/photoswipe.css" | resources.Minify }}
 {{ $photoswipeJS := resources.Get "js/photoswipe.esm.min.js" }}
 {{ $photoswipeLightboxJS := resources.Get "js/photoswipe-lightbox.esm.min.js" }}
-{{ $galleryFilterJS := resources.Get "js/gallery_filter.js" | resources.Minify }}
 
 <!-- Gallery Filter -->
-<script src="{{ print $galleryFilterJS.RelPermalink "?" now.Unix }}"></script>
+<script src="{{ print $galleryFilterJS.RelPermalink "?" now.Unix }}" defer></script>
 
 <!-- Photoswipe -->
 <link rel="stylesheet" href="{{ print $photoswipeCSS.RelPermalink "?" now.Unix }}">
-<script type="module">
-    import PhotoSwipeLightbox from '{{ print $photoswipeLightboxJS.RelPermalink "?" now.Unix | safe.JSStr }}';
+<script type="module" defer>
+    import PhotoSwipeLightbox from '{{ print $photoswipeLightboxJS.RelPermalink "?" now.Unix }}';
 
     const lightbox = new PhotoSwipeLightbox({
         gallery: '.gallery',
         children: 'a',
         showHideAnimationType: 'zoom',
-        pswpModule: () => import('{{ print $photoswipeJS.RelPermalink "?" now.Unix | safe.JSStr }}'),
+        pswpModule: () => import('{{ print $photoswipeJS.RelPermalink "?" now.Unix }}'),
         preload: [1, 4],
         closeTitle: '{{ T "close" }}',
         zoomTitle: '{{ T "zoom" }}',

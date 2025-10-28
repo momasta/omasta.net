@@ -165,10 +165,10 @@
 </div>
 
 {{ $applyThemeJS := resources.Get "js/apply-theme.js" | resources.Minify }}
-<script src="{{ print $applyThemeJS.RelPermalink "?" now.Unix }}"></script>
+<script src="{{ print $applyThemeJS.RelPermalink "?" now.Unix }} defer"></script>
 
 {{ $copyHeadingLinkJS := resources.Get "js/copy-heading-link.js" | resources.Minify }}
-<script src="{{ print $copyHeadingLinkJS.RelPermalink "?" now.Unix }}"></script>
+<script src="{{ print $copyHeadingLinkJS.RelPermalink "?" now.Unix }}" defer></script>
 
 </body>
 </html>

@@ -5,4 +5,4 @@ Sitemap: {{ .Permalink }}sitemap.xml
 
 Disallow: /404
 Disallow: /cs/404
-Disallow: /images/*/t/
+Disallow: /t/

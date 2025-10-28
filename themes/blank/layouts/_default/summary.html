@@ -1,4 +1,4 @@
-{{ $datePublished := .PublishDate | time.Format .Site.Params.DateFormat }}
+{{ $datePublished := .PublishDate.Format .Site.Params.dateFormat | safeHTML }}
 
 <li class="post-preview">
     <a href="{{ .RelPermalink }}">{{ .Title }}<br>
@@ -16,7 +16,7 @@
            title="{{ T "tags-show-all" }} &#35;{{ $title }}">&#35;{{- $title -}}</a>
     {{- end -}}
     {{- end -}}
-    <time datetime="{{- .PublishDate.Format "2006-01-02T15:04:05" }}">
+    <time datetime="{{- .PublishDate.Format .Site.Params.dateFormatISO | safeHTML }}">
         {{- $datePublished -}}
     </time>
 </li>

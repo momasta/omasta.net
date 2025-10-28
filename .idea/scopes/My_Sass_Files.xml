@@ -1,3 +1,0 @@
-<component name="DependencyValidationManager">
-  <scope name="My Sass Files" pattern="file:*.scss&amp;&amp;!file:assets/sass/vendors//*" />
-</component>

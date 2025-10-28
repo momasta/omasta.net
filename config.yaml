@@ -26,6 +26,7 @@ markup:
       unsafe: true
 
 params:
+  dateFormatISO: 2006-01-02T15:04:05
   images:
     - images/profile-picture-og.jpg
 

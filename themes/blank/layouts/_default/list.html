@@ -9,9 +9,9 @@
                     <h1>{{ .Title }}</h1>
 
                     <ul class="links direction-row size-small">
-                        {{ range .Paginator.Pages }}
-                            {{ .Render "summary-simple" }}
-                        {{ end }}
+                        {{- range .Paginator.Pages -}}
+                            {{- .Render "summary-simple" -}}
+                        {{- end -}}
                     </ul>
 
                     <div class="article-content">

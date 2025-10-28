@@ -2,8 +2,8 @@
     
     {{ partial "header" . }}
 
-    {{ $datePublished := .PublishDate | time.Format .Site.Params.DateFormat }}
-    {{ $dateModified := .Lastmod | time.Format .Site.Params.DateFormat }}
+    {{ $datePublished := .PublishDate.Format .Site.Params.dateFormat | safeHTML }}
+    {{ $dateModified := .Lastmod.Format .Site.Params.dateFormat | safeHTML }}
 
     {{ $dateModifiedText := "" }}
     {{ if .Lastmod }}
@@ -26,7 +26,7 @@
                            class="tag">&#35;{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}</a>
                     {{- end -}}
 
-                    <time datetime="{{ .PublishDate.Format "2006-01-02T15:04:05" }}"
+                    <time datetime="{{ .PublishDate.Format .Site.Params.dateFormatISO | safeHTML }}"
                           title="{{ T "published" }} {{ $datePublished }}{{ $dateModifiedText }}">{{- $datePublished -}}</time>
 
                     <div class="article-content">
@@ -34,7 +34,7 @@
                         {{- if .Lastmod -}}
                             {{- if ne $dateModified $datePublished -}}
                                 <p>{{ T "last-mod" }}
-                                    <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">
+                                    <time datetime="{{ .Lastmod.Format .Site.Params.dateFormatISO | safeHTML }}">
                                         {{- $dateModified -}}
                                     </time>
                                 </p>
