@@ -15,21 +15,21 @@ layout: simple
 ## Quizlet
 Moje sady kartiček na učení jazyků.  
 Termíny jsem sesbíral ze slovníků, z Internetu a od jiných uživatelů Quizletu.
-* [Quizlet | m_omasta | Study Sets](https://quizlet.com/m_omasta/folders)
+* [Quizlet | m_omasta | Study Sets](https://quizlet.com/m_omasta/folders "m_omasta | Quizlet")
 
 ### Čeština
-* [Čeština](https://quizlet.com/594733412/czech-flash-cards/)
-* [Hantec](https://quizlet.com/594731596/hantec-czech-flash-cards/)
+* [Čeština](https://quizlet.com/594733412/czech-flash-cards/ "Czech Flashcards | Quizlet")
+* [Hantec](https://quizlet.com/594731596/hantec-czech-flash-cards/ "Hantec → Czech Flashcards | Quizlet")
 
 ### Angličtina
-* [Amerikanismy → angličtina](https://quizlet.com/597004079/americanisms-english-flash-cards/)
+* [Amerikanismy → angličtina](https://quizlet.com/597004079/americanisms-english-flash-cards/ "Americanisms Flashcards | Quizlet")
 * [Čeština → angličtina](https://quizlet.com/591946560/czech-english-flash-cards/)
-* [Množná čísla cizích slov](https://quizlet.com/594973719/foreign-plurals-flash-cards/)
-* [Přirovnání](https://quizlet.com/701761957/similes-flash-cards/)
+* [Množná čísla cizích slov](https://quizlet.com/594973719/foreign-plurals-flash-cards/ "Foreign Plurals Flashcards | Quizlet")
+* [Přirovnání](https://quizlet.com/701761957/similes-flash-cards/ "Similes Flashcards | Quizlet")
 
 ### Němčina
-* [Němčina → čeština/angličtina](https://quizlet.com/594705397/german-czechenglish-flash-cards/)
+* [Němčina → čeština/angličtina](https://quizlet.com/594705397/german-czechenglish-flash-cards/ "German → Czech/English Flashcards | Quizlet")
 
 ### Písma
-* [Anglické ekvivalenty řeckých písmen](https://quizlet.com/483773767/greek-english-letter-equivalents-flash-cards/)
-* [Vietnamská abeceda](https://quizlet.com/462684256/vietnamese-alphabet-flash-cards/)  
+* [Anglické ekvivalenty řeckých písmen](https://quizlet.com/483773767/greek-english-letter-equivalents-flash-cards/ "Greek-English letter equivalents Flashcards | Quizlet")
+* [Vietnamská abeceda](https://quizlet.com/462684256/vietnamese-alphabet-flash-cards/ "Vietnamese alphabet Flashcards | Quizlet")  

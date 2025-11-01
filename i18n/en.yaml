@@ -1,34 +1,59 @@
-meme-repository: 'Memes'
+# {{ T "" }}
+
+
+# Pages ------------------------------------------------------------------------------
+tag-heading: 'Posts tagged #'
+
+## Page: RSS
+recent-posts: 'Recent posts from the personal website of {{ .title }}'
+
+
+# Layouts ----------------------------------------------------------------------------
+## Layout: Article
+copy-link-heading: 'Copy link to this heading'
+last-mod-short: 'Updated:'
+last-mod: 'Last updated:'
+published: 'Published:'
+
+## Layout: Sidebar
 contact-me: 'Get in Touch'
-more-profiles: 'More Profiles'
 email: 'Email'
 more-content: 'More Content'
+more-profiles: 'More Profiles'
 my-content: 'My Content'
-posts: 'Posts'
-tag: 'Posts tagged #'
-tags: 'Tags'
-tags-show-all: 'Show posts tagged'
-latest-posts: 'Latest Posts'
-posts-of: 'of'
-no-posts-yet: "I haven't published any posts yet."
-read-more: 'Read more…'
-search: 'Search'
-search-memes: 'Search memes'
+
+
+# Components -------------------------------------------------------------------------
+## Component: Breadcrumbs
 back: 'Back'
 go-back-to: 'Go back to'
+
+## Component: Gallery
+no-images-found: 'No images found.'
+press-esc: 'Press Esc to clear'
+press-stroke: 'Press / to search'
+search-memes: 'Search memes'
+search: 'Search'
+
+## Component: Gallery - Photoswipe
+close: 'Close (Esc)'
+next: 'Next (→)'
+previous: 'Previous (←)'
+psw-error: 'The image cannot be loaded'
+zoom: 'Zoom (Z)'
+
+## Component: Header
 switch-language: 'Přepnout jazyk do češtiny'
 switch-theme-dark: 'Switch to dark theme'
 switch-theme-light: 'Switch to light theme'
-close: 'Close'
-zoom: 'Zoom'
-previous: 'Previous'
-next: 'Next'
-psw-error: 'The image cannot be loaded'
-press-esc: 'Press Esc to clear'
-press-stroke: 'Press / to search'
-copy-link-heading: 'Copy link to this heading'
-published: 'Published:'
-last-mod: 'Last updated:'
-last-mod-short: 'Updated:'
-no-images-found: 'No images found.'
-recent-posts: 'Recent posts from the personal website of {{ .title }}'
+
+## Component: Post Summary
+latest-posts: 'Latest Posts'
+no-posts-yet: "I haven't published any posts yet."
+posts-of: 'of'
+posts: 'Posts'
+read-more: 'Read more…'
+
+## Component: Tag
+tags-show-all: 'Show posts tagged'
+tags: 'Tags'

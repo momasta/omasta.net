@@ -16,7 +16,10 @@
             .toLowerCase()
             .trim()
             .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, ""); // strip accents/diacritics
+            .replace(/[\u0300-\u036f]/g, "")   // Remove accents/diacritics
+            .replace(/['’`´]/g, "")            // Remove apostrophes and similar marks
+            .replace(/[^a-z0-9\s]/g, "")       // Strip other punctuation/symbols
+            .replace(/\s+/g, " ");             // Collapse multiple spaces
     }
 
     // ===== Focusable elements handling =====
@@ -231,7 +234,7 @@
             input.addEventListener(evt, () => {
                 debouncedApply();
                 if (input.value.trim() === "") {
-                    setQueryParamInURL(""); // clear q param when input is empty
+                    setQueryParamInURL(""); // Clear q param when input is empty
                 }
             });
         });
@@ -245,7 +248,7 @@
                 }
                 input.value = "";
                 applyFilter("");
-                setQueryParamInURL(""); // clear q param on Escape reset
+                setQueryParamInURL(""); // Clear q param on Escape reset
                 return;
             }
             if (e.key === "/" && !e.ctrlKey && !e.metaKey && !e.altKey) {

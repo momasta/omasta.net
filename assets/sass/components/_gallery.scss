@@ -1,7 +1,6 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  @extend %no-interaction;
   margin: -5px;
 
   form {
@@ -59,18 +58,31 @@
     word-break: normal;
     text-wrap: auto;
   }
+}
 
-  // <img class="gallery-image-thumb">
-  &-thumb {
-    object-fit: cover;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border: 1px solid var(--color-text-light);
-    border-radius: 8px;
-    transition: opacity var(--ease);
-  }
+// <img class="gallery-image-thumb">
+.gallery-image-thumb {
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-site-bg);
+  border: 1px solid var(--color-text-light);
+  border-radius: 8px;
+  transition: opacity var(--ease);
+  @extend %no-interaction;
+}
+
+.pswp__zoom-wrap img,
+.pswp__img {
+  border-radius: 8px;
+  transition: border-radius var(--ease);
+}
+
+.pswp--open .pswp__zoom-wrap img,
+.pswp--open .pswp__img {
+  border-radius: 0;
 }
 
 @mixin mq-min-medium-gallery-image {

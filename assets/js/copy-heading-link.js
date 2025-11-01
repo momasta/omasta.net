@@ -5,6 +5,16 @@
         'h3[id] a[href^="#"]'
     );
 
+    function focusById(id) {
+        const element = document.getElementById(id);
+        if (!element) return;
+        if (!element.hasAttribute('tabindex')) {
+            element.setAttribute('tabindex', '-1');
+        }
+        element.focus({ preventScroll: true });
+        element.scrollIntoView({ block: 'start' });
+    }
+
     for (const anchor of anchors) {
         anchor.addEventListener('click', async () => {
             const href = anchor.getAttribute('href');
@@ -20,6 +30,21 @@
             } catch (error) {
                 console.error('Copying to clipboard failed', error);
             }
+
+            // Focus target
+            focusById(id);
         });
     }
+
+    // Handle direct load with hash
+    if (location.hash) {
+        focusById(location.hash.slice(1));
+    }
+
+    // Handle manual hash changes
+    window.addEventListener('hashchange', () => {
+        if (location.hash) {
+            focusById(location.hash.slice(1));
+        }
+    });
 })();

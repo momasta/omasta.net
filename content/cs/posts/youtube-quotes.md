@@ -94,7 +94,7 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
 
 ## Mikýř
 
-### **Mikýřova úžasná pouť internetem, Tohle není MÚPI**
+### Mikýřova úžasná pouť internetem, Tohle není MÚPI
 
 * Bolševický židozednáři  
   [https://youtu.be/goVM92KzkE8?t=360](https://youtu.be/goVM92KzkE8?t=360 "ALLATRA DLC s Patrikem Kořenářem 👀 - YouTube")
@@ -111,12 +111,13 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
 
 ### PTNGMS, Peťan Esterka
 
-* Já su vyřízený jak poštovní poukázka.* Nevíte náhodou, kde se rožíhá na hajzlu?  
-                                         [https://youtube.com/clip/Ugkx1hmSDDvlW8wdPgJdjFyYgMNCAfGaWodm](https://youtube.com/clip/Ugkx1hmSDDvlW8wdPgJdjFyYgMNCAfGaWodm "✂️ Nevíte náhodou, kde se rožíhá na hajzlu? - YouTube")
+* Já su vyřízený jak poštovní poukázka.
+* Nevíte náhodou, kde se rožíhá na hajzlu?  
+  [https://youtube.com/clip/Ugkx1hmSDDvlW8wdPgJdjFyYgMNCAfGaWodm](https://youtube.com/clip/Ugkx1hmSDDvlW8wdPgJdjFyYgMNCAfGaWodm "✂️ Nevíte náhodou, kde se rožíhá na hajzlu? - YouTube")
 * Mohl bych sakra vědět, kde se rožíhá na hajzlu?  
   [https://youtube.com/clip/Ugkx3rBRqAICNHWOPQP268X8It-9wBDEfJ5l](https://youtube.com/clip/Ugkx3rBRqAICNHWOPQP268X8It-9wBDEfJ5l "✂️ Mohl bych sakra vědět, kde se rožíhá na hajzlu? - YouTube")
 
-## **Rio Lokok**
+## Rio Lokok
 
 ### Minecraft - Part 1 - Enderman zabíjí, creeper vybouchává!
 

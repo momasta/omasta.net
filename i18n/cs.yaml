@@ -1,36 +1,59 @@
-#{{ T "" }}
+# {{ T "" }}
 
-meme-repository: 'Memes'
+
+# Pages ------------------------------------------------------------------------------
+tag-heading: 'Články se štítkem #'
+
+## Page: RSS
+recent-posts: 'Poslední články ze stránky {{ .title }}'
+
+
+# Layouts ----------------------------------------------------------------------------
+## Layout: Article
+copy-link-heading: 'Zkopírovat odkaz na tento nadpis'
+last-mod-short: 'Upraveno:'
+last-mod: 'Datum poslední úpravy:'
+published: 'Zveřejněno:'
+
+## Layout: Sidebar
 contact-me: 'Kontakt'
-more-profiles: 'Další profily'
 email: 'E-mail'
 more-content: 'Další obsah'
+more-profiles: 'Další profily'
 my-content: 'Můj obsah'
-posts: 'Články'
-tag: 'Články se štítkem #'
-tags: 'Štítky'
-tags-show-all: 'Zobrazit články se štítkem'
-latest-posts: 'Poslední články'
-posts-of: 'z'
-no-posts-yet: 'Zatím jsem žádné nezveřejnil.'
-read-more: 'Číst dále…'
-search: 'Hledat'
-search-memes: 'Hledat memes'
+
+
+# Components -------------------------------------------------------------------------
+## Component: Breadcrumbs
 back: 'Zpět'
 go-back-to: 'Jít zpět na'
+
+## Component: Gallery
+no-images-found: 'Nebyly nalezeny žádné obrázky.'
+press-esc: 'Stiskněte Esc pro smazání'
+press-stroke: 'Stiskněte / pro vyhledávání'
+search-memes: 'Hledat memes'
+search: 'Hledat'
+
+## Component: Gallery - Photoswipe
+close: 'Zavřít (Esc)'
+next: 'Další (→)'
+previous: 'Předchozí (←)'
+psw-error: 'Obrázek se nepodařilo načíst'
+zoom: 'Přiblížit/Oddálit (Z)'
+
+## Component: Header
 switch-language: 'Switch language to English'
 switch-theme-dark: 'Přepnout na tmavý motiv'
 switch-theme-light: 'Přepnout na světlý motiv'
-close: 'Zavřít'
-zoom: 'Přiblížit/Oddálit'
-previous: 'Předchozí'
-next: 'Další'
-psw-error: 'Obrázek se nepodařilo načíst'
-press-esc: 'Stiskněte Esc pro smazání'
-press-stroke: 'Stiskněte / pro vyhledávání'
-copy-link-heading: 'Zkopírovat odkaz na tento nadpis'
-published: 'Zveřejněno:'
-last-mod: 'Datum poslední úpravy:'
-last-mod-short: 'Upraveno:'
-no-images-found: 'Nebyly nalezeny žádné obrázky.'
-recent-posts: 'Poslední články ze stránky {{ .title }}'
+
+## Component: Post Summary
+latest-posts: 'Poslední články'
+no-posts-yet: 'Zatím jsem žádné nezveřejnil.'
+posts-of: 'z'
+posts: 'Články'
+read-more: 'Číst dále…'
+
+## Component: Tag
+tags-show-all: 'Zobrazit články se štítkem'
+tags: 'Štítky'

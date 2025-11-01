@@ -11,16 +11,24 @@
         {{- if hugo.IsServer -}} Hugo {{- else -}} {{- .Site.Title -}} {{- end -}}
     </title>
 
-    {{ with .Site.Params.description }}
-        <meta name="description" content="{{ . }}"> {{ end }}
-    {{ with .Site.Params.author }}
-        <meta name="author" content="{{ . }}"> {{ end }}
-    {{ if .Keywords }}
-        {{ with .Keywords }}
+    {{- with .Site.Params.description -}}
+        <meta name="description" content="{{ . }}">
+    {{- end -}}
+    
+    {{- with .Site.Params.author -}}
+        <meta name="author" content="{{ . }}">
+    {{- end -}}
+    
+    {{- if .Keywords -}}
+        {{- with .Keywords -}}
             <meta name="keywords"
                   content="{{ range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">
-        {{ end }}
-    {{ end }}
+        {{- end -}}
+    {{- end -}}
+
+    {{- with .Params.robots -}}
+        <meta name="robots" content="{{ . }}">
+    {{- end -}}
 
     <!-- Perform before rendering page -->
     <script>
@@ -165,7 +173,7 @@
 </div>
 
 {{ $applyThemeJS := resources.Get "js/apply-theme.js" | resources.Minify }}
-<script src="{{ print $applyThemeJS.RelPermalink "?" now.Unix }} defer"></script>
+<script src="{{ print $applyThemeJS.RelPermalink "?" now.Unix }}" defer></script>
 
 {{ $copyHeadingLinkJS := resources.Get "js/copy-heading-link.js" | resources.Minify }}
 <script src="{{ print $copyHeadingLinkJS.RelPermalink "?" now.Unix }}" defer></script>

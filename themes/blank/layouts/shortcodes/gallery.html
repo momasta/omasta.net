@@ -6,6 +6,7 @@
 
 {{/* Optional parameter to specify an asset subdirectory */}}
 {{- $param0 := default "" (.Get 0) -}}
+
 {{- $directory := cond (ne "" $param0) (print "/" $param0) "" -}}
 {{- $path := (print "images" $directory "/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF}") -}}
 {{- $dateFormat := .Site.Params.dateFormat -}}
@@ -35,46 +36,45 @@
 
 
 <p id="gallery-no-results" aria-hidden="true" class="state-hidden">
-    {{ T "no-images-found" }}
+    {{- T "no-images-found" -}}
 </p>
 
 <div class="gallery">
     {{- $images := resources.Match $path }}
 
     {{- if $images }}
-        {{- $imgs := slice }}
+        {{- $imgs := slice -}}
 
-        {{- range $idx, $image := $images }}
+        {{- range $idx, $image := $images -}}
             {{- $filePath := printf "assets/%s" $image.Name }}
             {{- $fileInfo := os.Stat $filePath }}
             {{- $imgs = $imgs | append (dict "modTime" $fileInfo.ModTime "image" $image) }}
-        {{- end }}
+        {{- end -}}
 
-        {{- $sorted := sort $imgs "modTime" "desc" }}
+        {{- $sorted := sort $imgs "modTime" "desc" -}}
 
-        {{- range $index, $item := $sorted }}
-            {{- $image := $item.image }}
+        {{- range $index, $item := $sorted -}}
+            {{ $image := $item.image }}
             {{ $imageName := ($image.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr }}
-            {{ $imageURL := $image.RelPermalink | safeURL }}
+            {{ $imageURL := $image.RelPermalink | safeURL -}}
 
             <a href="{{ $imageURL }}"
                class="gallery-image"
                data-pswp-width="{{ $image.Width }}"
                data-pswp-height="{{ $image.Height }}"
                data-cropped="true"
-               id="{{ $imageName | humanize | urlize }}"
-               title="{{ $imageName }}
+               id="{{ $imageName |
+                   replaceRE "['’~#_+./@]" "" |
+                   urlize |
+                   replaceRE "-{2,}" "-" -}}"
+               target="_blank"
+               title="{{- $imageName }}
 
-{{ T "last-mod-short" }} {{ $item.modTime.Format $dateFormat | safeHTML }}"
-               target="_blank">
+{{ T "last-mod-short" }} {{ $item.modTime.Format $dateFormat | safeHTML -}}">
 
                 <img class="gallery-image-thumb"
                      alt="{{ $imageName }}."
                      loading="{{ cond (gt $index 12) "lazy" "eager" -}}"
-
-                     {{- if eq $index 0 -}}
-                         fetchpriority="high"
-                     {{- end -}}
 
                      {{- if eq $image.MediaType.SubType "gif" -}}
                      src="{{ $imageURL }}"
@@ -92,25 +92,25 @@
                          src="{{ $thumb1.RelPermalink | safeURL }}"
                          srcset="{{ $thumb1.RelPermalink | safeURL }} 1x, {{ $thumb2.RelPermalink | safeURL }} 2x"
                      {{- end -}}><br>
-                <span>{{- $imageName -}}</span>
+                <span>{{- $imageName | replaceRE " - " "&nbsp;&#8209; " | safeHTML -}}</span>
             </a>
-        {{- end }}
+        {{- end -}}
     {{- end }}
 </div>
 
 
-{{ $galleryFilterJS := resources.Get "js/gallery-filter.js" | resources.Minify }}
+{{- $galleryFilterJS := resources.Get "js/gallery-filter.js" | resources.Minify -}}
 
-{{ $photoswipeCSS := resources.Get "css/photoswipe.css" | resources.Minify }}
-{{ $photoswipeJS := resources.Get "js/photoswipe.esm.min.js" }}
-{{ $photoswipeLightboxJS := resources.Get "js/photoswipe-lightbox.esm.min.js" }}
+{{- $photoswipeCSS := resources.Get "css/photoswipe.css" | resources.Minify -}}
+{{- $photoswipeJS := resources.Get "js/photoswipe.esm.min.js" -}}
+{{- $photoswipeLightboxJS := resources.Get "js/photoswipe-lightbox.esm.min.js" -}}
 
 <!-- Gallery Filter -->
 <script src="{{ print $galleryFilterJS.RelPermalink "?" now.Unix }}" defer></script>
 
 <!-- Photoswipe -->
 <link rel="stylesheet" href="{{ print $photoswipeCSS.RelPermalink "?" now.Unix }}">
-<script type="module" defer>
+<script type="module">
     import PhotoSwipeLightbox from '{{ print $photoswipeLightboxJS.RelPermalink "?" now.Unix }}';
 
     const lightbox = new PhotoSwipeLightbox({
@@ -119,6 +119,9 @@
         showHideAnimationType: 'zoom',
         pswpModule: () => import('{{ print $photoswipeJS.RelPermalink "?" now.Unix }}'),
         preload: [1, 4],
+        showAnimationDuration: 260,
+        hideAnimationDuration: 260,
+        easing: "cubic-bezier(0.4, 0, 0.25, 1)",
         closeTitle: '{{ T "close" }}',
         zoomTitle: '{{ T "zoom" }}',
         arrowPrevTitle: '{{ T "previous" }}',
@@ -126,6 +129,55 @@
         errorMsg: '{{ T "psw-error" }}'
     });
     lightbox.init();
+
+    function setLightboxParam(id) {
+        try {
+            const url = new URL(window.location);
+            if (id) {
+                url.searchParams.set('lightbox', id);
+            } else {
+                url.searchParams.delete('lightbox');
+            }
+            history.replaceState(null, '', url);
+        } catch {
+        }
+    }
+
+    lightbox.on('change', () => {
+        try {
+            const el = lightbox.pswp.currSlide.data.element;
+            if (el && el.id) setLightboxParam(el.id);
+        } catch {
+        }
+    });
+
+    lightbox.on('close', () => {
+        try {
+            setLightboxParam(null);
+        } catch {
+        }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+        try {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('lightbox');
+            if (id) {
+                const link = document.getElementById(id);
+                if (link) {
+                    const gallery = link.closest('.gallery');
+                    const items = [...gallery.querySelectorAll('a')];
+                    const index = items.indexOf(link);
+                    if (index >= 0) {
+                        lightbox.loadAndOpen(index, {gallery, element: link});
+                        return;
+                    }
+                }
+                setLightboxParam(null);
+            }
+        } catch {
+        }
+    });
 
     window.pswpLightbox = lightbox;
 </script>
