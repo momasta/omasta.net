@@ -1,10 +1,10 @@
-{{/*
+{{- /*
     assets/sass/components/_gallery.scss
-*/}}
+*/ -}}
 
-{{/* Based on https://www.codeproject.com/Articles/5276331/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2 */}}
+{{- /* Based on https://www.codeproject.com/Articles/5276331/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2 */ -}}
 
-{{/* Optional parameter to specify an asset subdirectory */}}
+{{- /* Optional parameter to specify an asset subdirectory */ -}}
 {{- $param0 := default "" (.Get 0) -}}
 
 {{- $directory := cond (ne "" $param0) (print "/" $param0) "" -}}
@@ -99,15 +99,15 @@
 </div>
 
 
-<!-- Gallery Filter -->
+{{- /* Gallery Filter */ -}}
 {{- $galleryFilterJS := resources.Get "js/gallery-filter.js" | resources.Minify -}}
 <script src="{{ print $galleryFilterJS.RelPermalink "?" now.Unix }}" defer></script>
 
-<!-- PhotosSwipe CSS -->
+{{- /* PhotosSwipe CSS */ -}}
 {{- $photoSwipeCSS := printf "%s?%d" ((resources.Get "css/photoswipe.css" | resources.Minify).RelPermalink) now.Unix -}}
 <link rel="stylesheet" href="{{ $photoSwipeCSS }}">
 
-<!-- PhotosSwipe JS -->
+{{- /* PhotosSwipe JS */ -}}
 
 {{- $photoSwipeLightboxJS := print (resources.Get "js/photoswipe-lightbox.esm.min.js").RelPermalink "?" now.Unix -}}
 

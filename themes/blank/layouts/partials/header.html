@@ -1,6 +1,6 @@
-{{/*
+{{- /*
     assets/sass/layout/_header.scss
-*/}}
+*/ -}}
 
 <header>
     <div class="bar">
@@ -20,7 +20,7 @@
 			</span>
         </button>
 
-        {{/* Language Switcher */}}
+        {{- /* Language Switcher */ -}}
         {{ if hugo.IsMultilingual }}
             {{ $currentLang := .Lang }}
             {{ if gt (len .Translations) 0 }}

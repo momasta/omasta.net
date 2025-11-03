@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Site Information -->
+    {{- /* Site Information */ -}}
+
     <title>
         {{- if not .IsHome -}} {{ if .Page.Title }}{{ .Page.Title }} - {{ end }} {{- end -}}
         {{- if hugo.IsServer -}} Hugo {{- else -}} {{- .Site.Title -}} {{- end -}}
@@ -14,11 +15,11 @@
     {{- with .Site.Params.description -}}
         <meta name="description" content="{{ . }}">
     {{- end -}}
-    
+
     {{- with .Site.Params.author -}}
         <meta name="author" content="{{ . }}">
     {{- end -}}
-    
+
     {{- if .Keywords -}}
         {{- with .Keywords -}}
             <meta name="keywords"
@@ -30,7 +31,7 @@
         <meta name="robots" content="{{ . }}">
     {{- end -}}
 
-    <!-- Perform before rendering page -->
+    {{- /* Perform before rendering page */ -}}
     <script>
         const html = document.documentElement;
         const storedTheme = localStorage.getItem('theme');
@@ -44,7 +45,7 @@
         }
     </script>
 
-    <!-- Critical CSS -->
+    {{- /* Critical CSS */ -}}
     <style>
         :root {
             color-scheme: dark light; /* Default theme: dark */
@@ -96,14 +97,14 @@
         }
     </style>
 
-    <!-- Stylesheet -->
+    {{- /* Stylesheet */ -}}
     {{ $main_options := (dict "targetPath" "css/site.css" "outputStyle" "compressed") }}
     {{ $main_template := resources.Get "sass/main.scss" }}
-    {{ $main_style := $main_template | resources.ExecuteAsTemplate "main_parsed.scss" . | toCSS $main_options | resources.Minify }}
+    {{ $main_style := $main_template | resources.ExecuteAsTemplate "main_parsed.scss" . | toCSS $main_options | resources.Minify -}}
     <link rel="stylesheet" href="{{ print $main_style.RelPermalink "?" now.Unix }}">
 
-    {{ if hugo.IsMultilingual }}
-        <!-- RSS alternates -->
+    {{- if hugo.IsMultilingual -}}
+        {{- /* RSS alternates */ -}}
         {{ with .Site.GetPage "section" "posts" }}
             {{ range .AllTranslations }}
                 {{ $lang := .Language.LanguageCode }}
@@ -114,7 +115,7 @@
                           href="{{ .Permalink | safeURL }}"/>
                 {{ end }}
             {{ end }}
-            <!-- x-default -->
+            {{- /* x-default */ -}}
             {{ with .OutputFormats.Get "RSS" }}
                 <link rel="alternate"
                       type="application/rss+xml"
@@ -123,7 +124,7 @@
             {{ end }}
         {{ end }}
 
-        <!-- HTML alternates -->
+        {{- /* HTML alternates */ -}}
         {{ $current := . }}
         <link rel="alternate"
               hreflang="{{ .Language.LanguageCode }}"
@@ -137,7 +138,7 @@
               hreflang="x-default"
               href="{{ $current.Permalink | safeURL }}"/>
     {{ else }}
-        <!-- Single-language site: just the plain RSS feed, no hreflang -->
+        {{- /* Single-language site: just the plain RSS feed, no hreflang */ -}}
         {{ with .Site.GetPage "section" "posts" }}
             {{ with .OutputFormats.Get "RSS" }}
                 <link rel="alternate"
@@ -145,20 +146,20 @@
                       href="{{ .Permalink | safeURL }}"/>
             {{ end }}
         {{ end }}
-    {{ end }}
+    {{- end -}}
 
-    <!-- Shortcut Icons -->
+    {{- /* Shortcut Icons */ -}}
     <link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon">
     <link rel="icon" href="/images/favicon-32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/images/favicon-192.png" sizes="192x192" type="image/png">
     <link rel="apple-touch-icon" href="/images/favicon-180.png">
 
-    <!-- Apple-Specific Meta Tags -->
+    {{- /* Apple-Specific Meta Tags */ -}}
     <meta name="theme-color" content="#b8b8b8" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <meta name="format-detection" content="telephone=no">
 
-    <!-- OG Tags -->
+    {{- /* OG Tags */ -}}
     {{ template "_internal/opengraph.html" . }}
 </head>
 

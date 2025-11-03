@@ -5,4 +5,3 @@ ErrorDocument 400 /cs/400/
 ErrorDocument 403 /cs/403/
 ErrorDocument 404 /cs/404/
 ErrorDocument 503 /cs/503/
-ErrorDocument default /cs/error/
