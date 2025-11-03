@@ -1,13 +1,13 @@
 ---  
-title: "404 Stránka nenalezena"  
+title: "Neznámá chyba"  
 layout: simple  
 robots: noindex
 sitemap:
     disable: true
 ---
 
-- Možná jsem ji smazal.
-- Možná je překlep v odkazu.
-- Možná je překlep v adrese.
+Tedy přátelé, toto jsem opravdu nečekal.
 
 [Jít na domovskou stránku]({{% relref path="/" %}})
+
+

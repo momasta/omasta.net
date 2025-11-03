@@ -2,8 +2,8 @@
         replaceRE "['’~#_+./@]" "" |
         urlize |
         replaceRE "-{2,}" "-" -}}
-<h{{ .Level }} id="{{- $linkTitle -}}" {{- with .Attributes.class }} class="{{ . }}" {{- end }}>
-    {{ .Text }}
-    <a href="&#35;{{- $linkTitle -}}" class="heading-link" title="{{ T "copy-link-heading" }}"
-       aria-label="{{ T "copy-link-heading" }}"></a>
-</h{{ .Level }}>
+<h{{- .Level }} id="{{- $linkTitle -}}" {{- with .Attributes.class }} class="{{ . }}" {{- end -}}>
+    {{- .Text -}}
+    <a href="&#35;{{- $linkTitle -}}" class="heading-link" title="{{ T "copy-link-heading" -}}"
+       aria-label="{{- T "copy-link-heading" -}}"></a>
+</h{{- .Level -}}>

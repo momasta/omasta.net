@@ -3,6 +3,16 @@ User-agent: *
 Sitemap: {{ .Permalink }}sitemap.xml
 {{- end }}
 
-Disallow: /404
-Disallow: /cs/404
+Disallow: /400/
+Disallow: /403/
+Disallow: /404/
+Disallow: /503/
+Disallow: /error/
+
+Disallow: /cs/400/
+Disallow: /cs/403/
+Disallow: /cs/404/
+Disallow: /cs/503/
+Disallow: /cs/error/
+
 Disallow: /t/

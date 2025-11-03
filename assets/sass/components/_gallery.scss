@@ -35,7 +35,7 @@
   &:focus-visible {
     outline-offset: 0;
 
-    .gallery-image-thumb {
+    .gallery-thumb {
       opacity: 0.75;
     }
 
@@ -60,8 +60,8 @@
   }
 }
 
-// <img class="gallery-image-thumb">
-.gallery-image-thumb {
+// <img class="gallery-thumb">
+.gallery-thumb {
   object-fit: cover;
   position: relative;
   overflow: hidden;

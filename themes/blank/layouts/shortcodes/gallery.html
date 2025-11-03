@@ -72,7 +72,7 @@
 
 {{ T "last-mod-short" }} {{ $item.modTime.Format $dateFormat | safeHTML -}}">
 
-                <img class="gallery-image-thumb"
+                <img class="gallery-thumb"
                      alt="{{ $imageName }}."
                      loading="{{ cond (gt $index 12) "lazy" "eager" -}}"
 
@@ -84,9 +84,9 @@
                          {{- $dir := path.Dir $image.RelPermalink -}}
 
                          {{- /* Create resized thumbs and copy them into a "t/" subfolder */ -}}
-                         {{- $thumb1 := $image.Resize "150x webp q80" |
+                         {{- $thumb1 := $image.Resize "150x webp q60" |
                              resources.Copy (printf "%s/t/%s.webp" $dir $hash) -}}
-                         {{- $thumb2 := $image.Resize "300x webp q70" |
+                         {{- $thumb2 := $image.Resize "300x webp q50" |
                              resources.Copy (printf "%s/t/%s@2x.webp" $dir $hash) -}}
 
                          src="{{ $thumb1.RelPermalink | safeURL }}"
@@ -99,25 +99,29 @@
 </div>
 
 
-{{- $galleryFilterJS := resources.Get "js/gallery-filter.js" | resources.Minify -}}
-
-{{- $photoswipeCSS := resources.Get "css/photoswipe.css" | resources.Minify -}}
-{{- $photoswipeJS := resources.Get "js/photoswipe.esm.min.js" -}}
-{{- $photoswipeLightboxJS := resources.Get "js/photoswipe-lightbox.esm.min.js" -}}
-
 <!-- Gallery Filter -->
+{{- $galleryFilterJS := resources.Get "js/gallery-filter.js" | resources.Minify -}}
 <script src="{{ print $galleryFilterJS.RelPermalink "?" now.Unix }}" defer></script>
 
-<!-- Photoswipe -->
-<link rel="stylesheet" href="{{ print $photoswipeCSS.RelPermalink "?" now.Unix }}">
+<!-- PhotosSwipe CSS -->
+{{- $photoSwipeCSS := printf "%s?%d" ((resources.Get "css/photoswipe.css" | resources.Minify).RelPermalink) now.Unix -}}
+<link rel="stylesheet" href="{{ $photoSwipeCSS }}">
+
+<!-- PhotosSwipe JS -->
+
+{{- $photoSwipeLightboxJS := print (resources.Get "js/photoswipe-lightbox.esm.min.js").RelPermalink "?" now.Unix -}}
+
+{{- $photoSwipeJS := printf "%q"
+    (print (resources.Get "js/photoswipe.esm.min.js").RelPermalink "?" now.Unix) | safeJS -}}
+
 <script type="module">
-    import PhotoSwipeLightbox from '{{ print $photoswipeLightboxJS.RelPermalink "?" now.Unix }}';
+    import PhotoSwipeLightbox from '{{ $photoSwipeLightboxJS }}';
 
     const lightbox = new PhotoSwipeLightbox({
         gallery: '.gallery',
         children: 'a',
         showHideAnimationType: 'zoom',
-        pswpModule: () => import('{{ print $photoswipeJS.RelPermalink "?" now.Unix }}'),
+        pswpModule: () => import({{ $photoSwipeJS }}),
         preload: [1, 4],
         showAnimationDuration: 260,
         hideAnimationDuration: 260,

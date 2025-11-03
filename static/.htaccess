@@ -1,6 +1,11 @@
 DirectoryIndex index.html
 
-ErrorDocument 404 /404
+# Error Documents
+ErrorDocument 400 /400/
+ErrorDocument 403 /403/
+ErrorDocument 404 /404/
+ErrorDocument 503 /503/
+ErrorDocument default /error/
 
 <IfModule mod_expires.c>
   ExpiresActive On
