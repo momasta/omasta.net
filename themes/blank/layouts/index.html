@@ -1,6 +1,6 @@
-{{ define "main" }}
+{{ define "main" -}}
 
-    {{ partial "header" . }}
+    {{- partial "header" . -}}
 
     <div id="middle">
         <main>
@@ -15,7 +15,7 @@
                     {{ end }}
                 </ul>
 
-                {{ partial "pagination.html" . }}
+                {{- partial "pagination.html" . -}}
             </div>
         </main>
 

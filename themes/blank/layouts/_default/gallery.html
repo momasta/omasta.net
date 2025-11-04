@@ -1,12 +1,12 @@
-{{ define "main" }}
+{{ define "main" -}}
 
-    {{ partial "header" . }}
+    {{- partial "header" . -}}
 
     <div id="middle">
         <main>
             <div class="card">
                 <article>
-                    {{ partial "breadcrumbs.html" . }}
+                    {{- partial "breadcrumbs.html" . -}}
 
                     <div class="article-content">
                         {{ .Content }}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-GB" }}">
 
-{{ partial "head" . }}
+{{- partial "head" . -}}
 
 <body class="{{ .Type }}"
       ondragstart="return false;"
@@ -10,13 +10,13 @@
 
 <div id="content">
     {{ block "main" . }}{{ end }}
-    {{ partial "footer" . }}
+    {{- partial "footer" . -}}
 </div>
 
-{{ $applyThemeJS := resources.Get "js/apply-theme.js" | resources.Minify }}
+{{ $applyThemeJS := resources.Get "js/apply-theme.js" | resources.Minify -}}
 <script src="{{ print $applyThemeJS.RelPermalink "?" now.Unix }}" defer></script>
 
-{{ $copyHeadingLinkJS := resources.Get "js/copy-heading-link.js" | resources.Minify }}
+{{ $copyHeadingLinkJS := resources.Get "js/copy-heading-link.js" | resources.Minify -}}
 <script src="{{ print $copyHeadingLinkJS.RelPermalink "?" now.Unix }}" defer></script>
 
 </body>

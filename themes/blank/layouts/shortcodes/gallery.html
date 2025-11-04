@@ -104,24 +104,20 @@
 <script src="{{ print $galleryFilterJS.RelPermalink "?" now.Unix }}" defer></script>
 
 {{- /* PhotosSwipe CSS */ -}}
-{{- $photoSwipeCSS := printf "%s?%d" ((resources.Get "css/photoswipe.css" | resources.Minify).RelPermalink) now.Unix -}}
+{{- $photoSwipeCSS := (resources.Get "css/photoswipe.css" | resources.Minify).RelPermalink -}}
 <link rel="stylesheet" href="{{ $photoSwipeCSS }}">
 
 {{- /* PhotosSwipe JS */ -}}
-
-{{- $photoSwipeLightboxJS := print (resources.Get "js/photoswipe-lightbox.esm.min.js").RelPermalink "?" now.Unix -}}
-
-{{- $photoSwipeJS := printf "%q"
-    (print (resources.Get "js/photoswipe.esm.min.js").RelPermalink "?" now.Unix) | safeJS -}}
-
 <script type="module">
+    {{ $photoSwipeLightboxJS := (resources.Get "js/photoswipe-lightbox.esm.min.js").RelPermalink -}}
     import PhotoSwipeLightbox from '{{ $photoSwipeLightboxJS }}';
 
     const lightbox = new PhotoSwipeLightbox({
+        {{- $photoSwipeJS := printf "%q" (resources.Get "js/photoswipe.esm.min.js").RelPermalink | safeJS }}
+        pswpModule: () => import({{ $photoSwipeJS }}),
         gallery: '.gallery',
         children: 'a',
         showHideAnimationType: 'zoom',
-        pswpModule: () => import({{ $photoSwipeJS }}),
         preload: [1, 4],
         showAnimationDuration: 260,
         hideAnimationDuration: 260,

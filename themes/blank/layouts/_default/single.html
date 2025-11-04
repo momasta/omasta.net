@@ -1,6 +1,6 @@
-{{ define "main" }}
+{{ define "main" -}}
     
-    {{ partial "header" . }}
+    {{- partial "header" . -}}
 
     {{ $datePublished := .PublishDate.Format .Site.Params.dateFormat | safeHTML }}
     {{ $dateModified := .Lastmod.Format .Site.Params.dateFormat | safeHTML }}
@@ -46,5 +46,5 @@
         </main>
     </div>
     
-    {{ partial "sidebar.html" . }}
+    {{- partial "sidebar.html" . -}}
 {{ end }}
