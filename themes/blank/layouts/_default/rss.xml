@@ -30,12 +30,13 @@
 {{- if ge $limit 1 }}
     {{- $pages = $pages | first $limit }}
 {{- end }}
+
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>{{ .Site.Title }} - {{ .Title }}</title>
+        <title>{{ .Site.Title }} – {{ .Title }}</title>
         <link>{{ .Permalink }}</link>
-        <description>{{ T "recent-posts" (dict "title" .Site.Title ) }}</description>
+        <description>{{ T "recent-posts" (dict "title" .Site.Title) }}</description>
         <generator>Hugo</generator>
         <language>{{ site.Language.LanguageCode }}</language>{{ with $authorEmail }}
         <managingEditor>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}

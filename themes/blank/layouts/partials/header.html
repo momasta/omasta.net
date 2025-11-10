@@ -36,7 +36,8 @@
                     {{ if ne .Lang $currentLang }}
                         <a title="{{ T "switch-language" }}"
                            href="{{ printf "/%s/" .Lang | absURL }}"
-                           hreflang="{{ .Language.LanguageCode }}">
+                           hreflang="{{ .Language.LanguageCode }}"
+                           aria-disabled="true">
                             <span lang="{{ .Language.LanguageCode }}">{{ .LanguageName }}</span>
                         </a>
                     {{ end }}
