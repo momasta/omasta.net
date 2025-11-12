@@ -375,7 +375,7 @@ short of 6.8 inches
   (Possibly the last live-sung Next Week jingle, reused in later videos.)  
   [https://youtu.be/N5pqB1E3PUY?t=1024s](https://youtu.be/N5pqB1E3PUY?t=1024s "Samsung Galaxy Watch 6 vs Classic, Which Is Best? | TSW164 - YouTube")
 * "Which Crap Celebrity Do I Look Like This Week?" (First segment jingle.)  
-  [https://youtu.be/d_yYVK7qWCM?t=349](https://youtu.be/d_yYVK7qWCM?t=349 "Tech Spurt Weekly Ep28 | Surface Duo Phone, Xiaomi Mi TV Lux - YouTube")
+  [https://youtu.be/d_yYVK7qWCM?t=323](https://youtu.be/d_yYVK7qWCM?t=323 "Tech Spurt Weekly Ep28 | Surface Duo Phone, Xiaomi Mi TV Lux - YouTube")
 * Viewer Comments WTF jingle  
   [https://youtu.be/sSZUEGUGXmY?t=375](https://youtu.be/sSZUEGUGXmY?t=375 "Xiaomi 13 Pro, the first Snapdragon 8 Gen 2 phone? | TSW130 - YouTube")
 * The iPhone SE Jingle  
