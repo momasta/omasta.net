@@ -44,7 +44,7 @@ Original expressions (especially&nbsp;[similes](#similes)), jokes, responses to 
 * [Intros](#intros)
 * [Jingles](#jingles)
 * [Out of Context Material](#out-of-context)
-* [Recombu](#recombu)
+* [Recombu](#recombu-quickies)
 * [Which Crap Celebrity Do I Look Like This Week?](#crap-celebrity)
 * [Other Quotes](#other-quotes)
 
