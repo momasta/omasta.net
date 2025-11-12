@@ -24,9 +24,9 @@ type: posts
 Hlášky z Ano, šéfe! jsem si&nbsp;začal pořádně zapisovat až&nbsp;od&nbsp;9.&nbsp;série&nbsp;(2025).  
 
 Pro ty dřívější existuje hromada sestřihů na&nbsp;YouTube, nebo např.&nbsp;tyto stránky:
-* [Ano, šéfe! (pořad) - Hlášky z filmů a seriálů](https://www.hlaskyzfilmu.cz/ano-sefe/)
-* [Česká přirovnání - tag - pohlreich](https://www.ceskaprirovnani.cz/tag/19-pohlreich)
-* [Legendární hlášky Zdeňka Pohlreicha na Přirovnej.cz](https://www.prirovnej.cz/zdenek-pohlreich-nejlepsi-hlasky/)
+* [Ano, šéfe! (pořad) - Hlášky z filmů a seriálů](https://www.hlaskyzfilmu.cz/ano-sefe/ "Ano, šéfe! (pořad) - Hlášky z filmů a seriálů | hlášky z pořadu Ano, šéfe!")
+* [Česká přirovnání - tag - pohlreich](https://www.ceskaprirovnani.cz/tag/19-pohlreich "Česká Přirovnání - tag - pohlreich")
+* [Legendární hlášky Zdeňka Pohlreicha na Přirovnej.cz](https://www.prirovnej.cz/zdenek-pohlreich-nejlepsi-hlasky/ "Legendární hlášky Zdeňka Pohlreicha - jaká přirovnání pronesl slavný šéfkuchař? - Přirovnej.cz")
 
 Níže najdete všechny hlášky, které&nbsp;mě&nbsp;pobavily (většinou rozesmály), nebo&nbsp;zaujaly.
 

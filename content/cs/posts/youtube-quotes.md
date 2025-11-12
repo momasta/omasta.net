@@ -33,7 +33,7 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
 * Český pejsek pinčl  
   [https://youtu.be/bcjgmTUEuSo?t=774](https://youtu.be/bcjgmTUEuSo?t=774 "EZO.TV | IQ Kvíz | Soutěživé Rybičky Volají Marným KvízČubinám - YouTube")
 * TV Regina | Televize s Duší Trilobitů  
-  [https://youtu.be/PuR96uBXByg](https://youtu.be/PuR96uBXByg)
+  [https://youtu.be/PuR96uBXByg](https://youtu.be/PuR96uBXByg "TV Regina | Televize S Duší Trilobitů - YouTube")
 
 ## Česká policejní akademie
 
@@ -81,21 +81,21 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
 
 * Já su vyřízený jak poštovní poukázka.
 * Mohl bych sakra vědět, kde se rožíhá na hajzlu?  
-  [https://youtube.com/clip/Ugkx3rBRqAICNHWOPQP268X8It-9wBDEfJ5l](https://youtube.com/clip/Ugkx3rBRqAICNHWOPQP268X8It-9wBDEfJ5l)
+  [https://youtube.com/clip/Ugkx3rBRqAICNHWOPQP268X8It-9wBDEfJ5l](https://youtube.com/clip/Ugkx3rBRqAICNHWOPQP268X8It-9wBDEfJ5l "✂️ Mohl bych sakra vědět, kde se rožíhá na hajzlu? - YouTube")
 * Cha! (zaječení)  
-  [https://youtu.be/JIWPYTtCuH4?t=293s](https://youtu.be/JIWPYTtCuH4?t=293s)
+  [https://youtu.be/JIWPYTtCuH4?t=293s](https://youtu.be/JIWPYTtCuH4?t=293s "GOLFING OVER IT | MÉ PRVNÍ FAMILY FRIENDLY VIDEO | by PeŤan | #02 - YouTube")
 * Michael Jackson – Smooth Criminal  
-  [https://youtu.be/aeROt3RZpQg?t=94s](https://youtu.be/aeROt3RZpQg?t=94s)
+  [https://youtu.be/aeROt3RZpQg?t=94s](https://youtu.be/aeROt3RZpQg?t=94s 'PIZZA DELIVERY - "Pizzičku sme vám dovezli !" (by PeŤan) - YouTube')
 * Rage sestřih z Mafie  
-  [https://youtu.be/kTQh3u0si4E?t=766s](https://youtu.be/kTQh3u0si4E?t=766s)
+  [https://youtu.be/kTQh3u0si4E?t=766s](https://youtu.be/kTQh3u0si4E?t=766s "MAFIA: Extrémní Jízda | BUDKY, JINÁ DIMENZE, RAKETOVÁ FORMULE | by PeŤan | #04 - YouTube")
 
 ### Pád třetí říše [DABING]
 
 * Nevíte náhodou, kde se rožíhá na hajzlu?  
-  [https://youtube.com/clip/Ugkx1hmSDDvlW8wdPgJdjFyYgMNCAfGaWodm](https://youtube.com/clip/Ugkx1hmSDDvlW8wdPgJdjFyYgMNCAfGaWodm)
+  [https://youtube.com/clip/Ugkx1hmSDDvlW8wdPgJdjFyYgMNCAfGaWodm](https://youtube.com/clip/Ugkx1hmSDDvlW8wdPgJdjFyYgMNCAfGaWodm "✂️ Nevíte náhodou, kde se rožíhá na hajzlu? - YouTube")
 * Je přece Silvestr, Silvestr! Chápete?  
   Né.  
-  [https://youtu.be/RhyswzQZdqI?t=154s](https://youtu.be/RhyswzQZdqI?t=154s)
+  [https://youtu.be/RhyswzQZdqI?t=154s](https://youtu.be/RhyswzQZdqI?t=154s "Pád třetí říše [DABING] 4 - YouTube")
 
 ## Rio Lokok
 
@@ -112,7 +112,7 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
 ## S.O.S. – Farkašovci
 
 * Neverím jak ten zmizól  
-  [https://youtu.be/2JxW8S7ZKRE?t=174s](https://youtu.be/2JxW8S7ZKRE?t=174s)
+  [https://youtu.be/2JxW8S7ZKRE?t=174s](https://youtu.be/2JxW8S7ZKRE?t=174s "S.O.S. - Farkašovci 1 - YouTube")
 
 ### S.O.S. – 61. diel (sen)
 
@@ -123,7 +123,7 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
 * Ahojte národ môj, vitajte tu všetci, vy sedláci. Chcem vám oznámit nové pravidlá, ktoré zavádzam od tohto moment v
   daňovom systémi. Vy budete veľa veľa všetci makať jak hovado, a všecky lóve budete nosiť sem do palác zámok mne hrad.
   Mám vás všeckých veľmi rád a máte v mojom srdci teplé miesto. Dúfam, že som k vám dost obozretný.  
-  [https://youtu.be/hR6HSgK7d5I?t=962](https://youtu.be/hR6HSgK7d5I?t=962)
+  [https://youtu.be/hR6HSgK7d5I?t=962](https://youtu.be/hR6HSgK7d5I?t=962 "S.O.S. - 61. diel (celé časti) - YouTube")
 
 ### S.O.S. – 44. diel (vrtuľa)
 
@@ -132,7 +132,7 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
 * Hen tam tam tá tá ta ta tá?
 * A čo sa ti ja snažím od začátku já vysvetliť ja? Čo? Nehaj tak.
 * Počúvaj, tu máš desať litríkov, na, hen tá tá tá vrtuľa je naša, a ty choď preč lebo ťa dokúšem do krka, ty!  
-  [https://youtu.be/AzRMkRjWhH0?t=1035](https://youtu.be/AzRMkRjWhH0?t=1035)
+  [https://youtu.be/AzRMkRjWhH0?t=1035](https://youtu.be/AzRMkRjWhH0?t=1035 "S.O.S. - 44. diel (celé časti) - YouTube")
 
 ### S.O.S. – 78. diel (biznis s drevom, aktivista)
 
@@ -142,7 +142,7 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
   shromaždění, a na tomto sme uzatvorili tento text, ktorý náleží konkrétne tebe, greenpeacový typ: Ale okamžite choď
   veľa odtiaľto do riti, ty!
 * kameňožrút  
-  [https://youtu.be/_IhM-ynqLTY?t=1080](https://youtu.be/_IhM-ynqLTY?t=1080)
+  [https://youtu.be/_IhM-ynqLTY?t=1080](https://youtu.be/_IhM-ynqLTY?t=1080 "S.O.S. - 78. diel (celé časti) - YouTube")
 
 ## Standashow
 
@@ -155,8 +155,8 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
   [https://youtu.be/GSaCAP2GgDs](https://youtu.be/GSaCAP2GgDs "Práce tě musí bavit! Cožeeee? Největší mýtus současnosti... - YouTube")
 * Já jsem nepil (Notor z Brna)  
   [https://youtu.be/TCgx9Spef-Q?t=2m22s](https://youtu.be/TCgx9Spef-Q?t=2m22s "- YouTube")
-* To je prostě festival hnusu. (Michael Rostock-Poplar, Den D, Shark Tank)
-  [https://youtu.be/UVBckwj27uU?t=127](https://youtu.be/UVBckwj27uU?t=127)
+* To je prostě festival hnusu. (Michael Rostock-Poplar, Den D, Shark Tank)  
+  [https://youtu.be/UVBckwj27uU?t=127](https://youtu.be/UVBckwj27uU?t=127 "exoti - YouTube")
 * Jo, jsem Aneta zkurvená, já vim. (Lukáš Kril)  
   [https://youtu.be/T149Q3IoTeY?t=42](https://youtu.be/T149Q3IoTeY?t=42 "- YouTube")  
   [https://youtube.com/clip/Ugkx4peIZV46YEHAhb77YlAV5iBHgnlcEluZ](https://youtube.com/clip/Ugkx4peIZV46YEHAhb77YlAV5iBHgnlcEluZ "✂️ Jo, jsem Aneta zkurvená, já vim - YouTube")
@@ -181,37 +181,37 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
 * Show Jana Krause: Skibidi (Gen Z slang)  
   [https://youtube.com/clip/Ugkxsli59mWVNTeUCGyCZXDV2J0wokoja_Gt](https://youtube.com/clip/Ugkxsli59mWVNTeUCGyCZXDV2J0wokoja_Gt "✂️ Show Jana Krause - YouTube")  
 * Nikdo neprojde přes moji kládu. (nelze použít)  
-  [https://youtu.be/zQAxVXYGhHI?t=201s](https://youtu.be/zQAxVXYGhHI?t=201s)
+  [https://youtu.be/zQAxVXYGhHI?t=201s](https://youtu.be/zQAxVXYGhHI?t=201s "LEVEL TV 146 2/2 - Zpátky na stromy - YouTube")
 * David Grudl na Ukrajině v 90. letech (Barcamp Praha 2013)  
-  [https://youtu.be/QMLEjlc6zx8?t=994s](https://youtu.be/QMLEjlc6zx8?t=994s)
+  [https://youtu.be/QMLEjlc6zx8?t=994s](https://youtu.be/QMLEjlc6zx8?t=994s "David Grudl - Barcamp Praha 2013 - YouTube")
 * Miluji tě, Veroniko.  
   Děkuji.  
-  [https://youtu.be/CHQZBpGQiIQ?t=13s](https://youtu.be/CHQZBpGQiIQ?t=13s)
+  [https://youtu.be/CHQZBpGQiIQ?t=13s](https://youtu.be/CHQZBpGQiIQ?t=13s "ENDEKA - YouTube")
 * Čeština v anime: [díva-r stese včera v terevizi na ftbal]  
   Díval jste se včera v televizi na fotbal? Ale jo, moc se nevyznamenali.   
-  [https://youtu.be/Jn-By9aqKdU?t=44s](https://youtu.be/Jn-By9aqKdU?t=44s)
+  [https://youtu.be/Jn-By9aqKdU?t=44s](https://youtu.be/Jn-By9aqKdU?t=44s "Češi v anime - YouTube")
 * TadyGavin: Nejhlubší výplňové slovo patří češtině (yyy)  
-  [https://youtu.be/M-MGzW3wR8c?t=90s](https://youtu.be/M-MGzW3wR8c?t=90s)
+  [https://youtu.be/M-MGzW3wR8c?t=90s](https://youtu.be/M-MGzW3wR8c?t=90s "DĚLÁ TOHLE KAŽDÝ ČECH? - YouTube")
 * Pes Baťa (Baťo! Baťo! Ke mně! Hodný Baťa.)  
-  [https://youtu.be/TwfTqqqzacU?t=223s](https://youtu.be/TwfTqqqzacU?t=223s)
+  [https://youtu.be/TwfTqqqzacU?t=223s](https://youtu.be/TwfTqqqzacU?t=223s "Takhle je ve Zlíně: Baťa Baťa Baťa - YouTube")
 * Spejbl: To je džungle, tohleto.  
-  [https://youtu.be/URAt5rWWFxE?t=235s](https://youtu.be/URAt5rWWFxE?t=235s)
+  [https://youtu.be/URAt5rWWFxE?t=235s](https://youtu.be/URAt5rWWFxE?t=235s "Spejbl a Hurvínek-Spejbl se bouří - YouTube")
 * Margita Stehlíková: Ty mě natáčíš? To není možný!  
-  [https://youtu.be/iPc-sd6moJU?t=68s](https://youtu.be/iPc-sd6moJU?t=68s)
+  [https://youtu.be/iPc-sd6moJU?t=68s](https://youtu.be/iPc-sd6moJU?t=68s "Dobrá  zábava  pro  každého. - YouTube")
 * Aleš Baťa (Webnode): Praha nebo Brno? Zlín.  
-  [https://youtu.be/oQLHfymsOfk?t=72s](https://youtu.be/oQLHfymsOfk?t=72s)
+  [https://youtu.be/oQLHfymsOfk?t=72s](https://youtu.be/oQLHfymsOfk?t=72s "🎬 We interviewed the bosses at Webnode. No one expected such answers. 💬💎 - YouTube")
 * Ty jsi jak pytel hnoja!  
-  [https://youtu.be/mmuMEqER8Nw?t=70s](https://youtu.be/mmuMEqER8Nw?t=70s)
+  [https://youtu.be/mmuMEqER8Nw?t=70s](https://youtu.be/mmuMEqER8Nw?t=70s "Dědek - YouTube")
 * Jožo Ráž: Kdyby takhle žili Číňani, tak zeměkoule vydrží… tři neděle.  
   Moc se vozej na velikých vozech, veliké motory, moc papají, moc pijí, moc, všecko moc!  
   Hrůza! Tam šťastného člověka nepotkáš. (MIDI LIDI: RÁD VAŘIM)  
-  [https://youtu.be/rHoBDmD4ofU?t=136s](https://youtu.be/rHoBDmD4ofU?t=136s)
+  [https://youtu.be/rHoBDmD4ofU?t=136s](https://youtu.be/rHoBDmD4ofU?t=136s "MIDI LIDI: RÁD VAŘIM - YouTube")
 * Dan Nekonečný: Byla to nádherná čarokrásná show.  
   Vopradu miliardy, miliardy díků za tenhle kouzelnej okamžik.  
-  [https://youtu.be/w-LLE7acn4Y?t=56](https://youtu.be/w-LLE7acn4Y?t=56)
+  [https://youtu.be/w-LLE7acn4Y?t=56](https://youtu.be/w-LLE7acn4Y?t=56 "Pozdrav Dan Nekonečný - YouTube")
 * Milan Antoš: Je to hnus. Je to fakt vošklivý.  
   Jako nedá se na to koukat, nemá to nic, jako...  
-  [https://youtu.be/a6lzQ4Nh_Pc](https://youtu.be/a6lzQ4Nh_Pc)
+  [https://youtu.be/a6lzQ4Nh_Pc](https://youtu.be/a6lzQ4Nh_Pc "Milan Antoš - Je to hnus... - YouTube")
 * Sochař Oldřich Rujbr vysvětluje, jak funguje brněnský orloj:  
   Teď je… asi… moment...  
   Teď je… by mělo byt půl jedné, teda půl dvanácté. (…)  
@@ -219,4 +219,4 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
   (…)Jo, jako jsem to tipnul přesně… zkontroloval jsem to na hodinkách, ale skutečně je… bylo půl jedné.   
   Půl dvanácté.  
   É, půl dvanácté, heh.  
-  [https://youtu.be/KJJKZs2s-Jw](https://youtu.be/KJJKZs2s-Jw)   
+  [https://youtu.be/KJJKZs2s-Jw](https://youtu.be/KJJKZs2s-Jw 'Kolik je hodin a Brněnských "hodinách" vysvětluje Oldřich Rujbr - YouTube')   

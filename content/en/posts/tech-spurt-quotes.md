@@ -21,14 +21,14 @@ title: "Tech Spurt Quotes"
 type: posts
 ---
 
-Here are quotes and transcripts from [Tech&nbsp;Spurt&#39;s](https://www.youtube.com/@TechSpurt) YouTube videos.  
-He's my favourite tech reviewer, potty mouth, and an award-winning and best-selling [crime&nbsp;writer](https://www.amazon.co.uk/stores/author/B005UGALE4) and journalist.
+Here are quotes and transcripts from [Tech&nbsp;Spurt&#39;s](https://www.youtube.com/@TechSpurt "Tech Spurt - YouTube") YouTube videos.  
+He's my favourite tech reviewer, potty mouth, and an award-winning and best-selling [crime&nbsp;writer](https://www.amazon.co.uk/stores/author/B005UGALE4 "Amazon.co.uk: Chris Barraclough: books, biography, latest update") and journalist.
 
-He's authentic, down to earth, and speaks a very colourful [northern&nbsp;English&nbsp;dialect](https://en.wikipedia.org/wiki/Mackem).  
+He's authentic, down to earth, and speaks a very colourful [northern&nbsp;English&nbsp;dialect](https://en.wikipedia.org/wiki/Mackem "Mackem - Wikipedia").  
 As an Apple fanboy, I don't really care much about most of the news and&nbsp;reviews.  
 I watch them for the comedy.
 
-I think I've watched every episode of [Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70&si=TnyhB-a9m7tDd_Jl), along with other vids, and&nbsp;every single&nbsp;[Recombu&nbsp;Quickie](https://www.youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D) (from a&nbsp;review site he used to&nbsp;work&nbsp;for).  
+I think I've watched every episode of [Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70&si=TnyhB-a9m7tDd_Jl "Tech Spurt Weekly - YouTube"), along with other vids, and&nbsp;every single&nbsp;[Recombu&nbsp;Quickie](https://www.youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D "Recombu Quickies - YouTube") (from a&nbsp;review site he used to&nbsp;work&nbsp;for).  
 
 Below, you'll find bits I found funny or worth sharing:  
 Original expressions (especially&nbsp;[similes](#similes)), jokes, responses to viewer comments, and&nbsp;short stories – most with clickable timestamps.
@@ -124,7 +124,7 @@ Original expressions (especially&nbsp;[similes](#similes)), jokes, responses to 
 ### Expletives
 
 * for scrotum’s sake
-* [sweet baby tap-dancing mother of all fuck](https://youtu.be/O9jmuQY5P4g?t=759)
+* [sweet baby tap-dancing mother of all fuck](https://youtu.be/O9jmuQY5P4g?t=759 "Asus Zenfone 10, R.I.P. Mini Mobiles? | TSW153 - YouTube")
 
 ### Fuck All
 
@@ -184,7 +184,7 @@ Original expressions (especially&nbsp;[similes](#similes)), jokes, responses to 
 * as fresh as a Wetherspoons bread roll
 * as merry as an orphan on Mother's Day
 * as much bass as
-  a [grasshopper's fart](https://youtu.be/fqbrkQhqr0U?t=255 "The Phone With Wireless Earbuds! | Nokia 5710 XpressAudio Unboxing - YouTube")
+  a [grasshopper&#39;s fart](https://youtu.be/fqbrkQhqr0U?t=255 "The Phone With Wireless Earbuds! | Nokia 5710 XpressAudio Unboxing - YouTube")
 * as nippy as an asthmatic sloth
 * as nippy as a capybara tied to a lamp post
 * as speedy as a legless pensioner wearing
@@ -344,10 +344,10 @@ short of 6.8 inches
 
 ## Intros
 
-* "0:00 The bit where everyone leaves"
-  (dreadful mistake, MKBHD, cockwomble and&nbsp;jizzbiscuit and **beeeep** **beep**)  
+* 0:00 The bit where everyone leaves  
+  (Dreadful mistake, MKBHD, cockwomble and&nbsp;jizzbiscuit and **beeeep** **beep**)  
   [https://youtu.be/YOxH0dGiyP0](https://youtu.be/YOxH0dGiyP0 "Xiaomi Mi 11 Ultra, 11 Lite 5G, Mix Fold | TSW56 - YouTube")
-* in fact, the only way you could actually make it less interesting is probably by&nbsp;slapping a&nbsp;picture of Jacob Rees-Mogg
+* …in fact, the only way you could actually make it less interesting is probably by&nbsp;slapping a&nbsp;picture of Jacob Rees-Mogg
   on the side.  
   [https://youtu.be/iavjD0ZDWsU](https://youtu.be/iavjD0ZDWsU "Xbox Series X One Month Review | Worth it vs the PS5? - YouTube")
 * I'm the living embodiment of a desperately horny teenager's fleshlight after his parents have buggered off for an
@@ -373,27 +373,27 @@ short of 6.8 inches
 
 * Next week, next week, what the fuck is next week?  
   (Possibly the last live-sung Next Week jingle, reused in later videos.)  
-  [https://youtu.be/N5pqB1E3PUY?t=1024s](https://youtu.be/N5pqB1E3PUY?t=1024s)
-  "Which Crap Celebrity Do I Look Like This Week?" (First segment jingle.)  
-  [https://youtu.be/d_yYVK7qWCM?t=349](https://youtu.be/d_yYVK7qWCM?t=349)
+  [https://youtu.be/N5pqB1E3PUY?t=1024s](https://youtu.be/N5pqB1E3PUY?t=1024s "Samsung Galaxy Watch 6 vs Classic, Which Is Best? | TSW164 - YouTube")
+* "Which Crap Celebrity Do I Look Like This Week?" (First segment jingle.)  
+  [https://youtu.be/d_yYVK7qWCM?t=349](https://youtu.be/d_yYVK7qWCM?t=349 "Tech Spurt Weekly Ep28 | Surface Duo Phone, Xiaomi Mi TV Lux - YouTube")
 * Viewer Comments WTF jingle  
-  [https://youtu.be/sSZUEGUGXmY?t=375](https://youtu.be/sSZUEGUGXmY?t=375)
+  [https://youtu.be/sSZUEGUGXmY?t=375](https://youtu.be/sSZUEGUGXmY?t=375 "Xiaomi 13 Pro, the first Snapdragon 8 Gen 2 phone? | TSW130 - YouTube")
 * The iPhone SE Jingle  
-  [https://youtu.be/wJykbA4jsi0?t=873](https://youtu.be/wJykbA4jsi0?t=873)  
-  [https://youtube.com/clip/UgkxIe4HDQUaCYoAp3xssQVYMTmUvTZFvyuS](https://youtube.com/clip/UgkxIe4HDQUaCYoAp3xssQVYMTmUvTZFvyuS)
+  [https://youtu.be/wJykbA4jsi0?t=873](https://youtu.be/wJykbA4jsi0?t=873 "Honor Magic V2 is finally here! | 2024 Review | TSW184 - YouTube")  
+  [https://youtube.com/clip/UgkxIe4HDQUaCYoAp3xssQVYMTmUvTZFvyuS](https://youtube.com/clip/UgkxIe4HDQUaCYoAp3xssQVYMTmUvTZFvyuS "✂️ Tech Spurt – The iPhone SE Jingle - YouTube")
 * Uncle Spurt Reacts to Stuff jingle  
-  [https://youtu.be/WAMja1D5sno?t=309](https://youtu.be/WAMja1D5sno?t=309)   
-  [https://youtube.com/clip/UgkxRhSbtEFqX61KMgXdMWqIA98DKCJycXI7](https://youtube.com/clip/UgkxRhSbtEFqX61KMgXdMWqIA98DKCJycXI7)
+  [https://youtu.be/WAMja1D5sno?t=309](https://youtu.be/WAMja1D5sno?t=309 "Sony Xperia 1 VII, HOW MUCH?? | TSW239 - YouTube")   
+  [https://youtube.com/clip/UgkxRhSbtEFqX61KMgXdMWqIA98DKCJycXI7](https://youtube.com/clip/UgkxRhSbtEFqX61KMgXdMWqIA98DKCJycXI7 "✂️ Uncle Spurt Reacts to Stuff Jingle - YouTube")
 * Gaff of the Week jingle  
-  [https://youtu.be/7rHkBiJuYrw?t=451](https://youtu.be/7rHkBiJuYrw?t=451)
+  [https://youtu.be/7rHkBiJuYrw?t=451](https://youtu.be/7rHkBiJuYrw?t=451 "Tech Spurt Weekly Ep37 | Xbox Series X Unboxing, AMD Big Navi - YouTube")
 * Now what's that thing that's worse than shingles? It must be the Tech Spurt jingles.  
-  [https://youtu.be/twWx0BLLV9w?t=54](https://youtu.be/twWx0BLLV9w?t=54)
+  [https://youtu.be/twWx0BLLV9w?t=54](https://youtu.be/twWx0BLLV9w?t=54 "Apple iPhone 15 Pro Max | Week 1 Review | TSW171 - YouTube")
 * Anime Wallpapers Jingle:  
   wall dot alphacoders dot com  
   wall dot alphacoders dot com  
   That's where my wallpapers come from.  
   wall dot alphacoders dot com  
-  [https://youtu.be/LHS3HoO0TXY](https://youtu.be/LHS3HoO0TXY)
+  [https://youtu.be/LHS3HoO0TXY](https://youtu.be/LHS3HoO0TXY "Tech Spurt's Anime Wallpapers #Shorts - YouTube")
 
 ## Out of Context Material {#out-of-context}
 
@@ -509,7 +509,8 @@ short of 6.8 inches
 * Mitch Pileggi  
   [https://youtu.be/7wcW8VWQUZA?t=753](https://youtu.be/7wcW8VWQUZA?t=753 "Google Pixel Tablet | TSW151 - YouTube")
 * If they cast Colin Farrell in The Machinist,  
-  Robert Carlyle in The World Is Not Enough (meth head run over by a fucking tractor)  
+  Robert Carlyle in The World Is Not Enough  
+  (meth head run over by a fucking tractor)  
   [https://youtu.be/PCzzF3qpeJE?t=897](https://youtu.be/PCzzF3qpeJE?t=897 "Killer Mid-Ranger | Poco F5 Pro Preview | TSW152 - YouTube")
 * JerryRigEverything’s mutant British cousin, Victor from PUBG  
   [https://youtu.be/O9jmuQY5P4g?t=711](https://youtu.be/O9jmuQY5P4g?t=711 "Asus Zenfone 10, R.I.P. Mini Mobiles? | TSW153 - YouTube")
@@ -522,7 +523,7 @@ short of 6.8 inches
 * N. Brio from Crash Bandicoot  
   [https://youtu.be/LNCO3a3NCdI?t=810](https://youtu.be/LNCO3a3NCdI?t=810 "Crazy Cheap Dual Screen Phone! | TSW221 - YouTube")
 * Pep Guardiola from TEMU  
-  [https://youtu.be/QvdJUfpG-kk?lc=UgylfNyLsp84KbVjlYh4AaABAg](https://youtu.be/QvdJUfpG-kk?lc=UgylfNyLsp84KbVjlYh4AaABAg)
+  [https://youtu.be/QvdJUfpG-kk?lc=UgylfNyLsp84KbVjlYh4AaABAg](https://youtu.be/QvdJUfpG-kk?lc=UgylfNyLsp84KbVjlYh4AaABAg "Comment from user @stevebacon6200 - YouTube")
 
 ## Other Quotes
 
@@ -581,7 +582,7 @@ short of 6.8 inches
 * Tech Spurt's Advice on Becoming Middle-Aged  
   [https://youtube.com/clip/Ugkx04l90MvOc3HKysDjroXguO1Ts66muvE9](https://youtube.com/clip/Ugkx04l90MvOc3HKysDjroXguO1Ts66muvE9 "✂️ Tech Spurt's Advice on Becoming Middle-Aged - YouTube")
 * (Tech Spurt on Zuckerberg)  
-  [https://youtu.be/SUb4d--lufY?t=166s](https://youtu.be/SUb4d--lufY?t=166s "Google Pixel Watch, Best Upcoming Meta Quest Games | TSW108 - YouTube")
+  [https://youtu.be/SUb4d&#45;&#45;lufY?t=166s](https://youtu.be/SUb4d--lufY?t=166s "Google Pixel Watch, Best Upcoming Meta Quest Games | TSW108 - YouTube")
 * Zuckerberg - human equivalent of the irritable bowel syndrome (lizard reproduced with a herpes virus)  
   [https://youtu.be/OctMEI7SPxw?t=428](https://youtu.be/OctMEI7SPxw?t=428 "Google Pixel 8 & 8 Pro, iPhone 15 Pro Max - Two Weeks Later | TSW172 - YouTube")
 * Zuckerbot’s plastic cheek … your most racist relatives continue to forward on anti-immigration memes that they saw on
@@ -604,7 +605,7 @@ short of 6.8 inches
 * Give money to charity, not do drink alcohol, it’s poison. … Life itself is the poison and alcohol is the antidote. (All of the doctors that I’ve known in real life have been massive pissheads.)  
   [https://youtu.be/BT3VOAyKEhU?t=183](https://youtu.be/BT3VOAyKEhU?t=183 "Oppo Find X3 Pro, ROG Phone 5, Redmi Note 10 Pro | TSW52 - YouTube")
 * Arsenal or City?  
-  [https://youtube.com/clip/UgkxQ4tV-6DAcRi9ElY12YeO50o--7UWzf8c](https://youtube.com/clip/UgkxQ4tV-6DAcRi9ElY12YeO50o--7UWzf8c "✂️ Tech Spurt - Arsenal or City? - YouTube")
+  [https://youtube.com/clip/UgkxQ4tV-6DAcRi9ElY12YeO50o&#45;&#45;7UWzf8c](https://youtube.com/clip/UgkxQ4tV-6DAcRi9ElY12YeO50o--7UWzf8c "✂️ Tech Spurt - Arsenal or City? - YouTube")
 * It’s a girthy monster but mightily impressive which coincidentally are the exact words your mum said to me last
   night.  
   [https://youtu.be/Cfl3-8tml_A?t=125](https://youtu.be/Cfl3-8tml_A?t=125 "OnePlus 9 Series, Oppo Find X3 Pro, ROG Phone 5 | TSW53 - YouTube")
@@ -667,7 +668,7 @@ short of 6.8 inches
   know, all in all another highly successful episode.  
   [https://youtu.be/7EAA5PmSEDM?t=469](https://youtu.be/7EAA5PmSEDM?t=469 "Samsung Galaxy Watch 5 & Pro | TSW120 - YouTube")
 * James Corden being fired into the Sun in a giant rocket filled with angry wasps  
-  [https://youtu.be/--JfbEYuY7E?t=689](https://youtu.be/--JfbEYuY7E?t=689 "ColorOS 12, Amazfit GTR & GTS 3, SO MUCH TECH | TSW82 - YouTube")
+  [https://youtu.be/&#45;&#45;JfbEYuY7E?t=689](https://youtu.be/--JfbEYuY7E?t=689 "ColorOS 12, Amazfit GTR & GTS 3, SO MUCH TECH | TSW82 - YouTube")
 * The earth and rather annoyingly not been destroyed by some freak comet collision   
   [https://youtu.be/8vWb83cZp7A?t=90](https://youtu.be/8vWb83cZp7A?t=90 "Best Tech of 2022 | Fresh Smartphones, OLED TVs, etc | TSW94 - YouTube")
 * Seriously, you’re all like my children, except you don’t wake me up at ungodly hours and steal cash out of my wallet
@@ -842,12 +843,11 @@ short of 6.8 inches
   twat, northerners think I sound like a&nbsp;southern ponce. … I'm just kind of a&nbsp;nothing really.  
   [https://youtu.be/g8lYxhH-h20?t=367](https://youtu.be/g8lYxhH-h20?t=367 "Tech Spurt Weekly Ep12 | Sony Xperia 1 ii release, Motorola Edge launch - YouTube")
 * Inspiration: A deep desire to make buckets of cash and live on an island, with several crates of good Scotch…  
-  [Chris Barraclough (Author of Devil's in a Different Dress) | Goodreads](https://www.goodreads.com/author/show/5005208.Chris_Barraclough "Chris Barraclough (Author of Devil's in a Different Dress)")
+  [Chris Barraclough (Author of Devil&#39;s in a Different Dress) | Goodreads](https://www.goodreads.com/author/show/5005208.Chris_Barraclough "Chris Barraclough (Author of Devil's in a Different Dress)")
 * What kind of cruel offspring would force an iPhone on their elderly parents? That's right up there with pushing them
   down the stairs for the inheritance.  
   [https://youtu.be/JJA0wet_9Pc?t=735](https://youtu.be/JJA0wet_9Pc?t=735 "First Snapdragon 8 Gen 4 Phones Incoming! | Xiaomi 15, OnePlus 13 | TSW216 - YouTube")
-* kinda feels like that moment at 3 in the morning when you're 20 Jägers deep and&nbsp;desperately trying to send a take me
-  back begging email to your ex.
+* kinda feels like that moment at 3 in the morning when you're 20 Jägers deep and&nbsp;desperately trying to send a take me back begging email to your ex.  
   [https://youtu.be/IgkDhkHXIms?t=423](https://youtu.be/IgkDhkHXIms?t=423 "Meta Quest 3S Review | This or Quest 3, which is best? - YouTube")
 * If you stuff a bit of extra scratch into Timmy Cook’s g-string,…  
   [https://youtu.be/tK3HRwEUR8w?t=249](https://youtu.be/tK3HRwEUR8w?t=249 "iPhone SE 3 (2022) vs iPhone 13 Mini | Camera, Gaming, Battery & Beyond! - YouTube")

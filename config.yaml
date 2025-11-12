@@ -24,6 +24,9 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      typographer:
+          disable: true
 
 params:
   dateFormatISO: 2006-01-02T15:04:05

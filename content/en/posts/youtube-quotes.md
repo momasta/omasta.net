@@ -42,7 +42,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
   cabbie.  
   [https://youtu.be/kGc3DM1qAf8?t=1850](https://youtu.be/kGc3DM1qAf8?t=1850 "China: Utopia or Dystopia? I Investigated - YouTube")
 * Brit Reacts to Spice  
-  [https://youtube.com/clip/UgkxuLGkqTkaLhAbhQBBSc_G0nEsrMgKr_4n](https://youtube.com/clip/UgkxuLGkqTkaLhAbhQBBSc_G0nEsrMgKr_4n)
+  [https://youtube.com/clip/UgkxuLGkqTkaLhAbhQBBSc_G0nEsrMgKr_4n](https://youtube.com/clip/UgkxuLGkqTkaLhAbhQBBSc_G0nEsrMgKr_4n "✂️ Brit Reacts to Spice - YouTube")
 
 ## Cold Ones
 
@@ -61,9 +61,9 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
 
 ## Filthy Frank
 
-### [TVFilthyFrank](https://www.youtube.com/@TVFilthyFrank/videos), [DizastaMusic](https://www.youtube.com/@DizastaMusic/videos), [TooDamnFilthy](https://www.youtube.com/@TooDamnFilthy/videos)
+### [TVFilthyFrank](https://www.youtube.com/@TVFilthyFrank/videos "TVFilthyFrank - YouTube"), [DizastaMusic](https://www.youtube.com/@DizastaMusic/videos "DizastaMusic - YouTube"), [TooDamnFilthy](https://www.youtube.com/@TooDamnFilthy/videos "TooDamnFilthy - YouTube")
 
-* [Song Parodies | Filthy Frank Wiki](https://web.archive.org/web/20250127100842/https://filthy-frank.fandom.com/wiki/Song_Parodies)
+* [Song Parodies | Filthy Frank Wiki](https://web.archive.org/web/20250127100842/https://filthy-frank.fandom.com/wiki/Song_Parodies "Song Parodies | Filthy Frank Wiki | Fandom")
 * Your existence is god’s failure  
   [https://youtu.be/dQGEu3-3BzI?t=227](https://youtu.be/dQGEu3-3BzI?t=227 "LOSER READS HATER COMMENTS 3 - YouTube")
 * You know, I’m a pretty handsome guy  
@@ -85,7 +85,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
 
 ## iDubbbzTV
 
-* [Every Single iDubbbz Outro](https://www.reddit.com/r/Idubbbz/comments/i8ksvz/every_single_idubbbz_outro/) (next time when I …)
+* [Every Single iDubbbz Outro](https://www.reddit.com/r/Idubbbz/comments/i8ksvz/every_single_idubbbz_outro/ "every single idubbbz outro : r/Idubbbz") (next time when I …)
 * Is that fucking Linus Tech Tips? No, it's not. It's just a greasy kid from the 90s.  
   [https://youtu.be/WtpdJ1aCJCg?t=470](https://youtu.be/WtpdJ1aCJCg?t=470 "I HATE SCHOOL FUNDRAISERS!!! - idubbbz complains - YouTube")
 * Quit being so gay, man, it was just a prank. It was just a prank, faggot. What are you, fucking gay? What are you,
@@ -118,9 +118,9 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
 * Hey guys I'm a vegan. I'm a vegan. Bye I'm a vegan.  
   [https://youtube.com/clip/UgkxD9PDZF6aNYKEUShDo35j280H5gLFxVHp](https://youtube.com/clip/UgkxD9PDZF6aNYKEUShDo35j280H5gLFxVHp "✂️ Hey guys I'm a vegan. I'm a vegan. Bye I'm a vegan. - YouTube")
 * Happy new year (firework display explodes on the ground)  
-  [https://youtu.be/qp-e_c7a0BY?t=61s](https://youtu.be/qp-e_c7a0BY?t=61s)
+  [https://youtu.be/qp-e_c7a0BY?t=61s](https://youtu.be/qp-e_c7a0BY?t=61s "Mr Bean Secondary Weapon VS Lightbulb - YouTube")
 * I'm on a date with a female organism  
-  [https://youtu.be/W-9Vsi8nFwI?t=148shttps://youtu.be/EZYhDpA3GyY?t=48s](https://youtu.be/W-9Vsi8nFwI?t=148shttps://youtu.be/EZYhDpA3GyY?t=48s)
+  [https://youtu.be/W-9Vsi8nFwI?t=148shttps://youtu.be/EZYhDpA3GyY?t=48s](https://youtu.be/W-9Vsi8nFwI?t=148shttps://youtu.be/EZYhDpA3GyY?t=48s "大聲笑Friends大聲笑 Episode 4: Ross Eats Uranium - YouTube")
 
 ## Pengest Munch
 
@@ -132,9 +132,9 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
 ## Radal
 
 * Radal: Grove suck dick lol (GTA SAN ANDREAS ANIME MODS)  
-  [https://youtu.be/Kxdk6cs5eqY?t=223s](https://youtu.be/Kxdk6cs5eqY?t=223s)
+  [https://youtu.be/Kxdk6cs5eqY?t=223s](https://youtu.be/Kxdk6cs5eqY?t=223s "GTA SAN ANDREAS ANIME MODS - YouTube")
 * Radal: Chinese meme (Podel)  
-  [https://youtu.be/YmgGiQjayKU?t=35s](https://youtu.be/YmgGiQjayKU?t=35s)
+  [https://youtu.be/YmgGiQjayKU?t=35s](https://youtu.be/YmgGiQjayKU?t=35s "China made a mobile version of GTA...(it's bad) - YouTube")
 
 ## TheReportOfTheWeek
 
@@ -160,7 +160,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
 
 ## Weird Indian Videos
 
-* [Weird Indian Videos](https://youtube.com/playlist?list=PLkTMBDFJZM157vARP3DDtbMvn5SEml285), a YouTube playlist by
+* [Weird Indian Videos](https://youtube.com/playlist?list=PLkTMBDFJZM157vARP3DDtbMvn5SEml285 "Weird Indian Videos - YouTube"), a YouTube playlist by
   Marek Omasta
 * The most annoying Indian accent/voice I’ve ever heard  
   [https://youtu.be/PmHT3GXo6tY](https://youtu.be/PmHT3GXo6tY "How to Download and Install iOS 18 Without Any Data Loss - YouTube")
@@ -185,7 +185,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
 ## Quotes by Others
 
 * Kevin, a German insult (Alpha-Kevin)  
-  [https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn--zoJLSTcuKZhJ9](https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn--zoJLSTcuKZhJ9 "✂️ Kevin - YouTube")
+  [https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn&#45;&#45;zoJLSTcuKZhJ9](https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn--zoJLSTcuKZhJ9 "✂️ Kevin - YouTube")
 * How to Quit Vim (third time's the charm)  
   [https://youtube.com/clip/Ugkxagr_dj64ARp_pLVGwxTrw7nIzhKuA9nI](https://youtube.com/clip/Ugkxagr_dj64ARp_pLVGwxTrw7nIzhKuA9nI "✂️ How to Quit Vim - YouTube")
 * Nå, I don't think så. (No, I don't think so. Swedish guy)  
@@ -204,7 +204,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
 * Chicken Shop Date: Matty Healy Reacts to Astrology  
   [https://youtube.com/clip/UgkxhKM7i7b7U5F4nOymGk-lnHN9c8IZQ2ga](https://youtube.com/clip/UgkxhKM7i7b7U5F4nOymGk-lnHN9c8IZQ2ga "✂️ Matty Healy Reacts to Astrology - YouTube")
 * lifeasmiyuki: [Filthy Frank] kind of reminds me of Tanaka  
-  [https://youtube.com/clip/UgkxxpiJo2ucVaCAR--N8LyJBt50kbbHCLD6](https://youtube.com/clip/UgkxxpiJo2ucVaCAR--N8LyJBt50kbbHCLD6 "✂️ [Filthy Frank] kind of reminds me of Tanaka - YouTube")
+  [https://youtube.com/clip/UgkxxpiJo2ucVaCAR&#45;&#45;N8LyJBt50kbbHCLD6](https://youtube.com/clip/UgkxxpiJo2ucVaCAR--N8LyJBt50kbbHCLD6 "✂️ [Filthy Frank] kind of reminds me of Tanaka - YouTube")
 * Hammond (Top Gear): “You’ve only blown the bloody door off”  
   [https://youtube.com/clip/UgkxuZN42E6PQeYswZDM5GUGjZQBSbwF04yn](https://youtube.com/clip/UgkxuZN42E6PQeYswZDM5GUGjZQBSbwF04yn "✂️ Hammond: “You’ve only blown the bloody door off” - YouTube")
 * Markiplier: Prop Against a Rock or Something (American MRE)  
@@ -214,7 +214,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
 * PewDiePie: Waddup, blazers? NFKRZ here  
   [https://youtube.com/clip/Ugx1X2yp8iOLitJ-DTx4AaABCQ](https://youtube.com/clip/Ugx1X2yp8iOLitJ-DTx4AaABCQ "✂️ PewDiePie: Waddup, blazers? NFKRZ here - YouTube")
 * PewDiePie with a female filter  
-  [https://youtu.be/YY8fa9ymFwM?t=69s](https://youtu.be/YY8fa9ymFwM?t=69s)
+  [https://youtu.be/YY8fa9ymFwM?t=69s](https://youtu.be/YY8fa9ymFwM?t=69s "My Face Reveal 2.0 - LWIAY #00149 - YouTube")
 * The Stig (Ben Collins): Skibidi rizz, no cap  
   [https://youtube.com/clip/UgkxMdiXCOyeWssTPAFBCWRzEO1DRXWz1Sth](https://youtube.com/clip/UgkxMdiXCOyeWssTPAFBCWRzEO1DRXWz1Sth "✂️ The Stig: Skibidi rizz, no cap - YouTube")
 * John Coogan: Windows for Warships  
@@ -226,18 +226,18 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
 * Hurrian Hymn No. 6 (Bronze age meme lyre sound effect)  
   [https://youtube.com/clip/UgkxPM9HfZlZfhermpnoSfRZTqyE9kWfZaFu](https://youtube.com/clip/UgkxPM9HfZlZfhermpnoSfRZTqyE9kWfZaFu "✂️ Hurrian Hymn No. 6 - YouTube")
 * BBC Archive: Psion have formed a powerful alliance (The origin story of Symbian)  
-  [https://youtube.com/clip/Ugkx8jOrHXlH0lAbeD8qj3yGDJglxv9q_1Vp](https://youtube.com/clip/Ugkx8jOrHXlH0lAbeD8qj3yGDJglxv9q_1Vp)
+  [https://youtube.com/clip/Ugkx8jOrHXlH0lAbeD8qj3yGDJglxv9q_1Vp](https://youtube.com/clip/Ugkx8jOrHXlH0lAbeD8qj3yGDJglxv9q_1Vp "✂️ Psion have formed a powerful alliance - YouTube")
 * Tom Scott: Asbestos Land gag (theme park)  
-  [https://youtu.be/L-x8DYTOv7w?t=1083s](https://youtu.be/L-x8DYTOv7w?t=1083s)
+  [https://youtu.be/L-x8DYTOv7w?t=1083s](https://youtu.be/L-x8DYTOv7w?t=1083s "YouTubers have to declare ads. Why doesn't anyone else? - YouTube")
 * Doug DeMuro: Box must be destroyed and NOT given to the Customer. (McLaren)  
-  [https://youtu.be/N9XoF_MXjLk?t=1590s](https://youtu.be/N9XoF_MXjLk?t=1590s)
+  [https://youtu.be/N9XoF_MXjLk?t=1590s](https://youtu.be/N9XoF_MXjLk?t=1590s "Here’s a Tour of the New McLaren 765LT Supercar - YouTube")
 * FlyingKitty: I ain't Russian. Yes you are... (GTA IV, cheeki breeki)  
-  [https://youtu.be/RXDKLEFghSQ?t=105s](https://youtu.be/RXDKLEFghSQ?t=105s)
+  [https://youtu.be/RXDKLEFghSQ?t=105s](https://youtu.be/RXDKLEFghSQ?t=105s "Niko Becomes A Cabbage Farmer - YouTube")
 * I am not drunk.  
   Can you tell the time?  
   (Oblivion NPC Compilation)  
-  [https://youtu.be/TnfRNj2z730?t=140s](https://youtu.be/TnfRNj2z730?t=140s)
+  [https://youtu.be/TnfRNj2z730?t=140s](https://youtu.be/TnfRNj2z730?t=140s "Oblivion NPC Compilation - YouTube")
 * Backpacker Ben – The WORST Train in AFRICA! (ridiculously rough ride)  
-  [https://youtu.be/_5vjfJym7yo?t=494s](https://youtu.be/_5vjfJym7yo?t=494s)
+  [https://youtu.be/_5vjfJym7yo?t=494s](https://youtu.be/_5vjfJym7yo?t=494s "The WORST Train in AFRICA! - YouTube")
 * Bye Bye Driver  
-  [https://youtu.be/ilsiCOYexuk?t=56s](https://youtu.be/ilsiCOYexuk?t=56s)
+  [https://youtu.be/ilsiCOYexuk?t=56s](https://youtu.be/ilsiCOYexuk?t=56s "Bye Bye Driver - Full Video - YouTube")
