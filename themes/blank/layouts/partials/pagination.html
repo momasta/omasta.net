@@ -2,17 +2,21 @@
     assets/sass/components/_pagination.scss
 */ -}}
 
-{{ if gt .Paginator.TotalPages 0 }}
-    <div class="pagination">
-        {{ if .Paginator.HasPrev }}
-            <a href="{{ .Paginator.Prev.URL }}">Previous Page</a>
-        {{ end }}
-        {{ .Paginator.PageNumber }} {{ T "posts-of" }} {{ .Paginator.TotalPages }}
-        {{ if .Paginator.HasNext }}
-            <a href="{{ .Paginator.Next.URL }}">Next Page</a>
-        {{ end }}
-    </div>
+{{ if ne .Paginator.TotalPages 0 }}
+    {{ if gt .Paginator.TotalPages 1 }}
+        <nav class="pagination" role="navigation" aria-label="Pagination">
+            {{ if .Paginator.HasPrev }}
+                <a href="{{ .Paginator.Prev.URL }}" aria-label="Previous page">Previous</a>
+            {{ end }}
+            <span aria-current="page">
+                Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
+            </span>
+            {{ if .Paginator.HasNext }}
+                <a href="{{ .Paginator.Next.URL }}" aria-label="Next page">Next</a>
+            {{ end }}
+        </nav>
+    {{ end }}
 {{ else }}
-    {{ T "no-posts-yet" }}
+    <p>{{ T "no-posts-yet" }}</p>
 {{ end }}
 

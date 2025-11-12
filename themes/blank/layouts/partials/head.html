@@ -28,72 +28,6 @@
         <meta name="robots" content="{{ . }}">
     {{- end -}}
 
-    {{- /* Perform before rendering page */ -}}
-    <script>
-        const html = document.documentElement;
-        const storedTheme = localStorage.getItem('theme');
-
-        if (storedTheme) {
-            html.classList.add(storedTheme);
-        } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-            html.classList.add('theme-light');
-        } else {
-            html.classList.add('theme-dark'); // Default theme
-        }
-    </script>
-
-    {{- /* Critical CSS */ -}}
-    <style>
-        :root {
-            color-scheme: dark light; /* Default theme: dark */
-        }
-
-        html.theme-dark {
-            background-color: #000;
-            color: #fff;
-        }
-
-        html.theme-dark svg {
-            fill: #b8b8b8;
-        }
-
-        html.theme-dark .card {
-            background-color: #222;
-        }
-
-        html.theme-light .toggle-theme-light,
-        html.theme-dark .toggle-theme-dark {
-            display: none;
-        }
-
-        html {
-            font: normal 100% / 1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
-        }
-
-        body:not(.loaded) * {
-            transition: none !important;
-        }
-
-        #content {
-            margin: 0 auto;
-            max-width: 670px;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        .logo img {
-            width: 45px;
-            height: 64px;
-        }
-
-        .card {
-            padding: 24px 20px;
-            margin: 8px 0;
-        }
-    </style>
-
     {{- /* Stylesheet */ -}}
     {{ $main_options := (dict "targetPath" "css/site.css" "outputStyle" "compressed") }}
     {{ $main_template := resources.Get "sass/main.scss" }}
@@ -162,4 +96,70 @@
     {{- /*  Mastodon  */ -}}
     <link rel="me" href="https://mastodon.social/@marek_omasta">
     <meta name="fediverse:creator" content="@marek_omasta@mastodon.social">
+
+    {{- /* Critical JS - Perform before rendering page */ -}}
+    <script>
+        const html = document.documentElement;
+        const storedTheme = localStorage.getItem('theme');
+
+        if (storedTheme) {
+            html.classList.add(storedTheme);
+        } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+            html.classList.add('theme-light');
+        } else {
+            html.classList.add('theme-dark'); // Default theme
+        }
+    </script>
+
+    {{- /* Critical CSS */ -}}
+    <style>
+        :root {
+            color-scheme: dark light; /* Default theme: dark */
+        }
+
+        html.theme-dark {
+            background-color: #000;
+            color: #fff;
+        }
+
+        html.theme-dark svg {
+            fill: #b8b8b8;
+        }
+
+        html.theme-dark .card {
+            background-color: #222;
+        }
+
+        html.theme-light .toggle-theme-light,
+        html.theme-dark .toggle-theme-dark {
+            display: none;
+        }
+
+        html {
+            font: normal 100% / 1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body:not(.loaded) * {
+            transition: none !important;
+        }
+
+        #content {
+            margin: 0 auto;
+            max-width: 670px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .logo img {
+            width: 45px;
+            height: 64px;
+        }
+
+        .card {
+            padding: 24px 20px;
+            margin: 8px 0;
+        }
+    </style>
 </head>

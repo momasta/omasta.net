@@ -22,7 +22,7 @@
 
         {{- /* Language Switcher */ -}}
         {{ if hugo.IsMultilingual }}
-            {{ $currentLang := .Lang }}
+            {{ $currentLanguageCode := .Lang }}
             {{ if gt (len .Translations) 0 }}
                 {{ range .Translations }}
                     <a title="{{ T "switch-language" }}"
@@ -32,13 +32,13 @@
                     </a>
                 {{ end }}
             {{ else }}
-                {{ range $.Site.Languages }}
-                    {{ if ne .Lang $currentLang }}
-                        <a title="{{ T "switch-language" }}"
-                           href="{{ printf "/%s/" .Lang | absURL }}"
+                {{ $currentLang := .Site.Language.Lang }}
+                {{ range .Sites }}
+                    {{ if ne .Language.Lang $currentLang }}
+                        <a href="{{ .Home.RelPermalink }}"
                            hreflang="{{ .Language.LanguageCode }}"
-                           aria-disabled="true">
-                            <span lang="{{ .Language.LanguageCode }}">{{ .LanguageName }}</span>
+                           title="{{ T "switch-language" }}">
+                            <span lang="{{ .Language.LanguageCode }}">{{ .Language.LanguageName }}</span>
                         </a>
                     {{ end }}
                 {{ end }}

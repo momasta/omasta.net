@@ -1,9 +1,9 @@
 ---
-date: "{{ .Date }}"
+date: {{ .Date }}
 description:
 draft: false
 keywords:
-lastmod: "{{ .Date }}"
+lastmod: {{ .Date }}
 slug: 
 #tags:
 title: "{{ replace .Name "-" " " | title }}"

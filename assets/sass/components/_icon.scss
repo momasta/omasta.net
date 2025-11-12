@@ -6,5 +6,6 @@
 
   svg {
     fill: var(--color-text-light); // Update in baseof.html
+    transition: fill var(--ease);
   }
 }

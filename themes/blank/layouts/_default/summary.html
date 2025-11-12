@@ -4,13 +4,12 @@
     <a href="{{ .RelPermalink }}">{{ .Title }}<br>
         <span class="post-summary">
             {{- .Summary | plainify | truncate 160 "…" -}}
-        </span>
-    </a>
+        </span></a>
 
     {{- range .Params.tags -}}
-    {{ $name := . }}
+    {{- $name := . -}}
     {{- with index site.Taxonomies.tags $name -}}
-        {{ $title := .Page.Title }}
+        {{- $title := .Page.Title -}}
         <a href="{{ .Page.RelPermalink }}"
            class="tag"
            title="{{ T "tags-show-all" }} &#35;{{ $title }}">&#35;{{- $title -}}</a>

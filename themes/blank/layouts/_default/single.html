@@ -16,7 +16,9 @@
         <main>
             <div class="card">
                 <article>
-                    <h1>{{ .Title }}</h1>
+                    <h1>
+                        <a href="{{ .RelPermalink }}" rel="bookmark" aria-current="page">{{ .Title }}</a>
+                    </h1>
 
                     {{- range .Params.tags -}}
                         {{ $name := . }}
@@ -29,6 +31,10 @@
                     <time datetime="{{ .PublishDate.Format .Site.Params.dateFormatISO | safeHTML }}"
                           title="{{ T "published" }} {{ $datePublished }}{{ $dateModifiedText }}">{{- $datePublished -}}</time>
 
+                    {{ with .Params.main_content_id }}
+                        <p>&#x2193; <a href="#{{ . }}">{{ T "skip-to-main-content" }}</a></p>
+                    {{ end }}
+                      
                     <div class="article-content">
                         {{ .Content }}
                         {{- if .Lastmod -}}

@@ -1,6 +1,10 @@
+.post-preview + .post-preview {
+  margin-top: 20px;
+}
+
 .post-summary {
   max-width: 100%;
-  margin: 0.5em 0;
+  margin: 1px 0 4px 0;
   overflow-wrap: anywhere;
   word-break: normal;
   hyphens: auto;

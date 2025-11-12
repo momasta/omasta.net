@@ -45,6 +45,13 @@ a.heading-link {
   }
 }
 
+h1 a,
+h1 a:visited {
+  color: inherit;
+  text-decoration: none;
+  display: inline;
+}
+
 h1 + a.tag {
   margin-top: 0.5rem;
 }

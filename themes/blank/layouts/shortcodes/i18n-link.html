@@ -1,6 +1,7 @@
-{{ $lang := .Get "lang" }}
-{{ $targetSlice := first 1 (where .Page.Translations "Lang" $lang) }}
+{{- $lang := .Get "lang" -}}
+{{- $targetSlice := first 1 (where .Page.Translations "Lang" $lang) -}}
+
 {{- if gt (len $targetSlice) 0 -}}
-    {{ $target := index $targetSlice 0 }}
-    <a href="{{ $target.RelPermalink }}">{{ .Inner }}</a>
+    {{- $target := index $targetSlice 0 -}}
+    <a href="{{- $target.RelPermalink }}" hreflang="{{ $target.Lang }}">{{- .Inner -}}</a>
 {{- end -}}

@@ -6,21 +6,26 @@ keywords:
     - timestamps
     - video transcripts
     - captions
-lastmod:
+    - funny
+    - YT
+lastmod: 2025-11-12T09:52:29+01:00
 slug:
 tags:
-    - notes
+    - quotes
 title: "YouTube Quotes"
 type: posts
 ---
 
-Here's my collection of quotes, clips and short transcripts from YouTube.  
+My collection of quotes, clips and short transcripts from YouTube.  
 Bits I&nbsp;found funny or&nbsp;interesting, from all sorts of&nbsp;videos.
 
-Nearly all of them come with a timestamp in the URL.  
+Most come with a timestamp in the URL.  
 Might be useful to people who run clips or compilation channels.
 
-There's more in the {{< i18n-link lang="cs" >}}Czech version{{< /i18n-link >}} of this article.
+There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< /i18n-link >}}.
+
+### See Also
+* [Tech Spurt Quotes]({{< relref "posts/tech-spurt-quotes.md" >}})
 
 ## Ashens
 
@@ -36,6 +41,8 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version{{< /i18n-link >}} o
 * I like China. It's frustrating, but I like it because you can still watch a dwarf show, and you can have a fag with a
   cabbie.  
   [https://youtu.be/kGc3DM1qAf8?t=1850](https://youtu.be/kGc3DM1qAf8?t=1850 "China: Utopia or Dystopia? I Investigated - YouTube")
+* Brit Reacts to Spice  
+  [https://youtube.com/clip/UgkxuLGkqTkaLhAbhQBBSc_G0nEsrMgKr_4n](https://youtube.com/clip/UgkxuLGkqTkaLhAbhQBBSc_G0nEsrMgKr_4n)
 
 ## Cold Ones
 
@@ -56,7 +63,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version{{< /i18n-link >}} o
 
 ### [TVFilthyFrank](https://www.youtube.com/@TVFilthyFrank/videos), [DizastaMusic](https://www.youtube.com/@DizastaMusic/videos), [TooDamnFilthy](https://www.youtube.com/@TooDamnFilthy/videos)
 
-* [Song Parodies | Filthy Frank Wiki](https://filthy-frank.fandom.com/wiki/Song_Parodies#List_of_songs_sang_by_Fake_Frank)
+* [Song Parodies | Filthy Frank Wiki](https://web.archive.org/web/20250127100842/https://filthy-frank.fandom.com/wiki/Song_Parodies)
 * Your existence is god’s failure  
   [https://youtu.be/dQGEu3-3BzI?t=227](https://youtu.be/dQGEu3-3BzI?t=227 "LOSER READS HATER COMMENTS 3 - YouTube")
 * You know, I’m a pretty handsome guy  
@@ -68,7 +75,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version{{< /i18n-link >}} o
 * Football.  
   [https://youtu.be/qqwd79cZs8s?t=1267](https://youtu.be/qqwd79cZs8s?t=1267 "How many of the 272 London underground stations can I name? - YouTube")
 
-## [h3h3Productions](https://www.youtube.com/@h3h3productions/videos)
+## h3h3Productions
 
 ### Ethan Klein
 
@@ -78,7 +85,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version{{< /i18n-link >}} o
 
 ## iDubbbzTV
 
-* [every single idubbbz outro (next time when I …)](https://www.reddit.com/r/Idubbbz/comments/i8ksvz/every_single_idubbbz_outro/)
+* [Every Single iDubbbz Outro](https://www.reddit.com/r/Idubbbz/comments/i8ksvz/every_single_idubbbz_outro/) (next time when I …)
 * Is that fucking Linus Tech Tips? No, it's not. It's just a greasy kid from the 90s.  
   [https://youtu.be/WtpdJ1aCJCg?t=470](https://youtu.be/WtpdJ1aCJCg?t=470 "I HATE SCHOOL FUNDRAISERS!!! - idubbbz complains - YouTube")
 * Quit being so gay, man, it was just a prank. It was just a prank, faggot. What are you, fucking gay? What are you,
@@ -102,14 +109,18 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version{{< /i18n-link >}} o
 
 ## Podel
 
-### BlazinSkrubs
+### Former BlazinSkrubs
 
 * Steklovata - Novi God (Star Wars Episode IV: A New Meme)  
   [https://youtu.be/-xLQWs5qzv8?t=52s](https://youtu.be/-xLQWs5qzv8?t=52s "Star Wars Episode IV: A New Meme - YouTube")
 * Chinese Meme  
   [https://youtube.com/clip/Ugkx5jABKnXb8Canp8NmKKLuNagY7grIueW2](https://youtube.com/clip/Ugkx5jABKnXb8Canp8NmKKLuNagY7grIueW2 "✂️ Podel - Chinese Meme - YouTube")
 * Hey guys I'm a vegan. I'm a vegan. Bye I'm a vegan.  
-  [https://youtube.com/clip/UgkxD9PDZF6aNYKEUShDo35j280H5gLFxVHp](https://youtube.com/clip/UgkxD9PDZF6aNYKEUShDo35j280H5gLFxVHp "✂️ Hey guys I&#x27;m a vegan. I&#x27;m a vegan. Bye I&#x27;m a vegan. - YouTube")
+  [https://youtube.com/clip/UgkxD9PDZF6aNYKEUShDo35j280H5gLFxVHp](https://youtube.com/clip/UgkxD9PDZF6aNYKEUShDo35j280H5gLFxVHp "✂️ Hey guys I'm a vegan. I'm a vegan. Bye I'm a vegan. - YouTube")
+* Happy new year (firework display explodes on the ground)  
+  [https://youtu.be/qp-e_c7a0BY?t=61s](https://youtu.be/qp-e_c7a0BY?t=61s)
+* I'm on a date with a female organism  
+  [https://youtu.be/W-9Vsi8nFwI?t=148shttps://youtu.be/EZYhDpA3GyY?t=48s](https://youtu.be/W-9Vsi8nFwI?t=148shttps://youtu.be/EZYhDpA3GyY?t=48s)
 
 ## Pengest Munch
 
@@ -118,19 +129,26 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version{{< /i18n-link >}} o
 * Assembly on point, they just transplanted it onto the burger  
   [https://youtu.be/jIYjGNq9zO8](https://youtu.be/jIYjGNq9zO8 "The Pengest Munch Ep. 8: Miami Fried Chicken (East Croydon) - YouTube")
 
+## Radal
+
+* Radal: Grove suck dick lol (GTA SAN ANDREAS ANIME MODS)  
+  [https://youtu.be/Kxdk6cs5eqY?t=223s](https://youtu.be/Kxdk6cs5eqY?t=223s)
+* Radal: Chinese meme (Podel)  
+  [https://youtu.be/YmgGiQjayKU?t=35s](https://youtu.be/YmgGiQjayKU?t=35s)
+
 ## TheReportOfTheWeek
 
 ### Reviewbrah
 
 * Dayum DAYUM DAYUM (damn damn damn, Twinkies)  
-  [https://youtu.be/89tAhxDxzlw?t=280](https://youtu.be/89tAhxDxzlw?t=280 "TheReportOfTheWeek&#x27;s Random Clips - YouTube")
+  [https://youtu.be/89tAhxDxzlw?t=280](https://youtu.be/89tAhxDxzlw?t=280 "TheReportOfTheWeek's Random Clips - YouTube")
 * Domino's Pan Pizza  
   [https://youtu.be/qpCfKf9izzI?t=88](https://youtu.be/qpCfKf9izzI?t=88 "From The Archives.. My First Food Review Ever, January 2011 - YouTube")
 * Tastes like chicken  
-  [https://youtu.be/XmFFa9d87ng?t=433](https://youtu.be/XmFFa9d87ng?t=433 "TheReportOfTheWeek&#x27;s Random Clips Part 2 - YouTube")
+  [https://youtu.be/XmFFa9d87ng?t=433](https://youtu.be/XmFFa9d87ng?t=433 "TheReportOfTheWeek's Random Clips Part 2 - YouTube")
 * Is that Lorde? Yes it is. Yes it is, just got done with a big concert the other day and now… now went back to my…
   measly life of reviewing food on YouTube.  
-  [https://youtu.be/qNrVUksxTPc](https://youtu.be/qNrVUksxTPc "🔴 Friday Night Live Stream - Q&amp;A, Misc Talk &amp; Possible Review! - YouTube")
+  [https://youtu.be/qNrVUksxTPc](https://youtu.be/qNrVUksxTPc "🔴 Friday Night Live Stream - Q&A, Misc Talk & Possible Review! - YouTube")
 * If you really wanna create something like me […] get a coffee pot, you pour some room-temperature water in it, two ice
   cubes, you get the DNA from the frog, a little bit of DNA from Spider-Man […] and then you also get a little bit of
   DNA from Lorde, a little bit of DNA from Sheldon, then you stir it all up, put it in the coffee maker you get whatever
@@ -162,7 +180,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version{{< /i18n-link >}} o
 * It's kind of weird as AI gets better, Zuckerborg appears more human.  
   [https://youtu.be/zvbTDUSz8Cc?t=30](https://youtu.be/zvbTDUSz8Cc?t=30 "The most dystopian app ever made… - YouTube")
 * h3h3productions: I’m dead inside, look in my eyes. There’s no life left. End my suffering.  
-  [https://youtu.be/4UNLhoePqqQ?t=14](https://youtu.be/4UNLhoePqqQ?t=14 "SoFloAntonio&#x27;s Facebook Page -- h3h3 reaction video - YouTube")
+  [https://youtu.be/4UNLhoePqqQ?t=14](https://youtu.be/4UNLhoePqqQ?t=14 "SoFloAntonio's Facebook Page -- h3h3 reaction video - YouTube")
 
 ## Quotes by Others
 
@@ -170,11 +188,12 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version{{< /i18n-link >}} o
   [https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn--zoJLSTcuKZhJ9](https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn--zoJLSTcuKZhJ9 "✂️ Kevin - YouTube")
 * How to Quit Vim (third time's the charm)  
   [https://youtube.com/clip/Ugkxagr_dj64ARp_pLVGwxTrw7nIzhKuA9nI](https://youtube.com/clip/Ugkxagr_dj64ARp_pLVGwxTrw7nIzhKuA9nI "✂️ How to Quit Vim - YouTube")
-* Nå, I don't think så (No, I don't think so, Swedish guy)  
-  [https://youtu.be/MXfWWmpxuCM?t=3](https://youtu.be/MXfWWmpxuCM?t=3 "Breaking News med Filip &amp; Fredrik | &quot;Nå, I don&#x27;t think så&quot; - Sverigedemokrat - YouTube")
+* Nå, I don't think så. (No, I don't think so. Swedish guy)  
+  [https://youtu.be/MXfWWmpxuCM?t=3](https://youtu.be/MXfWWmpxuCM?t=3 "Breaking News med Filip & Fredrik | Nå, I don't think så - Sverigedemokrat - YouTube")
 * UberHaxorNova Sings Alejandro  
   [https://youtube.com/clip/Ugkx8rH3tqb38soSivXSgC51lQBn_AywZiI6](https://youtube.com/clip/Ugkx8rH3tqb38soSivXSgC51lQBn_AywZiI6 "✂️ UberHaxorNova Sings Alejandro - YouTube")
-* Pyrocynical: The problem is with the UK, we seem to copy whatever America does, including being fat  
+* Pyrocynical: The problem is with the UK,  
+  we seem to copy whatever America does, including being fat.  
   [https://youtu.be/DomjBQXe-4c?t=539](https://youtu.be/DomjBQXe-4c?t=539 "YOUTUBE KIDS (ASOT) - YouTube")
 * Bo fucking ho (GTA IV - Uncle Vlad mission)  
   [https://youtu.be/vd7oL43a9Bw?t=3m12s](https://youtu.be/vd7oL43a9Bw?t=3m12s "GTA 4 - Mission #13 - Uncle Vlad (1080p) - YouTube")
@@ -194,6 +213,8 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version{{< /i18n-link >}} o
   [https://youtube.com/clip/Ugkxl1fqKWM8Jv8TTDHzeDZuyd8U3uSI_any](https://youtube.com/clip/Ugkxl1fqKWM8Jv8TTDHzeDZuyd8U3uSI_any "✂️ Meta Quest - More Passwords Than Headsets - YouTube")
 * PewDiePie: Waddup, blazers? NFKRZ here  
   [https://youtube.com/clip/Ugx1X2yp8iOLitJ-DTx4AaABCQ](https://youtube.com/clip/Ugx1X2yp8iOLitJ-DTx4AaABCQ "✂️ PewDiePie: Waddup, blazers? NFKRZ here - YouTube")
+* PewDiePie with a female filter  
+  [https://youtu.be/YY8fa9ymFwM?t=69s](https://youtu.be/YY8fa9ymFwM?t=69s)
 * The Stig (Ben Collins): Skibidi rizz, no cap  
   [https://youtube.com/clip/UgkxMdiXCOyeWssTPAFBCWRzEO1DRXWz1Sth](https://youtube.com/clip/UgkxMdiXCOyeWssTPAFBCWRzEO1DRXWz1Sth "✂️ The Stig: Skibidi rizz, no cap - YouTube")
 * John Coogan: Windows for Warships  
@@ -205,4 +226,18 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version{{< /i18n-link >}} o
 * Hurrian Hymn No. 6 (Bronze age meme lyre sound effect)  
   [https://youtube.com/clip/UgkxPM9HfZlZfhermpnoSfRZTqyE9kWfZaFu](https://youtube.com/clip/UgkxPM9HfZlZfhermpnoSfRZTqyE9kWfZaFu "✂️ Hurrian Hymn No. 6 - YouTube")
 * BBC Archive: Psion have formed a powerful alliance (The origin story of Symbian)  
-  [https://youtube.com/clip/Ugkx8jOrHXlH0lAbeD8qj3yGDJglxv9q_1Vp](https://youtube.com/clip/Ugkx8jOrHXlH0lAbeD8qj3yGDJglxv9q_1Vp "✂️ Psion have formed a powerful alliance - YouTube")  
+  [https://youtube.com/clip/Ugkx8jOrHXlH0lAbeD8qj3yGDJglxv9q_1Vp](https://youtube.com/clip/Ugkx8jOrHXlH0lAbeD8qj3yGDJglxv9q_1Vp)
+* Tom Scott: Asbestos Land gag (theme park)  
+  [https://youtu.be/L-x8DYTOv7w?t=1083s](https://youtu.be/L-x8DYTOv7w?t=1083s)
+* Doug DeMuro: Box must be destroyed and NOT given to the Customer. (McLaren)  
+  [https://youtu.be/N9XoF_MXjLk?t=1590s](https://youtu.be/N9XoF_MXjLk?t=1590s)
+* FlyingKitty: I ain't Russian. Yes you are... (GTA IV, cheeki breeki)  
+  [https://youtu.be/RXDKLEFghSQ?t=105s](https://youtu.be/RXDKLEFghSQ?t=105s)
+* I am not drunk.  
+  Can you tell the time?  
+  (Oblivion NPC Compilation)  
+  [https://youtu.be/TnfRNj2z730?t=140s](https://youtu.be/TnfRNj2z730?t=140s)
+* Backpacker Ben – The WORST Train in AFRICA! (ridiculously rough ride)  
+  [https://youtu.be/_5vjfJym7yo?t=494s](https://youtu.be/_5vjfJym7yo?t=494s)
+* Bye Bye Driver  
+  [https://youtu.be/ilsiCOYexuk?t=56s](https://youtu.be/ilsiCOYexuk?t=56s)
