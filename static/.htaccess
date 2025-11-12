@@ -1,13 +1,13 @@
 DirectoryIndex index.html
 
+# Redirects for moved content
+RewriteRule ^tags/notes/?$ /tags/quotes/ [R=301,L]
+
 # Error Documents
 ErrorDocument 400 /400/
 ErrorDocument 403 /403/
 ErrorDocument 404 /404/
 ErrorDocument 503 /503/
-
-# Redirects for moved content
-Redirect 301 /tags/notes/ /tags/quotes/
 
 <IfModule mod_expires.c>
   ExpiresActive On

@@ -57,4 +57,5 @@ read-more: 'Číst dále…'
 
 ## Component: Tag
 tags-show-all: 'Zobrazit články se štítkem'
+tag: 'Štítek'
 tags: 'Štítky'

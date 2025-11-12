@@ -57,4 +57,5 @@ read-more: 'Read more…'
 
 ## Component: Tag
 tags-show-all: 'Show posts tagged'
+tag: 'Tag'
 tags: 'Tags'

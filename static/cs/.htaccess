@@ -1,7 +1,7 @@
 RewriteEngine On
 
 # Redirects for moved content
-Redirect 301 /cs/tags/notes/ /cs/tags/quotes/
+RewriteRule ^tags/notes/?$ /cs/tags/quotes/ [R=301,L]
 
 # Error Documents
 ErrorDocument 400 /cs/400/

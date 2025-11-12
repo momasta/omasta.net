@@ -5,6 +5,7 @@
     {{- /* Site Information */ -}}
 
     <title>
+        {{- if and (eq .Kind "term") (eq .Section "tags") }}{{ T "tag" }} #{{ end -}}
         {{- if not .IsHome -}} {{ if .Page.Title }}{{ .Page.Title }} - {{ end }} {{- end -}}
         {{- if hugo.IsServer -}} Hugo {{- else -}} {{- .Site.Title -}} {{- end -}}
     </title>
