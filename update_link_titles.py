@@ -9,22 +9,35 @@
 # Fetch and update Markdown link titles
 #
 # Arguments:
-#   --all        Update every http/https link that has no title.
-#   --overwrite  Update all http/https links, replacing existing titles.
-#   (none)       Update only links whose name starts with "http" and have no title.
+#   --text-is-url            Update links whose text is a URL, even if no URL in link text.
+#   --update-existing-titles Update all http/https links, replacing existing titles.
+#   (none)                   Update every http/https link that has no title.
 #
 # Examples:
 #   python3 update_link_titles.py file.md
-#   python3 update_link_titles.py --all content/
-#   python3 update_link_titles.py --overwrite /path/to/*.md
+#   python3 update_link_titles.py --text-is-url content/
+#   python3 update_link_titles.py --update-existing-titles /path/to/*.md
 
-import os, sys, subprocess, html
+import os
+import sys
+import subprocess
+import html
+from typing import Iterator, Tuple, List, Optional
 from bs4 import BeautifulSoup
 
-def fetch_page_title(url: str) -> str | None:
+def fetch_page_title(url: str) -> Optional[str]:
     try:
         html_data = subprocess.check_output(
-            ["curl", "-Ls", url], stderr=subprocess.DEVNULL, timeout=12
+            [
+                "curl",
+                "-Ls",
+                "-H",
+                "Accept-Language: en",
+                "--compressed",
+                url,
+            ],
+            stderr=subprocess.DEVNULL,
+            timeout=12,
         ).decode("utf-8", errors="ignore")
         soup = BeautifulSoup(html_data, "html.parser")
         if soup.title and soup.title.string:
@@ -34,9 +47,9 @@ def fetch_page_title(url: str) -> str | None:
         return None
 
 def should_update(text: str, has_title: bool, mode: str) -> bool:
-    if mode == "overwrite":
+    if mode == "update-existing-titles":
         return True
-    if mode == "http-only":
+    if mode == "text-is-url":
         if not text.startswith("http"):
             return False
         return not has_title
@@ -45,93 +58,110 @@ def should_update(text: str, has_title: bool, mode: str) -> bool:
     return False
 
 # Parser for Markdown links: finds [text](url "title")
-def parse_links(md: str):
-    i, n = 0, len(md)
-    while i < n:
-        if md[i] != '[':
-            i += 1
+def parse_links(markdown_text: str) -> Iterator[Tuple[int, int, str, Optional[str], Optional[str]]]:
+    # Scan the text to find Markdown link patterns: [text](url "title")
+    pos, text_length = 0, len(markdown_text)
+
+    while pos < text_length:
+        # Look for the opening square bracket of the link text.
+        if markdown_text[pos] != "[":
+            pos += 1
             continue
-        # Find closing ] for text
-        j = i + 1
-        while j < n and md[j] != ']':
-            j += 1
-        if j >= n or j + 1 >= n or md[j + 1] != '(':
-            i += 1
+
+        # Find the closing square bracket for the link text.
+        end_bracket_index = pos + 1
+        while end_bracket_index < text_length and markdown_text[end_bracket_index] != "]":
+            end_bracket_index += 1
+
+        # Confirm there is an opening parenthesis immediately after the closing bracket.
+        if (
+            end_bracket_index >= text_length
+            or end_bracket_index + 1 >= text_length
+            or markdown_text[end_bracket_index + 1] != "("
+        ):
+            pos += 1
             continue
-        # Parse ( ... ) allowing nested parens in url
-        k = j + 2
-        depth = 1
-        while k < n and depth > 0:
-            ch = md[k]
-            if ch == '(':
-                depth += 1
-            elif ch == ')':
-                depth -= 1
-            k += 1
-        if depth != 0:
-            i += 1
+
+        # Walk forward to find the matching closing parenthesis, supporting nested parentheses.
+        end_parenthesis_index = end_bracket_index + 2
+        parenthesis_depth = 1
+        while end_parenthesis_index < text_length and parenthesis_depth > 0:
+            current_character = markdown_text[end_parenthesis_index]
+            if current_character == "(":
+                parenthesis_depth += 1
+            elif current_character == ")":
+                parenthesis_depth -= 1
+            end_parenthesis_index += 1
+
+        # If parentheses are not balanced, skip this bracket and continue scanning.
+        if parenthesis_depth != 0:
+            pos += 1
             continue
-        block = md[j + 2 : k - 1].strip()
-        url, title = None, None
-        if '"' in block:
-            q1 = block.find('"')
-            q2 = block.rfind('"')
-            if q2 > q1:
-                url = block[:q1].strip()
-                title = block[q1 + 1 : q2]
+
+        # Extract the content inside parentheses: `url "title"` or just `url`.
+        link_block_text = markdown_text[end_bracket_index + 2 : end_parenthesis_index - 1].strip()
+        link_url, link_title = None, None
+
+        # Split URL and optional title by the outermost quotes.
+        if '"' in link_block_text:
+            quote_start_index = link_block_text.find('"')
+            quote_end_index = link_block_text.rfind('"')
+            if quote_end_index > quote_start_index:
+                link_url = link_block_text[:quote_start_index].strip()
+                link_title = link_block_text[quote_start_index + 1 : quote_end_index]
             else:
-                url = block.strip()
+                link_url = link_block_text.strip()
         else:
-            url = block
-        text = md[i + 1 : j]
-        yield (i, k, text, url, title)
-        i = k
+            link_url = link_block_text
 
-def print_summary(path: str,
-                  total_candidates: int,
-                  skipped_name_mode_count: int,
-                  skipped_malformed: list,
-                  skipped_empty_title: list,
-                  skipped_fetch_error: list,
-                  per_file_errors: list,
-                  mode: str) -> None:
-    # Header for each file
+        # Extract the link text within brackets.
+        link_text = markdown_text[pos + 1 : end_bracket_index]
+
+        # Yield the span and parts: start index, end index, text, url, title.
+        yield (pos, end_parenthesis_index, link_text, link_url, link_title)
+
+        # Continue scanning after the closing parenthesis of the current link.
+        pos = end_parenthesis_index
+
+def print_summary(
+    path: str,
+    total_candidates: int,
+    skipped_name_mode_count: int,
+    skipped_malformed: List[str],
+    skipped_empty_title: List[str],
+    skipped_fetch_error: List[str],
+    mode: str,
+) -> None:
     print(f"{path}")
-    print(f"  - {total_candidates} candidate titles to update")
+    print(f"  - Candidates to update: {total_candidates}")
 
-    # Only list truly bad links (broken, empty title, fetch fail)
     if skipped_malformed:
-        print(f"  - {len(skipped_malformed)} bad links (malformed):")
+        print(f"  - Malformed: {len(skipped_malformed)}")
         for url in skipped_malformed:
             print(f"    - {url}")
     if skipped_empty_title:
-        print(f"  - {len(skipped_empty_title)} links with no title:")
+        print(f"  - Empty titles: {len(skipped_empty_title)}")
         for url in skipped_empty_title:
             print(f"    - {url}")
     if skipped_fetch_error:
-        print(f"  - {len(skipped_fetch_error)} links failed to fetch:")
+        print(f"  - Fetch failures: {len(skipped_fetch_error)}")
         for url in skipped_fetch_error:
             print(f"    - {url}")
-    
-    # Mode notes
+
     if skipped_name_mode_count:
-        if mode == "http-only":
-            print(f"  - {skipped_name_mode_count} skipped (non-http or already titled).")
-            print(f"    Use --overwrite to force update, or run without flags to update missing ones.")
+        if mode == "text-is-url":
+            print(f"  - Skipped by mode: {skipped_name_mode_count} — No URLs in the text of links or already titled.")
+            print(f"    Use --update-existing-titles to force update.")
         elif mode == "all":
-            print(f"  - {skipped_name_mode_count} skipped (already titled or invalid).")
-            print(f"    Use --overwrite to force update.")
-        elif mode == "overwrite":
-            print(f"  - {skipped_name_mode_count} skipped even with --overwrite (invalid).")
+            print(f"  - Skipped by mode: {skipped_name_mode_count} — Already titled or invalid.")
+            print(f"    Use --update-existing-titles to force update.")
+        elif mode == "update-existing-titles":
+            print(f"  - Skipped by mode: {skipped_name_mode_count} — Invalid.")
         else:
-            print(f"  - {skipped_name_mode_count} skipped (mode rules).")
-            print(f"    Use --overwrite to force update.")
+            print(f"  - Skipped by mode: {skipped_name_mode_count} — Mode rules.")
+            print(f"    Use --update-existing-titles to force update.")
 
-    # Per-link error lines (one per failed fetch)
-    for err in per_file_errors:
-        print(f"  - Error: {err}")
-
-    print("")  # Empty line between files
+    print("")
 
 def process_file(path: str, mode: str) -> None:
     try:
@@ -144,21 +174,26 @@ def process_file(path: str, mode: str) -> None:
     if not parsed_links:
         return
 
-    # Buckets
-    skipped_name_mode_count = 0             # Skipped because of name/mode rules (do not list URLs)
-    skipped_malformed: list[str] = []       # Malformed or non-http URLs (list URLs)
-    skipped_fetch_error: list[str] = []     # Curl errors or timeouts (list URLs)
-    skipped_empty_title: list[str] = []     # Pages with empty title (list URLs)
-    per_file_errors: list[str] = []
+    skipped_name_mode_count = 0
+    skipped_malformed: List[str] = []
+    skipped_fetch_error: List[str] = []
+    skipped_empty_title: List[str] = []
 
-    candidates: list[tuple[int, int, str, str, str | None]] = []
+    candidates: List[Tuple[int, int, str, str, Optional[str]]] = []
 
     for (start_index, end_index, link_text, link_url, link_title) in parsed_links:
         if not link_url:
             skipped_malformed.append(f"{link_text or '<no-name>'} (no url)")
             continue
+        # Skip silently:
+        if (
+            ("{{" in link_url and "}}" in link_url)
+            or link_url.strip().startswith("{{<") # Hugo shortcodes – Standard notation
+            or link_url.strip().startswith("{{%") # Hugo shortcodes – Markdown notation
+            or link_url.strip().startswith("#") # Fragment-only URLs
+        ):
+            continue
         if not link_url.startswith("http"):
-            # Treat non-http as malformed for processing purposes
             skipped_malformed.append(link_url)
             continue
         if not should_update(link_text, link_title is not None, mode):
@@ -168,22 +203,20 @@ def process_file(path: str, mode: str) -> None:
 
     total_candidates = len(candidates)
 
-    # If no candidates, print summary and return
     if total_candidates == 0:
-        print_summary(path, total_candidates, skipped_name_mode_count, skipped_malformed, skipped_empty_title, skipped_fetch_error, per_file_errors, mode)
+        print_summary(path, total_candidates, skipped_name_mode_count, skipped_malformed, skipped_empty_title, skipped_fetch_error, mode)
         return
 
-    # Otherwise: print progress header and process candidates
-    print(f"- {path}")
-    print(f"  - 0/{total_candidates} processed")
-    edits: list[tuple[int, int, str]] = []
     processed = 0
+    edits: List[Tuple[int, int, str]] = []
+
+    # Single progress line that updates in place
+    print(f"- {path}  {processed}/{total_candidates} processed", end="\r", flush=True)
 
     for (start_index, end_index, link_text, link_url, link_title) in candidates:
         fetched_title = fetch_page_title(link_url)
         if fetched_title is None:
             skipped_fetch_error.append(link_url)
-            per_file_errors.append(f"Failed to fetch title for {link_url}")
         elif not fetched_title.strip():
             skipped_empty_title.append(link_url)
         else:
@@ -191,17 +224,17 @@ def process_file(path: str, mode: str) -> None:
             rebuilt_link = f'[{link_text}]({link_url} "{safe_title}")'
             edits.append((start_index, end_index, rebuilt_link))
         processed += 1
-        
-        print(f"  - {processed} of {total_candidates} processed")
+        print(f"- {path}  {processed}/{total_candidates} processed", end="\r", flush=True)
 
-    # After processing candidates, print consolidated summary
-    print_summary(path, total_candidates, skipped_name_mode_count, skipped_malformed, skipped_empty_title, skipped_fetch_error, per_file_errors, mode)
+    # Finish progress line with newline
+    print("")
+
+    print_summary(path, total_candidates, skipped_name_mode_count, skipped_malformed, skipped_empty_title, skipped_fetch_error, mode)
 
     if not edits:
         return
 
-    # Apply edits from end to start to keep indices valid
-    output_chunks: list[str] = []
+    output_chunks: List[str] = []
     last_index = len(file_content)
     for start_index, end_index, rebuilt_link in reversed(edits):
         output_chunks.append(file_content[end_index:last_index])
@@ -226,12 +259,13 @@ def walk_path(path: str, mode: str) -> None:
             if name.endswith(".md"):
                 process_file(os.path.join(root, name), mode)
 
-def main(argv: list[str]) -> None:
-    mode = "http-only"
-    args = [a for a in argv if not a.startswith("--")]
-    if "--all" in argv: mode = "all"
-    if "--overwrite" in argv: mode = "overwrite"
-    print("")
+def main(argument_values: List[str]) -> None:
+    mode = "all"
+    args = [a for a in argument_values if not a.startswith("--")]
+    if "--text-is-url" in argument_values:
+        mode = "text-is-url"
+    if "--update-existing-titles" in argument_values:
+        mode = "update-existing-titles"
     targets = args if args else ["."]
     for t in targets:
         walk_path(t, mode)
