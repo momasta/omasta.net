@@ -29,7 +29,7 @@
                aria-label="{{ T "search-memes" }}">
 
         <input type="submit"
-               value="{{ T "searcht" }}"
+               value="{{ T "search" }}"
                class="visually-hidden">
     </form>
 </div>
@@ -83,7 +83,7 @@
                      {{- $hash := substr (md5 $image.RelPermalink) 0 8 -}}
                          {{- $dir := path.Dir $image.RelPermalink -}}
 
-                         {{- /* Create resized thumbs and copy them into a "t/" subfolder */ -}}
+                         {{- /* Create resized thumbs and add them into a "t/" subdirectory */ -}}
                          {{- $thumb1 := $image.Resize "150x webp q60" |
                              resources.Copy (printf "%s/t/%s.webp" $dir $hash) -}}
                          {{- $thumb2 := $image.Resize "300x webp q50" |
