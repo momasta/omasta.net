@@ -35,6 +35,10 @@
     {{ $main_style := $main_template | resources.ExecuteAsTemplate "main_parsed.scss" . | toCSS $main_options | resources.Minify -}}
     <link rel="stylesheet" href="{{ print $main_style.RelPermalink "?" now.Unix }}">
 
+    {{- /* Canonical URL */ -}}
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    {{- /* HTML and RSS alternates */ -}}
     {{- if hugo.IsMultilingual -}}
         {{- /* RSS alternates */ -}}
         {{ with .Site.GetPage "section" "posts" }}

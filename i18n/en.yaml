@@ -44,7 +44,7 @@ psw-error: 'The image cannot be loaded'
 zoom: 'Zoom (Z)'
 
 ## Component: Header
-switch-language: 'Přepnout jazyk do češtiny'
+switch-language: '🇨🇿 Přepnout jazyk do češtiny'
 switch-theme-dark: 'Switch to dark theme'
 switch-theme-light: 'Switch to light theme'
 

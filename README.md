@@ -1,9 +1,8 @@
 # omasta.net
-My personal website  
+My Personal Website  
 
-Live URL: [omasta.net](https://omasta.net)
-
-Built using [Hugo](https://gohugo.io), an open-source static site generator.
+* Live URL: [omasta.net](https://omasta.net)
+* Built using [Hugo](https://gohugo.io), an open-source static site generator.
 
 ## Features
 * Multi-lingual
@@ -25,14 +24,14 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
 `{{< gallery "memes" >}}`
 * Takes a single parameter: name of a subdirectory in [assets/images/](assets/images)
 
-### Modifications and Added Features:
+### Modifications and Added Features
 * Replaced Lightbox2 with [Photoswipe](https://github.com/dimsemenov/PhotoSwipe).
 * Captions based on filenames.
 * Images sorted by date.
 * WebP thumbnails
   - Short hashes for filenames.
   - Stored in a `t/` subdirectory, out of the way.
-  - 1x and 2x variants for srcset.
+  - 1x and 2x DPR variants for srcset.
   - Adds `loading="eager"` to the first 12 thumbnails, and `loading="lazy"` for the rest.
   - GIF support (uses the actual file as a thumbnail).
 * Accessibility markup
@@ -42,25 +41,26 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
   - Source: [assets/js/gallery-filter.js](assets/js/gallery-filter.js)
   - Fast and debounced.
   - Uses normalised strings to find matches, while giving priority to exact matches and "starts with".
-  - Supports a ?q= URL param to prepopulate the search input.
+  - Supports a `?q=` URL param to prepopulate the search input.
 
 ## Thanks
 ### Hugo
 * A fast open-source static site generator.
-* [Hugo homepage and Docs](https://gohugo.io)
+* [Hugo Homepage and Docs](https://gohugo.io)
 * [gohugoio/hugo on GitHub](https://github.com/gohugoio/hugo)
 
 ### WebStorm  
-* My favourite IDE, free for non-commercial use.
+* My favourite IDE.
+* Free for non-commercial use.
 * [WebStorm Homepage](https://www.jetbrains.com/webstorm/)
 
-### Photoswipe
+### PhotoSwipe
 * JavaScript image gallery for mobile and desktop, modular, framework independent.
 * [dimsemenov/PhotoSwipe on GitHub](https://github.com/dimsemenov/PhotoSwipe)
 
 ### Blank
 * Starter [Hugo](https://gohugo.io) theme.
-* [vimux/blank on GitHub](https://github.com/vimux/blank)
+* [Vimux/blank on GitHub](https://github.com/vimux/blank)
 
 ### sass-boilerplate
 * The base for my stylesheets.

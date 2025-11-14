@@ -44,7 +44,7 @@ psw-error: 'Obrázek se nepodařilo načíst'
 zoom: 'Přiblížit/Oddálit (Z)'
 
 ## Component: Header
-switch-language: 'Switch language to English'
+switch-language: '🇬🇧 Switch language to English'
 switch-theme-dark: 'Přepnout na tmavý motiv'
 switch-theme-light: 'Přepnout na světlý motiv'
 
