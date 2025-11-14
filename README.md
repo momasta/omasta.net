@@ -1,42 +1,43 @@
 # omasta.net
 My personal website  
 
-Live URL: https://omasta.net(https://omasta.net)
+Live URL: [omasta.net](https://omasta.net)
 
 Built using [Hugo](https://gohugo.io), an open-source static site generator.
 
-Features:
-- Multi-lingual
-- Automatic light/dark mode switching
-- Image gallery with [Photoswipe](https://github.com/dimsemenov/PhotoSwipe)
-- A single RSS feed per language
-- Custom Hugo theme based on [vimux/blank](https://github.com/vimux/blank/)
-- Valid [HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarek.omasta.net%2F), [CSS](https://jigsaw.w3.org/css-validator/validator?uri=marek.omasta.net&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) and [RSS](https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fmarek.omasta.net%2Fposts%2Findex.xml).
-- Optimised for Google's [PageSpeed Insights](https://pagespeed.web.dev)
+## Features
+* Multi-lingual
+* Automatic light/dark mode switching
+* [Image gallery](#image-gallery) with [Photoswipe](https://github.com/dimsemenov/PhotoSwipe)
+* A single RSS feed per language (type: posts)
+* Custom Hugo theme based on [vimux/blank](https://github.com/vimux/blank/)
+* Valid [HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarek.omasta.net%2F), [CSS](https://jigsaw.w3.org/css-validator/validator?uri=marek.omasta.net&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) and [RSS](https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fmarek.omasta.net%2Fposts%2Findex.xml).
+* Optimised for Google's [PageSpeed Insights](https://pagespeed.web.dev)
 
 ## Image Gallery
 A Hugo shortcode based on [this article by Christian Specht](https://www.codeproject.com/articles/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2#comments-section).
 
-- Source: [themes/blank/layouts/shortcodes/gallery.html](themes/blank/layouts/shortcodes/gallery.html)
-- Live Demo: [omasta.net/memes/](https://omasta.net/memes/)
+* Source: [themes/blank/layouts/shortcodes/gallery.html](themes/blank/layouts/shortcodes/gallery.html)
+* Live Demo: [omasta.net/memes/](https://omasta.net/memes/)
 
-### Usage in Markdown Files:
+### Usage
+* In a Markdown file:  
 `{{< gallery "memes" >}}`
-  - Takes a  single parameter: subdirectory of assets/images 
+* Takes a single parameter: name of a subdirectory in [assets/images/](assets/images)
 
 ### Modifications and Added Features:
-- Replaced Lightbox2 with [Photoswipe](https://github.com/dimsemenov/PhotoSwipe).
-- Captions based on filenames.
-- Images sorted by date.
-- WebP thumbnails
+* Replaced Lightbox2 with [Photoswipe](https://github.com/dimsemenov/PhotoSwipe).
+* Captions based on filenames.
+* Images sorted by date.
+* WebP thumbnails
   - Short hashes for filenames.
-  - Stored in a "t/" subdirectory, out of the way.
+  - Stored in a `t/` subdirectory, out of the way.
   - 1x and 2x variants for srcset.
-  - loading="eager" for the first 12 thumbnails, lazy loading for the rest.
+  - Adds `loading="eager"` to the first 12 thumbnails, and `loading="lazy"` for the rest.
   - GIF support (uses the actual file as a thumbnail).
-- Accessibility markup
-- "?lightbox=" URL param to open an image on page load.
-- Gallery Filter
+* Accessibility markup
+* `?lightbox=` URL param to open an image on page load.
+* Gallery Filter
   - Search-as-you-type image filtering.
   - Source: [assets/js/gallery-filter.js](assets/js/gallery-filter.js)
   - Fast and debounced.
@@ -44,20 +45,27 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
   - Supports a ?q= URL param to prepopulate the search input.
 
 ## Thanks
-### [Hugo](https://gohugo.io)
-A fast open-source static site generator.
+### Hugo
+* A fast open-source static site generator.
+* [Hugo homepage and Docs](https://gohugo.io)
+* [gohugoio/hugo on GitHub](https://github.com/gohugoio/hugo)
 
-### [WebStorm](https://www.jetbrains.com/webstorm/)  
-My favourite IDE, free for non-commercial use.
+### WebStorm  
+* My favourite IDE, free for non-commercial use.
+* [WebStorm Homepage](https://www.jetbrains.com/webstorm/)
 
-### [Photoswipe](https://github.com/dimsemenov/PhotoSwipe)
-JavaScript image gallery for mobile and desktop, modular, framework independent.
+### Photoswipe
+* JavaScript image gallery for mobile and desktop, modular, framework independent.
+* [dimsemenov/PhotoSwipe on GitHub](https://github.com/dimsemenov/PhotoSwipe)
 
-### [vimux/blank](https://github.com/vimux/blank/)
-Starter [Hugo](https://gohugo.io) theme.
+### Blank
+* Starter [Hugo](https://gohugo.io) theme.
+* [vimux/blank on GitHub](https://github.com/vimux/blank)
 
-### [KittyGiraudel/sass-boilerplate](https://github.com/KittyGiraudel/sass-boilerplate)
-The base for my stylesheets.
+### sass-boilerplate
+* The base for my stylesheets.
+* [KittyGiraudel/sass-boilerplate on GitHub](https://github.com/KittyGiraudel/sass-boilerplate)
 
-### [Meteocons](https://demo.alessioatzeni.com/meteocons/)
-SVG sun and moon icons I'm using for light/dark mode switching.
+### Meteocons
+* SVG sun and moon icons I'm using for light/dark mode switching.
+* [Meteocons Homepage](https://demo.alessioatzeni.com/meteocons/)
