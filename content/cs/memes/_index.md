@@ -6,6 +6,7 @@ keywords:
     - memy
     - memíky
 layout: list
+search_target: "/memes/?q={searchTerm}"
 ---
 
 {{< gallery "memes" >}}

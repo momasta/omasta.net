@@ -1,13 +1,15 @@
 ---
 date: {{ .Date }}
-description:
-draft: false
-keywords:
 lastmod: {{ .Date }}
-slug: 
-#tags:
 title: "{{ replace .Name "-" " " | title }}"
-translationKey:
+draft: false
+description: ""
+summary: ""
+keywords: []
+slug: ""
+authors:
+  - "{{ .Site.Params.authorDefault }}"
+tags: []
+translationKey: ""
 type: posts
 ---
-

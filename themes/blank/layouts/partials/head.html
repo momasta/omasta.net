@@ -6,7 +6,7 @@
 
     <title>
         {{- if and (eq .Kind "term") (eq .Section "tags") }}{{ T "tag" }} #{{ end -}}
-        {{- if not .IsHome -}} {{ if .Page.Title }}{{ .Page.Title }} - {{ end }} {{- end -}}
+        {{- if not .IsHome -}} {{ if .Page.Title }}{{ .Page.Title }} – {{ end }} {{- end -}}
         {{- if hugo.IsServer -}} Hugo {{- else -}} {{- .Site.Title -}} {{- end -}}
     </title>
 
@@ -14,7 +14,7 @@
         <meta name="description" content="{{ . }}">
     {{- end -}}
 
-    {{- with .Site.Params.author -}}
+    {{- with .Site.Params.author.name -}}
         <meta name="author" content="{{ . }}">
     {{- end -}}
 
@@ -85,10 +85,10 @@
     {{- end -}}
 
     {{- /* Shortcut Icons */ -}}
-    <link rel="icon" href="/favicon.ico" sizes="any" type="image/x-icon">
-    <link rel="icon" href="/images/favicon-32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/images/favicon-192.png" sizes="192x192" type="image/png">
-    <link rel="apple-touch-icon" href="/images/favicon-180.png">
+    <link rel="icon" href="{{ .Site.Params.icons.favicon }}" sizes="any" type="image/x-icon">
+    <link rel="icon" href="{{ .Site.Params.icons.favicon_32 }}" sizes="32x32" type="image/png">
+    <link rel="icon" href="{{ .Site.Params.icons.favicon_192 }}" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="{{ .Site.Params.icons.apple_touch }}">
 
     {{- /* Apple-Specific Meta Tags */ -}}
     <meta name="theme-color" content="#b8b8b8" media="(prefers-color-scheme: light)">
@@ -101,6 +101,9 @@
     {{- /*  Mastodon  */ -}}
     <link rel="me" href="https://mastodon.social/@marek_omasta">
     <meta name="fediverse:creator" content="@marek_omasta@mastodon.social">
+    
+    {{- /*  Schema.org JSON-LD */ -}}
+    {{ partial "head-schema-website.html" . }}
 
     {{- /* Critical JS - Perform before rendering page */ -}}
     <script>

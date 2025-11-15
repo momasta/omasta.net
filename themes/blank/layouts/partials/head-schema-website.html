@@ -1,0 +1,27 @@
+{{- /* Build website schema and include SearchAction only when page-level search_target is present */ -}}
+{{- $pageSearchTarget := .Params.search_target | default "" -}}
+{{- $searchTarget := "" -}}
+{{- if ne $pageSearchTarget "" -}}
+    {{- $searchTarget = absURL $pageSearchTarget -}}
+{{- end -}}
+
+{{- $websiteSchema := dict
+    "@context" "https://schema.org"
+    "@type" "WebSite"
+    "url" .Site.BaseURL
+    "name" .Site.Title
+    "image" (dict "@type" "ImageObject" "url" (.Site.Params.icons.favicon_192 | absURL))
+    "author" (dict
+    "@type" "Person"
+    "name" .Site.Params.author.name
+    "email" (print "mailto:" .Site.Params.author.email)
+    "image" (dict "@type" "ImageObject" "url" (.Site.Params.author.image | absURL))
+    "sameAs" .Site.Params.author.sameAs
+    )
+-}}
+
+{{- if ne $searchTarget "" -}}
+    {{- $websiteSchema = merge $websiteSchema (dict "potentialAction" (dict "@type" "SearchAction" "target" $searchTarget "query-input" "required name=searchTerm")) -}}
+{{- end -}}
+
+<script type="application/ld+json">{{ $websiteSchema | jsonify | safeJS }}</script>
