@@ -12,7 +12,7 @@ keywords:
     - Chris Barraclough
     - British dialect
     - funny
-lastmod: 
+lastmod: 2025-11-21T17:11:37+01:00
 main_content_id: table-of-contents 
 slug:
 tags:
@@ -33,8 +33,7 @@ I think I've watched every episode of [Tech&nbsp;Spurt&nbsp;Weekly](https://yout
 Below, you'll find bits I found funny or worth sharing:  
 Original expressions (especially&nbsp;[similes](#similes)), jokes, responses to viewer comments, and&nbsp;short stories – most with clickable timestamps.
 
-### See Also
-
+## See Also
 * [YouTube Quotes]({{< relref "posts/youtube-quotes.md" >}}) (from other creators)
 
 ## Table of Contents
@@ -178,9 +177,9 @@ Original expressions (especially&nbsp;[similes](#similes)), jokes, responses to 
 * as excited as
   a [teenager](https://youtu.be/wticD_FUquA?t=397s "Huawei Watch 3 Review | Active Model | One Month Later - YouTube")
   reading out her essay on 17th century agricultural techniques
-* as exciting as
-  a [bag of](https://youtu.be/W_1dU898BRg?t=124 "Tech Spurt Weekly 45 | KFConsole, Motorola Android 11 Updates - YouTube")
+* as exciting as a [bag of](https://youtu.be/W_1dU898BRg?t=124 "Tech Spurt Weekly 45 | KFConsole, Motorola Android 11 Updates - YouTube")
   dead slugs
+* as exciting as a Gwyneth Paltrow documentary on dead badgers  
 * as fresh as a Wetherspoons bread roll
 * as merry as an orphan on Mother's Day
 * as much bass as
@@ -211,6 +210,7 @@ Original expressions (especially&nbsp;[similes](#similes)), jokes, responses to 
 * [nippier than](https://youtu.be/inlJ2OSoMU0?t=225s "Zenfone 6 Three Months Later | Best smartphone surprise of 2019 - YouTube")
   Usain Bolt with a firecracker lodged firmly up his rectum hole
 * nuttier than a squirrel’s first dump of a day
+* nuttier than a [squirrel's fridge](https://youtu.be/lm5rC6qynhI?t=519)  
 * pack about as much of a punch as
   an [asthmatic toddler](https://youtu.be/SIC-vIecX1A?t=184s "Google Nest Hub Max Review | Ultimate Smart Home Display - YouTube")
   with its hands tied behind its back
@@ -394,6 +394,17 @@ short of 6.8 inches
   That's where my wallpapers come from.  
   wall dot alphacoders dot com  
   [https://youtu.be/LHS3HoO0TXY](https://youtu.be/LHS3HoO0TXY "Tech Spurt's Anime Wallpapers #Shorts - YouTube")
+* Give Me Free Shit jingle  
+[https://youtu.be/d_yYVK7qWCM?t=178](https://youtu.be/d_yYVK7qWCM?t=178)  
+* Five Fun Finland Facts jingle  
+[https://youtu.be/Zf4pjBA-NN0?t=545](https://youtu.be/Zf4pjBA-NN0?t=545)  
+* Tech Spurt Weekly jingle upgrade  
+[https://youtu.be/MXzOv4-I7Ls?t=55](https://youtu.be/MXzOv4-I7Ls?t=55)   
+* Tech Spurt Weekly (French version)  
+[https://youtu.be/_mfJk7fjcfs?t=57](https://youtu.be/_mfJk7fjcfs?t=57)  
+* Uncle Spurt's Wee One  
+It's a short review, not his penis.  
+[https://youtu.be/nraZFnT9aHQ?t=331](https://youtu.be/nraZFnT9aHQ?t=331) 
 
 ## Out of Context Material {#out-of-context}
 
@@ -431,6 +442,8 @@ short of 6.8 inches
   [https://youtu.be/oZl2DwHVHZI?t=106](https://youtu.be/oZl2DwHVHZI?t=106 "Best Android Wallpaper Apps | Top tips for customisation - YouTube")
 * Banana 2  
   [https://youtu.be/oZl2DwHVHZI?t=179](https://youtu.be/oZl2DwHVHZI?t=179 "Best Android Wallpaper Apps | Top tips for customisation - YouTube")
+* Jingle my bell (demonic visual effect)  
+[https://youtu.be/o_BkBGUoK5E?t=342](https://youtu.be/o_BkBGUoK5E?t=342)  
 
 ## Recombu Quickies
 
@@ -523,7 +536,10 @@ short of 6.8 inches
 * N. Brio from Crash Bandicoot  
   [https://youtu.be/LNCO3a3NCdI?t=810](https://youtu.be/LNCO3a3NCdI?t=810 "Crazy Cheap Dual Screen Phone! | TSW221 - YouTube")
 * Pep Guardiola from TEMU  
+[https://youtu.be/eNRG1QDnK7k?t=551](https://youtu.be/eNRG1QDnK7k?t=551)  
   [https://youtu.be/QvdJUfpG-kk?lc=UgylfNyLsp84KbVjlYh4AaABAg](https://youtu.be/QvdJUfpG-kk?lc=UgylfNyLsp84KbVjlYh4AaABAg "Comment from user @stevebacon6200 - YouTube")
+* Bald UK version of Eli the Computer Guy  
+[https://youtu.be/eNRG1QDnK7k?t=524](https://youtu.be/eNRG1QDnK7k?t=524)  
 
 ## Other Quotes
 
@@ -637,6 +653,11 @@ short of 6.8 inches
 * DJ Miserable Cunt  
   [https://youtu.be/isC6wq0n-QQ?t=5241](https://youtu.be/isC6wq0n-QQ?t=5241 "OnePlus 8 Series Live AMA - YouTube")
 * (Jeff Bezos retirement)  
+David Beckham in his slaphead phase  
+Alistair McGowan  
+a skinnier version of Brian Glover  
+Zack from JerryRigEverything  
+Wallace from Wallace and Gromit  
   [https://youtu.be/7J1RhkpnTws?t=270](https://youtu.be/7J1RhkpnTws?t=270 "Tech Spurt Weekly Ep48 | Nokia 1.4, Mi Air Charge, Stadia woes - YouTube")
 * …and you've also got new watch faces including kitties and big dumb dogs to distract you from how utterly miserable
   and shit everything is.  

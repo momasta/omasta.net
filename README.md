@@ -4,6 +4,14 @@ My Personal Website
 * Live URL: [omasta.net](https://omasta.net)
 * Built using [Hugo](https://gohugo.io), an open-source static site generator.
 
+## Table of Contents
+- [Features](#features)
+- [Dependencies](#dependencies)
+- [Image Gallery](#image-gallery)
+    - [Usage](#usage)
+    - [Modifications and Added Features](#modifications-and-added-features)
+- [Thanks](#thanks)
+
 ## Features
 * Multi-lingual
 * Automatic light/dark mode switching
@@ -12,6 +20,13 @@ My Personal Website
 * Custom Hugo theme based on [vimux/blank](https://github.com/vimux/blank/)
 * Valid [HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarek.omasta.net%2F), [CSS](https://jigsaw.w3.org/css-validator/validator?uri=marek.omasta.net&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) and [RSS](https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fmarek.omasta.net%2Fposts%2Findex.xml).
 * Optimised for Google's [PageSpeed Insights](https://pagespeed.web.dev)
+
+## Dependencies
+- PhotoSwipe
+  - Downloaded manually to [assets/](assets):
+    - [photoswipe.css](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe.css)
+    - [photoswipe.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe.esm.min.js)
+    - [photoswipe-lightbox.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe-lightbox.esm.min.js)
 
 ## Image Gallery
 A Hugo shortcode based on [this article by Christian Specht](https://www.codeproject.com/articles/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2#comments-section).
@@ -56,6 +71,7 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
 
 ### PhotoSwipe
 * JavaScript image gallery for mobile and desktop, modular, framework independent.
+* [PhotoSwipe Homepage](https://photoswipe.com)
 * [dimsemenov/PhotoSwipe on GitHub](https://github.com/dimsemenov/PhotoSwipe)
 
 ### Blank

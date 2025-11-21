@@ -24,7 +24,7 @@ Might be useful to people who run clips or compilation channels.
 
 There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< /i18n-link >}}.
 
-### See Also
+## See Also
 * [Tech Spurt Quotes]({{< relref "posts/tech-spurt-quotes.md" >}})
 
 ## Ashens
