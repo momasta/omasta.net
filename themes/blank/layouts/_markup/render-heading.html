@@ -1,7 +1,7 @@
 {{- $linkTitle := .Anchor |
         replaceRE "['’~#_+./@]" "" |
         urlize |
-        replaceRE "-{2,}" "-" -}}
+        replaceRE "[-–]{2,}" "-" -}}
 <h{{- .Level }} id="{{- $linkTitle -}}" {{- with .Attributes.class }} class="{{ . }}" {{- end -}}>
     {{- .Text -}}
     <a href="&#35;{{- $linkTitle -}}" class="heading-link" rel="bookmark" title="{{ T "copy-link-heading" -}}"
