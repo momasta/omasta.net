@@ -12,7 +12,7 @@ keywords:
     - Chris Barraclough
     - British dialect
     - funny
-lastmod: 2025-11-21T17:11:37+01:00
+lastmod: 2025-11-22T17:36:23+01:00
 main_content_id: table-of-contents 
 slug:
 tags:
@@ -767,7 +767,7 @@ So&nbsp;if you release a tablet with a massive big old camera on the back, you'r
 [https://youtube.com/clip/UgkxZTLJ7-VlAGo8YjyF3eCaZbU_V8dHMduN](https://youtube.com/clip/UgkxZTLJ7-VlAGo8YjyF3eCaZbU_V8dHMduN "✂️ Tech Spurt - Thank You British Bald Man - YouTube")
   
 ### The Rest
-* I don't think I'm at risk of winning any done of the awards anytime soon, but even I&nbsp;try not to say things like “cuntstick” and “fuck all” around my girl.  
+* I don't think I'm at risk of winning any dad of the year awards anytime soon, but even I&nbsp;try not to say things like “cuntstick” and “fuck all” around my girl.  
 [https://youtu.be/ZoJEKBB2eck?t=291](https://youtu.be/ZoJEKBB2eck?t=291 "Tech Spurt Weekly Ep3 | MWC 2020 Launch News | Sony, Huawei, Nokia & More - YouTube")   
 * And to put it less politely, it’s fucking rank.  
 [https://youtu.be/F5-nhRBknl8?t=680](https://youtu.be/F5-nhRBknl8?t=680 "iPhone SE 3 (2022) Review | One month later... - YouTube")   
