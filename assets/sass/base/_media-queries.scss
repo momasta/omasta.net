@@ -3,6 +3,10 @@
 //	
 //}
 
+@media screen and (min-width: $bp-tablet) {
+  @include mq-min-tablet-gallery-image;
+}
+
 @media screen and (min-width: $bp-medium) {
   @include mq-min-medium-aside;
   @include mq-min-medium-body;

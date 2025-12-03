@@ -5,6 +5,7 @@ theme:
 defaultContentLanguage: en
 enableRobotsTXT: true
 loadJQuery: false
+printI18nWarnings: true
 removePathAccents: true
 timeout: 180s
 titleCaseStyle: none

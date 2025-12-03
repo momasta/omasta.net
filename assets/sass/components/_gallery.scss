@@ -1,7 +1,12 @@
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  &.size-s {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+  }
 
   form {
     width: 100%;
@@ -22,9 +27,6 @@
 // <a class="gallery-image>
 .gallery-image {
   display: block;
-  width: calc(50% - 10px);
-  margin: 5px;
-  text-align: left;
   font-size: 0;
   overflow: hidden;
   border-radius: 8px;
@@ -53,7 +55,7 @@
     font-size: rem(12px);
     color: var(--color-text-light);
     text-align: left;
-    padding: 5px 0 10px 0;
+    padding: 5px 0 5px;
     overflow-wrap: anywhere;
     word-break: normal;
     text-wrap: auto;
@@ -74,19 +76,36 @@
   @extend %no-interaction;
 }
 
+// PhotoSwipe
 .pswp__zoom-wrap img,
 .pswp__img {
   border-radius: 8px;
   transition: border-radius var(--ease);
 }
 
-.pswp--open .pswp__zoom-wrap img,
-.pswp--open .pswp__img {
-  border-radius: 0;
+.pswp--open {
+  .pswp__zoom-wrap img,
+  .pswp__img {
+    border-radius: 0;
+  }
+}
+
+@mixin mq-min-tablet-gallery-image {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+
+    &.size-s {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
 }
 
 @mixin mq-min-medium-gallery-image {
-  .gallery-image {
-    width: calc(25% - 10px);
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+
+    &.size-s {
+      grid-template-columns: repeat(10, 1fr);
+    }
   }
 }

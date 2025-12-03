@@ -1,107 +1,142 @@
 {{- /*
-    assets/sass/components/_gallery.scss
+    Stylesheet: assets/sass/components/_gallery.scss
+    
+    See README.md#image-gallery
+    
+    Based on https://codeproject.com/Articles/5276331/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2
 */ -}}
 
-{{- /* Based on https://www.codeproject.com/Articles/5276331/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2 */ -}}
-
-{{- /* Optional parameter to specify an asset subdirectory */ -}}
-{{- $param0 := default "" (.Get 0) -}}
-
-{{- $directory := cond (ne "" $param0) (print "/" $param0) "" -}}
-{{- $path := (print "images" $directory "/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF}") -}}
 {{- $dateFormat := .Site.Params.dateFormat -}}
 
-<div class="gallery-filter">
-    <form action="#" class="gallery-filter-form">
-        <label for="gallery-search" class="visually-hidden">
-            {{- T "search-memes" -}}
-        </label>
-        <input type="search"
-               id="gallery-search"
-               name="q"
-               placeholder="{{ T "search" }}"
-               class="gallery-filter-input"
-               autocomplete="on"
-               autocapitalize="off"
-               autofocus
-               title="- {{ T "press-esc" }}
-- {{ T "press-stroke" }}"
-               aria-label="{{ T "search-memes" }}">
+{{- /* Argument: Image Source (subdir of assets/images) (Optional) */ -}}
+{{- $param0 := default "" (.Get 0) -}}
+{{- $directory := cond (ne "" $param0) (print "/" $param0) "" -}}
+{{- $path := (print "images" $directory "/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF}") -}}
 
-        <input type="submit"
-               value="{{ T "search" }}"
-               class="visually-hidden">
-    </form>
-</div>
+{{- /* Argument: Class (Optional) */ -}}
+{{- $class := default "" (.Get 1) -}}
 
+{{- /* Argument: Sort By (Optional) */ -}}
+{{- $sortBy := default "date" (.Get 2) -}}
 
-<p id="gallery-no-results" aria-hidden="true" class="state-hidden">
-    {{- T "no-images-found" -}}
-</p>
+{{- /* Handle sizing */ -}}
+{{- $size := "m" -}}
+{{- $thumbSize1x := 150 -}}
+{{- if strings.Contains $class "size-s" -}}
+    {{- $size = "s" -}}
+    {{- $thumbSize1x = 59 -}}
+{{- end -}}
+{{- $thumbSize2x := (mul $thumbSize1x 2) -}}
 
-<div class="gallery">
+{{- /* Gallery Filter, for sizes M and up */ -}}
+{{- if ne $size "s" -}}
+    <div class="gallery-filter">
+        <form action="#" class="gallery-filter-form">
+            <label for="gallery-search" class="visually-hidden">
+                {{- T "search-memes" -}}
+            </label>
+            <input type="search"
+                   id="gallery-search"
+                   name="q"
+                   placeholder="{{ T "search" }}"
+                   class="gallery-filter-input"
+                   autocomplete="on"
+                   autocapitalize="off"
+                   autofocus
+                   title="- {{ T "press-esc" }}
+    - {{ T "press-stroke" }}"
+                   aria-label="{{ T "search-memes" }}">
+    
+            <input type="submit"
+                   value="{{ T "search" }}"
+                   class="visually-hidden">
+        </form>
+    </div>
+    
+    {{- /* No Results Message */ -}}
+    <p id="gallery-no-results" aria-hidden="true" class="state-hidden">
+        {{- T "no-images-found" -}}
+    </p>
+{{- end -}}
+
+{{- /* Gallery */ -}}
+<div class="gallery{{ with $class }} {{ . }}{{ end }}">
     {{- $images := resources.Match $path }}
 
     {{- if $images }}
-        {{- $imgs := slice -}}
+        {{- $imagesSlice := slice -}}
 
-        {{- range $idx, $image := $images -}}
+        {{- range $image := $images -}}
             {{- $filePath := printf "assets/%s" $image.Name }}
             {{- $fileInfo := os.Stat $filePath }}
-            {{- $imgs = $imgs | append (dict "modTime" $fileInfo.ModTime "image" $image) }}
+            {{- $imagesSlice = $imagesSlice | append (dict "modTime" $fileInfo.ModTime "image" $image) }}
         {{- end -}}
 
-        {{- $sorted := sort $imgs "modTime" "desc" -}}
+        {{- /* Sort images, default: by date */ -}}
+        {{- $sorted := cond (eq $sortBy "name") $imagesSlice (sort $imagesSlice "modTime" "desc") -}}
 
+        {{- /* Loop all images */ -}}
         {{- range $index, $item := $sorted -}}
-            {{ $image := $item.image }}
-            {{ $imageName := ($image.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr }}
-            {{ $imageURL := $image.RelPermalink | safeURL -}}
+            {{- $image := $item.image -}}
+            {{- $imageName := ($image.Name | replaceRE "^.*/(.*)\\..*" "$1") | safeHTMLAttr -}}
+            {{- $imageURL := $image.RelPermalink | safeURL -}}
+            {{- $imageDate := $item.modTime.Format $dateFormat | safeHTML -}}
+            {{- $imageDateText := printf "\n\n%s %s" (T "last-mod-short") $imageDate -}}
+            {{- $imageID := $imageName |
+                            replaceRE "['’~#_+./@]" "" |
+                            urlize |
+                            replaceRE "-{2,}" "-" -}}
 
-            <a href="{{ $imageURL }}"
+            <a href="{{- $imageURL }}"
                class="gallery-image"
                data-pswp-width="{{ $image.Width }}"
                data-pswp-height="{{ $image.Height }}"
                data-cropped="true"
-               id="{{ $imageName |
-                   replaceRE "['’~#_+./@]" "" |
-                   urlize |
-                   replaceRE "-{2,}" "-" -}}"
+               id="{{ $imageID }}"
                target="_blank"
-               title="{{- $imageName }}
-
-{{ T "last-mod-short" }} {{ $item.modTime.Format $dateFormat | safeHTML -}}">
+               title="{{ $imageName }}{{ $imageDateText }}">
 
                 <img class="gallery-thumb"
-                     alt="{{ $imageName }}."
-                     loading="{{ cond (gt $index 12) "lazy" "eager" -}}"
+                     alt="{{- $imageName -}}."
+                     loading="{{- cond (gt $index 12) "lazy" "eager" -}}"
 
                      {{- if eq $image.MediaType.SubType "gif" -}}
-                     src="{{ $imageURL }}"
+                        src="{{- $imageURL -}}"
                      {{- else -}}
-
-                     {{- $hash := substr (md5 $image.RelPermalink) 0 8 -}}
-                         {{- $dir := path.Dir $image.RelPermalink -}}
-
                          {{- /* Create resized thumbs and add them into a "t/" subdirectory */ -}}
-                         {{- $thumb1 := $image.Resize "150x webp q60" |
-                             resources.Copy (printf "%s/t/%s.webp" $dir $hash) -}}
-                         {{- $thumb2 := $image.Resize "300x webp q50" |
-                             resources.Copy (printf "%s/t/%s@2x.webp" $dir $hash) -}}
+                         {{- $finalThumb1x := $image.Resize (printf "%dx webp q60" $thumbSize1x) -}}
+                         {{- $finalThumb2x := $image.Resize (printf "%dx webp q50" $thumbSize2x) -}}
+                         {{- if lt $finalThumb1x.Height $thumbSize1x -}}
+                             {{- $finalThumb1x = $image.Resize (printf "x%d webp q60" $thumbSize1x) -}}
+                             {{- $finalThumb2x = $image.Resize (printf "x%d webp q50" $thumbSize2x) -}}
+                         {{- end -}}
 
-                         src="{{ $thumb1.RelPermalink | safeURL }}"
-                         srcset="{{ $thumb1.RelPermalink | safeURL }} 1x, {{ $thumb2.RelPermalink | safeURL }} 2x"
-                     {{- end -}}><br>
-                <span>{{- $imageName | replaceRE " - " "&nbsp;&#8209; " | safeHTML -}}</span>
+                        {{- $hash := substr (md5 $image.RelPermalink) 0 8 -}}
+                        {{- $thumbDir := path.Dir $image.RelPermalink -}}
+                            
+                         {{- $thumb1x := $finalThumb1x | resources.Copy (print $thumbDir "/t/" $hash ".webp") -}}
+                         {{- $thumb2x := $finalThumb2x | resources.Copy (print $thumbDir "/t/" $hash "@2x.webp") -}}
+
+                         src="{{- $thumb1x.RelPermalink | safeURL -}}"
+                         srcset="{{- $thumb1x.RelPermalink | safeURL }} 1x,
+                                 {{- $thumb2x.RelPermalink | safeURL }} 2x"
+                     {{- end -}}>
+                
+                {{- /* Image Caption, for sizes M and up */ -}}
+                {{- if ne $size "s" -}}
+                    <br><span>{{- $imageName | replaceRE " - " "&nbsp;&#8209; " | safeHTML -}}</span>
+                {{- end -}}
             </a>
         {{- end -}}
     {{- end }}
 </div>
 
 
-{{- /* Gallery Filter */ -}}
-{{- $galleryFilterJS := resources.Get "js/gallery-filter.js" | resources.Minify -}}
-<script src="{{ print $galleryFilterJS.RelPermalink "?" now.Unix }}" defer></script>
+{{- /* Gallery Filter JS, for sizes M and up */ -}}
+{{- if ne $size "s" -}}
+    {{- $galleryFilterJS := resources.Get "js/gallery-filter.js" | resources.Minify -}}
+    <script src="{{ print $galleryFilterJS.RelPermalink "?" now.Unix }}" defer></script>
+{{- end -}}
 
 {{- /* PhotosSwipe CSS */ -}}
 {{- $photoSwipeCSS := (resources.Get "css/photoswipe.css" | resources.Minify).RelPermalink -}}

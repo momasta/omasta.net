@@ -13,15 +13,19 @@ My Personal Website
 - [Thanks](#thanks)
 
 ## Features
-* Multi-lingual
+* Multi-lingual site
 * Automatic light/dark mode switching
 * [Image gallery](#image-gallery) with [Photoswipe](https://github.com/dimsemenov/PhotoSwipe)
-* A single RSS feed per language (type: posts)
+* A single RSS feed per language (limited to type: posts)
 * Custom Hugo theme based on [vimux/blank](https://github.com/vimux/blank/)
 * Valid [HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmarek.omasta.net%2F), [CSS](https://jigsaw.w3.org/css-validator/validator?uri=marek.omasta.net&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) and [RSS](https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fmarek.omasta.net%2Fposts%2Findex.xml).
 * Optimised for Google's [PageSpeed Insights](https://pagespeed.web.dev)
 
 ## Dependencies
+- Hugo
+  - Installed locally as a CLI tool.
+  - Builds the site.
+  - See [gohugoio/hugo on GitHub – Installation](https://github.com/gohugoio/hugo?tab=readme-ov-file#installation)
 - PhotoSwipe
   - Downloaded manually to [assets/](assets):
     - [photoswipe.css](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe.css)
@@ -33,11 +37,25 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
 
 * Source: [themes/blank/layouts/shortcodes/gallery.html](themes/blank/layouts/shortcodes/gallery.html)
 * Live Demo: [omasta.net/memes/](https://omasta.net/memes/)
+* Live Demo (`.size-s`): [omasta.net/posts/tech-spurt-quotes/](https://omasta.net/posts/tech-spurt-quotes/)
 
 ### Usage
 * In a Markdown file:  
 `{{< gallery "memes" >}}`
-* Takes a single parameter: name of a subdirectory in [assets/images/](assets/images)
+* Arguments:
+  * Path (optional)
+    * Where to look for images
+    * Supports: subpath of [assets/images/](assets/images)
+    * Default: `"/"`
+  * Class (optional)
+    * Additional classes for `.gallery`
+    * Space-separated, just like in HTML's `class=""` attribute.
+    * Supports:
+      * `size-s`: smaller thumbnails, no gallery filter input.
+    * Default: `""`
+  * Sort By (optional)
+    * Supports: `"date"`, `"name"`
+    * Default: `"date"`
 
 ### Modifications and Added Features
 * Replaced Lightbox2 with [Photoswipe](https://github.com/dimsemenov/PhotoSwipe).

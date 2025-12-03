@@ -6,11 +6,12 @@
 #   - curl
 #   - beautifulsoup4 → pip install beautifulsoup4
 #
-# Fetch and update Markdown link titles
+# Fetch and update Markdown link titles: [text](url "title") or [text](url 'title')
 #
 # Arguments:
 #   --text-is-url            Update links whose text is a URL, even if no URL in link text.
 #   --update-existing-titles Update all http/https links, replacing existing titles.
+#   --lang                   Set preferred language for the link scraper, default: en
 #   (none)                   Update every http/https link that has no title.
 #
 # Examples:
@@ -25,14 +26,14 @@ import html
 from typing import Iterator, Tuple, List, Optional
 from bs4 import BeautifulSoup
 
-def fetch_page_title(url: str) -> Optional[str]:
+def fetch_page_title(url: str, lang: str) -> Optional[str]:
     try:
         html_data = subprocess.check_output(
             [
                 "curl",
                 "-Ls",
                 "-H",
-                "Accept-Language: en",
+                f"Accept-Language: {lang}",
                 "--compressed",
                 url,
             ],
@@ -57,9 +58,9 @@ def should_update(text: str, has_title: bool, mode: str) -> bool:
         return not has_title
     return False
 
-# Parser for Markdown links: finds [text](url "title")
+# Parser for Markdown links: finds [text](url "title") or [text](url 'title')
 def parse_links(markdown_text: str) -> Iterator[Tuple[int, int, str, Optional[str], Optional[str]]]:
-    # Scan the text to find Markdown link patterns: [text](url "title")
+    # Scan the text to find Markdown link patterns: [text](url "title") or [text](url 'title')
     pos, text_length = 0, len(markdown_text)
 
     while pos < text_length:
@@ -98,14 +99,21 @@ def parse_links(markdown_text: str) -> Iterator[Tuple[int, int, str, Optional[st
             pos += 1
             continue
 
-        # Extract the content inside parentheses: `url "title"` or just `url`.
+        # Extract the content inside parentheses: `url "title"` or `url 'title'` or just `url`.
         link_block_text = markdown_text[end_bracket_index + 2 : end_parenthesis_index - 1].strip()
         link_url, link_title = None, None
 
-        # Split URL and optional title by the outermost quotes.
-        if '"' in link_block_text:
-            quote_start_index = link_block_text.find('"')
-            quote_end_index = link_block_text.rfind('"')
+        # Split URL and optional title by the outermost matching quote (single or double).
+        quote_start_index = None
+        quote_char = None
+        for i, ch in enumerate(link_block_text):
+            if ch == '"' or ch == "'":
+                quote_start_index = i
+                quote_char = ch
+                break
+
+        if quote_start_index is not None:
+            quote_end_index = link_block_text.rfind(quote_char)
             if quote_end_index > quote_start_index:
                 link_url = link_block_text[:quote_start_index].strip()
                 link_title = link_block_text[quote_start_index + 1 : quote_end_index]
@@ -163,7 +171,22 @@ def print_summary(
 
     print("")
 
-def process_file(path: str, mode: str) -> None:
+def format_link_title_for_markdown(raw_title: str) -> str:
+    title = html.unescape(raw_title.strip())
+
+    # Prefer single-quote delimiter if no single quote inside
+    if "'" not in title:
+        return f"'{title}'"
+
+    # Else prefer double-quote delimiter if no double quote inside
+    if '"' not in title:
+        return f'"{title}"'
+
+    # Both quote types present — worst case: drop double quotes, wrap in double quotes
+    title_without_double = title.replace('"', "")
+    return f'"{title_without_double}"'
+
+def process_file(path: str, mode: str, lang: str) -> None:
     try:
         with open(path, "r", encoding="utf-8") as file_handle:
             file_content = file_handle.read()
@@ -211,20 +234,20 @@ def process_file(path: str, mode: str) -> None:
     edits: List[Tuple[int, int, str]] = []
 
     # Single progress line that updates in place
-    print(f"- {path}  {processed}/{total_candidates} processed", end="\r", flush=True)
+    print(f"{path}  {processed}/{total_candidates} processed", end="\r", flush=True)
 
     for (start_index, end_index, link_text, link_url, link_title) in candidates:
-        fetched_title = fetch_page_title(link_url)
+        fetched_title = fetch_page_title(link_url, lang)
         if fetched_title is None:
             skipped_fetch_error.append(link_url)
         elif not fetched_title.strip():
             skipped_empty_title.append(link_url)
         else:
-            safe_title = html.unescape(fetched_title)
-            rebuilt_link = f'[{link_text}]({link_url} "{safe_title}")'
+            formatted_title = format_link_title_for_markdown(fetched_title)
+            rebuilt_link = f'[{link_text}]({link_url} {formatted_title})'
             edits.append((start_index, end_index, rebuilt_link))
         processed += 1
-        print(f"- {path}  {processed}/{total_candidates} processed", end="\r", flush=True)
+        print(f"{path}  {processed}/{total_candidates} processed", end="\r", flush=True)
 
     # Finish progress line with newline
     print("")
@@ -249,26 +272,37 @@ def process_file(path: str, mode: str) -> None:
     except Exception:
         pass
 
-def walk_path(path: str, mode: str) -> None:
+def walk_path(path: str, mode: str, lang: str) -> None:
     if os.path.isfile(path):
         if path.endswith(".md"):
-            process_file(path, mode)
+            process_file(path, mode, lang)
         return
     for root, _, files in os.walk(path):
         for name in files:
             if name.endswith(".md"):
-                process_file(os.path.join(root, name), mode)
+                process_file(os.path.join(root, name), mode, lang)
 
 def main(argument_values: List[str]) -> None:
     mode = "all"
-    args = [a for a in argument_values if not a.startswith("--")]
-    if "--text-is-url" in argument_values:
-        mode = "text-is-url"
-    if "--update-existing-titles" in argument_values:
-        mode = "update-existing-titles"
+    lang = "en"
+
+    args: List[str] = []
+    for argument in argument_values:
+        if argument == "--text-is-url":
+            mode = "text-is-url"
+            continue
+        if argument == "--update-existing-titles":
+            mode = "update-existing-titles"
+            continue
+        if argument.startswith("--lang="):
+            lang = argument.split("=", 1)[1]
+            continue
+        if not argument.startswith("--"):
+            args.append(argument)
+
     targets = args if args else ["."]
-    for t in targets:
-        walk_path(t, mode)
+    for target in targets:
+        walk_path(target, mode, lang)
 
 if __name__ == "__main__":
     main(sys.argv[1:])

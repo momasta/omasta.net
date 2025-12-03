@@ -6,9 +6,11 @@
         <main>
             <div class="card">
                 <article>
-                    <h1>{{ .Title }}</h1>
+                    <h1>
+                        <a href="{{ .RelPermalink }}" rel="bookmark" aria-current="page">{{ .Title }}</a>
+                    </h1>
 
-                    <ul class="links direction-row size-small">
+                    <ul class="links direction-row size-s">
                         {{- range .Paginator.Pages -}}
                             {{- .Render "summary-simple" -}}
                         {{- end -}}

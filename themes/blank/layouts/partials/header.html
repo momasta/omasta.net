@@ -1,22 +1,22 @@
 {{- /*
-    assets/sass/layout/_header.scss
+    Stylesheet: assets/sass/layout/_header.scss
 */ -}}
 
 <header>
     <div class="bar">
-        <button class="style-plain size-small toggle-theme-dark"
+        <button class="style-plain size-s toggle-theme-dark"
                 title="{{ T "switch-theme-dark" }}"
                 type="button">
 			<span class="icon">
-				{{ readFile "themes/blank/static/images/icons/moon.svg" | safeHTML }}
+				{{ readFile "static/images/icons/moon.svg" | safeHTML }}
 			</span>
         </button>
 
-        <button class="style-plain size-small toggle-theme-light"
+        <button class="style-plain size-s toggle-theme-light"
                 title="{{ T "switch-theme-light" }}"
                 type="button">
 			<span class="icon">
-				{{ readFile "themes/blank/static/images/icons/sun.svg" | safeHTML }}
+				{{ readFile "static/images/icons/sun.svg" | safeHTML }}
 			</span>
         </button>
 

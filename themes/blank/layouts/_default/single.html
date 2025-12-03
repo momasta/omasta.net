@@ -3,12 +3,15 @@
     {{- partial "header" . -}}
 
     {{ $datePublished := .PublishDate.Format .Site.Params.dateFormat | safeHTML }}
+    {{ $datePublishedISO := .PublishDate.Format .Site.Params.dateFormatISO | safeHTML }}
     {{ $dateModified := .Lastmod.Format .Site.Params.dateFormat | safeHTML }}
+    {{ $dateModifiedISO := .Lastmod.Format .Site.Params.dateFormatISO | safeHTML }}
 
+    {{/* Append date modififed to multi-line title="", if modified since publish date */}}
     {{ $dateModifiedText := "" }}
     {{ if .Lastmod }}
         {{ if ne $dateModified $datePublished }}
-            {{- $dateModifiedText = printf "\n%s %s" (i18n "last-mod-short") $dateModified -}}
+            {{- $dateModifiedText = printf "\n%s %s" (T "last-mod-short") $dateModified -}}
         {{ end }}
     {{ end }}
 
@@ -28,8 +31,14 @@
                            class="tag">&#35;{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}</a>
                     {{- end -}}
 
-                    <time datetime="{{ .PublishDate.Format .Site.Params.dateFormatISO | safeHTML }}"
-                          title="{{ T "published" }} {{ $datePublished }}{{ $dateModifiedText }}">{{- $datePublished -}}</time>
+                    <time datetime="{{- cond $dateModifiedText $dateModifiedISO $datePublishedISO -}}"
+                          title="{{ T "published" }} {{ $datePublished }}{{ $dateModifiedText }}">
+                        {{- if $dateModifiedText -}}
+                            {{- $dateModifiedText -}}
+                        {{- else -}}
+                            {{- $datePublished -}}
+                        {{- end -}}
+                    </time>
 
                     {{ with .Params.main_content_id }}
                         <p>&#x2193; <a href="#{{ . }}">{{ T "skip-to-main-content" }}</a></p>
@@ -39,8 +48,14 @@
                         {{ .Content }}
                         {{- if .Lastmod -}}
                             {{- if ne $dateModified $datePublished -}}
-                                <p>{{ T "last-mod" }}
-                                    <time datetime="{{ .Lastmod.Format .Site.Params.dateFormatISO | safeHTML }}">
+                                <p>
+                                    {{- T "published" }}
+                                    <time datetime="{{ $datePublishedISO }}">
+                                        {{- $datePublished -}}
+                                    </time><br>
+                                    
+                                    {{- T "last-mod" }}
+                                    <time datetime="{{ $dateModifiedISO }}">
                                         {{- $dateModified -}}
                                     </time>
                                 </p>
