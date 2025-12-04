@@ -1,0 +1,11 @@
+pre {
+  margin: 0.25rem 0;
+  padding: 1em;
+  background-color: var(--color-site-bg);
+  border-radius: 8px;
+  overflow-y: scroll;
+}
+
+pre + pre {
+  margin-top: 0.5rem;
+}

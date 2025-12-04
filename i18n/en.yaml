@@ -14,6 +14,8 @@ copy-link-heading: 'Copy link to this heading'
 last-mod-short: 'Updated:'
 last-mod: 'Last updated:'
 published: 'Published:'
+table-of-contents: "Table of Contents"
+table-of-contents-id: "table-of-contents" 
 skip-to-main-content: 'Skip to main content'
 
 ## Layout: Sidebar

@@ -11,7 +11,7 @@
 # Arguments:
 #   --text-is-url            Update links whose text is a URL, even if no URL in link text.
 #   --update-existing-titles Update all http/https links, replacing existing titles.
-#   --lang                   Set preferred language for the link scraper, default: en
+#   --lang=cs                Set preferred language for the link scraper, default: en
 #   (none)                   Update every http/https link that has no title.
 #
 # Examples:
@@ -19,7 +19,16 @@
 #   python3 update_link_titles.py --text-is-url content/
 #   python3 update_link_titles.py --update-existing-titles /path/to/*.md
 
+# The user will be warned about potentially broken links:
+SUSPICIOUS_TITLE_PATTERNS = [
+    r"^\h?- YouTube",
+    r"Verify.+Human",
+    r"please wait",
+    r"(404|not found)",
+]
+
 import os
+import re
 import sys
 import subprocess
 import html
@@ -131,6 +140,12 @@ def parse_links(markdown_text: str) -> Iterator[Tuple[int, int, str, Optional[st
         # Continue scanning after the closing parenthesis of the current link.
         pos = end_parenthesis_index
 
+def is_suspicious_title(title_text: str) -> bool:
+    for pattern in SUSPICIOUS_TITLE_PATTERNS:
+        if re.search(pattern, title_text, re.IGNORECASE):
+            return True
+    return False
+
 def print_summary(
     path: str,
     total_candidates: int,
@@ -138,6 +153,7 @@ def print_summary(
     skipped_malformed: List[str],
     skipped_empty_title: List[str],
     skipped_fetch_error: List[str],
+    suspicious_title_warnings: List[str],
     mode: str,
 ) -> None:
     print(f"{path}")
@@ -155,6 +171,12 @@ def print_summary(
         print(f"  - Fetch failures: {len(skipped_fetch_error)}")
         for url in skipped_fetch_error:
             print(f"    - {url}")
+            
+    # These were updated, but we warn the user to check them
+    if suspicious_title_warnings:
+        print(f"  - Suspicious titles: {len(suspicious_title_warnings)}")
+        for title in suspicious_title_warnings:
+            print(f"    - \"{title}\"")
 
     if skipped_name_mode_count:
         if mode == "text-is-url":
@@ -201,6 +223,7 @@ def process_file(path: str, mode: str, lang: str) -> None:
     skipped_malformed: List[str] = []
     skipped_fetch_error: List[str] = []
     skipped_empty_title: List[str] = []
+    suspicious_title_warnings: List[str] = []
 
     candidates: List[Tuple[int, int, str, str, Optional[str]]] = []
 
@@ -227,7 +250,7 @@ def process_file(path: str, mode: str, lang: str) -> None:
     total_candidates = len(candidates)
 
     if total_candidates == 0:
-        print_summary(path, total_candidates, skipped_name_mode_count, skipped_malformed, skipped_empty_title, skipped_fetch_error, mode)
+        print_summary(path, total_candidates, skipped_name_mode_count, skipped_malformed, skipped_empty_title, skipped_fetch_error, suspicious_title_warnings, mode)
         return
 
     processed = 0
@@ -243,16 +266,21 @@ def process_file(path: str, mode: str, lang: str) -> None:
         elif not fetched_title.strip():
             skipped_empty_title.append(link_url)
         else:
+            # Check for suspicious titles, warn but proceed with update
+            if is_suspicious_title(fetched_title):
+                suspicious_title_warnings.append(fetched_title)
+
             formatted_title = format_link_title_for_markdown(fetched_title)
             rebuilt_link = f'[{link_text}]({link_url} {formatted_title})'
             edits.append((start_index, end_index, rebuilt_link))
+        
         processed += 1
         print(f"{path}  {processed}/{total_candidates} processed", end="\r", flush=True)
 
     # Finish progress line with newline
     print("")
 
-    print_summary(path, total_candidates, skipped_name_mode_count, skipped_malformed, skipped_empty_title, skipped_fetch_error, mode)
+    print_summary(path, total_candidates, skipped_name_mode_count, skipped_malformed, skipped_empty_title, skipped_fetch_error, suspicious_title_warnings, mode)
 
     if not edits:
         return

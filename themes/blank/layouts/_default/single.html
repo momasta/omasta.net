@@ -34,7 +34,7 @@
                     <time datetime="{{- cond $dateModifiedText $dateModifiedISO $datePublishedISO -}}"
                           title="{{ T "published" }} {{ $datePublished }}{{ $dateModifiedText }}">
                         {{- if $dateModifiedText -}}
-                            {{- $dateModifiedText -}}
+                            {{- T "last-mod-short" }} {{ $dateModified -}}
                         {{- else -}}
                             {{- $datePublished -}}
                         {{- end -}}

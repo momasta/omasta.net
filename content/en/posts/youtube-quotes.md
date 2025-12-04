@@ -8,7 +8,8 @@ keywords:
     - captions
     - funny
     - YT
-lastmod: 2025-11-12T09:52:29+01:00
+lastmod: 2025-12-04T19:51:23+01:00
+main_content_id: "ashens"
 slug:
 tags:
     - quotes
@@ -22,10 +23,12 @@ Bits I&nbsp;found funny or&nbsp;interesting, from all sorts of&nbsp;videos.
 Most come with a timestamp in the URL.  
 Might be useful to people who run clips or compilation channels.
 
-There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< /i18n-link >}}.
-
 ## See Also
+* More quotes in the {{< i18n-link lang="cs" >}}Czech version of this article{{< /i18n-link >}}
+* [Anomaly Quotes]({{< relref "posts/anomaly-quotes.md" >}})  
 * [Tech Spurt Quotes]({{< relref "posts/tech-spurt-quotes.md" >}})
+
+{{< TableOfContents >}}
 
 ## Ashens
 
@@ -60,8 +63,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
       [https://youtu.be/NgrgKwP0Ndo?t=1514](https://youtu.be/NgrgKwP0Ndo?t=1514 "We Tried Japanese Game Show Challenges - YouTube")
 
 ## Filthy Frank
-
-### [TVFilthyFrank](https://www.youtube.com/@TVFilthyFrank/videos "TVFilthyFrank - YouTube"), [DizastaMusic](https://www.youtube.com/@DizastaMusic/videos "DizastaMusic - YouTube"), [TooDamnFilthy](https://www.youtube.com/@TooDamnFilthy/videos "TooDamnFilthy - YouTube")
+[TVFilthyFrank](https://www.youtube.com/@TVFilthyFrank/videos "TVFilthyFrank - YouTube"), [DizastaMusic](https://www.youtube.com/@DizastaMusic/videos "DizastaMusic - YouTube"), [TooDamnFilthy](https://www.youtube.com/@TooDamnFilthy/videos "TooDamnFilthy - YouTube")
 
 * [Song Parodies | Filthy Frank Wiki](https://web.archive.org/web/20250127100842/https://filthy-frank.fandom.com/wiki/Song_Parodies "Song Parodies | Filthy Frank Wiki | Fandom")
 * Your existence is god’s failure  
@@ -76,8 +78,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
   [https://youtu.be/qqwd79cZs8s?t=1267](https://youtu.be/qqwd79cZs8s?t=1267 "How many of the 272 London underground stations can I name? - YouTube")
 
 ## h3h3Productions
-
-### Ethan Klein
+Ethan Klein
 
 * "Game assassins", what the fuck. That made me, like, React™. Almost fucking vomited, dude. Are you a game assassin,
   dude? You probably fuckin' SICK! (SIIICK)  
@@ -108,8 +109,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
   [https://youtu.be/LwOITqr_fz4?t=913](https://youtu.be/LwOITqr_fz4?t=913 "A Bot that Scams People - YouTube")
 
 ## Podel
-
-### Former BlazinSkrubs
+(Former BlazinSkrubs)
 
 * Steklovata - Novi God (Star Wars Episode IV: A New Meme)  
   [https://youtu.be/-xLQWs5qzv8?t=52s](https://youtu.be/-xLQWs5qzv8?t=52s "Star Wars Episode IV: A New Meme - YouTube")
@@ -123,8 +123,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
   [https://youtu.be/W-9Vsi8nFwI?t=148shttps://youtu.be/EZYhDpA3GyY?t=48s](https://youtu.be/W-9Vsi8nFwI?t=148shttps://youtu.be/EZYhDpA3GyY?t=48s "大聲笑Friends大聲笑 Episode 4: Ross Eats Uranium - YouTube")
 
 ## Pengest Munch
-
-### by Chicken Connoisseur, CNSR
+by Chicken Connoisseur, CNSR
 
 * Assembly on point, they just transplanted it onto the burger  
   [https://youtu.be/jIYjGNq9zO8](https://youtu.be/jIYjGNq9zO8 "The Pengest Munch Ep. 8: Miami Fried Chicken (East Croydon) - YouTube")
@@ -137,8 +136,7 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
   [https://youtu.be/YmgGiQjayKU?t=35s](https://youtu.be/YmgGiQjayKU?t=35s "China made a mobile version of GTA...(it's bad) - YouTube")
 
 ## TheReportOfTheWeek
-
-### Reviewbrah
+Reviewbrah
 
 * Dayum DAYUM DAYUM (damn damn damn, Twinkies)  
   [https://youtu.be/89tAhxDxzlw?t=280](https://youtu.be/89tAhxDxzlw?t=280 "TheReportOfTheWeek's Random Clips - YouTube")
@@ -164,10 +162,9 @@ There's more in the {{< i18n-link lang="cs" >}}Czech version of this article{{< 
   Marek Omasta
 * The most annoying Indian accent/voice I’ve ever heard  
   [https://youtu.be/PmHT3GXo6tY](https://youtu.be/PmHT3GXo6tY "How to Download and Install iOS 18 Without Any Data Loss - YouTube")
-
-## Zucc
-
-### Mark Zuckerberg
+ 
+## Mark Zuckerberg
+(Zucc)
 
 * Half man, half robot  
   [https://youtu.be/H-YMOhap3ZA?t=0](https://youtu.be/H-YMOhap3ZA?t=0 "Apple Vision Pro Fanboy Tries Meta Quest 3 - I Was Shocked. - YouTube")

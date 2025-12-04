@@ -6,9 +6,10 @@ draft: false
 description: ""
 summary: ""
 keywords: []
+main_content_id: ""
 slug: ""
 authors:
-  - "{{ .Site.Params.authorDefault }}"
+  - {{ .Site.Params.authorDefault }}
 tags: []
 translationKey: ""
 type: posts

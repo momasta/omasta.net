@@ -14,6 +14,8 @@ copy-link-heading: 'Zkopírovat odkaz na tento nadpis'
 last-mod-short: 'Upraveno:'
 last-mod: 'Datum poslední úpravy:'
 published: 'Zveřejněno:'
+table-of-contents: "Obsah"
+table-of-contents-id: "obsah"
 skip-to-main-content: 'Přeskočit na hlavní obsah'
 
 ## Layout: Sidebar

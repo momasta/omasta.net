@@ -13,8 +13,8 @@ keywords:
     - British dialect
     - funny
     - wiki
-lastmod: 2025-11-22T17:36:23+01:00
-main_content_id: table-of-contents 
+lastmod: 2025-12-04T19:51:23+01:00
+main_content_id: table-of-contents
 slug:
 tags:
     - quotes
@@ -22,15 +22,15 @@ title: "Tech Spurt Quotes"
 type: posts
 ---
 
-Here are quotes and transcripts from [Tech&nbsp;Spurt&#39;s](https://youtube.com/@TechSpurt "Tech Spurt - YouTube") YouTube videos.  
+Here are quotes and transcripts from [Tech&nbsp;Spurt's](https://youtube.com/@TechSpurt "Tech Spurt - YouTube") YouTube videos.  
 He's my favourite tech reviewer, potty mouth, and an award-winning and best-selling [crime&nbsp;writer](https://www.amazon.co.uk/stores/author/B005UGALE4 "Amazon.co.uk: Chris Barraclough: books, biography, latest update") and journalist.
 
 He's authentic, down to earth, and speaks a very colourful [northern&nbsp;English&nbsp;dialect](https://en.wikipedia.org/wiki/Mackem "Mackem - Wikipedia").  
 As an Apple fanboy, I don't really care much about most of the news and&nbsp;reviews.  
 I watch them for the comedy.
 
-I think I've watched every episode of [Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70&si=TnyhB-a9m7tDd_Jl "Tech Spurt Weekly - YouTube") (66&nbsp;hours 34&nbsp;minutes),  
-along with other vids, and&nbsp;every single&nbsp;[Recombu&nbsp;Quickie](https://youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D "Recombu Quickies - YouTube") (2&nbsp;hours 45&nbsp;minutes),  
+I think I've watched every episode of [Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70&si=TnyhB-a9m7tDd_Jl "Tech Spurt Weekly - YouTube") (66&nbsp;hours&nbsp;34&nbsp;minutes),  
+along with other vids, and&nbsp;every single&nbsp;[Recombu&nbsp;Quickie](https://youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D "Recombu Quickies - YouTube") (2&nbsp;hours&nbsp;45&nbsp;minutes),  
 from a&nbsp;review site he&nbsp;used to&nbsp;work&nbsp;for.  
 
 Below, you'll find bits I found funny or worth sharing:  
@@ -40,34 +40,10 @@ Original expressions (especially&nbsp;[similes](#similes)), jokes, responses to 
 
 ## See Also
 * [YouTube Quotes]({{< relref "posts/youtube-quotes.md" >}}) (from other creators)
+* [Search Tech Spurt Captions on Filmot](https://filmot.com/search/%22%22/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& "Filmot - Search in YouTube captions and subtitles")
+* [The Spurt Hole](https://www.youtube.com/@SpurtHole 'The Spurt Hole - YouTube') (Tech Spurt's second channel)
 
-## Table of Contents
-
-* [Tech Spurt Vocabulary](#vocabulary)
-  * [Basics](#basics)
-  * [Drunk (Synonyms)](#drunk-synonyms)
-  * [Expletives](#expletives)
-  * [Give a …](#give-a-)
-  * [Hung Over](#hung-over)
-  * [Similes](#similes)
-  * [Units of Measurement](#units-of-measurement)
-  * [Others](#others)
-* [Gags](#gags)
-* [Intros](#intros)
-* [Jingles](#jingles)
-* [Out of Context Material](#out-of-context)
-* [Recombu](#recombu-quickies)
-* [Which Crap Celebrity Do I Look Like This Week?](#crap-celebrity)
-* [Other Quotes](#other-quotes)
-  * [Your Mum](#your-mum)
-  * [Your Ex](#your-ex)
-  * [Apple / iPhone](#apple-iphone)
-  * [Elon Musk](#elon-musk)
-  * [Zuckerberg](#zuckerberg)
-  * [School Kids in Multiplayer Games](#school-kids-in-multiplayer-games)
-  * [Tablets with Rear Cameras](#tablets-with-rear-cameras)
-  * [Viewer Comments](#viewer-comments)
-  * [The Rest](#the-rest)
+{{< TableOfContents >}}
 
 ## Tech Spurt Vocabulary {#vocabulary}
 ### Basics
@@ -140,7 +116,7 @@ Original expressions (especially&nbsp;[similes](#similes)), jokes, responses to 
 * [sweet baby tap-dancing mother of all fuck](https://youtu.be/O9jmuQY5P4g?t=759 'Asus Zenfone 10, R.I.P. Mini Mobiles? | TSW153 - YouTube')
 * What the&nbsp;[everlasting](https://youtu.be/NmRBMWZifQk?t=737 'Nothing Phone 3...Pro? | TSW223 - YouTube')&nbsp;fuck is that thing?
 
-### Fuck All
+### Fuck All (Synonyms)
 * bollocks all
 * bugger all
 * naff all

@@ -3,7 +3,7 @@
 <li class="post-preview">
     <a href="{{ .RelPermalink }}">{{ .Title }}<br>
         <span class="post-summary">
-            {{- .Summary | plainify | truncate 160 "…" -}}
+            {{- .Summary | plainify | truncate 154 "…" -}}
         </span></a>
 
     {{- range .Params.tags -}}

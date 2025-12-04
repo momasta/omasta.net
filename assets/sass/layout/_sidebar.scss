@@ -10,6 +10,10 @@ aside {
   flex: 1 0 auto;
   flex-direction: column;
   min-width: 255px;
+  
+  .card {
+    flex-grow: 0;
+  }
 }
 
 @mixin mq-min-medium-aside {

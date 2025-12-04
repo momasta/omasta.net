@@ -12,7 +12,8 @@ keywords:
     - přepisy videí
     - titulky
     - humor
-lastmod: 2025-11-12T09:53:19+01:00
+lastmod: 2025-12-04T19:51:23+01:00
+main_content_id: "carymaryfuck"
 slug: hlasky-z-youtube
 tags:
     - quotes
@@ -21,12 +22,16 @@ type: posts
 ---
 
 Moje sbírka českých a&nbsp;slovenských hlášek, citací, klipů a&nbsp;krátkých přepisů z&nbsp;YouTube.
-Momenty, které mě pobavily nebo něčím zaujaly.
+Momenty, které mě pobavily nebo zaujaly.
 
 Skoro všechny mají v URL časovou značku.  
 Mohlo by se hodit tvůrcům sestřihů.
 
-Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-link >}}.
+## Viz také 
+* Další hlášky v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-link >}}
+* [Napálim tě ty kanále jeden komunistickej]({{< relref "posts/napalim-te-ty-kanale.md" >}})
+
+{{< TableOfContents >}}
 
 ## CaryMaryFuck
 
@@ -35,17 +40,15 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
 * TV Regina | Televize s Duší Trilobitů  
   [https://youtu.be/PuR96uBXByg](https://youtu.be/PuR96uBXByg "TV Regina | Televize S Duší Trilobitů - YouTube")
 
-## Česká policejní akademie
+## Česká policejní akademie {#ceska-policejni-akademie}
 
-### Chleba se sádlem
-
+### Chleba se sádlem {#chleba-se-sadlem}
 * [https://youtu.be/1n2OUU6AVg0?t=1895](https://youtu.be/1n2OUU6AVg0?t=1895 "Česká policejní akademie - YouTube")
 * [https://youtu.be/1n2OUU6AVg0?t=2027](https://youtu.be/1n2OUU6AVg0?t=2027 "Česká policejní akademie - YouTube")
 * [https://youtu.be/1n2OUU6AVg0?t=3656](https://youtu.be/1n2OUU6AVg0?t=3656 "Česká policejní akademie - YouTube")
 * [https://youtube.com/clip/UgkxWQVIpGEeZCOBCdRR9GDNLh0GhaOdynyX](https://youtube.com/clip/UgkxWQVIpGEeZCOBCdRR9GDNLh0GhaOdynyX "✂️ Co jste to hodil za balíček do koše, cože? - YouTube")
 
-## Klidné městečko
-
+## Klidné městečko {#klidne-mestecko}
 * Klidné městečko, kde tisíce lidí šukají v živé hře  
   Vytvořte si postavu  
   Ponořte se do neomezeného světa  
@@ -54,30 +57,27 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
   [https://youtu.be/CsAwbm36AEs](https://youtu.be/CsAwbm36AEs "Klidné městečko - YouTube")
 
 ## Kluci z Prahy
-
-### Janek Rubeš, Honest Guide
+Janek Rubeš, Honest Guide
 
 * Coby trdelníkem dohodil  
   [https://youtu.be/9LVT6IIwAaM?t=105](https://youtu.be/9LVT6IIwAaM?t=105 "Neuvěřitelná reakce města na naše video - YouTube")
 
-## Mikýř
-
-### Mikýřova úžasná pouť internetem, Tohle není MÚPI
+## Mikýř {#mikyr}
+Mikýřova úžasná pouť internetem, Tohle není MÚPI
 
 * Bolševický židozednáři  
   [https://youtu.be/goVM92KzkE8?t=360](https://youtu.be/goVM92KzkE8?t=360 "ALLATRA DLC s Patrikem Kořenářem 👀 - YouTube")
 * Sekta sekta sekta sekta sekta sekta  
   [https://youtube.com/clip/UgkxSh0qShNVUBSyBQvi1t6Y0ubDc2pXyepa](https://youtube.com/clip/UgkxSh0qShNVUBSyBQvi1t6Y0ubDc2pXyepa "✂️ Mikýř – Sekta sekta sekta sekta sekta sekta - YouTube")
 
-## Pan Jaroným
+## Pan Jaroným {#pan-jaronym}
 
-* Napálim tě ty kanále jeden komunistickej
+* [Napálim tě ty kanále jeden komunistickej]({{< relref "posts/napalim-te-ty-kanale.md" >}}) (kompletní přepis videa)
 * Jak to, že existujete?  
   [https://youtu.be/MtUqeKlsGKI?t=187](https://youtu.be/MtUqeKlsGKI?t=187 "HRDINA ANTIKOMUNISTA V DAVU KOMUNISTŮ - YouTube")
 
 ## petangames
-
-### PTNGMS, Peťan Esterka
+PTNGMS, Peťan Esterka
 
 * Já su vyřízený jak poštovní poukázka.
 * Mohl bych sakra vědět, kde se rožíhá na hajzlu?  
@@ -89,7 +89,7 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
 * Rage sestřih z Mafie  
   [https://youtu.be/kTQh3u0si4E?t=766s](https://youtu.be/kTQh3u0si4E?t=766s "MAFIA: Extrémní Jízda | BUDKY, JINÁ DIMENZE, RAKETOVÁ FORMULE | by PeŤan | #04 - YouTube")
 
-### Pád třetí říše [DABING]
+### Pád třetí říše [DABING] {#pad-treti-rise-dabing}
 
 * Nevíte náhodou, kde se rožíhá na hajzlu?  
   [https://youtube.com/clip/Ugkx1hmSDDvlW8wdPgJdjFyYgMNCAfGaWodm](https://youtube.com/clip/Ugkx1hmSDDvlW8wdPgJdjFyYgMNCAfGaWodm "✂️ Nevíte náhodou, kde se rožíhá na hajzlu? - YouTube")
@@ -98,8 +98,7 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
   [https://youtu.be/RhyswzQZdqI?t=154s](https://youtu.be/RhyswzQZdqI?t=154s "Pád třetí říše [DABING] 4 - YouTube")
 
 ## Rio Lokok
-
-### Minecraft - Part 1 - Enderman zabíjí, creeper vybouchává!
+Minecraft - Part 1 - Enderman zabíjí, creeper vybouchává!
 
 * Takže nazdar lidi, já vás tu vítám u prvního partu na Minecraft, a jak už můžete vidět, mám tady... hradby. A teď mám
   nedostavěnej chrám, já vám tento svět dám... ke stahnutí.  
@@ -109,12 +108,12 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
 * Tady budu stát, nebo ...?  
   [https://youtu.be/BirncROw_1c?t=832](https://youtu.be/BirncROw_1c?t=832 "Minecraft - Part 1 - Enderman zabíjí,creeper vybouchává! - YouTube")
 
-## S.O.S. – Farkašovci
+## S.O.S. – Farkašovci {#sos-farkasovci}
 
 * Neverím jak ten zmizól  
   [https://youtu.be/2JxW8S7ZKRE?t=174s](https://youtu.be/2JxW8S7ZKRE?t=174s "S.O.S. - Farkašovci 1 - YouTube")
 
-### S.O.S. – 61. diel (sen)
+### S.O.S. – 61. diel (sen) {#sos-61-diel-sen}
 
 * Bratislavský hrad spišský
 * Ja som na tomto hrade král bol ja som tu vládol král bol vládol ja.
@@ -125,7 +124,7 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
   Mám vás všeckých veľmi rád a máte v mojom srdci teplé miesto. Dúfam, že som k vám dost obozretný.  
   [https://youtu.be/hR6HSgK7d5I?t=962](https://youtu.be/hR6HSgK7d5I?t=962 "S.O.S. - 61. diel (celé časti) - YouTube")
 
-### S.O.S. – 44. diel (vrtuľa)
+### S.O.S. – 44. diel (vrtuľa) {#sos-44-diel-vrtula}
 
 * A keď že já dobre vím, že tebe na srdci leží moja duševná pohoda, ty mi teraz okamžite povíš, že na čo my sme sa my
   dvá sem drbali na kopec dvá.
@@ -134,7 +133,7 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
 * Počúvaj, tu máš desať litríkov, na, hen tá tá tá vrtuľa je naša, a ty choď preč lebo ťa dokúšem do krka, ty!  
   [https://youtu.be/AzRMkRjWhH0?t=1035](https://youtu.be/AzRMkRjWhH0?t=1035 "S.O.S. - 44. diel (celé časti) - YouTube")
 
-### S.O.S. – 78. diel (biznis s drevom, aktivista)
+### S.O.S. – 78. diel (biznis s drevom, aktivista) {#sos-78-diel-biznis-s-drevom-aktivista}
 
 * My si lesy nedáme, vaše kecy poznáme!
 * Toto je problém? Šak vytiahnem kvér a dám ho dole, sedláka prírodného!
@@ -149,7 +148,7 @@ Další najdete v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-l
 * Tady Gavin: Kingdom Come: Deliverance [kingdom kam deliverenc]  
   [https://youtu.be/vkeZCqzd7LM?t=47m39s](https://youtu.be/vkeZCqzd7LM?t=47m39s "Tady Gavin - YouTube")
 
-## Ostatní hlášky
+## Ostatní hlášky {#ostatni-hlasky}
 
 * Ahoj, já vás zdravim, Petr Mára, nový video!  
   [https://youtu.be/GSaCAP2GgDs](https://youtu.be/GSaCAP2GgDs "Práce tě musí bavit! Cožeeee? Největší mýtus současnosti... - YouTube")
