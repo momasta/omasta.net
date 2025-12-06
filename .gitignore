@@ -28,3 +28,5 @@ hugo.linux
 !/assets/images/memes/.gitkeep
 /assets/images/tech-spurt/*
 !/assets/images/tech-spurt/.gitkeep
+/assets/images/anomaly/*
+!/assets/images/anomaly/.gitkeep

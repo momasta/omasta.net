@@ -10,7 +10,7 @@
         </fileTransfer>
         <option name="numberOfConnections" value="1" />
       </webServer>
-      <webServer id="69a17bd1-93e6-4923-be9d-17148cead87c" name="omasta.net (No Memes)" url="https://marek.omasta.net">
+      <webServer id="69a17bd1-93e6-4923-be9d-17148cead87c" name="omasta.net (Excluding Images)" url="https://marek.omasta.net">
         <fileTransfer rootFolder="/www/subdom/marek" host="300076.w76.wedos.net" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" connections="1" passiveMode="true" shareSSLContext="true" showHiddenFiles="true" />

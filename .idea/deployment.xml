@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="omasta.net (No Memes)" deleteMissingItems="true" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" confirmBeforeDeletion="false">
+  <component name="PublishConfigData" serverName="omasta.net (Excluding Images)" deleteMissingItems="true" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false" confirmBeforeDeletion="false">
     <option name="confirmBeforeDeletion" value="false" />
     <option name="confirmBeforeUploading" value="false" />
     <serverData>
@@ -11,13 +11,13 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="omasta.net (No Memes)">
+      <paths name="omasta.net (Excluding Images)">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$/public" web="/" />
           </mappings>
           <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/public/images/memes" />
+            <excludedPath local="true" path="$PROJECT_DIR$/public/images/" />
           </excludedPaths>
         </serverdata>
       </paths>

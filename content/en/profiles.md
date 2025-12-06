@@ -26,7 +26,7 @@ layout: simple
 * [Monkeytype](https://monkeytype.com/profile/m.omasta "m.omasta on Monkeytype | A minimalistic, customizable typing test")
 * [Sporcle](https://www.sporcle.com/user/momasta/ "momasta's Sporcle Contributed Quizzes")
 
-## Social  
+## Social
 * [Discord](https://discordapp.com/users/m.omasta "m.omasta on Discord")
 * [Messenger](https://m.me/omastik "omastik (Marek Omasta) on Facebook Messenger")
 * [Reddit - u/m_omasta](https://reddit.com/user/m_omasta "m_omasta on Reddit")

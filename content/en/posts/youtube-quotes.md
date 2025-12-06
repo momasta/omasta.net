@@ -8,7 +8,7 @@ keywords:
     - captions
     - funny
     - YT
-lastmod: 2025-12-04T19:51:23+01:00
+lastmod: 2025-12-06T13:39:46+01:00
 main_content_id: "ashens"
 slug:
 tags:
@@ -65,12 +65,20 @@ Might be useful to people who run clips or compilation channels.
 ## Filthy Frank
 [TVFilthyFrank](https://www.youtube.com/@TVFilthyFrank/videos "TVFilthyFrank - YouTube"), [DizastaMusic](https://www.youtube.com/@DizastaMusic/videos "DizastaMusic - YouTube"), [TooDamnFilthy](https://www.youtube.com/@TooDamnFilthy/videos "TooDamnFilthy - YouTube")
 
-* [Song Parodies | Filthy Frank Wiki](https://web.archive.org/web/20250127100842/https://filthy-frank.fandom.com/wiki/Song_Parodies "Song Parodies | Filthy Frank Wiki | Fandom")
+* [Song Parodies | Filthy Frank Wiki](https://web.archive.org/web/20250127100842/https://filthy-frank.fandom.com/wiki/Song_Parodies 'Song Parodies | Filthy Frank Wiki | Fandom')
 * Your existence is god’s failure  
-  [https://youtu.be/dQGEu3-3BzI?t=227](https://youtu.be/dQGEu3-3BzI?t=227 "LOSER READS HATER COMMENTS 3 - YouTube")
+  [https://youtu.be/dQGEu3-3BzI?t=227](https://youtu.be/dQGEu3-3BzI?t=227 'LOSER READS HATER COMMENTS 3 - YouTube')
 * You know, I’m a pretty handsome guy  
-  [https://youtu.be/5sdtFJvDsuE?t=52](https://youtu.be/5sdtFJvDsuE?t=52 "justgirlythings - YouTube")  
-  [https://youtube.com/clip/UgkxEp5HKd8OhQqN-34SaRQtUWuI6wYYhOCx](https://youtube.com/clip/UgkxEp5HKd8OhQqN-34SaRQtUWuI6wYYhOCx "✂️ Filthy Frank - You know, I’m a pretty handsome guy - YouTube")
+  [https://youtu.be/5sdtFJvDsuE?t=52](https://youtu.be/5sdtFJvDsuE?t=52 'justgirlythings - YouTube')  
+  [https://youtube.com/clip/UgkxEp5HKd8OhQqN-34SaRQtUWuI6wYYhOCx](https://youtube.com/clip/UgkxEp5HKd8OhQqN-34SaRQtUWuI6wYYhOCx '✂️ Filthy Frank - You know, I’m a pretty handsome guy - YouTube')
+* Pink Guy ruins a picnic (STFU)  
+  [https://youtu.be/OLpeX4RRo28?t=102s](https://youtu.be/OLpeX4RRo28?t=102s 'PINK GUY - STFU - YouTube')
+* By the way: Fuck China.   
+  Just wanna make that clear: Fuck China.  
+  Fuck you, mainland pieces of shit.  
+  Hong Kong, Taiwan, totally fine, you guys are cool.  
+  You know, the Cantonese it's a little dirty-sounding but… Fuck China.  
+  [https://archive.org/details/FilthyFrankCollection/JAPANESE+101+-+I+DON'T+GIVE+A+FUCK.mp4?start=198](https://archive.org/details/FilthyFrankCollection/JAPANESE+101+-+I+DON'T+GIVE+A+FUCK.mp4?start=198 'The Complete Works of Filthy Frank : George Miller : Free Download, Borrow, and Streaming : Internet Archive')
 
 ## GeoWizard (Tom Davies)
 
@@ -182,15 +190,14 @@ Reviewbrah
 ## Quotes by Others
 
 * Kevin, a German insult (Alpha-Kevin)  
-  [https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn&#45;&#45;zoJLSTcuKZhJ9](https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn--zoJLSTcuKZhJ9 "✂️ Kevin - YouTube")
+[https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn--zoJLSTcuKZhJ9](https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn--zoJLSTcuKZhJ9 '✂️ Kevin - YouTube')  
 * How to Quit Vim (third time's the charm)  
   [https://youtube.com/clip/Ugkxagr_dj64ARp_pLVGwxTrw7nIzhKuA9nI](https://youtube.com/clip/Ugkxagr_dj64ARp_pLVGwxTrw7nIzhKuA9nI "✂️ How to Quit Vim - YouTube")
-* Nå, I don't think så. (No, I don't think so. Swedish guy)  
+* Nå, I don't think så (No, I don't think so, Swedish guy)  
   [https://youtu.be/MXfWWmpxuCM?t=3](https://youtu.be/MXfWWmpxuCM?t=3 "Breaking News med Filip & Fredrik | Nå, I don't think så - Sverigedemokrat - YouTube")
 * UberHaxorNova Sings Alejandro  
   [https://youtube.com/clip/Ugkx8rH3tqb38soSivXSgC51lQBn_AywZiI6](https://youtube.com/clip/Ugkx8rH3tqb38soSivXSgC51lQBn_AywZiI6 "✂️ UberHaxorNova Sings Alejandro - YouTube")
-* Pyrocynical: The problem is with the UK,  
-  we seem to copy whatever America does, including being fat.  
+* Pyrocynical: The problem is with the UK, we seem to copy whatever America does, including being fat.  
   [https://youtu.be/DomjBQXe-4c?t=539](https://youtu.be/DomjBQXe-4c?t=539 "YOUTUBE KIDS (ASOT) - YouTube")
 * Bo fucking ho (GTA IV - Uncle Vlad mission)  
   [https://youtu.be/vd7oL43a9Bw?t=3m12s](https://youtu.be/vd7oL43a9Bw?t=3m12s "GTA 4 - Mission #13 - Uncle Vlad (1080p) - YouTube")
@@ -201,7 +208,7 @@ Reviewbrah
 * Chicken Shop Date: Matty Healy Reacts to Astrology  
   [https://youtube.com/clip/UgkxhKM7i7b7U5F4nOymGk-lnHN9c8IZQ2ga](https://youtube.com/clip/UgkxhKM7i7b7U5F4nOymGk-lnHN9c8IZQ2ga "✂️ Matty Healy Reacts to Astrology - YouTube")
 * lifeasmiyuki: [Filthy Frank] kind of reminds me of Tanaka  
-  [https://youtube.com/clip/UgkxxpiJo2ucVaCAR&#45;&#45;N8LyJBt50kbbHCLD6](https://youtube.com/clip/UgkxxpiJo2ucVaCAR--N8LyJBt50kbbHCLD6 "✂️ [Filthy Frank] kind of reminds me of Tanaka - YouTube")
+[https://youtube.com/clip/UgkxxpiJo2ucVaCAR--N8LyJBt50kbbHCLD6](https://youtube.com/clip/UgkxxpiJo2ucVaCAR--N8LyJBt50kbbHCLD6 '✂️ [Filthy Frank] kind of reminds me of Tanaka - YouTube')  
 * Hammond (Top Gear): “You’ve only blown the bloody door off”  
   [https://youtube.com/clip/UgkxuZN42E6PQeYswZDM5GUGjZQBSbwF04yn](https://youtube.com/clip/UgkxuZN42E6PQeYswZDM5GUGjZQBSbwF04yn "✂️ Hammond: “You’ve only blown the bloody door off” - YouTube")
 * Markiplier: Prop Against a Rock or Something (American MRE)  

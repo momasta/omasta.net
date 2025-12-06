@@ -1,6 +1,6 @@
 ---
 date: 2025-12-03T21:36:09+01:00
-lastmod: 2025-12-03T21:36:09+01:00
+lastmod: 2025-12-06T13:39:46+01:00
 title: "Mac Troubleshooting"
 draft: false
 description: ""
@@ -23,8 +23,8 @@ type: posts
 
 Since I got my first Mac in May 2023, I've been taking notes of every solution that's helped me fix issues.
 
-Usually, it's just the matter of killing a process.  
-They kick back in by themselves, as needed.   
+Usually, it's just the matter of killing a&nbsp;process.  
+They kick back in by themselves, as&nbsp;needed.   
 No need to restart the whole system most of the time.
 
 If you prefer, instead of running "killall" commands in Terminal,  
@@ -36,7 +36,7 @@ you can find and select the process in Activity Monitor, and hit the Stop button
 {{< TableOfContents >}}
 
 ## App Isn't Responding
-* **⌥⌘⎋:** Force Quit
+* **⌥⌘⎋:** [Force Quit](https://support.apple.com/en-us/102586 'How to force an app to quit on Mac - Apple Support')  
 * Select the app
 * Click Force Quit
 
@@ -52,24 +52,23 @@ rm -rf ~/Library/Caches/com.apple.iTunes/CommerceRequestCache/*
 ```
 
 ## Everything’s Frozen
-* **⌥⌘⎋:** Force Quit
+* **⌥⌘⎋:** [Force Quit](https://support.apple.com/en-us/102586 'How to force an app to quit on Mac - Apple Support')  
 * Run over SSH from another device:
 * Sort processes by CPU usage:
-```
-top -u
-
-```
-    * Kill the most power-hungry process.  
+  ```
+  top -u
+  ```
+* Kill the most power-hungry process.  
 * If that doesn't help:
-```
-killall WindowManager
-
-```
+  ```
+  killall WindowManager
+  
+  ```
 * Alternatively:
-```
-sudo killall -HUP WindowServer
-
-```
+  ```
+  sudo killall -HUP WindowServer
+  
+  ```
 * Press and hold the **Power&nbsp;Button**
 * Press and hold **⌃⌘–Power&nbsp;Button**
 
@@ -125,8 +124,9 @@ killall CoreServicesUIAgent
 
 ### Finder Won’t Remember Window Position and Size
 * Position and resize the window
-* **⌥⌘⎋**
-* Relaunch Finder
+* **⌥⌘⎋:** [Force Quit](https://support.apple.com/en-us/102586 'How to force an app to quit on Mac - Apple Support')  
+* Select Finder  
+* Click Relaunch  
 
 ### Force App to Open Any File
 * Hold **⌥⌘** while dragging the file
@@ -142,11 +142,11 @@ Unicode, convert NFD to NFC
 * Requires Homebrew
   * Follow their [installation instructions](https://brew.sh 'Homebrew — The Missing Package Manager for macOS (or Linux)')
   * Don't overlook post-install instructions printed in Terminal.
-```
-brew install convmv
-
-```
-convmv is also available on [MacPorts](https://ports.macports.org/port/convmv/ 'Install convmv on macOS with  MacPorts') if that's your thing.
+    ```
+    brew install convmv
+    
+    ```
+  * convmv is also available on [MacPorts](https://ports.macports.org/port/convmv/ 'Install convmv on macOS with  MacPorts') if that's your thing.
 
 To fix filenames of every file in the current directory, run:
 ```
@@ -189,8 +189,9 @@ qlmanage -r
 sudo killall -KILL&nbsp;Spotlight&nbsp;spotlightd mds
 
 ```
-* Relaunch Finder
-
+* **⌥⌘⎋:** [Force Quit](https://support.apple.com/en-us/102586 'How to force an app to quit on Mac - Apple Support')  
+* Select Finder  
+* Click Relaunch    
 ### Stuck Alarm/Timer Sound
 Clock app, countdown, ringtone.
 ```
@@ -203,7 +204,9 @@ killall NotificationCenter
 killall -KILL SystemUIServer
 
 ```
-* Relaunch Finder
+* **⌥⌘⎋:** [Force Quit](https://support.apple.com/en-us/102586 'How to force an app to quit on Mac - Apple Support')  
+* Select Finder  
+* Click Relaunch  
 
 ## Safari: iCloud Tabs Won’t Sync or Close
 Stuck ghost/zombie/phantom tabs from other devices.
@@ -255,8 +258,7 @@ sudo mdutil -E /
 
 ```
 * Restart
-
-To check progress:
+* To check progress:  
 * **⌘**⎵: Open Spotlight
 * Type "." or any random term into it.  
-  If it's reindexing, you should see a little progress bar right under the search field.  
+* If it's reindexing, you should see a little progress bar right under the search field.  

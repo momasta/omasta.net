@@ -1,6 +1,6 @@
 ---
 date: 2025-12-03T21:36:21+01:00
-lastmod: 2025-12-03T21:36:21+01:00
+lastmod: 2025-12-06T13:37:43+01:00
 title: "Anomaly Quotes"
 draft: false
 description: ""
@@ -30,6 +30,8 @@ Hopefully all of them are direct citations, often intentional, for comedic effec
 
 Most quotes come with a timestamp in the URL.  
 Might be useful to people who run clips or compilation channels.
+
+{{< gallery "anomaly" "size-s" "name" >}}
 
 ## See Also
 * [YouTube Quotes]({{< relref "posts/youtube-quotes.md" >}}) (from other creators)
@@ -212,7 +214,7 @@ because I don't need them.
 * Gargamel  
   [youtu.be/c0xWhBtJnnE?t=212](https://youtu.be/c0xWhBtJnnE?t=212 'ROASTING VIEWER COUNTRIES AND CITIES - YouTube')
 * Which one of your children do you like the most?  
-  … Muammar al-Gaddafi  
+… Muammar al-Gaddafi.  
   [youtu.be/V2e4ghxIwS0?t=682](https://youtu.be/V2e4ghxIwS0?t=682 'ANOMALY AND PAPANOMALY Q&A (2023) - YouTube')
 * Hello am 48 year man from somalia. Sorry for my bed england. I selled my wife for internet connection for play “conter stirk” and I want to become the goodest player like you I play with 400 ping on brazil server and I am Global elite 2. pls no copy pasterino my story  
   [youtu.be/7zV2_wwwF_4](https://youtu.be/7zV2_wwwF_4 "Anomaly - I selled my wife for internet connection - YouTube")
@@ -279,6 +281,7 @@ If you can be bothered, please turn these into a compilation video:
 * [youtu.be/hAm7aq3aliI?t=449](https://youtu.be/hAm7aq3aliI?t=449 'THE BIGGEST CS2 SKIN CRASH EVER (3 BILLION DOLLARS LOST) - YouTube')
 * [youtu.be/xYCYUVVoW6Y?t=246](https://youtu.be/xYCYUVVoW6Y?t=246 'OPENING FAN MAIL 13 - YouTube') (LOLXD)
 * [youtu.be/AXe4AUUgNE4?t=288](https://youtu.be/AXe4AUUgNE4?t=288 'PAPANOMALY OPENING FAN MAIL 2 - YouTube') (xD prank LOLXD)
+* [youtu.be/QK4qCDJXxR4?t=15](https://youtu.be/QK4qCDJXxR4?t=15 '"why do you have an RPG and an M249 on your desk?" - YouTube')   
 
 ## Other Quotes
 ### Anomaly, the (half-)Finnish peasant
@@ -307,7 +310,7 @@ If you can be bothered, please turn these into a compilation video:
 * Swedish mafia stealing the pavement  
   [youtu.be/V_rvHtpAERU?t=480](https://youtu.be/V_rvHtpAERU?t=480 'ANOMALY AND PAPA REVIEW YOUR COUNTRIES 3 (CITY REVIEW) - YouTube')
 * Funny idea for a video by Papanomaly:  
-  How about if I sit in the sofa,  
+  How about if I sit in the sofa  
   and you light it on fire?  
   [youtu.be/Ft4czuP0FIs?t=245s](https://youtu.be/Ft4czuP0FIs?t=245s "ANOMALY'S 15 YEAR YOUTUBE ANNIVERSARY - YouTube")  
   [youtube.com/clip/UgkxtEPCuweXglx13UfFMeTKE_iNamQ61jgX](https://youtube.com/clip/UgkxtEPCuweXglx13UfFMeTKE_iNamQ61jgX '✂️ Anomaly - Funny Idea for a Video - YouTube')
@@ -337,23 +340,23 @@ If you can be bothered, please turn these into a compilation video:
   [youtu.be/tCAOHBlZSn4?t=360](https://youtu.be/tCAOHBlZSn4?t=360 'COUNTER-STRIKE ON THE NINTENDO 3DS - YouTube')
 * Why have you blocked me on Twitter?  
   [youtu.be/0597gJaYlP4?t=210](https://youtu.be/0597gJaYlP4?t=210 'GOOGLING MYSELF (FACE EXPOSED BY FAN?) - YouTube')
-```
-Hello.
-
-My name is Anomaly.  
-You have stoled my name.  
-Why are you do this? Help.  
-I have not been the rude to you on Twitter  
-but you still resort to the big block.
-
-I would like to be unblocked.  
-Thank.  
-My Twitter is @AnomalyXd  
-Please
-
-Regards,  
-The REal Anomaly.
-```
+  ```
+  Hello.
+  
+  My name is Anomaly.  
+  You have stoled my name.  
+  Why are you do this? Help.  
+  I have not been the rude to you on Twitter  
+  but you still resort to the big block.
+  
+  I would like to be unblocked.  
+  Thank.  
+  My Twitter is @AnomalyXd  
+  Please
+  
+  Regards,  
+  The REal Anomaly.
+  ```
 * Anomaly shaves off his eyebrow  
   [youtu.be/s3F6pmHcdlA?t=143](https://youtu.be/s3F6pmHcdlA?t=143 'WOULD YOU RATHER (BUT WE HAVE TO DO IT) - YouTube')
 * Anomaly throws a chair at a bird  

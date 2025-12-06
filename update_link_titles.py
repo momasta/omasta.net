@@ -15,25 +15,26 @@
 #   (none)                   Update every http/https link that has no title.
 #
 # Examples:
-#   python3 update_link_titles.py file.md
+#   python3 update_link_titles.py profiles.md
 #   python3 update_link_titles.py --text-is-url content/
-#   python3 update_link_titles.py --update-existing-titles /path/to/*.md
+#   python3 update_link_titles.py --update-existing-titles content/en/posts/*.md
+#   python3 update_link_titles.py --lang=cs content/cs/posts/*.md
 
 # The user will be warned about potentially broken links:
 SUSPICIOUS_TITLE_PATTERNS = [
-    r"^\h?- YouTube",
+    r"^\s+?- YouTube",
     r"Verify.+Human",
-    r"please wait",
+    r"(please wait|just a moment)",
     r"(404|not found)",
 ]
 
+import html
 import os
 import re
-import sys
 import subprocess
-import html
-from typing import Iterator, Tuple, List, Optional
+import sys
 from bs4 import BeautifulSoup
+from typing import Iterator, Tuple, List, Optional
 
 def fetch_page_title(url: str, lang: str) -> Optional[str]:
     try:
@@ -157,7 +158,16 @@ def print_summary(
     mode: str,
 ) -> None:
     print(f"{path}")
-    print(f"  - Candidates to update: {total_candidates}")
+
+    has_processing_issues = (
+        len(skipped_malformed) > 0
+        or len(skipped_empty_title) > 0
+        or len(skipped_fetch_error) > 0
+        or len(suspicious_title_warnings) > 0
+    )
+
+    if has_processing_issues:
+        print(f"  - Links to update: {total_candidates}")
 
     if skipped_malformed:
         print(f"  - Malformed: {len(skipped_malformed)}")
@@ -180,15 +190,15 @@ def print_summary(
 
     if skipped_name_mode_count:
         if mode == "text-is-url":
-            print(f"  - Skipped by mode: {skipped_name_mode_count} — No URLs in the text of links or already titled.")
+            print(f"  - Skipped {skipped_name_mode_count} links – no URLs in the text or already titled.")
             print(f"    Use --update-existing-titles to force update.")
         elif mode == "all":
-            print(f"  - Skipped by mode: {skipped_name_mode_count} — Already titled or invalid.")
+            print(f"  - Skipped {skipped_name_mode_count} links – already titled.")
             print(f"    Use --update-existing-titles to force update.")
         elif mode == "update-existing-titles":
-            print(f"  - Skipped by mode: {skipped_name_mode_count} — Invalid.")
+            print(f"  - Skipped {skipped_name_mode_count} invalid links.")
         else:
-            print(f"  - Skipped by mode: {skipped_name_mode_count} — Mode rules.")
+            print(f"  - Skipped {skipped_name_mode_count} links due to mode rules.")
             print(f"    Use --update-existing-titles to force update.")
 
     print("")
@@ -231,12 +241,13 @@ def process_file(path: str, mode: str, lang: str) -> None:
         if not link_url:
             skipped_malformed.append(f"{link_text or '<no-name>'} (no url)")
             continue
-        # Skip silently:
+        # Skip silently (ignore):
         if (
             ("{{" in link_url and "}}" in link_url)
             or link_url.strip().startswith("{{<") # Hugo shortcodes – Standard notation
             or link_url.strip().startswith("{{%") # Hugo shortcodes – Markdown notation
             or link_url.strip().startswith("#") # Fragment-only URLs
+            or link_url.strip().startswith("x-apple.systempreferences:") # macOS System Settings URLs
         ):
             continue
         if not link_url.startswith("http"):

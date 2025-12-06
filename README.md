@@ -42,6 +42,7 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
 ### Usage
 * In a Markdown file:  
 `{{< gallery "memes" >}}`
+`{{< gallery "tech-spurt" "size-s" "name" >}}`
 * Arguments:
   * Path (optional)
     * Where to look for images
@@ -82,7 +83,7 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
 * [Hugo Homepage and Docs](https://gohugo.io)
 * [gohugoio/hugo on GitHub](https://github.com/gohugoio/hugo)
 
-### WebStorm  
+### WebStorm
 * My favourite IDE.
 * Free for non-commercial use.
 * [WebStorm Homepage](https://www.jetbrains.com/webstorm/)
@@ -91,6 +92,13 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
 * JavaScript image gallery for mobile and desktop, modular, framework independent.
 * [PhotoSwipe Homepage](https://photoswipe.com)
 * [dimsemenov/PhotoSwipe on GitHub](https://github.com/dimsemenov/PhotoSwipe)
+
+### ai.robots.txt
+* A list of AI-related crawlers of all types.
+* Added to [robots.txt](robots.txt) and [.htaccess](.htaccess)
+* My website was made by a human, for humans.  
+  Not for half-baked hallucinating Cleverbot-like LLM chatbots, such as ChatGPT.
+* [ai.robots.txt on GitHub](https://github.com/ai-robots-txt/ai.robots.txt)
 
 ### Blank
 * Starter [Hugo](https://gohugo.io) theme.

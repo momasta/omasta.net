@@ -60,11 +60,29 @@ h2 + p {
   margin-top: 0;
 }
 
-h3+p {
+h3 + p {
   margin: 0;
 }
 
 p + h2,
 h2:first-child {
   padding-top: 0;
+}
+
+// More margin for multi-line list items
+
+li br ~ a:last-child,
+p + ul li ~ li:last-child a:last-child {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+li br ~ a ~ pre {
+  margin-bottom: 1em;
+}
+
+// More margin for code blocks
+h3 + pre + h3,
+h3 + p + pre + h3 {
+  margin-top: 1em;
 }
