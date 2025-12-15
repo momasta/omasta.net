@@ -1,6 +1,6 @@
 .bar {
   display: flex;
-  padding: 0 8px;
+  padding: 0 0.5rem;
   align-items: center;
   height: 1.4em; // Fixed height to prevent jumping if empty
   @extend %no-interaction;

@@ -19,6 +19,7 @@ table-of-contents-id: "table-of-contents"
 skip-to-main-content: 'Skip to main content'
 
 ## Layout: Sidebar
+all-posts: 'All Posts'
 contact-me: 'Get in Touch'
 email: 'Email'
 more-content: 'More Content'

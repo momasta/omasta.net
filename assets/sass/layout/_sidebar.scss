@@ -5,20 +5,20 @@
 //
 // -----------------------------------------------------------------------------
 
+$aside-min-width: 255px;
+
 aside {
-  display: flex;
-  flex: 1 0 auto;
-  flex-direction: column;
-  min-width: 255px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($aside-min-width, 1fr));
+  gap: 1rem;
+  margin: 0.5rem 0;
+  min-width: $aside-min-width;
   
   .card {
-    flex-grow: 0;
+    margin: 0;
+  }
+  
+  ul {
+    margin-left: 1.5rem;
   }
 }
-
-@mixin mq-min-medium-aside {
-  main + aside {
-    margin-left: 1rem;
-  }
-}
-

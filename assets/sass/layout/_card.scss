@@ -1,9 +1,8 @@
 .card {
   width: 100%;
-  margin: 8px 0;
-  padding: 24px 20px;
   background-color: var(--color-content-bg);
   border-radius: 16px;
+  // See Critical CSS in baseof.html: margin and padding
 
   display: flex;
   flex-direction: column;

@@ -3,4 +3,9 @@ main {
   flex-direction: column;
   flex: 1 1 100%;
   max-width: 100%;
+  align-self: stretch;
+  
+  .card {
+    padding-bottom: 2rem;
+  }
 }

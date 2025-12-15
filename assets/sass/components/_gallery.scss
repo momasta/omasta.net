@@ -4,7 +4,7 @@
   gap: 10px;
 
   &.size-s {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(59px, 1fr));
     gap: 4px;
   }
 
@@ -54,18 +54,13 @@
     display: inline-block;
     font-size: rem(12px);
     color: var(--color-text-light);
-    text-align: left;
-    padding: 5px 0 5px;
+    padding: 5px 0;
     overflow-wrap: anywhere;
-    word-break: normal;
-    text-wrap: auto;
   }
 }
 
-// <img class="gallery-thumb">
 .gallery-thumb {
   object-fit: cover;
-  position: relative;
   overflow: hidden;
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -93,19 +88,11 @@
 @mixin mq-min-tablet-gallery-image {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
-
-    &.size-s {
-      grid-template-columns: repeat(7, 1fr);
-    }
   }
 }
 
 @mixin mq-min-medium-gallery-image {
   .gallery {
     grid-template-columns: repeat(4, 1fr);
-
-    &.size-s {
-      grid-template-columns: repeat(10, 1fr);
-    }
   }
 }

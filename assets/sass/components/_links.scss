@@ -38,6 +38,11 @@
       color: var(--color-text); // Specific to prevent different colour on hover
     }
   }
+  
+  p {
+    font-size: 1rem;
+    margin-top: 4px;
+  }
 
   h1 + & {
     margin-top: rem(15px);
@@ -63,4 +68,8 @@
       }
     }
   }
+}
+
+ul + .links {
+  margin-top: 0.5em;
 }

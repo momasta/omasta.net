@@ -13,6 +13,9 @@ keywords:
     - swedish
     - funny moments
     - wiki
+    - Counter-Strike
+    - Ludwig Lagerstedt
+    - Ludde
 main_content_id: "chaos"
 slug: ""
 tags:
@@ -21,8 +24,8 @@ translationKey: ""
 type: posts
 ---
 
-I mainly enjoy Anomaly's IRL videos featuring his dad or friends  
-so don't expect much CS2&nbsp;(CS:GO) related content here.  
+I mainly enjoy Anomaly's IRL videos featuring his dad or&nbsp;friends  
+so don't expect much CS2&#8209;related content here.  
 You'll find plenty clips and compilations on YouTube.  
 
 Pardon the typos and grammar mistakes.  
@@ -161,7 +164,7 @@ Might be useful to people who run clips or compilation channels.
   [https://youtu.be/kZbzuCOa4Vk?t=94](https://youtu.be/kZbzuCOa4Vk?t=94 'OPENING FAN MAIL 22 (BIGGEST PACKAGES) - YouTube')
 
 ## German
-* [Compilations of Anomaly speaking German by @MavexCS  - YouTube](https://www.youtube.com/@Mavexcs/search?query=intitle%3AAnomaly 'MavexCS - YouTube')  
+* [Compilations of Anomaly speaking German by @MavexCS  - YouTube](https://www.youtube.com/@Mavexcs/search?query=intitle%3AAnomaly 'MavexCS - YouTube')<br><br>  
 * Judith’s Blütenpracht  
   [https://youtu.be/2R9u24WNZwE?t=336](https://youtu.be/2R9u24WNZwE?t=336 'ANOMALY AND PAPA REVIEW YOUR COUNTRIES (CITY REVIEW) - YouTube')
 * Jawohl ja  

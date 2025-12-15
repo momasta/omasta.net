@@ -42,22 +42,22 @@ params:
     name: Marek Omasta
     email: marek@omasta.net
     image: images/profile-picture@2x.webp
-    sameAs:
-      - "https://bandcamp.com/m_omasta"
-      - "https://csfd.cz/uzivatel/827068-m-omasta/"
-      - "https://discordapp.com/users/m.omasta"
-      - "https://geocaching.com/p/?id=8404971"
-      - "https://github.com/momasta"
-      - "https://goodreads.com/m_omasta"
-      - "https://gravatar.com/omastik"
-      - "https://last.fm/user/m_omasta"
-      - "https://m.me/omastik"
-      - "https://mastodon.social/@marek_omasta"
-      - "https://music.apple.com/profile/m_omasta"
-      - "https://pinterest.com/m_omasta"
-      - "https://reddit.com/user/m_omasta"
-      - "https://unsplash.com/@m_omasta"
-      - "https://youtube.com/@m.omasta"
+    profiles:
+      - Bandcamp: "https://bandcamp.com/m_omasta"
+      - ČSFD: "https://csfd.cz/uzivatel/827068-m-omasta/"
+      - Discord: "https://discordapp.com/users/m.omasta"
+      - Geocaching: "https://geocaching.com/p/?id=8404971"
+      - GitHub: "https://github.com/momasta"
+      - Goodreads: "https://goodreads.com/m_omasta"
+      - Gravatar: "https://gravatar.com/omastik"
+      - Last.fm: "https://last.fm/user/m_omasta"
+      - Messenger: "https://m.me/omastik"
+      - Mastodon: "https://mastodon.social/@marek_omasta"
+      - Apple Music: "https://music.apple.com/profile/m_omasta"
+      - Pinterest: "https://pinterest.com/m_omasta"
+      - Reddit: "https://reddit.com/user/m_omasta"
+      - Unsplash: "https://unsplash.com/@m_omasta"
+      - YouTube: "https://youtube.com/@m.omasta"
           
 taxonomies:
   tag: tags

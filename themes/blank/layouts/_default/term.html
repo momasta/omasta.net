@@ -2,22 +2,26 @@
 
     {{- partial "header" . -}}
     
-    <div id="middle">
+    <div id="middle" class="direction-row">
         <main>
             <div class="card">
                 <article>
-                    <h1>{{ T "tag-heading" }}{{ .Title }}</h1>
+                    <h1>
+                        <a href="{{ .RelPermalink }}" rel="bookmark" aria-current="page">{{ T "tag-heading" }}{{ .Title }}</a>
+                    </h1>
 
                     <div class="article-content">
                         {{ .Content }}
-                        <ul id="tags">
+                        <ul class="links">
                             {{ range .Pages }}
-                                <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+                                {{- .Render "summary" -}}
                             {{ end }}
                         </ul>
                     </div>
                 </article>
             </div>
         </main>
+
+        {{- partial "sidebar.html" . -}}
     </div>
 {{ end }}

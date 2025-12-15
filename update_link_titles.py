@@ -11,7 +11,8 @@
 # Arguments:
 #   --text-is-url            Update links whose text is a URL, even if no URL in link text.
 #   --update-existing-titles Update all http/https links, replacing existing titles.
-#   --lang=cs                Set preferred language for the link scraper, default: en
+#   --lang=cs                Set preferred language for the link scraper and cache, default: en
+#   --stash                  Stash existing titles into cache and remove them from Markdown.
 #   (none)                   Update every http/https link that has no title.
 #
 # Examples:
@@ -19,6 +20,7 @@
 #   python3 update_link_titles.py --text-is-url content/
 #   python3 update_link_titles.py --update-existing-titles content/en/posts/*.md
 #   python3 update_link_titles.py --lang=cs content/cs/posts/*.md
+#   python3 update_link_titles.py --stash content/
 
 # The user will be warned about potentially broken links:
 SUSPICIOUS_TITLE_PATTERNS = [
@@ -28,13 +30,48 @@ SUSPICIOUS_TITLE_PATTERNS = [
     r"(404|not found)",
 ]
 
+CACHE_FILENAME = "update_link_titles_cache"
+
 import html
+import json
 import os
 import re
 import subprocess
 import sys
 from bs4 import BeautifulSoup
-from typing import Iterator, Tuple, List, Optional
+from typing import Iterator, Tuple, List, Optional, Dict
+
+def get_cache_path(lang: str) -> str:
+    suffix = "" if lang == "en" else f"-{lang}"
+    return f"{CACHE_FILENAME}{suffix}.json"
+
+def load_cache(lang: str) -> Dict[str, str]:
+    path = get_cache_path(lang)
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+def save_cache(cache: Dict[str, str], lang: str) -> None:
+    path = get_cache_path(lang)
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(cache, f, indent=2, ensure_ascii=False, sort_keys=True)
+            f.write("\n")
+    except Exception as e:
+        print(f"Warning: Could not save cache: {e}")
+
+def normalize_url(url: str) -> str:
+    # Remove fragment
+    url = url.split("#")[0]
+    # Remove trailing slash
+    if url.endswith("/"):
+        url = url[:-1]
+    # Normalize protocol (https->http) and remove www
+    return re.sub(r"^https?://(?:www\.)?", "http://", url, flags=re.IGNORECASE)
 
 def fetch_page_title(url: str, lang: str) -> Optional[str]:
     try:
@@ -166,8 +203,8 @@ def print_summary(
         or len(suspicious_title_warnings) > 0
     )
 
-    if has_processing_issues:
-        print(f"  - Links to update: {total_candidates}")
+    if has_processing_issues or mode == "stash":
+        print(f"  - Links processed: {total_candidates}")
 
     if skipped_malformed:
         print(f"  - Malformed: {len(skipped_malformed)}")
@@ -197,6 +234,8 @@ def print_summary(
             print(f"    Use --update-existing-titles to force update.")
         elif mode == "update-existing-titles":
             print(f"  - Skipped {skipped_name_mode_count} invalid links.")
+        elif mode == "stash":
+            print(f"  - Skipped {skipped_name_mode_count} links – no title to stash.")
         else:
             print(f"  - Skipped {skipped_name_mode_count} links due to mode rules.")
             print(f"    Use --update-existing-titles to force update.")
@@ -218,7 +257,7 @@ def format_link_title_for_markdown(raw_title: str) -> str:
     title_without_double = title.replace('"', "")
     return f'"{title_without_double}"'
 
-def process_file(path: str, mode: str, lang: str) -> None:
+def process_file(path: str, mode: str, lang: str, cache: Dict[str, str]) -> None:
     try:
         with open(path, "r", encoding="utf-8") as file_handle:
             file_content = file_handle.read()
@@ -236,6 +275,7 @@ def process_file(path: str, mode: str, lang: str) -> None:
     suspicious_title_warnings: List[str] = []
 
     candidates: List[Tuple[int, int, str, str, Optional[str]]] = []
+    edits: List[Tuple[int, int, str]] = []
 
     for (start_index, end_index, link_text, link_url, link_title) in parsed_links:
         if not link_url:
@@ -253,10 +293,18 @@ def process_file(path: str, mode: str, lang: str) -> None:
         if not link_url.startswith("http"):
             skipped_malformed.append(link_url)
             continue
-        if not should_update(link_text, link_title is not None, mode):
-            skipped_name_mode_count += 1
-            continue
-        candidates.append((start_index, end_index, link_text, link_url, link_title))
+        
+        if mode == "stash":
+            # In stash mode, we only process links that HAVE a title
+            if link_title:
+                candidates.append((start_index, end_index, link_text, link_url, link_title))
+            else:
+                skipped_name_mode_count += 1
+        else:
+            if not should_update(link_text, link_title is not None, mode):
+                skipped_name_mode_count += 1
+                continue
+            candidates.append((start_index, end_index, link_text, link_url, link_title))
 
     total_candidates = len(candidates)
 
@@ -265,25 +313,45 @@ def process_file(path: str, mode: str, lang: str) -> None:
         return
 
     processed = 0
-    edits: List[Tuple[int, int, str]] = []
-
     # Single progress line that updates in place
     print(f"{path}  {processed}/{total_candidates} processed", end="\r", flush=True)
 
     for (start_index, end_index, link_text, link_url, link_title) in candidates:
-        fetched_title = fetch_page_title(link_url, lang)
-        if fetched_title is None:
-            skipped_fetch_error.append(link_url)
-        elif not fetched_title.strip():
-            skipped_empty_title.append(link_url)
-        else:
-            # Check for suspicious titles, warn but proceed with update
-            if is_suspicious_title(fetched_title):
-                suspicious_title_warnings.append(fetched_title)
+        norm_url = normalize_url(link_url)
 
-            formatted_title = format_link_title_for_markdown(fetched_title)
-            rebuilt_link = f'[{link_text}]({link_url} {formatted_title})'
+        if mode == "stash":
+            # Extract title to cache
+            if link_title and link_title.strip():
+                clean_title = html.unescape(link_title.strip())
+                if not is_suspicious_title(clean_title):
+                    cache[norm_url] = clean_title
+            
+            # Remove title from file
+            rebuilt_link = f'[{link_text}]({link_url})'
             edits.append((start_index, end_index, rebuilt_link))
+        
+        else:
+            # Update/Fetch mode
+            # Try cache first
+            if norm_url in cache:
+                fetched_title = cache[norm_url]
+            else:
+                fetched_title = fetch_page_title(link_url, lang)
+                if fetched_title and fetched_title.strip() and not is_suspicious_title(fetched_title):
+                    cache[norm_url] = fetched_title
+
+            if fetched_title is None:
+                skipped_fetch_error.append(link_url)
+            elif not fetched_title.strip():
+                skipped_empty_title.append(link_url)
+            else:
+                # Check for suspicious titles, warn but proceed with update
+                if is_suspicious_title(fetched_title):
+                    suspicious_title_warnings.append(fetched_title)
+
+                formatted_title = format_link_title_for_markdown(fetched_title)
+                rebuilt_link = f'[{link_text}]({link_url} {formatted_title})'
+                edits.append((start_index, end_index, rebuilt_link))
         
         processed += 1
         print(f"{path}  {processed}/{total_candidates} processed", end="\r", flush=True)
@@ -311,15 +379,15 @@ def process_file(path: str, mode: str, lang: str) -> None:
     except Exception:
         pass
 
-def walk_path(path: str, mode: str, lang: str) -> None:
+def walk_path(path: str, mode: str, lang: str, cache: Dict[str, str]) -> None:
     if os.path.isfile(path):
         if path.endswith(".md"):
-            process_file(path, mode, lang)
+            process_file(path, mode, lang, cache)
         return
     for root, _, files in os.walk(path):
         for name in files:
             if name.endswith(".md"):
-                process_file(os.path.join(root, name), mode, lang)
+                process_file(os.path.join(root, name), mode, lang, cache)
 
 def main(argument_values: List[str]) -> None:
     mode = "all"
@@ -333,15 +401,25 @@ def main(argument_values: List[str]) -> None:
         if argument == "--update-existing-titles":
             mode = "update-existing-titles"
             continue
+        if argument == "--stash":
+            mode = "stash"
+            continue
         if argument.startswith("--lang="):
             lang = argument.split("=", 1)[1]
             continue
         if not argument.startswith("--"):
             args.append(argument)
 
+    # Load cache
+    cache = load_cache(lang)
+
     targets = args if args else ["."]
-    for target in targets:
-        walk_path(target, mode, lang)
+    try:
+        for target in targets:
+            walk_path(target, mode, lang, cache)
+    finally:
+        # Save cache
+        save_cache(cache, lang)
 
 if __name__ == "__main__":
     main(sys.argv[1:])

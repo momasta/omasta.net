@@ -2,17 +2,74 @@
     Stylesheet: assets/sass/layout/_sidebar.scss
 */ -}}
 
-<div class="card">
-    <div>
-        <div>
-            <h2>{{ T "latest-posts" }}</h2>
+<aside>
+    <div class="card">
+        <h2>{{ T "contact-me" }}</h2>
+
+        <ul class="links">
+            <li>
+                <a href="https://m.me/omastik" target="_blank"><span
+                    title="Facebook Messenger">Messenger:&nbsp;</span>omastik</a>
+            </li>
+            <li>
+                <a href="mailto:marek@omasta.net"><span>{{ T "email" }}:&nbsp;</span>marek@omasta.net</a>
+            </li>
+            <li>
+                <a href="{{ "/profiles/" }}">{{ T "more-profiles" }}…</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>{{ T "my-content" }}</h2>
+
+        <ul class="links">
+            <li>
+                <a href="/copypasta">Copypasta</a>
+            </li>
+            <li>
+                <a href="https://unsplash.com/@m_omasta" target="_blank">Unsplash</a>
+            </li>
+            <li>
+                <a href="{{ "/content/" }}">{{ T "more-content" }}…</a>
+            </li>
+        </ul>
+    </div>
+
+    {{- $tags := .Site.Taxonomies.tags }}
+    {{- if gt (len $tags) 0 }}
+        <div class="card">
+            <h2>{{ T "tags" }}</h2>
+            
+            <ul class="links">
+                {{ range $name, $taxonomy := $tags }} {{ $count := .Count }}
+                    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                        <li>
+                            <a href="{{ .RelPermalink }}"
+                               title="{{ T "tags-show-all" }} &#35;{{ .LinkTitle }}"
+                               class="tag">
+                                &#35;{{ .LinkTitle }}</a>&nbsp;<span>({{ $count }})</span>
+                        </li>
+                    {{ end }}
+                {{ end }}
+            </ul>
         </div>
-        <div>
+    {{- end }}
+
+    {{- if not .IsHome -}}
+        <div class="card">
+            <h2>{{ T "latest-posts" }}</h2>
             <ul>
                 {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
                     <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
                 {{ end }}
             </ul>
+            
+            <ul class="links">
+                <li>
+                    <a href="{{ "/" }}">{{ T "all-posts" }}…</a>
+                </li>
+            </ul>
         </div>
-    </div>
-</div>
+    {{- end -}}
+</aside>

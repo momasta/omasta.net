@@ -15,7 +15,7 @@
         {{ end }}
     {{ end }}
 
-    <div id="middle">
+    <div id="middle" class="direction-column">
         <main>
             <div class="card">
                 <article>
@@ -65,7 +65,8 @@
                 </article>
             </div>
         </main>
+
+        {{- partial "sidebar.html" . -}}
     </div>
     
-    {{- partial "sidebar.html" . -}}
 {{ end }}

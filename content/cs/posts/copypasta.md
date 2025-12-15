@@ -1,7 +1,20 @@
----  
-title: "Copypasta"  
-layout: simple
----  
+---
+date: 2022-09-22T21:26:56+01:00
+lastmod: 2022-09-22T21:26:56+01:00
+title: "Copypasta"
+draft: false
+description: "Speciální znaky, útržky textu a sady emoji."
+summary: ""
+keywords: []
+main_content_id: ""
+url: "copypasta"
+tags: 
+  - tips
+translationKey: "copypasta"
+type: posts
+---
+
+Speciální znaky, útržky textu a sady emoji.
 
 | Název                          | Znak     | HTML Entita                  |  
 |:-------------------------------|:---------|:-----------------------------|  
@@ -14,21 +27,34 @@ layout: simple
 | Varianta znaku (jednobarevná)  | &#xFE0E; | &amp;#xFE0E&#59;             |  
 | Zákaz vstupu (umístit za znak) | ‍⃠       | &amp;#8416&#59;              |  
 
+Ꙩꙩ  
+𑐂  
+
 ✓ přečteno  
 ✔
 
-🔝🍪  
-😂😂😂👌👌👌🔥🔥🔥💯💯💯
+⚠️ **POZOR**  
 
+🔝🍪  
+😂😂😂👌👌👌🔥🔥🔥💯💯💯  
+
+## Vaporwave Emoji
+📼🌸🐬💎🌴🌅  
+💜💗🌸💙🐬💎  
+🗻🌸🌴⛲️🐬🌺  
+📼🌸🐬📺💎🌺  
+🌊🌴💿🌸🏛️📼  
+
+## Symboly z klávesnic Apple
+ ⇧ ⌃ ⌥ ⌘ ⌫ ⎋  
+
+## Šipky
 ←  
 ↑  
 →  
 ↓
 
-☭
-
-⚠️ **POZOR**
-
+## Hvězdičkové hodnocení
 ★☆☆☆☆  
 ★★☆☆☆  
 ★★★☆☆  

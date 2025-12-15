@@ -6,7 +6,7 @@ draft: false
 layout: simple
 ---
 
-[Moje vizitka ke stažení \(vCard\)](/Marek%20Omasta.vcf)
+[Moje vizitka ke stažení (vCard)](/Marek%20Omasta.vcf)
 
 * [ČSFD.cz](https://csfd.cz/uzivatel/827068-m-omasta/ "m.omasta | O mně | ČSFD.cz")
 * [GitHub · Starred](https://github.com/momasta?tab=stars "momasta (Marek Omasta) / Starred · GitHub")

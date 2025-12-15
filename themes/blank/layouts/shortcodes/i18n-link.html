@@ -3,5 +3,6 @@
 
 {{- if gt (len $targetSlice) 0 -}}
     {{- $target := index $targetSlice 0 -}}
-    <a href="{{- $target.RelPermalink }}" hreflang="{{ $target.Lang }}">{{- .Inner -}}</a>
+    <a href="{{- $target.RelPermalink }}" hreflang="{{ $target.Lang }}" title="{{ T "switch-language" -}}">
+        {{- .Inner -}}</a>
 {{- end -}}

@@ -34,7 +34,7 @@ Tady ho máte v plné parádě, bez cenzury, volně k šíření.
   
 [youtu.be/0EZI7hWlEuA](https://youtu.be/0EZI7hWlEuA 'komunistický čůráci - YouTube')
 
-## Viz také
+## Viz také {#viz-take}
 * [Hlášky z YouTube]({{< relref "posts/youtube-quotes.md" >}})
 * [HRDINA ANTIKOMUNISTA V DAVU KOMUNISTŮ - YouTube](https://youtu.be/MtUqeKlsGKI "Další z dochovaných vystoupení pana Jaronýma")
   * [Hlášky z YouTube – Pan Jaroným]({{< relref "posts/youtube-quotes.md#pan-jaronym" >}})

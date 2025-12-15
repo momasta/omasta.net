@@ -1,7 +1,20 @@
----  
-title: "Copypasta"  
-layout: simple
----  
+---
+date: 2022-09-22T21:26:56+01:00
+lastmod: 2022-09-22T21:26:56+01:00
+title: "Copypasta"
+draft: false
+description: "Special characters, text snippets and emoji combos."
+summary: ""
+keywords: []
+main_content_id: ""
+url: "copypasta"
+tags:
+  - tips
+translationKey: "copypasta"
+type: posts
+---
+
+Special characters, text snippets and emoji combos.  
 
 | Name                               | Character | HTML Entities                |  
 |:-----------------------------------|:----------|:-----------------------------|  
@@ -13,21 +26,34 @@ layout: simple
 | Variation selector (monochrome)    | &#xFE0E;  | &amp;#xFE0E&#59;             |  
 | No entry (place after a character) | ‍⃠        | &amp;#8416&#59;              |  
 
+Ꙩꙩ  
+𑐂  
+
 ✓ seen  
 ✔
 
-🔝🍪  
-😂😂😂👌👌👌🔥🔥🔥💯💯💯
+⚠️ **WARNING**  
 
+🔝🍪  
+😂😂😂👌👌👌🔥🔥🔥💯💯💯  
+
+## Vaporwave Emoji
+📼🌸🐬💎🌴🌅  
+💜💗🌸💙🐬💎  
+🗻🌸🌴⛲️🐬🌺  
+📼🌸🐬📺💎🌺  
+🌊🌴💿🌸🏛️📼  
+
+## Apple Keyboard Symbols
+ ⇧ ⌃ ⌥ ⌘ ⌫ ⎋  
+
+## Arrows
 ←  
 ↑  
 →  
 ↓
 
-☭
-
-⚠️ WARNING
-
+## Star Rating
 ★☆☆☆☆  
 ★★☆☆☆  
 ★★★☆☆  
@@ -69,4 +95,3 @@ layout: simple
 ☐ Not sure  
 ☐ Probably not  
 ☑ No
-

@@ -2,16 +2,18 @@
 
     {{- partial "header" . -}}
 
-    <div id="middle">
+    <div id="middle" class="direction-row">
         <main>
             {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
 
             <div class="card">
                 <h1>{{ T "posts" }}</h1>
 
+                {{- .Content -}}
+                
                 <ul class="links">
                     {{ range $paginator.Pages }}
-                        {{ .Render "summary" }}
+                        {{- .Render "summary" -}}
                     {{ end }}
                 </ul>
 
@@ -19,63 +21,7 @@
             </div>
         </main>
 
-        <aside class="">
-            <div class="card">
-                <h2>{{ T "contact-me" }}</h2>
-
-                <ul class="links">
-                    <li>
-                        <a href="https://m.me/omastik" target="_blank"><span
-                            title="Facebook Messenger">Messenger:&nbsp;</span>omastik</a>
-                    </li>
-                    <li>
-                        <a href="mailto:marek@omasta.net"><span>{{ T "email" }}:&nbsp;</span>marek@omasta.net</a>
-                    </li>
-                    <li>
-                        <a href="{{ "profiles/" }}">{{ T "more-profiles" }}…</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h2>{{ T "my-content" }}</h2>
-
-                <ul class="links">
-                    <li>
-                        <a href="/copypasta">Copypasta</a>
-                    </li>
-                    <li>
-                        <a href="https://unsplash.com/@m_omasta" target="_blank">Unsplash</a>
-                    </li>
-                    <li>
-                        <a href="{{ "content/" }}">{{ T "more-content" }}…</a>
-                    </li>
-                </ul>
-            </div>
-
-            {{- $tags := .Site.Taxonomies.tags }}
-            {{- if gt (len $tags) 0 }}
-                <div class="card">
-                    <div>
-                        <h2>{{ T "tags" }}</h2>
-                    </div>
-                    <div>
-                        <ul class="links">
-                            {{ range $name, $taxonomy := $tags }} {{ $count := .Count }}
-                                {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-                                    <li>
-                                        <a href="{{ .RelPermalink }}"
-                                           title="{{ T "tags-show-all" }} &#35;{{ .LinkTitle }}"
-                                           class="tag">
-                                            &#35;{{ .LinkTitle }}</a>&nbsp;<span>({{ $count }})</span>
-                                    </li>
-                                {{ end }}
-                            {{ end }}
-                        </ul>
-                    </div>
-                </div>
-            {{- end }}
-        </aside>
+        {{- partial "sidebar.html" . -}}
     </div>
 
 {{ end }}

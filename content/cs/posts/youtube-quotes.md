@@ -27,7 +27,7 @@ Momenty, které mě pobavily nebo zaujaly.
 Skoro všechny mají v URL časovou značku.  
 Mohlo by se hodit tvůrcům sestřihů.
 
-## Viz také 
+## Viz také {#viz-take}
 * Další hlášky v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-link >}}
 * [Napálim tě ty kanále jeden komunistickej]({{< relref "posts/napalim-te-ty-kanale.md" >}})
 
@@ -79,7 +79,7 @@ Mikýřova úžasná pouť internetem, Tohle není MÚPI
 ## petangames
 PTNGMS, Peťan Esterka
 
-* Já su vyřízený jak poštovní poukázka.
+* Já su vyřízený jak poštovní poukázka.<br><br>  
 * Mohl bych sakra vědět, kde se rožíhá na hajzlu?  
   [https://youtube.com/clip/Ugkx3rBRqAICNHWOPQP268X8It-9wBDEfJ5l](https://youtube.com/clip/Ugkx3rBRqAICNHWOPQP268X8It-9wBDEfJ5l '✂️ Mohl bych sakra vědět, kde se rožíhá na hajzlu? - YouTube')
 * Cha! (zaječení)  
@@ -154,9 +154,9 @@ Minecraft – Part 1 – Enderman zabíjí,creeper vybouchává!
 
 * Ahoj, já vás zdravim, Petr Mára, nový video!  
   [https://youtu.be/GSaCAP2GgDs](https://youtu.be/GSaCAP2GgDs 'Práce tě musí bavit! Cožeeee? Největší mýtus současnosti... - YouTube')
-[//]: # (todo Replace with Internet archive or another upload)
 * Já jsem nepil (Notor z Brna)  
-  [https://youtu.be/TCgx9Spef-Q?t=2m22s](https://youtu.be/TCgx9Spef-Q?t=2m22s '- YouTube')
+  ~~[https://youtu.be/TCgx9Spef-Q?t=2m22s](https://youtu.be/TCgx9Spef-Q?t=2m22s '- YouTube')~~  
+  [https://youtu.be/_OrbrlLGJq4?t=115](https://youtu.be/_OrbrlLGJq4?t=115)  
 * To je prostě festival hnusu. (Michael Rostock-Poplar, Den D, Shark Tank)  
   [https://youtu.be/UVBckwj27uU?t=127](https://youtu.be/UVBckwj27uU?t=127 'exoti - YouTube')
 * Jo, jsem Aneta zkurvená, já vim. (Lukáš Kril)  

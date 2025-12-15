@@ -13,7 +13,7 @@ keywords:
     - British dialect
     - funny
     - wiki
-lastmod: 2025-12-04T19:51:23+01:00
+lastmod: 2025-12-06T13:52:11+01:00
 main_content_id: table-of-contents
 slug:
 tags:
@@ -24,7 +24,7 @@ type: posts
 
 Here are quotes and transcripts from [Tech&nbsp;Spurt's](https://youtube.com/@TechSpurt "Tech Spurt - YouTube") YouTube videos.
 
-He's my favourite tech reviewer. Authentic and down to earth.  
+He's my favourite tech reviewer, authentic and down to earth.  
 He speaks a colourful [northern&nbsp;English&nbsp;dialect](https://en.wikipedia.org/wiki/Mackem "Mackem - Wikipedia") and has a bit of a potty mouth.  
   
 As an Apple fanboy, I don't really care much about most of the news and&nbsp;reviews.  
@@ -59,9 +59,6 @@ Original expressions (especially&nbsp;[similes](#similes)), [jokes](#jokes), res
 * shonky = of poor or dubious quality, shoddy, unreliable; deviously dishonest
 * shower of shit
 * your mum
-
-### Abbreviations
-* GT = giant todger
 
 ### Absolute
 * an absolute mindfuck of a game
@@ -269,6 +266,7 @@ whenever James Corden pops into my brain
 * dicksplat
 * [furry wee fuck](https://youtu.be/CJbRByzcUdg?t=343 'First Snapdragon 8 Gen 2 Phone! | Vivo X90 Pro Plus | TSW133 - YouTube')&nbsp;(about a cat)  
 * grade A cuntitude
+* GT = giant todger
 * jizz biscuit
 * jizzworthy
 * [knob jockey](https://youtu.be/Wo2iHpWhHbM?t=50 'My Favourite Tech Reviews of 2024 | TSW225 - YouTube')  
@@ -724,7 +722,7 @@ when you're watching full-screen stuff on the iPhone 12.
 It's the smartphone equivalent of being sat behind  
 someone at the cinema wearing a fucking Abraham Lincoln hat.  
 [https://youtu.be/PrfZ1j6Ls3I?t=302](https://youtu.be/PrfZ1j6Ls3I?t=302 'Apple iPhone 12 Review | One Month Later - YouTube')  
-* The iPhone 15 Pro Max is another 6.7” brick.  
+* The iPhone 15 Pro Max is another 6.7" brick.  
 And I do mean a brick.  
 If you had a couple dozen of these bad boys,  
 you could happily build yourself a bungalow.  

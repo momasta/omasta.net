@@ -1,21 +1,25 @@
-{{ $datePublished := .PublishDate.Format .Site.Params.dateFormat | safeHTML }}
+{{- $datePublished := .PublishDate.Format .Site.Params.dateFormat | safeHTML -}}
 
 <li class="post-preview">
     <a href="{{ .RelPermalink }}">{{ .Title }}<br>
         <span class="post-summary">
-            {{- .Summary | plainify | truncate 154 "…" -}}
-        </span></a>
+            {{- if .Description -}}
+                {{- .Description | truncate 154 "…" -}}
+            {{- else -}}
+                {{- .Summary | plainify | truncate 154 "…" -}}
+            {{- end -}}
+        </span></a><br>
 
     {{- range .Params.tags -}}
-    {{- $name := . -}}
-    {{- with index site.Taxonomies.tags $name -}}
-        {{- $title := .Page.Title -}}
-        <a href="{{ .Page.RelPermalink }}"
-           class="tag"
-           title="{{ T "tags-show-all" }} &#35;{{ $title }}">&#35;{{- $title -}}</a>
+        {{- $name := . -}}
+        {{- with index site.Taxonomies.tags $name -}}
+            {{- $title := .Page.Title -}}
+            <a href="{{- .Page.RelPermalink -}}"
+               class="tag"
+               title="{{- T "tags-show-all" }} &#35;{{ $title }}">&#35;{{- $title -}}</a>
+        {{- end -}}
     {{- end -}}
-    {{- end -}}
-    <time datetime="{{- .PublishDate.Format .Site.Params.dateFormatISO | safeHTML }}">
+    <time datetime="{{- .PublishDate.Format .Site.Params.dateFormatISO | safeHTML -}}">
         {{- $datePublished -}}
     </time>
 </li>

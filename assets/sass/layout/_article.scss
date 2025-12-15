@@ -72,7 +72,8 @@ h2:first-child {
 // More margin for multi-line list items
 
 li br ~ a:last-child,
-p + ul li ~ li:last-child a:last-child {
+h2 + p + ul li ~ li:last-child a:last-child,
+h3 + p + ul li ~ li:last-child a:last-child {
   display: inline-block;
   margin-bottom: 1em;
 }

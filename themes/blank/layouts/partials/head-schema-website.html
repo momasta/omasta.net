@@ -5,6 +5,13 @@
     {{- $searchTarget = absURL $pageSearchTarget -}}
 {{- end -}}
 
+{{- $sameAsUrls := slice -}}
+{{- range .Site.Params.author.profiles -}}
+    {{- range $key, $value := . -}}
+        {{- $sameAsUrls = $sameAsUrls | append $value -}}
+    {{- end -}}
+{{- end -}}
+
 {{- $websiteSchema := dict
     "@context" "https://schema.org"
     "@type" "WebSite"
@@ -16,7 +23,7 @@
     "name" .Site.Params.author.name
     "email" (print "mailto:" .Site.Params.author.email)
     "image" (dict "@type" "ImageObject" "url" (.Site.Params.author.image | absURL))
-    "sameAs" .Site.Params.author.sameAs
+    "sameAs" $sameAsUrls
     )
 -}}
 

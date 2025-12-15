@@ -6,8 +6,12 @@
 }
 
 @mixin mq-min-medium-middle {
-  #middle {
+  #middle.direction-row {
     flex-direction: row;
+    align-items: flex-start;
+
+    main + aside {
+      margin-left: 1rem;
+    }
   }
 }
-

@@ -1,0 +1,40 @@
+{{ define "main" -}}
+
+    {{- partial "header" . -}}
+    
+    <div id="middle" class="direction-row">
+        <main>
+            <div class="card">
+                <article>
+                    <h1>
+                        <a href="{{ .RelPermalink }}" rel="bookmark" aria-current="page">{{ .Title }}</a>
+                    </h1>
+
+                    <div class="article-content">
+                        {{ .Content }}
+
+                        {{- $tags := .Site.Taxonomies.tags }}
+                        {{- if gt (len $tags) 0 }}
+                            <ul class="links">
+                                {{ range $name, $taxonomy := $tags }} {{ $count := .Count }}
+                                    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+                                        <li>
+                                            <a href="{{ .RelPermalink }}"
+                                               title="{{ T "tags-show-all" }} &#35;{{ .LinkTitle }}"
+                                               class="tag">
+                                                &#35;{{ .LinkTitle }}</a>&nbsp;<span>({{ $count }})</span><br>
+                                            {{ .Summary }}
+                                        </li>
+                                    {{ end }}
+                                {{ end }}
+                            </ul>
+                        {{- end }}
+
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        {{- partial "sidebar.html" . -}}
+    </div>
+{{ end }}
