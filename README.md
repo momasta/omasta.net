@@ -32,16 +32,31 @@ My Personal Website
     - [photoswipe.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe.esm.min.js)
     - [photoswipe-lightbox.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe-lightbox.esm.min.js)
 
+## Installation
+* [Install Hugo](https://github.com/gohugoio/hugo?tab=readme-ov-file#installation)
+
+* Clone this repository:  
+`git clone https://github.com/momasta/omasta.net.git`
+
+* Enter the project directory:  
+`cd omasta.net`
+
+* Test the site locally:  
+`killall hugo; hugo server --minify --bind 0.0.0.0 --baseURL="http://$(hostname -f):1313" --port 1313`
+
+* Build the site:  
+`killall hugo; hugo --minify --cleanDestinationDir --gc`
+
 ## Image Gallery
 A Hugo shortcode based on [this article by Christian Specht](https://www.codeproject.com/articles/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2#comments-section).
 
-* Source: [themes/blank/layouts/shortcodes/gallery.html](themes/blank/layouts/shortcodes/gallery.html)
+* Source: [themes/blank/layouts/_shortcodes/gallery.html](themes/blank/layouts/_shortcodes/gallery.html)
 * Live Demo: [omasta.net/memes/](https://omasta.net/memes/)
 * Live Demo (`.size-s`): [omasta.net/posts/tech-spurt-quotes/](https://omasta.net/posts/tech-spurt-quotes/)
 
 ### Usage
 * In a Markdown file:  
-`{{< gallery "memes" >}}`
+`{{< gallery "memes" >}}`  
 `{{< gallery "tech-spurt" "size-s" "name" >}}`
 * Arguments:
   * Path (optional)
@@ -94,7 +109,7 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
 * [dimsemenov/PhotoSwipe on GitHub](https://github.com/dimsemenov/PhotoSwipe)
 
 ### ai.robots.txt
-* A list of AI-related crawlers of all types.
+* A list of AI-related crawlers to block.
 * Added to [robots.txt](robots.txt) and [.htaccess](.htaccess)
 * My website was made by a human, for humans.  
   Not for half-baked hallucinating Cleverbot-like LLM chatbots, such as ChatGPT.

@@ -32,6 +32,9 @@ my-content: 'My Content'
 back: 'Back'
 go-back-to: 'Go back to'
 
+## Component: Footer
+github-title: momasta/omasta.net on GitHub, the source code of this website
+
 ## Component: Gallery
 no-images-found: 'No images found.'
 press-esc: 'Press Esc to clear'

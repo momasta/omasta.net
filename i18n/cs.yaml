@@ -32,6 +32,9 @@ my-content: 'Můj obsah'
 back: 'Zpět'
 go-back-to: 'Jít zpět na'
 
+## Component: Footer
+github-title: momasta/omasta.net na GitHubu, zdrojový kód těchto stránek
+
 ## Component: Gallery
 no-images-found: 'Nebyly nalezeny žádné obrázky.'
 press-esc: 'Stiskněte Esc pro smazání'
