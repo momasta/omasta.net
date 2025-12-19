@@ -36,16 +36,24 @@ My Personal Website
 * [Install Hugo](https://github.com/gohugoio/hugo?tab=readme-ov-file#installation)
 
 * Clone this repository:  
-`git clone https://github.com/momasta/omasta.net.git`
+  ```Shell
+  git clone https://github.com/momasta/omasta.net.git
+  ```
 
 * Enter the project directory:  
-`cd omasta.net`
+  ```Shell
+  cd omasta.net
+  ```
 
 * Test the site locally:  
-`killall hugo; hugo server --minify --bind 0.0.0.0 --baseURL="http://$(hostname -f):1313" --port 1313`
+  ```Shell
+  killall hugo; hugo server --minify --bind 0.0.0.0 --baseURL="http://$(hostname -f):1313" --port 1313
+  ```
 
 * Build the site:  
-`killall hugo; hugo --minify --cleanDestinationDir --gc`
+  ```Shell
+  killall hugo; hugo --minify --cleanDestinationDir --gc
+  ```
 
 ## Image Gallery
 A Hugo shortcode based on [this article by Christian Specht](https://www.codeproject.com/articles/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2#comments-section).
@@ -56,8 +64,14 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
 
 ### Usage
 * In a Markdown file:  
-`{{< gallery "memes" >}}`  
-`{{< gallery "tech-spurt" "size-s" "name" >}}`
+  ```
+  {{< gallery "memes" >}}
+  ```
+  
+  ```
+  {{< gallery "tech-spurt" "size-s" "name" >}}
+  ```
+
 * Arguments:
   * Path (optional)
     * Where to look for images
@@ -110,7 +124,7 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
 
 ### ai.robots.txt
 * A list of AI-related crawlers to block.
-* Added to [robots.txt](robots.txt) and [.htaccess](.htaccess)
+* Added to [robots.txt](themes/blank/layouts/robots.txt) and [.htaccess](static/.htaccess)
 * My website was made by a human, for humans.  
   Not for half-baked hallucinating Cleverbot-like LLM chatbots, such as ChatGPT.
 * [ai.robots.txt on GitHub](https://github.com/ai-robots-txt/ai.robots.txt)
