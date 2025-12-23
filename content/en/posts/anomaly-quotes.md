@@ -38,7 +38,7 @@ Might be useful to people who run clips or compilation channels.
 
 ## See Also
 * [YouTube Quotes]({{< relref "posts/youtube-quotes.md" >}}) (from other creators)
-* [Search Anomaly Captions on Filmot](https://filmot.com/search/%22%22/1?channelID=UCcqsx0NjdN3Ng9Nd8VSOlXg%2CUCqck1kDsBbrlKWHGRsk7dbQ%2CUCrS8Da6rTX7ZfS0rfD9O-mg%2CUC7kSToMoGlUR3M0PRFqlyew%2CUCQNObe8WtL6OdJ_7Wa046HA%2CUCDUUJ9Z-asbzasYlgi2h4nA%2CUCvMZD3q4xzu67PxuKJ9g2yw&gridView=1& "Filmot - Search in YouTube captions and subtitles")
+* [Search Anomaly Captions on Filmot](https://filmot.com/search/%22%22/1?channelID=UCcqsx0NjdN3Ng9Nd8VSOlXg%2CUCqck1kDsBbrlKWHGRsk7dbQ%2CUCrS8Da6rTX7ZfS0rfD9O-mg%2CUC7kSToMoGlUR3M0PRFqlyew%2CUCQNObe8WtL6OdJ_7Wa046HA%2CUCDUUJ9Z-asbzasYlgi2h4nA%2CUCvMZD3q4xzu67PxuKJ9g2yw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')
 
 {{< TableOfContents >}}
 
@@ -220,7 +220,7 @@ because I don't need them.
 … Muammar al-Gaddafi.  
   [https://youtu.be/V2e4ghxIwS0?t=682](https://youtu.be/V2e4ghxIwS0?t=682 'ANOMALY AND PAPANOMALY Q&A (2023) - YouTube')
 * Hello am 48 year man from somalia. Sorry for my bed england. I selled my wife for internet connection for play “conter stirk” and I want to become the goodest player like you I play with 400 ping on brazil server and I am Global elite 2. pls no copy pasterino my story  
-  [https://youtu.be/7zV2_wwwF_4](https://youtu.be/7zV2_wwwF_4 "Anomaly - I selled my wife for internet connection - YouTube")
+  [https://youtu.be/7zV2_wwwF_4](https://youtu.be/7zV2_wwwF_4 'Anomaly - I selled my wife for internet connection - YouTube')
 
 ### Akriform
 A company Papanomaly used to work for.

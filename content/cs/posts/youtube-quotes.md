@@ -156,7 +156,7 @@ Minecraft – Part 1 – Enderman zabíjí,creeper vybouchává!
   [https://youtu.be/GSaCAP2GgDs](https://youtu.be/GSaCAP2GgDs 'Práce tě musí bavit! Cožeeee? Největší mýtus současnosti... - YouTube')
 * Já jsem nepil (Notor z Brna)  
   ~~[https://youtu.be/TCgx9Spef-Q?t=2m22s](https://youtu.be/TCgx9Spef-Q?t=2m22s '- YouTube')~~  
-  [https://youtu.be/_OrbrlLGJq4?t=115](https://youtu.be/_OrbrlLGJq4?t=115)  
+  [https://youtu.be/_OrbrlLGJq4?t=115](https://youtu.be/_OrbrlLGJq4?t=115 'Notor z Brna - YouTube')  
 * To je prostě festival hnusu. (Michael Rostock-Poplar, Den D, Shark Tank)  
   [https://youtu.be/UVBckwj27uU?t=127](https://youtu.be/UVBckwj27uU?t=127 'exoti - YouTube')
 * Jo, jsem Aneta zkurvená, já vim. (Lukáš Kril)  

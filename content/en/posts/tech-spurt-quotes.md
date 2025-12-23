@@ -13,7 +13,7 @@ keywords:
     - British dialect
     - funny
     - wiki
-lastmod: 2025-12-06T13:52:11+01:00
+lastmod: 2025-12-23T11:22:46+01:00
 main_content_id: table-of-contents
 slug:
 tags:
@@ -22,18 +22,18 @@ title: "Tech Spurt Quotes"
 type: posts
 ---
 
-Here are quotes and transcripts from [Tech&nbsp;Spurt's](https://youtube.com/@TechSpurt "Tech Spurt - YouTube") YouTube videos.
+Here are quotes and transcripts from [Tech&nbsp;Spurt's](https://youtube.com/@TechSpurt 'Tech Spurt - YouTube') YouTube videos.
 
 He's my favourite tech reviewer, authentic and down to earth.  
-He speaks a colourful [northern&nbsp;English&nbsp;dialect](https://en.wikipedia.org/wiki/Mackem "Mackem - Wikipedia") and has a bit of a potty mouth.  
+He speaks a colourful [northern&nbsp;English&nbsp;dialect](https://en.wikipedia.org/wiki/Mackem 'Mackem - Wikipedia') and has a bit of a potty mouth.  
   
 As an Apple fanboy, I don't really care much about most of the news and&nbsp;reviews.  
 I watch them for the comedy.  
   
 {{< gallery "tech-spurt" "size-s" "name" >}}
 
-I think I've watched every episode of [Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70&si=TnyhB-a9m7tDd_Jl "Tech Spurt Weekly - YouTube") (66&nbsp;hours&nbsp;34&nbsp;minutes),  
-along with other vids, and&nbsp;every single [Recombu&nbsp;Quickie](https://youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D "Recombu Quickies - YouTube")&nbsp;(2&nbsp;hours&nbsp;45&nbsp;minutes),  
+I think I've watched every episode of [Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70&si=TnyhB-a9m7tDd_Jl 'Tech Spurt Weekly - YouTube') (66&nbsp;hours&nbsp;34&nbsp;minutes),  
+along with other vids, and&nbsp;every single [Recombu&nbsp;Quickie](https://youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D 'Recombu Quickies - YouTube')&nbsp;(2&nbsp;hours&nbsp;45&nbsp;minutes),  
 from a&nbsp;review site he&nbsp;used to&nbsp;work&nbsp;for.  
 
 Below, you'll find bits I found funny or worth sharing:  
@@ -43,8 +43,8 @@ Original expressions (especially&nbsp;[similes](#similes)), [jokes](#jokes), res
 * [YouTube Quotes]({{< relref "posts/youtube-quotes.md" >}})  
   (From other creators)
 * [The Spurt Hole](https://www.youtube.com/@SpurtHole 'The Spurt Hole - YouTube') (second channel)
-* He's also a [crime&nbsp;writer](https://www.amazon.co.uk/stores/author/B005UGALE4 "Amazon.co.uk: Chris Barraclough: books, biography, latest update").
-* [Search Tech Spurt Captions on Filmot](https://filmot.com/search/%22%22/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& "Filmot - Search in YouTube captions and subtitles")
+* He's also a [crime&nbsp;writer](https://www.amazon.co.uk/stores/author/B005UGALE4 'Amazon.co.uk: Chris Barraclough: books, biography, latest update').
+* [Search Tech Spurt Captions on Filmot](https://filmot.com/search/%22%22/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')
 
 {{< TableOfContents >}}
 
@@ -382,6 +382,8 @@ I slap on a rubber Johnny to prevent from getting the clap.
 * [https://youtu.be/oQhxT5SADoo?t=267](https://youtu.be/oQhxT5SADoo?t=267 'Motorola Moto G85 5G | Unboxing, Camera, Gaming & Beyond! - YouTube')  
 * [https://youtu.be/x3EcUeRBYqc?t=293](https://youtu.be/x3EcUeRBYqc?t=293 'Motorola Edge 50 Neo | Unboxing, Camera, Gaming & Beyond! - YouTube')  
 * [https://youtu.be/Oyw4u1_vdhQ?t=245](https://youtu.be/Oyw4u1_vdhQ?t=245 'Best Phone Under £150? | Motorola Moto G35 5G Unboxing & Tour - YouTube')  
+* [https://youtu.be/CjuO8ck2MuM?t=921](https://youtu.be/CjuO8ck2MuM?t=921 "Best Phones 2025 | I've Tested Over 75 Smartphones, Here's My Favourites! - YouTube")  
+* [Search Tech Spurt captions on Filmot for "karate"](https://filmot.com/search/%22karate%22/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& "Filmot - Search in YouTube captions and subtitles")  
   
 ## Segments
 ### Intros
@@ -666,6 +668,13 @@ that only shows up under UV light?
 [https://youtu.be/o_BkBGUoK5E?t=342](https://youtu.be/o_BkBGUoK5E?t=342 'Samsung Galaxy A53 vs A33 5G | TSW103 - YouTube')  
 * I think I'll try defying gravity (singing)  
 [https://youtu.be/7DQ0OERK1_U?t=291](https://youtu.be/7DQ0OERK1_U?t=291 "What's up with the Xiaomi 15 Ultra? | TSW224 - YouTube")  
+* You have two minutes to shit out the Coke bottle  
+we inserted into your rectum,  
+otherwise the Mentos tablet is released  
+and your bowls will explode into frothy chunks.  
+[https://youtu.be/9draKiuugrw?t=725](https://youtu.be/9draKiuugrw?t=725 'Google Pixel 6 & Tensor, Moto Edge 20 Series | TSW73 - YouTube')   
+* Upside down shot, \*sip\*, \*cough\*  
+[https://youtu.be/tbOWpwJOJgA?t=259](https://youtu.be/tbOWpwJOJgA?t=259 'Best Phones Coming Early 2026 | S26 Ultra, Redmi Note 15 Series & More | TSW260 - YouTube')  
 
 ## Topics
 ### Apple
@@ -687,7 +696,7 @@ flagship Pixel smartphones over the last few years as well.
 And every time I do that, I get absolutely lambasted  
 in&nbsp;the&nbsp;comments as an Apple fanboy,  
 so&nbsp;I&nbsp;just can't fucking win apparently.  
-[https://youtu.be/7rHkBiJuYrw?t=703](https://youtu.be/7rHkBiJuYrw?t=638 'Tech Spurt Weekly Ep37 | Xbox Series X Unboxing, AMD Big Navi - YouTube')  
+[https://youtu.be/7rHkBiJuYrw?t=703](https://youtu.be/7rHkBiJuYrw?t=703 'Tech Spurt Weekly Ep37 | Xbox Series X Unboxing, AMD Big Navi - YouTube')  
 * **Viewer:**&nbsp;My uncle just gave me an iPhone SE.  
 … It sounds like your uncle needs a swift kick  
 right in the happy sack, mate.  
@@ -882,11 +891,11 @@ A proper honking heap of **musk**.
   
 ### Life in the UK
 * Search Tech Spurt captions on Filmot – mentions of:  
-    * [Middlesbrough](https://filmot.com/search/%22Middlesbrough%22~3/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& "Filmot - Search in Youtube captions and subtitles")  
-    * [Milton Keynes](https://filmot.com/search/%22Milton%20Keynes%22~3/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& "Filmot - Search in Youtube captions and subtitles")  
-    * [Newcastle](https://filmot.com/search/%22in%20Newcastle%22~3/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& "Filmot - Search in Youtube captions and subtitles")  
-    * [Sunderland](https://filmot.com/search/%22in%20Sunderland%22~3/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& "Filmot - Search in Youtube captions and subtitles")  
-    * [Wolverhampton](https://filmot.com/search/%22Wolverhampton%22/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& "Filmot - Search in Youtube captions and subtitles")  
+    * [Middlesbrough](https://filmot.com/search/%22Middlesbrough%22~3/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')  
+    * [Milton Keynes](https://filmot.com/search/%22Milton%20Keynes%22~3/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')  
+    * [Newcastle](https://filmot.com/search/%22in%20Newcastle%22~3/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')  
+    * [Sunderland](https://filmot.com/search/%22in%20Sunderland%22~3/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')  
+    * [Wolverhampton](https://filmot.com/search/%22Wolverhampton%22/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')  
 * I am still absolutely gutted that that gorgeous red model  
 is not coming to Blighty anytime soon.  
 Come on, sort it out, Sony.  
@@ -995,7 +1004,7 @@ don't even live in&nbsp;the&nbsp;same fucking continent.
 [https://youtu.be/NMERiVKFvIM?t=67](https://youtu.be/NMERiVKFvIM?t=67 'Xiaomi 12 Series Global Launch | TSW102 - YouTube')  
   
 ### Nihilism
-* [Search Tech Spurt captions on Filmot for "husk"](https://filmot.com/search/husk/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& "Filmot - Search in Youtube captions and subtitles")  
+* [Search Tech Spurt captions on Filmot for "husk"](https://filmot.com/search/husk/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')  
 * Crazy roller coaster with no end,  
 apart from, obviously, the sweet embrace of death.  
 [https://youtu.be/yXz2WdvMR-w?t=25](https://youtu.be/yXz2WdvMR-w?t=25 'Tech Spurt Weekly Ep38 | Motorola Moto G9 Power, Xbox Series X - YouTube')   
@@ -1106,9 +1115,9 @@ by irritating youths with stupid usernames on shit like Call of Duty.
 [https://youtu.be/hQXzrkZt0PQ?t=374s](https://youtu.be/hQXzrkZt0PQ?t=374s 'Motorola Edge 30 Ultra Review | Pixel 7 Pro Killer? - YouTube')  
   
 ### Self-Deprecation
-* Watching some bald YouTube twat  
+* Watching some **bald YouTube twat**  
 [https://youtu.be/f2saSx301b0?t=194](https://youtu.be/f2saSx301b0?t=194 'Samsung Galaxy Z Fold 6 | Tips, Tricks & Best Features - YouTube')  
-* Feel free to call me a festering slaphead.  
+* Feel free to call me a **festering slaphead**.  
 [https://youtu.be/xF02Vu6IunA?t=699](https://youtu.be/xF02Vu6IunA?t=699 'Best Budget Phones (Winter 2025) | Top 10 Reviewed - YouTube')  
 * Definitely happy to&nbsp;be anyone's guilty pleasure.  
 Um… Certainly "pleasure" is not a word  
@@ -1119,8 +1128,11 @@ that'll have half the audience staring blank eyed at the screen.
 Cuz the other half buggered off ages ago.  
 [https://youtu.be/z6ktsGcffFE?t=818](https://youtu.be/z6ktsGcffFE?t=818 'Nintendo Switch 2 Leaks | What To Expect | TSW186 - YouTube')  
 * Lately, I've had legions of adoring fans messaging me to say:  
-“Hello you balding bastard.”  
+“Hello you **balding bastard**.”  
 [https://youtu.be/h9v2uN_QQKs?t=51s](https://youtu.be/h9v2uN_QQKs?t=51s 'Google Pixel 7a, Worth Waiting vs Pixel 7? | TSW150 - YouTube')  
+* Yet another meaningless list of best smartphones  
+from a **follically deficient middle-aged jizz mop**.  
+[https://youtu.be/CjuO8ck2MuM?t=1088](https://youtu.be/CjuO8ck2MuM?t=1088 "Best Phones 2025 | I've Tested Over 75 Smartphones, Here's My Favourites! - YouTube")  
 
 ### Tablets with Rear Cameras
 * Anyone who actually uses a rear camera on a tablet,  
@@ -1302,3 +1314,5 @@ Whoever invented that one, frankly deserves a Nobel Prize.
 [https://youtu.be/eNRG1QDnK7k?t=502](https://youtu.be/eNRG1QDnK7k?t=502 'Samsung Galaxy S26 Plus, Back From The Dead! R.I.P. S26 Edge? | TSW257 - YouTube')  
 * You can bet your favourite dangly part  
 [https://youtu.be/7DQ0OERK1_U?t=207](https://youtu.be/7DQ0OERK1_U?t=207 "What's up with the Xiaomi 15 Ultra? | TSW224 - YouTube")  
+* Mankini  
+[https://youtu.be/N-K2EIi1dQI?t=250](https://youtu.be/N-K2EIi1dQI?t=250 'Motorola RAZR 50 & 50 Ultra | What To Expect | TSW200 - YouTube')   

@@ -7,6 +7,7 @@ My Personal Website
 ## Table of Contents
 - [Features](#features)
 - [Dependencies](#dependencies)
+- [Installation](#installation)
 - [Image Gallery](#image-gallery)
     - [Usage](#usage)
     - [Modifications and Added Features](#modifications-and-added-features)

@@ -16,8 +16,8 @@ type: posts
 ---
 
 ## Viz také {#viz-take}
-* [Slova přejatá z němčiny – Wikislovník](https://cs.m.wiktionary.org/wiki/P%C5%99%C3%ADloha:Slova_p%C5%99ejat%C3%A1_z_n%C4%9Bm%C4%8Diny_(%C4%8De%C5%A1tina))
-* [Slovník germanismů](https://germanismy.cz/slovnik-germanismu/)
+* [Slova přejatá z němčiny – Wikislovník](https://cs.m.wiktionary.org/wiki/P%C5%99%C3%ADloha:Slova_p%C5%99ejat%C3%A1_z_n%C4%9Bm%C4%8Diny_(%C4%8De%C5%A1tina) 'Příloha:Slova přejatá z němčiny (čeština) – Wikislovník')
+* [Slovník germanismů](https://germanismy.cz/slovnik-germanismu/ 'Slovník germanismů - Překlady němčiny - sofort! 608 666 582')
 
 ## Spisovná slova
 * buřt (Wurst)
