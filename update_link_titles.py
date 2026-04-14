@@ -30,6 +30,7 @@ SUSPICIOUS_TITLE_PATTERNS = [
     r"(404|not found)",
 ]
 
+CACHE_DIR = "resources/_gen/"
 CACHE_FILENAME = "update_link_titles_cache"
 
 import html
@@ -43,7 +44,7 @@ from typing import Iterator, Tuple, List, Optional, Dict
 
 def get_cache_path(lang: str) -> str:
     suffix = "" if lang == "en" else f"-{lang}"
-    return f"{CACHE_FILENAME}{suffix}.json"
+    return f"{CACHE_DIR}{CACHE_FILENAME}{suffix}.json"
 
 def load_cache(lang: str) -> Dict[str, str]:
     path = get_cache_path(lang)

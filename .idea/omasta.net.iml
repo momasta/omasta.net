@@ -12,6 +12,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/assets/images/anomaly" />
       <excludeFolder url="file://$MODULE_DIR$/assets/images/tech-spurt" />
+      <excludeFolder url="file://$MODULE_DIR$/assets/images/geoguessr-tips" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

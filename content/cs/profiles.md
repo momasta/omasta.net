@@ -30,4 +30,3 @@ layout: simple
 ## Sociální sítě
 * [Discord](https://discordapp.com/users/m.omasta "m.omasta na Discordu")
 * [Messenger](https://m.me/omastik "omastik (Marek Omasta) na Messengeru")
-* [Reddit - u/m_omasta](https://reddit.com/user/m_omasta "m_omasta na Redditu")

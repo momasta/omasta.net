@@ -7,6 +7,7 @@ enableRobotsTXT: true
 loadJQuery: false
 printI18nWarnings: true
 removePathAccents: true
+robots: noai, noimageai
 timeout: 180s
 titleCaseStyle: none
 
@@ -55,7 +56,6 @@ params:
       - Mastodon: "https://mastodon.social/@marek_omasta"
       - Apple Music: "https://music.apple.com/profile/m_omasta"
       - Pinterest: "https://pinterest.com/m_omasta"
-      - Reddit: "https://reddit.com/user/m_omasta"
       - Unsplash: "https://unsplash.com/@m_omasta"
       - YouTube: "https://youtube.com/@m.omasta"
           
@@ -75,8 +75,8 @@ outputs:
 languages:
   en:
     contentDir: content/en
-    languageName: English
-    languageCode: en-GB
+    label: English
+    locale: en-GB
     weight: 1
     params:
       dateFormat: 2 Jan 2006
@@ -93,8 +93,8 @@ languages:
   
   cs:
     contentDir: content/cs
-    languageName: Čeština
-    languageCode: cs-CZ
+    label: Čeština
+    locale: cs-CZ
     weight: 2
     params:
       dateFormat: 2. 1. 2006

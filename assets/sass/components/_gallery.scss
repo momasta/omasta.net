@@ -1,32 +1,54 @@
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   gap: 10px;
+  margin: 0.5rem 0;
 
   &.size-s {
-    grid-template-columns: repeat(auto-fit, minmax(59px, 1fr));
     gap: 4px;
   }
+  
+  .gallery-image {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  
+  &.type-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
-  form {
-    width: 100%;
-    position: relative;
+    &.size-s {
+      grid-template-columns: repeat(auto-fit, minmax(59px, 1fr));
+    }
+
+    form {
+      width: 100%;
+      position: relative;
+    }
+    
+    .gallery-image {
+      display: block;
+      max-width: none;
+      max-height: none;
+    }
+    
+    .gallery-thumb {
+      aspect-ratio: 1 / 1;
+    }
   }
 }
 
 .gallery-filter {
-  padding: 0 0 20px;
   display: flex;
   flex-basis: 100%;
+  padding-bottom: 0.5rem;
 }
 
 #gallery-no-results.state-hidden {
   display: none;
 }
 
-// <a class="gallery-image>
+// <a class="gallery-image">
 .gallery-image {
-  display: block;
   font-size: 0;
   overflow: hidden;
   border-radius: 8px;
@@ -63,9 +85,7 @@
   object-fit: cover;
   overflow: hidden;
   width: 100%;
-  aspect-ratio: 1 / 1;
   background-color: var(--color-site-bg);
-  border: 1px solid var(--color-text-light);
   border-radius: 8px;
   transition: opacity var(--ease);
   @extend %no-interaction;
@@ -86,13 +106,13 @@
 }
 
 @mixin mq-min-tablet-gallery-image {
-  .gallery {
+  .gallery.type-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @mixin mq-min-medium-gallery-image {
-  .gallery {
+  .gallery.type-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }

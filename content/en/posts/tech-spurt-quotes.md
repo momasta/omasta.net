@@ -24,15 +24,15 @@ type: posts
 
 Here are quotes and transcripts from [Tech&nbsp;Spurt's](https://youtube.com/@TechSpurt 'Tech Spurt - YouTube') YouTube videos.
 
-He's my favourite tech reviewer, authentic and down to earth.  
-He speaks a colourful [northern&nbsp;English&nbsp;dialect](https://en.wikipedia.org/wiki/Mackem 'Mackem - Wikipedia') and has a bit of a potty mouth.  
+He's my favourite tech reviewer, authentic and&nbsp;down&nbsp;to&nbsp;earth.  
+He speaks a colourful [northern&nbsp;English&nbsp;dialect](https://en.wikipedia.org/wiki/Mackem 'Mackem - Wikipedia') and has a&nbsp;bit of&nbsp;a&nbsp;potty mouth.  
   
-As an Apple fanboy, I don't really care much about most of the news and&nbsp;reviews.  
+As an Apple fanboy, I don't care much about most of&nbsp;the&nbsp;news and&nbsp;reviews.  
 I watch them for the comedy.  
   
-{{< gallery "tech-spurt" "size-s" "name" >}}
+{{< gallery "tech-spurt" "type-grid size-s" "name" >}}
 
-I think I've watched every episode of [Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70&si=TnyhB-a9m7tDd_Jl 'Tech Spurt Weekly - YouTube') (66&nbsp;hours&nbsp;34&nbsp;minutes),  
+I think I've watched every episode of&nbsp;[Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70&si=TnyhB-a9m7tDd_Jl 'Tech Spurt Weekly - YouTube') (66&nbsp;hours&nbsp;34&nbsp;minutes),  
 along with other vids, and&nbsp;every single [Recombu&nbsp;Quickie](https://youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D 'Recombu Quickies - YouTube')&nbsp;(2&nbsp;hours&nbsp;45&nbsp;minutes),  
 from a&nbsp;review site he&nbsp;used to&nbsp;work&nbsp;for.  
 
@@ -895,7 +895,7 @@ A proper honking heap of **musk**.
     * [Milton Keynes](https://filmot.com/search/%22Milton%20Keynes%22~3/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')  
     * [Newcastle](https://filmot.com/search/%22in%20Newcastle%22~3/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')  
     * [Sunderland](https://filmot.com/search/%22in%20Sunderland%22~3/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')  
-    * [Wolverhampton](https://filmot.com/search/%22Wolverhampton%22/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')  
+    * [Wolverhampton](https://filmot.com/search/%22Wolverhampton%22/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')<br><br>  
 * I am still absolutely gutted that that gorgeous red model  
 is not coming to Blighty anytime soon.  
 Come on, sort it out, Sony.  
@@ -1004,7 +1004,7 @@ don't even live in&nbsp;the&nbsp;same fucking continent.
 [https://youtu.be/NMERiVKFvIM?t=67](https://youtu.be/NMERiVKFvIM?t=67 'Xiaomi 12 Series Global Launch | TSW102 - YouTube')  
   
 ### Nihilism
-* [Search Tech Spurt captions on Filmot for "husk"](https://filmot.com/search/husk/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')  
+* [Search Tech Spurt captions on Filmot for "husk"](https://filmot.com/search/husk/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')<br><br>  
 * Crazy roller coaster with no end,  
 apart from, obviously, the sweet embrace of death.  
 [https://youtu.be/yXz2WdvMR-w?t=25](https://youtu.be/yXz2WdvMR-w?t=25 'Tech Spurt Weekly Ep38 | Motorola Moto G9 Power, Xbox Series X - YouTube')   

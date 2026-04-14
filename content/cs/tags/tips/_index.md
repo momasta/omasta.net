@@ -5,5 +5,6 @@ draft: false
 layout: term
 ---
 
-Doporučení, návody a informace, které mi byly užitečné.  
+Doporučení, návody a informace, které mi byly užitečné.
+  
 Všechny pochází z mojí aplikace Poznámky.

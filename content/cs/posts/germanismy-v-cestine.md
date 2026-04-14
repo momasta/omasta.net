@@ -1,13 +1,15 @@
 ---
-date: 2025-12-15T14:17:46+01:00
-lastmod: 2025-12-15T14:17:46+01:00
+date: 2026-04-14T12:03:55+02:00
+lastmod: 2026-04-14T12:03:55+02:00
 title: "Slova německého původu"
-draft: true
-description: ""
+draft: false
+description: "Moje sbírka germanismů v češtině"
 summary: ""
 keywords:
   - etymologie
   - původ slov
+  - český jazyk
+  - německý jazyk
 main_content_id: ""
 slug: ""
 tags: []
@@ -16,7 +18,7 @@ type: posts
 ---
 
 ## Viz také {#viz-take}
-* [Slova přejatá z němčiny – Wikislovník](https://cs.m.wiktionary.org/wiki/P%C5%99%C3%ADloha:Slova_p%C5%99ejat%C3%A1_z_n%C4%9Bm%C4%8Diny_(%C4%8De%C5%A1tina) 'Příloha:Slova přejatá z němčiny (čeština) – Wikislovník')
+* [Slova přejatá z němčiny – Wikislovník](https://cs.wiktionary.org/wiki/P%C5%99%C3%ADloha:Slova_p%C5%99ejat%C3%A1_z_n%C4%9Bm%C4%8Diny_(%C4%8De%C5%A1tina) 'Příloha:Slova přejatá z němčiny (čeština) – Wikislovník')
 * [Slovník germanismů](https://germanismy.cz/slovnik-germanismu/ 'Slovník germanismů - Překlady němčiny - sofort! 608 666 582')
 
 ## Spisovná slova
@@ -31,7 +33,7 @@ type: posts
 * trychtýř (Trichter)
 * žemle (Semmel)
 
-## Nářeční a hovorová slova
+## Nářeční a hovorové výrazy
 * ajzemboňák (Eisenbahner)
 * ánunk (Ahnung)
 * ausgerechnet
@@ -71,6 +73,7 @@ type: posts
 * mírnyx týrnyx (mir nichts, dir nichts)
 * mišuňk (Mischung)
 * mít kliku (Glück haben)
+* mít recht (recht haben)
 * nýmand (Niemand)
 * plac (Platz)
 * póvl (Pöbel)
@@ -84,7 +87,9 @@ type: posts
 * šmakovat (schmecken)
 * šmirglpapír (Schmirgelpapier)
 * šnuptychl (Schnupftüchel)
+* špás (Spaß)
 * špica/špičkový (Spitze)
+* šprýmovat (springen)
 * šrajtofle (Schreibtafel)
 * štamgast (Stammgast)
 * študent (Student)

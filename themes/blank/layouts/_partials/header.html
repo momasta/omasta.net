@@ -2,7 +2,7 @@
     Stylesheet: assets/sass/layout/_header.scss
 */ -}}
 
-<header>
+<header id="header">
     <div class="bar">
         <button class="style-plain size-s toggle-theme-dark"
                 title="{{ T "switch-theme-dark" }}"
@@ -22,23 +22,22 @@
 
         {{- /* Language Switcher */ -}}
         {{ if hugo.IsMultilingual }}
-            {{ $currentLanguageCode := .Lang }}
             {{ if gt (len .Translations) 0 }}
                 {{ range .Translations }}
                     <a title="{{ T "switch-language" }}"
                        href="{{ .RelPermalink }}"
-                       hreflang="{{ .Language.LanguageCode }}">
-                        <span lang="{{ .Language.LanguageCode }}">{{ .Language.LanguageName }}</span>
+                       hreflang="{{ .Language.Locale }}">
+                        <span lang="{{ .Language.Locale }}">{{ .Language.Label }}</span>
                     </a>
                 {{ end }}
             {{ else }}
                 {{ $currentLang := .Site.Language.Lang }}
-                {{ range .Sites }}
+                {{ range hugo.Sites }}
                     {{ if ne .Language.Lang $currentLang }}
                         <a href="{{ .Home.RelPermalink }}"
-                           hreflang="{{ .Language.LanguageCode }}"
+                           hreflang="{{ .Language.Locale }}"
                            title="{{ T "switch-language" }}">
-                            <span lang="{{ .Language.LanguageCode }}">{{ .Language.LanguageName }}</span>
+                            <span lang="{{ .Language.Locale }}">{{ .Language.Label }}</span>
                         </a>
                     {{ end }}
                 {{ end }}

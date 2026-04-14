@@ -34,7 +34,7 @@ Hopefully all of them are direct citations, often intentional, for comedic effec
 Most quotes come with a timestamp in the URL.  
 Might be useful to people who run clips or compilation channels.
 
-{{< gallery "anomaly" "size-s" "name" >}}
+{{< gallery "anomaly" "type-grid size-s" "name" >}}
 
 ## See Also
 * [YouTube Quotes]({{< relref "posts/youtube-quotes.md" >}}) (from other creators)

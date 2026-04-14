@@ -58,7 +58,6 @@ button {
   outline: 4px solid transparent;
   outline-offset: 8px;
   transition: var(--transitions-a);
-  @extend %click-area-small;
 }
 
 :focus:not(input) {

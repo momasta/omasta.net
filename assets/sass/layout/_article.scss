@@ -20,10 +20,11 @@ a.heading-link {
   text-decoration: none;
   transition: opacity var(--ease), var(--transitions-a);
   @extend %no-interaction;
+  @extend %click-area-small;
 
   &::after {
     content: "#";
-    font-family: sans-serif; // Prevents emoji fallback
+    font-family: sans-serif; // Prevent emoji fallback
   }
 
   &.state-success::after {
@@ -67,6 +68,10 @@ h3 + p {
 p + h2,
 h2:first-child {
   padding-top: 0;
+}
+
+.gallery + p {
+  margin-top: 0;
 }
 
 // More margin for multi-line list items

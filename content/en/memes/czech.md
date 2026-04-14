@@ -6,4 +6,4 @@ layout: gallery
 search_target: "/memes/?q={searchTerm}"
 ---
 
-{{< gallery "memes/czech" >}}
+{{< gallery "memes/czech" "type-grid" >}}

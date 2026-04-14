@@ -2,13 +2,13 @@
     Stylesheet: assets/sass/layout/_footer.scss
 */ -}}
 
-<footer class="bar">
+<footer class="bar" id="footer">
     {{ with .Site.GetPage "section" "posts" }}
         {{ with .OutputFormats.Get "RSS" }}
             <a href="{{ .RelPermalink | safeURL }}"
                type="application/rss+xml"
                rel="alternate"
-               hreflang="{{ $.Language.LanguageCode }}">RSS</a>
+               hreflang="{{ $.Language.Locale }}">RSS</a>
         {{ end }}
     {{ end -}}
 

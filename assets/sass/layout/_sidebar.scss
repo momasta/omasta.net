@@ -18,6 +18,10 @@ aside {
     margin: 0;
   }
   
+  a {
+    @extend %click-area-small;
+  }
+  
   ul {
     margin-left: 1.5rem;
   }

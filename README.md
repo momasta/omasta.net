@@ -32,6 +32,14 @@ My Personal Website
     - [photoswipe.css](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe.css)
     - [photoswipe.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe.esm.min.js)
     - [photoswipe-lightbox.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe-lightbox.esm.min.js)
+- ai.robots.txt
+  - Appended manually to [robots.txt](themes/blank/layouts/robots.txt):
+    - [robots.txt](https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt)
+  - Appended manually to [.htaccess](static/.htaccess):
+    - [.htaccess](https://github.com/ai-robots-txt/ai.robots.txt/blob/main/.htaccess)
+- robots.txt by baccyflaps
+  - Appended manually to [robots.txt](themes/blank/layouts/robots.txt):
+    - https://baccyflap.com/res/robots#robots
 
 ## Installation
 * [Install Hugo](https://github.com/gohugoio/hugo?tab=readme-ov-file#installation)
@@ -66,17 +74,24 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
 ### Usage
 * In a Markdown file:  
   ```
-  {{< gallery "memes" >}}
+  {{< gallery "geoguessr-tips" >}}
+  ```
+
+  ```
+  {{< gallery "memes" "type-grid" >}}
   ```
   
   ```
-  {{< gallery "tech-spurt" "size-s" "name" >}}
+  {{< gallery "tech-spurt" "type-grid size-s" "name" >}}
   ```
 
 * Arguments:
   * Path (optional)
     * Where to look for images
-    * Supports: subpath of [assets/images/](assets/images)
+    * Supports:
+      * subpath of [assets/images/](assets/images)
+      * [Glob pattern](https://gohugo.io/quick-reference/glob-patterns/)
+      * File path
     * Default: `"/"`
   * Class (optional)
     * Additional classes for `.gallery`
@@ -125,7 +140,6 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
 
 ### ai.robots.txt
 * A list of AI-related crawlers to block.
-* Added to [robots.txt](themes/blank/layouts/robots.txt) and [.htaccess](static/.htaccess)
 * My website was made by a human, for humans.  
   Not for half-baked hallucinating Cleverbot-like LLM chatbots, such as ChatGPT.
 * [ai.robots.txt on GitHub](https://github.com/ai-robots-txt/ai.robots.txt)

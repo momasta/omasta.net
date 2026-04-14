@@ -12,6 +12,7 @@ header {
 header a,
 footer a {
   text-decoration: none;
+  @extend %click-area-small;
 }
 
 .logo {

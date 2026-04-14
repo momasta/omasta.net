@@ -10,8 +10,8 @@
         };
     }
 
-    // ===== Utility: Text normalization =====
-    function normalizeText(text) {
+    // ===== Utility: Text normalisation =====
+    function normaliseText(text) {
         return (text || "")
             .toLowerCase()
             .trim()
@@ -32,8 +32,8 @@
         "[tabindex]"
     ].join(",");
 
-    function makeUnfocusable(el) {
-        const focusables = el.querySelectorAll(FOCUSABLE_SELECTOR);
+    function makeUnfocusable(element) {
+        const focusables = element.querySelectorAll(FOCUSABLE_SELECTOR);
         focusables.forEach((node) => {
             if (!node.hasAttribute("data-tabindex-original")) {
                 const original = node.getAttribute("tabindex");
@@ -45,13 +45,13 @@
             }
             node.setAttribute("tabindex", "-1");
         });
-        if ("inert" in el) {
-            el.inert = true;
+        if ("inert" in element) {
+            element.inert = true;
         }
     }
 
-    function restoreFocusability(el) {
-        const focusables = el.querySelectorAll(FOCUSABLE_SELECTOR);
+    function restoreFocusability(element) {
+        const focusables = element.querySelectorAll(FOCUSABLE_SELECTOR);
         focusables.forEach((node) => {
             const original = node.getAttribute("data-tabindex-original");
             if (original !== null) {
@@ -67,22 +67,22 @@
                 }
             }
         });
-        if ("inert" in el) {
-            el.inert = false;
+        if ("inert" in element) {
+            element.inert = false;
         }
     }
 
     // ===== Visibility management =====
-    function showImage(el) {
-        el.classList.remove("state-hidden");
-        el.removeAttribute("aria-hidden");
-        restoreFocusability(el);
+    function showImage(element) {
+        element.classList.remove("state-hidden");
+        element.removeAttribute("aria-hidden");
+        restoreFocusability(element);
     }
 
-    function hideImage(el) {
-        el.classList.add("state-hidden");
-        el.setAttribute("aria-hidden", "true");
-        makeUnfocusable(el);
+    function hideImage(element) {
+        element.classList.add("state-hidden");
+        element.setAttribute("aria-hidden", "true");
+        makeUnfocusable(element);
     }
 
     // ===== Classification logic =====
@@ -103,8 +103,8 @@
             return MatchCategory.RAW_STARTS_WITH;
         }
 
-        const altNorm = normalizeText(altRaw);
-        const qNorm = normalizeText(qRaw);
+        const altNorm = normaliseText(altRaw);
+        const qNorm = normaliseText(qRaw);
 
         if (altNorm.startsWith(qNorm) && qNorm.length > 0) {
             return MatchCategory.NORMALIZED_STARTS_WITH;
@@ -121,10 +121,10 @@
     }
 
     // ===== URL integration =====
-    function setQueryParamInURL(q) {
+    function setQueryParamInURL(query) {
         const url = new URL(window.location.href);
-        if (q && q.length > 0) {
-            url.searchParams.set("q", q);
+        if (query && query.length > 0) {
+            url.searchParams.set("q", query);
         } else {
             url.searchParams.delete("q");
         }
@@ -148,7 +148,7 @@
         }
     }
 
-    // ===== Initialization & main wiring =====
+    // ===== Initialisation =====
     function initGalleryFiltering() {
         const container = document.querySelector(".gallery");
         if (!container) throw new Error("Gallery container (.gallery) not found.");
@@ -175,33 +175,33 @@
         const noResultsEl = document.getElementById("gallery-no-results");
 
         function applyFilter(queryRaw) {
-            const q = queryRaw || "";
-            const trimmed = q.trim();
+            const query = queryRaw || "";
+            const trimmed = query.trim();
 
             if (trimmed.length === 0) {
                 let anyVisible = false;
-                originalOrder.forEach((el) => {
-                    showImage(el);
-                    galleryParent.appendChild(el);
+                originalOrder.forEach((element) => {
+                    showImage(element);
+                    galleryParent.appendChild(element);
                     anyVisible = true;
                 });
                 updateNoResultsMessage(noResultsEl, anyVisible);
                 return;
             }
 
-            const classified = images.map((el) => {
-                const img = el.querySelector("img");
+            const classified = images.map((element) => {
+                const img = element.querySelector("img");
                 const altText = img ? img.getAttribute("alt") || "" : "";
                 const category = classifyImageByAlt(altText, trimmed);
-                return {el, category};
+                return {element, category};
             });
 
             let anyVisible = false;
-            classified.forEach(({el, category}) => {
+            classified.forEach(({element, category}) => {
                 if (category === MatchCategory.NO_MATCH) {
-                    hideImage(el);
+                    hideImage(element);
                 } else {
-                    showImage(el);
+                    showImage(element);
                     anyVisible = true;
                 }
             });
@@ -216,15 +216,15 @@
 
             classified
                 .sort((a, b) => priorityOrder.indexOf(a.category) - priorityOrder.indexOf(b.category))
-                .forEach(({el}) => galleryParent.appendChild(el));
+                .forEach(({element}) => galleryParent.appendChild(element));
 
             updateNoResultsMessage(noResultsEl, anyVisible);
         }
 
         const debouncedApply = debounce(() => applyFilter(input.value), 180);
 
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
             applyFilter(input.value);
             setQueryParamInURL(input.value.trim()); // URL updated only here
         });
@@ -240,8 +240,8 @@
         });
 
         // ===== Keyboard shortcuts =====
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape") {
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
                 if (window.pswpLightbox && window.pswpLightbox.pswp && window.pswpLightbox.pswp.isOpen) {
                     // If PhotoSwipe is open, let it close first
                     return;
@@ -251,24 +251,24 @@
                 setQueryParamInURL(""); // Clear q param on Escape reset
                 return;
             }
-            if (e.key === "/" && !e.ctrlKey && !e.metaKey && !e.altKey) {
-                const ae = document.activeElement;
+            if (event.key === "/" && !event.ctrlKey && !event.metaKey && !event.altKey) {
+                const activeElement = document.activeElement;
                 const isEditable =
-                    ae &&
-                    (ae.tagName === "INPUT" ||
-                        ae.tagName === "TEXTAREA" ||
-                        ae.isContentEditable);
+                    activeElement &&
+                    (activeElement.tagName === "INPUT" ||
+                        activeElement.tagName === "TEXTAREA" ||
+                        activeElement.isContentEditable);
                 if (!isEditable) {
-                    e.preventDefault();
+                    event.preventDefault();
                     input.focus();
                 }
             }
         });
 
-        const initialQ = getQueryParamFromURL();
-        if (initialQ && initialQ.length > 0) {
-            input.value = initialQ;
-            applyFilter(initialQ);
+        const initialQuery = getQueryParamFromURL();
+        if (initialQuery && initialQuery.length > 0) {
+            input.value = initialQuery;
+            applyFilter(initialQuery);
         } else {
             updateNoResultsMessage(noResultsEl, images.length > 0);
         }

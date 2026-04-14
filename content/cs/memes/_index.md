@@ -9,5 +9,5 @@ layout: list
 search_target: "/memes/?q={searchTerm}"
 ---
 
-{{< gallery "memes" >}}
+{{< gallery "memes" "type-grid" >}}
 
