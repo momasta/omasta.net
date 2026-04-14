@@ -33,7 +33,7 @@ Mohlo by se hodit tvůrcům sestřihů.
 
 {{< TableOfContents >}}
 
-## YouTube kanály plné hlášek
+## YouTube kanály plné hlášek {#youtube-kanaly-plne-hlasek}
 * [@DwightSoyfield](https://www.youtube.com/@DwightSoyfield/videos 'DwightSoyfield - YouTube')  
 * [@Voj_ta](https://www.youtube.com/@Voj_ta/videos 'Voj ta - YouTube') (Voj ta)  
 * [@DebilniPoirot](https://www.youtube.com/@DebilniPoirot/videos 'Hercule Poirot - YouTube') (Hercule Poirot)  
@@ -64,7 +64,7 @@ Mohlo by se hodit tvůrcům sestřihů.
 * Minecraft: Překvápko od guardiana  
 [https://kick.com/fattypillow/clips/clip_01KM5GZCC276M49GDWSY4H4BXS](https://kick.com/fattypillow/clips/clip_01KM5GZCC276M49GDWSY4H4BXS 'FATTYPILLOW - Watch clips on Kick')  
   
-## Klidné městečko
+## Klidné městečko {#klidne-mestecko}
 * Klidné městečko, kde tisíce lidí šukají v živé hře  
   Vytvořte si postavu  
   Ponořte se do neomezeného světa  
