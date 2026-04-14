@@ -21,6 +21,7 @@
 #   python3 update_link_titles.py --update-existing-titles content/en/posts/*.md
 #   python3 update_link_titles.py --lang=cs content/cs/posts/*.md
 #   python3 update_link_titles.py --stash content/
+#   python3 update_link_titles.py content/en/ && python3 update_link_titles.py --lang=cs content/cs/
 
 # The user will be warned about potentially broken links:
 SUSPICIOUS_TITLE_PATTERNS = [
@@ -195,17 +196,16 @@ def print_summary(
     suspicious_title_warnings: List[str],
     mode: str,
 ) -> None:
-    print(f"{path}")
-
-    has_processing_issues = (
-        len(skipped_malformed) > 0
-        or len(skipped_empty_title) > 0
-        or len(skipped_fetch_error) > 0
-        or len(suspicious_title_warnings) > 0
+    has_messages = (
+        skipped_malformed
+        or skipped_empty_title
+        or skipped_fetch_error
+        or suspicious_title_warnings
+        or skipped_name_mode_count
     )
 
-    if has_processing_issues or mode == "stash":
-        print(f"  - Links processed: {total_candidates}")
+    if total_candidates == 0 and has_messages:
+        print(f"{path}")
 
     if skipped_malformed:
         print(f"  - Malformed: {len(skipped_malformed)}")
@@ -241,7 +241,8 @@ def print_summary(
             print(f"  - Skipped {skipped_name_mode_count} links due to mode rules.")
             print(f"    Use --update-existing-titles to force update.")
 
-    print("")
+    if total_candidates > 0 or has_messages:
+        print("")
 
 def format_link_title_for_markdown(raw_title: str) -> str:
     title = html.unescape(raw_title.strip())

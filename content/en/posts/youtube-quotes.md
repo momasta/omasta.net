@@ -8,7 +8,7 @@ keywords:
     - captions
     - funny
     - YT
-lastmod: 2025-12-06T13:39:46+01:00
+lastmod: 2026-04-14T13:35:21+02:00
 main_content_id: "ashens"
 slug:
 tags:
@@ -73,23 +73,25 @@ Might be useful to people who run clips or compilation channels.
   [https://youtube.com/clip/UgkxEp5HKd8OhQqN-34SaRQtUWuI6wYYhOCx](https://youtube.com/clip/UgkxEp5HKd8OhQqN-34SaRQtUWuI6wYYhOCx '✂️ Filthy Frank - You know, I’m a pretty handsome guy - YouTube')
 * Pink Guy ruins a picnic (STFU)  
   [https://youtu.be/OLpeX4RRo28?t=102s](https://youtu.be/OLpeX4RRo28?t=102s 'PINK GUY - STFU - YouTube')
-* By the way: Fuck China.   
+* By the way: Fuck China.  
   Just wanna make that clear: Fuck China.  
   Fuck you, mainland pieces of shit.  
   Hong Kong, Taiwan, totally fine, you guys are cool.  
   You know, the Cantonese it's a little dirty-sounding but… Fuck China.  
-  [https://archive.org/details/FilthyFrankCollection/JAPANESE+101+-+I+DON'T+GIVE+A+FUCK.mp4?start=198](https://archive.org/details/FilthyFrankCollection/JAPANESE+101+-+I+DON "T+GIVE+A+FUCK.mp4?start=198 'The Complete Works of Filthy Frank : George Miller : Free Download, Borrow, and Streaming : Internet Archive")
-
+  [https://archive.org/details/FilthyFrankCollection/JAPANESE+101+-+I+DON'T+GIVE+A+FUCK.mp4?start=198](https://archive.org/details/FilthyFrankCollection/JAPANESE+101+-+I+DON'T+GIVE+A+FUCK.mp4?start=198 'The Complete Works of Filthy Frank : George Miller : Free Download, Borrow, and Streaming : Internet Archive')
 ## GeoWizard (Tom Davies)
 
 * Football.  
   [https://youtu.be/qqwd79cZs8s?t=1267](https://youtu.be/qqwd79cZs8s?t=1267 'How many of the 272 London underground stations can I name? - YouTube')
-
+* Don't be ashamed of your "dead-end job" cuz job's a job.  
+  I enjoyed turning up and being the best fishmonger that I could but...  
+  Yeah, eventually I think it just grated away at me a bit.  
+  This idea that I wasn't fulfilling my potential.  
+  [https://youtu.be/4ySMjI_hWKI?t=560](https://youtu.be/4ySMjI_hWKI?t=560 'GeoWizard: Can You Cross A Country In A Perfectly Straight Line?! - YouTube')
 ## h3h3Productions
 Ethan Klein
 
-* "Game assassins", what the fuck. That made me, like, React™. Almost fucking vomited, dude. Are you a game assassin,
-  dude? You probably fuckin' SICK! (SIIICK)  
+* "Game assassins", what the fuck. That made me, like, React™. Almost fucking vomited, dude. Are you a game assassin, dude? You probably fuckin' SICK! (SIIICK)  
   [https://youtu.be/QPCDoANDkl4?t=156](https://youtu.be/QPCDoANDkl4?t=156 'How to Clean Your Gamer Gear -- h3h3 reaction video - YouTube')
 
 ## iDubbbzTV
@@ -97,8 +99,7 @@ Ethan Klein
 * [Every Single iDubbbz Outro](https://www.reddit.com/r/Idubbbz/comments/i8ksvz/every_single_idubbbz_outro/ 'every single idubbbz outro : r/Idubbbz') (next time when I …)
 * Is that fucking Linus Tech Tips? No, it's not. It's just a greasy kid from the 90s.  
   [https://youtu.be/WtpdJ1aCJCg?t=470](https://youtu.be/WtpdJ1aCJCg?t=470 'I HATE SCHOOL FUNDRAISERS!!! - idubbbz complains - YouTube')
-* Quit being so gay, man, it was just a prank. It was just a prank, faggot. What are you, fucking gay? What are you,
-  fucking faggot? Hey, check this out, faggot.  
+* Quit being so gay, man, it was just a prank. It was just a prank, faggot. What are you, fucking gay? What are you, fucking faggot? Hey, check this out, faggot.  
   [https://youtu.be/-P3YwvuGtKM?t=195](https://youtu.be/-P3YwvuGtKM?t=195 'Bad Unboxing - Fan Mail + SATANIC RITUAL - YouTube')
 * Ian McQuestionable  
   [https://youtu.be/UHmQKzenYYw?t=210](https://youtu.be/UHmQKzenYYw?t=210 'Straight out of Compton - Bad Unboxing - YouTube')
@@ -146,34 +147,32 @@ by Chicken Connoisseur, CNSR
 ## TheReportOfTheWeek
 Reviewbrah
 
-* Dayum DAYUM DAYUM (damn damn damn, Twinkies)  
+* Dayum DAYUM DAYUM  
+  (Damn damn damn, Twinkies)  
   [https://youtu.be/89tAhxDxzlw?t=280](https://youtu.be/89tAhxDxzlw?t=280 "TheReportOfTheWeek's Random Clips - YouTube")
 * Domino's Pan Pizza  
   [https://youtu.be/qpCfKf9izzI?t=88](https://youtu.be/qpCfKf9izzI?t=88 'From The Archives.. My First Food Review Ever, January 2011 - YouTube')
 * Tastes like chicken  
   [https://youtu.be/XmFFa9d87ng?t=433](https://youtu.be/XmFFa9d87ng?t=433 "TheReportOfTheWeek's Random Clips Part 2 - YouTube")
-* Is that Lorde? Yes it is. Yes it is, just got done with a big concert the other day and now… now went back to my…
-  measly life of reviewing food on YouTube.  
-  [https://youtu.be/qNrVUksxTPc](https://youtu.be/qNrVUksxTPc '🔴 Friday Night Live Stream - Q&A, Misc Talk & Possible Review! - YouTube')
-* If you really wanna create something like me […] get a coffee pot, you pour some room-temperature water in it, two ice
-  cubes, you get the DNA from the frog, a little bit of DNA from Spider-Man […] and then you also get a little bit of
-  DNA from Lorde, a little bit of DNA from Sheldon, then you stir it all up, put it in the coffee maker you get whatever
-  slime just oozes out of that and then put it in a cup, pour it on a little plate try to arrange it in a smiley face,
-  give it a day or two and there's gonna be me sitting there.  
+* **Viewer:** Is that Lorde?
+Yes it is. Yes it is, just got done with a big concert the other day and now… now went back to my…
+measly life of reviewing food on YouTube.  
+[https://youtu.be/qNrVUksxTPc?t=3793](https://youtu.be/qNrVUksxTPc '🔴 Friday Night Live Stream - Q&A, Misc Talk & Possible Review! - YouTube')
+* If you really wanna create something like me […] get a coffee pot, you pour some room-temperature water in it, two ice cubes, you get the DNA from the frog, a little bit of DNA from Spider-Man […] and then you also get a little bit of DNA from Lorde, a little bit of DNA from Sheldon, then you stir it all up, put it in the coffee maker you get whatever slime just oozes out of that and then put it in a cup, pour it on a little plate try to arrange it in a smiley face, give it a day or two and there's gonna be me sitting there.  
   [https://youtu.be/6rhZoE8q5Vs?t=766](https://youtu.be/6rhZoE8q5Vs?t=766 'Reviewbrah Reacts To Weird Comments! (2020 Edition) - YouTube')
 * Reviewbrah reacts to a strange sound  
   [https://youtube.com/clip/UgkxpMoSdoCIp42NuN3YqxPaBFZcDPuA2TZC](https://youtube.com/clip/UgkxpMoSdoCIp42NuN3YqxPaBFZcDPuA2TZC '✂️ Reviewbrah reacts to a strange sound - YouTube')
 
 ## Weird Indian Videos
-
-* [Weird Indian Videos](https://youtube.com/playlist?list=PLkTMBDFJZM157vARP3DDtbMvn5SEml285 'Weird Indian Videos - YouTube'), a YouTube playlist by
-  Marek Omasta
+* [Weird Indian Videos](https://youtube.com/playlist?list=PLkTMBDFJZM157vARP3DDtbMvn5SEml285 'Weird Indian Videos - YouTube'), a YouTube playlist by Marek Omasta
 * The most annoying Indian accent/voice I’ve ever heard  
   [https://youtu.be/PmHT3GXo6tY](https://youtu.be/PmHT3GXo6tY 'How to Download and Install iOS 18 Without Any Data Loss - YouTube')
  
 ## Mark Zuckerberg
 (Zucc)
 
+* See [Tech Spurt Quotes/Zuckerberg]({{< relref "posts/tech-spurt-quotes.md#zuckerberg" >}})
+* See [Metaverse (Mark Zuckerberg) Playlist](https://www.youtube.com/playlist?list=PLCLfbEYKX8HfIVQC16S55F_6qY2sDw9NM) by LimmyTwitchClipsPlus<br><br>
 * Half man, half robot  
   [https://youtu.be/H-YMOhap3ZA?t=0](https://youtu.be/H-YMOhap3ZA?t=0 'Apple Vision Pro Fanboy Tries Meta Quest 3 - I Was Shocked. - YouTube')
 * First android on trial  
@@ -190,14 +189,16 @@ Reviewbrah
 ## Quotes by Others
 
 * Kevin, a German insult (Alpha-Kevin)  
-[https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn--zoJLSTcuKZhJ9](https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn--zoJLSTcuKZhJ9 '✂️ Kevin - YouTube')  
+  [https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn--zoJLSTcuKZhJ9](https://youtube.com/clip/UgkxD9hTMpMJr-_MAoCvn--zoJLSTcuKZhJ9 '✂️ Kevin - YouTube')
 * How to Quit Vim (third time's the charm)  
   [https://youtube.com/clip/Ugkxagr_dj64ARp_pLVGwxTrw7nIzhKuA9nI](https://youtube.com/clip/Ugkxagr_dj64ARp_pLVGwxTrw7nIzhKuA9nI '✂️ How to Quit Vim - YouTube')
 * Nå, I don't think så (No, I don't think so, Swedish guy)  
   [https://youtu.be/MXfWWmpxuCM?t=3](https://youtu.be/MXfWWmpxuCM?t=3 "Breaking News med Filip & Fredrik | Nå, I don't think så - Sverigedemokrat - YouTube")
 * UberHaxorNova Sings Alejandro  
   [https://youtube.com/clip/Ugkx8rH3tqb38soSivXSgC51lQBn_AywZiI6](https://youtube.com/clip/Ugkx8rH3tqb38soSivXSgC51lQBn_AywZiI6 '✂️ UberHaxorNova Sings Alejandro - YouTube')
-* Pyrocynical: The problem is with the UK, we seem to copy whatever America does, including being fat.  
+* Pyrocynical: The problem is with the UK,  
+  we seem to copy whatever America does,  
+  including being fat.  
   [https://youtu.be/DomjBQXe-4c?t=539](https://youtu.be/DomjBQXe-4c?t=539 'YOUTUBE KIDS (ASOT) - YouTube')
 * Bo fucking ho (GTA IV - Uncle Vlad mission)  
   [https://youtu.be/vd7oL43a9Bw?t=3m12s](https://youtu.be/vd7oL43a9Bw?t=3m12s 'GTA 4 - Mission #13 - Uncle Vlad (1080p) - YouTube')
@@ -208,10 +209,11 @@ Reviewbrah
 * Chicken Shop Date: Matty Healy Reacts to Astrology  
   [https://youtube.com/clip/UgkxhKM7i7b7U5F4nOymGk-lnHN9c8IZQ2ga](https://youtube.com/clip/UgkxhKM7i7b7U5F4nOymGk-lnHN9c8IZQ2ga '✂️ Matty Healy Reacts to Astrology - YouTube')
 * lifeasmiyuki: [Filthy Frank] kind of reminds me of Tanaka  
-[https://youtube.com/clip/UgkxxpiJo2ucVaCAR--N8LyJBt50kbbHCLD6](https://youtube.com/clip/UgkxxpiJo2ucVaCAR--N8LyJBt50kbbHCLD6 '✂️ [Filthy Frank] kind of reminds me of Tanaka - YouTube')  
+  [https://youtube.com/clip/UgkxxpiJo2ucVaCAR--N8LyJBt50kbbHCLD6](https://youtube.com/clip/UgkxxpiJo2ucVaCAR--N8LyJBt50kbbHCLD6 '✂️ [Filthy Frank] kind of reminds me of Tanaka - YouTube')
 * Hammond (Top Gear): “You’ve only blown the bloody door off”  
   [https://youtube.com/clip/UgkxuZN42E6PQeYswZDM5GUGjZQBSbwF04yn](https://youtube.com/clip/UgkxuZN42E6PQeYswZDM5GUGjZQBSbwF04yn '✂️ Hammond: “You’ve only blown the bloody door off” - YouTube')
-* Markiplier: Prop Against a Rock or Something (American MRE)  
+* Markiplier: Prop Against a Rock or Something  
+  (American MRE)  
   [https://youtube.com/clip/UgkxWP_rFy5Ih9YJz4y7tNd-oUkHrp6qrGof](https://youtube.com/clip/UgkxWP_rFy5Ih9YJz4y7tNd-oUkHrp6qrGof '✂️ Markiplier: Prop Against a Rock or Something (American MRE) - YouTube')
 * John Coogan: Meta Quest - More Passwords Than Headsets  
   [https://youtube.com/clip/Ugkxl1fqKWM8Jv8TTDHzeDZuyd8U3uSI_any](https://youtube.com/clip/Ugkxl1fqKWM8Jv8TTDHzeDZuyd8U3uSI_any '✂️ Meta Quest - More Passwords Than Headsets - YouTube')
@@ -225,23 +227,35 @@ Reviewbrah
   [https://youtube.com/clip/UgkxKjcKyVh2Ac6C9aOlpddndL1ZAXLrSmvO](https://youtube.com/clip/UgkxKjcKyVh2Ac6C9aOlpddndL1ZAXLrSmvO '✂️ Windows for Warships - YouTube')
 * You are now, now rocking with mega faggot, robo bitch  
   [https://youtube.com/clip/Ugkx2r_vazwpNVuqBi8axAgkOyJg_y7W8HD9](https://youtube.com/clip/Ugkx2r_vazwpNVuqBi8axAgkOyJg_y7W8HD9 '✂️ You are now now rocking with mega faggot, robo bitch - YouTube')
-* Gordon Ramsay: You can see the hippo over there, slightly agitated this morning  
+* Gordon Ramsay: You can see the hippo over there, slightly agitated this morning.  
   [https://youtube.com/clip/UgkxPDHZPTTGrqBkUcRNJslLuDzhFFtRKJYi](https://youtube.com/clip/UgkxPDHZPTTGrqBkUcRNJslLuDzhFFtRKJYi '✂️ You can see the hippo over there, slightly agitated this morning - YouTube')
 * Hurrian Hymn No. 6 (Bronze age meme lyre sound effect)  
   [https://youtube.com/clip/UgkxPM9HfZlZfhermpnoSfRZTqyE9kWfZaFu](https://youtube.com/clip/UgkxPM9HfZlZfhermpnoSfRZTqyE9kWfZaFu '✂️ Hurrian Hymn No. 6 - YouTube')
-* BBC Archive: Psion have formed a powerful alliance (The origin story of Symbian)  
+* BBC Archive: Psion have formed a powerful alliance  
+  (The origin story of Symbian)  
   [https://youtube.com/clip/Ugkx8jOrHXlH0lAbeD8qj3yGDJglxv9q_1Vp](https://youtube.com/clip/Ugkx8jOrHXlH0lAbeD8qj3yGDJglxv9q_1Vp '✂️ Psion have formed a powerful alliance - YouTube')
 * Tom Scott: Asbestos Land gag (theme park)  
   [https://youtu.be/L-x8DYTOv7w?t=1083s](https://youtu.be/L-x8DYTOv7w?t=1083s "YouTubers have to declare ads. Why doesn't anyone else? - YouTube")
-* Doug DeMuro: Box must be destroyed and NOT given to the Customer. (McLaren)  
+* Doug DeMuro: Box must be destroyed and NOT given to the Customer.  
+  (McLaren)  
   [https://youtu.be/N9XoF_MXjLk?t=1590s](https://youtu.be/N9XoF_MXjLk?t=1590s 'Here’s a Tour of the New McLaren 765LT Supercar - YouTube')
-* FlyingKitty: I ain't Russian. Yes you are... (GTA IV, cheeki breeki)  
+* FlyingKitty: I ain't Russian. Yes you are...  
+  (GTA IV, cheeki breeki)  
   [https://youtu.be/RXDKLEFghSQ?t=105s](https://youtu.be/RXDKLEFghSQ?t=105s 'Niko Becomes A Cabbage Farmer - YouTube')
 * I am not drunk.  
   Can you tell the time?  
   (Oblivion NPC Compilation)  
   [https://youtu.be/TnfRNj2z730?t=140s](https://youtu.be/TnfRNj2z730?t=140s 'Oblivion NPC Compilation - YouTube')
-* Backpacker Ben – The WORST Train in AFRICA! (ridiculously rough ride)  
+* Backpacker Ben – The WORST Train in AFRICA!  
+  (ridiculously rough ride)  
   [https://youtu.be/_5vjfJym7yo?t=494s](https://youtu.be/_5vjfJym7yo?t=494s 'The WORST Train in AFRICA! - YouTube')
 * Bye Bye Driver  
   [https://youtu.be/ilsiCOYexuk?t=56s](https://youtu.be/ilsiCOYexuk?t=56s 'Bye Bye Driver - Full Video - YouTube')
+* First Boosted Board appearance in a Casey Neistat video  
+  (Next to impossible to find on YouTube or Google Search.)  
+  [https://youtu.be/tSCoVPoCt1U](https://youtu.be/tSCoVPoCt1U 'Overpowered Motorized Skateboard - YouTube')
+* The music industry is nothing but country and rap music with that same dumbass trap beat…  
+  (BROJANGSTER, June 2019)  
+  [https://youtu.be/wdPrdU8cDtg](https://youtu.be/wdPrdU8cDtg '2010s Nostalgia that WILL make you CRY - YouTube')  
+  
+  

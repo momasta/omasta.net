@@ -67,7 +67,7 @@ My Personal Website
   ```
 
 ## Image Gallery
-A Hugo shortcode based on [this article by Christian Specht](https://www.codeproject.com/articles/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2#comments-section).
+A Hugo shortcode based on [this article by Christian Specht](https://www.codeproject.com/articles/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2).
 
 * Source: [themes/blank/layouts/_shortcodes/gallery.html](themes/blank/layouts/_shortcodes/gallery.html)
 * Live Demo: [omasta.net/memes/](https://omasta.net/memes/)

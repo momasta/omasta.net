@@ -1,6 +1,6 @@
 ---
 date: 2025-12-03T21:36:21+01:00
-lastmod: 2025-12-06T13:37:43+01:00
+lastmod: 2026-04-14T13:35:21+02:00
 title: "Anomaly Quotes"
 draft: false
 description: ""
@@ -82,7 +82,7 @@ Might be useful to people who run clips or compilation channels.
 * Doesn't Squeeze Papa's Beer  
   [https://youtube.com/clip/Ugkx9YIQ2aQgYjfMc2zcY4XqndUv80ofU9_q](https://youtube.com/clip/Ugkx9YIQ2aQgYjfMc2zcY4XqndUv80ofU9_q "✂️ Anomaly Doesn't Squeeze Papa's Beer - YouTube")
 * You slut, you fucking pancake bitch  
-  [](https://youtu.be/RpsuNglwTG8?si=e0TZ6Lhv122cSA0K 'SWEDISH VS. AMERICAN PANCAKES - YouTube')[https://youtu.be/RpsuNglwTG8?t=7m35s](https://youtu.be/RpsuNglwTG8?t=7m35s 'SWEDISH VS. AMERICAN PANCAKES - YouTube')
+  [https://youtu.be/RpsuNglwTG8?t=7m35s](https://youtu.be/RpsuNglwTG8?t=7m35s 'SWEDISH VS. AMERICAN PANCAKES - YouTube')
 * Linda is a renowned fat bitch so she is going to love this.  
   …try the semla with your big horse teeth.  
   Pretend it’s a sugar cube or a carrot.  
@@ -102,14 +102,14 @@ Might be useful to people who run clips or compilation channels.
 * Grandpanomaly (skull drinks milk)  
   [https://youtu.be/SknUGp5hdLY?t=336](https://youtu.be/SknUGp5hdLY?t=336 'Arabic food with Papanomaly - YouTube')
 * Anomaly crushes an egg (infant skull)  
-  [https://youtu.be/BhqfdNXpqRA?t=214](https://youtu.be/BhqfdNXpqRA?t=214 'ANOMALY AND PAPA MAKE TRADITIONAL ITALIAN PASTA (GONE WRONG) - YouTube')   
+  [https://youtu.be/BhqfdNXpqRA?t=214](https://youtu.be/BhqfdNXpqRA?t=214 'ANOMALY AND PAPA MAKE TRADITIONAL ITALIAN PASTA (GONE WRONG) - YouTube')  
   [https://youtube.com/clip/UgkxCg-hKxFD0E1W3C4p3wVNnJ-f2u_Ki0jt](https://youtube.com/clip/UgkxCg-hKxFD0E1W3C4p3wVNnJ-f2u_Ki0jt '✂️ Anomaly Crushes an Egg - YouTube')
 
 ### Baba Ganoush
 * This olive oil very like me, papa. Extra virgin.  
   **Papa:** Yeees. I thought you meant fat. Um yeah, fun.  
   [https://youtu.be/MPAIb1nC4vU?t=54](https://youtu.be/MPAIb1nC4vU?t=54 'BABA GANOUSH (PAPANOMALY VLOG) - YouTube')
-* Always on my balcony, this motherfucking mås, papa.   
+* Always on my balcony, this motherfucking mås, papa.  
   [https://youtu.be/MPAIb1nC4vU?t=116](https://youtu.be/MPAIb1nC4vU?t=116 'BABA GANOUSH (PAPANOMALY VLOG) - YouTube')
 * Beer pissing, grandpa  
   [https://youtu.be/LSyzPfK3WY4?t=47](https://youtu.be/LSyzPfK3WY4?t=47 'BABA GANOUSH 3 (PAPANOMALY VLOG) - YouTube')
@@ -160,7 +160,7 @@ Might be useful to people who run clips or compilation channels.
   [https://youtu.be/rcxCcmAkJJU?t=347](https://youtu.be/rcxCcmAkJJU?t=347 'OPENING FAN MAIL 19 - YouTube')
 * **Papa:** ha ha ha, kill me  
   [https://youtu.be/h0G8K1AtQ1s?t=482](https://youtu.be/h0G8K1AtQ1s?t=482 'OPENING FAN MAIL 21 - YouTube')
-* description of content: сука блять, сука блять, CS:GO (suka blyat)    
+* description of content: сука блять, сука блять, CS:GO (suka blyat)  
   [https://youtu.be/kZbzuCOa4Vk?t=94](https://youtu.be/kZbzuCOa4Vk?t=94 'OPENING FAN MAIL 22 (BIGGEST PACKAGES) - YouTube')
 
 ## German
@@ -192,7 +192,7 @@ because I don't need them.
 * [Jef Bezoos]  
   [https://youtu.be/ZV8JFDKFNao?t=286](https://youtu.be/ZV8JFDKFNao?t=286 'OPENING FAN MAIL 10 - YouTube')
 * George [Yeordsh]  
-  [https://youtu.be/ZCmH0Vsmr-M?t=7m21s](https://youtu.be/ZCmH0Vsmr-M?t=7m21s "VERY EXPENSIVE BEER TESTING FOR PAPA'S BIRTHDAY (GONE WRONG) - YouTube")   
+  [https://youtu.be/ZCmH0Vsmr-M?t=7m21s](https://youtu.be/ZCmH0Vsmr-M?t=7m21s "VERY EXPENSIVE BEER TESTING FOR PAPA'S BIRTHDAY (GONE WRONG) - YouTube")  
   [https://youtube.com/clip/Ugkx6kxUTY_c6PCHNSfGPI9-skE8y6LyvlPi](https://youtube.com/clip/Ugkx6kxUTY_c6PCHNSfGPI9-skE8y6LyvlPi '✂️ Anomaly - George [yordsh] - YouTube')
 * Vegemite [vyegemite, vegyemeet, vegyemee-te]  
   [https://youtu.be/GvFinSQUHqY?t=641](https://youtu.be/GvFinSQUHqY?t=641 'OPENING FAN MAIL 8 - YouTube')
@@ -207,8 +207,8 @@ because I don't need them.
 * Anomaly - Merry Gristmas (Bulgarian Taxi Driver)  
   [https://youtube.com/clip/UgkxlZIv3BmheA7Sw28Nt39hUOScG1eq0ufU](https://youtube.com/clip/UgkxlZIv3BmheA7Sw28Nt39hUOScG1eq0ufU '✂️ Anomaly - Merry Gristmas (Bulgarian Taxi Driver) - YouTube')
 * Birmingham Circa 1892 (Colorized)  
-  Gimme ye wallet lad (stabbing)  
-  [](https://youtu.be/iPfR0mkjuNA?t=454 'Was CS2 really better before? (CS:GO) - YouTube')[https://youtu.be/iPfR0mkjuNA?t=454](https://youtu.be/iPfR0mkjuNA?t=454 'Was CS2 really better before? (CS:GO) - YouTube')
+  Gimme your wallet lad (stabbing)  
+  [https://youtu.be/iPfR0mkjuNA?t=454](https://youtu.be/iPfR0mkjuNA?t=454 'Was CS2 really better before? (CS:GO) - YouTube')
 * **Mamanomaly:** Kniv kniv kniv  
   [https://youtu.be/C1oSJzIYSm8?t=167s](https://youtu.be/C1oSJzIYSm8?t=167s 'PAPANOMALY TOP TWITCH CLIPS - YouTube')
 * You know Simpsons? Homer Simpsons? D'OH!  
@@ -239,13 +239,13 @@ If you can be bothered, please turn these into a compilation video:
 * [https://youtu.be/k-Qq7l5sHZo?t=573](https://youtu.be/k-Qq7l5sHZo?t=573 'Anomaly goes to Australia (PART 3) - YouTube')
 * [https://youtu.be/8eg81q8nnQQ?t=200](https://youtu.be/8eg81q8nnQQ?t=200 'OPENING CASES WITH MY SISTER 3 (KNIFE UNBOX) - YouTube')
 * [https://youtu.be/r4ojxa0CugU?t=1103](https://youtu.be/r4ojxa0CugU?t=1103 'MY EDITOR MOVING TO MALTA - YouTube')
-* [https://youtu.be/QbvFw5t_2jI?t=903](https://youtu.be/QbvFw5t_2jI?t=903 'I GOT GLOBAL ELITE IN EVERY GAME MODE (COMPLETED CS:GO) - YouTube')   
-* [https://youtu.be/6QL5tN5QMDw?t=330](https://youtu.be/6QL5tN5QMDw?t=330 'NEW SOUND UPDATE (+ OLD SOUNDS) - YouTube')    
-* [https://youtu.be/ZV8JFDKFNao?t=211](https://youtu.be/ZV8JFDKFNao?t=211 'OPENING FAN MAIL 10 - YouTube')    
-* [https://youtu.be/17w0L5ZQju4?t=380](https://youtu.be/17w0L5ZQju4?t=380 'REVOLUTION CASE UNBOXING (NEW CS:GO CASE) - YouTube')    
-* [https://youtu.be/U1xCqE13ZOU?t=549](https://youtu.be/U1xCqE13ZOU?t=549 'THE SHORT MATCH EXPERIENCE - YouTube')    
-* [https://youtu.be/HPVkzE6uTfQ?t=112](https://youtu.be/HPVkzE6uTfQ?t=112 'TWITCH HIGHLIGHTS 5 - INSANE DEAGLE HEADSHOTS - YouTube')    
-* [https://youtu.be/4lptFpGsfGo?t=331](https://youtu.be/4lptFpGsfGo?t=331 'TWITCH HIGHLIGHTS 32 - RAAD HAS ISSUES - YouTube')   
+* [https://youtu.be/QbvFw5t_2jI?t=903](https://youtu.be/QbvFw5t_2jI?t=903 'I GOT GLOBAL ELITE IN EVERY GAME MODE (COMPLETED CS:GO) - YouTube')
+* [https://youtu.be/6QL5tN5QMDw?t=330](https://youtu.be/6QL5tN5QMDw?t=330 'NEW SOUND UPDATE (+ OLD SOUNDS) - YouTube')
+* [https://youtu.be/ZV8JFDKFNao?t=211](https://youtu.be/ZV8JFDKFNao?t=211 'OPENING FAN MAIL 10 - YouTube')
+* [https://youtu.be/17w0L5ZQju4?t=380](https://youtu.be/17w0L5ZQju4?t=380 'REVOLUTION CASE UNBOXING (NEW CS:GO CASE) - YouTube')
+* [https://youtu.be/U1xCqE13ZOU?t=549](https://youtu.be/U1xCqE13ZOU?t=549 'THE SHORT MATCH EXPERIENCE - YouTube')
+* [https://youtu.be/HPVkzE6uTfQ?t=112](https://youtu.be/HPVkzE6uTfQ?t=112 'TWITCH HIGHLIGHTS 5 - INSANE DEAGLE HEADSHOTS - YouTube')
+* [https://youtu.be/4lptFpGsfGo?t=331](https://youtu.be/4lptFpGsfGo?t=331 'TWITCH HIGHLIGHTS 32 - RAAD HAS ISSUES - YouTube')
 * [https://youtu.be/YNYBDdpWciM??t=515](https://youtu.be/YNYBDdpWciM??t=515 'ANOMALY GOES TO SWEDEN - YouTube')
 * [https://youtu.be/L44t6IWEXpQ?t=69](https://youtu.be/L44t6IWEXpQ?t=69 'MY DAD UNBOXES A KNIFE! - YouTube')
 * [https://youtu.be/BTp6Dx966uc?t=2m35s](https://youtu.be/BTp6Dx966uc?t=2m35s 'HOW TO MAKE A PASSPORT (VERY LEGAL) - YouTube')
@@ -284,7 +284,10 @@ If you can be bothered, please turn these into a compilation video:
 * [https://youtu.be/hAm7aq3aliI?t=449](https://youtu.be/hAm7aq3aliI?t=449 'THE BIGGEST CS2 SKIN CRASH EVER (3 BILLION DOLLARS LOST) - YouTube')
 * [https://youtu.be/xYCYUVVoW6Y?t=246](https://youtu.be/xYCYUVVoW6Y?t=246 'OPENING FAN MAIL 13 - YouTube') (LOLXD)
 * [https://youtu.be/AXe4AUUgNE4?t=288](https://youtu.be/AXe4AUUgNE4?t=288 'PAPANOMALY OPENING FAN MAIL 2 - YouTube') (xD prank LOLXD)
-* [https://youtu.be/QK4qCDJXxR4?t=15](https://youtu.be/QK4qCDJXxR4?t=15 '"why do you have an RPG and an M249 on your desk?" - YouTube')   
+* [https://youtu.be/QK4qCDJXxR4?t=15](https://youtu.be/QK4qCDJXxR4?t=15 '"why do you have an RPG and an M249 on your desk?" - YouTube')  
+* [https://youtu.be/xgzhiWlKCn4?t=116](https://youtu.be/xgzhiWlKCn4?t=116 'OPENING ALL POKEMON MINI TINS (EXTREMELY LUCKY) - YouTube')  
+* [https://youtu.be/xgzhiWlKCn4?t=448](https://youtu.be/xgzhiWlKCn4?t=448 'OPENING ALL POKEMON MINI TINS (EXTREMELY LUCKY) - YouTube')  
+* https://youtu.be/OqJ0-4rCbj8?t=270  
 
 ## Other Quotes
 ### Anomaly, the (half-)Finnish peasant
@@ -376,9 +379,9 @@ If you can be bothered, please turn these into a compilation video:
   [https://youtu.be/5sc_gtQz4W0?t=878](https://youtu.be/5sc_gtQz4W0?t=878 'SWAPPING DIETS WITH LINDA FOR 24 HOURS - YouTube')
 * Today we're playing bootleg Czechoslovakian's Counter-Strike  
   [https://youtu.be/gxF3TDJsvkc?t=535](https://youtu.be/gxF3TDJsvkc?t=535 'FREE TO PLAY "COUNTER-STRIKE" GAMES 6 - YouTube')
-* **Anomaly’s imaginary fans:** Oooh, Anomaly   
+* **Anomaly’s imaginary fans:** Oooh, Anomaly  
   [https://youtu.be/-vbKnzKdWS4?t=25](https://youtu.be/-vbKnzKdWS4?t=25 'Anomaly’s fans make sound - YouTube')
-* Thank you, Enrico.   
+* Thank you, Enrico.  
   Wasn't it Enrique?  
   Enri-co.  
   Wasn't it Enrique?  
@@ -439,7 +442,19 @@ If you can be bothered, please turn these into a compilation video:
   Yeehaw!  
   (redneck stereotype)  
   [https://youtu.be/GtPud04WSFU?t=585](https://youtu.be/GtPud04WSFU?t=585 'OPENING FORTNITE CARDS FOR 200€ (SEND HELP) - YouTube')
-* Mama, You're so cute. Here, can I have a hug?   
+* Mama, You're so cute. Here, can I have a hug?  
   **Mamanomaly:** \*middle finger\*  
   WHY ARE YOU GIVING ME THE FINGER?  
   [https://youtu.be/n2b1ahPRGgs?t=17](https://youtu.be/n2b1ahPRGgs?t=17 'Mamanomaly revenge - YouTube')  
+* Sorry for my bed London [condom], I'm the French.  
+[https://youtu.be/Eop9g-BcgF4?t=266](https://youtu.be/Eop9g-BcgF4?t=266 'OPENING FAN MAIL 2 - YouTube')  
+* (Coin Flip)  
+Do I live, or do I die?  
+Yes, I die.  
+[https://youtu.be/Civ_ILD4N1c?t=13](https://youtu.be/Civ_ILD4N1c?t=13 'MY VIEWER SENT ME A BITCOIN... - YouTube')  
+* Papa, coin flip:  
+Heads – I live, tails – I die.  
+Ah fuck, I live.  
+[https://youtu.be/3xmtWIl5X80?t=318](https://youtu.be/3xmtWIl5X80?t=318 'OPENING FAN MAIL 7 (SUPREME PACKAGE) - YouTube')  
+* Minecraft pickaxe beard  
+https://youtu.be/Cq0Cuuol2bA?t=140  

@@ -19,7 +19,7 @@ translationKey: ""
 type: posts
 ---
 
-Here's another export from my notes, a&nbsp;collection of&nbsp;clues I&nbsp;found worth learning for&nbsp;region-guessing in&nbsp;[GeoGuessr](https://www.geoguessr.com/).  
+Here's another export from my notes, a&nbsp;collection of&nbsp;clues I&nbsp;found worth learning for&nbsp;region-guessing in&nbsp;[GeoGuessr](https://www.geoguessr.com/ "GeoGuessr - Let's explore the world!").  
 
 2 months in (on and off), I&nbsp;still insist on&nbsp;using real-world clues only.  
 You won't find any car, camera generation, or copyright meta here.
@@ -35,25 +35,25 @@ You won't find any car, camera generation, or copyright meta here.
 
 ## Resources
 * Guides
-  * [Plonk It](https://www.plonkit.net/guide)
-  * [GeoGuessr Explained Playlist on YouTube](https://www.youtube.com/@geoguessr_explained/videos)
-  * [GeoTips – Europe](https://geotips.net/europe/)
-  * [Geometas](https://geometas.com/)
+  * [Plonk It](https://www.plonkit.net/guide 'Guide to GeoGuessr — Plonk It')
+  * [GeoGuessr Explained Playlist on YouTube](https://www.youtube.com/@geoguessr_explained/videos 'Geoguessr Explained - YouTube')
+  * [GeoTips – Europe](https://geotips.net/europe/ 'Europe – GeoTips')
+  * [Geometas](https://geometas.com/ 'Geometas')
 * Curated Collections of Hints
-  * [GeoHints](https://geohints.com/)
+  * [GeoHints](https://geohints.com/ 'GeoHints')
     * Hints by type and continent
-  * [Geomastr](https://geomastr.com/)
+  * [Geomastr](https://geomastr.com/ 'Geomastr - GeoGuessr Country Clues: Bollards, License Plates, Road Signs & More')
     * Outdated but very comprehensive
 * Other Resources
-  * [r/geoguessr – Search for "starter pack"](https://www.reddit.com/r/geoguessr/search/?q=%22starter+pack%22&type=media&sort=top)
-  * [Super Duper](https://super-duper.fr/index_en.php#)
-  * [GeoGuessr Wiki on Reddit](https://www.reddit.com/r/geoguessr/wiki/index/)
-  * [Seterra](https://www.geoguessr.com/quiz/seterra) (Geography quizzes)
+  * [r/geoguessr – Search for "starter pack"](https://www.reddit.com/r/geoguessr/search/?q=%22starter+pack%22&type=media&sort=top 'geoguessr: search results - "starter pack"')
+  * [Super Duper](https://super-duper.fr/index_en.php# 'Home')
+  * [GeoGuessr Wiki on Reddit](https://www.reddit.com/r/geoguessr/wiki/index/ '/r/geoguessr Wiki')
+  * [Seterra](https://www.geoguessr.com/quiz/seterra 'The Ultimate Map Quiz Site - Seterra') (Geography quizzes)
 
 ## See Also
-* [Original note in Apple Notes](https://icloud.com/notes/03cQpzJ-vmTXgr6Gx-R1yB9MA)
-* [My GeoGuessr Profile](https://geoguessr.com/user/5d57f24473c0052740b499fd "Marek Omasta on GeoGuessr")
-* [Tom Davies (GeoWizard) on GeoGuessr](https://www.geoguessr.com/user/5557073d2bfa31229cf60150)
+* [Original note in Apple Notes](https://icloud.com/notes/03cQpzJ-vmTXgr6Gx-R1yB9MA 'Notes - Apple iCloud')
+* [My GeoGuessr Profile](https://geoguessr.com/user/5d57f24473c0052740b499fd 'Marek Omasta on GeoGuessr')
+* [Tom Davies (GeoWizard) on GeoGuessr](https://www.geoguessr.com/user/5557073d2bfa31229cf60150 'Tom Davies - Person - GeoGuessr')
 
 ## Keyboard Shortcuts
 * **⇧-click:** Remove guess from map
@@ -63,7 +63,7 @@ You won't find any car, camera generation, or copyright meta here.
 ## World
 {{< gallery "geoguessr-tips/world" "" "name" >}}
   
-Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Chumwa), [Country calling codes map](https://commons.wikimedia.org/wiki/File:Country_calling_codes_map.svg), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/legalcode)  
+Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Chumwa 'Benutzer:Chumwa – Wikipedia'), [Country calling codes map](https://commons.wikimedia.org/wiki/File:Country_calling_codes_map.svg 'File:Country calling codes map.svg - Wikimedia Commons'), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/legalcode 'Legal Code - Attribution-ShareAlike 2.0 Generic - Creative Commons')  
 
 * Phone Codes
   * Africa
@@ -85,24 +85,24 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
 ## Europe
 {{< gallery "geoguessr-tips/GeoGuessr – Europe*" >}}
 
-### 🇦🇱 [Albania](https://www.plonkit.net/albania)
+### 🇦🇱 [Albania](https://www.plonkit.net/albania 'Albania — Plonk It')
 * Licence Plates
   * Long
   * Similar to 🇮🇹 Italian
   * Red strip on older cars
 
-### 🇦🇩 [Andorra](https://www.plonkit.net/andorra)
+### 🇦🇩 [Andorra](https://www.plonkit.net/andorra 'Andorra — Plonk It')
 * Buildings
   * Beige/grey bricks
 
-### 🇦🇹 [Austria](https://www.plonkit.net/austria)
+### 🇦🇹 [Austria](https://www.plonkit.net/austria 'Austria — Plonk It')
 * Signs
   * EINBAHN (blue sign)
 
-### 🇧🇾 [Belarus](https://www.plonkit.net/belarus)
+### 🇧🇾 [Belarus](https://www.plonkit.net/belarus 'Belarus — Plonk It')
 * TLD: .by
 
-### 🇧🇪 [Belgium](https://www.plonkit.net/belgium)
+### 🇧🇪 [Belgium](https://www.plonkit.net/belgium 'Belgium — Plonk It')
 * Licence Plates
   * Red text
 * Roads
@@ -110,11 +110,11 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
     * Rounded
     * Shallow
 
-### 🇧🇬 [Bulgaria](https://www.plonkit.net/bulgaria)
+### 🇧🇬 [Bulgaria](https://www.plonkit.net/bulgaria 'Bulgaria — Plonk It')
 * Roads
   * Pale roads with black spots
 
-### 🇭🇷 [Croatia](https://www.plonkit.net/croatia)
+### 🇭🇷 [Croatia](https://www.plonkit.net/croatia 'Croatia — Plonk It')
 * Language
   * Latin only
   * -ije
@@ -128,11 +128,11 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Southern tip
     * Cypress trees
 
-### 🇨🇿 [Czechia](https://www.plonkit.net/czechia)
+### 🇨🇿 [Czechia](https://www.plonkit.net/czechia 'Czechia — Plonk It')
 * Roads  
 {{< gallery "geoguessr-tips/GeoGuessr – Czechia – Road Numbers.png" >}}
 
-### 🇩🇰 [Denmark](https://www.plonkit.net/denmark)
+### 🇩🇰 [Denmark](https://www.plonkit.net/denmark 'Denmark — Plonk It')
 * Roads
   * Bollards with bright orange rings
 * Signs
@@ -141,12 +141,12 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
     * Vej
     * Gade
 
-### 🇪🇪 [Estonia](https://www.plonkit.net/estonia)
+### 🇪🇪 [Estonia](https://www.plonkit.net/estonia 'Estonia — Plonk It')
 * Roads
   * Short-dashed outer lines
     * Also in 🇸🇪 Sweden and 🇫🇮 Åland
 
-### 🇫🇷 [France](https://www.plonkit.net/france)
+### 🇫🇷 [France](https://www.plonkit.net/france 'France — Plonk It')
 * Poles
   * Blue stickers
     * Unique to France
@@ -154,16 +154,16 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * D-roads
     * Unique to France
 
-### 🇩🇪 [Germany](https://www.plonkit.net/germany)
+### 🇩🇪 [Germany](https://www.plonkit.net/germany 'Germany — Plonk It')
 * Signs
   * Einbahnstraße
 
-### 🇬🇷 [Greece](https://www.plonkit.net/greece)
+### 🇬🇷 [Greece](https://www.plonkit.net/greece 'Greece — Plonk It')
 * Poles
   * Tall
   * Wooden
 
-### 🇮🇪 [Ireland](https://www.plonkit.net/ireland)
+### 🇮🇪 [Ireland](https://www.plonkit.net/ireland 'Ireland — Plonk It')
 * Phone Code: +353
 * Regions
   * East
@@ -177,7 +177,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * ⛛ YIELD
   * Yellow diamond-shaped warning signs
 
-### 🇰🇿 [Kazakhstan](https://www.plonkit.net/kazakhstan)
+### 🇰🇿 [Kazakhstan](https://www.plonkit.net/kazakhstan 'Kazakhstan — Plonk It')
 * Language
   * Uses і
   * Letters with strokes
@@ -189,12 +189,12 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
 * Roads
   * Yellow and black chevrons
 
-### 🇱🇻 [Latvia](https://www.plonkit.net/latvia)
+### 🇱🇻 [Latvia](https://www.plonkit.net/latvia 'Latvia — Plonk It')
 {{< gallery "geoguessr-tips/GeoGuessr – Latvia – Poles.png" >}}
 
-### 🇱🇹 [Lithuania](https://www.plonkit.net/lithuania)
+### 🇱🇹 [Lithuania](https://www.plonkit.net/lithuania 'Lithuania — Plonk It')
 
-### 🇳🇴 [Norway](https://www.plonkit.net/norway)
+### 🇳🇴 [Norway](https://www.plonkit.net/norway 'Norway — Plonk It')
 * Buildings
   * Grass covered roofs
 * Licence Plates
@@ -230,29 +230,29 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
     * Vei, -veien
     * Gate, -gata
 
-### 🇵🇱 [Poland](https://www.plonkit.net/poland)
+### 🇵🇱 [Poland](https://www.plonkit.net/poland 'Poland — Plonk It')
 * Poles
   * Holes almost never reach the bottom
 
-### 🇵🇹 [Portugal](https://www.plonkit.net/portugal)
+### 🇵🇹 [Portugal](https://www.plonkit.net/portugal 'Portugal — Plonk It')
 * Licence Plates
   * Yellow strip on the right
     * Discontinued in 2020
 
-### 🇷🇸 [Serbia](https://www.plonkit.net/serbia)
+### 🇷🇸 [Serbia](https://www.plonkit.net/serbia 'Serbia — Plonk It')
 * Regions
   * North of Beograd
     * Extremely flat
   * South
     * Lush mountains
 
-### 🇸🇮 [Slovenia](https://www.plonkit.net/slovenia)
+### 🇸🇮 [Slovenia](https://www.plonkit.net/slovenia 'Slovenia — Plonk It')
 * Roads
   * Long-dashed outer lines
 * Language
   * No Ć, Đ
 
-### 🇪🇸 [Spain](https://www.plonkit.net/spain)
+### 🇪🇸 [Spain](https://www.plonkit.net/spain 'Spain — Plonk It')
 * Regions
   * Catalan
     * ç, à, è, ò unique within Spain.
@@ -279,7 +279,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
 * Signs
   * Signs with no edges
 
-### 🇸🇪 [Sweden](https://www.plonkit.net/sweden)
+### 🇸🇪 [Sweden](https://www.plonkit.net/sweden 'Sweden — Plonk It')
 * Roads
   * All-white lines
   * Short-dashed outer lines
@@ -290,11 +290,11 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Väg, vägen
   * Gata
 
-### 🇨🇭 [Switzerland](https://www.plonkit.net/switzerland)
+### 🇨🇭 [Switzerland](https://www.plonkit.net/switzerland 'Switzerland — Plonk It')
 * Roads
   * Yellow markings for pedestrians and cyclists
 
-### 🇹🇷 [Turkey](https://www.plonkit.net/turkey)
+### 🇹🇷 [Turkey](https://www.plonkit.net/turkey 'Turkey — Plonk It')
 {{< gallery "geoguessr-tips/Geoguessr – Turkey*" >}}
 * Regions
   * NE
@@ -304,7 +304,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Mostly white markings
   * Divided highways
 
-### 🇺🇦 [Ukraine](https://www.plonkit.net/ukraine)
+### 🇺🇦 [Ukraine](https://www.plonkit.net/ukraine 'Ukraine — Plonk It')
 * Language
   * ї unique to Ukraine
   * і also found in 🇰🇿 Kazakhstan
@@ -312,7 +312,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Street Signs
     * вулиця
 
-### 🇬🇧 [United Kingdom](https://www.plonkit.net/united-kingdom)
+### 🇬🇧 [United Kingdom](https://www.plonkit.net/united-kingdom 'United Kingdom — Plonk It')
 {{< gallery "geoguessr-tips/GeoGuessr – UK – Road Numbers.png" >}}
 * Regions
   * 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland
@@ -323,7 +323,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
     * They might look like regular streets.
 
 ## Asia
-### 🇧🇩 [Bangladesh](https://www.plonkit.net/bangladesh)
+### 🇧🇩 [Bangladesh](https://www.plonkit.net/bangladesh 'Bangladesh — Plonk It')
 * Language  
 {{< gallery "geoguessr-tips/GeoGuessr – Bangladesh – Writing System (Bengali Script).png" >}}
   * Triangular characters  
@@ -331,7 +331,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Short
   * White, black or turquoise
 
-### 🇧🇹 [Bhutan](https://www.plonkit.net/bhutan)
+### 🇧🇹 [Bhutan](https://www.plonkit.net/bhutan 'Bhutan — Plonk It')
 * Language  
 {{< gallery "geoguessr-tips/GeoGuessr – Bhutan – Writing System (Dzongkha).png" >}}
 * Licence Plates
@@ -339,12 +339,12 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Almost always red
     * 🇳🇵 Nepal: commercial only
 
-### 🇰🇭 [Cambodia](https://www.plonkit.net/cambodia)
+### 🇰🇭 [Cambodia](https://www.plonkit.net/cambodia 'Cambodia — Plonk It')
 * Roads
   * Driving side: right
 * TLD: .kh (Khmer)
 
-### 🇮🇳 [India](https://www.plonkit.net/india)
+### 🇮🇳 [India](https://www.plonkit.net/india 'India — Plonk It')
 * Licence Plates
   * Long
   * White
@@ -353,7 +353,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Rajasthan
     * Canola
 
-### 🇮🇩 [Indonesia](https://www.plonkit.net/indonesia)
+### 🇮🇩 [Indonesia](https://www.plonkit.net/indonesia 'Indonesia — Plonk It')
 * Currency
   * Rp (Rupiah), IDR
   * 1 USD = thousands of IDR
@@ -378,7 +378,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
 * Signs
   * No edges
 
-### 🇯🇵 [Japan](https://www.plonkit.net/japan)
+### 🇯🇵 [Japan](https://www.plonkit.net/japan 'Japan — Plonk It')
 * Phone Codes
   * 011-099
     * Roughly north to south
@@ -386,11 +386,11 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Tokyo
     * 5 petal flower manholes
 
-### 🇰🇬 [Kyrgyzstan](https://www.plonkit.net/kyrgyzstan)
+### 🇰🇬 [Kyrgyzstan](https://www.plonkit.net/kyrgyzstan 'Kyrgyzstan — Plonk It')
 * Licence Plates
   * Red stripe on the left
 
-### 🇲🇾 [Malaysia](https://www.plonkit.net/malaysia)
+### 🇲🇾 [Malaysia](https://www.plonkit.net/malaysia 'Malaysia — Plonk It')
 * Currency
   * Rm (Ringgit), MYR
   * Closer to USD exchange rate
@@ -413,15 +413,15 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * ⛛ BERI LALUAN
   * Signs with edges
 
-### 🇳🇵 [Nepal](https://www.plonkit.net/nepal)
+### 🇳🇵 [Nepal](https://www.plonkit.net/nepal 'Nepal — Plonk It')
 
-### 🇵🇭 [Philippines](https://www.plonkit.net/philippines)
+### 🇵🇭 [Philippines](https://www.plonkit.net/philippines 'Philippines — Plonk It')
 * Currency
   * ₱ (Philippine Peso), PHP
 * Licence Plates
   * White and green tinted
 
-### 🇸🇬 [Singapore](https://www.plonkit.net/singapore)
+### 🇸🇬 [Singapore](https://www.plonkit.net/singapore 'Singapore — Plonk It')
 * Look and Feel
   * Clean and orderly
   * Highly developed
@@ -434,7 +434,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
     * Green
     * Rounded edges
 
-### 🇹🇼 [Taiwan](https://www.plonkit.net/taiwan)
+### 🇹🇼 [Taiwan](https://www.plonkit.net/taiwan 'Taiwan — Plonk It')
 * Regions
   * East coast
     * Roads
@@ -442,11 +442,11 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
 * Roads
   * Red outer lines (no parking)
 
-### 🇹🇭 [Thailand](https://www.plonkit.net/thailand)
+### 🇹🇭 [Thailand](https://www.plonkit.net/thailand 'Thailand — Plonk It')
 * Language
   * Small circles within most letters
 
-### 🇻🇳 [Vietnam](https://www.plonkit.net/vietnam)
+### 🇻🇳 [Vietnam](https://www.plonkit.net/vietnam 'Vietnam — Plonk It')
 * Phone Codes
   * Hanoi: 24x
   * Ho Chi Minh City: 28x
@@ -487,17 +487,17 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
     * 🇩🇴 Dominican Republic: 🛑 PARE
     * 🇵🇷 Puerto Rico: 🛑 PARE
 
-### 🇨🇦 [Canada](https://www.plonkit.net/canada)
+### 🇨🇦 [Canada](https://www.plonkit.net/canada 'Canada — Plonk It')
 * Regions
   * British Columbia
     * 🛑 Bilingual stop signs
 
-### 🇨🇼 [Curaçao](https://www.plonkit.net/curacao) (🇳🇱 Netherlands)
+### 🇨🇼 [Curaçao](https://www.plonkit.net/curacao  ' — Plonk It') (🇳🇱 Netherlands)
 * TLD: .cw
 * Signs
   * Striped traffic light posts
 
-### 🇬🇹 [Guatemala](https://www.plonkit.net/guatemala)
+### 🇬🇹 [Guatemala](https://www.plonkit.net/guatemala 'Guatemala — Plonk It')
 * Buildings
   * White exposed brick somewhat common
   * Pastel colours
@@ -518,7 +518,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
     * Mountainous
     * Flat coast
 
-### 🇲🇽 [Mexico](https://www.plonkit.net/mexico)
+### 🇲🇽 [Mexico](https://www.plonkit.net/mexico 'Mexico — Plonk It')
 {{< gallery "geoguessr-tips/GeoGuessr – Mexico – Cerro del Bernal.webp" >}}
 * Landscape
   * Cacti
@@ -541,7 +541,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
 * Signs
   * Thick arrows
 
-### 🇵🇷 [Puerto Rico](https://www.plonkit.net/puerto-rico)
+### 🇵🇷 [Puerto Rico](https://www.plonkit.net/puerto-rico 'Puerto Rico — Plonk It')
 * Licence Plates
   * No front plate
 * Signs
@@ -549,9 +549,9 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * US-style speed limit
     * Velocidad maxima
 
-### 🇺🇸 [United States](https://www.plonkit.net/guam)
+### 🇺🇸 [United States](https://www.plonkit.net/united-states 'United States of America — Plonk It')
 * Regions
-  * Guam
+  * [Guam](https://www.plonkit.net/guam 'Guam — Plonk It')
     * Street Signs
       * Green
     * Language
@@ -561,7 +561,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
 * Signs
   * 🛑 PARE
 
-### 🇦🇷 [Argentina](https://www.plonkit.net/argentina)
+### 🇦🇷 [Argentina](https://www.plonkit.net/argentina 'Argentina — Plonk It')
 * Landscape
   * Flat
 * Licence Plates
@@ -570,7 +570,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Red on white chevrons
     * Unique within the Americas
 
-### 🇧🇴 [Bolivia](https://www.plonkit.net/bolivia)
+### 🇧🇴 [Bolivia](https://www.plonkit.net/bolivia 'Bolivia — Plonk It')
 * Buildings
   * Big red brick
   * Unfinished look
@@ -588,7 +588,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
 * Roads
   * Cobblestone paths with several parallel lines
 
-### 🇧🇷 [Brazil](https://www.plonkit.net/brazil)
+### 🇧🇷 [Brazil](https://www.plonkit.net/brazil 'Brazil — Plonk It')
 * Buildings
   * Orange tiled roofs
 * Currency
@@ -621,7 +621,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
     * Yellow on black
       * Mostly unique in South America
 
-### 🇨🇱 [Chile](https://www.plonkit.net/chile)
+### 🇨🇱 [Chile](https://www.plonkit.net/chile 'Chile — Plonk It')
 * Licence Plates
   * Commercial
     * Orange
@@ -631,18 +631,18 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
     * Or all yellow
   * A to Y
 
-### 🇨🇴 [Colombia](https://www.plonkit.net/colombia)
+### 🇨🇴 [Colombia](https://www.plonkit.net/colombia 'Colombia — Plonk It')
 * Licence Plates
   * Commonly yellow
 * Signs
   * Cross on the back of road signs
 
-### 🇨🇷 [Costa Rica](https://www.plonkit.net/costa-rica)
+### 🇨🇷 [Costa Rica](https://www.plonkit.net/costa-rica 'Costa Rica — Plonk It')
 {{< gallery "geoguessr-tips/GeoGuessr – Costa Rica – Speed Limit Sign.jpg" >}}
 * Licence Plates
   * Blue on white
 
-### 🇪🇨 [Ecuador](https://www.plonkit.net/ecuador)
+### 🇪🇨 [Ecuador](https://www.plonkit.net/ecuador 'Ecuador — Plonk It')
 {{< gallery "geoguessr-tips/GeoGuessr – Ecuador – Speed Limit Sign.png" >}}
 * Buildings
   * Grey bricks and metal roofs
@@ -657,18 +657,18 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Square
   * White background
 
-### 🇵🇦 [Panama](https://www.plonkit.net/panama)
+### 🇵🇦 [Panama](https://www.plonkit.net/panama 'Panama — Plonk It')
 * Licence Plates
   * Turquoise strip on the top
   * Front plate not required
 
-### 🇵🇪 [Peru](https://www.plonkit.net/peru)
+### 🇵🇪 [Peru](https://www.plonkit.net/peru 'Peru — Plonk It')
 * Currency
   * S/‎ (Sol), PEN
 * Roads
   * Black and yellow markings and sign poles
 
-### 🇺🇾 [Uruguay](https://www.plonkit.net/uruguay)
+### 🇺🇾 [Uruguay](https://www.plonkit.net/uruguay 'Uruguay — Plonk It')
 * Buildings
   * Cube-shaped
   * Flat roofs
@@ -684,25 +684,25 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Yellow chevrons
 
 ## Africa
-### 🇧🇼 [Botswana](https://www.plonkit.net/botswana)
+### 🇧🇼 [Botswana](https://www.plonkit.net/botswana 'Botswana — Plonk It')
 * Language
   * Afrikaans very rare.
 * Roads
   * Yellow outer lines
   * A-roads (not present in 🇿🇦 ZA)
 
-### 🇸🇿 [Eswatini](https://www.plonkit.net/eswatini#1-8)
+### 🇸🇿 [Eswatini](https://www.plonkit.net/eswatini#1-8 'Eswatini — Plonk It')
 * Landscape
   * Green, wooded hills
   * Tall golden grass
 * Roads
   * MR-roads
 
-### 🇬🇭 [Ghana](https://www.plonkit.net/ghana)
+### 🇬🇭 [Ghana](https://www.plonkit.net/ghana 'Ghana — Plonk It')
 * Roads
   * Multi-coloured taxis
 
-### 🇱🇸 [Lesotho](https://www.plonkit.net/lesotho)
+### 🇱🇸 [Lesotho](https://www.plonkit.net/lesotho 'Lesotho — Plonk It')
 * Landscape
   * Lesotho mountains
     * Rocky horizontal ridges
@@ -713,7 +713,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
 * Licence Plates
   * Light blue text
 
-### 🇳🇬 [Nigeria](https://www.plonkit.net/nigeria)
+### 🇳🇬 [Nigeria](https://www.plonkit.net/nigeria 'Nigeria — Plonk It')
 * Buildings
   * Steep roofs
   * Single storey
@@ -726,7 +726,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * North
     * Muslim
 
-### 🇷🇼 [Rwanda](https://www.plonkit.net/rwanda)
+### 🇷🇼 [Rwanda](https://www.plonkit.net/rwanda 'Rwanda — Plonk It')
 * Landscape
   * Red soil
   * Banana plants
@@ -737,7 +737,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Driving side: right
   * Kerbs with black and white stripes
 
-### 🇸🇳 [Senegal](https://www.plonkit.net/senegal)
+### 🇸🇳 [Senegal](https://www.plonkit.net/senegal 'Senegal — Plonk It')
 * Licence Plates
   * Either fully blue
     * Unique in Africa
@@ -752,7 +752,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Kilometre markers with a red top
     * Nearest towns
 
-### 🇿🇦 [South Africa](https://www.plonkit.net/south-africa)
+### 🇿🇦 [South Africa](https://www.plonkit.net/south-africa 'South Africa — Plonk It')
 * Roads
   * Yellow outer lines
   * Red and white chevrons
@@ -768,7 +768,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
     * Unlike in 🇦🇺 Australia
 
 ## Oceania
-### 🇦🇺 [Australia](https://www.plonkit.net/australia)
+### 🇦🇺 [Australia](https://www.plonkit.net/australia 'Australia — Plonk It')
 {{< gallery "geoguessr-tips/GeoGuessr – Australia*" >}}
 * Regions
   * Brisbane
@@ -788,7 +788,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
     * Red circle on a white rectangle
   * Yellow diamond-shaped warning signs
 
-### 🇳🇿  [New Zealand](https://www.plonkit.net/new-zealand)
+### 🇳🇿  [New Zealand](https://www.plonkit.net/new-zealand 'New Zealand — Plonk It')
 * Signs
   * ⛛ GIVE WAY
     * Red text

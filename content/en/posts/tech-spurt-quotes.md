@@ -13,7 +13,7 @@ keywords:
     - British dialect
     - funny
     - wiki
-lastmod: 2025-12-23T11:22:46+01:00
+lastmod: 2026-04-14T13:35:21+02:00
 main_content_id: table-of-contents
 slug:
 tags:
@@ -32,7 +32,7 @@ I watch them for the comedy.
   
 {{< gallery "tech-spurt" "type-grid size-s" "name" >}}
 
-I think I've watched every episode of&nbsp;[Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70&si=TnyhB-a9m7tDd_Jl 'Tech Spurt Weekly - YouTube') (66&nbsp;hours&nbsp;34&nbsp;minutes),  
+I think I've watched every episode of&nbsp;[Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70 'Tech Spurt Weekly - YouTube') (70&nbsp;hours&nbsp;11&nbsp;minutes),  
 along with other vids, and&nbsp;every single [Recombu&nbsp;Quickie](https://youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D 'Recombu Quickies - YouTube')&nbsp;(2&nbsp;hours&nbsp;45&nbsp;minutes),  
 from a&nbsp;review site he&nbsp;used to&nbsp;work&nbsp;for.  
 
@@ -112,18 +112,18 @@ Original expressions (especially&nbsp;[similes](#similes)), [jokes](#jokes), res
 * wankered
 
 ### Expletives
-* for scrotum’s sake
+* for [scrotum’s sake](https://youtu.be/qwImXE_hGPE?t=62s 'Google Pixel 9 Pro Review | Phone of the year! - YouTube')
 * [sweet baby tap-dancing mother of all fuck](https://youtu.be/O9jmuQY5P4g?t=759 'Asus Zenfone 10, R.I.P. Mini Mobiles? | TSW153 - YouTube')  
 * What the&nbsp;[everlasting](https://youtu.be/NmRBMWZifQk?t=737 'Nothing Phone 3...Pro? | TSW223 - YouTube')&nbsp;fuck is that thing?  
+* What in the name of [Benjamin Franklin's butt plug](https://youtu.be/gq69Sfxz_rc?t=231 "Google Pixel 10a, What's Changed vs 9a? | These Leaks Are Crazy! | TSW264 - YouTube")
 
 ### Fuck All (Synonyms)
 * bollocks all
 * bugger all
 * naff all
 * sod all
-* shag all clue
-* sweet FA
-
+* [shag all clue](https://youtu.be/jiPYgMnkeGM?t=306s 'Xiaomi 14 Ultra, Proper Samsung S24 Ultra Rival? | What To Expect | TSW183 - YouTube')
+* [sweet FA](https://youtu.be/JJA0wet_9Pc?t=82s 'First Snapdragon 8 Gen 4 Phones Incoming! | Xiaomi 15, OnePlus 13 | TSW216 - YouTube')
 ### Give a …
 * [give a](https://youtu.be/dQ9sydMsp2Q?t=558 'Vivo X Fold, the Samsung slayer | TSW107 - YouTube')&nbsp;shiny toss  
 * give a flying fuck
@@ -143,7 +143,7 @@ Original expressions (especially&nbsp;[similes](#similes)), [jokes](#jokes), res
 * [holy zombie Jesus](https://youtu.be/aMjb-H6Y8YM?t=558 'Snapdragon 8 Gen 2 Best Features (Samsung S23 & more) | TSW132 - YouTube')  
 * [Jesus cock slapping Christ](https://youtu.be/JHhzxxTOap0 'Xiaomi 13T & Pro, Flagship Destroyers? | What To Expect | TSW168 - YouTube')  
 * [Jesus tap dancing Christ](https://youtu.be/ZSxX0vzn3XE&t=343 'Xiaomi 12s, 12s Pro & 12s Ultra | TSW116 - YouTube')  
-* sweet titty fucking Christ
+* [sweet titty fucking Christ](https://youtu.be/YOxH0dGiyP0?t=504s 'Xiaomi Mi 11 Ultra, 11 Lite 5G, Mix Fold | TSW56 - YouTube')
 
 ### Ramble on (Synonyms)
 * bollock on
@@ -198,6 +198,7 @@ of blasting small furry animals&nbsp;[right in the face](https://youtu.be/WyUlqX
 * rougher than a badger's&nbsp;[ballsack](https://youtu.be/954E4oL_HjE?t=908 'iPhone 15 Pro & Pro Max Tips | First 25+ Things To Do - YouTube')  
 * smaller than a flea’s&nbsp;[ballsack](https://youtu.be/Ik4p46cEyAQ?t=242 'The 3-inch Android Phone! | Testing the Super-Compact Jelly 2 - YouTube')  
 * smells&nbsp;[worse than a](https://youtu.be/CLBr7nmjmSw?t=51s 'New Nokia, Xiaomi, Honor Phones Launching Next Week! | MWC 2023 Preview | TSW144 - YouTube')&nbsp;whole sack of kangaroo farts  
+* spilling more excrement than [Thames Water](https://youtu.be/R3Kr5vhLUnw?t=59 "Is Samsung's Galaxy Z Fold 8 already beat? | OPPO Find N6 Leaks & Rumours | TSW267 - YouTube")
 * textured finish, kind of like an&nbsp;[elephant's ballsack](https://youtu.be/VEPiExAfqzo?t=121s 'POCO M5 Unboxing & Review | Super-Affordable Budget Blower - YouTube')  
 * tougher than a British Airways bread roll
 * tougher than a Little Chef pork chop
@@ -222,7 +223,7 @@ whenever James Corden pops into my brain
 
 ### Trouser Action
 * made my trouser truncheon rather twitchy
-* make you feel all tingly in&nbsp;the&nbsp;trouser department
+* make you feel all tingly in&nbsp;the&nbsp;[trouser department](https://youtu.be/cFDGVZDOcJc?t=30s 'Best Mid-Range Phones (Autumn 2021) | Top smartphones for under £400 - YouTube')
 * trouser tent action
 * trouser-tingling
 
@@ -314,7 +315,7 @@ That's even more RAM than&nbsp;**your&nbsp;mum**&nbsp;can take.
 And believe me, she can handle some serious ram action.  
 [https://youtu.be/KtN-GjXLP5A?t=264](https://youtu.be/KtN-GjXLP5A?t=264 'OnePlus 12 is official, with tasty upgrades! | TSW178 - YouTube')  
 * Tech Spurt – 3 "**your&nbsp;mum**" Jokes in 40 Seconds  
-[https://youtu.be/CJbRByzcUdg?t=244](https://youtu.be/CJbRByzcUdg?t=244 'First Snapdragon 8 Gen 2 Phone! | Vivo X90 Pro Plus | TSW133 - YouTube')   
+[https://youtu.be/CJbRByzcUdg?t=244](https://youtu.be/CJbRByzcUdg?t=244 'First Snapdragon 8 Gen 2 Phone! | Vivo X90 Pro Plus | TSW133 - YouTube')  
 [https://youtube.com/clip/Ugkxtd_NBOGAR6F-Eel__ekjks2zKn-zlF3e](https://youtube.com/clip/Ugkxtd_NBOGAR6F-Eel__ekjks2zKn-zlF3e '✂️ Tech Spurt – 3 "Your Mum" Jokes in 40 Seconds - YouTube')  
 * And now it's time for the best thing on the internet  
 besides, of course,&nbsp;**your&nbsp;mum**'s latest uploads.  
@@ -322,16 +323,16 @@ It's Viewer Comments.
 [https://youtu.be/QvdJUfpG-kk?t=306](https://youtu.be/QvdJUfpG-kk?t=306 'OnePlus 15r, Best Mid-Range Phone of 2025? | Leaks & Rumours | TSW256 - YouTube')  
 * **Viewer:** Leave **my mum** alone!  
 I mean… at these prices, how could I?  
-[https://youtu.be/E4GpEeKL6f0?t=521](https://youtu.be/E4GpEeKL6f0?t=521 'The Internet Responds to iPhone 16, Pro & Pro Max! | TSW212 - YouTube')   
+[https://youtu.be/E4GpEeKL6f0?t=521](https://youtu.be/E4GpEeKL6f0?t=521 'The Internet Responds to iPhone 16, Pro & Pro Max! | TSW212 - YouTube')  
 * I've got the Head and Shoulders to prevent from having a snowy scalp,  
 just as when I visit **your mum,**  
 I slap on a rubber Johnny to prevent from getting the clap.  
 [https://youtu.be/OctMEI7SPxw?t=856](https://youtu.be/OctMEI7SPxw?t=856 'Google Pixel 8 & 8 Pro, iPhone 15 Pro Max - Two Weeks Later | TSW172 - YouTube')  
-* Comment from Bishop Inskip  
-(Put in a word with the big lad upstairs.)  
-[https://youtu.be/k4NP7Hgysls?t=814](https://youtu.be/k4NP7Hgysls?t=814 'Honor Magic 3 Series, Xiaomi Mix 4, Galaxy Unpacked | TSW74 - YouTube')  
-[https://youtube.com/clip/UgkxjEEwLgxdv2gHjdcXnA_63FYZGmHXBBwN](https://youtube.com/clip/UgkxjEEwLgxdv2gHjdcXnA_63FYZGmHXBBwN '✂️ Tech Spurt – A Comment from a Bishop - YouTube')  
-  
+* ...they also pick up fingerprints and muck  
+  like **your mum** picks up sailors down the dock.  
+  As soon as you start fingering the thing, it gets absolutely filthy.  
+  Again, much like **your mum**.  
+  [https://youtu.be/UNQnuiMdZFM?t=598](https://youtu.be/UNQnuiMdZFM?t=598 'Apple iPhone 16e One Year Review [With A Twist...] | TSW268 - YouTube')
 ### Gags
 * Apple Event parody (Tim Cook)
     * Part 1:&nbsp;[https://youtu.be/9vCWtSbHpCc?t=0](https://youtu.be/9vCWtSbHpCc?t=0 'Apple iMac 2021, iPad Pro M1, Realme 8 5G | TSW60 - YouTube')  
@@ -361,7 +362,11 @@ I slap on a rubber Johnny to prevent from getting the clap.
   unless we're talking about hair, that is.  
   It's uncle Spurtie, yum.  
 [https://youtu.be/nD3vHYxF1vo](https://youtu.be/nD3vHYxF1vo 'iPhone 16 Series, Serious Deja-vu! | What To Expect | TSW188 - YouTube')  
-
+* Custom Animation  
+  … you can be as immature as you like  
+  (ASUS ROG Phone 8 Pro Edition)  
+  [https://youtu.be/Dw1fYk0noLA?t=306](https://youtu.be/Dw1fYk0noLA?t=306 'ASUS ROG Phone 8 Pro Edition | Unboxing & Gaming Review - YouTube')
+  
 ### Fast Torch Gesture
 (Waaah,&nbsp;karate chop)  
 * [https://youtu.be/vUdxJiploNk?t=221](https://youtu.be/vUdxJiploNk?t=221 'Motorola Moto G30 vs G10 | Unboxing & Full Comparison - YouTube')  
@@ -383,7 +388,7 @@ I slap on a rubber Johnny to prevent from getting the clap.
 * [https://youtu.be/x3EcUeRBYqc?t=293](https://youtu.be/x3EcUeRBYqc?t=293 'Motorola Edge 50 Neo | Unboxing, Camera, Gaming & Beyond! - YouTube')  
 * [https://youtu.be/Oyw4u1_vdhQ?t=245](https://youtu.be/Oyw4u1_vdhQ?t=245 'Best Phone Under £150? | Motorola Moto G35 5G Unboxing & Tour - YouTube')  
 * [https://youtu.be/CjuO8ck2MuM?t=921](https://youtu.be/CjuO8ck2MuM?t=921 "Best Phones 2025 | I've Tested Over 75 Smartphones, Here's My Favourites! - YouTube")  
-* [Search Tech Spurt captions on Filmot for "karate"](https://filmot.com/search/%22karate%22/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& "Filmot - Search in YouTube captions and subtitles")  
+* [Search Tech Spurt captions on Filmot for "karate"](https://filmot.com/search/%22karate%22/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')  
   
 ## Segments
 ### Intros
@@ -405,7 +410,7 @@ you can't go far wrong with Samsung's fresh new Galaxy Note 20 Ultra.
 (Christmas and Easter)  
 [https://youtu.be/Nb8KdSYi3sg](https://youtu.be/Nb8KdSYi3sg 'Huawei Mate 50 Series, Motorola Moto Edge 30 Ultra | TSW124 - YouTube')  
 * And then the strangest thing happened…  
-[https://youtu.be/TebhHcXTP5M?t=0](https://youtu.be/TebhHcXTP5M?t=0 'Tag Heuer Mario Watch, Oppo Rollable Phone | TSW71 - YouTube')   
+[https://youtu.be/TebhHcXTP5M?t=0](https://youtu.be/TebhHcXTP5M?t=0 'Tag Heuer Mario Watch, Oppo Rollable Phone | TSW71 - YouTube')  
 [https://youtube.com/clip/UgkxqQPOoB2MR8KESNJw5YFzg8RETra0zWPx](https://youtube.com/clip/UgkxqQPOoB2MR8KESNJw5YFzg8RETra0zWPx '✂️ Tech Spurt - And Then the Strangest Thing Happened - YouTube')  
 * Welcome to Tech Spurt Weekly.  
 The weekly tech news show that, like **your mum’s** OnlyFans channel,  
@@ -427,7 +432,7 @@ and landing crotch first on a burning cactus.
 * Part of the show that's actually inspired by British rivers  
 in that it's absolutely overflowing with shit.  
 It's **Viewer Comments**!  
-(Reference to OnePlus 12 inspired by the Dart river in NZ)  
+(Reference to OnePlus 12 inspired by the Dart River in NZ)  
 [https://youtu.be/KtN-GjXLP5A?t=408](https://youtu.be/KtN-GjXLP5A?t=408 'OnePlus 12 is official, with tasty upgrades! | TSW178 - YouTube')  
 * Welcome to another crotch-warmingly pleasant episode  
 of the worst tech news show on this entire godawful planet.  
@@ -482,7 +487,9 @@ of the worst tech news show on this entire godawful planet.
 [https://youtu.be/7DQ0OERK1_U?t=360](https://youtu.be/7DQ0OERK1_U?t=360 "What's up with the Xiaomi 15 Ultra? | TSW224 - YouTube")  
 * Space Invader jingle  
 [https://youtu.be/7DQ0OERK1_U?t=757](https://youtu.be/7DQ0OERK1_U?t=757 "What's up with the Xiaomi 15 Ultra? | TSW224 - YouTube")  
-
+* Dodgy Thumbnail of the Week  
+  [https://youtu.be/61SKo3YSmKc?t=786](https://youtu.be/61SKo3YSmKc?t=786 "iPhone 17e: What's Changed, Worth The Money? | TSW269 - YouTube")
+  
 ### Viewer Comments
 * **Viewer:**&nbsp;What do you think of it you bald bastard ye?  
 [https://youtu.be/8wJBwu0woUA?t=653](https://youtu.be/8wJBwu0woUA?t=653 'Sony Xperia 1 III, 5 III & 10 III Launch | TSW59 - YouTube')  
@@ -493,11 +500,11 @@ of the worst tech news show on this entire godawful planet.
 [https://youtube.com/clip/UgkxMGhQpy1jBnSnDtTidvgRH1mqJAt38WFC](https://youtube.com/clip/UgkxMGhQpy1jBnSnDtTidvgRH1mqJAt38WFC '✂️ Tech Spurt - Where Is Mr Wanksock? - YouTube')  
 * **Viewer:**&nbsp;Hey Chris, you big hairy ball bag!  
 Great start…  
-…   
+…  
 **Viewer:**&nbsp;you miserable old git.  
 [https://youtu.be/OAb-uwLt-ec?t=500](https://youtu.be/OAb-uwLt-ec?t=500 'Tech Spurt Weekly Ep30 | IFA 2020 launches, Poco X3 NFC, Nvidia 3000 - YouTube')  
 * **Viewer:**&nbsp;Arsenal or City?  
-[https://youtu.be/TebhHcXTP5M?t=196](https://youtu.be/TebhHcXTP5M?t=196 'Tag Heuer Mario Watch, Oppo Rollable Phone | TSW71 - YouTube')   
+[https://youtu.be/TebhHcXTP5M?t=196](https://youtu.be/TebhHcXTP5M?t=196 'Tag Heuer Mario Watch, Oppo Rollable Phone | TSW71 - YouTube')  
 [https://youtube.com/clip/UgkxQ4tV-6DAcRi9ElY12YeO50o--7UWzf8c](https://youtube.com/clip/UgkxQ4tV-6DAcRi9ElY12YeO50o--7UWzf8c '✂️ Tech Spurt - Arsenal or City? - YouTube')  
 * **Viewer:**&nbsp;Chris, you’ve lost the plot today.  
 … That kinda suggests that I had a plot to begin with.  
@@ -528,7 +535,13 @@ I&nbsp;chiseled a secret compartment in my wall
 for fear of it ever being discovered.  
 [https://youtu.be/_mfJk7fjcfs?t=405](https://youtu.be/_mfJk7fjcfs?t=405 'The Elusive OnePlus Nord 3 | TSW161 - YouTube')  
 [https://youtube.com/clip/Ugkx5ZwZzYKcFL3cFBNLN3U_kwsoRefe1h8P](https://youtube.com/clip/Ugkx5ZwZzYKcFL3cFBNLN3U_kwsoRefe1h8P '✂️ Hentai Addict (Tech Spurt on Urotsukidōji) - YouTube')  
-
+* Comment from Bishop Inskip  
+  (Put in a word with the big lad upstairs.)  
+  [https://youtu.be/k4NP7Hgysls?t=814](https://youtu.be/k4NP7Hgysls?t=814 'Honor Magic 3 Series, Xiaomi Mix 4, Galaxy Unpacked | TSW74 - YouTube')  
+  [https://youtube.com/clip/UgkxjEEwLgxdv2gHjdcXnA_63FYZGmHXBBwN](https://youtube.com/clip/UgkxjEEwLgxdv2gHjdcXnA_63FYZGmHXBBwN '✂️ Tech Spurt – A Comment from a Bishop - YouTube')
+* DJ Miserable Cunt  
+  [https://youtu.be/isC6wq0n-QQ?t=5241](https://youtu.be/isC6wq0n-QQ?t=5241 'OnePlus 8 Series Live AMA - YouTube')
+  
 ### Which Crap Celebrity Do I Look Like This Week? {#crap-celebrity} 
 * Roberto Martínez  
 (First segment jingle)  
@@ -545,7 +558,7 @@ for fear of it ever being discovered.
 [https://youtu.be/J0ZxReRCVvo?t=434](https://youtu.be/J0ZxReRCVvo?t=434 'Tech Spurt Weekly Ep24 | Huawei Vs UK, Pixel 4a, OnePlus Nord - YouTube')  
 * Some actor from a Renault TV advert  
 [https://youtu.be/wxp_hhmWsO8?t=311](https://youtu.be/wxp_hhmWsO8?t=311 'Tech Spurt Weekly Ep25 | ROG Phone 3, Lenovo Legion Phone Duel - YouTube')  
-* Chris de Burgh's illegitimate lovechild  
+* Chris de Burgh's illegitimate love child  
 [https://youtu.be/9Qtt_J7tic4?t=338](https://youtu.be/9Qtt_J7tic4?t=338 'Tech Spurt Weekly Ep27 | Galaxy Note 20 & Watch 3, Pixel 4a - YouTube')  
 * Dean Craig Pelton (The Community),  
   CM Punk when he buzzed his head (not The Rock),  
@@ -573,10 +586,11 @@ David Draiman
 (You're just rattling off slapheads now basically, aren't ye?)  
 [https://youtu.be/7rHkBiJuYrw?t=419](https://youtu.be/7rHkBiJuYrw?t=419 'Tech Spurt Weekly Ep37 | Xbox Series X Unboxing, AMD Big Navi - YouTube')  
 * Dana White's skinny little brother,  
-  Ben Kingsley's lovechild  
+  Ben Kingsley's love child  
 [https://youtu.be/yXz2WdvMR-w?t=524](https://youtu.be/yXz2WdvMR-w?t=524 'Tech Spurt Weekly Ep38 | Motorola Moto G9 Power, Xbox Series X - YouTube')  
 * Simon Pegg as Scotty in Star Trek,  
-  Young Sean Connery (I definitely drink like Young Sean Connery)  
+  Young Sean Connery  
+  (I definitely drink like Young Sean Connery)  
 [https://youtu.be/HOTlhJGyReA?t=724](https://youtu.be/HOTlhJGyReA?t=724 'Tech Spurt Weekly Ep39 | Apple M1 Macbooks, Best Phones 2020 - YouTube')  
 * Pineapple Louie  
 (Louie Spence again)  
@@ -615,8 +629,12 @@ Victor from PUBG
 [https://youtu.be/7J1RhkpnTws?t=655](https://youtu.be/7J1RhkpnTws?t=655 'Tech Spurt Weekly Ep48 | Nokia 1.4, Mi Air Charge, Stadia woes - YouTube')  
 * The Peperami mascot  
 [https://youtu.be/VVhmXoHL2Ns?t=519](https://youtu.be/VVhmXoHL2Ns?t=519 'MediaTek Summit 2022 News! | TSW131 - YouTube')  
-
-## Out of Context Material {#out-of-context} 
+* Enzo Maresca  
+  [https://youtu.be/UNQnuiMdZFM?t=837](https://youtu.be/UNQnuiMdZFM?t=837 'Apple iPhone 16e One Year Review [With A Twist...] | TSW268 - YouTube')
+* love child of Moby and Dan Levy  
+  [https://youtu.be/1yO--GUdzSs?t=829](https://youtu.be/1yO--GUdzSs?t=829 "Samsung's New Mid-Rangers, Fully Leaked | TSW270 - YouTube")
+  
+## Out of Context Material
 * No, you bad little doggy,  
 no rotating bezel action for you.  
 Beg for it! Beg for it!  
@@ -672,10 +690,15 @@ that only shows up under UV light?
 we inserted into your rectum,  
 otherwise the Mentos tablet is released  
 and your bowls will explode into frothy chunks.  
-[https://youtu.be/9draKiuugrw?t=725](https://youtu.be/9draKiuugrw?t=725 'Google Pixel 6 & Tensor, Moto Edge 20 Series | TSW73 - YouTube')   
-* Upside down shot, \*sip\*, \*cough\*  
+[https://youtu.be/9draKiuugrw?t=725](https://youtu.be/9draKiuugrw?t=725 'Google Pixel 6 & Tensor, Moto Edge 20 Series | TSW73 - YouTube')  
+* Upside down shot,
+  *sip*,
+  *cough*  
 [https://youtu.be/tbOWpwJOJgA?t=259](https://youtu.be/tbOWpwJOJgA?t=259 'Best Phones Coming Early 2026 | S26 Ultra, Redmi Note 15 Series & More | TSW260 - YouTube')  
-
+* Rage  
+  [https://youtu.be/qgyECgCUyaQ?t=378](https://youtu.be/qgyECgCUyaQ?t=378 'OPPO Find X9 Ultra, Most Exciting Phone of 2026? | Leaks & Rumours | TSW262 - YouTube')
+* Ronaldo  
+  [https://youtu.be/VJCJhMVex4c?t=175](https://youtu.be/VJCJhMVex4c?t=175 'Crapps Episode 6: The very worst iPhone football games - YouTube')
 ## Topics
 ### Apple
 * What kind of cruel offspring would force an iPhone  
@@ -689,7 +712,7 @@ for the inheritance.
 they always treat it like it's the second coming of Christ.  
 Basically, their tongues are so far up Tim Cook's arsehole,  
 that they could probably tickle his tonsils.  
-[https://youtu.be/7rHkBiJuYrw?t=638](https://youtu.be/7rHkBiJuYrw?t=638 'Tech Spurt Weekly Ep37 | Xbox Series X Unboxing, AMD Big Navi - YouTube')   
+[https://youtu.be/7rHkBiJuYrw?t=638](https://youtu.be/7rHkBiJuYrw?t=638 'Tech Spurt Weekly Ep37 | Xbox Series X Unboxing, AMD Big Navi - YouTube')  
 * I mean, the funny fucking thing is, as well,  
 I've given a bad review to pretty much all of&nbsp;Google's  
 flagship Pixel smartphones over the last few years as well.  
@@ -703,7 +726,7 @@ right in the happy sack, mate.
 I’d rather have one of those uncles  
 that touches on you at family gatherings  
 and then threatens to kill you  
-if you ever tell **your mum**.  
+if you ever tell your mum.  
 [https://youtu.be/XFmmQLKBoNc?t=672](https://youtu.be/XFmmQLKBoNc?t=672 'Google Pixel 7 & 7 Pro, Pico 4 VR | TSW126 - YouTube')  
 * (iPhone 16e)  
 If I had to sum it up in haiku form, it would be:  
@@ -722,7 +745,7 @@ Let us know what you reckon.
 * It's incredibly confusing cuz I keep feeling like  
   I wanna drop-kick this thing into the ocean,  
 and then I remember that it's not actually an **iPhone**.  
-[https://youtu.be/qwImXE_hGPE?t=46](https://youtu.be/qwImXE_hGPE?t=46 'Google Pixel 9 Pro Review | Phone of the year! - YouTube')   
+[https://youtu.be/qwImXE_hGPE?t=46](https://youtu.be/qwImXE_hGPE?t=46 'Google Pixel 9 Pro Review | Phone of the year! - YouTube')  
 [https://youtube.com/clip/UgkxzHDdL3igUgwVGbW4iF0e0ecrM2G_lMsX](https://youtube.com/clip/UgkxzHDdL3igUgwVGbW4iF0e0ecrM2G_lMsX '✂️ "I want to drop kick this thing into the ocean" - YouTube')  
 * **Apple** is still steadfastly refusing to retire  
 that ridiculously chunky Alf Garnett moustache notch up top.  
@@ -746,7 +769,7 @@ cuz you'd already live in a fucking mansion.
   And cancer of the cock.  
   Both of them together.  
   …It’s not a very good phone.  
-[https://youtu.be/Svl93qYr7VQ?t=126](https://youtu.be/Svl93qYr7VQ?t=126 'HTC is Back, Baby! | Desire 22 Pro | TSW115 - YouTube')   
+[https://youtu.be/Svl93qYr7VQ?t=126](https://youtu.be/Svl93qYr7VQ?t=126 'HTC is Back, Baby! | Desire 22 Pro | TSW115 - YouTube')  
 [https://youtube.com/clip/UgkxwNqyJgyD8zGOBCTqTQthgp5RLUXSQ8dS](https://youtube.com/clip/UgkxwNqyJgyD8zGOBCTqTQthgp5RLUXSQ8dS "✂️ iPhone SE 2022 ... I'd rather have AIDS - YouTube")  
 * One of the most powerful laptops of 2022,  
 and what can I play on it?  
@@ -763,7 +786,7 @@ Occasionally, I multitask and drink while crying in&nbsp;the&nbsp;shower.
 * **Smart ring:**&nbsp;Why not try going to bed sooner  
 and stop guzzling so much booze your massive pisshead?  
 Well, gee, Mr smart tech fucking know-it-all thing…  
-[https://youtu.be/N9vVqljkJxU?t=589](https://youtu.be/N9vVqljkJxU?t=589 'Google Pixel 8a, No Longer A Budget Hero? | What To Expect | TSW191 - YouTube')   
+[https://youtu.be/N9vVqljkJxU?t=589](https://youtu.be/N9vVqljkJxU?t=589 'Google Pixel 8a, No Longer A Budget Hero? | What To Expect | TSW191 - YouTube')  
 [https://youtube.com/clip/UgkxWx03HKPfYg_dRgzRPxzLaLHh_4pb3qNN](https://youtube.com/clip/UgkxWx03HKPfYg_dRgzRPxzLaLHh_4pb3qNN '✂️ Tech Spurt on Smart Rings - YouTube')  
 * It’s like a big warm hug for the soul  
 on those miserable days where I&nbsp;just feel like  
@@ -783,7 +806,7 @@ It's the most miserable month of the year.
 If there's ever a time to drink it's definitely January…  
 [https://youtu.be/g8lYxhH-h20?t=343](https://youtu.be/g8lYxhH-h20?t=343 'Tech Spurt Weekly Ep12 | Sony Xperia 1 ii release, Motorola Edge launch - YouTube')  
 * IT support for John Lewis  
-… I soon decided that I’d rather drink a pint of donkey spunk,  
+… I soon decided that I’d rather drink a pint of donkey spunk  
 than continue doing that for the rest of my life.  
 … I already had the crap fashion sense, and you know, the…  
 alcoholism, so I was already overqualified basically.  
@@ -796,7 +819,7 @@ to&nbsp;wipe out any other living creature in&nbsp;the&nbsp;vicinity,
 that seems a little bit… harsh.  
 But definitely a big fan of the national pastime  
 of being so&nbsp;drunk you can't even see your own feet.  
-[https://youtu.be/IYvN8ZdQ3Oo?t=624](https://youtu.be/IYvN8ZdQ3Oo?t=624 'Nokia G21 & G11, OnePlus Nord CE 2, Realme 9 Pro | TSW99 - YouTube')   
+[https://youtu.be/IYvN8ZdQ3Oo?t=624](https://youtu.be/IYvN8ZdQ3Oo?t=624 'Nokia G21 & G11, OnePlus Nord CE 2, Realme 9 Pro | TSW99 - YouTube')  
 [https://youtube.com/clip/UgkxEmxc5Mq0t_oicu_IC9lslnBw8TNO7c6x](https://youtube.com/clip/UgkxEmxc5Mq0t_oicu_IC9lslnBw8TNO7c6x '✂️ Tech Spurt on Australia - YouTube')  
 * **Viewer:**&nbsp;Give money to charity, not to drink alcohol, it’s poison.  
 … Life itself is the poison and alcohol is the antidote.  
@@ -835,7 +858,7 @@ and then leap off a&nbsp;skyscraper.
 [https://youtu.be/6aJnkkK_NT0?t=489](https://youtu.be/6aJnkkK_NT0?t=489 'Samsung Galaxy A52s 5G, Fossil Gen 6 | TSW76 - YouTube')  
 * 30-Day Linux Challenge  
 I'd rather copulate with a wasp's nest.  
-[https://youtu.be/WAMja1D5sno?t=858](https://youtu.be/WAMja1D5sno?t=858 'Sony Xperia 1 VII, HOW MUCH?? | TSW239 - YouTube')   
+[https://youtu.be/WAMja1D5sno?t=858](https://youtu.be/WAMja1D5sno?t=858 'Sony Xperia 1 VII, HOW MUCH?? | TSW239 - YouTube')  
 [https://youtube.com/clip/Ugkx8wyFxptfRd7q2sT5lmxKD3taX2Cf5Et0](https://youtube.com/clip/Ugkx8wyFxptfRd7q2sT5lmxKD3taX2Cf5Et0 '✂️ Tech Spurt – 30-Day Linux Challenge - YouTube')  
 
 ### Elon Musk
@@ -1007,7 +1030,7 @@ don't even live in&nbsp;the&nbsp;same fucking continent.
 * [Search Tech Spurt captions on Filmot for "husk"](https://filmot.com/search/husk/1?channelID=UCVLN0tY51ewH44wUtx3YZTA%2CUCLBu0twCF7eXUJkDg-30Ozw&gridView=1& 'Filmot - Search in YouTube captions and subtitles')<br><br>  
 * Crazy roller coaster with no end,  
 apart from, obviously, the sweet embrace of death.  
-[https://youtu.be/yXz2WdvMR-w?t=25](https://youtu.be/yXz2WdvMR-w?t=25 'Tech Spurt Weekly Ep38 | Motorola Moto G9 Power, Xbox Series X - YouTube')   
+[https://youtu.be/yXz2WdvMR-w?t=25](https://youtu.be/yXz2WdvMR-w?t=25 'Tech Spurt Weekly Ep38 | Motorola Moto G9 Power, Xbox Series X - YouTube')  
 * …and you've also got new watch faces  
 including kitties and big dumb dogs  
 to distract you from how utterly miserable and shit everything is.  
@@ -1082,13 +1105,13 @@ is probably by&nbsp;slapping a&nbsp;picture of **Jacob Rees-Mogg** on the side.
 
 ### Kids in Multiplayer Games
 * School Kids in COD: Mobile  
-[https://youtu.be/lIeUaVYFBKQ?t=425](https://youtu.be/lIeUaVYFBKQ?t=425 'Xiaomi Redmi Note 10 Pro Review | Poco X3 Killer - YouTube')   
+[https://youtu.be/lIeUaVYFBKQ?t=425](https://youtu.be/lIeUaVYFBKQ?t=425 'Xiaomi Redmi Note 10 Pro Review | Poco X3 Killer - YouTube')  
 [https://youtube.com/clip/UgkxGhi2zMzCWK57XNY3sM-yYwtUD0T6uA83](https://youtube.com/clip/UgkxGhi2zMzCWK57XNY3sM-yYwtUD0T6uA83 '✂️ Tech Spurt - School Kids in COD: Mobile - YouTube')  
 * Tech Spurt vs Kids in PUBG Mobile  
-[https://youtu.be/h5Epg-lNWoA?t=306](https://youtu.be/h5Epg-lNWoA?t=306 'Realme 6 Review | Brilliant Budget Phone - YouTube')   
+[https://youtu.be/h5Epg-lNWoA?t=306](https://youtu.be/h5Epg-lNWoA?t=306 'Realme 6 Review | Brilliant Budget Phone - YouTube')  
 [https://youtube.com/clip/Ugkxww8NyA56wDn38iakjXXN9EJbIsmLdeIx](https://youtube.com/clip/Ugkxww8NyA56wDn38iakjXXN9EJbIsmLdeIx '✂️ Tech Spurt vs Kids in PUBG Mobile - YouTube')  
 * 12-Year-Olds in COD  
-[https://youtu.be/ryRozYyjdik?t=112](https://youtu.be/ryRozYyjdik?t=112 'Tech Spurt Weekly Ep44 | Nokia 5.4, Google outage - YouTube')   
+[https://youtu.be/ryRozYyjdik?t=112](https://youtu.be/ryRozYyjdik?t=112 'Tech Spurt Weekly Ep44 | Nokia 5.4, Google outage - YouTube')  
 [https://youtube.com/clip/Ugkx4QEb4h2yK5F8YsONZDyhVu2wEldXH17m](https://youtube.com/clip/Ugkx4QEb4h2yK5F8YsONZDyhVu2wEldXH17m '✂️ 12 Year Olds in COD - YouTube')  
 * at least I won't be getting sniped in&nbsp;the&nbsp;face  
 by some 12-year-old twat.  
@@ -1113,7 +1136,31 @@ on the likes of Call of Duty Mobile.
 * …having my spleen blasted out of my body  
 by irritating youths with stupid usernames on shit like Call of Duty.  
 [https://youtu.be/hQXzrkZt0PQ?t=374s](https://youtu.be/hQXzrkZt0PQ?t=374s 'Motorola Edge 30 Ultra Review | Pixel 7 Pro Killer? - YouTube')  
-  
+
+### Opinions
+* And to put it less politely, it’s fucking rank.  
+  [https://youtu.be/F5-nhRBknl8?t=680](https://youtu.be/F5-nhRBknl8?t=680 'iPhone SE 3 (2022) Review | One month later... - YouTube')
+* Tech Spurt on Symbian  
+  [https://youtu.be/4VGtU_5TaVI?t=673](https://youtu.be/4VGtU_5TaVI?t=673 'Nothing Phone 1 (Finally) Revealed | TSW114 - YouTube')  
+  [https://youtube.com/clip/UgkxbYij6aM5CZAhrwQeMN70WWfrEmZIvr3E](https://youtube.com/clip/UgkxbYij6aM5CZAhrwQeMN70WWfrEmZIvr3E '✂️ Tech Spurt – Symbian - YouTube')
+* Macro Lenses Suck.  
+  [https://youtu.be/D75jHfcOJFc?t=381](https://youtu.be/D75jHfcOJFc?t=381 'Tech Spurt Weekly Ep49 | Apple Glass, Mi 11, Macro Lenses - YouTube')  
+  [https://youtube.com/clip/Ugkxcp9NQ-XcmJqIXL-fxWL0aCXvEXOEhAX1](https://youtube.com/clip/Ugkxcp9NQ-XcmJqIXL-fxWL0aCXvEXOEhAX1 '✂️ Tech Spurt: Macro Lenses Suck … - YouTube')
+* Worst phone ever?  
+  … the ones you had to frantically stab about 10 times  
+  before they actually did something.  
+  It was like trying to get a Gen-Zer to do some work:  
+  “Just stop TikToking and clean up your shit!”  
+  [https://youtu.be/wJykbA4jsi0?t=477](https://youtu.be/wJykbA4jsi0?t=477 'Honor Magic V2 is finally here! | 2024 Review | TSW184 - YouTube')  
+  [https://youtube.com/clip/UgkxifCmRrFPS7ginYb7LZxk8Jaku-_ytAVX](https://youtube.com/clip/UgkxifCmRrFPS7ginYb7LZxk8Jaku-_ytAVX '✂️ Worst Phone Ever - YouTube')
+* Bixby – the virtual assistant who’s about as useful  
+  as a jockstrap filled with angry wasps.  
+  And about as painful to use as well.  
+  [https://youtu.be/I6WlHVBIQT4?t=224s](https://youtu.be/I6WlHVBIQT4?t=224s 'Samsung Galaxy S24 Plus Review | A Tempting Super-Sized Upgrade! - YouTube')
+* And that quite nicely sums up  
+  the wonderful world of CES:  
+  Full of wankers.  
+  [https://youtu.be/qgyECgCUyaQ?t=395](https://youtu.be/qgyECgCUyaQ?t=395 'OPPO Find X9 Ultra, Most Exciting Phone of 2026? | Leaks & Rumours | TSW262 - YouTube')
 ### Self-Deprecation
 * Watching some **bald YouTube twat**  
 [https://youtu.be/f2saSx301b0?t=194](https://youtu.be/f2saSx301b0?t=194 'Samsung Galaxy Z Fold 6 | Tips, Tricks & Best Features - YouTube')  
@@ -1133,7 +1180,14 @@ Cuz the other half buggered off ages ago.
 * Yet another meaningless list of best smartphones  
 from a **follically deficient middle-aged jizz mop**.  
 [https://youtu.be/CjuO8ck2MuM?t=1088](https://youtu.be/CjuO8ck2MuM?t=1088 "Best Phones 2025 | I've Tested Over 75 Smartphones, Here's My Favourites! - YouTube")  
-
+* withered out wankpiece  
+  [https://youtu.be/TtPRi-0p_q0?t=992](https://youtu.be/TtPRi-0p_q0?t=992 'Samsung Galaxy S26 Review | Small Phone, Big Problems? - YouTube')
+* Frozen Peas and a Bit of a Cry  
+  [https://youtu.be/iEMLbMwNVJ0?t=960](https://youtu.be/iEMLbMwNVJ0?t=960 'Huawei P50 Pocket & Pro, Realme 9 Pro Plus | TSW96 - YouTube')  
+  [https://youtube.com/clip/UgkxoTBeNieqdLkYJkKwvyBaafWe5Gp9hBf4](https://youtube.com/clip/UgkxoTBeNieqdLkYJkKwvyBaafWe5Gp9hBf4 '✂️ Tech Spurt - Frozen Peas and a Bit of a Cry - YouTube')
+* Tech Spurt's Advice on Becoming Middle-Aged  
+  [https://youtu.be/6U-YVOSiXa0?t=415](https://youtu.be/6U-YVOSiXa0?t=415 'Google Pixel 6a Rumours & Leaks | TSW105 - YouTube')  
+  [https://youtube.com/clip/Ugkx04l90MvOc3HKysDjroXguO1Ts66muvE9](https://youtube.com/clip/Ugkx04l90MvOc3HKysDjroXguO1Ts66muvE9 "✂️ Tech Spurt's Advice on Becoming Middle-Aged - YouTube")
 ### Tablets with Rear Cameras
 * Anyone who actually uses a rear camera on a tablet,  
   is worse than herpes and deserves to be thrown into a pit of fire.  
@@ -1235,19 +1289,9 @@ and then backing off with your dog in a hasty getaway.
 [https://youtu.be/_glVl5Ijw8w?t=161](https://youtu.be/_glVl5Ijw8w?t=161 "BlackBerry Key2 Camera Review | First 'Berry Dual Shooter! - YouTube")  
 
 ### The Rest
-* And to put it less politely, it’s fucking rank.  
-[https://youtu.be/F5-nhRBknl8?t=680](https://youtu.be/F5-nhRBknl8?t=680 'iPhone SE 3 (2022) Review | One month later... - YouTube')  
-* Frozen Peas and a Bit of a Cry  
-[https://youtu.be/iEMLbMwNVJ0?t=960](https://youtu.be/iEMLbMwNVJ0?t=960 'Huawei P50 Pocket & Pro, Realme 9 Pro Plus | TSW96 - YouTube')   
-[https://youtube.com/clip/UgkxoTBeNieqdLkYJkKwvyBaafWe5Gp9hBf4](https://youtube.com/clip/UgkxoTBeNieqdLkYJkKwvyBaafWe5Gp9hBf4 '✂️ Tech Spurt - Frozen Peas and a Bit of a Cry - YouTube')  
-* Tech Spurt's Advice on Becoming Middle-Aged  
-[https://youtu.be/6U-YVOSiXa0?t=415](https://youtu.be/6U-YVOSiXa0?t=415 'Google Pixel 6a Rumours & Leaks | TSW105 - YouTube')   
-[https://youtube.com/clip/Ugkx04l90MvOc3HKysDjroXguO1Ts66muvE9](https://youtube.com/clip/Ugkx04l90MvOc3HKysDjroXguO1Ts66muvE9 "✂️ Tech Spurt's Advice on Becoming Middle-Aged - YouTube")  
 * Netherlands (Windmill Action)  
-[https://youtu.be/Zf4pjBA-NN0?t=510](https://youtu.be/Zf4pjBA-NN0?t=510 'Samsung Galaxy A72 & A52 5G, Realme 8 Pro | TSW54 - YouTube')   
+[https://youtu.be/Zf4pjBA-NN0?t=510](https://youtu.be/Zf4pjBA-NN0?t=510 'Samsung Galaxy A72 & A52 5G, Realme 8 Pro | TSW54 - YouTube')  
 [https://youtube.com/clip/UgkxYiDvdOzhKe20Tk88uI8RMTxRQLkDRIrm](https://youtube.com/clip/UgkxYiDvdOzhKe20Tk88uI8RMTxRQLkDRIrm '✂️ Tech Spurt on the Netherlands (Windmill Action) - YouTube')  
-* DJ Miserable Cunt  
-[https://youtu.be/isC6wq0n-QQ?t=5241](https://youtu.be/isC6wq0n-QQ?t=5241 'OnePlus 8 Series Live AMA - YouTube')  
 * Jeff Bezos Retirement  
 [https://youtu.be/7J1RhkpnTws?t=270](https://youtu.be/7J1RhkpnTws?t=270 'Tech Spurt Weekly Ep48 | Nokia 1.4, Mi Air Charge, Stadia woes - YouTube')  
 * Cinema Mode  
@@ -1257,7 +1301,7 @@ on TikTok the entire time,
 because you’re… hideously old now.  
 [https://youtu.be/LLdXFfXfkH4?t=238](https://youtu.be/LLdXFfXfkH4?t=238 'HTC Vive Flow VR | Virtual Reality Glasses Face-On Review - YouTube')  
 * Tech Spurt on VR vs Actual Reality  
-[https://youtu.be/__e_GmndypI?t=676](https://youtu.be/__e_GmndypI?t=676 'Pico 4 VR Headset | Review vs Meta Quest 2 - YouTube')   
+[https://youtu.be/__e_GmndypI?t=676](https://youtu.be/__e_GmndypI?t=676 'Pico 4 VR Headset | Review vs Meta Quest 2 - YouTube')  
 [https://youtube.com/clip/Ugkxi4kTG15_4Mc8v3GW8DVU3GTrrJ3RdYNo](https://youtube.com/clip/Ugkxi4kTG15_4Mc8v3GW8DVU3GTrrJ3RdYNo '✂️ Tech Spurt on VR vs Actual Reality - YouTube')  
 * …smashing back a bag of fungi once  
 and I ended up just pissing myself  
@@ -1265,20 +1309,15 @@ and&nbsp;then attacking the fridge because I&nbsp;thought it was an alien spacec
 (Mushrooms, retrospective journey)  
 [https://youtu.be/iANjeswccdI?t=731](https://youtu.be/iANjeswccdI?t=731 'Xiaomi 13 Ultra | TSW146 - YouTube')  
 * JerryRigEverything, eat your cock out.  
-[https://youtu.be/9pf2Pzq6Du4?t=516](https://youtu.be/9pf2Pzq6Du4?t=516 'Google Pixel Watch 2 | What To Expect | TSW170 - YouTube')  
-* Tony Hawk.  
+  [https://youtu.be/9pf2Pzq6Du4?t=494](https://youtu.be/9pf2Pzq6Du4?t=516 'Google Pixel Watch 2 | What To Expect | TSW170 - YouTube')
+* MediaTek randomly brought Tony Hawk on stage.  
+  Tony Hawk!  
   The Tony Hawk.  
   Tony cockin’ Hawk.  
-  … It’s Tony mother flickin’ Hawk.  
+  I've got no idea why but hey, who needs a reason for Tony Hawk?  
+  … It’s Tony motherflickin’ Hawk.  
   Tony Hawk.  
 [https://youtu.be/Ziu2aVkDuY4?t=180](https://youtu.be/Ziu2aVkDuY4?t=180 'Mediatek Dimensity 9300 Gaming & Vivo X100 Pro | TSW176 - YouTube')  
-* Worst phone ever?  
-… the ones you had to frantically stab about 10 times  
-before they actually did something.  
-It was like trying to get a Gen-Zer to do some work:  
-“Just stop TikToking and clean up your shit!”  
-[https://youtu.be/wJykbA4jsi0?t=477](https://youtu.be/wJykbA4jsi0?t=477 'Honor Magic V2 is finally here! | 2024 Review | TSW184 - YouTube')   
-[https://youtube.com/clip/UgkxifCmRrFPS7ginYb7LZxk8Jaku-_ytAVX](https://youtube.com/clip/UgkxifCmRrFPS7ginYb7LZxk8Jaku-_ytAVX '✂️ Worst Phone Ever - YouTube')  
 * If they do start charging for any of this AI shiz,  
   we firmly reserve the right to kick them right in&nbsp;the&nbsp;cock.  
 [https://youtu.be/wJykbA4jsi0?t=854](https://youtu.be/wJykbA4jsi0?t=854 'Honor Magic V2 is finally here! | 2024 Review | TSW184 - YouTube')  
@@ -1286,27 +1325,13 @@ It was like trying to get a Gen-Zer to do some work:
 Thankfully, they don't come bundled with farting&nbsp;teenagers  
 who Instagram throughout the entire movie.  
 [https://youtu.be/oiNi2mN-H4g?t=10s](https://youtu.be/oiNi2mN-H4g?t=10s 'TCL NxtWear G Glasses | A cinema for your face! - YouTube')  
-* Uncle Spurt sings Chicago - Hard To Say I'm Sorry  
+* Uncle Spurt sings Chicago – Hard To Say I'm Sorry  
 [https://youtu.be/gK4ZZy2RLUA?t=322](https://youtu.be/gK4ZZy2RLUA?t=322 'Nokia 5310 (2020) Unboxing & Tour | XpressMusic Returns - YouTube')  
-* Bixby – the virtual assistant who’s about as useful  
-  as a jockstrap filled with angry wasps.  
-  And about as painful to use as well.  
-[https://youtu.be/I6WlHVBIQT4?t=224s](https://youtu.be/I6WlHVBIQT4?t=224s 'Samsung Galaxy S24 Plus Review | A Tempting Super-Sized Upgrade! - YouTube')  
-* Custom Animation  
-  … you can be as immature as you like  
-  (ASUS ROG Phone 8 Pro Edition)  
-[https://youtu.be/Dw1fYk0noLA?t=306](https://youtu.be/Dw1fYk0noLA?t=306 'ASUS ROG Phone 8 Pro Edition | Unboxing & Gaming Review - YouTube')  
 * Deep-fried badger on toast  
 [https://youtu.be/fNyeZNXr3Qo?t=454](https://youtu.be/fNyeZNXr3Qo?t=454 'OnePlus Nord CE 5G, Sony WF1000 XM4, iOS 15 | TSW66 - YouTube')  
 [https://youtube.com/clip/UgkxVEl6diQPd1UmXbokoYbiq2l3iwERL5Uv](https://youtube.com/clip/UgkxVEl6diQPd1UmXbokoYbiq2l3iwERL5Uv '✂️ Deep fried badger on toast - YouTube')  
 * bleuhhhhh  
 [https://youtu.be/IYoVB87HF4s?t=785](https://youtu.be/IYoVB87HF4s?t=785 'Best Upcoming Phones For Summer 2025 | Pixel 10, Nothing Phone 3, Samsung Fold 7 | TSW241 - YouTube')  
-* Tech Spurt on Symbian  
-[https://youtu.be/4VGtU_5TaVI?t=673](https://youtu.be/4VGtU_5TaVI?t=673 'Nothing Phone 1 (Finally) Revealed | TSW114 - YouTube')   
-[https://youtube.com/clip/UgkxbYij6aM5CZAhrwQeMN70WWfrEmZIvr3E](https://youtube.com/clip/UgkxbYij6aM5CZAhrwQeMN70WWfrEmZIvr3E '✂️ Tech Spurt – Symbian - YouTube')  
-* Macro Lenses Suck.  
-[https://youtu.be/D75jHfcOJFc?t=381](https://youtu.be/D75jHfcOJFc?t=381 'Tech Spurt Weekly Ep49 | Apple Glass, Mi 11, Macro Lenses - YouTube')   
-[https://youtube.com/clip/Ugkxcp9NQ-XcmJqIXL-fxWL0aCXvEXOEhAX1](https://youtube.com/clip/Ugkxcp9NQ-XcmJqIXL-fxWL0aCXvEXOEhAX1 '✂️ Tech Spurt: Macro Lenses Suck … - YouTube')  
 * Some words like "twat"  
 are just inherently funny.  
 Twat.  
@@ -1315,4 +1340,6 @@ Whoever invented that one, frankly deserves a Nobel Prize.
 * You can bet your favourite dangly part  
 [https://youtu.be/7DQ0OERK1_U?t=207](https://youtu.be/7DQ0OERK1_U?t=207 "What's up with the Xiaomi 15 Ultra? | TSW224 - YouTube")  
 * Mankini  
-[https://youtu.be/N-K2EIi1dQI?t=250](https://youtu.be/N-K2EIi1dQI?t=250 'Motorola RAZR 50 & 50 Ultra | What To Expect | TSW200 - YouTube')   
+[https://youtu.be/N-K2EIi1dQI?t=250](https://youtu.be/N-K2EIi1dQI?t=250 'Motorola RAZR 50 & 50 Ultra | What To Expect | TSW200 - YouTube')  
+* Mega fan's online shrine to everything Tech Spurt Weekly  
+  [https://youtu.be/8zSu2sGAgKA?t=174](https://youtu.be/8zSu2sGAgKA?t=174 'Xiaomi 17 Ultra, Camera Behemoth? | Leaks & Rumours | TSW258 - YouTube')  

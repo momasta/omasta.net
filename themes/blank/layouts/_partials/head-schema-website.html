@@ -1,8 +1,10 @@
+{{- /* Schema.org JSON-LD */ -}}
+
 {{- /* Build website schema and include SearchAction only when page-level search_target is present */ -}}
 {{- $pageSearchTarget := .Params.search_target | default "" -}}
 {{- $searchTarget := "" -}}
 {{- if ne $pageSearchTarget "" -}}
-    {{- $searchTarget = absURL $pageSearchTarget -}}
+    {{- $searchTarget = absLangURL (print .Path $pageSearchTarget) -}}
 {{- end -}}
 
 {{- $sameAsUrls := slice -}}

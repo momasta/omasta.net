@@ -1,7 +1,7 @@
 ---
 title: "My Profiles"
 date: 2022-10-09T22:58:33+02:00
-lastmod: 2025-11-06T10:44:53+01:00
+lastmod: 2026-04-14T13:35:21+02:00
 draft: false
 layout: simple
 ---
@@ -23,6 +23,7 @@ layout: simple
 
 ## Quizzes / Hobbies
 * [Geocaching](https://www.geocaching.com/p/?id=8404971)
+* [GeoGuessr](https://geoguessr.com/user/5d57f24473c0052740b499fd)
 * [Monkeytype](https://monkeytype.com/profile/m.omasta "m.omasta on Monkeytype | A minimalistic, customizable typing test")
 * [Sporcle](https://www.sporcle.com/user/momasta/ "momasta's Sporcle Contributed Quizzes")
 

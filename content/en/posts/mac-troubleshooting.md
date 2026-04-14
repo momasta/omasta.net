@@ -24,7 +24,7 @@ type: posts
 Since I got my first Mac in May 2023, I've been taking notes of every solution that's helped me fix issues.
 
 Usually, it's just the matter of killing a&nbsp;process.  
-They kick back in by themselves, as&nbsp;needed.   
+They kick back in by themselves, as&nbsp;needed.  
 No need to restart the whole system most of the time.
 
 If you prefer, instead of running "killall" commands in Terminal,  
@@ -144,7 +144,7 @@ Unicode, convert NFD to NFC
   * Don't overlook post-install instructions printed in Terminal.
     ```
     brew install convmv
-    
+  
     ```
   * convmv is also available on [MacPorts](https://ports.macports.org/port/convmv/ 'Install convmv on macOS with  MacPorts') if that's your thing.
 
@@ -191,7 +191,7 @@ sudo killall -KILL&nbsp;Spotlight&nbsp;spotlightd mds
 ```
 * **⌥⌘⎋:** [Force Quit](https://support.apple.com/en-us/102586 'How to force an app to quit on Mac - Apple Support')  
 * Select Finder  
-* Click Relaunch    
+* Click Relaunch  
 ### Stuck Alarm/Timer Sound
 Clock app, countdown, ringtone.
 ```
