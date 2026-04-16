@@ -1,6 +1,43 @@
-DirectoryIndex index.html
+RewriteEngine On
 
-# Redirects for moved content
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html
+AddCharset UTF-8 .htm
+
+DirectoryIndex index.html index.php
+
+# htaccess rules for subdomains and aliases
+# to create new subdomain, create a folder www/subdom/(subdomain name)
+# to create web for alias, create a folder www/domains/(whole domain name)
+# https://kb.wedos.com/r/32/webhosting-htaccess.html
+
+# Domain Aliases
+RewriteCond %{REQUEST_URI} !^domains/
+RewriteCond %{REQUEST_URI} !^/domains/
+RewriteCond %{HTTP_HOST} ^(www\.)?(.*)$
+RewriteCond %{DOCUMENT_ROOT}/domains/%2 -d
+RewriteRule (.*) domains/%2/$1 [DPI]
+
+# Domain Aliases - Redirect for a missing /
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^domains/[^/]+/(.+[^/])$ /$1/ [R]
+
+# Subdomains
+RewriteCond %{REQUEST_URI} !^subdom/
+RewriteCond %{REQUEST_URI} !^/subdom/
+RewriteCond %{HTTP_HOST} ^(www\.)?(.*)\.([^\.]*)\.([^\.]*)$
+RewriteCond %{DOCUMENT_ROOT}/subdom/%2 -d
+RewriteRule (.*) subdom/%2/$1 [DPI]
+
+# Subdomains - Redirect for a missing /
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^subdom/[^/]+/(.+[^/])$ /$1/ [R]
+
+# HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirects for Moved Content
 RewriteRule ^tags/notes/?$ /tags/quotes/ [R=301,L]
 
 # Error Documents

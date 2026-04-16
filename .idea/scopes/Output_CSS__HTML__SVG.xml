@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Output CSS, HTML, SVG" pattern="file:public//*.css||file:public//*.html||file:public//*.svg" />
+</component>

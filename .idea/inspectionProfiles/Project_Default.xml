@@ -8,5 +8,10 @@
     <inspection_tool class="SassScssUnresolvedMixin" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SassScssUnresolvedPlaceholderSelector" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="SassScssUnresolvedVariable" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Stylelint" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="W3CssValidation" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myCssVersion" value="css3svg" />
+      <option name="myIgnoreVendorSpecificProperties" value="false" />
+    </inspection_tool>
   </profile>
 </component>

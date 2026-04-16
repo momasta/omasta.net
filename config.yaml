@@ -1,4 +1,4 @@
-baseURL: https://marek.omasta.net/
+baseURL: https://omasta.net/
 title: Marek Omasta
 theme:
   - blank
@@ -28,7 +28,7 @@ markup:
       unsafe: true
     extensions:
       typographer:
-          disable: true
+        disable: true
 
 params:
   dateFormatISO: 2006-01-02T15:04:05
@@ -58,7 +58,7 @@ params:
       - Pinterest: "https://pinterest.com/m_omasta"
       - Unsplash: "https://unsplash.com/@m_omasta"
       - YouTube: "https://youtube.com/@m.omasta"
-          
+
 taxonomies:
   tag: tags
 
