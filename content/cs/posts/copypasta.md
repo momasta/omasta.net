@@ -46,7 +46,7 @@ Speciální znaky, útržky textu a sady emoji.
 🌊🌴💿🌸🏛️📼  
 
 ## Symboly z klávesnic Apple
- ⇧ ⌃ ⌥ ⌘ ⌫ ⎋  
+⇧ ⌃ ⌥ ⌘ ⌫ ⎋  
 
 ## Šipky
 ←  

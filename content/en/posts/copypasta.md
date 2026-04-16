@@ -45,7 +45,7 @@ Special characters, text snippets and emoji combos.
 🌊🌴💿🌸🏛️📼  
 
 ## Apple Keyboard Symbols
- ⇧ ⌃ ⌥ ⌘ ⌫ ⎋  
+⇧ ⌃ ⌥ ⌘ ⌫ ⎋  
 
 ## Arrows
 ←  

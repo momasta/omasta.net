@@ -6,22 +6,6 @@ AddCharset UTF-8 .htm
 
 DirectoryIndex index.html index.php
 
-# htaccess rules for subdomains and aliases
-# to create new subdomain, create a folder www/subdom/(subdomain name)
-# to create web for alias, create a folder www/domains/(whole domain name)
-# https://kb.wedos.com/r/32/webhosting-htaccess.html
-
-# Domain Aliases
-RewriteCond %{REQUEST_URI} !^domains/
-RewriteCond %{REQUEST_URI} !^/domains/
-RewriteCond %{HTTP_HOST} ^(www\.)?(.*)$
-RewriteCond %{DOCUMENT_ROOT}/domains/%2 -d
-RewriteRule (.*) domains/%2/$1 [DPI]
-
-# Domain Aliases - Redirect for a missing /
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^domains/[^/]+/(.+[^/])$ /$1/ [R]
-
 # Subdomains
 RewriteCond %{REQUEST_URI} !^subdom/
 RewriteCond %{REQUEST_URI} !^/subdom/
@@ -38,7 +22,11 @@ RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Redirects for Moved Content
-RewriteRule ^tags/notes/?$ /tags/quotes/ [R=301,L]
+RewriteRule ^tags/notes$ /tags/quotes/ [R=301,L]
+RewriteRule ^posts/(.*)$ "/$1" [R=301,L]
+
+# Shorthands
+RewriteRule ^tech-spurt$ "/tech-spurt-quotes/" [R=301,L]
 
 # Error Documents
 ErrorDocument 400 /400/
@@ -49,7 +37,7 @@ ErrorDocument 503 /503/
 <IfModule mod_expires.c>
   ExpiresActive On
 
-  # Scripts and styles – cache long, busted by query string
+  # Scripts and styles – cache long, busted by a hash
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
 

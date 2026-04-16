@@ -59,6 +59,9 @@ params:
       - Unsplash: "https://unsplash.com/@m_omasta"
       - YouTube: "https://youtube.com/@m.omasta"
 
+permalinks:
+  posts: "/:slugorcontentbasename/"
+
 taxonomies:
   tag: tags
 
