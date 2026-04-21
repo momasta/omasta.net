@@ -4,7 +4,7 @@ My Personal Website
 * Live URL: [omasta.net](https://omasta.net)
 * Built using [Hugo](https://gohugo.io), an open-source static site generator.
 
-[<img width="640" height="320" alt="A screenshot of the omasta.net website" src="https://github.com/user-attachments/assets/47652567-fb24-47e9-bc8d-aaf11352a3b6">](https://omasta.net/)
+[<img width="403" height="214" alt="A screenshot of the omasta.net website" src="https://github.com/user-attachments/assets/43fe1f83-1fda-4a52-be70-f4baa52b4846">](https://omasta.net/)
 
 ## Table of Contents
 - [Features](#features)
