@@ -33,6 +33,13 @@ RewriteRule ^posts/(.*)$ "/$1" [R=301,L]
 # Shorthands
 RewriteRule ^tech-spurt/?$ /tech-spurt-quotes/ [R=301,L]
 
+<IfModule mod_headers.c>
+    SetEnvIf Origin "^https?://([^/]+\.)?omasta\.net$" ALLOWED_ORIGIN=$0
+    Header set Access-Control-Allow-Origin %{ALLOWED_ORIGIN}e env=ALLOWED_ORIGIN
+    Header set Access-Control-Allow-Methods "GET, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+</IfModule>
+
 # Error Documents
 ErrorDocument 400 /400/
 ErrorDocument 403 /403/

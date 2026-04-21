@@ -43,6 +43,10 @@
     {{- /* Canonical URL */ -}}
     <link rel="canonical" href="{{ .Permalink }}">
 
+    {{ if eq .Type "ErrorDocument" }}
+        <base href="{{ .Site.BaseURL }}">
+    {{ end }}
+
     {{- /* HTML and RSS alternates */ -}}
     {{- if hugo.IsMultilingual -}}
         {{- /* RSS alternates */ -}}
