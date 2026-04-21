@@ -16,8 +16,6 @@
         {{ end }}
     {{ end }}
     
-    {{ $showDate := and (not .PublishDate.IsZero) (not .Pages) (not (.Page.Store.Get "breadcrumbsUsed")) }}
-
     <div id="middle" class="direction-column">
         <main>
             <div class="card">
@@ -36,6 +34,10 @@
                            class="tag">&#35;{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}<br></a>
                     {{- end -}}
 
+                    {{ $showDate := and (not .PublishDate.IsZero)
+                                        (not .Pages)
+                                        (not (.Page.Store.Get "breadcrumbsUsed")) }}
+                    
                     {{ if $showDate }}
                         <time datetime="{{- cond $dateModifiedText $dateModifiedISO $datePublishedISO -}}"
                               title="{{ T "published" }} {{ $datePublished }}{{ $dateModifiedText }}">
