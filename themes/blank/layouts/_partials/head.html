@@ -26,6 +26,10 @@
         <meta name="robots" content="{{ . }}">
     {{- end -}}
 
+    {{ if eq .Type "ErrorDocument" }}
+        <base href="{{ .Site.BaseURL }}">
+    {{ end }}
+    
     {{- /* Stylesheet */ -}}
     {{ with resources.Get "sass/main.scss" }}
         {{ $options := dict
@@ -42,10 +46,6 @@
 
     {{- /* Canonical URL */ -}}
     <link rel="canonical" href="{{ .Permalink }}">
-
-    {{ if eq .Type "ErrorDocument" }}
-        <base href="{{ .Site.BaseURL }}">
-    {{ end }}
 
     {{- /* HTML and RSS alternates */ -}}
     {{- if hugo.IsMultilingual -}}
