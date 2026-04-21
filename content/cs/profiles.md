@@ -1,9 +1,13 @@
 ---
 title: "Moje profily"
+linkTitle: "Profily…"
 date: 2022-10-09T22:58:33+02:00
 lastmod: 2026-04-14T13:35:21+02:00
 draft: false
 layout: simple
+menu:
+  aside:
+    parent: "Contact"
 ---
 
 [Moje vizitka ke stažení (vCard)](/Marek%20Omasta.vcf)
@@ -12,6 +16,7 @@ layout: simple
 * [GitHub · Starred](https://github.com/momasta?tab=stars "momasta (Marek Omasta) / Starred · GitHub")
 * [Google Maps Local Guide](https://goo.gl/maps/7YcUYzzchnnWJmL6A "Marek Omasta – Místní průvodce na Google Mapách")
 * [Gravatar](https://cs.gravatar.com/omastik "Marek Omasta | Czech Republic | Gravatar")
+* [iMessage](imessage:marek@omasta.net)
 * [PayPal.Me: MarekOmasta](https://paypal.me/MarekOmasta "@MarekOmasta na PayPal.Me")
 * [Pinterest](https://cz.pinterest.com/m_omasta/_saved/)
 * [Unsplash](https://unsplash.com/@m_omasta "Moje fotky na Unsplashi – Marek Omasta (@m_omasta)")

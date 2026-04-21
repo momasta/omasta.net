@@ -4,7 +4,7 @@ My Personal Website
 * Live URL: [omasta.net](https://omasta.net)
 * Built using [Hugo](https://gohugo.io), an open-source static site generator.
 
-<img width="640" height="320" alt="omasta net-screenshot" src="https://github.com/user-attachments/assets/47652567-fb24-47e9-bc8d-aaf11352a3b6" />
+[<img width="640" height="320" alt="A screenshot of the omasta.net website" src="https://github.com/user-attachments/assets/47652567-fb24-47e9-bc8d-aaf11352a3b6">](https://omasta.net/)
 
 ## Table of Contents
 - [Features](#features)
@@ -12,7 +12,7 @@ My Personal Website
 - [Installation](#installation)
 - [Image Gallery](#image-gallery)
     - [Usage](#usage)
-    - [Modifications and Added Features](#modifications-and-added-features)
+    - [Features](#features)
 - [Thanks](#thanks)
 
 ## Features
@@ -35,12 +35,12 @@ My Personal Website
     - [photoswipe.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe.esm.min.js)
     - [photoswipe-lightbox.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe-lightbox.esm.min.js)
 - ai.robots.txt
-  - Appended manually to [robots.txt](themes/blank/layouts/robots.txt):
+  - Downloaded manually to [robots.txt](themes/blank/layouts/_partials/robots-ai.txt):
     - [robots.txt](https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt)
   - Appended manually to [.htaccess](static/.htaccess):
     - [.htaccess](https://github.com/ai-robots-txt/ai.robots.txt/blob/main/.htaccess)
 - robots.txt by baccyflaps
-  - Appended manually to [robots.txt](themes/blank/layouts/robots.txt):
+  - Copied manually to [robots.txt](themes/blank/layouts/_partials/robots-baccyflap.txt):
     - https://baccyflap.com/res/robots#robots
 
 ## Installation
@@ -71,7 +71,7 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
 
 * Source: [themes/blank/layouts/_shortcodes/gallery.html](themes/blank/layouts/_shortcodes/gallery.html)
 * Live Demo: [omasta.net/memes/](https://omasta.net/memes/)
-* Live Demo (`.size-s`): [omasta.net/posts/tech-spurt-quotes/](https://omasta.net/posts/tech-spurt-quotes/)
+* Live Demo (`.size-s`): [omasta.net/tech-spurt-quotes/](https://omasta.net/tech-spurt-quotes/)
 
 ### Usage
 * In a Markdown file:  
@@ -105,7 +105,7 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
     * Supports: `"date"`, `"name"`
     * Default: `"date"`
 
-### Modifications and Added Features
+### Features
 * Replaced Lightbox2 with [Photoswipe](https://github.com/dimsemenov/PhotoSwipe).
 * Captions based on filenames.
 * Images sorted by date.

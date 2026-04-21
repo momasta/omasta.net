@@ -6,27 +6,32 @@ AddCharset UTF-8 .htm
 
 DirectoryIndex index.html index.php
 
-# Subdomains
-RewriteCond %{REQUEST_URI} !^subdom/
-RewriteCond %{REQUEST_URI} !^/subdom/
-RewriteCond %{HTTP_HOST} ^(www\.)?(.*)\.([^\.]*)\.([^\.]*)$
-RewriteCond %{DOCUMENT_ROOT}/subdom/%2 -d
-RewriteRule (.*) subdom/%2/$1 [DPI]
-
-# Subdomains - Redirect for a missing /
+# Force trailing slash on directories
 RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^subdom/[^/]+/(.+[^/])$ /$1/ [R]
+RewriteRule ^(.*?[^/])$ /$1/ [L,R=301]
+
+# Handle valid subdomains
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{HTTP_HOST} ^(?:www\.)?([^.]+)\.[^.]+\.[^.]+$
+RewriteCond %{DOCUMENT_ROOT}/subdom/%1 -d
+RewriteRule ^(.*)$ /subdom/%1/$1 [L]
+
+# Redirect invalid subdomains including the subpath
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{HTTP_HOST} ^(?:www\.)?([^.]+)\.[^.]+\.[^.]+$
+RewriteCond %{DOCUMENT_ROOT}/subdom/%1 !-d
+RewriteRule ^(.*)$ https://omasta.net/$1 [L,R=301]
 
 # HTTPS
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Redirects for Moved Content
-RewriteRule ^tags/notes$ /tags/quotes/ [R=301,L]
+RewriteRule ^tags/notes/?$ /tags/quotes/ [R=301,L]
 RewriteRule ^posts/(.*)$ "/$1" [R=301,L]
 
 # Shorthands
-RewriteRule ^tech-spurt$ "/tech-spurt-quotes/" [R=301,L]
+RewriteRule ^tech-spurt/?$ /tech-spurt-quotes/ [R=301,L]
 
 # Error Documents
 ErrorDocument 400 /400/

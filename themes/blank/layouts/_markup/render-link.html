@@ -1,3 +1,5 @@
+{{- /* https://gohugo.io/render-hooks/links/ */ -}}
+
 {{- $URL := urls.Parse .Destination -}}
 <a href="{{- .Destination | safeURL -}}"
    {{- with .Title }} title="{{ . }}"{{ end -}}

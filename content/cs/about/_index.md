@@ -1,0 +1,14 @@
+---
+date: 2026-04-15T16:29:30+02:00
+lastmod: 2026-04-15T16:29:30+02:00
+title: "O mně"
+draft: false
+description: ""
+summary: ""
+keywords: []
+layout: "simple"
+main_content_id: ""
+slug: ""
+tags: []
+translationKey: ""
+---

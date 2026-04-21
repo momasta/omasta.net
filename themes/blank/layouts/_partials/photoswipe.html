@@ -1,0 +1,78 @@
+{{- if .Page.Store.Get "galleryUsed" -}}
+    {{- $photoSwipeCSS := (resources.Get "css/photoswipe.css" | minify | fingerprint).RelPermalink -}}
+    <link rel="stylesheet" href="{{ $photoSwipeCSS }}">
+
+    <script type="module">
+        {{ $photoSwipeLightboxJS := (resources.Get "js/photoswipe-lightbox.esm.min.js" | fingerprint).RelPermalink -}}
+        import PhotoSwipeLightbox from '{{ $photoSwipeLightboxJS }}';
+
+        const lightbox = new PhotoSwipeLightbox({
+            {{- $photoSwipeJS := printf "%q" (resources.Get "js/photoswipe.esm.min.js" | fingerprint).RelPermalink | safeJS }}
+            pswpModule: () => import({{ $photoSwipeJS }}),
+            gallery: '.gallery',
+            children: 'a',
+            showHideAnimationType: 'zoom',
+            preload: [1, 4],
+            showAnimationDuration: 260,
+            hideAnimationDuration: 260,
+            easing: "cubic-bezier(0.4, 0, 0.25, 1)",
+            closeTitle: '{{ T "psw.close" }}',
+            zoomTitle: '{{ T "psw.zoom" }}',
+            arrowPrevTitle: '{{ T "psw.previous" }}',
+            arrowNextTitle: '{{ T "psw.next" }}',
+            errorMsg: '{{ T "psw.error" }}'
+        });
+        lightbox.init();
+
+        function setLightboxParam(id) {
+            try {
+                const url = new URL(window.location);
+                if (id) {
+                    url.searchParams.set('lightbox', id);
+                } else {
+                    url.searchParams.delete('lightbox');
+                }
+                history.replaceState(null, '', url);
+            } catch {
+            }
+        }
+
+        lightbox.on('change', () => {
+            try {
+                const el = lightbox.pswp.currSlide.data.element;
+                if (el && el.id) setLightboxParam(el.id);
+            } catch {
+            }
+        });
+
+        lightbox.on('close', () => {
+            try {
+                setLightboxParam(null);
+            } catch {
+            }
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            try {
+                const params = new URLSearchParams(window.location.search);
+                const id = params.get('lightbox');
+                if (id) {
+                    const link = document.getElementById(id);
+                    if (link) {
+                        const gallery = link.closest('.gallery');
+                        const items = [...gallery.querySelectorAll('a')];
+                        const index = items.indexOf(link);
+                        if (index >= 0) {
+                            lightbox.loadAndOpen(index, {gallery, element: link});
+                            return;
+                        }
+                    }
+                    setLightboxParam(null);
+                }
+            } catch {
+            }
+        });
+
+        window.pswpLightbox = lightbox;
+    </script>
+{{- end -}}

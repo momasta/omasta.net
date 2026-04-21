@@ -1,0 +1,45 @@
+{{ define "main" -}}
+
+    {{- partial "header" . -}}
+    
+    <div id="middle" class="direction-column">
+        <main>
+            <div class="card">
+                <article>
+                    <h1>
+                        <a href="{{ .RelPermalink }}" rel="bookmark" aria-current="page">{{ .Title }}</a>
+                    </h1>
+
+                    <div class="article-content">
+                        {{ .Content }}
+                        
+                        <h2>now</h2>
+                        <pre>{{ now }}</pre>
+
+                        <h2>hugo</h2>
+                        <p><a href="https://gohugo.io/functions/hugo/" target="_blank">hugo functions</a></p>
+                        <pre>{{ debug.Dump hugo }}</pre>
+                        
+                        <h2>hugo.Version</h2>
+                        <pre>{{ debug.Dump hugo.Version }}</pre>
+
+                        <h2>hugo.WorkingDir</h2>
+                        <pre>{{ debug.Dump hugo.WorkingDir }}</pre>
+
+                        <h2>hugo.Environment</h2>
+                        <pre>{{ debug.Dump hugo.Environment }}</pre>
+
+                        <h2>hugo.BuildDate</h2>
+                        <pre>{{ debug.Dump hugo.BuildDate }}</pre>
+                        
+                        <h2>site</h2>
+                        <p><a href="https://gohugo.io/methods/site/" target="_blank">site methods</a></p>
+                        <pre>{{ debug.Dump site }}</pre>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        {{- partial "sidebar.html" . -}}
+    </div>
+{{ end }}

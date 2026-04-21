@@ -15,17 +15,12 @@ last-mod-short: 'Updated:'
 last-mod: 'Last updated:'
 published: 'Published:'
 table-of-contents: "Table of Contents"
-table-of-contents-id: "table-of-contents" 
+table-of-contents-id: "table-of-contents"
 skip-to-main-content: 'Skip to main content'
+view-history: "View history on GitHub"
 
 ## Layout: Sidebar
 all-posts: 'All Posts'
-contact-me: 'Get in Touch'
-email: 'Email'
-more-content: 'More Content'
-more-profiles: 'More Profiles'
-my-content: 'My Content'
-
 
 # Components -------------------------------------------------------------------------
 ## Component: Breadcrumbs
@@ -33,7 +28,7 @@ back: 'Back'
 go-back-to: 'Go back to'
 
 ## Component: Footer
-github-title: momasta/omasta.net on GitHub, the source code of this website
+github-title: 'momasta/omasta.net on GitHub, the source code of this website'
 
 ## Component: Gallery
 no-images-found: 'No images found.'
@@ -43,16 +38,26 @@ search-memes: 'Search memes'
 search: 'Search'
 
 ## Component: Gallery - Photoswipe
-close: 'Close (Esc)'
-next: 'Next (→)'
-previous: 'Previous (←)'
-psw-error: 'The image cannot be loaded'
-zoom: 'Zoom (Z)'
+psw:
+  close: 'Close (Esc)'
+  next: 'Next (→)'
+  previous: 'Previous (←)'
+  error: 'The image cannot be loaded'
+  zoom: 'Zoom (Z)'
 
 ## Component: Header
 switch-language: '🇨🇿 Přepnout jazyk do češtiny'
 switch-theme-dark: 'Switch to dark theme'
 switch-theme-light: 'Switch to light theme'
+
+## Component: Pagination
+pagination: 'Pagination'
+of: 'of'
+page: 'Page'
+page-prev: 'Previous page'
+page-next: 'Next page'
+prev: 'Previous'
+next: 'Next'
 
 ## Component: Post Summary
 latest-posts: 'Latest Posts'

@@ -1,3 +1,5 @@
+{{- /* https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/rss.xml */ -}}
+
 {{- $authorEmail := "" }}
 {{- with site.Params.author }}
     {{- if reflect.IsMap . }}

@@ -7,7 +7,7 @@
     Based on https://codeproject.com/Articles/5276331/Creating-an-Image-Gallery-with-Hugo-and-Lightbox2
 */ -}}
 
-{{- .Page.Store.Set "gallery-used" true -}}
+{{- .Page.Store.Set "galleryUsed" true -}}
 {{- $dateFormat := .Site.Params.dateFormat -}}
 
 {{- /* Argument: Image Source (a subpath of assets/images) (Optional) */ -}}
@@ -39,7 +39,7 @@
     {{- $filterEnabled := and (ne $size "s") (gt (len $images) 8) -}}
     
     {{- if $filterEnabled -}}
-        {{- .Page.Store.Set "gallery-filter-used" true -}}
+        {{- .Page.Store.Set "galleryFilterUsed" true -}}
         <div class="gallery-filter">
             <form action="#" class="gallery-filter-form">
                 <label for="gallery-search" class="visually-hidden">

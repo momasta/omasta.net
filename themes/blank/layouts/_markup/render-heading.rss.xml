@@ -1,1 +1,2 @@
+{{- /* https://gohugo.io/render-hooks/headings/ */ -}}
 <h{{ .Level }}>{{ .Text }}</h{{ .Level }}>

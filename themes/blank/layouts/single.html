@@ -4,23 +4,28 @@
 
     {{ $datePublished := .PublishDate.Format .Site.Params.dateFormat | safeHTML }}
     {{ $datePublishedISO := .PublishDate.Format .Site.Params.dateFormatISO | safeHTML }}
+    
     {{ $dateModified := .Lastmod.Format .Site.Params.dateFormat | safeHTML }}
     {{ $dateModifiedISO := .Lastmod.Format .Site.Params.dateFormatISO | safeHTML }}
 
     {{/* Append date modififed to multi-line title="", if modified since publish date */}}
     {{ $dateModifiedText := "" }}
-    {{ if .Lastmod }}
+    {{ if not .Lastmod.IsZero }}
         {{ if ne $dateModified $datePublished }}
             {{- $dateModifiedText = printf "\n%s %s" (T "last-mod-short") $dateModified -}}
         {{ end }}
     {{ end }}
+    
+    {{ $showDate := and (not .PublishDate.IsZero) (not .Pages) (not (.Page.Store.Get "breadcrumbsUsed")) }}
 
     <div id="middle" class="direction-column">
         <main>
             <div class="card">
                 <article>
+                    {{- partial "breadcrumbs.html" . -}}
+
                     <h1>
-                        <a href="{{ .RelPermalink }}" rel="bookmark" aria-current="page">{{ .Title }}</a>
+                        <a href="{{ .RelPermalink }}" rel="bookmark" aria-current="page">{{ .LinkTitle }}</a>
                     </h1>
 
                     {{- range .Params.tags -}}
@@ -28,38 +33,55 @@
 
                         <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"
                            title="{{ T "tags-show-all" }} &#35;{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}"
-                           class="tag">&#35;{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}</a>
+                           class="tag">&#35;{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}<br></a>
                     {{- end -}}
 
-                    <time datetime="{{- cond $dateModifiedText $dateModifiedISO $datePublishedISO -}}"
-                          title="{{ T "published" }} {{ $datePublished }}{{ $dateModifiedText }}">
-                        {{- if $dateModifiedText -}}
-                            {{- T "last-mod-short" }} {{ $dateModified -}}
-                        {{- else -}}
-                            {{- $datePublished -}}
-                        {{- end -}}
-                    </time>
+                    {{ if $showDate }}
+                        <time datetime="{{- cond $dateModifiedText $dateModifiedISO $datePublishedISO -}}"
+                              title="{{ T "published" }} {{ $datePublished }}{{ $dateModifiedText }}">
+                            {{- if $dateModifiedText -}}
+                                {{- T "last-mod-short" }} {{ $dateModified -}}
+                            {{- else -}}
+                                {{- $datePublished -}}
+                            {{- end -}}
+                        </time>
+                    {{ end }}
 
+                    {{ if .Pages }}
+                        <ul class="links direction-row size-s">
+                            {{- range .Paginator.Pages -}}
+                                {{- .Render "summary-simple" -}}
+                            {{- end -}}
+                        </ul>
+                    {{ end }}
+                    
                     {{ with .Params.main_content_id }}
                         <p>&#x2193; <a href="#{{ . }}">{{ T "skip-to-main-content" }}</a></p>
                     {{ end }}
-                      
+
                     <div class="article-content">
-                        {{ .Content }}
-                        {{- if .Lastmod -}}
-                            {{- if ne $dateModified $datePublished -}}
-                                <p>
-                                    {{- T "published" }}
-                                    <time datetime="{{ $datePublishedISO }}">
-                                        {{- $datePublished -}}
-                                    </time><br>
-                                    
-                                    {{- T "last-mod" }}
+                        {{ .Content -}}
+                        
+                        {{- if not .PublishDate.IsZero -}}
+                            <p>
+                                {{- T "published" }}
+                                <time datetime="{{ $datePublishedISO }}">
+                                    {{- $datePublished -}}
+                                </time>
+
+                                {{- if and .Lastmod (ne $dateModified $datePublished) -}}
+                                    <br>{{- T "last-mod" }}
                                     <time datetime="{{ $dateModifiedISO }}">
                                         {{- $dateModified -}}
                                     </time>
-                                </p>
-                            {{- end -}}
+                                {{ end }}
+
+                                {{ if and .Site.Params.repo.URL .Site.Params.repo.historyPath }}
+                                    {{ $filePath := path.Join "/content" .Lang .File.Path }}
+                                    {{ $repoFileHistoryURL := print .Site.Params.repo.URL .Site.Params.repo.historyPath $filePath }}
+                                    <br><a href="{{ $repoFileHistoryURL }}" target="_blank">{{ T "view-history" }}</a>
+                                {{ end }}
+                            </p>
                         {{- end -}}
                     </div>
                 </article>

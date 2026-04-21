@@ -17,15 +17,10 @@ published: 'Zveřejněno:'
 table-of-contents: "Obsah"
 table-of-contents-id: "obsah"
 skip-to-main-content: 'Přeskočit na hlavní obsah'
+view-history: "Zobrazit historii na GitHubu"
 
 ## Layout: Sidebar
 all-posts: 'Všechny články'
-contact-me: 'Kontakt'
-email: 'E-mail'
-more-content: 'Další obsah'
-more-profiles: 'Další profily'
-my-content: 'Můj obsah'
-
 
 # Components -------------------------------------------------------------------------
 ## Component: Breadcrumbs
@@ -33,7 +28,7 @@ back: 'Zpět'
 go-back-to: 'Jít zpět na'
 
 ## Component: Footer
-github-title: momasta/omasta.net na GitHubu, zdrojový kód těchto stránek
+github-title: 'momasta/omasta.net na GitHubu, zdrojový kód těchto stránek'
 
 ## Component: Gallery
 no-images-found: 'Nebyly nalezeny žádné obrázky.'
@@ -43,21 +38,30 @@ search-memes: 'Hledat memes'
 search: 'Hledat'
 
 ## Component: Gallery - Photoswipe
-close: 'Zavřít (Esc)'
-next: 'Další (→)'
-previous: 'Předchozí (←)'
-psw-error: 'Obrázek se nepodařilo načíst'
-zoom: 'Přiblížit/Oddálit (Z)'
+psw:
+  close: 'Zavřít (Esc)'
+  next: 'Další (→)'
+  previous: 'Předchozí (←)'
+  error: 'Obrázek se nepodařilo načíst'
+  zoom: 'Přiblížit/Oddálit (Z)'
 
 ## Component: Header
 switch-language: '🇬🇧 Switch language to English'
 switch-theme-dark: 'Přepnout na tmavý motiv'
 switch-theme-light: 'Přepnout na světlý motiv'
 
+## Component: Pagination
+pagination: 'Stránkování'
+of: 'z'
+page: 'Stránka'
+page-prev: 'Předchozí stránka'
+page-next: 'Další stránka'
+prev: 'Předchozí'
+next: 'Další'
+
 ## Component: Post Summary
 latest-posts: 'Poslední články'
 no-posts-yet: 'Zatím jsem žádné nezveřejnil.'
-posts-of: 'z'
 posts: 'Články'
 read-more: 'Číst dále…'
 

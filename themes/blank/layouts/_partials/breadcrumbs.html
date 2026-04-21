@@ -2,18 +2,25 @@
     Stylesheet: assets/sass/components/_breadcrumbs.scss
 */ -}}
 
-<nav class="breadcrumbs" aria-label="breadcrumbs">
-    <ol class="links direction-row">
-        {{ range .Ancestors.Reverse }}
-            {{ if not .IsHome }}
+{{ $links := slice }}
+
+{{ range .Ancestors.Reverse }}
+    {{ if and (.Page) (not .IsHome) (not .Page.Sitemap.Disable) }}
+        {{ $links = $links | append . }}
+    {{ end }}
+{{ end }}
+
+{{ if $links }}
+    {{- .Page.Store.Set "breadcrumbsUsed" true -}}
+
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+        <ol class="links direction-row">
+            {{ range $links }}
                 <li>
                     <a href="{{ .RelPermalink }}" title="{{ T "go-back-to" }} {{ .LinkTitle }}">{{ .LinkTitle }}</a>
-                </li><li aria-hidden="true">&nbsp;/&nbsp;</li>
+                </li>
+                <li aria-hidden="true">&nbsp;/&nbsp;</li>
             {{ end }}
-        {{ end }}
-    </ol>
-</nav>
-
-<h1>
-    <a href="{{ .RelPermalink }}" rel="bookmark" aria-current="page">{{ .LinkTitle }}</a>
-</h1>
+        </ol>
+    </nav>
+{{ end }}

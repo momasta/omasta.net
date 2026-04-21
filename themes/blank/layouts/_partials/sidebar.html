@@ -3,44 +3,42 @@
 */ -}}
 
 <aside>
-    <div class="card">
-        <h2>{{ T "contact-me" }}</h2>
+    {{ with .Site.Menus.aside }}
+        {{- range . -}}
+            <div class="card">
+                <h2>{{ .Name }}</h2>
 
-        <ul class="links">
-            <li>
-                <a href="https://m.me/omastik" target="_blank"><span
-                    title="Facebook Messenger">Messenger:&nbsp;</span>omastik</a>
-            </li>
-            <li>
-                <a href="mailto:marek@omasta.net"><span>{{ T "email" }}:&nbsp;</span>marek@omasta.net</a>
-            </li>
-            <li>
-                <a href="{{ "/profiles/" }}">{{ T "more-profiles" }}…</a>
-            </li>
-        </ul>
-    </div>
+                {{- with .Children }}
+                    <ul class="links">
+                        {{ range . }}
+                            <li>
+                                <a href="{{ .URL }}"
+                                   {{ with .Params.rel }}rel="{{ . }}" target="_blank"{{ end }}
+                                   {{ with .Title }}title="{{ . }}"{{ end }}>
 
-    <div class="card">
-        <h2>{{ T "my-content" }}</h2>
-
-        <ul class="links">
-            <li>
-                <a href="/copypasta">Copypasta</a>
-            </li>
-            <li>
-                <a href="https://unsplash.com/@m_omasta" target="_blank">Unsplash</a>
-            </li>
-            <li>
-                <a href="{{ "/content/" }}">{{ T "more-content" }}…</a>
-            </li>
-        </ul>
-    </div>
+                                    {{ if .Params.value -}}
+                                        <span class="type-light">
+                                        {{- .Name }}:&nbsp;</span>{{ .Params.value }}
+                                    {{ else if .Params.description }}
+                                        <span>{{ .Name }}<br></span>
+                                        <span class="size-small">{{ .Params.description }}</span>
+                                    {{ else }}
+                                        {{ .Name }}
+                                    {{ end }}
+                                </a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                {{- end }}
+            </div>
+        {{- end -}}
+    {{ end }}
 
     {{- $tags := .Site.Taxonomies.tags }}
     {{- if gt (len $tags) 0 }}
         <div class="card">
             <h2>{{ T "tags" }}</h2>
-            
+
             <ul class="links">
                 {{ range $name, $taxonomy := $tags }} {{ $count := .Count }}
                     {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
@@ -48,7 +46,7 @@
                             <a href="{{ .RelPermalink }}"
                                title="{{ T "tags-show-all" }} &#35;{{ .LinkTitle }}"
                                class="tag">
-                                &#35;{{ .LinkTitle }}</a>&nbsp;<span>({{ $count }})</span>
+                                &#35;{{ .LinkTitle }}</a>&nbsp;<span class="size-small">({{ $count }})</span>
                         </li>
                     {{ end }}
                 {{ end }}
@@ -64,10 +62,10 @@
                     <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
                 {{ end }}
             </ul>
-            
+
             <ul class="links">
                 <li>
-                    <a href="{{ "/" }}">{{ T "all-posts" }}…</a>
+                    <a href="{{ .Site.Home.RelPermalink }}">{{ T "all-posts" }}…</a>
                 </li>
             </ul>
         </div>

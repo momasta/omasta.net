@@ -1,8 +1,13 @@
 ---
 title: "My Content Online"
+linkTitle: "More Content…"
 date: 2022-10-09T23:00:53+02:00
 draft: false
 layout: simple
+menu:
+  aside:
+    parent: "My Content"
+    weight: 3
 ---
 
 ## Shared Albums on iCloud

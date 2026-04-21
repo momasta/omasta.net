@@ -7,45 +7,51 @@
 
   li {
     margin: 0.5em 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
-  li:first-of-type {
-    margin-top: 0;
-  }
+  a {
+    display: inline-block;
+    white-space: nowrap;
 
-  li:last-of-type {
-    margin-bottom: 0;
+    &:has(span.size-small) {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+    }
   }
 
   a,
   a:visited {
-    display: inline-block;
     color: var(--color-text);
-    white-space: nowrap;
   }
 
   a:hover,
   a:focus-visible {
     color: var(--color-hover);
   }
-  
-  a span {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--color-text-light);
 
-    &.post-summary {
+  span {
+    display: inline-block;
+    text-decoration: underline;
+    white-space: normal;
+
+    &.type-light {
+      color: var(--color-text-light);
+      text-decoration: none;
+    }
+
+    &.size-small {
+      text-decoration: none;
       color: var(--color-text); // Specific to prevent different colour on hover
     }
-  }
-  
-  p {
-    font-size: 1rem;
-    margin-top: 4px;
-  }
-
-  h1 + & {
-    margin-top: rem(15px);
   }
 
   // Directions
@@ -68,6 +74,10 @@
       }
     }
   }
+}
+
+h1 + .links {
+  margin-top: rem(15px);
 }
 
 ul + .links {

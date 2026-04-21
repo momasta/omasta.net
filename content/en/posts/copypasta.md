@@ -3,7 +3,7 @@ date: 2022-09-22T21:26:56+01:00
 lastmod: 2022-09-22T21:26:56+01:00
 title: "Copypasta"
 draft: false
-description: "Special characters, text snippets and emoji combos."
+description: "Special characters, text snippets and emoji combos."
 summary: ""
 keywords: []
 main_content_id: ""
@@ -12,9 +12,15 @@ tags:
   - tips
 translationKey: "copypasta"
 type: posts
+menu:
+  aside:
+    params:
+      description: "Useful special characters, text snippets and emoji combos."
+    parent: "My Content"
+    weight: 1
 ---
 
-Special characters, text snippets and emoji combos.  
+Useful special characters, text snippets and emoji combos.  
 
 | Name                               | Character | HTML Entities                |  
 |:-----------------------------------|:----------|:-----------------------------|  

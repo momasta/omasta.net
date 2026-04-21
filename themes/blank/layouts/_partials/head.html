@@ -7,7 +7,7 @@
     <title>
         {{- if and (eq .Kind "term") (eq .Section "tags") }}{{ T "tag" }} #{{ end -}}
         {{- if not .IsHome -}} {{ if .Page.Title }}{{ .Page.Title }} – {{ end }} {{- end -}}
-        {{- if hugo.IsServer -}} Hugo {{- else -}} {{- .Site.Title -}} {{- end -}}
+        {{- if hugo.IsServer -}} Hugo Server {{- else -}} {{- .Site.Title -}} {{- end -}}
     </title>
 
     {{- with .Site.Params.description -}}
@@ -18,11 +18,8 @@
         <meta name="author" content="{{ . }}">
     {{- end -}}
 
-    {{- if .Keywords -}}
-        {{- with .Keywords -}}
-            <meta name="keywords"
-                  content="{{ range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">
-        {{- end -}}
+    {{- with .Keywords -}}
+        <meta name="keywords" content="{{ delimit . ", " }}">
     {{- end -}}
 
     {{- with .Params.robots -}}
@@ -30,10 +27,18 @@
     {{- end -}}
 
     {{- /* Stylesheet */ -}}
-    {{ $main_options := (dict "targetPath" "css/site.css" "outputStyle" "compressed") }}
-    {{ $main_template := resources.Get "sass/main.scss" }}
-    {{ $main_style := $main_template | resources.ExecuteAsTemplate "main_parsed.scss" . | toCSS $main_options | minify | fingerprint -}}
-    <link rel="stylesheet" href="{{ $main_style.RelPermalink }}">
+    {{ with resources.Get "sass/main.scss" }}
+        {{ $options := dict
+            "outputStyle" "compressed"
+            "targetPath" "css/site.css"
+        }}
+        {{ with . | css.Sass $options }}
+            {{ with . | minify | fingerprint }}
+                <link rel="stylesheet" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}"
+                      crossorigin="anonymous">
+            {{ end }}
+        {{ end }}
+    {{ end }}
 
     {{- /* Canonical URL */ -}}
     <link rel="canonical" href="{{ .Permalink }}">
@@ -48,7 +53,7 @@
                     <link rel="alternate"
                           type="application/rss+xml"
                           hreflang="{{ $lang }}"
-                          href="{{ .Permalink | safeURL }}"/>
+                          href="{{ .Permalink | safeURL }}">
                 {{ end }}
             {{ end }}
             {{- /* x-default */ -}}
@@ -56,30 +61,22 @@
                 <link rel="alternate"
                       type="application/rss+xml"
                       hreflang="x-default"
-                      href="{{ .Permalink | safeURL }}"/>
+                      href="{{ .Permalink | safeURL }}">
             {{ end }}
         {{ end }}
 
         {{- /* HTML alternates */ -}}
         {{ $current := . }}
-        <link rel="alternate"
-              hreflang="{{ .Language.Locale }}"
-              href="{{ .Permalink | safeURL }}"/>
+        <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink | safeURL }}">
         {{ range .Translations }}
-            <link rel="alternate"
-                  hreflang="{{ .Language.Locale }}"
-                  href="{{ .Permalink | safeURL }}"/>
+            <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink | safeURL }}">
         {{ end }}
-        <link rel="alternate"
-              hreflang="x-default"
-              href="{{ $current.Permalink | safeURL }}"/>
+        <link rel="alternate" hreflang="x-default" href="{{ $current.Permalink | safeURL }}">
     {{ else }}
         {{- /* Single-language site: just the plain RSS feed, no hreflang */ -}}
         {{ with .Site.GetPage "section" "posts" }}
             {{ with .OutputFormats.Get "RSS" }}
-                <link rel="alternate"
-                      type="application/rss+xml"
-                      href="{{ .Permalink | safeURL }}"/>
+                <link rel="alternate" type="application/rss+xml" href="{{ .Permalink | safeURL }}">
             {{ end }}
         {{ end }}
     {{- end -}}
@@ -94,30 +91,25 @@
     <meta name="theme-color" content="#b8b8b8" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
 
     {{- /* OG Tags */ -}}
-    {{ partial "opengraph.html" . }}
+    {{ partial "opengraph" . }}
 
     {{- /*  Mastodon  */ -}}
-    <link rel="me" href="https://mastodon.social/@marek_omasta">
-    <meta name="fediverse:creator" content="@marek_omasta@mastodon.social">
+    {{ with .Site.Params.author.profiles.Mastodon }}
+        <link rel="me" href="{{ . }}">
+        {{ $mastodonHandle := replaceRE "https?://([^/]+)/(@.+)/?" "$2@$1" . }}
+        <meta name="fediverse:creator" content="{{ $mastodonHandle }}">
+    {{ end }}
     
     {{- /*  Schema.org JSON-LD */ -}}
-    {{ partial "head-schema-website.html" . }}
+    {{ partial "head-schema-website" . }}
 
-    {{- /* Critical JS - Perform before rendering page */ -}}
-    <script>
-        const html = document.documentElement;
-        const storedTheme = localStorage.getItem('theme');
-
-        if (storedTheme) {
-            html.classList.add(storedTheme);
-        } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-            html.classList.add('theme-light');
-        } else {
-            html.classList.add('theme-dark'); // Default theme
-        }
-    </script>
+    {{- /* Critical JS (inline) - Perform before rendering page */ -}}
+    {{ with resources.Get "js/_critical.js" }}
+        <script>{{ .Content | safeJS }}</script>
+    {{ end }}
 
     {{- /* Critical CSS */ -}}
     <style>

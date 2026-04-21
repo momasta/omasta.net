@@ -1,17 +1,15 @@
 {{- /* Schema.org JSON-LD */ -}}
 
-{{- /* Build website schema and include SearchAction only when page-level search_target is present */ -}}
+{{- /* Include SearchAction only when page-level search_target is present */ -}}
 {{- $pageSearchTarget := .Params.search_target | default "" -}}
 {{- $searchTarget := "" -}}
 {{- if ne $pageSearchTarget "" -}}
     {{- $searchTarget = absLangURL (print .Path $pageSearchTarget) -}}
 {{- end -}}
 
-{{- $sameAsUrls := slice -}}
+{{- $sameAsURLs := slice -}}
 {{- range .Site.Params.author.profiles -}}
-    {{- range $key, $value := . -}}
-        {{- $sameAsUrls = $sameAsUrls | append $value -}}
-    {{- end -}}
+    {{- $sameAsURLs = $sameAsURLs | append . -}}
 {{- end -}}
 
 {{- $websiteSchema := dict
@@ -21,11 +19,11 @@
     "name" .Site.Title
     "image" (dict "@type" "ImageObject" "url" (.Site.Params.icons.favicon_192 | absURL))
     "author" (dict
-    "@type" "Person"
-    "name" .Site.Params.author.name
-    "email" (print "mailto:" .Site.Params.author.email)
-    "image" (dict "@type" "ImageObject" "url" (.Site.Params.author.image | absURL))
-    "sameAs" $sameAsUrls
+        "@type" "Person"
+        "name" .Site.Params.author.name
+        "email" (print "mailto:" .Site.Params.author.email)
+        "image" (dict "@type" "ImageObject" "url" (.Site.Params.author.image | absURL))
+        "sameAs" $sameAsURLs
     )
 -}}
 

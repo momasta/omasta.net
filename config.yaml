@@ -8,6 +8,7 @@ loadJQuery: false
 printI18nWarnings: true
 removePathAccents: true
 robots: noai, noimageai
+sectionPagesMenu: main
 timeout: 180s
 titleCaseStyle: none
 
@@ -32,35 +33,53 @@ markup:
 
 params:
   dateFormatISO: 2006-01-02T15:04:05
+  debugEnabled: false
   icons:
     favicon: "/favicon.ico"
     favicon_32: "/images/favicon-32.png"
+    favicon_96: "/images/favicon-96.png"
     favicon_192: "/images/favicon-192.png"
     apple_touch: "/images/favicon-180.png"
   images:
     - images/profile-picture-og.jpg
+  logo:
+    DPR1: /images/profile-picture.webp
+    DPR2: /images/profile-picture@2x.webp
+  repo:
+    URL: "https://github.com/momasta/omasta.net"
+    historyPath: "/blame/master"
   author:
     name: Marek Omasta
-    email: marek@omasta.net
+    email: &email marek@omasta.net
+    emailURL: &emailURL mailto:marek@omasta.net
     image: images/profile-picture@2x.webp
     profiles:
-      - Bandcamp: "https://bandcamp.com/m_omasta"
-      - ČSFD: "https://csfd.cz/uzivatel/827068-m-omasta/"
-      - Discord: "https://discordapp.com/users/m.omasta"
-      - Geocaching: "https://geocaching.com/p/?id=8404971"
-      - GitHub: "https://github.com/momasta"
-      - Goodreads: "https://goodreads.com/m_omasta"
-      - Gravatar: "https://gravatar.com/omastik"
-      - Last.fm: "https://last.fm/user/m_omasta"
-      - Messenger: "https://m.me/omastik"
-      - Mastodon: "https://mastodon.social/@marek_omasta"
-      - Apple Music: "https://music.apple.com/profile/m_omasta"
-      - Pinterest: "https://pinterest.com/m_omasta"
-      - Unsplash: "https://unsplash.com/@m_omasta"
-      - YouTube: "https://youtube.com/@m.omasta"
+      Apple Music: "https://music.apple.com/profile/m_omasta"
+      Bandcamp: "https://bandcamp.com/m_omasta"
+      Discord: "https://discordapp.com/users/m.omasta"
+      Geocaching: "https://geocaching.com/p/?id=8404971"
+      GitHub: "https://github.com/momasta"
+      Goodreads: "https://goodreads.com/m_omasta"
+      Gravatar: "https://gravatar.com/omastik"
+      Last.fm: "https://last.fm/user/m_omasta"
+      Mastodon: "https://mastodon.social/@marek_omasta"
+      Messenger: &messenger "https://m.me/omastik"
+      Pinterest: "https://pinterest.com/m_omasta"
+      Unsplash: &unsplash "https://unsplash.com/@m_omasta"
+      YouTube: "https://youtube.com/@m.omasta"
+      ČSFD: "https://csfd.cz/uzivatel/827068-m-omasta"
 
 permalinks:
   posts: "/:slugorcontentbasename/"
+
+server:
+  redirects:
+    - from: /cs/**
+      status: 404
+      to: /cs/404/
+    - from: /**
+      status: 404
+      to: /404/
 
 taxonomies:
   tag: tags
@@ -70,8 +89,7 @@ outputs:
     - html
   section:
     - html
-  taxonomy:
-    - html
+  taxonomy: [ ]
   term:
     - html
 
@@ -83,15 +101,32 @@ languages:
     weight: 1
     params:
       dateFormat: 2 Jan 2006
-      description: Personal website of Marek Omasta – blog posts, meme collection, links to my
-        profiles and my content online.
     menu:
-      main:
-        - name: Home
-          pageref: /
+      aside:
+        - name: Contact
+        - name: Messenger
+          params:
+            rel: external
+            value: omastik
+          parent: Contact
+          title: Text me on Facebook Messenger
+          url: *messenger
           weight: 1
-        - name: Memes
-          pageref: /memes
+        - name: Email
+          params:
+            rel: external
+            value: *email
+          parent: Contact
+          url: *emailURL
+          weight: 2
+
+        - name: My Content
+        - name: Unsplash
+          params:
+            description: My stock photos, free to use
+            rel: external
+          parent: My Content
+          url: *unsplash
           weight: 2
   
   cs:
@@ -101,14 +136,32 @@ languages:
     weight: 2
     params:
       dateFormat: 2. 1. 2006
-      description:
-        Osobní web Marka Omasty – články, sbírka memes, odkazy na moje profily a
-        obsah na internetu.
     menu:
-      main:
-        - name: Domů
-          pageref: /
+      aside:
+        - name: Kontakt
+          identifier: Contact
+        - name: Messenger
+          params:
+            rel: external
+            value: omastik
+          parent: Contact
+          title: Napište mi na Messengeru
+          url: *messenger
           weight: 1
-        - name: Memes
-          pageref: /memes
+        - name: E-mail
+          params:
+            rel: external
+            value: *email
+          parent: Contact
+          url: *emailURL
+          weight: 2
+
+        - name: Můj obsah
+          identifier: My Content
+        - name: Unsplash
+          params:
+            description: Moje fotky ve fotobance, zdarma k použití
+            rel: external
+          parent: My Content
+          url: *unsplash
           weight: 2

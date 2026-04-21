@@ -1,5 +1,5 @@
 button {
-  -webkit-appearance: none;
+  appearance: none;
   -webkit-tap-highlight-color: transparent;
   padding: 0;
   display: flex;
@@ -7,7 +7,7 @@ button {
   align-items: center;
   @extend %click-area-small;
 
-  &.style-plain {
+  &.type-plain {
     border: none;
     background-color: transparent;
     cursor: pointer;

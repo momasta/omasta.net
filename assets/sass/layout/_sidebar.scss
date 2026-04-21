@@ -12,16 +12,19 @@ aside {
   grid-template-columns: repeat(auto-fit, minmax($aside-min-width, 1fr));
   gap: 1rem;
   margin: 0.5rem 0;
-  min-width: $aside-min-width;
-  
+
+  &:not(:empty) {
+    min-width: $aside-min-width;
+  }
+
   .card {
     margin: 0;
   }
-  
+
   a {
     @extend %click-area-small;
   }
-  
+
   ul {
     margin-left: 1.5rem;
   }

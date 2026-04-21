@@ -1,14 +1,20 @@
+{{- /*
+    Stylesheet: assets/sass/components/_pagination.scss
+*/ -}}
+
 {{- $datePublished := .PublishDate.Format .Site.Params.dateFormat | safeHTML -}}
 
-<li class="post-preview">
-    <a href="{{ .RelPermalink }}">{{ .Title }}<br>
-        <span class="post-summary">
+<li class="summary">
+    <a href="{{ .RelPermalink }}">
+        <span>{{ .Title }}<br></span>
+        <span class="size-small">
             {{- if .Description -}}
                 {{- .Description | truncate 154 "…" -}}
             {{- else -}}
                 {{- .Summary | plainify | truncate 154 "…" -}}
             {{- end -}}
-        </span></a><br>
+        <br></span>
+    </a>
 
     {{- range .Params.tags -}}
         {{- $name := . -}}
@@ -16,7 +22,7 @@
             {{- $title := .Page.Title -}}
             <a href="{{- .Page.RelPermalink -}}"
                class="tag"
-               title="{{- T "tags-show-all" }} &#35;{{ $title }}">&#35;{{- $title -}}</a>
+               title="{{- T "tags-show-all" }} &#35;{{ $title }}">&#35;{{- $title -}}<br></a>
         {{- end -}}
     {{- end -}}
     <time datetime="{{- .PublishDate.Format .Site.Params.dateFormatISO | safeHTML -}}">

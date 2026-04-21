@@ -10,7 +10,7 @@
     flex-direction: row;
     align-items: flex-start;
 
-    main + aside {
+    main + aside:not(:empty) {
       margin-left: 1rem;
     }
   }

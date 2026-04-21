@@ -1,8 +1,13 @@
 ---
 title: "Můj obsah online"
+linkTitle: "Další obsah…"
 date: 2022-10-09T23:00:53+02:00
 draft: false
 layout: simple
+menu:
+  aside:
+    parent: "My Content"
+    weight: 3
 ---
 
 ## Sdílená alba v iCloudu

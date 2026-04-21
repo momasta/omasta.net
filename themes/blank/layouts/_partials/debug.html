@@ -1,0 +1,17 @@
+{{- /* Debug Info */ -}}
+
+{{- if (and site.Params.debugEnabled hugo.IsServer) -}}
+    <script>
+        if (!window.location.hash) {
+            const element = document.getElementById('header');
+            if (element) {
+                element.scrollIntoView({behavior: 'instant'})
+                element.blur();
+            }
+        }
+    </script>
+
+    <p><a href="https://gohugo.io/methods/page/" target="_blank">page methods</a></p>
+    <pre id="debug">{{ debug.Dump . }}</pre>
+    <a href="/debug">More Debug Info</a>
+{{- end -}}

@@ -28,7 +28,7 @@ Skoro všechny mají v URL časovou značku.
 Mohlo by se hodit tvůrcům sestřihů.
 
 ## Viz také {#viz-take}
-* Další hlášky v {{< i18n-link lang="en" >}}anglické verzi článku{{< /i18n-link >}}
+* Další hlášky v [anglické verzi článku]({{% relref path="/posts/youtube-quotes" lang="en" %}})
 * [Napálim tě ty kanále jeden komunistickej]({{< relref "posts/napalim-te-ty-kanale.md" >}})
 
 {{< TableOfContents >}}

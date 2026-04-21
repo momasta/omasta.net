@@ -3,7 +3,7 @@ date: 2022-09-22T21:26:56+01:00
 lastmod: 2022-09-22T21:26:56+01:00
 title: "Copypasta"
 draft: false
-description: "Speciální znaky, útržky textu a sady emoji."
+description: "Speciální znaky, útržky textu a sady emoji."
 summary: ""
 keywords: []
 main_content_id: ""
@@ -12,9 +12,15 @@ tags:
   - tips
 translationKey: "copypasta"
 type: posts
+menu:
+  aside:
+    params:
+      description: "Užitečné speciální znaky, útržky textu a sady emoji."
+    parent: "My Content"
+    weight: 1
 ---
 
-Speciální znaky, útržky textu a sady emoji.
+Užitečné speciální znaky, útržky textu a sady emoji.
 
 | Název                          | Znak     | HTML Entita                  |  
 |:-------------------------------|:---------|:-----------------------------|  

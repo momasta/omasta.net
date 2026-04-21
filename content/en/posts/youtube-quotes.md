@@ -24,7 +24,7 @@ Most come with a timestamp in the URL.
 Might be useful to people who run clips or compilation channels.
 
 ## See Also
-* More quotes in the {{< i18n-link lang="cs" >}}Czech version of this article{{< /i18n-link >}}
+* More quotes in the [Czech version of this article]({{% relref path="/posts/youtube-quotes" lang="cs" %}})
 * [Anomaly Quotes]({{< relref "posts/anomaly-quotes.md" >}})  
 * [Tech Spurt Quotes]({{< relref "posts/tech-spurt-quotes.md" >}})
 

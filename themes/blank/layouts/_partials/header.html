@@ -4,7 +4,7 @@
 
 <header id="header">
     <div class="bar">
-        <button class="style-plain size-s toggle-theme-dark"
+        <button class="type-plain size-s toggle-theme-dark"
                 title="{{ T "switch-theme-dark" }}"
                 type="button">
 			<span class="icon">
@@ -12,7 +12,7 @@
 			</span>
         </button>
 
-        <button class="style-plain size-s toggle-theme-light"
+        <button class="type-plain size-s toggle-theme-light"
                 title="{{ T "switch-theme-light" }}"
                 type="button">
 			<span class="icon">
@@ -48,23 +48,26 @@
     <div class="card">
         <div class="logo">
             <a href="{{ .Site.Home.RelPermalink }}">
-                <img
-                    src="/images/profile-picture.webp"
-                    srcset="/images/profile-picture.webp 1x, /images/profile-picture@2x.webp 2x"
-                    alt="Profile picture"
-                    loading="eager">
+                {{ with .Site.Params.logo }}
+                    <img
+                        src="{{ .DPR1 | absURL }}"
+                        srcset="{{ .DPR1 | absURL }} 1x, {{ .DPR2 | absURL }} 2x"
+                        alt="Website logo"
+                        loading="eager">
+                {{ end }}
                 {{- .Site.Title }}
             </a>
         </div>
 
-        {{- $currentPage := . -}}
         {{ with .Site.Menus.main }}
             <nav aria-label="Main">
                 <ul class="links direction-row">
                     {{- range . -}}
-                        <li{{ if $currentPage.IsMenuCurrent .Menu . }} class="active" aria-current="page"{{ end }}>
-                            <a href="{{ .URL | relURL }}">{{ .Name }}</a>
-                        </li>
+                        {{- if and .Page (not .Page.Sitemap.Disable) -}}
+                            <li{{ if .Page.IsMenuCurrent .Menu . }} aria-current="page"{{ end }}>
+                                <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+                            </li>
+                        {{- end -}}
                     {{- end -}}
                 </ul>
             </nav>
