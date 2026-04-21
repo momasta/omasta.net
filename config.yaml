@@ -36,10 +36,10 @@ params:
   debugEnabled: false
   icons:
     favicon: "/favicon.ico"
-    favicon_32: "/images/favicon-32.png"
-    favicon_96: "/images/favicon-96.png"
-    favicon_192: "/images/favicon-192.png"
-    apple_touch: "/images/favicon-180.png"
+    favicon32: "/images/favicon-32.png"
+    favicon96: "/images/favicon-96.png"
+    favicon192: "/images/favicon-192.png"
+    appleTouch: "/images/favicon-180.png"
   images:
     - images/profile-picture-og.jpg
   logo:

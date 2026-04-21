@@ -6,12 +6,12 @@
   &.size-s {
     gap: 4px;
   }
-  
+
   .gallery-image {
     max-width: 150px;
     max-height: 150px;
   }
-  
+
   &.type-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -24,13 +24,13 @@
       width: 100%;
       position: relative;
     }
-    
+
     .gallery-image {
       display: block;
       max-width: none;
       max-height: none;
     }
-    
+
     .gallery-thumb {
       aspect-ratio: 1 / 1;
     }
@@ -41,10 +41,6 @@
   display: flex;
   flex-basis: 100%;
   padding-bottom: 0.5rem;
-}
-
-#gallery-no-results.state-hidden {
-  display: none;
 }
 
 // <a class="gallery-image">
@@ -66,10 +62,6 @@
     span {
       color: var(--color-text);
     }
-  }
-
-  &.state-hidden {
-    display: none;
   }
 
   span {

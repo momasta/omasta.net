@@ -6,7 +6,7 @@ keywords:
     - memy
     - memíky
 layout: single
-search_target: "?q={searchTerm}"
+searchTarget: "?q={searchTerm}"
 weight: 2
 ---
 

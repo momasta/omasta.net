@@ -10,7 +10,7 @@ keywords:
   - původ slov
   - český jazyk
   - německý jazyk
-main_content_id: ""
+mainContentID: ""
 slug: ""
 tags: []
 translationKey: ""

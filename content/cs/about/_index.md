@@ -7,7 +7,7 @@ description: ""
 summary: ""
 keywords: []
 layout: "simple"
-main_content_id: ""
+mainContentID: ""
 slug: ""
 tags: []
 translationKey: ""

@@ -11,7 +11,7 @@ keywords:
   - guide
   - tutorial
   - tips
-main_content_id: "world"
+mainContentID: "world"
 slug: ""
 tags:
   - tips

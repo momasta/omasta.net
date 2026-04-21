@@ -13,7 +13,7 @@ keywords:
   - MacBook
   - terminal commands
   - how to fix
-main_content_id: "app-isnt-responding"
+mainContentID: "app-isnt-responding"
 slug: ""
 tags:
   - tips

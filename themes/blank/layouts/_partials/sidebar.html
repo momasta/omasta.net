@@ -34,13 +34,12 @@
         {{- end -}}
     {{ end }}
 
-    {{- $tags := .Site.Taxonomies.tags }}
-    {{- if gt (len $tags) 0 }}
+    {{ with .Site.Taxonomies.tags }}
         <div class="card">
             <h2>{{ T "tags" }}</h2>
 
             <ul class="links">
-                {{ range $name, $taxonomy := $tags }} {{ $count := .Count }}
+                {{ range $name, $taxonomy := . }} {{ $count := .Count }}
                     {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
                         <li>
                             <a href="{{ .RelPermalink }}"
@@ -54,7 +53,7 @@
         </div>
     {{- end }}
 
-    {{- if not .IsHome -}}
+    {{- if and (where .Site.RegularPages "Type" "posts") (not .IsHome) -}}
         <div class="card">
             <h2>{{ T "latest-posts" }}</h2>
             <ul>

@@ -1,7 +1,7 @@
 {{- /* Schema.org JSON-LD */ -}}
 
-{{- /* Include SearchAction only when page-level search_target is present */ -}}
-{{- $pageSearchTarget := .Params.search_target | default "" -}}
+{{- /* Include SearchAction only when page-level searchTarget is present */ -}}
+{{- $pageSearchTarget := .Params.searchTarget | default "" -}}
 {{- $searchTarget := "" -}}
 {{- if ne $pageSearchTarget "" -}}
     {{- $searchTarget = absLangURL (print .Path $pageSearchTarget) -}}
@@ -17,7 +17,7 @@
     "@type" "WebSite"
     "url" .Site.BaseURL
     "name" .Site.Title
-    "image" (dict "@type" "ImageObject" "url" (.Site.Params.icons.favicon_192 | absURL))
+    "image" (dict "@type" "ImageObject" "url" (.Site.Params.icons.favicon192 | absURL))
     "author" (dict
         "@type" "Person"
         "name" .Site.Params.author.name

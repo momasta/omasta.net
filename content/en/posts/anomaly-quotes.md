@@ -16,7 +16,7 @@ keywords:
     - Counter-Strike
     - Ludwig Lagerstedt
     - Ludde
-main_content_id: "chaos"
+mainContentID: "chaos"
 slug: ""
 tags:
   - quotes

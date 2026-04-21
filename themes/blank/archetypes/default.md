@@ -6,7 +6,7 @@ draft: false
 description: ""
 summary: ""
 keywords: []
-main_content_id: ""
+mainContentID: ""
 slug: ""
 tags: []
 translationKey: ""

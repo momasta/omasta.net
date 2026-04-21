@@ -1,16 +1,16 @@
 (() => {
     "use strict";
 
-    // ===== Utility: Debounce =====
+    // Utility: Debounce
     function debounce(fn, delay = 180) {
-        let t;
+        let timeout;
         return (...args) => {
-            clearTimeout(t);
-            t = setTimeout(() => fn(...args), delay);
+            clearTimeout(timeout);
+            timeout = setTimeout(() => fn(...args), delay);
         };
     }
 
-    // ===== Utility: Text normalisation =====
+    // Utility: Text normalisation
     function normaliseText(text) {
         return (text || "")
             .toLowerCase()
@@ -22,70 +22,20 @@
             .replace(/\s+/g, " ");             // Collapse multiple spaces
     }
 
-    // ===== Focusable elements handling =====
-    const FOCUSABLE_SELECTOR = [
-        "a[href]",
-        "button",
-        "input",
-        "textarea",
-        "select",
-        "[tabindex]"
-    ].join(",");
-
-    function makeUnfocusable(element) {
-        const focusables = element.querySelectorAll(FOCUSABLE_SELECTOR);
-        focusables.forEach((node) => {
-            if (!node.hasAttribute("data-tabindex-original")) {
-                const original = node.getAttribute("tabindex");
-                if (original !== null) {
-                    node.setAttribute("data-tabindex-original", original);
-                } else {
-                    node.setAttribute("data-tabindex-original", "");
-                }
-            }
-            node.setAttribute("tabindex", "-1");
-        });
-        if ("inert" in element) {
-            element.inert = true;
-        }
-    }
-
-    function restoreFocusability(element) {
-        const focusables = element.querySelectorAll(FOCUSABLE_SELECTOR);
-        focusables.forEach((node) => {
-            const original = node.getAttribute("data-tabindex-original");
-            if (original !== null) {
-                if (original === "") {
-                    node.removeAttribute("tabindex");
-                } else {
-                    node.setAttribute("tabindex", original);
-                }
-                node.removeAttribute("data-tabindex-original");
-            } else {
-                if (node.getAttribute("tabindex") === "-1") {
-                    node.removeAttribute("tabindex");
-                }
-            }
-        });
-        if ("inert" in element) {
-            element.inert = false;
-        }
-    }
-
-    // ===== Visibility management =====
+    // Visibility management
     function showImage(element) {
-        element.classList.remove("state-hidden");
+        element.classList.remove("state-visually-hidden");
         element.removeAttribute("aria-hidden");
-        restoreFocusability(element);
+        element.inert = false;
     }
 
     function hideImage(element) {
-        element.classList.add("state-hidden");
+        element.classList.add("state-visually-hidden");
         element.setAttribute("aria-hidden", "true");
-        makeUnfocusable(element);
+        element.inert = true;
     }
 
-    // ===== Classification logic =====
+    // Classification logic
     const MatchCategory = {
         EXACT_RAW: 1,
         RAW_STARTS_WITH: 2,
@@ -110,7 +60,6 @@
             return MatchCategory.NORMALIZED_STARTS_WITH;
         }
 
-        // Improved multi‑word match: allow partial substring matches
         const words = qNorm.split(/\s+/).filter(Boolean);
         if (words.length > 0) {
             const ok = words.every((w) => altNorm.includes(w));
@@ -120,7 +69,7 @@
         return MatchCategory.NO_MATCH;
     }
 
-    // ===== URL integration =====
+    // URL integration
     function setQueryParamInURL(query) {
         const url = new URL(window.location.href);
         if (query && query.length > 0) {
@@ -136,39 +85,40 @@
         return url.searchParams.get("q") || "";
     }
 
-    // ===== No results message =====
+    // No results message
     function updateNoResultsMessage(noResultsEl, anyVisible) {
         if (!noResultsEl) return;
         if (anyVisible) {
             noResultsEl.setAttribute("aria-hidden", "true");
-            noResultsEl.classList.add("state-hidden");
+            noResultsEl.classList.add("state-visually-hidden");
         } else {
             noResultsEl.removeAttribute("aria-hidden");
-            noResultsEl.classList.remove("state-hidden");
+            noResultsEl.classList.remove("state-visually-hidden");
         }
     }
 
-    // ===== Initialisation =====
+    // Initialisation
     function initGalleryFiltering() {
         const container = document.querySelector(".gallery");
-        if (!container) throw new Error("Gallery container (.gallery) not found.");
+        if (!container) return;
 
         const form = document.querySelector("form");
         const input = document.querySelector(".gallery-filter-input");
         const images = Array.from(container.querySelectorAll(".gallery-image"));
 
-        if (!form) throw new Error("Filter form inside .gallery not found.");
-        if (!input) throw new Error("Filter input (.gallery-filter-input) inside .gallery not found.");
-        if (images.length === 0) throw new Error("No .gallery-image elements found.");
+        if (!form) return;
+        if (!input) return;
+        if (images.length === 0) return;
 
         const galleryParent = images[0].parentElement;
-        if (!galleryParent) throw new Error("Gallery parent element could not be determined.");
+        if (!galleryParent) return;
 
         const originalOrder = images.slice();
         images.forEach((imgWrap) => {
-            if (!imgWrap.classList.contains("state-hidden")) {
-                imgWrap.classList.remove("state-hidden");
+            if (!imgWrap.classList.contains("state-visually-hidden")) {
+                imgWrap.classList.remove("state-visually-hidden");
                 imgWrap.removeAttribute("aria-hidden");
+                imgWrap.inert = false;
             }
         });
 
@@ -229,7 +179,7 @@
             setQueryParamInURL(input.value.trim()); // URL updated only here
         });
 
-        // ===== Input events apply filter (debounced) =====
+        // Input events apply filter (debounced)
         ["input", "keyup", "paste", "change", "search"].forEach((evt) => {
             input.addEventListener(evt, () => {
                 debouncedApply();
@@ -239,12 +189,17 @@
             });
         });
 
-        // ===== Keyboard shortcuts =====
+        // Keyboard shortcuts
         document.addEventListener("keydown", (event) => {
+            /** @type {Object} */
+            /** @property {Object} pswp */
+            /** @property {boolean} pswp.isOpen */
+            /** @property {Function} pswp.close */
+            const pswp = window.pswpLightbox?.pswp;
+
             if (event.key === "Escape") {
-                if (window.pswpLightbox && window.pswpLightbox.pswp && window.pswpLightbox.pswp.isOpen) {
-                    // If PhotoSwipe is open, let it close first
-                    return;
+                if (pswp?.isOpen) {
+                    return; // If PhotoSwipe is open, let it close first
                 }
                 input.value = "";
                 applyFilter("");
@@ -252,6 +207,9 @@
                 return;
             }
             if (event.key === "/" && !event.ctrlKey && !event.metaKey && !event.altKey) {
+                if (pswp?.isOpen) {
+                    pswp.close();
+                }
                 const activeElement = document.activeElement;
                 const isEditable =
                     activeElement &&

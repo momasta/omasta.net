@@ -6,7 +6,7 @@ draft: false
 description: "Special characters, text snippets and emoji combos."
 summary: ""
 keywords: []
-main_content_id: ""
+mainContentID: ""
 url: "copypasta"
 tags:
   - tips

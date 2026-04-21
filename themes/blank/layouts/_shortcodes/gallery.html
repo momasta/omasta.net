@@ -42,7 +42,7 @@
         {{- .Page.Store.Set "galleryFilterUsed" true -}}
         <div class="gallery-filter">
             <form action="#" class="gallery-filter-form">
-                <label for="gallery-search" class="visually-hidden">
+                <label for="gallery-search" class="state-visually-hidden">
                     {{- T "search-memes" -}}
                 </label>
                 <input type="search"
@@ -58,12 +58,12 @@
         
                 <input type="submit"
                        value="{{ T "search" }}"
-                       class="visually-hidden">
+                       class="state-visually-hidden">
             </form>
         </div>
         
         {{- /* No Results Message */ -}}
-        <p id="gallery-no-results" aria-hidden="true" class="state-hidden">
+        <p id="gallery-no-results" aria-hidden="true" class="state-visually-hidden">
             {{- T "no-images-found" -}}
         </p>
     {{- end -}}

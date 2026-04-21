@@ -6,7 +6,7 @@ draft: false
 description: "Speciální znaky, útržky textu a sady emoji."
 summary: ""
 keywords: []
-main_content_id: ""
+mainContentID: ""
 url: "copypasta"
 tags: 
   - tips

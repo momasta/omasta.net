@@ -15,7 +15,7 @@ keywords:
   - přepis videa
   - titulky
   - humor 
-main_content_id: prepis
+mainContentID: prepis
 slug: ""
 tags:
   - quotes
