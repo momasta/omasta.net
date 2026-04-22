@@ -5,19 +5,19 @@
 
 /// Regular font family
 /// @type List
-/// See Critical CSS in baseof.html
+/// See Critical CSS in head.html
 
 /// Code (monospace) font family
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
 :root {
-  --color-white-bg: #fff; // Update in baseof.html (color)
+  --color-white-bg: #fff; // Update in head.html (color)
 
   --color-black-bg: #222;
 
   --color-grey-dark: #454545;
-  --color-grey-light: #b8b8b8; // Update in baseof.html and apply-theme.js
+  --color-grey-light: #b8b8b8; // Update in head.html and apply-theme.js
 
   //--color-brand: #306e95; Unused, uncomment if needed
 
@@ -31,14 +31,14 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 @mixin includeDark {
   color-scheme: dark;
 
-  --color-text: var(--color-white-bg); // Update in baseof.html (color)
+  --color-text: var(--color-white-bg); // Update in head.html (color)
   --color-text-light: var(--color-grey-light);
 
   --color-brand-text: #8fd2ff;
   --color-brand-light: #47B6FF;
 
-  --color-site-bg: #000; // Update in baseof.html (themeColorDark, background-color)
-  --color-content-bg: var(--color-black-bg); // Update in baseof.html (background-color)
+  --color-site-bg: #000; // Update in head.html (themeColorDark, background-color)
+  --color-content-bg: var(--color-black-bg); // Update in head.html (background-color)
 }
 
 @mixin includeLight {
@@ -50,7 +50,7 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
   --color-brand-text: #004370;
   --color-brand-light: #007acc;
 
-  --color-site-bg: var(--color-grey-light); // Update in baseof.html (themeColorLight)
+  --color-site-bg: var(--color-grey-light); // Update in head.html (themeColorLight)
   --color-content-bg: var(--color-white-bg);
 }
 

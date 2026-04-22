@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectStartupSharedConfiguration">
     <configurations>
-      <configuration id="Shell Script.Hugo Server" name="Hugo Server" />
+      <configuration id="Shell Script.Run" name="Run" />
     </configurations>
   </component>
 </project>

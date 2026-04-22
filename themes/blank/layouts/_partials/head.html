@@ -33,13 +33,19 @@
     {{- /* Stylesheet */ -}}
     {{ with resources.Get "sass/main.scss" }}
         {{ $options := dict
+            "enableSourceMap" hugo.IsServer
             "outputStyle" "compressed"
             "targetPath" "css/site.css"
         }}
         {{ with . | css.Sass $options }}
-            {{ with . | minify | fingerprint }}
-                <link rel="stylesheet" href="{{ .Permalink }}" integrity="{{ .Data.Integrity }}"
-                      crossorigin="anonymous">
+            {{ if hugo.IsServer }}
+                {{ with . }}
+                    <link rel="stylesheet" href="{{ .Permalink }}">
+                {{ end }}
+            {{ else }}
+                {{ with . | fingerprint }}
+                    <link rel="stylesheet" href="{{ .Permalink }}">
+                {{ end }}
             {{ end }}
         {{ end }}
     {{ end }}
@@ -140,7 +146,7 @@
         }
 
         html {
-            font: normal 100% / 1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+            font: normal 16px / 1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
         }
 
         body:not(.loaded) * {
@@ -163,7 +169,7 @@
 
         .card {
             margin: 8px 0;
-            padding: 24px 20px;
+            padding: 24px 16px;
         }
     </style>
 </head>

@@ -2,6 +2,14 @@ article {
   time {
     font-size: 1rem;
   }
+
+  h2 {
+    padding: 1em 0 0;
+  }
+
+  h3 {
+    top: 28px;
+  }
 }
 
 .article-content {
@@ -57,6 +65,10 @@ h1 + a.tag {
   margin-top: 0.5rem;
 }
 
+h2 + h3 {
+  padding-top: 0;
+}
+
 h2 + p {
   margin-top: 0;
 }
@@ -72,10 +84,6 @@ h2:first-child {
 
 p:last-child {
   margin-bottom: 0;
-}
-
-.gallery + p {
-  margin-top: 0;
 }
 
 // More margin for multi-line list items

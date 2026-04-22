@@ -2,7 +2,7 @@
   width: 100%;
   background-color: var(--color-content-bg);
   border-radius: 16px;
-  // See Critical CSS in baseof.html: margin and padding
+  // See Critical CSS in head.html: margin and padding
 
   display: flex;
   flex-direction: column;
@@ -22,6 +22,10 @@
 }
 
 @mixin mq-min-medium-card {
+  div.card {
+    padding: 24px 20px;
+  }
+
   header .card {
     flex-wrap: nowrap;
   }

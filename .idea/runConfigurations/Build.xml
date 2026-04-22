@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Build" type="ShConfigurationType" focusToolWindowBeforeRun="true">
-    <option name="SCRIPT_TEXT" value="purgecss --css public/css/site.min*.css --content public/**/*.html public/**/*.js --rejected --rejected-css --variables --safelist &quot;:focus&quot; --output public/css/" />
+    <option name="SCRIPT_TEXT" value="purgecss --css public/css/site*.css --content public/**/*.html public/**/*.js --rejected --rejected-css --variables --safelist &quot;:focus&quot; --output public/css/" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="" />
     <option name="SCRIPT_OPTIONS" value="" />

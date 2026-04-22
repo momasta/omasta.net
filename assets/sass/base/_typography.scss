@@ -7,7 +7,7 @@ h2,
 h3,
 .logo a {
   font-weight: 500;
-  margin: 0; // Update for H1 in baseof.html
+  margin: 0; // Update for H1 in head.html
 }
 
 h1,
@@ -18,19 +18,11 @@ h1,
 h2 {
   font-size: rem(20px);
   padding: 0 0 1rem;
-
-  article & {
-    padding: 1em 0 0;
-  }
 }
 
 h3 {
   font-size: 1rem;
   padding-top: 20px;
-  
-  h2 + & {
-    padding-top: 0;
-  }
 }
 
 span.size-small,
