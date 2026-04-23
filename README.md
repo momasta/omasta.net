@@ -22,7 +22,7 @@ My Personal Website
 * A single RSS feed per language (limited to type: posts)
 * Custom Hugo theme based on [vimux/blank](https://github.com/vimux/blank/)
 * Valid [HTML](https://validator.w3.org/nu/?doc=https%3A%2F%2Fomasta.net%2F), [CSS](https://jigsaw.w3.org/css-validator/validator?uri=omasta.net&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) and [RSS](https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fomasta.net%2Fposts%2Findex.xml).
-* Optimised for Google's [PageSpeed Insights](https://pagespeed.web.dev)
+* Optimised for Google's [PageSpeed Insights](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fomasta.net%2F)
 
 ## Dependencies
 - Hugo
