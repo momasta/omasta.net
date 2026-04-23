@@ -1,18 +1,19 @@
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
     {{- /* Site Information */ -}}
 
     <title>
-        {{- if and (eq .Kind "term") (eq .Section "tags") }}{{ T "tag" }} #{{ end -}}
         {{- if not .IsHome -}} {{ if .Page.Title }}{{ .Page.Title }} – {{ end }} {{- end -}}
         {{- if hugo.IsServer -}} Hugo Server {{- else -}} {{- .Site.Title -}} {{- end -}}
     </title>
 
-    {{- with .Site.Params.description -}}
-        <meta name="description" content="{{ . }}">
-    {{- end -}}
+    {{ with or .Description
+               (and (eq .Type "posts") (.Summary | plainify | truncate 160 "…"))
+               site.Params.description }}
+        <meta name="description" content="{{ trim . "\n\r\t " }}">
+    {{ end }}
 
     {{- with .Site.Params.author.name -}}
         <meta name="author" content="{{ . }}">
@@ -76,12 +77,11 @@
         {{ end }}
 
         {{- /* HTML alternates */ -}}
-        {{ $current := . }}
         <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink | safeURL }}">
         {{ range .Translations }}
             <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink | safeURL }}">
         {{ end }}
-        <link rel="alternate" hreflang="x-default" href="{{ $current.Permalink | safeURL }}">
+        <link rel="alternate" hreflang="x-default" href="{{ .Permalink | safeURL }}">
     {{ else }}
         {{- /* Single-language site: just the plain RSS feed, no hreflang */ -}}
         {{ with .Site.GetPage "section" "posts" }}
@@ -92,10 +92,25 @@
     {{- end -}}
 
     {{- /* Shortcut Icons */ -}}
-    <link rel="icon" href="{{ .Site.Params.icons.favicon }}" sizes="any" type="image/x-icon">
-    <link rel="icon" href="{{ .Site.Params.icons.favicon32 }}" sizes="32x32" type="image/png">
-    <link rel="icon" href="{{ .Site.Params.icons.favicon192 }}" sizes="192x192" type="image/png">
-    <link rel="apple-touch-icon" href="{{ .Site.Params.icons.appleTouch }}">
+    {{ with .Site.Params.icons.favicon }}
+        <link rel="icon" href="{{ . }}" sizes="any" type="image/x-icon">
+    {{ end }}
+    
+    {{ with .Site.Params.icons.favicon32 }}
+        <link rel="icon" href="{{ . }}" sizes="32x32" type="image/png">
+    {{ end }}
+
+    {{ with .Site.Params.icons.favicon96 }}
+        <link rel="icon" href="{{ . }}" sizes="96x96" type="image/png">
+    {{ end }}
+
+    {{ with .Site.Params.icons.favicon192 }}
+        <link rel="icon" href="{{ . }}" sizes="192x192" type="image/png">
+    {{ end }}
+
+    {{ with .Site.Params.icons.appleTouch }}
+        <link rel="apple-touch-icon" href="{{ . }}">
+    {{ end }}
 
     {{- /* Apple-Specific Meta Tags */ -}}
     <meta name="theme-color" content="#b8b8b8" media="(prefers-color-scheme: light)">
@@ -104,7 +119,7 @@
     <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
 
     {{- /* OG Tags */ -}}
-    {{ partial "opengraph" . }}
+    {{ partial "opengraph.html" . }}
 
     {{- /*  Mastodon  */ -}}
     {{ with .Site.Params.author.profiles.Mastodon }}
@@ -114,7 +129,7 @@
     {{ end }}
     
     {{- /*  Schema.org JSON-LD */ -}}
-    {{ partial "head-schema-website" . }}
+    {{ partial "layout/head/schema-website.html" . }}
 
     {{- /* Critical JS (inline) - Perform before rendering page */ -}}
     {{ with resources.Get "js/_critical.js" }}

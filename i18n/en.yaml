@@ -1,12 +1,7 @@
 # {{ T "" }}
 
-
-# Pages ------------------------------------------------------------------------------
-tag-heading: 'Posts tagged #'
-
 ## Page: RSS
 recent-posts: 'Recent posts from the personal website of {{ .title }}'
-
 
 # Layouts ----------------------------------------------------------------------------
 ## Layout: Article
@@ -19,22 +14,21 @@ table-of-contents-id: "table-of-contents"
 skip-to-main-content: 'Skip to main content'
 view-history: "View history on GitHub"
 
-## Layout: Sidebar
-all-posts: 'All Posts'
-
 # Components -------------------------------------------------------------------------
 ## Component: Breadcrumbs
 back: 'Back'
 go-back-to: 'Go back to'
+breadcrumbs: 'Breadcrumbs'
 
 ## Component: Footer
 github-title: 'momasta/omasta.net on GitHub, the source code of this website'
 
 ## Component: Gallery
+image-gallery: 'Image Gallery'
 no-images-found: 'No images found.'
 press-esc: 'Press Esc to clear'
 press-stroke: 'Press / to search'
-search-memes: 'Search memes'
+search-images: 'Search images'
 search: 'Search'
 
 ## Component: Gallery - Photoswipe
@@ -46,9 +40,12 @@ psw:
   zoom: 'Zoom (Z)'
 
 ## Component: Header
+logo: 'Website Logo'
 switch-language: '🇨🇿 Přepnout jazyk do češtiny'
+language-switcher: 'Language Switcher'
 switch-theme-dark: 'Switch to dark theme'
 switch-theme-light: 'Switch to light theme'
+main-navigation: 'Main Menu'
 
 ## Component: Pagination
 pagination: 'Pagination'
@@ -59,14 +56,11 @@ page-next: 'Next page'
 prev: 'Previous'
 next: 'Next'
 
-## Component: Post Summary
+## Component: Sidebar
 latest-posts: 'Latest Posts'
+
+## Component: Pagination
 no-posts-yet: "I haven't published any posts yet."
-posts-of: 'of'
-posts: 'Posts'
-read-more: 'Read more…'
 
 ## Component: Tag
-tags-show-all: 'Show posts tagged'
 tag: 'Tag'
-tags: 'Tags'

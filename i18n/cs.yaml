@@ -1,12 +1,7 @@
 # {{ T "" }}
 
-
-# Pages ------------------------------------------------------------------------------
-tag-heading: 'Články se štítkem #'
-
 ## Page: RSS
 recent-posts: 'Poslední články ze stránky {{ .title }}'
-
 
 # Layouts ----------------------------------------------------------------------------
 ## Layout: Article
@@ -19,22 +14,21 @@ table-of-contents-id: "obsah"
 skip-to-main-content: 'Přeskočit na hlavní obsah'
 view-history: "Zobrazit historii na GitHubu"
 
-## Layout: Sidebar
-all-posts: 'Všechny články'
-
 # Components -------------------------------------------------------------------------
 ## Component: Breadcrumbs
 back: 'Zpět'
 go-back-to: 'Jít zpět na'
+breadcrumbs: 'Drobečková navigace'
 
 ## Component: Footer
 github-title: 'momasta/omasta.net na GitHubu, zdrojový kód těchto stránek'
 
 ## Component: Gallery
+image-gallery: 'Obrázková galerie'
 no-images-found: 'Nebyly nalezeny žádné obrázky.'
 press-esc: 'Stiskněte Esc pro smazání'
 press-stroke: 'Stiskněte / pro vyhledávání'
-search-memes: 'Hledat memes'
+search-images: 'Hledat obrázky'
 search: 'Hledat'
 
 ## Component: Gallery - Photoswipe
@@ -46,9 +40,12 @@ psw:
   zoom: 'Přiblížit/Oddálit (Z)'
 
 ## Component: Header
+logo: 'Logo stránky'
 switch-language: '🇬🇧 Switch language to English'
+language-switcher: 'Přepínač jazyků'
 switch-theme-dark: 'Přepnout na tmavý motiv'
 switch-theme-light: 'Přepnout na světlý motiv'
+main-navigation: 'Hlavní menu'
 
 ## Component: Pagination
 pagination: 'Stránkování'
@@ -59,13 +56,11 @@ page-next: 'Další stránka'
 prev: 'Předchozí'
 next: 'Další'
 
-## Component: Post Summary
+## Component: Sidebar
 latest-posts: 'Poslední články'
+
+## Component: Pagination
 no-posts-yet: 'Zatím jsem žádné nezveřejnil.'
-posts: 'Články'
-read-more: 'Číst dále…'
 
 ## Component: Tag
-tags-show-all: 'Zobrazit články se štítkem'
 tag: 'Štítek'
-tags: 'Štítky'

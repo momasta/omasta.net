@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the sidebar of the site.
 //
-// themes/blank/layouts/_partials/sidebar.html
+// themes/blank/layouts/_partials/layout/sidebar.html
 //
 // -----------------------------------------------------------------------------
 
@@ -23,6 +23,7 @@ aside {
 
   a {
     @extend %click-area-small;
+    @include link-neutral;
   }
 
   ul {

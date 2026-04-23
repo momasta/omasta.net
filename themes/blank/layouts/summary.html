@@ -1,5 +1,5 @@
 {{- /*
-    Stylesheet: assets/sass/components/_pagination.scss
+    Stylesheet: assets/sass/components/_summary.scss
 */ -}}
 
 {{- $datePublished := .PublishDate.Format .Site.Params.dateFormat | safeHTML -}}
@@ -17,12 +17,8 @@
     </a>
 
     {{- range .Params.tags -}}
-        {{- $name := . -}}
-        {{- with index site.Taxonomies.tags $name -}}
-            {{- $title := .Page.Title -}}
-            <a href="{{- .Page.RelPermalink -}}"
-               class="tag"
-               title="{{- T "tags-show-all" }} &#35;{{ $title }}">&#35;{{- $title -}}<br></a>
+        {{- with (index site.Taxonomies.tags .).Page -}}
+            {{ partial "components/tag.html" (dict "context" . "lineBreak" true) }}
         {{- end -}}
     {{- end -}}
     <time datetime="{{- .PublishDate.Format .Site.Params.dateFormatISO | safeHTML -}}">

@@ -24,11 +24,11 @@ article {
 a.heading-link {
   opacity: 0;
   margin-left: 0.5rem;
-  color: var(--color-text-light);
   text-decoration: none;
   transition: opacity var(--ease), var(--transitions-a);
   @extend %no-interaction;
   @extend %click-area-small;
+  @include link-neutral;
 
   &::after {
     content: "#";
@@ -38,12 +38,7 @@ a.heading-link {
   &.state-success::after {
     content: "✓";
   }
-
-  &:hover,
-  &:focus-visible {
-    color: var(--color-text);
-  }
-
+  
   h2:hover &,
   h3:hover &,
   h2:focus-within &,
@@ -59,10 +54,6 @@ h1 a:visited {
   color: inherit;
   text-decoration: none;
   display: inline;
-}
-
-h1 + a.tag {
-  margin-top: 0.5rem;
 }
 
 h2 + h3 {
@@ -88,19 +79,7 @@ p:last-child {
 
 // More margin for multi-line list items
 
-li br ~ a:last-child,
-h2 + p + ul li ~ li:last-child a:last-child,
-h3 + p + ul li ~ li:last-child a:last-child {
+li br ~ a:last-child {
   display: inline-block;
   margin-bottom: 1em;
-}
-
-li br ~ a ~ pre {
-  margin-bottom: 1em;
-}
-
-// More margin for code blocks
-h3 + pre + h3,
-h3 + p + pre + h3 {
-  margin-top: 1em;
 }

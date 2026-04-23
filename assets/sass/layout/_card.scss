@@ -12,13 +12,12 @@
   overflow-wrap: anywhere;
 
   transition: background-color var(--ease);
+}
 
-  // Interaction
-  header & {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+header .card {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @mixin mq-min-medium-card {

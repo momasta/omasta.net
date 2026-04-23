@@ -1,11 +1,10 @@
 ---
-title: "quotes"
-date: 2025-10-09T19:37:58+02:00
-draft: false
+title: "Posts Tagged #quotes"
+linkTitle: "quotes"
 keywords:
   - internet lore
   - folklore
-layout: term
+layout: simple
 ---
 
 My collection of one-liners, quotes and video transcripts.

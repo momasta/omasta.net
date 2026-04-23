@@ -1,6 +1,6 @@
 {{ define "main" -}}
 
-    {{- partial "header" . -}}
+    {{- partial "layout/header.html" . -}}
     
     <div id="middle" class="direction-column">
         <main>
@@ -40,6 +40,6 @@
             </div>
         </main>
 
-        {{- partial "sidebar.html" . -}}
+        {{- partial "layout/sidebar.html" . -}}
     </div>
 {{ end }}

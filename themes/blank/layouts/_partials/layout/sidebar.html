@@ -34,20 +34,19 @@
         {{- end -}}
     {{ end }}
 
+    {{ $tagsTitle := (.Site.GetPage "/tags").Title }}
     {{ with .Site.Taxonomies.tags }}
         <div class="card">
-            <h2>{{ T "tags" }}</h2>
+            <h2>{{ $tagsTitle }}</h2>
 
             <ul class="links">
-                {{ range $name, $taxonomy := . }} {{ $count := .Count }}
-                    {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-                        <li>
-                            <a href="{{ .RelPermalink }}"
-                               title="{{ T "tags-show-all" }} &#35;{{ .LinkTitle }}"
-                               class="tag">
-                                &#35;{{ .LinkTitle }}</a>&nbsp;<span class="size-small">({{ $count }})</span>
-                        </li>
-                    {{ end }}
+                {{ range . }}
+                    <li>
+                        {{ with .Page }}
+                            {{ partial "components/tag.html" (dict "context" . "lineBreak" false) }}
+                        {{ end }}
+                        <span class="size-small">({{- .Count }})<br></span>
+                    </li>
                 {{ end }}
             </ul>
         </div>
@@ -58,13 +57,15 @@
             <h2>{{ T "latest-posts" }}</h2>
             <ul>
                 {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
-                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                    {{- .Render "summary-simple" -}}
                 {{ end }}
             </ul>
 
             <ul class="links">
                 <li>
-                    <a href="{{ .Site.Home.RelPermalink }}">{{ T "all-posts" }}…</a>
+                    <a href="{{ .Site.Home.RelPermalink }}">
+                        {{ (.Site.GetPage "/posts").LinkTitle }}…
+                    </a>
                 </li>
             </ul>
         </div>

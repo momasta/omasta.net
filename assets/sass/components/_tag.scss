@@ -1,3 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to tags.
+//
+// themes/blank/layouts/_partials/components/tag.html
+//
+// -----------------------------------------------------------------------------
+
 a.tag {
   display: inline-block;
   background-color: var(--color-text-light);
@@ -7,7 +14,7 @@ a.tag {
   transition: background-color var(--ease), var(--transitions-a);
   font-size: rem(14px);
   @extend %no-interaction;
-  
+
   &,
   .links & {
     color: var(--color-content-bg);
@@ -17,8 +24,12 @@ a.tag {
   &:focus-visible {
     background-color: var(--color-hover);
   }
+}
 
-  + a.tag {
-    margin-left: 5px;
-  }
+a.tag + a.tag {
+  margin-left: 5px;
+}
+
+h1 + a.tag {
+  margin-top: 0.5rem;
 }

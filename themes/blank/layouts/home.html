@@ -1,13 +1,13 @@
 {{ define "main" -}}
 
-    {{- partial "header" . -}}
+    {{- partial "layout/header.html" . -}}
 
     <div id="middle" class="direction-row">
         <main>
             {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
 
             <div class="card">
-                <h1>{{ T "posts" }}</h1>
+                <h1>{{ (.Site.GetPage "/posts").Title }}</h1>
 
                 {{- .Content -}}
                 
@@ -17,11 +17,11 @@
                     {{ end }}
                 </ul>
 
-                {{- partial "pagination.html" . -}}
+                {{- partial "components/pagination.html" . -}}
             </div>
         </main>
 
-        {{- partial "sidebar.html" . -}}
+        {{- partial "layout/sidebar.html" . -}}
     </div>
 
 {{ end }}

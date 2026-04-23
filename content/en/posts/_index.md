@@ -1,5 +1,6 @@
 ---
 title: "Posts"
+linkTitle: All Posts
 outputs:
   - RSS
 sitemap:

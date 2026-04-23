@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Locale | default "en-GB" }}">
 
-{{- partial "head" . -}}
+{{- partial "layout/head/head.html" . -}}
 
 <body class="{{ .Type }}"
       ondragstart="return false;"
       ondrop="return false;"
       draggable="false">
 
-{{- partial "debug" . -}}
+{{- partial "debug.html" . -}}
 
 <div id="content">
     {{ block "main" . }}{{ end }}
-    {{- partial "footer" . -}}
+    {{- partial "layout/footer.html" . -}}
 </div>
 
 {{ $applyThemeJS := resources.Get "js/apply-theme.js" | minify | fingerprint -}}
@@ -22,7 +22,7 @@
 <script src="{{ $copyHeadingLinkJS.RelPermalink }}" defer></script>
 
 {{- /* PhotosSwipe CSS and JS */ -}}
-{{- partial "photoswipe" . -}}
+{{- partial "layout/head/photoswipe.html" . -}}
 
 {{- /* Gallery Filter JS */ -}}
 {{- if .Page.Store.Get "galleryFilterUsed" -}}

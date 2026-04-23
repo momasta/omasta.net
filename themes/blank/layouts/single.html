@@ -1,6 +1,6 @@
 {{ define "main" -}}
     
-    {{- partial "header" . -}}
+    {{- partial "layout/header.html" . -}}
 
     {{ $datePublished := .PublishDate.Format .Site.Params.dateFormat | safeHTML }}
     {{ $datePublishedISO := .PublishDate.Format .Site.Params.dateFormatISO | safeHTML }}
@@ -20,18 +20,16 @@
         <main>
             <div class="card">
                 <article>
-                    {{- partial "breadcrumbs.html" . -}}
+                    {{- partial "components/breadcrumbs.html" . -}}
 
                     <h1>
                         <a href="{{ .RelPermalink }}" rel="bookmark" aria-current="page">{{ .LinkTitle }}</a>
                     </h1>
 
                     {{- range .Params.tags -}}
-                        {{ $name := . }}
-
-                        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"
-                           title="{{ T "tags-show-all" }} &#35;{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}"
-                           class="tag">&#35;{{ with index site.Taxonomies.tags $name }}{{ .Page.Title }}{{ end }}<br></a>
+                        {{ with (index site.Taxonomies.tags .).Page }}
+                            {{ partial "components/tag.html" (dict "context" . "lineBreak" true) }}
+                        {{- end -}}
                     {{- end -}}
 
                     {{ $showDate := and (not .PublishDate.IsZero)
@@ -58,7 +56,7 @@
                     {{ end }}
                     
                     {{ with .Params.mainContentID }}
-                        <p>&#x2193; <a href="#{{ . }}">{{ T "skip-to-main-content" }}</a></p>
+                        <p><span aria-hidden="true">&#x2193;</span> <a href="#{{ . }}">{{ T "skip-to-main-content" }}</a></p>
                     {{ end }}
 
                     <div class="article-content">
@@ -90,7 +88,7 @@
             </div>
         </main>
 
-        {{- partial "sidebar.html" . -}}
+        {{- partial "layout/sidebar.html" . -}}
     </div>
     
 {{ end }}

@@ -26,16 +26,8 @@
       flex-direction: column;
       text-decoration: none;
     }
-  }
 
-  a,
-  a:visited {
-    color: var(--color-text);
-  }
-
-  a:hover,
-  a:focus-visible {
-    color: var(--color-hover);
+    @include link-neutral;
   }
 
   span {
@@ -50,7 +42,7 @@
 
     &.size-small {
       text-decoration: none;
-      color: var(--color-text); // Specific to prevent different colour on hover
+      color: var(--color-text); // Specific selector to prevent different colour on hover
     }
   }
 

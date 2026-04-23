@@ -1,6 +1,6 @@
 {{ define "main" -}}
 
-    {{- partial "header" . -}}
+    {{- partial "layout/header.html" . -}}
     
     <div id="middle" class="direction-row">
         <main>
@@ -11,12 +11,20 @@
                     </h1>
 
                     <div class="article-content">
-                        {{ .Content }}
+                        {{ .Content -}}
+                        
+                        {{- if .Pages }}
+                            <ul class="links">
+                                {{- range .Paginator.Pages -}}
+                                    {{- .Render "summary" -}}
+                                {{- end -}}
+                            </ul>
+                        {{ end }}
                     </div>
                 </article>
             </div>
         </main>
 
-        {{- partial "sidebar.html" . -}}
+        {{- partial "layout/sidebar.html" . -}}
     </div>
 {{ end }}

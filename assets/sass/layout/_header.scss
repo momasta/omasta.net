@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site.
 //
-// themes/blank/layouts/_partials/header.html
+// themes/blank/layouts/_partials/layout/header.html
 //
 // -----------------------------------------------------------------------------
 
@@ -16,19 +16,20 @@ footer a {
 }
 
 .logo {
+  a {
+    @include link-neutral;
+  }
+
   a,
   a:visited {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    color: var(--color-text);
     font-size: 2rem;
   }
 
   a:hover,
   a:focus-visible {
-    color: var(--color-hover);
-
     img {
       opacity: 0.6;
     }

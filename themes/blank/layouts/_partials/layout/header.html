@@ -6,7 +6,8 @@
     <div class="bar">
         <button class="type-plain size-s toggle-theme-dark"
                 title="{{ T "switch-theme-dark" }}"
-                type="button">
+                type="button"
+                aria-hidden="true">
 			<span class="icon">
 				{{ readFile "static/images/icons/moon.svg" | safeHTML }}
 			</span>
@@ -14,35 +15,22 @@
 
         <button class="type-plain size-s toggle-theme-light"
                 title="{{ T "switch-theme-light" }}"
-                type="button">
+                type="button"
+                aria-hidden="true">
 			<span class="icon">
 				{{ readFile "static/images/icons/sun.svg" | safeHTML }}
 			</span>
         </button>
 
         {{- /* Language Switcher */ -}}
-        {{ if hugo.IsMultilingual }}
-            {{ if gt (len .Translations) 0 }}
-                {{ range .Translations }}
-                    <a title="{{ T "switch-language" }}"
-                       href="{{ .RelPermalink }}"
-                       hreflang="{{ .Language.Locale }}">
-                        <span lang="{{ .Language.Locale }}">{{ .Language.Label }}</span>
-                    </a>
-                {{ end }}
-            {{ else }}
-                {{ $currentLang := .Site.Language.Lang }}
-                {{ range hugo.Sites }}
-                    {{ if ne .Language.Lang $currentLang }}
-                        <a href="{{ .Home.RelPermalink }}"
-                           hreflang="{{ .Language.Locale }}"
-                           title="{{ T "switch-language" }}">
-                            <span lang="{{ .Language.Locale }}">{{ .Language.Label }}</span>
-                        </a>
-                    {{ end }}
-                {{ end }}
-            {{ end }}
-        {{ end }}
+        {{- range .Translations | default site.Home.Translations -}}
+            <a href="{{ .RelPermalink }}"
+               hreflang="{{ .Language.Locale }}"
+               title="{{ T "switch-language" }}"
+               aria-label="{{ T "language-switcher" }}">
+                <span lang="{{ .Language.Locale }}">{{ .Language.Label }}</span>
+            </a>
+        {{- end -}}
     </div>
 
     <div class="card">
@@ -52,7 +40,7 @@
                     <img
                         src="{{ .DPR1 | absURL }}"
                         srcset="{{ .DPR1 | absURL }} 1x, {{ .DPR2 | absURL }} 2x"
-                        alt="Website logo"
+                        alt="{{ T "logo" }}"
                         loading="eager">
                 {{ end }}
                 {{- .Site.Title }}
@@ -60,7 +48,7 @@
         </div>
 
         {{ with .Site.Menus.main }}
-            <nav aria-label="Main">
+            <nav aria-label="{{ T "main-navigation" }}">
                 <ul class="links direction-row">
                     {{- range . -}}
                         {{- if and .Page (not .Page.Sitemap.Disable) -}}

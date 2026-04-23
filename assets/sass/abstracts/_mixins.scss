@@ -34,3 +34,23 @@
   }
 }
 
+// Apply base text colour to links
+%link-neutral-base {
+  color: var(--color-text);
+}
+
+%link-neutral-interaction {
+  color: var(--color-hover);
+}
+
+@mixin link-neutral {
+  &,
+  &:visited {
+    @extend %link-neutral-base;
+  }
+
+  &:hover,
+  &:focus-visible {
+    @extend %link-neutral-interaction;
+  }
+}

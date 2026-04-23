@@ -47,6 +47,7 @@ params:
     DPR2: /images/profile-picture@2x.webp
   repo:
     URL: "https://github.com/momasta/omasta.net"
+    linkTitle: "GitHub"
     historyPath: "/blame/master"
   author:
     name: Marek Omasta
@@ -101,6 +102,7 @@ languages:
     weight: 1
     params:
       dateFormat: 2 Jan 2006
+      description: Personal website of Marek Omasta – blog posts, meme collection, links to my profiles and my content online.
     menu:
       aside:
         - name: Contact
@@ -136,6 +138,7 @@ languages:
     weight: 2
     params:
       dateFormat: 2. 1. 2006
+      description: Osobní web Marka Omasty – články, sbírka memes, odkazy na moje profily a obsah na internetu.
     menu:
       aside:
         - name: Kontakt

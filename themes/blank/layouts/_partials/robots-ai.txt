@@ -138,5 +138,3 @@ User-agent: YandexAdditionalBot
 User-agent: YouBot
 User-agent: ZanistaBot
 Disallow: /
-Disallow: *
-DisallowAITraining: /

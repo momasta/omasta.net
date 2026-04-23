@@ -1,0 +1,15 @@
+{{- /*
+    Stylesheet: assets/sass/components/_tag.scss
+*/ -}}
+
+{{ with .context }}
+    <a href="{{ .RelPermalink }}"
+       class="tag"
+       title="{{ .Title }}"
+       aria-label="{{- T "tag" }} {{ .LinkTitle }}">
+        &#35;{{ .LinkTitle -}}
+{{ end }}
+    {{- with .lineBreak -}}
+        <br>
+    {{- end -}}
+</a>

@@ -1,0 +1,18 @@
+{{- /*
+    Stylesheet: assets/sass/layout/_footer.scss
+*/ -}}
+
+<footer class="bar" id="footer">
+    {{ with (.Site.GetPage "section" "posts").OutputFormats.Get "RSS" }}
+        <a href="{{ .RelPermalink | safeURL }}"
+           type="application/rss+xml"
+           rel="alternate"
+           hreflang="{{ $.Language.Locale }}">RSS</a>
+    {{ end -}}
+
+    {{ with .Site.Params.repo }}
+        <a href="{{ .URL }}"
+           target="_blank"
+           title="{{ T "github-title" }}">{{ .linkTitle }}</a>
+    {{ end }}
+</footer>

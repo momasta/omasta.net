@@ -1,7 +1,7 @@
 ---
-title: "tips"
-date: 2025-12-03T21:48:06+01:00
-draft: false
+title: "Posts Tagged #tips"
+linkTitle: "tips"
+layout: simple
 ---
 
 Recommendations, guides and information I&nbsp;found helpful.  

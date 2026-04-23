@@ -56,7 +56,6 @@ a,
 button {
   border-radius: 0.5em;
   outline: 4px solid transparent;
-  outline-offset: 8px;
   transition: var(--transitions-a);
 }
 
@@ -91,6 +90,13 @@ ul {
   list-style-position: outside;
 }
 
+@media (pointer: coarse) {
+  li a {
+    display: inline-block;
+    min-height: 24px;
+  }
+}
+
 @mixin mq-min-medium-ul {
   ul {
     margin: 0 0 0 2em;
@@ -99,8 +105,4 @@ ul {
 
 time {
   color: var(--color-text-light);
-
-  a.tag + & {
-    margin-left: 0.5em;
-  }
 }

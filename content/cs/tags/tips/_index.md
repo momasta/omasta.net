@@ -1,8 +1,7 @@
 ---
-title: "tipy"
-date: 2025-12-03T21:48:06+01:00
-draft: false
-layout: term
+title: "Články se štítkem #tipy"
+linkTitle: "tipy"
+layout: simple
 ---
 
 Doporučení, návody a informace, které mi byly užitečné.

@@ -22,6 +22,8 @@ Content-Usage: ai=n
 # ai.robots.txt
 # https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt
 {{ partial "robots-ai.txt" . }}
+Disallow: *
+DisallowAITraining: /
 
 # https://baccyflap.com/res/robots#robots
 {{ partial "robots-baccyflap.txt" . }}

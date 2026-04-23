@@ -43,7 +43,7 @@
         <div class="gallery-filter">
             <form action="#" class="gallery-filter-form">
                 <label for="gallery-search" class="state-visually-hidden">
-                    {{- T "search-memes" -}}
+                    {{- T "search-images" -}}
                 </label>
                 <input type="search"
                        id="gallery-search"
@@ -54,7 +54,7 @@
                        autocapitalize="off"
                        autofocus
                        title="{{ printf "– %s\n– %s" (T "press-esc") (T "press-stroke") }}" 
-                       aria-label="{{ T "search-memes" }}">
+                       aria-label="{{ T "search-images" }}">
         
                 <input type="submit"
                        value="{{ T "search" }}"
@@ -69,7 +69,10 @@
     {{- end -}}
 
     {{- /* Gallery */ -}}
-    <div class="gallery{{ with $class }} {{ . }}{{ end }}" id="gallery-{{ .Ordinal }}">
+    <div class="gallery{{ with $class }} {{ . }}{{ end }}"
+         id="gallery-{{ .Ordinal }}"
+         role="listbox"
+         aria-label="{{ T "image-gallery" }}">
         {{- $imagesSlice := slice -}}
         {{- range $image := $images -}}
             {{- $filePath := printf "assets/%s" $image.Name }}
@@ -99,7 +102,9 @@
                data-cropped="true"
                id="{{ $imageID }}"
                target="_blank"
-               title="{{ $imageName }}{{ $imageDateText }}">
+               title="{{ $imageName }}{{ $imageDateText }}"
+               role="option"
+               aria-selected="false">
 
                 <img class="gallery-thumb"
                      alt="{{- $imageName -}}."
