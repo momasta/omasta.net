@@ -5,4 +5,5 @@ outputs:
   - RSS
 sitemap:
   disable: true
+url: "/"
 ---
