@@ -24,13 +24,13 @@
 
     // Visibility management
     function showImage(element) {
-        element.classList.remove("state-visually-hidden");
+        element.classList.remove("state-hidden");
         element.removeAttribute("aria-hidden");
         element.inert = false;
     }
 
     function hideImage(element) {
-        element.classList.add("state-visually-hidden");
+        element.classList.add("state-hidden");
         element.setAttribute("aria-hidden", "true");
         element.inert = true;
     }
@@ -90,10 +90,10 @@
         if (!noResultsEl) return;
         if (anyVisible) {
             noResultsEl.setAttribute("aria-hidden", "true");
-            noResultsEl.classList.add("state-visually-hidden");
+            noResultsEl.classList.add("state-hidden");
         } else {
             noResultsEl.removeAttribute("aria-hidden");
-            noResultsEl.classList.remove("state-visually-hidden");
+            noResultsEl.classList.remove("state-hidden");
         }
     }
 
@@ -115,8 +115,8 @@
 
         const originalOrder = images.slice();
         images.forEach((imgWrap) => {
-            if (!imgWrap.classList.contains("state-visually-hidden")) {
-                imgWrap.classList.remove("state-visually-hidden");
+            if (!imgWrap.classList.contains("state-hidden")) {
+                imgWrap.classList.remove("state-hidden");
                 imgWrap.removeAttribute("aria-hidden");
                 imgWrap.inert = false;
             }

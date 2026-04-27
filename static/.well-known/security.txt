@@ -1,0 +1,25 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:marek@omasta.net
+Expires: 2027-04-26T22:00:00.000Z
+Encryption: https://omasta.net/.well-known/pgp-publickey.txt
+Preferred-Languages: en, cs
+Canonical: https://omasta.net/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iQJPBAEBCAA5FiEEWiQHNTwdo1NZ1Mvb0azE6W3jtFMFAmnvTjQbFIAAAAAABAAO
+bWFudTIsMi41KzEuMTIsMCwzAAoJENGsxOlt47RTZosP/iY7VZNQmd3KSK9uFqrk
+qA03LFRGAz+jY7mzpk+VaFs3OxLoZQGXzR9isa6VdTWBrQhW1xXxFpIc1UN6BN+c
+41wROYLEn8yGZAsUN/hlwryhK9KGed8/KH0Ba2+5m7IemRwsb8DwaFpNDPcHANRf
+dE51JactRqycq3bawaxwzgOQrA4T6x8x0liRp1o+J93QT99DTbJn0jAC0Yxts9he
+3vhf3mEGxAtneEc04GeZrjfJ9rDroqy+3jRBievwmkgOmssdsx//33YTRxrNy+Ed
+ndqZ9BH6IaiqWKi7rrFB94eGJCFZrBkruuLslwdyICfqeWm74nazVXcj+zaU3geq
+S52TPmagP1rGRI19Y3s+uv5H1gXIzAvRBrcGC0VrlOudbA6Hoaw8K4qu+rucplCa
+yvHZit0LdKnkPhPex6SDYj1QIJ7IxY/yS8nXNOK9oNun5HWwbckHEWThzk1132Ou
++h+o9xFXRSqGCrRE4pNb21771AYhZfIrAdFzRJqvSjbVybQqHzw4O+fdNKqAX50S
+iA832D1JNPQU1K9CyE6QsyfkRcIUnT86h0MWC625OntbteIzAXuRyeMwrwb+WFPD
++uiJm2mEMnuTeBhIiCpHc14HZSMSXReKa/Qs9HQYrPqQ90zrkVRe2ttIIpzJPntc
+U24V5gzSV3hZ0ojYNZuvUc94
+=tLEy
+-----END PGP SIGNATURE-----

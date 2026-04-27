@@ -13,6 +13,6 @@
     {{ with .Site.Params.repo }}
         <a href="{{ .URL }}"
            target="_blank"
-           title="{{ T "github-title" }}">{{ .linkTitle }}</a>
+           title="{{ T "repo-title" (dict "title" .Title) }}">{{ .linkTitle }}</a>
     {{ end }}
 </footer>

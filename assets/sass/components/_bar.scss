@@ -20,7 +20,11 @@
     color: var(--color-hover);
   }
 
-  button + a {
-    margin-left: 1em;
+  a.state-hidden:focus {
+    @extend %state-visible;
+  }
+
+  button {
+    padding: 0 12px;
   }
 }

@@ -28,14 +28,12 @@ html {
 
 body {
   margin: 1rem 0.5rem;
-  min-height: 100vh;
   touch-action: manipulation;
 }
 
-@mixin mq-min-medium-body {
+@mixin mq-min-tablet-body {
   body {
     margin: 2rem 1rem;
-    min-height: auto;
   }
 }
 

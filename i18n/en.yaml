@@ -12,6 +12,7 @@ published: 'Published:'
 table-of-contents: "Table of Contents"
 table-of-contents-id: "table-of-contents"
 skip-to-main-content: 'Skip to main content'
+skip-to-main-article-content: 'Skip to main article content'
 view-history: "View history on GitHub"
 
 # Components -------------------------------------------------------------------------
@@ -21,7 +22,7 @@ go-back-to: 'Go back to'
 breadcrumbs: 'Breadcrumbs'
 
 ## Component: Footer
-github-title: 'momasta/omasta.net on GitHub, the source code of this website'
+repo-title: '{{ .title }} on GitHub, the source code of this website'
 
 ## Component: Gallery
 image-gallery: 'Image Gallery'

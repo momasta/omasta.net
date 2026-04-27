@@ -4,6 +4,8 @@
 
 <header id="header">
     <div class="bar">
+        <a href="#middle" class="state-hidden">{{ T "skip-to-main-content" }}</a>
+        
         <button class="type-plain size-s toggle-theme-dark"
                 title="{{ T "switch-theme-dark" }}"
                 type="button">
@@ -35,11 +37,11 @@
         <div class="logo">
             <a href="{{ .Site.Home.RelPermalink }}">
                 {{ with .Site.Params.logo }}
-                    <img
-                        src="{{ .DPR1 | absURL }}"
-                        srcset="{{ .DPR1 | absURL }} 1x, {{ .DPR2 | absURL }} 2x"
-                        alt="{{ T "logo" }}"
-                        loading="eager">
+                    <img src="{{ .DPR1 | absURL }}"
+                         srcset="{{ .DPR1 | absURL }} 1x, {{ .DPR2 | absURL }} 2x"
+                         alt="{{ T "logo" }}"
+                         loading="eager"
+                         aria-hidden="true">
                 {{ end }}
                 {{- .Site.Title }}
             </a>

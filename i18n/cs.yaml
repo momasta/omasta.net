@@ -12,6 +12,7 @@ published: 'Zveřejněno:'
 table-of-contents: "Obsah"
 table-of-contents-id: "obsah"
 skip-to-main-content: 'Přeskočit na hlavní obsah'
+skip-to-main-article-content: 'Přeskočit na hlavní obsah článku'
 view-history: "Zobrazit historii na GitHubu"
 
 # Components -------------------------------------------------------------------------
@@ -21,7 +22,7 @@ go-back-to: 'Jít zpět na'
 breadcrumbs: 'Drobečková navigace'
 
 ## Component: Footer
-github-title: 'momasta/omasta.net na GitHubu, zdrojový kód těchto stránek'
+repo-title: '{{ .title }} na GitHubu, zdrojový kód těchto stránek'
 
 ## Component: Gallery
 image-gallery: 'Obrázková galerie'

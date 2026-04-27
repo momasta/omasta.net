@@ -33,19 +33,13 @@ RewriteRule ^posts/(.*)$ "/$1" [R=301,L]
 # Shorthands
 RewriteRule ^tech-spurt/?$ /tech-spurt-quotes/ [R=301,L]
 
-<IfModule mod_headers.c>
-    SetEnvIf Origin "^https?://([^/]+\.)?omasta\.net$" ALLOWED_ORIGIN=$0
-    Header set Access-Control-Allow-Origin %{ALLOWED_ORIGIN}e env=ALLOWED_ORIGIN
-    Header set Access-Control-Allow-Methods "GET, OPTIONS"
-    Header set Access-Control-Allow-Headers "Content-Type, Authorization"
-</IfModule>
-
 # Error Documents
 ErrorDocument 400 /400/
 ErrorDocument 403 /403/
 ErrorDocument 404 /404/
 ErrorDocument 503 /503/
 
+# Cache Control
 <IfModule mod_expires.c>
   ExpiresActive On
 
@@ -67,7 +61,16 @@ ErrorDocument 503 /503/
   ExpiresByType font/ttf   "access plus 1 year"
 </IfModule>
 
+# Headers
 <IfModule mod_headers.c>
+    SetEnvIf Origin "^https?://([^/]+\.)?omasta\.net$" ALLOWED_ORIGIN=$0
+    Header set Access-Control-Allow-Origin %{ALLOWED_ORIGIN}e env=ALLOWED_ORIGIN
+    Header set Access-Control-Allow-Methods "GET, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+    Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" env=HTTPS
+    Header set X-Content-Type-Options nosniff
+    Header set X-Frame-Options SAMEORIGIN
+    
   <FilesMatch "\.(css|js|woff2?|ttf|png|jpe?g|gif|svg|webp|ico)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>

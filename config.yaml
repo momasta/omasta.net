@@ -41,19 +41,20 @@ params:
     favicon192: "/images/favicon-192.png"
     appleTouch: "/images/favicon-180.png"
   images:
-    - images/profile-picture-og.jpg
+    - "images/profile-picture-og.jpg"
   logo:
-    DPR1: /images/profile-picture.webp
-    DPR2: /images/profile-picture@2x.webp
+    DPR1: "/images/profile-picture.webp"
+    DPR2: "/images/profile-picture@2x.webp"
   repo:
     URL: "https://github.com/momasta/omasta.net"
+    title: "momasta/omasta.net"
     linkTitle: "GitHub"
     historyPath: "/blame/master"
   author:
-    name: Marek Omasta
-    email: &email marek@omasta.net
-    emailURL: &emailURL mailto:marek@omasta.net
-    image: images/profile-picture@2x.webp
+    name: "Marek Omasta"
+    email: &email "marek@omasta.net"
+    emailURL: &emailURL "mailto:marek@omasta.net"
+    image: "images/profile-picture@2x.webp"
     profiles:
       Apple Music: "https://music.apple.com/profile/m_omasta"
       Bandcamp: "https://bandcamp.com/m_omasta"

@@ -4,11 +4,11 @@
 //}
 
 @media screen and (min-width: $bp-tablet) {
+  @include mq-min-tablet-body;
   @include mq-min-tablet-gallery-image;
 }
 
 @media screen and (min-width: $bp-medium) {
-  @include mq-min-medium-body;
   @include mq-min-medium-card;
   @include mq-min-medium-gallery-image;
   @include mq-min-medium-input;
