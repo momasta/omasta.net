@@ -12,12 +12,12 @@ menu:
 
 [My business card (vCard)](/Marek%20Omasta.vcf)
 
-* [GitHub · Starred](https://github.com/momasta?tab=stars "momasta (Marek Omasta) / Starred · GitHub")
+* [GitHub](https://github.com/momasta "momasta (Marek Omasta) / Starred · GitHub")
 * [Google Maps Local Guide](https://goo.gl/maps/7YcUYzzchnnWJmL6A "Marek Omasta – Google Maps Local Guide")
 * [Gravatar](https://en.gravatar.com/omastik "Marek Omasta | Czech Republic | Gravatar")
 * [iMessage](imessage:marek@omasta.net)
 * [PayPal.Me: MarekOmasta](https://paypal.me/MarekOmasta "@MarekOmasta on PayPal.Me")
-* [Pinterest](https://pinterest.com/m_omasta/_saved/)
+* [Pinterest](https://pinterest.com/m_omasta/_saved/ 'Pinterest')
 * [Unsplash](https://unsplash.com/@m_omasta "My photos on Unsplash – Marek Omasta (@m_omasta)")
 * [YouTube](https://youtube.com/@m.omasta "Marek Omasta - YouTube")
 
@@ -27,8 +27,8 @@ menu:
 * [Last.fm](https://last.fm/user/m_omasta "m_omasta’s Music Profile | Last.fm")
 
 ## Quizzes / Hobbies
-* [Geocaching](https://www.geocaching.com/p/?id=8404971)
-* [GeoGuessr](https://geoguessr.com/user/5d57f24473c0052740b499fd)
+* [Geocaching](https://www.geocaching.com/p/?id=8404971 'Geocaching > Groundspeak - User Profile')
+* [GeoGuessr](https://geoguessr.com/user/5d57f24473c0052740b499fd 'Marek Omasta on GeoGuessr')
 * [Monkeytype](https://monkeytype.com/profile/m.omasta "m.omasta on Monkeytype | A minimalistic, customizable typing test")
 * [Sporcle](https://www.sporcle.com/user/momasta/ "momasta's Sporcle Contributed Quizzes")
 

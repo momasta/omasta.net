@@ -29,19 +29,20 @@ My Personal Website
   - Installed locally as a CLI tool.
   - Builds the site.
   - See [gohugoio/hugo on GitHub – Installation](https://github.com/gohugoio/hugo?tab=readme-ov-file#installation)
-- PhotoSwipe
-  - Downloaded manually to [assets/](assets):
-    - [photoswipe.css](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe.css)
-    - [photoswipe.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe.esm.min.js)
-    - [photoswipe-lightbox.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe-lightbox.esm.min.js)
-- ai.robots.txt
-  - Downloaded manually to [robots.txt](themes/blank/layouts/_partials/robots-ai.txt):
-    - [robots.txt](https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt)
-  - Appended manually to [.htaccess](static/.htaccess):
-    - [.htaccess](https://github.com/ai-robots-txt/ai.robots.txt/blob/main/.htaccess)
-- robots.txt by baccyflaps
-  - Copied manually to [robots.txt](themes/blank/layouts/_partials/robots-baccyflap.txt):
-    - https://baccyflap.com/res/robots#robots
+- Run `./update.sh` to update the following:
+  - [PhotoSwipe](https://github.com/dimsemenov/PhotoSwipe)
+    - Downloaded to [assets/](assets):
+      - [photoswipe.css](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe.css)
+      - [photoswipe.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe.esm.min.js)
+      - [photoswipe-lightbox.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe-lightbox.esm.min.js)
+  - [ai-robots-txt/ai.robots.txt](https://github.com/ai-robots-txt/ai.robots.txt)
+    - Downloaded to [robots-ai.txt](themes/blank/layouts/_partials/robots-ai.txt):
+      - [robots.txt](https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt)
+    - Downloaded to [robots-ai.htaccess](themes/blank/layouts/_partials/robots-ai.htaccess):
+      - [.htaccess](https://github.com/ai-robots-txt/ai.robots.txt/blob/main/.htaccess)
+- robots.txt by baccyflap
+  - Copied manually to [robots-baccyflap.txt](themes/blank/layouts/_partials/robots-baccyflap.txt):
+    - [baccyflap.com/res/robots](https://baccyflap.com/res/robots#robots)
 
 ## Installation
 * [Install Hugo](https://github.com/gohugoio/hugo?tab=readme-ov-file#installation)

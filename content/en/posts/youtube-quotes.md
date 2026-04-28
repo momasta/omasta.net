@@ -172,7 +172,7 @@ measly life of reviewing food on YouTube.
 (Zucc)
 
 * See [Tech Spurt Quotes/Zuckerberg]({{< relref "posts/tech-spurt-quotes.md#zuckerberg" >}})
-* See [Metaverse (Mark Zuckerberg) Playlist](https://www.youtube.com/playlist?list=PLCLfbEYKX8HfIVQC16S55F_6qY2sDw9NM) by LimmyTwitchClipsPlus<br><br>
+* See [Metaverse (Mark Zuckerberg) Playlist](https://www.youtube.com/playlist?list=PLCLfbEYKX8HfIVQC16S55F_6qY2sDw9NM 'Metaverse (Mark Zuckerberg) - YouTube') by LimmyTwitchClipsPlus<br><br>
 * Half man, half robot  
   [https://youtu.be/H-YMOhap3ZA?t=0](https://youtu.be/H-YMOhap3ZA?t=0 'Apple Vision Pro Fanboy Tries Meta Quest 3 - I Was Shocked. - YouTube')
 * First android on trial  

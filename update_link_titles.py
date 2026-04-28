@@ -27,7 +27,7 @@
 SUSPICIOUS_TITLE_PATTERNS = [
     r"^\s+?- YouTube",
     r"Verify.+Human",
-    r"(please wait|just a moment)",
+    r"(please wait|just a moment|captcha)",
     r"(404|not found)",
 ]
 
@@ -290,6 +290,8 @@ def process_file(path: str, mode: str, lang: str, cache: Dict[str, str]) -> None
             or link_url.strip().startswith("{{%") # Hugo shortcodes – Markdown notation
             or link_url.strip().startswith("#") # Fragment-only URLs
             or link_url.strip().startswith("x-apple.systempreferences:") # macOS System Settings URLs
+            or link_url.strip().startswith("imessage:") # iMessage
+            or link_url.strip().endswith(".vcf") # File (.vcf)
         ):
             continue
         if not link_url.startswith("http"):

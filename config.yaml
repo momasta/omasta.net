@@ -1,16 +1,16 @@
-baseURL: https://omasta.net/
-title: Marek Omasta
+baseURL: "https://omasta.net/"
+title: "Marek Omasta"
 theme:
   - blank
-defaultContentLanguage: en
+defaultContentLanguage: "en"
 enableRobotsTXT: true
 loadJQuery: false
 printI18nWarnings: true
 removePathAccents: true
-robots: noai, noimageai
-sectionPagesMenu: main
-timeout: 180s
-titleCaseStyle: none
+robots: "noai, noimageai"
+sectionPagesMenu: "main"
+timeout: "180s"
+titleCaseStyle: "none"
 
 minify:
   minifyOutput: true
@@ -31,8 +31,13 @@ markup:
       typographer:
         disable: true
 
+mediaTypes:
+  text/htaccess:
+    suffixes:
+      - htaccess
+
 params:
-  dateFormatISO: 2006-01-02T15:04:05
+  dateFormatISO: "2006-01-02T15:04:05"
   debugEnabled: false
   icons:
     favicon: "/favicon.ico"
@@ -76,19 +81,26 @@ permalinks:
 
 server:
   redirects:
-    - from: /cs/**
+    - from: "/cs/**"
       status: 404
-      to: /cs/404/
-    - from: /**
+      to: "/cs/404/"
+    - from: "/**"
       status: 404
-      to: /404/
+      to: "/404/"
 
 taxonomies:
   tag: tags
 
+outputFormats:
+  htaccess:
+    baseName: ""
+    isPlainText: true
+    mediaType: "text/htaccess"
+
 outputs:
   home:
     - html
+    - htaccess
   section:
     - html
   taxonomy: [ ]
@@ -97,75 +109,75 @@ outputs:
 
 languages:
   en:
-    contentDir: content/en
-    label: English
-    locale: en-GB
+    contentDir: "content/en"
+    label: "English"
+    locale: "en-GB"
     weight: 1
     params:
-      dateFormat: 2 Jan 2006
-      description: Personal website of Marek Omasta – blog posts, meme collection, links to my profiles and my content online.
+      dateFormat: "2 Jan 2006"
+      description: "Personal website of Marek Omasta – blog posts, meme collection, links to my profiles and my content online."
     menu:
       aside:
-        - name: Contact
-        - name: Messenger
+        - name: "Contact"
+        - name: "Messenger"
           params:
-            rel: external
-            value: omastik
-          parent: Contact
-          title: Text me on Facebook Messenger
+            rel: "external"
+            value: "omastik"
+          parent: "Contact"
+          title: "Text me on Facebook Messenger"
           url: *messenger
           weight: 1
-        - name: Email
+        - name: "Email"
           params:
-            rel: external
+            rel: "external"
             value: *email
-          parent: Contact
+          parent: "Contact"
           url: *emailURL
           weight: 2
 
-        - name: My Content
-        - name: Unsplash
+        - name: "My Content"
+        - name: "Unsplash"
           params:
-            description: My stock photos, free to use
-            rel: external
-          parent: My Content
+            description: "My stock photos, free to use"
+            rel: "external"
+          parent: "My Content"
           url: *unsplash
           weight: 2
   
   cs:
-    contentDir: content/cs
-    label: Čeština
-    locale: cs-CZ
+    contentDir: "content/cs"
+    label: "Čeština"
+    locale: "cs-CZ"
     weight: 2
     params:
-      dateFormat: 2. 1. 2006
-      description: Osobní web Marka Omasty – články, sbírka memes, odkazy na moje profily a obsah na internetu.
+      dateFormat: "2. 1. 2006"
+      description: "Osobní web Marka Omasty – články, sbírka memes, odkazy na moje profily a obsah na internetu."
     menu:
       aside:
-        - name: Kontakt
-          identifier: Contact
-        - name: Messenger
+        - name: "Kontakt"
+          identifier: "Contact"
+        - name: "Messenger"
           params:
-            rel: external
-            value: omastik
-          parent: Contact
-          title: Napište mi na Messengeru
+            rel: "external"
+            value: "omastik"
+          parent: "Contact"
+          title: "Napište mi na Messengeru"
           url: *messenger
           weight: 1
-        - name: E-mail
+        - name: "E-mail"
           params:
-            rel: external
+            rel: "external"
             value: *email
-          parent: Contact
+          parent: "Contact"
           url: *emailURL
           weight: 2
 
-        - name: Můj obsah
-          identifier: My Content
-        - name: Unsplash
+        - name: "Můj obsah"
+          identifier: "My Content"
+        - name: "Unsplash"
           params:
-            description: Moje fotky ve fotobance, zdarma k použití
-            rel: external
-          parent: My Content
+            description: "Moje fotky ve fotobance, zdarma k použití"
+            rel: "external"
+          parent: "My Content"
           url: *unsplash
           weight: 2

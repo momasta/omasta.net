@@ -1,0 +1,90 @@
+{{- $baseURL := .Site.BaseURL | strings.TrimSuffix "/" -}}
+{{- $hostEscaped := replace ((urls.Parse .Site.BaseURL).Host) "." "\\." -}}
+{{- $lang := print "/" .Site.Language.Name -}}
+
+{{- if .Site.Language.IsDefault -}}
+    {{- $lang = "" -}}
+
+RewriteEngine On
+
+AddDefaultCharset UTF-8
+AddCharset UTF-8 .html
+AddCharset UTF-8 .htm
+
+DirectoryIndex index.html index.php
+
+# Force HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect invalid subdomains including the subpath
+RewriteCond %{HTTP_HOST} ^(?:www\.)?([^.]+)\.[^.]+\.[^.]+$ [NC]
+RewriteCond %{1} !^www$
+RewriteCond %{DOCUMENT_ROOT}/subdom/%1 !-d
+RewriteRule ^ {{ $baseURL }}%{REQUEST_URI} [L,R=301]
+
+# Force trailing slash on directories
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*?[^/])$ /$1/ [L,R=301]
+
+# Handle valid subdomains
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteCond %{HTTP_HOST} ^(?:www\.)?([^.]+)\.[^.]+\.[^.]+$
+RewriteCond %{DOCUMENT_ROOT}/subdom/%1 -d
+RewriteRule ^(.*)$ /subdom/%1/$1 [L]
+
+# Redirects for Moved Content
+RewriteRule ^([a-z]{2}/)?tags/notes/?$ /$1tags/quotes/ [R=301,L]
+RewriteRule ^([a-z]{2}/)?posts/(.*)$ /$1$2 [R=301,L]
+
+# Shorthands
+RewriteRule ^tech-spurt/?$ /tech-spurt-quotes/ [R=301,L]
+
+# Cache Control
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Scripts and styles – cache long, busted by a hash
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    
+    # Images
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # Fonts
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+</IfModule>
+
+# Headers
+<IfModule mod_headers.c>
+    SetEnvIf Origin "^https?://([^/]+\.)?{{ $hostEscaped }}$" ALLOWED_ORIGIN=$0
+    Header set Access-Control-Allow-Origin %{ALLOWED_ORIGIN}e env=ALLOWED_ORIGIN
+    Header set Access-Control-Allow-Methods "GET, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+    Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" env=HTTPS
+    Header set X-Content-Type-Options nosniff
+    Header set X-Frame-Options SAMEORIGIN
+
+    <FilesMatch "\.(css|js|woff2?|ttf|png|jpe?g|gif|svg|webp|ico)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+</IfModule>
+
+# ai.robots.txt
+# https://github.com/ai-robots-txt/ai.robots.txt/blob/main/.htaccess
+{{ $robotsAI := partial "robots-ai.htaccess" . -}}
+{{ replaceRE "^RewriteEngine On\n" "" $robotsAI }}
+
+{{- end }}
+# Error Documents
+ErrorDocument 400 {{ $lang }}/400/
+ErrorDocument 403 {{ $lang }}/403/
+ErrorDocument 404 {{ $lang }}/404/
+ErrorDocument 503 {{ $lang }}/503/
