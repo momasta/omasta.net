@@ -20,7 +20,7 @@
 #   python3 update_link_titles.py --text-is-url content/
 #   python3 update_link_titles.py --update-existing-titles content/en/posts/*.md
 #   python3 update_link_titles.py --lang=cs content/cs/posts/*.md
-#   python3 update_link_titles.py --stash content/
+#   python3 update_link_titles.py --stash content/en && python3 update_link_titles.py --stash --lang=cs content/cs
 #   python3 update_link_titles.py content/en/ && python3 update_link_titles.py --lang=cs content/cs/
 
 # The user will be warned about potentially broken links:

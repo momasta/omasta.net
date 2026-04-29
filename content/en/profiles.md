@@ -23,14 +23,14 @@ menu:
 
 ## Music
 * [Apple Music](https://music.apple.com/profile/m_omasta 'Marek Omasta on Apple Music')
-* [Bandcamp](https://bandcamp.com/m_omasta 'm_omasta's collection | Bandcamp')
+* [Bandcamp](https://bandcamp.com/m_omasta "m_omasta's collection | Bandcamp")
 * [Last.fm](https://last.fm/user/m_omasta 'm_omasta’s Music Profile | Last.fm')
 
 ## Quizzes / Hobbies
 * [Geocaching](https://www.geocaching.com/p/?id=8404971 'Geocaching > Groundspeak - User Profile')
 * [GeoGuessr](https://geoguessr.com/user/5d57f24473c0052740b499fd 'Marek Omasta on GeoGuessr')
 * [Monkeytype](https://monkeytype.com/profile/m.omasta 'm.omasta on Monkeytype | A minimalistic, customizable typing test')
-* [Sporcle](https://www.sporcle.com/user/momasta/ 'momasta's Sporcle Contributed Quizzes')
+* [Sporcle](https://www.sporcle.com/user/momasta/ "momasta's Sporcle Contributed Quizzes")
 
 ## Social
 * [Discord](https://discordapp.com/users/m.omasta 'm.omasta on Discord')

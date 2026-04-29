@@ -78,7 +78,7 @@ Might be useful to people who run clips or compilation channels.
   Fuck you, mainland pieces of shit.  
   Hong Kong, Taiwan, totally fine, you guys are cool.  
   You know, the Cantonese it's a little dirty-sounding but… Fuck China.  
-  [https://archive.org/details/FilthyFrankCollection/JAPANESE+101+-+I+DON'T+GIVE+A+FUCK.mp4?start=198](https://archive.org/details/FilthyFrankCollection/JAPANESE+101+-+I+DON'T+GIVE+A+FUCK.mp4?start=198 'The Complete Works of Filthy Frank : George Miller : Free Download, Borrow, and Streaming : Internet Archive')
+  [https://archive.org/details/FilthyFrankCollection/JAPANESE+101+-+I+DON'T+GIVE+A+FUCK.mp4?start=198](https://archive.org/details/FilthyFrankCollection/JAPANESE+101+-+I+DON "T+GIVE+A+FUCK.mp4?start=198 'The Complete Works of Filthy Frank : George Miller : Free Download, Borrow, and Streaming : Internet Archive")
 ## GeoWizard (Tom Davies)
 
 * Football.  
