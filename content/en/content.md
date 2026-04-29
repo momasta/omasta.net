@@ -21,21 +21,21 @@ menu:
 ## Quizlet
 My sets of flashcards for language learning.  
 Collected from dictionaries, the Web and other people’s Quizlet sets.
-* [Quizlet | m_omasta | Study Sets](https://quizlet.com/m_omasta/folders "m_omasta | Quizlet")
+* [Quizlet | m_omasta | Study Sets](https://quizlet.com/m_omasta/folders 'm_omasta | Quizlet')
 
 ### Czech
-* [Czech](https://quizlet.com/594733412 "Czech Flashcards | Quizlet")  
-* [Hantec → Czech](https://quizlet.com/594731596 "Hantec → Czech Flashcards | Quizlet")  
+* [Czech](https://quizlet.com/594733412 'Czech Flashcards | Quizlet')  
+* [Hantec → Czech](https://quizlet.com/594731596 'Hantec → Czech Flashcards | Quizlet')  
 
 ### English
-* [Americanisms → English](https://quizlet.com/597004079 "Americanisms Flashcards | Quizlet")  
-* [English → Czech](https://quizlet.com/936258402 "English → Czech Flashcards | Quizlet")  
-* [Foreign Plurals](https://quizlet.com/594973719 "Foreign Plurals Flashcards | Quizlet")  
-* [Similes](https://quizlet.com/701761957 "Similes Flashcards | Quizlet")  
+* [Americanisms → English](https://quizlet.com/597004079 'Americanisms Flashcards | Quizlet')  
+* [English → Czech](https://quizlet.com/936258402 'English → Czech Flashcards | Quizlet')  
+* [Foreign Plurals](https://quizlet.com/594973719 'Foreign Plurals Flashcards | Quizlet')  
+* [Similes](https://quizlet.com/701761957 'Similes Flashcards | Quizlet')  
 
 ### German
-* [German → Czech/English](https://quizlet.com/594705397 "German → Czech/English Flashcards | Quizlet")  
+* [German → Czech/English](https://quizlet.com/594705397 'German → Czech/English Flashcards | Quizlet')  
 
 ### Writing Systems
-* [Greek-English letter equivalents](https://quizlet.com/483773767 "Greek-English letter equivalents Flashcards | Quizlet")  
-* [Vietnamese alphabet](https://quizlet.com/462684256 "Vietnamese alphabet Flashcards | Quizlet")  
+* [Greek-English letter equivalents](https://quizlet.com/483773767 'Greek-English letter equivalents Flashcards | Quizlet')  
+* [Vietnamese alphabet](https://quizlet.com/462684256 'Vietnamese alphabet Flashcards | Quizlet')  

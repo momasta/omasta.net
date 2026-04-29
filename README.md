@@ -67,7 +67,7 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
 * Live Demo (`.size-s`): [omasta.net/tech-spurt-quotes/](https://omasta.net/tech-spurt-quotes/)
 
 ### Usage
-* In a Markdown file:  
+#### In a Markdown file
   ```
   {{< gallery "geoguessr-tips" >}}
   ```
@@ -79,14 +79,13 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
   ```
   {{< gallery "tech-spurt" "type-grid size-s" "name" >}}
   ```
-
-* Arguments:
+####  Arguments
   * Path (optional)
     * Where to look for images
     * Supports:
-      * subpath of [assets/images/](assets/images)
-      * [Glob pattern](https://gohugo.io/quick-reference/glob-patterns/)
+      * Subdirectory of [assets/images/](assets/images)
       * File path
+      * [Glob pattern](https://gohugo.io/quick-reference/glob-patterns/)
     * Default: `"/"`
   * Class (optional)
     * Additional classes for `.gallery`
@@ -99,7 +98,7 @@ A Hugo shortcode based on [this article by Christian Specht](https://www.codepro
     * Default: `"date"`
 
 ### Features
-* Replaced Lightbox2 with [Photoswipe](https://github.com/dimsemenov/PhotoSwipe).
+* Uses [Photoswipe](https://github.com/dimsemenov/PhotoSwipe) to show images.
 * Captions based on filenames.
 * Images sorted by date.
 * WebP thumbnails

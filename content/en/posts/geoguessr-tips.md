@@ -492,7 +492,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * British Columbia
     * 🛑 Bilingual stop signs
 
-### 🇨🇼 [Curaçao](https://www.plonkit.net/curacao  ' — Plonk It') (🇳🇱 Netherlands)
+### 🇨🇼 [Curaçao](https://www.plonkit.net/curacao 'Curaçao — Plonk It') (🇳🇱 Netherlands)
 * TLD: .cw
 * Signs
   * Striped traffic light posts

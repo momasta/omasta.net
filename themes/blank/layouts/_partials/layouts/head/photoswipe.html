@@ -49,6 +49,7 @@
                 showAnimationDuration: 260,
                 hideAnimationDuration: 260,
                 easing: "cubic-bezier(0.4, 0, 0.25, 1)",
+                returnFocus: false,
                 closeTitle: '{{ T "psw.close" }}',
                 zoomTitle: '{{ T "psw.zoom" }}',
                 arrowPrevTitle: '{{ T "psw.previous" }}',
@@ -69,10 +70,11 @@
                 }
             }
     
+            // Update lightbox= in the URL with the currently open image
             lightbox.on('change', () => {
                 try {
-                    const el = lightbox.pswp.currSlide.data.element;
-                    if (el && el.id) setLightboxParam(el.id);
+                    const element = lightbox.pswp.currSlide.data.element;
+                    if (element && element.id) setLightboxParam(element.id);
                 } catch {
                 }
             });
@@ -83,7 +85,17 @@
                 } catch {
                 }
             });
+
+            // Focus the last image shown in the lightbox
+            lightbox.on("destroy", () => {
+                try {
+                    const element = lightbox.pswp.currSlide.data.element;
+                    if (element) element.focus();
+                } catch {
+                }
+            });
     
+            // If lightbox= is set in the URL, open the image
             window.addEventListener('DOMContentLoaded', () => {
                 try {
                     const params = new URLSearchParams(window.location.search);

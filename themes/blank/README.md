@@ -4,8 +4,6 @@ Blank — starter [Hugo](https://gohugo.io/) theme for developers. Use it to mak
 
 **[Demo](https://blank-demo.netlify.app/)**
 
-![Blank theme screenshot](https://github.com/Vimux/blank/blob/master/images/splash.png)
-
 ## Installation
 
 In your Hugo site `themes` directory, run:

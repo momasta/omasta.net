@@ -21,21 +21,21 @@ menu:
 ## Quizlet
 Moje sady kartiček na učení jazyků.  
 Termíny jsem sesbíral ze slovníků, z Internetu a od jiných uživatelů Quizletu.
-* [Quizlet | m_omasta | Study Sets](https://quizlet.com/m_omasta/folders "m_omasta | Quizlet")
+* [Quizlet | m_omasta | Study Sets](https://quizlet.com/m_omasta/folders 'm_omasta | Quizlet')
 
 ### Čeština
-* [Čeština](https://quizlet.com/594733412 "Czech Flashcards | Quizlet")
-* [Hantec](https://quizlet.com/594731596 "Hantec → Czech Flashcards | Quizlet")
+* [Čeština](https://quizlet.com/594733412 'Czech Flashcards | Quizlet')
+* [Hantec](https://quizlet.com/594731596 'Hantec → Czech Flashcards | Quizlet')
 
 ### Angličtina
-* [Amerikanismy → angličtina](https://quizlet.com/597004079 "Americanisms Flashcards | Quizlet")
-* [Angličtina → čeština](https://quizlet.com/936258402 "English → Czech Flashcards | Quizlet")
-* [Množná čísla cizích slov](https://quizlet.com/594973719 "Foreign Plurals Flashcards | Quizlet")
-* [Přirovnání](https://quizlet.com/701761957 "Similes Flashcards | Quizlet")
+* [Amerikanismy → angličtina](https://quizlet.com/597004079 'Americanisms Flashcards | Quizlet')
+* [Angličtina → čeština](https://quizlet.com/936258402 'English → Czech Flashcards | Quizlet')
+* [Množná čísla cizích slov](https://quizlet.com/594973719 'Foreign Plurals Flashcards | Quizlet')
+* [Přirovnání](https://quizlet.com/701761957 'Similes Flashcards | Quizlet')
 
 ### Němčina
-* [Němčina → čeština/angličtina](https://quizlet.com/594705397 "German → Czech/English Flashcards | Quizlet")
+* [Němčina → čeština/angličtina](https://quizlet.com/594705397 'German → Czech/English Flashcards | Quizlet')
 
 ### Písma
-* [Anglické ekvivalenty řeckých písmen](https://quizlet.com/483773767 "Greek-English letter equivalents Flashcards | Quizlet")
-* [Vietnamská abeceda](https://quizlet.com/462684256 "Vietnamese alphabet Flashcards | Quizlet")
+* [Anglické ekvivalenty řeckých písmen](https://quizlet.com/483773767 'Greek-English letter equivalents Flashcards | Quizlet')
+* [Vietnamská abeceda](https://quizlet.com/462684256 'Vietnamese alphabet Flashcards | Quizlet')
