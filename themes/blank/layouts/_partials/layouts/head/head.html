@@ -129,7 +129,7 @@
     {{ end }}
     
     {{- /*  Schema.org JSON-LD */ -}}
-    {{ partial "layout/head/schema-website.html" . }}
+    {{ partial "layouts/head/schema-website.html" . }}
 
     {{- /* Critical JS (inline) - Perform before rendering page */ -}}
     {{ with resources.Get "js/_critical.js" }}

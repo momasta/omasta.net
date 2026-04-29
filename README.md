@@ -26,20 +26,12 @@ My Personal Website
 
 ## Dependencies
 - Hugo
-  - Installed locally as a CLI tool.
   - Builds the site.
+  - Installed locally as a CLI tool.
   - See [gohugoio/hugo on GitHub – Installation](https://github.com/gohugoio/hugo?tab=readme-ov-file#installation)
-- Run `./update.sh` to update the following:
+- Updated automatically, see `params.deps` in [config.yaml](config.yaml):
   - [PhotoSwipe](https://github.com/dimsemenov/PhotoSwipe)
-    - Downloaded to [assets/](assets):
-      - [photoswipe.css](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe.css)
-      - [photoswipe.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe.esm.min.js)
-      - [photoswipe-lightbox.esm.min.js](https://github.com/dimsemenov/PhotoSwipe/blob/master/dist/photoswipe-lightbox.esm.min.js)
   - [ai-robots-txt/ai.robots.txt](https://github.com/ai-robots-txt/ai.robots.txt)
-    - Downloaded to [robots-ai.txt](themes/blank/layouts/_partials/robots-ai.txt):
-      - [robots.txt](https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt)
-    - Downloaded to [robots-ai.htaccess](themes/blank/layouts/_partials/robots-ai.htaccess):
-      - [.htaccess](https://github.com/ai-robots-txt/ai.robots.txt/blob/main/.htaccess)
 - robots.txt by baccyflap
   - Copied manually to [robots-baccyflap.txt](themes/blank/layouts/_partials/robots-baccyflap.txt):
     - [baccyflap.com/res/robots](https://baccyflap.com/res/robots#robots)

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Locale | default "en-GB" }}">
 
-{{- partial "layout/head/head.html" . -}}
+{{- partial "layouts/head/head.html" . -}}
 
 <body class="{{ .Type }}"
       ondragstart="return false;"
@@ -12,7 +12,7 @@
 
 <div id="content">
     {{ block "main" . }}{{ end }}
-    {{- partial "layout/footer.html" . -}}
+    {{- partial "layouts/footer.html" . -}}
 </div>
 
 {{ $applyThemeJS := resources.Get "js/apply-theme.js" | minify | fingerprint -}}
@@ -22,7 +22,7 @@
 <script src="{{ $copyHeadingLinkJS.RelPermalink }}" defer></script>
 
 {{- /* PhotosSwipe CSS and JS */ -}}
-{{- partial "layout/head/photoswipe.html" . -}}
+{{- partial "layouts/head/photoswipe.html" . -}}
 
 {{- /* Gallery Filter JS */ -}}
 {{- if .Page.Store.Get "galleryFilterUsed" -}}

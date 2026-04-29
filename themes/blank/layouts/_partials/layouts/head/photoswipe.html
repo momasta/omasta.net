@@ -1,0 +1,113 @@
+{{- if .Page.Store.Get "galleryUsed" -}}
+    {{- with .Site.Params.Deps.psw -}}
+        
+        {{- $pswCSS := "" -}}
+        {{- $pswLightboxJS := "" -}}
+        {{- $pswJS := "" -}}
+
+        {{- with try (resources.GetRemote .CSS) -}}
+            {{ with .Err }}
+                {{ errorf "%s" . }}
+            {{ else with .Value | resources.Copy "css/photoswipe.css" }}
+                {{- $pswCSS = (. | minify | fingerprint).RelPermalink -}}
+            {{- else -}}
+                {{ errorf "Unable to get remote resource %q" . }}
+            {{- end -}}
+        {{- end -}}
+
+        {{- with try (resources.GetRemote .JS) -}}
+            {{ with .Err }}
+                {{ errorf "%s" . }}
+            {{ else with .Value | resources.Copy "/js/photoswipe.esm.min.js" }}
+                {{- $pswJS = (. | fingerprint).RelPermalink -}}
+            {{- else -}}
+                {{ errorf "Unable to get remote resource %q" . }}
+            {{- end -}}
+        {{- end -}}
+
+        {{- with try (resources.GetRemote .lightboxJS) -}}
+            {{ with .Err }}
+                {{ errorf "%s" . }}
+            {{ else with .Value | resources.Copy "/js/photoswipe-lightbox.esm.min.js" }}
+                {{- $pswLightboxJS = (. | fingerprint).RelPermalink -}}
+            {{- else -}}
+                {{ errorf "Unable to get remote resource %q" . }}
+            {{- end -}}
+        {{- end -}}
+    
+        <link rel="stylesheet" href="{{ $pswCSS }}">
+    
+        <script type="module">
+            import PhotoSwipeLightbox from '{{ $pswLightboxJS }}';
+    
+            const lightbox = new PhotoSwipeLightbox({
+                pswpModule: () => import({{ $pswJS }}),
+                gallery: '.gallery',
+                children: 'a',
+                showHideAnimationType: 'zoom',
+                preload: [1, 4],
+                showAnimationDuration: 260,
+                hideAnimationDuration: 260,
+                easing: "cubic-bezier(0.4, 0, 0.25, 1)",
+                closeTitle: '{{ T "psw.close" }}',
+                zoomTitle: '{{ T "psw.zoom" }}',
+                arrowPrevTitle: '{{ T "psw.previous" }}',
+                arrowNextTitle: '{{ T "psw.next" }}',
+                errorMsg: '{{ T "psw.error" }}'
+            });
+    
+            function setLightboxParam(id) {
+                try {
+                    const url = new URL(window.location);
+                    if (id) {
+                        url.searchParams.set('lightbox', id);
+                    } else {
+                        url.searchParams.delete('lightbox');
+                    }
+                    history.replaceState(null, '', url);
+                } catch {
+                }
+            }
+    
+            lightbox.on('change', () => {
+                try {
+                    const el = lightbox.pswp.currSlide.data.element;
+                    if (el && el.id) setLightboxParam(el.id);
+                } catch {
+                }
+            });
+    
+            lightbox.on('close', () => {
+                try {
+                    setLightboxParam(null);
+                } catch {
+                }
+            });
+    
+            window.addEventListener('DOMContentLoaded', () => {
+                try {
+                    const params = new URLSearchParams(window.location.search);
+                    const id = params.get('lightbox');
+                    if (id) {
+                        const link = document.getElementById(id);
+                        if (link) {
+                            const gallery = link.closest('.gallery');
+                            const items = [...gallery.querySelectorAll('a')];
+                            const index = items.indexOf(link);
+                            if (index >= 0) {
+                                lightbox.loadAndOpen(index, {gallery, element: link});
+                                return;
+                            }
+                        }
+                        setLightboxParam(null);
+                    }
+                } catch {
+                }
+            });
+
+            lightbox.init();
+            window.pswpLightbox = lightbox;
+        </script>
+        
+    {{- end -}}
+{{- end -}}

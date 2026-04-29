@@ -12,6 +12,10 @@ sectionPagesMenu: "main"
 timeout: "180s"
 titleCaseStyle: "none"
 
+caches:
+  getresource:
+    maxAge: "168h"
+
 minify:
   minifyOutput: true
   tdewolff:
@@ -34,11 +38,18 @@ markup:
 mediaTypes:
   text/htaccess:
     suffixes:
-      - htaccess
+      - "htaccess"
 
 params:
   dateFormatISO: "2006-01-02T15:04:05"
   debugEnabled: false
+  deps:
+    AIRobots: "https://raw.githubusercontent.com/ai-robots-txt/ai.robots.txt/refs/heads/main/robots.txt"
+    AIRobotsHTAccess: "https://raw.githubusercontent.com/ai-robots-txt/ai.robots.txt/refs/heads/main/.htaccess"
+    psw:
+      CSS: "https://raw.githubusercontent.com/dimsemenov/PhotoSwipe/refs/heads/master/dist/photoswipe.css"
+      JS: "https://raw.githubusercontent.com/dimsemenov/PhotoSwipe/refs/heads/master/dist/photoswipe.esm.min.js"
+      lightboxJS: "https://raw.githubusercontent.com/dimsemenov/PhotoSwipe/refs/heads/master/dist/photoswipe-lightbox.esm.min.js"
   icons:
     favicon: "/favicon.ico"
     favicon32: "/images/favicon-32.png"

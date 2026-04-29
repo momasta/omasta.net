@@ -19,9 +19,19 @@ Disallow: /t/
 
 Content-Usage: ai=n
 
+{{ with .Site.Params.Deps.AIRobots -}}
+    {{- with try (resources.GetRemote .) -}}
+      {{ with .Err }}
+        {{ errorf "%s" . }}
+      {{- else with .Value.Content -}}
 # ai.robots.txt
 # https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt
-{{ partial "robots-ai.txt" . }}
+{{ . -}}
+      {{- else -}}
+        {{- errorf "Unable to get remote resource %q" . -}}
+      {{- end -}}
+    {{- end -}}
+{{- end -}}
 Disallow: *
 DisallowAITraining: /
 

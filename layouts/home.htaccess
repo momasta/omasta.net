@@ -77,10 +77,19 @@ RewriteRule ^tech-spurt/?$ /tech-spurt-quotes/ [R=301,L]
     </FilesMatch>
 </IfModule>
 
+{{ with .Site.Params.Deps.AIRobotsHTAccess -}}
+    {{- with try (resources.GetRemote .) -}}
+      {{ with .Err }}
+        {{ errorf "%s" . }}
+      {{- else with .Value.Content -}}
 # ai.robots.txt
 # https://github.com/ai-robots-txt/ai.robots.txt/blob/main/.htaccess
-{{ $robotsAI := partial "robots-ai.htaccess" . -}}
-{{ replaceRE "^RewriteEngine On\n" "" $robotsAI }}
+{{ replaceRE "^RewriteEngine On\n" "" . -}}
+      {{- else -}}
+        {{ errorf "Unable to get remote resource %q" . }}
+      {{- end -}}
+    {{- end -}}
+{{- end -}}
 
 {{- end }}
 # Error Documents

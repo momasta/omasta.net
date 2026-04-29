@@ -1,7 +1,67 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="10d7e612-5acb-3339-8f96-baf7053f7289" enabled="true" level="WARNING" enabled_by_default="false">
+      <scope name="Project Files" level="WARNING" enabled="true" />
+    </inspection_tool>
     <inspection_tool class="CssUnusedSymbol" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CustomRegExpInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myConfigurations">
+        <list>
+          <RegExpInspectionConfiguration>
+            <option name="description" value="Bold text posing as ###" />
+            <option name="name" value="Fake headings" />
+            <option name="problemDescriptor" value="#ref seems like a fake heading" />
+            <option name="suppressId" value="fake-headings" />
+            <option name="uuid" value="10d7e612-5acb-3339-8f96-baf7053f7289" />
+            <option name="patterns">
+              <list>
+                <InspectionPattern>
+                  <option name="regExp" value="^(\h?)\*\*([^\*]+)\*\*$" />
+                  <option name="_fileType" value="Markdown" />
+                  <option name="searchContext" value="ANY" />
+                  <option name="replacement" value="### $1$2" />
+                  <option name="flags" value="64" />
+                </InspectionPattern>
+              </list>
+            </option>
+          </RegExpInspectionConfiguration>
+          <RegExpInspectionConfiguration>
+            <option name="description" value="Links to other notes&#10;Not valid outside of Apple Notes." />
+            <option name="name" value="Broken links to other notes" />
+            <option name="problemDescriptor" value="#ref might be refering to a non-existent page" />
+            <option name="suppressId" value="broken-links" />
+            <option name="uuid" value="fb300fbc-e17b-3f6e-898f-a10e829e6ba0" />
+            <option name="patterns">
+              <list>
+                <InspectionPattern>
+                  <option name="regExp" value="^See .+\n" />
+                  <option name="_fileType" value="Markdown" />
+                  <option name="searchContext" value="ANY" />
+                  <option name="replacement" value="" />
+                  <option name="flags" value="64" />
+                </InspectionPattern>
+              </list>
+            </option>
+          </RegExpInspectionConfiguration>
+          <RegExpInspectionConfiguration>
+            <option name="name" value="debug.Dump left in a template" />
+            <option name="suppressId" value="debug-dump" />
+            <option name="uuid" value="df6534cc-49d3-3ef7-91a9-4f735209a57b" />
+            <option name="patterns">
+              <list>
+                <InspectionPattern>
+                  <option name="regExp" value="debug\.dump" />
+                  <option name="_fileType" value="HTML" />
+                  <option name="searchContext" value="ANY" />
+                  <option name="flags" value="66" />
+                </InspectionPattern>
+              </list>
+            </option>
+          </RegExpInspectionConfiguration>
+        </list>
+      </option>
+    </inspection_tool>
     <inspection_tool class="GrazieInspection" enabled="true" level="GRAMMAR_ERROR" enabled_by_default="true" editorAttributes="GRAMMAR_ERROR" />
     <inspection_tool class="HtmlUnknownTarget" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RegExpUnexpectedAnchor" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -12,6 +72,12 @@
     <inspection_tool class="W3CssValidation" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myCssVersion" value="css3svg" />
       <option name="myIgnoreVendorSpecificProperties" value="false" />
+    </inspection_tool>
+    <inspection_tool class="df6534cc-49d3-3ef7-91a9-4f735209a57b" enabled="true" level="WARNING" enabled_by_default="false">
+      <scope name="Project Files" level="WARNING" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="fb300fbc-e17b-3f6e-898f-a10e829e6ba0" enabled="true" level="WARNING" enabled_by_default="false">
+      <scope name="Project Files" level="WARNING" enabled="true" />
     </inspection_tool>
   </profile>
 </component>
