@@ -174,7 +174,7 @@ Minecraft – Part 1 – Enderman zabíjí,creeper vybouchává!
   [https://youtu.be/UVBckwj27uU?t=127](https://youtu.be/UVBckwj27uU?t=127 'exoti - YouTube')
 * Jo, jsem Aneta zkurvená, já vim.  
 (Lukáš Kril)  
-  [https://youtu.be/T149Q3IoTeY?t=42](https://youtu.be/T149Q3IoTeY?t=42 '- YouTube')  
+  [https://youtu.be/T149Q3IoTeY?t=42](https://youtu.be/T149Q3IoTeY?t=42 'LUKÁŠ KRIL OFICIÁLNĚ ODVEDEN DO VĚZNICE LIBEREC (NABÍTKI UŠ NEPLATÍ) - YouTube')  
   [https://youtube.com/clip/Ugkx4peIZV46YEHAhb77YlAV5iBHgnlcEluZ](https://youtube.com/clip/Ugkx4peIZV46YEHAhb77YlAV5iBHgnlcEluZ '✂️ Jo, jsem Aneta zkurvená, já vim - YouTube')
 * **Michal Sračkomet:** Kůň je zvíře zkurvený. Fuj.  
 (ROFL NOD)  

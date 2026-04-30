@@ -275,8 +275,6 @@ If you can be bothered, please turn these into a compilation video:
 * [https://youtu.be/E7kacgom97s?t=110](https://youtu.be/E7kacgom97s?t=110 'TWITCH HIGHLIGHTS 25 - 6480° TRICKSHOT (18 SPINS) - YouTube')
 * [https://youtu.be/oZDXDZgi3ac?t=54](https://youtu.be/oZDXDZgi3ac?t=54 'CACHE IS FINALLY BACK IN CS2 (LEAKED) - YouTube')
 * [https://youtu.be/uAiAznhkTvI?t=633](https://youtu.be/uAiAznhkTvI?t=633 'THE WORST SKINS IN CS:GO (WORKSHOP) - YouTube')
-* [https://youtu.be/tNNtQtslI5U?t=54](https://youtu.be/tNNtQtslI5U?t=54 '- YouTube')
-* [https://youtu.be/tNNtQtslI5U?t=64](https://youtu.be/tNNtQtslI5U?t=64 '- YouTube')
 * [https://youtu.be/S0M2HMjyNm4?t=384](https://youtu.be/S0M2HMjyNm4?t=384 'OPENING 300 CLUTCH CASES (EMERALD UNBOXING) - YouTube')
 * [https://youtu.be/7WgN6d3tHOc?t=482](https://youtu.be/7WgN6d3tHOc?t=482 'PLAYING THE BEST CS2 MOD EVER (CLASSIC OFFENSIVE) - YouTube')
 * [https://youtu.be/xQp4tmJscMQ?t=151](https://youtu.be/xQp4tmJscMQ?t=151 'TWITCH HIGHLIGHTS 35 - AVERAGE RUSSIANS - YouTube')
