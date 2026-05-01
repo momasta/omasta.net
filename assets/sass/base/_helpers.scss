@@ -6,6 +6,7 @@
 
 // === Placeholders ===
 
+.state-interaction-disabled,
 %no-interaction {
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -23,43 +24,23 @@
   border: 0;
 }
 
-%state-visible {
+.type-focus-to-unhide:focus {
   position: static;
   height: auto;
   width: auto;
   clip-path: none;
 }
 
-// Enlarge Clickable Area
-%click-area {
-  position: relative;
+.type-larger-click-areas {
+  :any-link,
+  button {
+    position: relative;
 
-  &::before {
-    content: '';
-    position: absolute;
-    inset: -5px -1em;
-    z-index: 1;
-  }
-}
-
-// Enlarge Clickable Area – Sizes
-
-%click-area-small {
-  @extend %click-area;
-}
-
-%click-area-medium {
-  @extend %click-area;
-
-  &::before {
-    inset: -1rem -1.5rem;
-  }
-}
-
-%click-area-large {
-  @extend %click-area;
-
-  &::before {
-    inset: -1.5rem -2rem;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: -5px -1em;
+      z-index: 1;
+    }
   }
 }

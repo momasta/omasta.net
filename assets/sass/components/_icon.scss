@@ -1,11 +1,7 @@
 .icon {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: content-box;
 
   svg {
-    fill: var(--color-text-light); // Update in head.html
     transition: fill var(--ease);
   }
 }

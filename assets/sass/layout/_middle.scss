@@ -1,17 +1,6 @@
-#middle {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  margin-bottom: 3px;
-}
-
 @mixin mq-min-medium-middle {
   #middle.direction-row {
     flex-direction: row;
     align-items: flex-start;
-
-    main + aside:not(:empty) {
-      margin-left: 1rem;
-    }
   }
 }

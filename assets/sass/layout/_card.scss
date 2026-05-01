@@ -1,7 +1,5 @@
 .card {
   width: 100%;
-  background-color: var(--color-content-bg);
-  border-radius: 16px;
   // See Critical CSS in head.html: margin and padding
 
   display: flex;
@@ -20,9 +18,14 @@ header .card {
   justify-content: space-between;
 }
 
+main .card {
+  padding-bottom: 2rem;
+}
+
 @mixin mq-min-medium-card {
   div.card {
-    padding: 24px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   header .card {

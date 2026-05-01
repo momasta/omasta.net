@@ -2,7 +2,7 @@
     Stylesheet: assets/sass/layout/_footer.scss
 */ -}}
 
-<footer class="bar" id="footer">
+<footer class="bar type-larger-click-areas state-interaction-disabled" id="footer">
     {{ with (.Site.GetPage "section" "posts").OutputFormats.Get "RSS" }}
         <a href="{{ .RelPermalink | safeURL }}"
            type="application/rss+xml"

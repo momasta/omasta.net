@@ -8,25 +8,15 @@
 $aside-min-width: 255px;
 
 aside {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax($aside-min-width, 1fr));
-  gap: 1rem;
-  margin: 0.5rem 0;
-
   &:not(:empty) {
     min-width: $aside-min-width;
   }
 
-  .card {
-    margin: 0;
-  }
-
-  a {
-    @extend %click-area-small;
+  :any-link {
     @include link-neutral;
   }
 
   ul {
-    margin-left: 1.5rem;
+    margin: 0 0 0.5rem 1.5rem;
   }
 }

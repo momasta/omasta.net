@@ -14,7 +14,7 @@
     {{- .Page.Store.Set "breadcrumbsUsed" true -}}
 
     <nav class="breadcrumbs" aria-label="{{ T "breadcrumbs" }}">
-        <ol class="links direction-row">
+        <ol class="links direction-row state-interaction-disabled">
             {{ range $links }}
                 <li>
                     <a href="{{ .RelPermalink }}" title="{{ T "go-back-to" }} {{ .LinkTitle }}">{{ .LinkTitle }}</a>

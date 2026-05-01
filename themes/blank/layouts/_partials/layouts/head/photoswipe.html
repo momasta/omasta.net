@@ -43,7 +43,7 @@
             const lightbox = new PhotoSwipeLightbox({
                 pswpModule: () => import({{ $pswJS }}),
                 gallery: '.gallery',
-                children: 'a',
+                children: 'a:not(.state-hidden)',
                 showHideAnimationType: 'zoom',
                 preload: [1, 4],
                 showAnimationDuration: 260,

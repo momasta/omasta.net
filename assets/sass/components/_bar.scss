@@ -1,30 +1,24 @@
 .bar {
   display: flex;
-  padding: 0 0.5rem;
+  padding: 0 0.5rem 0.5rem;
   align-items: center;
-  height: 1.4em; // Fixed height to prevent jumping if empty
-  @extend %no-interaction;
+  height: 34px; // Fixed height to prevent jumping
 
   header & {
     justify-content: flex-end;
   }
 
-  a,
-  a:visited {
-    padding: 0 12px;
+  :any-link {
+    margin: 0 12px;
     color: var(--color-text-light);
   }
 
-  a:hover,
-  a:focus-visible {
+  :any-link:hover,
+  :any-link:focus-visible {
     color: var(--color-hover);
   }
 
-  a.state-hidden:focus {
-    @extend %state-visible;
-  }
-
   button {
-    padding: 0 12px;
+    margin: 0 12px;
   }
 }

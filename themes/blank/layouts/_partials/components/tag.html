@@ -4,7 +4,7 @@
 
 {{ with .context }}
     <a href="{{ .RelPermalink }}"
-       class="tag"
+       class="tag state-interaction-disabled"
        title="{{ .Title }}"
        aria-label="{{- T "tag" }} {{ .LinkTitle }}">
         &#35;{{ .LinkTitle -}}

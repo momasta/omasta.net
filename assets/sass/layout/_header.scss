@@ -5,39 +5,28 @@
 //
 // -----------------------------------------------------------------------------
 
-header {
-  @extend %no-interaction;
-}
-
-header a,
-footer a {
+header :any-link,
+footer :any-link {
   text-decoration: none;
-  @extend %click-area-small;
 }
 
 .logo {
-  a {
-    @include link-neutral;
-  }
-
-  a,
-  a:visited {
+  :any-link {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
     font-size: 2rem;
+    @include link-neutral;
   }
 
-  a:hover,
-  a:focus-visible {
+  :any-link:hover,
+  :any-link:focus-visible {
     img {
       opacity: 0.6;
     }
   }
 
   img {
-    width: 45px; // Update in head.html
-    height: 64px; // Update in head.html
     margin-right: 20px;
     transition: opacity var(--ease);
   }

@@ -6,7 +6,7 @@
 // -----------------------------------------------------------------------------
 
 .summary {
-  span.size-small {
+  span.size-s {
     max-width: 100%;
     margin: 1px 0 4px 0;
     overflow-wrap: anywhere;
@@ -14,12 +14,17 @@
     hyphens: auto;
     text-wrap: auto;
   }
+
+  time {
+    font-size: rem(14px);
+  }
 }
 
 .summary + .summary {
   margin-top: 20px;
 }
 
-a.tag + time {
+.tag + time {
+  color: var(--color-text-light);
   margin-left: 0.5em;
 }

@@ -3,25 +3,20 @@
   padding: 0;
   margin: 0;
   font-size: rem(18px);
-  @extend %no-interaction;
 
   li {
-    margin: 0.5em 0;
-
-    &:first-of-type {
-      margin-top: 0;
-    }
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
+    margin: 0;
   }
 
-  a {
+  li + li {
+    margin-top: 0.5em;
+  }
+
+  :any-link {
     display: inline-block;
     white-space: nowrap;
 
-    &:has(span.size-small) {
+    &:has(span.size-s) {
       display: flex;
       flex-direction: column;
       text-decoration: none;
@@ -40,7 +35,7 @@
       text-decoration: none;
     }
 
-    &.size-small {
+    &.size-s {
       text-decoration: none;
       color: var(--color-text); // Specific selector to prevent different colour on hover
     }
@@ -50,28 +45,24 @@
   &.direction-row {
     li {
       display: inline-block;
-      margin: 0 20px 0 0;
+      margin: 0;
     }
 
-    li:last-of-type {
-      margin-right: 0;
+    li + li {
+      margin-left: 20px;
     }
   }
 
   // Sizes
   &.size-s {
     &.direction-row {
-      li {
-        margin-right: 1rem;
+      li + li {
+        margin-left: 1rem;
       }
     }
   }
 }
 
 h1 + .links {
-  margin-top: rem(15px);
-}
-
-ul + .links {
-  margin-top: 0.5em;
+  margin-top: 1rem;
 }

@@ -1,73 +1,71 @@
 {{- /*
-    Stylesheet: assets/sass/layout/_sidebar.scss
+    Stylesheet: assets/sass/layout/_aside.scss
 */ -}}
 
-<aside>
-    {{ with .Site.Menus.aside }}
-        {{- range . -}}
-            <div class="card">
-                <h2>{{ .Name }}</h2>
-
-                {{- with .Children }}
-                    <ul class="links">
-                        {{ range . }}
-                            <li>
-                                <a href="{{ .URL }}"
-                                   {{ with .Params.rel }}rel="{{ . }}" target="_blank"{{ end }}
-                                   {{ with .Title }}title="{{ . }}"{{ end }}>
-
-                                    {{ if .Params.value -}}
-                                        <span class="type-light">
-                                        {{- .Name }}:&nbsp;</span>{{ .Params.value }}
-                                    {{ else if .Params.description }}
-                                        <span>{{ .Name }}<br></span>
-                                        <span class="size-small">{{ .Params.description }}</span>
-                                    {{ else }}
-                                        {{ .Name }}
-                                    {{ end }}
-                                </a>
-                            </li>
-                        {{ end }}
-                    </ul>
-                {{- end }}
-            </div>
-        {{- end -}}
-    {{ end }}
-
-    {{ $tagsTitle := (.Site.GetPage "/tags").Title }}
-    {{ with .Site.Taxonomies.tags }}
+{{ with .Site.Menus.aside }}
+    {{- range . -}}
         <div class="card">
-            <h2>{{ $tagsTitle }}</h2>
+            <h2>{{ .Name }}</h2>
 
-            <ul class="links">
-                {{ range . }}
-                    <li>
-                        {{ with .Page }}
-                            {{ partial "components/tag.html" (dict "context" . "lineBreak" false) }}
-                        {{ end }}
-                        <span class="size-small">({{- .Count }})<br></span>
-                    </li>
-                {{ end }}
-            </ul>
-        </div>
-    {{- end }}
+            {{- with .Children }}
+                <ul class="links state-interaction-disabled">
+                    {{ range . }}
+                        <li>
+                            <a href="{{ .URL }}"
+                               {{ with .Params.rel }}rel="{{ . }}" target="_blank"{{ end }}
+                               {{ with .Title }}title="{{ . }}"{{ end }}>
 
-    {{- if and (where .Site.RegularPages "Type" "posts") (not .IsHome) -}}
-        <div class="card">
-            <h2>{{ T "latest-posts" }}</h2>
-            <ul>
-                {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
-                    {{- .Render "summary-simple" -}}
-                {{ end }}
-            </ul>
-
-            <ul class="links">
-                <li>
-                    <a href="{{ .Site.Home.RelPermalink }}">
-                        {{ (.Site.GetPage "/posts").LinkTitle }}…
-                    </a>
-                </li>
-            </ul>
+                                {{ if .Params.value -}}
+                                    <span class="type-light">
+                                    {{- .Name }}:&nbsp;</span>{{ .Params.value }}
+                                {{ else if .Params.description }}
+                                    <span>{{ .Name }}<br></span>
+                                    <span class="size-s">{{ .Params.description }}</span>
+                                {{ else }}
+                                    {{ .Name }}
+                                {{ end }}
+                            </a>
+                        </li>
+                    {{ end }}
+                </ul>
+            {{- end }}
         </div>
     {{- end -}}
-</aside>
+{{ end }}
+
+{{ $tagsTitle := (.Site.GetPage "/tags").Title }}
+{{ with .Site.Taxonomies.tags }}
+    <div class="card">
+        <h2>{{ $tagsTitle }}</h2>
+
+        <ul class="links state-interaction-disabled">
+            {{ range . }}
+                <li>
+                    {{ with .Page }}
+                        {{ partial "components/tag.html" (dict "context" . "lineBreak" false) }}
+                    {{ end }}
+                    <span class="size-s">({{- .Count }})<br></span>
+                </li>
+            {{ end }}
+        </ul>
+    </div>
+{{- end }}
+
+{{- if and (where .Site.RegularPages "Type" "posts") (not .IsHome) -}}
+    <div class="card">
+        <h2>{{ T "latest-posts" }}</h2>
+        <ul>
+            {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
+                {{- .Render "summary-simple" -}}
+            {{ end }}
+        </ul>
+
+        <ul class="links state-interaction-disabled">
+            <li>
+                <a href="{{ .Site.Home.RelPermalink }}">
+                    {{ (.Site.GetPage "/posts").LinkTitle }}…
+                </a>
+            </li>
+        </ul>
+    </div>
+{{- end -}}

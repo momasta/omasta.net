@@ -3,22 +3,7 @@
 // -----------------------------------------------------------------------------
 
 html {
-  @include includeDark; // Default theme
-
-  &.theme-light {
-    @include includeLight;
-  }
-
-  @media (prefers-color-scheme: light) {
-    &:not(.theme-dark):not(.theme-light) {
-      @include includeLight;
-    }
-  }
-
-  box-sizing: border-box; // Set up a decent box model on the root element
   overflow-y: scroll;
-  color: var(--color-text);
-  background-color: var(--color-site-bg);
   transition: background-color var(--ease);
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
@@ -29,24 +14,6 @@ html {
 body {
   margin: 1rem 0.5rem;
   touch-action: manipulation;
-}
-
-@mixin mq-min-tablet-body {
-  body {
-    margin: 2rem 1rem;
-  }
-}
-
-/**
- * Make all elements from the DOM inherit from the parent box-sizing
- * Since `*` has a specificity of 0, it does not override the `html` value
- * making all elements inheriting from the root box-sizing value
- * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 // Styles for focusable elements
@@ -70,15 +37,14 @@ button {
 /**
  * Basic styles for links
  */
-a,
-a:visited {
+:any-link {
   color: var(--color-brand-text);
   text-decoration: underline;
   -webkit-tap-highlight-color: transparent;
 }
 
-a:hover,
-a:focus-visible {
+:any-link:hover,
+:any-link:focus-visible {
   color: var(--color-hover);
 }
 
@@ -101,6 +67,8 @@ ul {
   }
 }
 
-time {
-  color: var(--color-text-light);
+@mixin mq-min-tablet-body {
+  body {
+    margin: 2rem 1rem;
+  }
 }

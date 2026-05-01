@@ -4,7 +4,7 @@
 
     {{ $datePublished := .PublishDate.Format .Site.Params.dateFormat | safeHTML }}
     {{ $datePublishedISO := .PublishDate.Format .Site.Params.dateFormatISO | safeHTML }}
-    
+
     {{ $dateModified := .Lastmod.Format .Site.Params.dateFormat | safeHTML }}
     {{ $dateModifiedISO := .Lastmod.Format .Site.Params.dateFormatISO | safeHTML }}
 
@@ -15,7 +15,7 @@
             {{- $dateModifiedText = printf "\n%s %s" (T "last-mod-short") $dateModified -}}
         {{ end }}
     {{ end }}
-    
+
     <div id="middle" class="direction-column">
         <main>
             <div class="card">
@@ -33,9 +33,9 @@
                     {{- end -}}
 
                     {{ $showDate := and (not .PublishDate.IsZero)
-                                        (not .Pages)
-                                        (not (.Page.Store.Get "breadcrumbsUsed")) }}
-                    
+                        (not .Pages)
+                        (not (.Page.Store.Get "breadcrumbsUsed")) }}
+
                     {{ if $showDate }}
                         <time datetime="{{- cond $dateModifiedText $dateModifiedISO $datePublishedISO -}}"
                               title="{{ T "published" }} {{ $datePublished }}{{ $dateModifiedText }}">
@@ -48,20 +48,21 @@
                     {{ end }}
 
                     {{ if .Pages }}
-                        <ul class="links direction-row size-s">
+                        <ul class="links direction-row size-s state-interaction-disabled">
                             {{- range .Paginator.Pages -}}
                                 {{- .Render "summary-simple" -}}
                             {{- end -}}
                         </ul>
                     {{ end }}
-                    
+
                     {{ with .Params.mainContentID }}
-                        <p><span aria-hidden="true">&#x2193;</span> <a href="#{{ . }}">{{ T "skip-to-main-article-content" }}</a></p>
+                        <p><span aria-hidden="true">&#x2193;</span> <a
+                            href="#{{ . }}">{{ T "skip-to-main-article-content" }}</a></p>
                     {{ end }}
 
                     <div class="article-content">
                         {{ .Content -}}
-                        
+
                         {{- if not .PublishDate.IsZero -}}
                             <p>
                                 {{- T "published" }}
@@ -88,7 +89,11 @@
             </div>
         </main>
 
-        {{- partial "layouts/sidebar.html" . -}}
+        {{- with partial "layouts/sidebar.html" . -}}
+            <aside class="type-larger-click-areas">
+                {{ . }}
+            </aside>
+        {{- end -}}
     </div>
-    
+
 {{ end }}

@@ -10,8 +10,8 @@
     </title>
 
     {{ with or .Description
-               (and (eq .Type "posts") (.Summary | plainify | truncate 160 "…"))
-               site.Params.description }}
+        (and (eq .Type "posts") (.Summary | plainify | truncate 160 "…"))
+        site.Params.description }}
         <meta name="description" content="{{ trim . "\n\r\t " }}">
     {{ end }}
 
@@ -30,7 +30,7 @@
     {{ if eq .Type "ErrorDocument" }}
         <base href="{{ .Site.BaseURL }}">
     {{ end }}
-    
+
     {{- /* Stylesheet */ -}}
     {{ with resources.Get "sass/main.scss" }}
         {{ $options := dict
@@ -95,7 +95,7 @@
     {{ with .Site.Params.icons.favicon }}
         <link rel="icon" href="{{ . }}" sizes="any" type="image/x-icon">
     {{ end }}
-    
+
     {{ with .Site.Params.icons.favicon32 }}
         <link rel="icon" href="{{ . }}" sizes="32x32" type="image/png">
     {{ end }}
@@ -127,7 +127,7 @@
         {{ $mastodonHandle := replaceRE "https?://([^/]+)/(@.+)/?" "$2@$1" . }}
         <meta name="fediverse:creator" content="{{ $mastodonHandle }}">
     {{ end }}
-    
+
     {{- /*  Schema.org JSON-LD */ -}}
     {{ partial "layouts/head/schema-website.html" . }}
 
@@ -138,30 +138,74 @@
 
     {{- /* Critical CSS */ -}}
     <style>
-        :root {
-            color-scheme: dark light; /* Default theme: dark */
-        }
-
-        html.theme-dark {
-            background-color: #000;
-            color: #fff;
-        }
-
-        html.theme-dark svg {
-            fill: #b8b8b8;
-        }
-
-        html.theme-dark .card {
-            background-color: #222;
-        }
-
-        html.theme-light .toggle-theme-light,
-        html.theme-dark .toggle-theme-dark {
+        #toggle-theme-dark,
+        body:not(.loaded) [id^=toggle-theme-] {
             display: none;
         }
 
+        :root {
+            color-scheme: dark light;
+            --color-white-bg: #fff;
+            --color-black-bg: #222;
+            --color-grey-dark: #454545;
+            --color-grey-light: #b8b8b8;
+            --color-focus: #306e95bf;
+            --color-hover: var(--color-brand-light);
+            --ease: 260ms cubic-bezier(0.4, 0, 0.25, 1);
+            --transitions-a: outline-color var(--ease), outline-offset var(--ease), color var(--ease)
+        }
+
         html {
-            font: normal 16px / 1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+            color-scheme: dark;
+            --color-text: var(--color-white-bg);
+            --color-text-light: var(--color-grey-light);
+            --color-brand-text: #8fd2ff;
+            --color-brand-light: #47B6FF;
+            --color-site-bg: #000;
+            --color-content-bg: var(--color-black-bg);
+
+            box-sizing: border-box; /* Set up a decent box model on the root element */
+            font: normal 16px / 1.4 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: var(--color-text);
+            background-color: var(--color-site-bg);
+        }
+
+        html.theme-light {
+            color-scheme: light;
+            --color-text: var(--color-black-bg);
+            --color-text-light: var(--color-grey-dark);
+            --color-brand-text: #004370;
+            --color-brand-light: #007acc;
+            --color-site-bg: var(--color-grey-light);
+            --color-content-bg: var(--color-white-bg)
+        }
+
+        html.theme-light #toggle-theme-dark { display: flex; }
+        html.theme-light #toggle-theme-light { display: none; }
+
+        @media (prefers-color-scheme: light) {
+            html:not(.theme-dark) {
+                color-scheme: light;
+                --color-text: var(--color-black-bg);
+                --color-text-light: var(--color-grey-dark);
+                --color-brand-text: #004370;
+                --color-brand-light: #007acc;
+                --color-site-bg: var(--color-grey-light);
+                --color-content-bg: var(--color-white-bg)
+            }
+
+            html:not(.theme-dark) #toggle-theme-dark { display: flex; }
+            html:not(.theme-dark) #toggle-theme-light { display: none; }
+        }
+
+        /**
+         * Make all elements from the DOM inherit from the parent box-sizing
+         * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+         */
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
         }
 
         body:not(.loaded) * {
@@ -169,8 +213,30 @@
         }
 
         #content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
             margin: 0 auto;
             max-width: 670px;
+        }
+
+        #middle {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 1rem;
+        }
+        
+        aside {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            padding: 24px 16px;
+            background-color: var(--color-content-bg);
+            border-radius: 1rem;
         }
 
         h1 {
@@ -182,9 +248,8 @@
             height: 64px;
         }
 
-        .card {
-            margin: 8px 0;
-            padding: 24px 16px;
+        .icon svg {
+            fill: var(--color-text-light);
         }
     </style>
 </head>

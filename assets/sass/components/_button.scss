@@ -5,38 +5,23 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  @extend %click-area-small;
+
+  &:hover svg,
+  &:focus-visible svg {
+    fill: var(--color-hover);
+  }
 
   &.type-plain {
     border: none;
     background-color: transparent;
     cursor: pointer;
-
-    &:hover,
-    &:focus-visible {
-      svg {
-        fill: var(--color-hover);
-      }
-    }
   }
+}
 
-  // A special hover colour for the sun icon
-  &.toggle-theme-light {
-    &:hover,
-    &:focus-visible {
-      svg {
-        fill: #f9e72a;
-      }
-    }
-  }
-
-  // A special hover colour for the moon icon
-  &.toggle-theme-dark {
-    &:hover,
-    &:focus-visible {
-      svg {
-        fill: var(--color-white-bg);
-      }
-    }
+// Special hover colour for the sun icon
+#toggle-theme-light {
+  &:hover svg,
+  &:focus-visible svg {
+    fill: #f9e72a;
   }
 }

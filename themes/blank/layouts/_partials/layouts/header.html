@@ -2,20 +2,22 @@
     Stylesheet: assets/sass/layout/_header.scss
 */ -}}
 
-<header id="header">
+<header id="header" class="type-larger-click-areas state-interaction-disabled">
     <div class="bar">
-        <a href="#middle" class="state-hidden">{{ T "skip-to-main-content" }}</a>
+        <a href="#middle" class="type-focus-to-unhide state-hidden">{{ T "skip-to-main-content" }}</a>
         
-        <button class="type-plain size-s toggle-theme-dark"
-                title="{{ T "switch-theme-dark" }}"
+        <button class="type-plain size-s"
+                id="toggle-theme-dark"
+                title="{{ T "toggle-theme-dark" }}"
                 type="button">
 			<span class="icon">
 				{{ readFile "static/images/icons/moon.svg" | safeHTML }}
 			</span>
         </button>
 
-        <button class="type-plain size-s toggle-theme-light"
-                title="{{ T "switch-theme-light" }}"
+        <button class="type-plain size-s"
+                id="toggle-theme-light"
+                title="{{ T "toggle-theme-light" }}"
                 type="button">
 			<span class="icon">
 				{{ readFile "static/images/icons/sun.svg" | safeHTML }}
@@ -26,9 +28,10 @@
         {{- range .Translations | default site.Home.Translations -}}
             <a href="{{ .RelPermalink }}"
                hreflang="{{ .Language.Locale }}"
+               lang="{{ .Language.Locale }}"
                title="{{ T "switch-language" }}"
                aria-label="{{ T "language-switcher" }}">
-                <span lang="{{ .Language.Locale }}">{{ .Language.Label }}</span>
+                {{- .Language.Label -}}
             </a>
         {{- end -}}
     </div>
@@ -36,20 +39,20 @@
     <div class="card">
         <div class="logo">
             <a href="{{ .Site.Home.RelPermalink }}">
-                {{ with .Site.Params.logo }}
+                {{- with .Site.Params.logo -}}
                     <img src="{{ .DPR1 | absURL }}"
                          srcset="{{ .DPR1 | absURL }} 1x, {{ .DPR2 | absURL }} 2x"
                          alt="{{ T "logo" }}"
                          loading="eager"
                          aria-hidden="true">
-                {{ end }}
+                {{- end -}}
                 {{- .Site.Title }}
             </a>
         </div>
 
         {{ with .Site.Menus.main }}
             <nav aria-label="{{ T "main-navigation" }}">
-                <ul class="links direction-row">
+                <ul class="links direction-row state-interaction-disabled">
                     {{- range . -}}
                         {{- if and .Page (not .Page.Sitemap.Disable) -}}
                             <li{{ if .Page.IsMenuCurrent .Menu . }} aria-current="page"{{ end }}>

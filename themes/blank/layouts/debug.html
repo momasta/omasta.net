@@ -1,7 +1,7 @@
 {{ define "main" -}}
 
     {{- partial "layouts/header.html" . -}}
-    
+
     <div id="middle" class="direction-column">
         <main>
             <div class="card">
@@ -12,14 +12,14 @@
 
                     <div class="article-content">
                         {{ .Content }}
-                        
+
                         <h2>now</h2>
                         <pre>{{ now }}</pre>
 
                         <h2>hugo</h2>
                         <p><a href="https://gohugo.io/functions/hugo/" target="_blank">hugo functions</a></p>
                         <pre>{{ debug.Dump hugo }}</pre>
-                        
+
                         <h2>hugo.Version</h2>
                         <pre>{{ debug.Dump hugo.Version }}</pre>
 
@@ -31,7 +31,7 @@
 
                         <h2>hugo.BuildDate</h2>
                         <pre>{{ debug.Dump hugo.BuildDate }}</pre>
-                        
+
                         <h2>site</h2>
                         <p><a href="https://gohugo.io/methods/site/" target="_blank">site methods</a></p>
                         <pre>{{ debug.Dump site }}</pre>
@@ -40,6 +40,10 @@
             </div>
         </main>
 
-        {{- partial "layouts/sidebar.html" . -}}
+        {{- with partial "layouts/sidebar.html" . -}}
+            <aside class="type-larger-click-areas">
+                {{ . }}
+            </aside>
+        {{- end -}}
     </div>
 {{ end }}

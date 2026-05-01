@@ -1,5 +1,3 @@
-window.addEventListener('load', () => document.body.classList.add('loaded'));
-
 const themeColorLight = '#b8b8b8';
 const themeColorDark = '#000000';
 
@@ -11,10 +9,10 @@ const themePreference = () => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    const toggleThemeLight = document.querySelector('.toggle-theme-light');
-    const toggleThemeDark = document.querySelector('.toggle-theme-dark');
-    const metaThemeColor = document.querySelectorAll('meta[name="theme-color"]');
     const html = document.documentElement;
+    const metaThemeColor = document.querySelectorAll('meta[name="theme-color"]');
+    const toggleThemeLight = document.querySelector('#toggle-theme-light');
+    const toggleThemeDark = document.querySelector('#toggle-theme-dark');
 
     const setTheme = (theme) => {
         html.classList.remove('theme-dark', 'theme-light');
@@ -37,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Manual toggle - dark theme (override)
     toggleThemeDark.addEventListener('click', () => {
         setTheme('theme-dark');
-        
+
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
             localStorage.removeItem('theme'); // Back to auto
         } else {
@@ -48,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Manual toggle - light theme (override)
     toggleThemeLight.addEventListener('click', () => {
         setTheme('theme-light');
-        
+
         if (window.matchMedia('(prefers-color-scheme: light)').matches) {
             localStorage.removeItem('theme'); // Back to auto
         } else {
@@ -56,3 +54,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, false);
 }, false);
+
+window.addEventListener('load', () => document.body.classList.add('loaded'));

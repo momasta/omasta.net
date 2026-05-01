@@ -1,33 +1,19 @@
 article {
-  time {
-    font-size: 1rem;
-  }
-
   h2 {
     padding: 1em 0 0;
-  }
-
-  h3 {
-    top: 28px;
   }
 }
 
 .article-content {
   margin-top: 1rem;
-
-  // "Last updated" at the end of the article (if any)
-  time {
-    color: inherit;
-  }
 }
 
 a.heading-link {
   opacity: 0;
-  margin-left: 0.5rem;
+  padding: 0.5rem;
   text-decoration: none;
   transition: opacity var(--ease), var(--transitions-a);
   @extend %no-interaction;
-  @extend %click-area-small;
   @include link-neutral;
 
   &::after {
@@ -38,7 +24,7 @@ a.heading-link {
   &.state-success::after {
     content: "✓";
   }
-  
+
   h2:hover &,
   h3:hover &,
   h2:focus-within &,
@@ -49,14 +35,18 @@ a.heading-link {
   }
 }
 
-h1 a,
-h1 a:visited {
-  color: inherit;
+h1 :any-link {
   text-decoration: none;
   display: inline;
 }
 
-h2 + h3 {
+h1 :any-link,
+h1 :any-link:hover {
+  color: inherit;
+}
+
+h2 + h3,
+p + h2 {
   padding-top: 0;
 }
 
@@ -66,11 +56,6 @@ h2 + p {
 
 h3 + p {
   margin: 0;
-}
-
-p + h2,
-h2:first-child {
-  padding-top: 0;
 }
 
 p:last-child {

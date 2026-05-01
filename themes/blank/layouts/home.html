@@ -10,8 +10,8 @@
                 <h1>{{ (.Site.GetPage "/posts").Title }}</h1>
 
                 {{- .Content -}}
-                
-                <ul class="links">
+
+                <ul class="links state-interaction-disabled">
                     {{ range $paginator.Pages }}
                         {{- .Render "summary" -}}
                     {{ end }}
@@ -21,7 +21,11 @@
             </div>
         </main>
 
-        {{- partial "layouts/sidebar.html" . -}}
+        {{- with partial "layouts/sidebar.html" . -}}
+            <aside class="type-larger-click-areas">
+                {{ . }}
+            </aside>
+        {{- end -}}
     </div>
 
 {{ end }}

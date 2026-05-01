@@ -44,8 +44,8 @@ psw:
 logo: 'Website Logo'
 switch-language: '🇨🇿 Přepnout jazyk do češtiny'
 language-switcher: 'Language Switcher'
-switch-theme-dark: 'Switch to dark theme'
-switch-theme-light: 'Switch to light theme'
+toggle-theme-dark: 'Switch to dark theme'
+toggle-theme-light: 'Switch to light theme'
 main-navigation: 'Main Menu'
 
 ## Component: Pagination
