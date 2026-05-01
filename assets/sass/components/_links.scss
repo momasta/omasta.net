@@ -45,20 +45,18 @@
   &.direction-row {
     li {
       display: inline-block;
-      margin: 0;
+      margin: 0 20px 0 0;
     }
 
-    li + li {
-      margin-left: 20px;
+    li:last-of-type {
+      margin-right: 0;
     }
   }
 
   // Sizes
-  &.size-s {
-    &.direction-row {
-      li + li {
-        margin-left: 1rem;
-      }
+  &.size-s &.direction-row {
+    li + li {
+      margin-right: 1rem;
     }
   }
 }
