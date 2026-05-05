@@ -10,9 +10,9 @@
 // 2. Vendors
 
 // 3. Base
-@import 'base/base',
-'base/fonts',
+@import 'base/fonts',
 'base/helpers',
+'base/base',
 'base/typography';
 
 // 4. Layout-related sections
@@ -46,6 +46,6 @@
 // 7. Themes
 @import 'themes/default';
 
-// 3. Base again (place at the end)
+// 8. Media queries from base (place at the end)
 @import 'base/media-queries';
 

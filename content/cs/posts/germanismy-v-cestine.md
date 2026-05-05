@@ -3,7 +3,7 @@ date: 2026-04-14T12:03:55+02:00
 lastmod: 2026-04-14T12:03:55+02:00
 title: "Slova německého původu"
 draft: false
-description: "Moje sbírka germanismů v češtině"
+description: "Moje sbírka germanismů v češtině"
 summary: ""
 keywords:
   - etymologie

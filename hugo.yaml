@@ -3,13 +3,17 @@ title: "Marek Omasta"
 theme:
   - blank
 defaultContentLanguage: "en"
+enableGitInfo: true
 enableRobotsTXT: true
 loadJQuery: false
 printI18nWarnings: true
+printUnusedTemplates: true
+printPathWarnings: true
 removePathAccents: true
 robots: "noai, noimageai"
 sectionPagesMenu: "main"
 timeout: "180s"
+timeZone: "CET"
 titleCaseStyle: "none"
 
 caches:
@@ -42,7 +46,7 @@ mediaTypes:
 
 params:
   dateFormatISO: "2006-01-02T15:04:05"
-  debugEnabled: false
+  debug: false
   deps:
     AIRobots: "https://raw.githubusercontent.com/ai-robots-txt/ai.robots.txt/refs/heads/main/robots.txt"
     AIRobotsHTAccess: "https://raw.githubusercontent.com/ai-robots-txt/ai.robots.txt/refs/heads/main/.htaccess"
@@ -66,6 +70,9 @@ params:
     title: "momasta/omasta.net"
     linkTitle: "GitHub"
     historyPath: "/blame/master"
+  themes:
+    light: "#b8b8b8"
+    dark: "#000000"
   author:
     name: "Marek Omasta"
     email: &email "marek@omasta.net"

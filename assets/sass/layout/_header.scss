@@ -16,11 +16,10 @@ footer :any-link {
     align-items: center;
     flex-wrap: nowrap;
     font-size: 2rem;
-    @include link-neutral;
   }
 
-  :any-link:hover,
-  :any-link:focus-visible {
+  &:hover,
+  &:focus-visible {
     img {
       opacity: 0.6;
     }

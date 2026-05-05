@@ -2,13 +2,14 @@
     Stylesheet: assets/sass/layout/_aside.scss
 */ -}}
 
+{{- /* Secondary Menu */ -}}
 {{ with .Site.Menus.aside }}
     {{- range . -}}
         <div class="card">
             <h2>{{ .Name }}</h2>
 
             {{- with .Children }}
-                <ul class="links state-interaction-disabled">
+                <ul class="links type-links-neutral state-interaction-disabled">
                     {{ range . }}
                         <li>
                             <a href="{{ .URL }}"
@@ -33,17 +34,18 @@
     {{- end -}}
 {{ end }}
 
+{{- /* Tags */ -}}
 {{ $tagsTitle := (.Site.GetPage "/tags").Title }}
 {{ with .Site.Taxonomies.tags }}
     <div class="card">
         <h2>{{ $tagsTitle }}</h2>
 
-        <ul class="links state-interaction-disabled">
+        <ul class="links type-links-neutral state-interaction-disabled">
             {{ range . }}
                 <li>
                     {{ with .Page }}
-                        {{ partial "components/tag.html" (dict "context" . "lineBreak" false) }}
-                    {{ end }}
+                        {{- partial "components/tag.html" (dict "context" . "lineBreak" false) -}}
+                    {{ end -}}
                     <span class="size-s">({{- .Count }})<br></span>
                 </li>
             {{ end }}
@@ -51,6 +53,7 @@
     </div>
 {{- end }}
 
+{{- /* Latest Posts */ -}}
 {{- if and (where .Site.RegularPages "Type" "posts") (not .IsHome) -}}
     <div class="card">
         <h2>{{ T "latest-posts" }}</h2>
@@ -60,7 +63,7 @@
             {{ end }}
         </ul>
 
-        <ul class="links state-interaction-disabled">
+        <ul class="links type-links-neutral state-interaction-disabled">
             <li>
                 <a href="{{ .Site.Home.RelPermalink }}">
                     {{ (.Site.GetPage "/posts").LinkTitle }}…

@@ -1,7 +1,6 @@
 ---
 build:
   list: never
-  render: never
 title: "Debug"
 draft: true
 description: ""

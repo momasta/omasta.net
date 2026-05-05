@@ -1,6 +1,6 @@
 {{- /* Debug Info */ -}}
 
-{{- if (and site.Params.debugEnabled hugo.IsServer) -}}
+{{- if (and site.Params.debug hugo.IsServer) -}}
     <script>
         if (!window.location.hash) {
             const element = document.getElementById('header');

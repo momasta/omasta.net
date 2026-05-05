@@ -1,5 +1,5 @@
-const themeColorLight = '#b8b8b8';
-const themeColorDark = '#000000';
+const themeColorLight = '{{ .Site.Params.themes.light }}';
+const themeColorDark = '{{ .Site.Params.themes.dark }}';
 
 const themePreference = () => {
     const storedTheme = localStorage.getItem('theme');
@@ -11,8 +11,8 @@ const themePreference = () => {
 document.addEventListener('DOMContentLoaded', () => {
     const html = document.documentElement;
     const metaThemeColor = document.querySelectorAll('meta[name="theme-color"]');
-    const toggleThemeLight = document.querySelector('#toggle-theme-light');
-    const toggleThemeDark = document.querySelector('#toggle-theme-dark');
+    const toggleThemeLight = document.querySelector('#theme-light');
+    const toggleThemeDark = document.querySelector('#theme-dark');
 
     const setTheme = (theme) => {
         html.classList.remove('theme-dark', 'theme-light');

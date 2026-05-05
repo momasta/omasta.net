@@ -14,7 +14,7 @@
                         {{ .Content -}}
 
                         {{- if .Pages }}
-                            <ul class="links state-interaction-disabled">
+                            <ul class="links type-links-neutral state-interaction-disabled">
                                 {{- range .Paginator.Pages -}}
                                     {{- .Render "summary" -}}
                                 {{- end -}}
@@ -26,7 +26,7 @@
         </main>
 
         {{- with partial "layouts/sidebar.html" . -}}
-            <aside class="type-larger-click-areas">
+            <aside class="type-links-neutral type-larger-click-areas">
                 {{ . }}
             </aside>
         {{- end -}}

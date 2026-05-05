@@ -6,14 +6,16 @@ html {
   overflow-y: scroll;
   transition: background-color var(--ease);
   text-rendering: optimizeLegibility;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
   scroll-behavior: smooth;
+  touch-action: manipulation;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
   margin: 1rem 0.5rem;
-  touch-action: manipulation;
 }
 
 // Styles for focusable elements
@@ -25,27 +27,13 @@ button {
 }
 
 :focus:not(input) {
-  outline-color: var(--color-focus);
+  outline-color: $color-focus;
   outline-offset: 5px;
 }
 
 // Keyboard focus only - hide outline invoked by mouse
 :focus:not(:focus-visible) {
   outline: none;
-}
-
-/**
- * Basic styles for links
- */
-:any-link {
-  color: var(--color-brand-text);
-  text-decoration: underline;
-  -webkit-tap-highlight-color: transparent;
-}
-
-:any-link:hover,
-:any-link:focus-visible {
-  color: var(--color-hover);
 }
 
 ul {

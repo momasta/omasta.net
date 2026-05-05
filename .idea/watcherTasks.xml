@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectTasksOptions" suppressed-tasks="SCSS">
-    <TaskOptions isEnabled="true">
+    <TaskOptions isEnabled="false">
       <option name="arguments" value="--Werror --also-check-css --also-check-svg --skip-non-css --skip-non-html --skip-non-svg public/" />
       <option name="checkSyntaxErrors" value="false" />
       <option name="description" />

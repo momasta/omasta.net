@@ -1,4 +1,6 @@
 ---
+build:
+  list: never
 title: "Posts"
 linkTitle: All Posts
 outputs:

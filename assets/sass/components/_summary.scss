@@ -17,14 +17,10 @@
 
   time {
     font-size: rem(14px);
+    color: var(--color-text-light);
   }
 }
 
 .summary + .summary {
   margin-top: 20px;
-}
-
-.tag + time {
-  color: var(--color-text-light);
-  margin-left: 0.5em;
 }

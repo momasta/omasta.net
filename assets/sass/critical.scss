@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@import 'abstracts/variables';
+
+.bar button {
+  display: none;
+}
+
+.loaded {
+  --ease: #{$ease};
+  --transitions-a: #{$transitions-a};
+
+  #theme-light {
+    display: var(--btn-light, flex);
+  }
+
+  #theme-dark {
+    display: var(--btn-dark, none);
+  }
+}
+
+:root {
+  color-scheme: dark light;
+}
+
+html {
+  @include theme-dark;
+
+  box-sizing: border-box; /* Set up a decent box model on the root element */
+  font: normal 16px / 1.4 $text-font-stack;
+  color: var(--color-text);
+  background-color: var(--color-site-bg);
+}
+
+.theme-light {
+  @include theme-light;
+}
+
+@media (prefers-color-scheme: light) {
+  html:not(.theme-dark) {
+    @include theme-light;
+  }
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// Basic styles for links
+:any-link {
+  color: var(--color-brand-text);
+  -webkit-tap-highlight-color: transparent;
+}
+
+:any-link:hover,
+:any-link:focus-visible {
+  color: $color-hover;
+}
+
+.bar {
+  height: 34px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+#middle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+aside {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 24px 16px;
+  background-color: var(--color-content-bg);
+  border-radius: 1rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+.logo img {
+  width: 45px;
+  height: 64px;
+}
+
+.icon svg {
+  fill: var(--color-text-light);
+}
+    

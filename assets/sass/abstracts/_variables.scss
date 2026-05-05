@@ -2,10 +2,42 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+$color-white-bg: #fff;
+$color-black-bg: #222;
+$color-grey-dark: #454545;
+$color-grey-light: #b8b8b8;
+$color-focus: #306e95bf;
+$color-hover: var(--color-brand-light);
+
+$ease: 260ms cubic-bezier(0.4, 0, 0.25, 1);
+$transitions-a: outline-color var(--ease), outline-offset var(--ease), color var(--ease);
+
+@mixin theme-dark {
+  color-scheme: dark;
+  --color-text: #{$color-white-bg};
+  --color-text-light: #{$color-grey-light};
+  --color-brand-text: #8fd2ff;
+  --color-brand-light: #47B6FF;
+  --color-site-bg: #000;
+  --color-content-bg: #{$color-black-bg};
+}
+
+@mixin theme-light {
+  color-scheme: light;
+  --color-text: #{$color-black-bg};
+  --color-text-light: #{$color-grey-dark};
+  --color-brand-text: #004370;
+  --color-brand-light: #007acc;
+  --color-site-bg: #{$color-grey-light};
+  --color-content-bg: #{$color-white-bg};
+
+  --btn-light: none;
+  --btn-dark: flex;
+}
 
 /// Regular font family
 /// @type List
-/// See Critical CSS in head.html
+$text-font-stack: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List

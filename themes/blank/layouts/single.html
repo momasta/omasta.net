@@ -48,7 +48,7 @@
                     {{ end }}
 
                     {{ if .Pages }}
-                        <ul class="links direction-row size-s state-interaction-disabled">
+                        <ul class="links type-links-neutral direction-row size-s state-interaction-disabled">
                             {{- range .Paginator.Pages -}}
                                 {{- .Render "summary-simple" -}}
                             {{- end -}}
@@ -90,7 +90,7 @@
         </main>
 
         {{- with partial "layouts/sidebar.html" . -}}
-            <aside class="type-larger-click-areas">
+            <aside class="type-links-neutral type-larger-click-areas">
                 {{ . }}
             </aside>
         {{- end -}}

@@ -36,4 +36,4 @@ Disallow: *
 DisallowAITraining: /
 
 # https://baccyflap.com/res/robots#robots
-{{ partial "robots-baccyflap.txt" . }}
+{{ partialCached "robots-baccyflap.txt" . }}

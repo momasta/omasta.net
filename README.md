@@ -25,11 +25,7 @@ My Personal Website
 * Optimised for Google's [PageSpeed Insights](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fomasta.net%2F)
 
 ## Dependencies
-- Hugo
-  - Builds the site.
-  - Installed locally as a CLI tool.
-  - See [gohugoio/hugo on GitHub – Installation](https://github.com/gohugoio/hugo?tab=readme-ov-file#installation)
-- Updated automatically, see `params.deps` in [config.yaml](config.yaml):
+- Updated automatically, see `params.deps` in [hugo.yaml](hugo.yaml):
   - [PhotoSwipe](https://github.com/dimsemenov/PhotoSwipe)
   - [ai-robots-txt/ai.robots.txt](https://github.com/ai-robots-txt/ai.robots.txt)
 - robots.txt by baccyflap
@@ -37,7 +33,7 @@ My Personal Website
     - [baccyflap.com/res/robots](https://baccyflap.com/res/robots#robots)
 
 ## Installation
-* [Install Hugo](https://github.com/gohugoio/hugo?tab=readme-ov-file#installation)
+* [Install Hugo](https://gohugo.io/installation/)
 
 * Clone this repository:  
   ```Shell
@@ -56,7 +52,7 @@ My Personal Website
 
 * Build the site:  
   ```Shell
-  killall hugo; hugo --minify --cleanDestinationDir --gc
+  killall hugo; hugo --minify --cleanDestinationDir
   ```
 
 ## Image Gallery

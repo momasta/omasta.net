@@ -2,6 +2,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
+    {{- /* Make ErrorDocuments usable for subdomains */ -}}
+    {{ if eq .Type "ErrorDocument" }}
+        <base href="{{ .Site.BaseURL }}">
+    {{ end }}
+
     {{- /* Site Information */ -}}
 
     <title>
@@ -27,10 +32,6 @@
         <meta name="robots" content="{{ . }}">
     {{- end -}}
 
-    {{ if eq .Type "ErrorDocument" }}
-        <base href="{{ .Site.BaseURL }}">
-    {{ end }}
-
     {{- /* Stylesheet */ -}}
     {{ with resources.Get "sass/main.scss" }}
         {{ $options := dict
@@ -41,11 +42,11 @@
         {{ with . | css.Sass $options }}
             {{ if hugo.IsServer }}
                 {{ with . }}
-                    <link rel="stylesheet" href="{{ .Permalink }}">
+                    <link rel="stylesheet" href="{{ .RelPermalink }}">
                 {{ end }}
             {{ else }}
                 {{ with . | fingerprint }}
-                    <link rel="stylesheet" href="{{ .Permalink }}">
+                    <link rel="stylesheet" href="{{ .RelPermalink }}">
                 {{ end }}
             {{ end }}
         {{ end }}
@@ -108,15 +109,13 @@
         <link rel="icon" href="{{ . }}" sizes="192x192" type="image/png">
     {{ end }}
 
+    {{- /* Apple-Specific Meta Tags */ -}}
+    <meta name="theme-color" content="{{ .Site.Params.themes.dark }}" media="(prefers-color-scheme: dark)">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
     {{ with .Site.Params.icons.appleTouch }}
         <link rel="apple-touch-icon" href="{{ . }}">
     {{ end }}
-
-    {{- /* Apple-Specific Meta Tags */ -}}
-    <meta name="theme-color" content="#b8b8b8" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
 
     {{- /* OG Tags */ -}}
     {{ partial "opengraph.html" . }}
@@ -124,132 +123,29 @@
     {{- /*  Mastodon  */ -}}
     {{ with .Site.Params.author.profiles.Mastodon }}
         <link rel="me" href="{{ . }}">
-        {{ $mastodonHandle := replaceRE "https?://([^/]+)/(@.+)/?" "$2@$1" . }}
-        <meta name="fediverse:creator" content="{{ $mastodonHandle }}">
+        {{ with replaceRE "https?://([^/]+)/(@.+)/?" "$2@$1" . }}
+            <meta name="fediverse:creator" content="{{ . }}">
+        {{ end }}
     {{ end }}
 
     {{- /*  Schema.org JSON-LD */ -}}
     {{ partial "layouts/head/schema-website.html" . }}
 
     {{- /* Critical JS (inline) - Perform before rendering page */ -}}
+    {{- /* Placed before CSS to prevent FUOC */ -}}
     {{ with resources.Get "js/_critical.js" }}
         <script>{{ .Content | safeJS }}</script>
     {{ end }}
 
     {{- /* Critical CSS */ -}}
-    <style>
-        #toggle-theme-dark,
-        body:not(.loaded) [id^=toggle-theme-] {
-            display: none;
-        }
+    {{ with resources.Get "sass/critical.scss" }}
+        {{ $options := dict
+            "outputStyle" "compressed"
+        }}
+        {{ with . | css.Sass $options }}
+            <style>{{ .Content | safeCSS }}</style>
+        {{ end }}
+    {{ end }}
 
-        :root {
-            color-scheme: dark light;
-            --color-white-bg: #fff;
-            --color-black-bg: #222;
-            --color-grey-dark: #454545;
-            --color-grey-light: #b8b8b8;
-            --color-focus: #306e95bf;
-            --color-hover: var(--color-brand-light);
-            --ease: 260ms cubic-bezier(0.4, 0, 0.25, 1);
-            --transitions-a: outline-color var(--ease), outline-offset var(--ease), color var(--ease)
-        }
-
-        html {
-            color-scheme: dark;
-            --color-text: var(--color-white-bg);
-            --color-text-light: var(--color-grey-light);
-            --color-brand-text: #8fd2ff;
-            --color-brand-light: #47B6FF;
-            --color-site-bg: #000;
-            --color-content-bg: var(--color-black-bg);
-
-            box-sizing: border-box; /* Set up a decent box model on the root element */
-            font: normal 16px / 1.4 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            color: var(--color-text);
-            background-color: var(--color-site-bg);
-        }
-
-        html.theme-light {
-            color-scheme: light;
-            --color-text: var(--color-black-bg);
-            --color-text-light: var(--color-grey-dark);
-            --color-brand-text: #004370;
-            --color-brand-light: #007acc;
-            --color-site-bg: var(--color-grey-light);
-            --color-content-bg: var(--color-white-bg)
-        }
-
-        html.theme-light #toggle-theme-dark { display: flex; }
-        html.theme-light #toggle-theme-light { display: none; }
-
-        @media (prefers-color-scheme: light) {
-            html:not(.theme-dark) {
-                color-scheme: light;
-                --color-text: var(--color-black-bg);
-                --color-text-light: var(--color-grey-dark);
-                --color-brand-text: #004370;
-                --color-brand-light: #007acc;
-                --color-site-bg: var(--color-grey-light);
-                --color-content-bg: var(--color-white-bg)
-            }
-
-            html:not(.theme-dark) #toggle-theme-dark { display: flex; }
-            html:not(.theme-dark) #toggle-theme-light { display: none; }
-        }
-
-        /**
-         * Make all elements from the DOM inherit from the parent box-sizing
-         * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
-         */
-        *,
-        *::before,
-        *::after {
-            box-sizing: inherit;
-        }
-
-        body:not(.loaded) * {
-            transition: none !important;
-        }
-
-        #content {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin: 0 auto;
-            max-width: 670px;
-        }
-
-        #middle {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            gap: 1rem;
-        }
-        
-        aside {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
-            gap: 1rem;
-        }
-
-        .card {
-            padding: 24px 16px;
-            background-color: var(--color-content-bg);
-            border-radius: 1rem;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        .logo img {
-            width: 45px;
-            height: 64px;
-        }
-
-        .icon svg {
-            fill: var(--color-text-light);
-        }
-    </style>
+    {{- /* Non-render-blocking scripts are placed before </body>, see baseof.html */ -}}
 </head>

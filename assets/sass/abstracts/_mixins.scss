@@ -1,14 +1,3 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
-
-// Apply base text colour to links
-%link-neutral-base {
-  color: inherit;
-}
-
-@mixin link-neutral {
-  & {
-    @extend %link-neutral-base;
-  }
-}

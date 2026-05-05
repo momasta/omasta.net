@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Nu Markup Checker" type="ShConfigurationType" focusToolWindowBeforeRun="true" singleton="false">
-    <option name="SCRIPT_TEXT" value="vnu --Werror --also-check-css --also-check-svg public/**/*.{css,html,svg}" />
+  <configuration default="false" name="Nu Markup Checker" type="ShConfigurationType" focusToolWindowBeforeRun="true" singleton="true">
+    <option name="SCRIPT_TEXT" value="vnu --Werror --also-check-css --also-check-svg public/**/*.{css,html,svg} 2&gt;&amp;1 | sed -E 's/^&quot;([^&quot;]+)&quot;:([0-9]+)\.([0-9]+)[^:]*:/\1:\2:\3:/'" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="" />
     <option name="SCRIPT_OPTIONS" value="" />

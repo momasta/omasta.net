@@ -5,22 +5,22 @@
 <header id="header" class="type-larger-click-areas state-interaction-disabled">
     <div class="bar">
         <a href="#middle" class="type-focus-to-unhide state-hidden">{{ T "skip-to-main-content" }}</a>
-        
+
         <button class="type-plain size-s"
-                id="toggle-theme-dark"
+                id="theme-dark"
                 title="{{ T "toggle-theme-dark" }}"
                 type="button">
 			<span class="icon">
-				{{ readFile "static/images/icons/moon.svg" | safeHTML }}
+                {{- partial "components/svg.html" "moon.svg" -}}
 			</span>
         </button>
 
         <button class="type-plain size-s"
-                id="toggle-theme-light"
+                id="theme-light"
                 title="{{ T "toggle-theme-light" }}"
                 type="button">
 			<span class="icon">
-				{{ readFile "static/images/icons/sun.svg" | safeHTML }}
+                {{- partial "components/svg.html" "sun.svg" -}}
 			</span>
         </button>
 
@@ -37,7 +37,7 @@
     </div>
 
     <div class="card">
-        <div class="logo">
+        <div class="logo type-links-neutral">
             <a href="{{ .Site.Home.RelPermalink }}">
                 {{- with .Site.Params.logo -}}
                     <img src="{{ .DPR1 | absURL }}"
@@ -52,9 +52,9 @@
 
         {{ with .Site.Menus.main }}
             <nav aria-label="{{ T "main-navigation" }}">
-                <ul class="links direction-row state-interaction-disabled">
+                <ul class="links type-links-neutral direction-row state-interaction-disabled">
                     {{- range . -}}
-                        {{- if and .Page (not .Page.Sitemap.Disable) -}}
+                        {{- if .Page -}}
                             <li{{ if .Page.IsMenuCurrent .Menu . }} aria-current="page"{{ end }}>
                                 <a href="{{ .URL | relURL }}">{{ .Name }}</a>
                             </li>

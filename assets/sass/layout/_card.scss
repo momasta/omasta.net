@@ -1,6 +1,6 @@
 .card {
   width: 100%;
-  // See Critical CSS in head.html: margin and padding
+  // See critical.scss: margin and padding
 
   display: flex;
   flex-direction: column;
@@ -16,10 +16,6 @@ header .card {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-main .card {
-  padding-bottom: 2rem;
 }
 
 @mixin mq-min-medium-card {

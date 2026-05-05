@@ -2,7 +2,6 @@
   display: flex;
   padding: 0 0.5rem 0.5rem;
   align-items: center;
-  height: 34px; // Fixed height to prevent jumping
 
   header & {
     justify-content: flex-end;
@@ -15,7 +14,7 @@
 
   :any-link:hover,
   :any-link:focus-visible {
-    color: var(--color-hover);
+    color: $color-hover;
   }
 
   button {

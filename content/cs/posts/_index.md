@@ -1,4 +1,6 @@
 ---
+build:
+  list: never
 title: "Články"
 linkTitle: Všechny články
 outputs:

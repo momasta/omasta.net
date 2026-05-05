@@ -8,7 +8,7 @@ button {
 
   &:hover svg,
   &:focus-visible svg {
-    fill: var(--color-hover);
+    fill: $color-hover;
   }
 
   &.type-plain {
@@ -19,7 +19,7 @@ button {
 }
 
 // Special hover colour for the sun icon
-#toggle-theme-light {
+#theme-light {
   &:hover svg,
   &:focus-visible svg {
     fill: #f9e72a;

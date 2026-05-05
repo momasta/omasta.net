@@ -1,0 +1,6 @@
+{{- $path := printf "images/svg/%s" . }}
+{{- with resources.Get $path | minify -}}
+    {{- .Content | safeHTML -}}
+{{- else }}
+    {{- errorf "The 'svg' partial was unable to find %s" $path }}
+{{- end -}}

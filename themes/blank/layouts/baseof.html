@@ -12,22 +12,28 @@
 
 <div id="content">
     {{ block "main" . }}{{ end }}
-    {{- partial "layouts/footer.html" . -}}
+    {{- partialCached "layouts/footer.html" . -}}
 </div>
 
-{{ $applyThemeJS := resources.Get "js/apply-theme.js" | minify | fingerprint -}}
-<script src="{{ $applyThemeJS.Permalink }}" defer></script>
+{{- /* Non-render-blocking scripts */ -}}
+{{ with resources.Get "js/apply-theme.js" -}}
+    {{ with resources.ExecuteAsTemplate "js/apply-theme.js" $ . | minify | fingerprint }}
+        <script src="{{ .RelPermalink }}" defer></script>
+    {{ end }}
+{{ end }}
 
-{{ $copyHeadingLinkJS := resources.Get "js/copy-heading-link.js" | minify | fingerprint -}}
-<script src="{{ $copyHeadingLinkJS.RelPermalink }}" defer></script>
+{{ with resources.Get "js/copy-heading-link.js" | minify | fingerprint -}}
+    <script src="{{ .RelPermalink }}" defer></script>
+{{ end }}
 
 {{- /* PhotosSwipe CSS and JS */ -}}
 {{- partial "layouts/head/photoswipe.html" . -}}
 
 {{- /* Gallery Filter JS */ -}}
 {{- if .Page.Store.Get "galleryFilterUsed" -}}
-    {{- $galleryFilterJS := resources.Get "js/gallery-filter.js" | minify | fingerprint -}}
-    <script src="{{ $galleryFilterJS.RelPermalink }}" defer></script>
+    {{- with resources.Get "js/gallery-filter.js" | minify | fingerprint -}}
+        <script src="{{ .RelPermalink }}" defer></script>
+    {{ end }}
 {{- end -}}
 
 </body>

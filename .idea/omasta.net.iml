@@ -9,6 +9,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/assets/images" />
     </content>
+    <content url="file://$MODULE_DIR$/assets/images/svg" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
