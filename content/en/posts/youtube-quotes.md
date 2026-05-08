@@ -8,7 +8,7 @@ keywords:
     - captions
     - funny
     - YT
-lastmod: 2026-04-14T13:35:21+02:00
+lastmod: 2026-05-08T15:16:42+02:00
 mainContentID: "ashens"
 slug:
 tags:
@@ -61,6 +61,8 @@ Might be useful to people who run clips or compilation channels.
       [https://youtu.be/Ufn2dxojSF8?t=1158](https://youtu.be/Ufn2dxojSF8?t=1158 'We Tried the CHEAPEST Alcohol in the World - YouTube')
     * We Tried Japanese Game Show Challenges  
       [https://youtu.be/NgrgKwP0Ndo?t=1514](https://youtu.be/NgrgKwP0Ndo?t=1514 'We Tried Japanese Game Show Challenges - YouTube')
+* Aussies taste Božkov  
+[https://youtu.be/phUihY3Ddw4?t=1750](https://youtu.be/phUihY3Ddw4?t=1750 'Drinking the WORST Alcohol in Existence - YouTube')  
 
 ## Filthy Frank
 [TVFilthyFrank](https://www.youtube.com/@TVFilthyFrank/videos 'TVFilthyFrank - YouTube'), [DizastaMusic](https://www.youtube.com/@DizastaMusic/videos 'DizastaMusic - YouTube'), [TooDamnFilthy](https://www.youtube.com/@TooDamnFilthy/videos 'TooDamnFilthy - YouTube')
@@ -257,5 +259,5 @@ measly life of reviewing food on YouTube.
 * The music industry is nothing but country and rap music with that same dumbass trap beat…  
   (BROJANGSTER, June 2019)  
   [https://youtu.be/wdPrdU8cDtg](https://youtu.be/wdPrdU8cDtg '2010s Nostalgia that WILL make you CRY - YouTube')  
-  
-  
+* Limmy: Anti-English hatred in Glasgow  
+[https://youtu.be/gXaiD0PGlzc?t=64](https://youtu.be/gXaiD0PGlzc?t=64 'Limmy’s Guide to Surviving Glasgow as an English Person - YouTube')  

@@ -13,7 +13,7 @@ keywords:
     - British dialect
     - funny
     - wiki
-lastmod: 2026-04-14T13:35:21+02:00
+lastmod: 2026-05-08T15:16:42+02:00
 mainContentID: table-of-contents
 slug:
 tags:
@@ -32,8 +32,8 @@ I watch them for the comedy.
   
 {{< gallery "tech-spurt" "type-grid size-s" "name" >}}
 
-I think I've watched every episode of&nbsp;[Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70 'Tech Spurt Weekly - YouTube') (70&nbsp;hours&nbsp;11&nbsp;minutes),  
-along with other vids, and&nbsp;every single [Recombu&nbsp;Quickie](https://youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D 'Recombu Quickies - YouTube')&nbsp;(2&nbsp;hours&nbsp;45&nbsp;minutes),  
+I think I've watched every episode of&nbsp;[Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70 'Tech Spurt Weekly - YouTube') (71h&nbsp;7m),  
+along with other vids, and&nbsp;every single [Recombu&nbsp;Quickie](https://youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D 'Recombu Quickies - YouTube')&nbsp;(2h&nbsp;45m),  
 from a&nbsp;review site he&nbsp;used to&nbsp;work&nbsp;for.  
 
 Below, you'll find bits I found funny or worth sharing:  
@@ -489,6 +489,8 @@ of the worst tech news show on this entire godawful planet.
 [https://youtu.be/7DQ0OERK1_U?t=757](https://youtu.be/7DQ0OERK1_U?t=757 "What's up with the Xiaomi 15 Ultra? | TSW224 - YouTube")  
 * Dodgy Thumbnail of the Week  
   [https://youtu.be/61SKo3YSmKc?t=786](https://youtu.be/61SKo3YSmKc?t=786 "iPhone 17e: What's Changed, Worth The Money? | TSW269 - YouTube")
+* Tech Spurt Weekly Jingle – Club Remix  
+[https://youtu.be/sDPYsvA-T_A?t=644](https://youtu.be/sDPYsvA-T_A?t=644 "Xiaomi's Breaking Rules With Its Next Smartphones | 17T Series Leaks | TSW276 - YouTube")  
   
 ### Viewer Comments
 * **Viewer:**&nbsp;What do you think of it you bald bastard ye?  
@@ -1309,7 +1311,7 @@ and&nbsp;then attacking the fridge because I&nbsp;thought it was an alien spacec
 (Mushrooms, retrospective journey)  
 [https://youtu.be/iANjeswccdI?t=731](https://youtu.be/iANjeswccdI?t=731 'Xiaomi 13 Ultra | TSW146 - YouTube')  
 * JerryRigEverything, eat your cock out.  
-  [https://youtu.be/9pf2Pzq6Du4?t=494](https://youtu.be/9pf2Pzq6Du4?t=516 'Google Pixel Watch 2 | What To Expect | TSW170 - YouTube')
+[https://youtu.be/9pf2Pzq6Du4?t=494](https://youtu.be/9pf2Pzq6Du4?t=494 'Google Pixel Watch 2 | What To Expect | TSW170 - YouTube')  
 * MediaTek randomly brought Tony Hawk on stage.  
   Tony Hawk!  
   The Tony Hawk.  

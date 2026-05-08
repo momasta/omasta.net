@@ -1,6 +1,6 @@
 ---
 date: 2026-04-14T12:03:55+02:00
-lastmod: 2026-04-14T12:03:55+02:00
+lastmod: 2026-05-08T15:16:42+02:00
 title: "GeoGuessr Tips"
 draft: false
 description: "Here's another export from my notes, a collection of clues I found worth learning for guessing countries and their regions in GeoGuessr."
@@ -69,7 +69,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Africa
     * 🇿🇦 South Africa: +27
   * Europe
-    * 🇬🇧UK
+    * 🇬🇧 UK
       * Northern Ireland: +44 028
       * London: +44 020
       * Birmingham: +44 121

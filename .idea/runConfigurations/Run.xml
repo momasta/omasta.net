@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Run" type="ShConfigurationType" activateToolWindowBeforeRun="false">
-    <option name="SCRIPT_TEXT" value="killall hugo; hugo server -DO --minify --bind 0.0.0.0 --baseURL=&quot;http://$(hostname -f):1313&quot; --port 1313" />
+    <option name="SCRIPT_TEXT" value="killall hugo; hugo server -D --minify --bind 0.0.0.0 --baseURL=&quot;http://$(hostname -f):1313&quot; --port 1313" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="" />
     <option name="SCRIPT_OPTIONS" value="" />

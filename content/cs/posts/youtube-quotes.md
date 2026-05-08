@@ -12,7 +12,7 @@ keywords:
     - přepisy videí
     - titulky
     - humor
-lastmod: 2026-04-14T13:35:21+02:00
+lastmod: 2026-05-08T15:16:42+02:00
 mainContentID: "carymaryfuck"
 slug: hlasky-z-youtube
 tags:
@@ -168,7 +168,7 @@ Minecraft – Part 1 – Enderman zabíjí,creeper vybouchává!
   [https://youtu.be/GSaCAP2GgDs](https://youtu.be/GSaCAP2GgDs 'Práce tě musí bavit! Cožeeee? Největší mýtus současnosti... - YouTube')
 * Já jsem nepil  
 (Notor z Brna)  
-  ~~[https://youtu.be/TCgx9Spef-Q?t=2m22s](https://youtu.be/TCgx9Spef-Q?t=2m22s '- YouTube')~~  
+  ~~[https://youtu.be/TCgx9Spef-Q?t=2m22s](https://youtu.be/TCgx9Spef-Q?t=2m22s 'Notor z Brna- YouTube')~~  
 * To je prostě festival hnusu.  
 (Michael Rostock-Poplar, Den D, Shark Tank)  
   [https://youtu.be/UVBckwj27uU?t=127](https://youtu.be/UVBckwj27uU?t=127 'exoti - YouTube')
