@@ -45,6 +45,10 @@ h3 + p {
   margin: 0;
 }
 
+.links + .article-content {
+  margin-top: 20px;
+}
+
 // More margin for multi-line list items
 
 li br ~ a:last-child {

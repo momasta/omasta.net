@@ -28,10 +28,11 @@
         <meta name="keywords" content="{{ delimit . ", " }}">
     {{- end -}}
 
-    {{- with .Params.robots -}}
-        <meta name="robots" content="{{ . }}">
+    {{- /* Additional Metadata */ -}}
+    {{- range .Site.Params.meta -}}
+        <meta name="{{ .name }}" content="{{ .content }}">
     {{- end -}}
-
+    
     {{- /* Stylesheet */ -}}
     {{ with resources.Get "sass/main.scss" }}
         {{ $options := dict

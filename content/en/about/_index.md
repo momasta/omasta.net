@@ -13,3 +13,5 @@ tags: []
 translationKey: ""
 weight: 3
 ---
+
+{{% gravatar "marek@omasta.net" %}}

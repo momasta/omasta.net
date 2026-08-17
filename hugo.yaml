@@ -10,10 +10,9 @@ printI18nWarnings: true
 printUnusedTemplates: true
 printPathWarnings: true
 removePathAccents: true
-robots: "noai, noimageai"
 sectionPagesMenu: "main"
 timeout: "180s"
-timeZone: "CET"
+timeZone: "Europe/Prague"
 titleCaseStyle: "none"
 
 caches:
@@ -24,9 +23,9 @@ minify:
   minifyOutput: true
   tdewolff:
     html:
-      KeepSpecialComments: true
       keepComments: false
       keepQuotes: true
+      keepSpecialComments: true
       keepWhitespace: false
     xml:
       keepWhitespace: false
@@ -65,6 +64,13 @@ params:
   logo:
     DPR1: "/images/profile-picture.webp"
     DPR2: "/images/profile-picture@2x.webp"
+  meta:
+    - name: "CCBot"
+      content: "nofollow"
+    - name: "robots"
+      content: "noai, noimageai"
+    - name: "tdm-reservation"
+      content: "1"
   repo:
     URL: "https://github.com/momasta/omasta.net"
     title: "momasta/omasta.net"
@@ -139,7 +145,7 @@ languages:
         - name: "Contact"
         - name: "Messenger"
           params:
-            rel: "external"
+            rel: "external me"
             value: "omastik"
           parent: "Contact"
           title: "Text me on Facebook Messenger"
@@ -147,7 +153,7 @@ languages:
           weight: 1
         - name: "Email"
           params:
-            rel: "external"
+            rel: "external me"
             value: *email
           parent: "Contact"
           url: *emailURL
@@ -157,7 +163,7 @@ languages:
         - name: "Unsplash"
           params:
             description: "My stock photos, free to use"
-            rel: "external"
+            rel: "external me"
           parent: "My Content"
           url: *unsplash
           weight: 2
@@ -176,7 +182,7 @@ languages:
           identifier: "Contact"
         - name: "Messenger"
           params:
-            rel: "external"
+            rel: "external me"
             value: "omastik"
           parent: "Contact"
           title: "Napište mi na Messengeru"
@@ -184,7 +190,7 @@ languages:
           weight: 1
         - name: "E-mail"
           params:
-            rel: "external"
+            rel: "external me"
             value: *email
           parent: "Contact"
           url: *emailURL
@@ -195,7 +201,7 @@ languages:
         - name: "Unsplash"
           params:
             description: "Moje fotky ve fotobance, zdarma k použití"
-            rel: "external"
+            rel: "external me"
           parent: "My Content"
           url: *unsplash
           weight: 2

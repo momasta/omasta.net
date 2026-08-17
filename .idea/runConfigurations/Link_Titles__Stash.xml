@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Link Titles: Stash" type="ShConfigurationType">
-    <option name="SCRIPT_TEXT" value="venv; python3 update_link_titles.py --stash content/en &amp;&amp; python3 update_link_titles.py --stash --lang=cs content/cs" />
+    <option name="SCRIPT_TEXT" value="venv; rm resources/_gen/update_link_titles_cache* &amp;&amp; python3 update_link_titles.py --stash content/en &amp;&amp; python3 update_link_titles.py --stash --lang=cs content/cs" />
     <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
     <option name="SCRIPT_PATH" value="" />
     <option name="SCRIPT_OPTIONS" value="" />

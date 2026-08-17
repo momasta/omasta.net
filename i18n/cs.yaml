@@ -1,5 +1,10 @@
 # {{ T "" }}
 
+lang:
+  in:
+    en: 'v angličtině'
+profile-picture: "Profilový obrázek"
+
 ## Page: RSS
 recent-posts: 'Poslední články ze stránky {{ .title }}'
 
@@ -59,6 +64,9 @@ next: 'Další'
 
 ## Component: Sidebar
 latest-posts: 'Poslední články'
+
+## Component: Summary
+more-posts: 'Další články'
 
 ## Component: Pagination
 no-posts-yet: 'Zatím jsem žádné nezveřejnil.'

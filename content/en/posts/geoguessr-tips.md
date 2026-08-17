@@ -52,7 +52,7 @@ You won't find any car, camera generation, or copyright meta here.
 
 ## See Also
 * [Original note in Apple Notes](https://icloud.com/notes/03cQpzJ-vmTXgr6Gx-R1yB9MA 'Notes - Apple iCloud')
-* [My GeoGuessr Profile](https://geoguessr.com/user/5d57f24473c0052740b499fd 'Marek Omasta on GeoGuessr')
+* [My GeoGuessr Profile](https://geoguessr.com/user/5d57f24473c0052740b499fd?rel=me 'Marek Omasta on GeoGuessr')
 * [Tom Davies (GeoWizard) on GeoGuessr](https://www.geoguessr.com/user/5557073d2bfa31229cf60150 'Tom Davies - Person - GeoGuessr')
 
 ## Keyboard Shortcuts

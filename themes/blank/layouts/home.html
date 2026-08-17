@@ -4,20 +4,33 @@
 
     <div id="middle" class="direction-row">
         <main>
-            {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
-
             <div class="card">
                 <h1>{{ (.Site.GetPage "/posts").Title }}</h1>
 
-                {{- .Content -}}
+                {{ $posts := where .Site.RegularPages "Type" "posts" }}
+
+                {{ if $posts }}
+                    <p>
+                        {{- range .Translations | default site.Home.Translations -}}
+                            {{ T "more-posts" }}
+                            <a href="{{ .RelPermalink }}" hreflang="{{ .Language.Locale }}">
+                                {{- T (print "lang.in." .Language) -}}
+                            </a>
+                        {{- end -}}
+                    </p>
+                {{ end }}
 
                 <ul class="links type-links-neutral state-interaction-disabled">
-                    {{ range $paginator.Pages }}
+                    {{ range (.Paginate $posts 7).Pages }}
                         {{- .Render "summary" -}}
                     {{ end }}
                 </ul>
 
-                {{- partial "components/pagination.html" . -}}
+                {{ partial "pagination.html" . }}
+
+                <div class="article-content">
+                    {{- .Content -}}
+                </div>
             </div>
         </main>
 

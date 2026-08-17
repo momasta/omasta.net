@@ -1,7 +1,14 @@
 {{- /* https://gohugo.io/render-hooks/links/ */ -}}
 
 {{- $URL := urls.Parse .Destination -}}
-<a href="{{- .Destination | safeURL -}}"
+{{- $safeURL := .Destination | replaceRE "[?&]rel=me" "" | safeURL -}}
+
+{{- $me:= "" -}}
+{{ if strings.Contains $URL "rel=me" }}
+    {{ $me = " me" }}
+{{- end -}}
+
+<a href="{{- $safeURL -}}"
    {{- with .Title }} title="{{ . }}"{{ end -}}
-   {{- if $URL.IsAbs }} rel="external" target="_blank"{{ end -}}>
-    {{- .PlainText | replaceRE "^https?://" "" -}}</a>
+   {{- if $URL.IsAbs }} rel="external{{ $me }}" target="_blank"{{ end -}}>
+   {{- .PlainText | replaceRE "^https?://" "" -}}</a>

@@ -8,5 +8,3 @@ menus:
   - main
 weight: 1
 ---
-
-Další články [v&nbsp;angličtině]({{% relref path="/" lang="en" %}})

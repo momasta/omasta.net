@@ -23,8 +23,16 @@ RewriteCond %{1} !^www$
 RewriteCond %{DOCUMENT_ROOT}/subdom/%1 !-d
 RewriteRule ^ {{ $baseURL }}%{REQUEST_URI} [L,R=301]
 
+# Redirects for Moved Content
+RewriteRule ^([a-z]{2}/)?tags/notes/?$ /$1tags/quotes/ [R=301,L]
+RewriteRule ^([a-z]{2}/)?posts/(.*)$ /$1$2 [R=301,L]
+
+# Shorthands
+RewriteRule ^tech-spurt/?$ /tech-spurt-quotes/ [R=301,L]
+
 # Force trailing slash on directories
-RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{HTTP_HOST} ^(?:www\.)?([^.]+)\.[^.]+\.[^.]+$ [NC]
+RewriteCond %{DOCUMENT_ROOT}/subdom/%1/$1 -d
 RewriteRule ^(.*?[^/])$ /$1/ [L,R=301]
 
 # Handle valid subdomains
@@ -32,13 +40,6 @@ RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{HTTP_HOST} ^(?:www\.)?([^.]+)\.[^.]+\.[^.]+$
 RewriteCond %{DOCUMENT_ROOT}/subdom/%1 -d
 RewriteRule ^(.*)$ /subdom/%1/$1 [L]
-
-# Redirects for Moved Content
-RewriteRule ^([a-z]{2}/)?tags/notes/?$ /$1tags/quotes/ [R=301,L]
-RewriteRule ^([a-z]{2}/)?posts/(.*)$ /$1$2 [R=301,L]
-
-# Shorthands
-RewriteRule ^tech-spurt/?$ /tech-spurt-quotes/ [R=301,L]
 
 # Cache Control
 <IfModule mod_expires.c>

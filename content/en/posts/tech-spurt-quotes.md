@@ -33,8 +33,8 @@ I watch them for the comedy.
 {{< gallery "tech-spurt" "type-grid size-s" "name" >}}
 
 I think I've watched every episode of&nbsp;[Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70 'Tech Spurt Weekly - YouTube') (71h&nbsp;7m),  
-along with other vids, and&nbsp;every single [Recombu&nbsp;Quickie](https://youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D 'Recombu Quickies - YouTube')&nbsp;(2h&nbsp;45m),  
-from a&nbsp;review site he&nbsp;used to&nbsp;work&nbsp;for.  
+along with other vids, all of [Spurt Hole](https://www.youtube.com/@SpurtHole/videos) (3h 3m), and&nbsp;every [Recombu&nbsp;Quickie](https://youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D 'Recombu Quickies - YouTube')&nbsp;(2h&nbsp;45m),  
+from a&nbsp;review site he&nbsp;used to&nbsp;work&nbsp;for.
 
 Below, you'll find bits I found funny or worth sharing:  
 Original expressions (especially&nbsp;[similes](#similes)), [jokes](#jokes), responses to [viewer comments](#viewer-comments), and&nbsp;short stories – most with clickable timestamps.
