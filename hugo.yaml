@@ -3,7 +3,7 @@ title: "Marek Omasta"
 theme:
   - blank
 defaultContentLanguage: "en"
-enableGitInfo: true
+enableGitInfo: false
 enableRobotsTXT: true
 loadJQuery: false
 printI18nWarnings: true

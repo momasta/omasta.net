@@ -1,5 +1,6 @@
 ---
 date: 2025-11-12T15:35:04+01:00
+lastmod: 2026-08-18T17:45:36+02:00
 description:
 draft: false
 keywords:
@@ -13,7 +14,6 @@ keywords:
     - British dialect
     - funny
     - wiki
-lastmod: 2026-05-08T15:16:42+02:00
 mainContentID: table-of-contents
 slug:
 tags:
@@ -33,7 +33,7 @@ I watch them for the comedy.
 {{< gallery "tech-spurt" "type-grid size-s" "name" >}}
 
 I think I've watched every episode of&nbsp;[Tech&nbsp;Spurt&nbsp;Weekly](https://youtube.com/playlist?list=PLyDqCK-1mH--9Qbw6mpMYnSW9l24-0l70 'Tech Spurt Weekly - YouTube') (71h&nbsp;7m),  
-along with other vids, all of [Spurt Hole](https://www.youtube.com/@SpurtHole/videos) (3h 3m), and&nbsp;every [Recombu&nbsp;Quickie](https://youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D 'Recombu Quickies - YouTube')&nbsp;(2h&nbsp;45m),  
+along with other vids, all of [Spurt Hole](https://www.youtube.com/@SpurtHole/videos 'The Spurt Hole - YouTube') (3h 3m), and&nbsp;every [Recombu&nbsp;Quickie](https://youtube.com/playlist?list=PLWtPnX9AyWI2aC_LBEMgQ2ftFpktr8K-D 'Recombu Quickies - YouTube')&nbsp;(2h&nbsp;45m),  
 from a&nbsp;review site he&nbsp;used to&nbsp;work&nbsp;for.
 
 Below, you'll find bits I found funny or worth sharing:  
@@ -124,6 +124,7 @@ Original expressions (especially&nbsp;[similes](#similes)), [jokes](#jokes), res
 * sod all
 * [shag all clue](https://youtu.be/jiPYgMnkeGM?t=306s 'Xiaomi 14 Ultra, Proper Samsung S24 Ultra Rival? | What To Expect | TSW183 - YouTube')
 * [sweet FA](https://youtu.be/JJA0wet_9Pc?t=82s 'First Snapdragon 8 Gen 4 Phones Incoming! | Xiaomi 15, OnePlus 13 | TSW216 - YouTube')
+
 ### Give a …
 * [give a](https://youtu.be/dQ9sydMsp2Q?t=558 'Vivo X Fold, the Samsung slayer | TSW107 - YouTube')&nbsp;shiny toss  
 * give a flying fuck
@@ -333,6 +334,7 @@ I slap on a rubber Johnny to prevent from getting the clap.
   As soon as you start fingering the thing, it gets absolutely filthy.  
   Again, much like **your mum**.  
   [https://youtu.be/UNQnuiMdZFM?t=598](https://youtu.be/UNQnuiMdZFM?t=598 'Apple iPhone 16e One Year Review [With A Twist...] | TSW268 - YouTube')
+
 ### Gags
 * Apple Event parody (Tim Cook)
     * Part 1:&nbsp;[https://youtu.be/9vCWtSbHpCc?t=0](https://youtu.be/9vCWtSbHpCc?t=0 'Apple iMac 2021, iPad Pro M1, Realme 8 5G | TSW60 - YouTube')  
@@ -427,8 +429,24 @@ and landing crotch first on a burning cactus.
 … bugger me blue  
 … you malodorous slaphead  
 [https://youtu.be/5NO2lcZ9PT0?t=0](https://youtu.be/5NO2lcZ9PT0?t=0 'RIP LG Mobile, Nokia X20 G20 & C20, Legion Duel 2 | TSW57 - YouTube')  
+* Hello boys and girls, welcome to another toilet bowl endangeringly thrilling episode of Tech Spurt Weekly.  
+The only tech news show where you're likely to hear the word **felching** within the first seven seconds.  
+[https://youtu.be/wdlYJ9wcqQ4?t=0](https://youtu.be/wdlYJ9wcqQ4?t=0 'Best Phones Still Coming In 2023 | TSW155 - YouTube')  
+* The only weekly tech news show where two of those descriptors are an outright lie, and a third is questionable at best.  
+But hey, at least it is actually weekly.  
+Apart from the weeks where I can't be arsed, obviously.  
+[https://youtu.be/VzijC09U-BU?t=0](https://youtu.be/VzijC09U-BU?t=0 "Motorola Moto Edge X30, Google's December Pixel Update | TSW91 - YouTube")  
+* The only weekly tech news show that doesn't really cover much tech news,  
+it's not always weekly,  
+and frankly, if you call it a show, you're being rather generous indeed.  
+And I'm afraid, kiddies, that this week's show is gonna be rather short and dirty just like **your mum**.  
+[https://youtu.be/A5gI7TYtMWI?t=0](https://youtu.be/A5gI7TYtMWI?t=0 'Realme 9 Pro Plus, OnePlus Nord CE 2 | TSW97 - YouTube')  
   
 ### Intros to Viewer Comments
+* Now it's time for the part of the show  
+that pretty much justifies the upcoming armageddon.  
+It's, **Viewer Comments.**  
+[https://youtu.be/o_BkBGUoK5E?t=363](https://youtu.be/o_BkBGUoK5E?t=363 'Samsung Galaxy A53 vs A33 5G | TSW103 - YouTube')  
 * Part of the show that's actually inspired by British rivers  
 in that it's absolutely overflowing with shit.  
 It's **Viewer Comments**!  
@@ -635,6 +653,8 @@ Victor from PUBG
   [https://youtu.be/UNQnuiMdZFM?t=837](https://youtu.be/UNQnuiMdZFM?t=837 'Apple iPhone 16e One Year Review [With A Twist...] | TSW268 - YouTube')
 * love child of Moby and Dan Levy  
   [https://youtu.be/1yO--GUdzSs?t=829](https://youtu.be/1yO--GUdzSs?t=829 "Samsung's New Mid-Rangers, Fully Leaked | TSW270 - YouTube")
+* Shayne Ward  
+[https://youtu.be/ZPwxs_sNsIM?t=612](https://youtu.be/ZPwxs_sNsIM?t=612 'Samsung Galaxy S27 Ultra, Major Upgrades? | Leaks & Rumours | TSW283 - YouTube')   
   
 ## Out of Context Material
 * No, you bad little doggy,  
@@ -701,6 +721,12 @@ and your bowls will explode into frothy chunks.
   [https://youtu.be/qgyECgCUyaQ?t=378](https://youtu.be/qgyECgCUyaQ?t=378 'OPPO Find X9 Ultra, Most Exciting Phone of 2026? | Leaks & Rumours | TSW262 - YouTube')
 * Ronaldo  
   [https://youtu.be/VJCJhMVex4c?t=175](https://youtu.be/VJCJhMVex4c?t=175 'Crapps Episode 6: The very worst iPhone football games - YouTube')
+* Grr. Don't make me mad, etc.   
+(The Spurtinator, lucha libre mask)  
+[https://youtu.be/mk-pSiJoxE4?t=209](https://youtu.be/mk-pSiJoxE4?t=209 'Real Lucha Libre Wrestling in Mexico City! | CMLL Visit 2026 - YouTube')  
+* A loud cough  
+[https://youtu.be/bOuuyc5W-t4?t=377](https://youtu.be/bOuuyc5W-t4?t=377 "Is the 'Top 50 UK Beers 2026' list bollocks? | Best & Weirdest London Craft Beer Festival Brews! - YouTube")  
+  
 ## Topics
 ### Apple
 * What kind of cruel offspring would force an iPhone  
@@ -1190,6 +1216,7 @@ from a **follically deficient middle-aged jizz mop**.
 * Tech Spurt's Advice on Becoming Middle-Aged  
   [https://youtu.be/6U-YVOSiXa0?t=415](https://youtu.be/6U-YVOSiXa0?t=415 'Google Pixel 6a Rumours & Leaks | TSW105 - YouTube')  
   [https://youtube.com/clip/Ugkx04l90MvOc3HKysDjroXguO1Ts66muvE9](https://youtube.com/clip/Ugkx04l90MvOc3HKysDjroXguO1Ts66muvE9 "✂️ Tech Spurt's Advice on Becoming Middle-Aged - YouTube")
+  
 ### Tablets with Rear Cameras
 * Anyone who actually uses a rear camera on a tablet,  
   is worse than herpes and deserves to be thrown into a pit of fire.  
@@ -1345,3 +1372,10 @@ Whoever invented that one, frankly deserves a Nobel Prize.
 [https://youtu.be/N-K2EIi1dQI?t=250](https://youtu.be/N-K2EIi1dQI?t=250 'Motorola RAZR 50 & 50 Ultra | What To Expect | TSW200 - YouTube')  
 * Mega fan's online shrine to everything Tech Spurt Weekly  
   [https://youtu.be/8zSu2sGAgKA?t=174](https://youtu.be/8zSu2sGAgKA?t=174 'Xiaomi 17 Ultra, Camera Behemoth? | Leaks & Rumours | TSW258 - YouTube')  
+* I don't like to speak ill of people.  
+Actually, that's a complete fucking lie.  
+I absolutely adore it.  
+But that **Sam Altman** really does seem like a greedy, soulless wee shitbag with all of the charm and moral integrity of a pubic crab.  
+[https://youtu.be/45KpOsfDWHQ?t=397](https://youtu.be/45KpOsfDWHQ?t=397 'New Contender For Best Phone 2026? | Xiaomi 18 Pro Max Leaks & Rumours | TSW281 - YouTube')   
+* **Viewer:** How did you start out reviewing phones on YouTube for a living?  
+[https://youtu.be/45KpOsfDWHQ?t=418](https://youtu.be/45KpOsfDWHQ?t=418 'New Contender For Best Phone 2026? | Xiaomi 18 Pro Max Leaks & Rumours | TSW281 - YouTube')   

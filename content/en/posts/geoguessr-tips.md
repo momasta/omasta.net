@@ -1,6 +1,6 @@
 ---
 date: 2026-04-14T12:03:55+02:00
-lastmod: 2026-05-08T15:16:42+02:00
+lastmod: 2026-08-18T17:45:36+02:00
 title: "GeoGuessr Tips"
 draft: false
 description: "Here's another export from my notes, a collection of clues I found worth learning for guessing countries and their regions in GeoGuessr."
@@ -495,8 +495,15 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
 ### 🇨🇼 [Curaçao](https://www.plonkit.net/curacao 'Curaçao — Plonk It') (🇳🇱 Netherlands)
 * TLD: .cw
 * Signs
+  * 🛑 STOP
   * Striped traffic light posts
 
+### 🇩🇴 [Dominican Republic](https://www.plonkit.net/dominican-republic 'Dominican Republic — Plonk It')
+* Licence Plates  
+    * Pale yellow tint at the top  
+* Signs  
+    * 🛑 PARE  
+  
 ### 🇬🇹 [Guatemala](https://www.plonkit.net/guatemala 'Guatemala — Plonk It')
 * Buildings
   * White exposed brick somewhat common
@@ -550,13 +557,13 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
     * Velocidad maxima
 
 ### 🇺🇸 [United States](https://www.plonkit.net/united-states 'United States of America — Plonk It')
-* Regions
+* Regions  
   * [Guam](https://www.plonkit.net/guam 'Guam — Plonk It')
-    * Street Signs
-      * Green
-    * Language
-      * East Asian languages are common
-
+    * Street Signs  
+        * Green  
+    * Language  
+        * East Asian languages are common  
+  
 ## South America
 * Signs
   * 🛑 PARE
@@ -697,6 +704,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Tall golden grass
 * Roads
   * MR-roads
+* TLD: .co.sz  
 
 ### 🇬🇭 [Ghana](https://www.plonkit.net/ghana 'Ghana — Plonk It')
 * Roads
@@ -712,6 +720,7 @@ Image source: [Maximilian Dörrbecker](https://de.wikipedia.org/wiki/Benutzer:Ch
   * Free-roaming livestock
 * Licence Plates
   * Light blue text
+* TLD: .ls  
 
 ### 🇳🇬 [Nigeria](https://www.plonkit.net/nigeria 'Nigeria — Plonk It')
 * Buildings

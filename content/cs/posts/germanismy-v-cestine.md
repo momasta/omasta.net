@@ -1,6 +1,6 @@
 ---
 date: 2026-04-14T12:03:55+02:00
-lastmod: 2026-04-14T12:03:55+02:00
+lastmod: 2026-08-18T17:45:36+02:00
 title: "Slova německého původu"
 draft: false
 description: "Moje sbírka germanismů v češtině"
@@ -25,6 +25,7 @@ type: posts
 * buřt (Wurst)
 * drát (Drat)
 * frajer (Freier)
+* kunsthistorik (Kunsthistoriker)  
 * marod (marode)
 * pakáž (Bagage)
 * šanon (Shannon)
@@ -52,10 +53,11 @@ type: posts
 * fajnšmekr (Feinschmecker)
 * fest
 * flaška (Flasche)
+* fligna (eine Fliege machen, die Fliegen legen)  
 * fotr (Vater)
 * fungl (funkeln)
 * fujtajbl (pfui Teufel)
-* furt (fort)
+* furt (in einem fort)  
 * fusakle (Fußsöckel)
 * hajzl (Häusel, Scheißhäusel)
 * hergot (Herrgott)
@@ -63,6 +65,7 @@ type: posts
 * hochštapler (Hochstapler)
 * imrvére (immer während)
 * jo
+* kasírovat (kassieren)  
 * ksicht (Gesicht)
 * ksindl (Gesindel)
 * kšeft (Geschäft)
@@ -89,12 +92,16 @@ type: posts
 * šnuptychl (Schnupftüchel)
 * špás (Spaß)
 * špica/špičkový (Spitze)
+* šponovat (spannen)  
 * šprýmovat (springen)
 * šrajtofle (Schreibtafel)
 * štamgast (Stammgast)
+* štamprle (Stamperl)  
 * študent (Student)
+* štymovat (stimmen)  
 * šunkofleky (Schinkenflecken)
 * vekslák (wechseln)
 * vercajk (Werkzeug)
 * vinšovat (wünschen)  
+* zkásnout (einkassieren)  
   

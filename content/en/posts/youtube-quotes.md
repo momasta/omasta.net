@@ -1,5 +1,6 @@
 ---
 date: 2025-10-14T14:18:50+02:00
+lastmod: 2026-08-18T17:45:36+02:00
 description:
 draft: false
 keywords:
@@ -8,7 +9,6 @@ keywords:
     - captions
     - funny
     - YT
-lastmod: 2026-05-08T15:16:42+02:00
 mainContentID: "ashens"
 slug:
 tags:
@@ -96,6 +96,17 @@ Ethan Klein
 * "Game assassins", what the fuck. That made me, like, React™. Almost fucking vomited, dude. Are you a game assassin, dude? You probably fuckin' SICK! (SIIICK)  
   [https://youtu.be/QPCDoANDkl4?t=156](https://youtu.be/QPCDoANDkl4?t=156 'How to Clean Your Gamer Gear -- h3h3 reaction video - YouTube')
 
+## Limmy
+* Anti-English hatred in Glasgow  
+[https://youtu.be/gXaiD0PGlzc?t=64](https://youtu.be/gXaiD0PGlzc?t=64 'Limmy’s Guide to Surviving Glasgow as an English Person - YouTube')  
+* Dude what the fuck?!  
+(Clip farming)  
+[https://youtu.be/pqNOV5_QpiA?t=28](https://youtu.be/pqNOV5_QpiA?t=28 'Limmy RAGES at Trees Hate You - YouTube')   
+  
+### Bezos laugh impression
+* [https://youtu.be/J_yxBCHud6M?t=176](https://youtu.be/J_yxBCHud6M?t=176 'What to do if you get caught telling an obvious lie! - YouTube')   
+* [https://youtu.be/UhqnCWf8RSg?t=6](https://youtu.be/UhqnCWf8RSg?t=6 'Funny Walking Billionaires - YouTube')   
+  
 ## iDubbbzTV
 
 * [Every Single iDubbbz Outro](https://www.reddit.com/r/Idubbbz/comments/i8ksvz/every_single_idubbbz_outro/ 'every single idubbbz outro : r/Idubbbz') (next time when I …)
@@ -126,6 +137,8 @@ Ethan Klein
   [https://youtu.be/-xLQWs5qzv8?t=52s](https://youtu.be/-xLQWs5qzv8?t=52s 'Star Wars Episode IV: A New Meme - YouTube')
 * Chinese Meme  
   [https://youtube.com/clip/Ugkx5jABKnXb8Canp8NmKKLuNagY7grIueW2](https://youtube.com/clip/Ugkx5jABKnXb8Canp8NmKKLuNagY7grIueW2 '✂️ Podel - Chinese Meme - YouTube')
+* Chinese Meme (2026)  
+[https://youtu.be/-bh9DyVGU6k?t=190s](https://youtu.be/-bh9DyVGU6k?t=190s 'I Remastered the Entire UI of Trackmania United Forever | TMR - YouTube')  
 * Hey guys I'm a vegan. I'm a vegan. Bye I'm a vegan.  
   [https://youtube.com/clip/UgkxD9PDZF6aNYKEUShDo35j280H5gLFxVHp](https://youtube.com/clip/UgkxD9PDZF6aNYKEUShDo35j280H5gLFxVHp "✂️ Hey guys I'm a vegan. I'm a vegan. Bye I'm a vegan. - YouTube")
 * Happy new year (firework display explodes on the ground)  
@@ -156,10 +169,9 @@ Reviewbrah
   [https://youtu.be/qpCfKf9izzI?t=88](https://youtu.be/qpCfKf9izzI?t=88 'From The Archives.. My First Food Review Ever, January 2011 - YouTube')
 * Tastes like chicken  
   [https://youtu.be/XmFFa9d87ng?t=433](https://youtu.be/XmFFa9d87ng?t=433 "TheReportOfTheWeek's Random Clips Part 2 - YouTube")
-* **Viewer:** Is that Lorde?
-Yes it is. Yes it is, just got done with a big concert the other day and now… now went back to my…
-measly life of reviewing food on YouTube.  
-[https://youtu.be/qNrVUksxTPc?t=3793](https://youtu.be/qNrVUksxTPc '🔴 Friday Night Live Stream - Q&A, Misc Talk & Possible Review! - YouTube')
+* **Viewer:** Is that Lorde?  
+Yes it is. Yes it is, just got done with a big concert the other day and now… now went back to my… measly life of reviewing food on YouTube.  
+[https://youtu.be/qNrVUksxTPc?t=3793](https://youtu.be/qNrVUksxTPc?t=3793 '🔴 Friday Night Live Stream - Q&A, Misc Talk & Possible Review! - YouTube')  
 * If you really wanna create something like me […] get a coffee pot, you pour some room-temperature water in it, two ice cubes, you get the DNA from the frog, a little bit of DNA from Spider-Man […] and then you also get a little bit of DNA from Lorde, a little bit of DNA from Sheldon, then you stir it all up, put it in the coffee maker you get whatever slime just oozes out of that and then put it in a cup, pour it on a little plate try to arrange it in a smiley face, give it a day or two and there's gonna be me sitting there.  
   [https://youtu.be/6rhZoE8q5Vs?t=766](https://youtu.be/6rhZoE8q5Vs?t=766 'Reviewbrah Reacts To Weird Comments! (2020 Edition) - YouTube')
 * Reviewbrah reacts to a strange sound  
@@ -259,5 +271,5 @@ measly life of reviewing food on YouTube.
 * The music industry is nothing but country and rap music with that same dumbass trap beat…  
   (BROJANGSTER, June 2019)  
   [https://youtu.be/wdPrdU8cDtg](https://youtu.be/wdPrdU8cDtg '2010s Nostalgia that WILL make you CRY - YouTube')  
-* Limmy: Anti-English hatred in Glasgow  
-[https://youtu.be/gXaiD0PGlzc?t=64](https://youtu.be/gXaiD0PGlzc?t=64 'Limmy’s Guide to Surviving Glasgow as an English Person - YouTube')  
+* **Rainbolt** makes a guess in GeoGuessr based on: Mongolian camera.  
+[https://youtu.be/51UAH0jWuSQ?t=238](https://youtu.be/51UAH0jWuSQ?t=238 'i went kenya on czechia - YouTube')  
