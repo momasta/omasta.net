@@ -1,6 +1,6 @@
 ---
 date: 2025-11-12T15:35:04+01:00
-lastmod: 2026-08-18T17:45:36+02:00
+lastmod: 2026-11-05T17:33:52+01:00
 description:
 draft: false
 keywords:
@@ -158,6 +158,7 @@ painted by blind monkeys
 using only endless buckets of dog shit  
 * as attractive as an&nbsp;[elephant’s nutsack](https://youtu.be/sArKYjf9CbE?t=234 'Xiaomi Mi 10T Pro | Unboxing & Full Tour - YouTube')  
 * as bulky as a beetle’s&nbsp;[ballsack](https://youtu.be/TO51SWbt_TU?t=93 'Red Magic 9 Pro Unboxing & Review | Super-Powered Gaming Smartphone! - YouTube')  
+* as bright as a [coal miner's arsehole](https://youtu.be/VLlyyMWfqh8?t=241 'Has Apple Fixed Its Most Broken Phone? | TSW285 - YouTube')  
 * as enjoyable as clearing out the train station urinal with just your face
 * [about as entertaining](https://youtu.be/OqNTxFXDmy4?t=339 'Samsung Galaxy S23 Ultra, 200MP Beast? | TSW127 - YouTube')&nbsp;as a depressed flatulent clown  
 reading excerpts from Jacob Rees-Mogg’s biography  
@@ -201,6 +202,7 @@ of blasting small furry animals&nbsp;[right in the face](https://youtu.be/WyUlqX
 * smells&nbsp;[worse than a](https://youtu.be/CLBr7nmjmSw?t=51s 'New Nokia, Xiaomi, Honor Phones Launching Next Week! | MWC 2023 Preview | TSW144 - YouTube')&nbsp;whole sack of kangaroo farts  
 * spilling more excrement than [Thames Water](https://youtu.be/R3Kr5vhLUnw?t=59 "Is Samsung's Galaxy Z Fold 8 already beat? | OPPO Find N6 Leaks & Rumours | TSW267 - YouTube")
 * textured finish, kind of like an&nbsp;[elephant's ballsack](https://youtu.be/VEPiExAfqzo?t=121s 'POCO M5 Unboxing & Review | Super-Affordable Budget Blower - YouTube')  
+* thinner than a [confused fox](https://youtu.be/q6jtgv6oF5U?t=55 'This Foldable Phone DESTROYS Apple & Samsung | Vivo X Fold 6 - YouTube') that just wandered onto the M25  
 * tougher than a British Airways bread roll
 * tougher than a Little Chef pork chop
 * trickles in like the desperate urine flow of a geriatric&nbsp;[camel](https://youtu.be/66olq7X4wLk?t=205 'Realme GT Neo 3, 150W Fast Charge Beast! | TSW104 - YouTube')  
@@ -714,8 +716,8 @@ otherwise the Mentos tablet is released
 and your bowls will explode into frothy chunks.  
 [https://youtu.be/9draKiuugrw?t=725](https://youtu.be/9draKiuugrw?t=725 'Google Pixel 6 & Tensor, Moto Edge 20 Series | TSW73 - YouTube')  
 * Upside down shot,
-  *sip*,
-  *cough*  
+  \*sip\*,
+  \*cough\*  
 [https://youtu.be/tbOWpwJOJgA?t=259](https://youtu.be/tbOWpwJOJgA?t=259 'Best Phones Coming Early 2026 | S26 Ultra, Redmi Note 15 Series & More | TSW260 - YouTube')  
 * Rage  
   [https://youtu.be/qgyECgCUyaQ?t=378](https://youtu.be/qgyECgCUyaQ?t=378 'OPPO Find X9 Ultra, Most Exciting Phone of 2026? | Leaks & Rumours | TSW262 - YouTube')

@@ -1,6 +1,6 @@
 ---
 date: 2025-10-14T14:18:50+02:00
-lastmod: 2026-08-18T17:45:36+02:00
+lastmod: 2026-11-05T17:33:52+01:00
 description:
 draft: false
 keywords:
@@ -122,7 +122,6 @@ Ethan Klein
 ## Michael Reeves
 
 ### Pink Guy References (Filthy Frank)
-
 * 7:43 Dumplings  
   [https://youtu.be/LwOITqr_fz4?t=463](https://youtu.be/LwOITqr_fz4?t=463 'A Bot that Scams People - YouTube')
 * 8:53 Weeaboo  

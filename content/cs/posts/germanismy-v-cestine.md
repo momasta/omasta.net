@@ -1,6 +1,6 @@
 ---
 date: 2026-04-14T12:03:55+02:00
-lastmod: 2026-08-18T17:45:36+02:00
+lastmod: 2026-11-05T17:33:52+01:00
 title: "Slova německého původu"
 draft: false
 description: "Moje sbírka germanismů v češtině"
@@ -23,14 +23,22 @@ type: posts
 
 ## Spisovná slova
 * buřt (Wurst)
+* deka (Decke)  
 * drát (Drat)
 * frajer (Freier)
 * kunsthistorik (Kunsthistoriker)  
 * marod (marode)
 * pakáž (Bagage)
+* pasovat (passen)  
 * šanon (Shannon)
 * šňůra (Schnur)
+* špagát (Spagat)  
+* šponovat (spannen)  
+* šprušle (Sprosse)  
+* šprýmovat (springen)  
 * šrot (Schrott)
+* šroub (Schraube)  
+* švindl (Schwindel)  
 * trychtýř (Trichter)
 * žemle (Semmel)
 
@@ -46,12 +54,14 @@ type: posts
 * čau (tschau)
 * čus (tschüß)
 * danke schön
+* dekovat se (decken)  
 * drek (Dreck)
 * eklhaft (ekelhaft)
 * eklovat se (sich ekeln)
 * fachman (Fachmann)
 * fajnšmekr (Feinschmecker)
 * fest
+* flastr (Pflaster)  
 * flaška (Flasche)
 * fligna (eine Fliege machen, die Fliegen legen)  
 * fotr (Vater)
@@ -80,6 +90,7 @@ type: posts
 * nýmand (Niemand)
 * plac (Platz)
 * póvl (Pöbel)
+* propásnout (verpassen?)  
 * pucovat (putzen)
 * richtik (richtig)
 * rozšmelcovat (verschmelzen)
@@ -92,8 +103,6 @@ type: posts
 * šnuptychl (Schnupftüchel)
 * špás (Spaß)
 * špica/špičkový (Spitze)
-* šponovat (spannen)  
-* šprýmovat (springen)
 * šrajtofle (Schreibtafel)
 * štamgast (Stammgast)
 * štamprle (Stamperl)  

@@ -1,6 +1,6 @@
 ---
 date: 2025-12-03T21:36:09+01:00
-lastmod: 2025-12-06T13:39:46+01:00
+lastmod: 2026-11-05T17:33:52+01:00
 title: "Mac Troubleshooting"
 draft: false
 description: ""
@@ -48,7 +48,6 @@ More details: [How to force an app to quit on Mac - Apple Support](https://suppo
 ## Apple Music: Clean Cache
 ```
 rm -rf ~/Library/Caches/com.apple.iTunes/CommerceRequestCache/*
-
 ```
 
 ## Everything’s Frozen
@@ -62,12 +61,10 @@ rm -rf ~/Library/Caches/com.apple.iTunes/CommerceRequestCache/*
 * If that doesn't help:
   ```
   killall WindowManager
-  
   ```
 * Alternatively:
   ```
   sudo killall -HUP WindowServer
-  
   ```
 * Press and hold the **Power&nbsp;Button**
 * Press and hold **⌃⌘–Power&nbsp;Button**
@@ -91,7 +88,6 @@ not allowing you to press anything:
 To find out which app or process is preventing you from ejecting a drive:
 ```
 sudo lsof | grep /Volumes/HDD
-
 ```
 
 Your drive is likely gonna have a path than mine, /Volumes/HDD.  
@@ -104,19 +100,16 @@ To find out its path:
 ### iCloud Drive Sync Stuck
 ```
 sudo killall bird
-
 ```
 
 ### iPhone Sync Stuck
 ```
 killall AMPDevicesAgent && killall MDCrashReportTool
-
 ```
 
 ### File Verification Stuck
 ```
 killall CoreServicesUIAgent
-
 ```
 
 ### Finder Won’t Find Multiple Keywords
@@ -134,7 +127,6 @@ killall CoreServicesUIAgent
 ## Fix Audio
 ```
 sudo killall coreaudiod
-
 ```
 
 ## Fix Encoding of Accented Letters in Filenames
@@ -144,14 +136,12 @@ Unicode, convert NFD to NFC
   * Don't overlook post-install instructions printed in Terminal.
     ```
     brew install convmv
-  
     ```
   * convmv is also available on [MacPorts](https://ports.macports.org/port/convmv/ 'Install convmv on macOS with  MacPorts') if that's your thing.
 
 To fix filenames of every file in the current directory, run:
 ```
 convmv -r -f utf8 -t utf8 --nfc --notest .
-
 ```
 
 ## Notes: Edited Links not Matching Their Titles
@@ -162,32 +152,27 @@ convmv -r -f utf8 -t utf8 --nfc --notest .
 ## Reset Dock to Default Size
 ```
 defaults write com.apple.dock "tilesize" -int "64" && killall Dock
-
-```  
+```
 ## Restart macOS UI Elements
 ### Restart Dock
 ```
 launchctl stop com.apple.Dock.agent && launchctl start com.apple.Dock.agent
-
 ```
 
 ### Restart Menu Bar Icons
 Stuck Shortcuts Icon
 ```
 killall ControlCenter
-
 ```
 
 ### Restart Quick Look
 ```
 qlmanage -r
-
 ```
 
 ### Restart Spotlight
 ```
 sudo killall -KILL&nbsp;Spotlight&nbsp;spotlightd mds
-
 ```
 * **⌥⌘⎋:** [Force Quit](https://support.apple.com/en-us/102586 'How to force an app to quit on Mac - Apple Support')  
 * Select Finder  
@@ -196,13 +181,11 @@ sudo killall -KILL&nbsp;Spotlight&nbsp;spotlightd mds
 Clock app, countdown, ringtone.
 ```
 killall NotificationCenter
-
 ```
 
 ### Other UI Elements
 ```
 killall -KILL SystemUIServer
-
 ```
 * **⌥⌘⎋:** [Force Quit](https://support.apple.com/en-us/102586 'How to force an app to quit on Mac - Apple Support')  
 * Select Finder  
@@ -214,7 +197,6 @@ Stuck ghost/zombie/phantom tabs from other devices.
 * Quit Safari
 ```
 rm ~/Library/Containers/com.apple.Safari/Data/Library/Safari/CloudTabs.db*
-
 ```
 
 ## Spotlight: List Excluded Folders
@@ -227,7 +209,6 @@ Cumbersome.
 Instead, you can get a list of full paths with the following command:
 ```
 sudo /usr/libexec/PlistBuddy -c "Print :Exclusions" /System/Volumes/Data/.Spotlight-V100/VolumeConfiguration.plist
-
 ```
 
 ## Spotlight: Reindex
@@ -255,7 +236,6 @@ sudo mdutil -a -i off
 sudo rm -rf /.Spotlight*
 sudo mdutil -a -i on
 sudo mdutil -E /
-
 ```
 * Restart
 * To check progress:  

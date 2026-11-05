@@ -2,7 +2,7 @@
 title: "Moje profily"
 linkTitle: "Profily…"
 date: 2022-10-09T22:58:33+02:00
-lastmod: 2026-05-08T15:16:42+02:00
+lastmod: 2026-11-05T17:33:52+01:00
 draft: false
 layout: simple
 menu:
@@ -18,6 +18,7 @@ menu:
 * [Gravatar](https://gravatar.com/omastik?rel=me 'Marek Omasta | Czech Republic | Gravatar')
 * [PayPal.Me](https://paypal.me/MarekOmasta?rel=me '@MarekOmasta na PayPal.Me')  
 * [Pinterest](https://cz.pinterest.com/m_omasta/_saved/?rel=me 'Pinterest - Česká republika')
+* [Strava](https://strava.com/athletes/81120654 'Marek Omasta | Profil sportovce v aplikaci Strava')
 * [Tripadvisor](https://tripadvisor.com/Profile/m-omasta?rel=me 'Marek Omasta (@m-omasta) - Profile - Tripadvisor')
 * [Unsplash](https://unsplash.com/@m_omasta?rel=me 'Moje fotky na Unsplashi – Marek Omasta (@m_omasta)')
 * [YouTube](https://youtube.com/@m.omasta?rel=me 'Marek Omasta - YouTube')

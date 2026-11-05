@@ -1,6 +1,6 @@
 ---
 date: 2025-12-03T21:36:21+01:00
-lastmod: 2026-08-18T17:45:36+02:00
+lastmod: 2026-11-05T17:33:52+01:00
 title: "Anomaly Quotes"
 draft: false
 description: ""
@@ -224,6 +224,8 @@ because I don't need them.
 
 ### Akriform
 A company Papanomaly used to work for.
+
+{{< gallery "anomaly/Akriform/Akriform Meme.jpg" >}}
 * [https://youtu.be/Ft4czuP0FIs?t=313](https://youtu.be/Ft4czuP0FIs?t=313 "ANOMALY'S 15 YEAR YOUTUBE ANNIVERSARY - YouTube")
 * [https://youtu.be/Ft4czuP0FIs?t=405](https://youtu.be/Ft4czuP0FIs?t=405 "ANOMALY'S 15 YEAR YOUTUBE ANNIVERSARY - YouTube")
 * [https://youtu.be/I3KaEwm114U?t=164s](https://youtu.be/I3KaEwm114U?t=164s 'TRY NOT TO LAUGH CHALLENGE 2 - YouTube')
@@ -289,6 +291,9 @@ If you can be bothered, please turn these into a compilation video:
 * [https://youtu.be/xgzhiWlKCn4?t=448](https://youtu.be/xgzhiWlKCn4?t=448 'OPENING ALL POKEMON MINI TINS (EXTREMELY LUCKY) - YouTube')  
 * [https://youtu.be/OqJ0-4rCbj8?t=270](https://youtu.be/OqJ0-4rCbj8?t=270 'DUMB WAYS TO PLAY CSGO 3 - YouTube')   
 * [https://youtu.be/ocoWCAatQrs?t=257](https://youtu.be/ocoWCAatQrs?t=257 'THE STEAM MACHINE CS2 EXPERIENCE (IS IT A SCAM?) - YouTube')   
+* [https://youtu.be/Ezdjp3qpr00?t=263](https://youtu.be/Ezdjp3qpr00?t=263 'UNBOXING OLDEST COUNTER-STRIKE CARDS.. (EXTREMELY RARE) - YouTube')  
+* [https://youtu.be/4Xbi_YtIa18?t=52](https://youtu.be/4Xbi_YtIa18?t=52 'ANOMALY GOES TO STOCKHOLM (CAPITAL OF SWEDEN) - YouTube')   
+* [https://youtu.be/4Xbi_YtIa18?t=192](https://youtu.be/4Xbi_YtIa18?t=192 'ANOMALY GOES TO STOCKHOLM (CAPITAL OF SWEDEN) - YouTube')   
 
 ## Other Quotes
 ### Anomaly, the (half-)Finnish peasant
