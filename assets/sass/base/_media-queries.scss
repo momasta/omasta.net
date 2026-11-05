@@ -6,6 +6,7 @@
 @media screen and (min-width: $bp-tablet) {
   @include mq-min-tablet-body;
   @include mq-min-tablet-gallery-image;
+  @include mq-min-tablet-header;
 }
 
 @media screen and (min-width: $bp-medium) {

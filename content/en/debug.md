@@ -11,7 +11,8 @@ slug: ""
 tags: []
 translationKey: ""
 layout: debug
-robots: noindex
+robots:
+  - noindex
 sitemap:
     disable: true
 ---

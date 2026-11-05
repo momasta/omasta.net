@@ -66,11 +66,19 @@ params:
     DPR2: "/images/profile-picture@2x.webp"
   meta:
     - name: "CCBot"
-      content: "nofollow"
+      content:
+        - nofollow
     - name: "robots"
-      content: "noai, noimageai"
+      content:
+        - noai
+        - noimageai
     - name: "tdm-reservation"
-      content: "1"
+      content:
+        - 1
+    - name: "bingbot"
+      content:
+        - noarchive
+        - nocache
   repo:
     URL: "https://github.com/momasta/omasta.net"
     title: "momasta/omasta.net"
@@ -143,11 +151,12 @@ languages:
     menu:
       aside:
         - name: "Contact"
+          identifier: "contact"
         - name: "Messenger"
           params:
             rel: "external me"
             value: "omastik"
-          parent: "Contact"
+          parent: "contact"
           title: "Text me on Facebook Messenger"
           url: *messenger
           weight: 1
@@ -155,16 +164,17 @@ languages:
           params:
             rel: "external me"
             value: *email
-          parent: "Contact"
+          parent: "contact"
           url: *emailURL
           weight: 2
 
         - name: "My Content"
+          identifier: "my-content"
         - name: "Unsplash"
           params:
             description: "My stock photos, free to use"
             rel: "external me"
-          parent: "My Content"
+          parent: "my-content"
           url: *unsplash
           weight: 2
   
@@ -179,12 +189,12 @@ languages:
     menu:
       aside:
         - name: "Kontakt"
-          identifier: "Contact"
+          identifier: "contact"
         - name: "Messenger"
           params:
             rel: "external me"
             value: "omastik"
-          parent: "Contact"
+          parent: "contact"
           title: "Napište mi na Messengeru"
           url: *messenger
           weight: 1
@@ -192,16 +202,16 @@ languages:
           params:
             rel: "external me"
             value: *email
-          parent: "Contact"
+          parent: "contact"
           url: *emailURL
           weight: 2
 
         - name: "Můj obsah"
-          identifier: "My Content"
+          identifier: "my-content"
         - name: "Unsplash"
           params:
             description: "Moje fotky ve fotobance, zdarma k použití"
             rel: "external me"
-          parent: "My Content"
+          parent: "my-content"
           url: *unsplash
           weight: 2

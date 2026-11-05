@@ -37,8 +37,8 @@
     </div>
 
     <div class="card">
-        <div class="logo type-links-neutral">
-            <a href="{{ .Site.Home.RelPermalink }}">
+        <div class="logo type-links-neutral h-card">
+            <a href="{{ .Site.Home.Permalink }}" rel="home me">
                 {{- with .Site.Params.logo -}}
                     <img src="{{ .DPR1 | absURL }}"
                          srcset="{{ .DPR1 | absURL }} 1x, {{ .DPR2 | absURL }} 2x"
@@ -50,9 +50,9 @@
             </a>
         </div>
 
-        {{ with .Site.Menus.main }}
-            <nav aria-label="{{ T "main-navigation" }}">
-                <ul class="links type-links-neutral direction-row state-interaction-disabled">
+        <nav aria-label="{{ T "main-navigation" }}">
+            <ul class="links type-links-neutral direction-row state-interaction-disabled">
+                {{ with .Site.Menus.main }}
                     {{- range . -}}
                         {{- if .Page -}}
                             <li{{ if .Page.IsMenuCurrent .Menu . }} aria-current="page"{{ end }}>
@@ -60,8 +60,14 @@
                             </li>
                         {{- end -}}
                     {{- end -}}
-                </ul>
-            </nav>
-        {{ end }}
+                {{ end }}
+
+                {{ with index (where site.Menus.aside "Identifier" "contact") 0 }}
+                    <li>
+                        <a href="#{{ .Identifier }}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+        </nav>
     </div>
 </header>

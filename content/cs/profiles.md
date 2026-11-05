@@ -7,7 +7,7 @@ draft: false
 layout: simple
 menu:
   aside:
-    parent: "Contact"
+    parent: "contact"
 ---
 
 [Moje vizitka ke stažení (vCard)](/Marek%20Omasta.vcf)

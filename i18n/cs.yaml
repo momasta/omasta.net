@@ -18,6 +18,7 @@ table-of-contents: "Obsah"
 table-of-contents-id: "obsah"
 skip-to-main-content: 'Přeskočit na hlavní obsah'
 skip-to-main-article-content: 'Přeskočit na hlavní obsah článku'
+skip-to-top: 'Nahoru'
 view-history: "Zobrazit historii na GitHubu"
 
 # Components -------------------------------------------------------------------------

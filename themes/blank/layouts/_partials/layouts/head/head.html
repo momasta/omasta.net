@@ -28,9 +28,17 @@
         <meta name="keywords" content="{{ delimit . ", " }}">
     {{- end -}}
 
+    {{ $robots := .Params.robots }}
+    
     {{- /* Additional Metadata */ -}}
     {{- range .Site.Params.meta -}}
-        <meta name="{{ .name }}" content="{{ .content }}">
+        {{ $content := .content }}
+
+        {{ if and $robots (eq .name "robots") }}
+            {{ $content = union $robots $content }}
+        {{ end }}
+        
+        <meta name="{{ .name }}" content="{{ delimit $content ", " }}">
     {{- end -}}
     
     {{- /* Stylesheet */ -}}

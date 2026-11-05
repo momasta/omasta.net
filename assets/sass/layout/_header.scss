@@ -30,3 +30,9 @@ footer :any-link {
     transition: opacity var(--ease);
   }
 }
+
+@mixin mq-min-tablet-header {
+  .logo {
+    margin-right: 20px;
+  }
+}

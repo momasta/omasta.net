@@ -16,7 +16,7 @@ menu:
   aside:
     params:
       description: "Useful special characters, text snippets and emoji combos."
-    parent: "My Content"
+    parent: "my-content"
     weight: 1
 ---
 

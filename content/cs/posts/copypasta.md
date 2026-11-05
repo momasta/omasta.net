@@ -16,7 +16,7 @@ menu:
   aside:
     params:
       description: "Užitečné speciální znaky, útržky textu a sady emoji."
-    parent: "My Content"
+    parent: "my-content"
     weight: 1
 ---
 

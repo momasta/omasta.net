@@ -7,7 +7,7 @@ draft: false
 layout: simple
 menu:
   aside:
-    parent: "Contact"
+    parent: "contact"
 ---
 
 [My business card (vCard)](/Marek%20Omasta.vcf)

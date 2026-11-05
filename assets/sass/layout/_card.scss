@@ -10,6 +10,13 @@
   overflow-wrap: anywhere;
 
   transition: background-color var(--ease);
+
+  &:target {
+    outline: 4px solid transparent;
+    animation: flash-outline 1.5s $ease-timing;
+    animation-delay: 250ms;
+    scroll-margin: 1rem;
+  }
 }
 
 header .card {

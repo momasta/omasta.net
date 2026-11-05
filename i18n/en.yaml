@@ -18,6 +18,7 @@ table-of-contents: "Table of Contents"
 table-of-contents-id: "table-of-contents"
 skip-to-main-content: 'Skip to main content'
 skip-to-main-article-content: 'Skip to main article content'
+skip-to-top: 'To Top'
 view-history: "View history on GitHub"
 
 # Components -------------------------------------------------------------------------

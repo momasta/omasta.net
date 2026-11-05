@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass animations.
+// -----------------------------------------------------------------------------
+
+@keyframes flash-outline {
+  0%, 100% {
+    outline-color: transparent;
+  }
+
+  15%, 35% {
+    outline-color: $color-focus;
+  }
+}

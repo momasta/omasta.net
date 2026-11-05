@@ -5,7 +5,7 @@
 {{- /* Secondary Menu */ -}}
 {{ with .Site.Menus.aside }}
     {{- range . -}}
-        <div class="card">
+        <div class="card" id="{{ .Identifier }}">
             <h2>{{ .Name }}</h2>
 
             {{- with .Children }}
@@ -37,7 +37,7 @@
 {{- /* Tags */ -}}
 {{ $tagsTitle := (.Site.GetPage "/tags").Title }}
 {{ with .Site.Taxonomies.tags }}
-    <div class="card">
+    <div class="card" id="tags">
         <h2>{{ $tagsTitle }}</h2>
 
         <ul class="links type-links-neutral state-interaction-disabled">
@@ -55,7 +55,7 @@
 
 {{- /* Latest Posts */ -}}
 {{- if and (where .Site.RegularPages "Type" "posts") (not .IsHome) -}}
-    <div class="card">
+    <div class="card" id="posts">
         <h2>{{ T "latest-posts" }}</h2>
         <ul>
             {{ range first 5 (where .Site.RegularPages "Type" "posts") }}

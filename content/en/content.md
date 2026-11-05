@@ -7,7 +7,7 @@ draft: false
 layout: simple
 menu:
   aside:
-    parent: "My Content"
+    parent: "my-content"
     weight: 3
 ---
 
